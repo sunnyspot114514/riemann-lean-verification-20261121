@@ -6,6 +6,7 @@ reused only when their tracked files and origins match; no reset or clean is use
 """
 import argparse
 import datetime as dt
+import fcntl
 import json
 import os
 from pathlib import Path
@@ -90,11 +91,15 @@ def fetch_exact(path, url, revision):
 
 
 def source_record(project, allow_fetch):
-    record = (fetch_exact if allow_fetch else verify)(project, SOURCE_URL, SOURCE_REV)
-    if output(project, "rev-parse", "HEAD:src") != SOURCE_TREE:
-        raise RuntimeError("Published src tree identity mismatch")
-    record["src_tree"] = SOURCE_TREE
-    return record
+    project.parent.mkdir(parents=True, exist_ok=True)
+    with (project.parent / f"{project.name}.prepare.lock").open("a") as lock:
+        print("Waiting for the source preparation lock", flush=True)
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        record = (fetch_exact if allow_fetch else verify)(project, SOURCE_URL, SOURCE_REV)
+        if output(project, "rev-parse", "HEAD:src") != SOURCE_TREE:
+            raise RuntimeError("Published src tree identity mismatch")
+        record["src_tree"] = SOURCE_TREE
+        return record
 
 
 def dependencies(project):
