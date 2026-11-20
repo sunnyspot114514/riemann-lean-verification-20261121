@@ -1,6 +1,10 @@
 
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/TraceIntegralEstimates/FrameOpFull.lean:90:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/CharacterBoxes/OrdAny.lean:90:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -8,8 +12,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [22452/22611] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BdRGaloisInvariantsEqFinExt (7.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/BdRGaloisInvariantsEqFinExt.lean:148:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/CharacterBoxes/OrdAny.lean:92:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -17,33 +20,9 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [22453/22611] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsSmulMemTer (5.2s)
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ExistsSmulMemTer.lean:4:18: Variable name `inst` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ExistsSmulMemTer.lean:4:62: Variable name `inst_2` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_2
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ExistsSmulMemTer.lean:5:5: Variable name `inst_3` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_3
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ExistsSmulMemTer.lean:5:34: Variable name `inst_4` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_4
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [22454/22611] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AcrisFrobeniusEigenFilEqQlMulTPow (8.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/AcrisFrobeniusEigenFilEqQlMulTPow.lean:155:4: Try this: 
+✔ [22993/23133] Built Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.InertiaGaloisSymmetry.OfRawToHostRaw (5.3s)
+⚠ [22994/23144] Built Development.AutomorphicArithmetic.CharacterBoxes.TwistAny (9.3s)
+warning: src/Development/AutomorphicArithmetic/CharacterBoxes/TwistAny.lean:86:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -51,7 +30,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/AcrisFrobeniusEigenFilEqQlMulTPow.lean:156:4: Try this: 
+warning: src/Development/AutomorphicArithmetic/CharacterBoxes/TwistAny.lean:120:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -59,102 +38,123 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [22455/22611] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TransferIndices.GrpNorm (5.9s)
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/TransferIndices/GrpNorm.lean:17:31: This simp argument is unused:
-  Matrix.mulVec_diagonal
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.scalar_apply, funext_iff, Pi.smul_apply, smul_eq_mul]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/TransferIndices/GrpNorm.lean:17:55: This simp argument is unused:
-  funext_iff
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.scalar_apply, Matrix.mulVec_diagonal, Pi.smul_apply, smul_eq_mul]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/TransferIndices/GrpNorm.lean:17:67: This simp argument is unused:
-  Pi.smul_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.scalar_apply, Matrix.mulVec_diagonal, funext_iff, smul_eq_mul]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/TransferIndices/GrpNorm.lean:17:82: This simp argument is unused:
-  smul_eq_mul
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.scalar_apply, Matrix.mulVec_diagonal, funext_iff, Pi.smul_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [22456/22611] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.KudlaSiegelWeil (4.0s)
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/KudlaSiegelWeil.lean:4:18: Variable name `inst` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/KudlaSiegelWeil.lean:4:62: Variable name `inst_2` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_2
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/KudlaSiegelWeil.lean:5:5: Variable name `inst_3` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_3
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/KudlaSiegelWeil.lean:5:34: Variable name `inst_4` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_4
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [22457/22612] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TransferIndices.AsAlgebraHomMemSpan (5.0s)
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/TransferIndices/AsAlgebraHomMemSpan.lean:14:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/TransferIndices/AsAlgebraHomMemSpan.lean:21:0: automatically included section variable(s) unused in theorem `PI.Dv.TIW.asAlgebraHom_mem_span`:
-  [Fintype G]
-  [FiniteDimensional K W]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype G] [FiniteDimensional K W] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/TransferIndices/AsAlgebraHomMemSpan.lean:60:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [22458/22612] Built Formalism.SharpRestriction.CuspSpanNormBounds.CayleyDegreeNondegeneracy.RowsOneC (8.4s)
-✔ [22459/22612] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IdempotentTransfer.TraceFiniteOrder (5.8s)
-⚠ [22460/22612] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IdempotentTransfer.DegGeOfInj (7.8s)
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/IdempotentTransfer/DegGeOfInj.lean:71:0: automatically included section variable(s) unused in theorem `PI.Dv.Tr.mem_zl`:
-  [InnerProductSpace ℝ E]
-  [FiniteDimensional ℝ E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/IdempotentTransfer/DegGeOfInj.lean:130:6: this tactic is never executed
+⚠ [22995/23145] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExplicitFormulaClosedStatement (5.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExplicitFormulaClosedStatement.lean:13:78: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/IdempotentTransfer/DegGeOfInj.lean:130:6: Unused tactic linter: `simp [bN]` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExplicitFormulaClosedStatement.lean:13:145: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExplicitFormulaClosedStatement.lean:13:78: Unused tactic linter: `exact GlobalTheory.ExplicitFormulaClosed.explicit_formula_closed` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [22461/22612] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HermitianGroupLattices.StarMapTraceOfPowEqOne (5.7s)
-✔ [22462/22612] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProjectionLattices.IsIntegralTraceOfPow (5.5s)
-✔ [22463/22613] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProjectionLattices.StarMapTraceOfPowEqOne (5.8s)
-✔ [22464/22613] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TraceFormEquality.ExistsSumEqOne (7.7s)
-✔ [22465/22620] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RationalKernels.AsAlgApply (6.7s)
-✔ [22466/22620] Built Formalism.SharpRestriction.CuspSpanNormBounds.GramProductLeHeightBoundTwo (14s)
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExplicitFormulaClosedStatement.lean:13:145: Unused tactic linter: `(intros;
+  apply GlobalTheory.ExplicitFormulaClosed.explicit_formula_closed <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [22996/23148] Built Development.AutomorphicArithmetic.CoprimeRanks.OfPInjective (6.9s)
+✔ [22997/23148] Built GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsTorusIntegral (4.9s)
+✔ [22998/23157] Built GroundTheory.GlobalFields.Adele.Discrete (6.5s)
+✔ [22999/23160] Built GroundTheory.GlobalFields.Adele.Topology (5.7s)
+✔ [23000/23161] Built GroundTheory.AutomorphicForms.UnitaryGroupScheme (10s)
+✔ [23001/23168] Built GroundTheory.HeightsAndTheta.Heights.CovolumeGram (5.3s)
+⚠ [23002/23170] Built Development.AutomorphicArithmetic.ShortNorms.hostOfFieldOf (9.2s)
+warning: src/Development/AutomorphicArithmetic/ShortNorms/hostOfFieldOf.lean:21:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/ShortNorms/hostOfFieldOf.lean:40:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/ShortNorms/hostOfFieldOf.lean:41:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [23003/23170] Built Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.InertiaGaloisSymmetry.ExistsHostAxEven (4.8s)
+✔ [23004/23170] Built GroundTheory.AutomorphicForms.HermitianOrthogonal (11s)
+✔ [23005/23170] Built GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StIntegralFormCovolume (5.1s)
+✔ [23006/23170] Built GroundTheory.LocalFields.UnitsPowers (12s)
+✔ [23007/23180] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsCommonMultiple (5.2s)
+✔ [23008/23183] Built GroundTheory.LocalFields.Integers (15s)
+⚠ [23009/23183] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogFreeZeroDensityDirichletOneModulus (29s)
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LogFreeZeroDensityDirichletOneModulus.lean:69:53: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LogFreeZeroDensityDirichletOneModulus.lean:72:24: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LogFreeZeroDensityDirichletOneModulus.lean:172:8: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LogFreeZeroDensityDirichletOneModulus.lean:179:36: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
+✔ [23010/23185] Built GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PTorusIntegralHomogeneous (7.5s)
+⚠ [23011/23189] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CoerciveOfPositiveDefinite (5.7s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CoerciveOfPositiveDefinite.lean:15:50: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CoerciveOfPositiveDefinite.lean:15:73: Variable name `i` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [23012/23190] Built Development.AutomorphicArithmetic.CoprimeRanks.AnyFramewindow (7.7s)
+✔ [23013/23190] Built Development.AutomorphicArithmetic.MeanSquareBounds.twistK (58s)
+✔ [23014/23190] Built GroundTheory.HeightsAndTheta.Heights.HermitianLattice (10s)
+✔ [23015/23193] Built Development.AutomorphicArithmetic.CharacterBoxes.FieldChi (5.6s)
+✔ [23016/23193] Built GroundTheory.AutomorphicForms.UnitaryGroupEquations (6.0s)
+⚠ [23017/23193] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogFreeZeroDensityDirichletOneModulusStatement (5.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LogFreeZeroDensityDirichletOneModulusStatement.lean:9:57: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LogFreeZeroDensityDirichletOneModulusStatement.lean:9:103: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LogFreeZeroDensityDirichletOneModulusStatement.lean:9:57: Unused tactic linter: `exact GlobalTheory.Lin.LogFree.zero_density` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LogFreeZeroDensityDirichletOneModulusStatement.lean:9:103: Unused tactic linter: `(intros; apply GlobalTheory.Lin.LogFree.zero_density <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [23018/23196] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExplicitFormulaDirichletZerosRightHalf (13s)
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExplicitFormulaDirichletZerosRightHalf.lean:75:70: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExplicitFormulaDirichletZerosRightHalf.lean:209:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [23019/23196] Built GroundTheory.AutomorphicForms.HaarSK (11s)
+✔ [23020/23196] Built GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PIntegralFormCovolume (8.5s)
+⚠ [23021/23196] Built GroundTheory.LocalFields.ExistsUnitFiltrationUnitsLeAndRangePowLe (7.6s)
+warning: src/GroundTheory/LocalFields/ExistsUnitFiltrationUnitsLeAndRangePowLe.lean:108:0: automatically included section variable(s) unused in theorem `GroundTheory.LocalField.valuation_uniformizer_ne_zero`:
+  [TopologicalSpace K]
+  [IsNonarchimedeanLocalField K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [TopologicalSpace K] [IsNonarchimedeanLocalField K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/GroundTheory/LocalFields/ExistsUnitFiltrationUnitsLeAndRangePowLe.lean:183:0: automatically included section variable(s) unused in theorem `GroundTheory.LocalField.exists_range_pow_le`:
+  [ValuativeRel K]
+  [TopologicalSpace K]
+  [IsNonarchimedeanLocalField K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ValuativeRel K] [TopologicalSpace K] [IsNonarchimedeanLocalField K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [23022/23197] Built Development.AutomorphicArithmetic.CoprimeRanks.FieldAny (5.7s)
+✔ [23023/23200] Built GroundTheory.LocalFields.UnitsGalois (6.0s)
+✔ [23024/23200] Built GroundTheory.LocalFields.FilteredSurj (6.7s)
+✔ [23025/23200] Built GroundTheory.HeightsAndTheta.Heights.HermitianSum (7.4s)
