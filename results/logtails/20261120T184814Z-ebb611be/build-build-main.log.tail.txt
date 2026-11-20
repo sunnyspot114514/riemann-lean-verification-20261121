@@ -1,33 +1,29 @@
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NeZero r] [NeZero J] in theorem ...
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/ClosedLocalOrbits/GaugeLatticeShifts/NormExpSatHolds.lean:32:6: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/SharpRestriction/GrowthBounds/PlaneCoefficients/MultidegSingle.lean:69:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.PairMembershipBlocks.LkD.ph_lab`:
-  [NeZero r]
-  [NeZero J]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NeZero r] [NeZero J] in theorem ...
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/ClosedLocalOrbits/GaugeLatticeShifts/NormExpSatHolds.lean:33:6: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/SharpRestriction/GrowthBounds/PlaneCoefficients/MultidegSingle.lean:74:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.PairMembershipBlocks.LkD.ph_wc`:
-  [NeZero r]
-  [NeZero J]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NeZero r] [NeZero J] in theorem ...
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/ClosedLocalOrbits/GaugeLatticeShifts/NormExpSatHolds.lean:27:6: Unused tactic linter: `(intro D X; exact chi_n_bilinear X)` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/SharpRestriction/GrowthBounds/PlaneCoefficients/MultidegSingle.lean:79:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.PairMembershipBlocks.LkD.PhiJ_X`:
-  [NeZero J]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NeZero J] in theorem ...
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/ClosedLocalOrbits/GaugeLatticeShifts/NormExpSatHolds.lean:32:6: Unused tactic linter: `exact Formalism.L2.SG.Pf.generic_isomorphism_holds _` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/SharpRestriction/GrowthBounds/PlaneCoefficients/MultidegSingle.lean:175:45: `MvPolynomial.mem_vars` has been deprecated: Use `MvPolynomial.mem_vars_iff_mem_support` instead
-✔ [15561/15661] Built Formalism.SharpRestriction.GrowthBounds.PlaneCoefficients.ProdRangeZmod (7.5s)
-✔ [15562/15661] Built Formalism.GL3MeanSquares.WeightedSumIntegralFormula (4.8s)
-✔ [15563/15661] Built Formalism.GL3MeanSquares.GenusMeanAsymptotics.UnimodularClassRepresentatives.RepMassEqProdPsi (5.2s)
-⚠ [15564/15661] Built Formalism.GL3MeanSquares.HookFormulaTorsion.CharacterEstimateOfHypothesis (18s)
-warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/CharacterEstimateOfHypothesis.lean:11:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/ClosedLocalOrbits/GaugeLatticeShifts/NormExpSatHolds.lean:33:6: Unused tactic linter: `exact Formalism.L2.SG.Pf.generic_isomorphism_holds _ _ _` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/ClosedLocalOrbits/GaugeLatticeShifts/NormExpSatHolds.lean:41:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/ClosedLocalOrbits/GaugeLatticeShifts/NormExpSatHolds.lean:41:6: Unused tactic linter: `(intro D X; exact chi_n_bilinear X)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [16093/16172] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeAutomorphismApprox.SecondCoordinateVectorNsmul (18s)
+✔ [16094/16172] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TameSurjectivity.RecUnram (6.2s)
+✔ [16095/16172] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HermitianFrameExistence.FrameHolds (5.7s)
+⚠ [16096/16172] Built Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.MExistsCut (5.8s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/HaarTransversals/UnitaryHaarProducts/MExistsCut.lean:41:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -35,126 +31,130 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/CharacterEstimateOfHypothesis.lean:71:55: this tactic is never executed
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/HaarTransversals/UnitaryHaarProducts/MExistsCut.lean:42:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/CharacterEstimateOfHypothesis.lean:92:56: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/CharacterEstimateOfHypothesis.lean:71:55: Unused tactic linter: `ring` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [16097/16172] Built Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.LatExistsDiff (5.8s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/HaarTransversals/UnitaryHaarProducts/LatExistsDiff.lean:12:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/CharacterEstimateOfHypothesis.lean:408:10: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/CharacterEstimateOfHypothesis.lean:408:10: Unused tactic linter: `exact integral_complex_ofReal` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/HaarTransversals/UnitaryHaarProducts/LatExistsDiff.lean:17:30: `Algebra.isUnramifiedAt_iff_of_isDedekindDomain` has been deprecated: Use `Ideal.ramificationIdx'_eq_one_iff` instead.
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/HaarTransversals/UnitaryHaarProducts/LatExistsDiff.lean:27:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [15565/15661] Built Formalism.GL3MeanSquares.PrimePairOfBoxAndWeakMeanSquareHypotheses (4.8s)
-⚠ [15566/15662] Built Formalism.SharpRestriction.GrowthBounds.PlaneCoefficients.FortyEightBoundArith (14s)
-warning: src/Formalism/SharpRestriction/GrowthBounds/PlaneCoefficients/FortyEightBoundArith.lean:15:5: Variable name `ha` is not explicitly referenced.
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _ha
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [15567/15662] Built Formalism.GL3MeanSquares.ZeroDensityBox (4.7s)
-⚠ [15568/15664] Built Formalism.GL3MeanSquares.GenusMeanAsymptotics.UnimodularClassRepresentatives.ExistsMassConstOne (9.1s)
-warning: src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/UnimodularClassRepresentatives/ExistsMassConstOne.lean:20:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLattices.Ext.L3.RankOne.trace_pos`:
-  [Module (𝓞 K) V]
-  [IsScalarTower (𝓞 K) K V]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/UnimodularClassRepresentatives/ExistsMassConstOne.lean:67:20: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/UnimodularClassRepresentatives/ExistsMassConstOne.lean:67:9: Unused tactic linter: `intro x y` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/UnimodularClassRepresentatives/ExistsMassConstOne.lean:67:20: Unused tactic linter: `simp [hh, starRingEnd_apply, mul_comm]` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [15569/15664] Built Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.ColumnPolynomialCovectorZero (6.8s)
-warning: src/Formalism/SharpRestriction/GrowthBounds/StandardPolynomials/ColumnPolynomialCovectorZero.lean:26:10: This simp argument is unused:
-  Finsupp.single_apply
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/HaarTransversals/UnitaryHaarProducts/LatExistsDiff.lean:28:8: `Ideal.ramificationIdx_eq_ramificationIdx'` has been deprecated: Use `Ideal.ramificationIdx'_eq_ramificationIdx` instead
+✔ [16098/16175] Built Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.BaseSt (5.6s)
+✔ [16099/16175] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeReferenceFrame.WFrameOf (7.2s)
+✔ [16100/16175] Built Formalism.LocalToGlobal.AdelicCompactOpens.IntAdelesCompactOpen (5.4s)
+⚠ [16101/16177] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeReferenceFrame.LocalAssemblyPrincipal (6.6s)
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeReferenceFrame/LocalAssemblyPrincipal.lean:67:4: `Nat.Coprime.mul` has been deprecated: Use `Nat.Coprime.mul_left` instead
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeReferenceFrame/LocalAssemblyPrincipal.lean:151:98: This simp argument is unused:
+  star_sub
 
 Hint: Omit it from the simp argument list.
-  [apply] simp at h2
+  [apply] simp only [hG_smul_left, hG_smul_right, hG_sub_left, hG_sub_right, star_natCast, star_star, star_smul]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/SharpRestriction/GrowthBounds/StandardPolynomials/ColumnPolynomialCovectorZero.lean:30:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.ColumnSystems.Pf.level_degree_le_prime_pow`:
-  [NeZero X.m]
-  [Fact (Nat.Prime X.p)]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NeZero X.m] [Fact (Nat.Prime X.p)] in theorem ...
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeReferenceFrame/LocalAssemblyPrincipal.lean:152:8: This simp argument is unused:
+  star_smul
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/SharpRestriction/GrowthBounds/StandardPolynomials/ColumnPolynomialCovectorZero.lean:43:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.ColumnSystems.Pf.level_degree_covector_zero`:
-  [NeZero X.m]
-  [Fact (Nat.Prime X.p)]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NeZero X.m] [Fact (Nat.Prime X.p)] in theorem ...
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hG_smul_left, hG_smul_right, hG_sub_left, hG_sub_right, star_natCast, star_star, star_sub]
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/SharpRestriction/GrowthBounds/StandardPolynomials/ColumnPolynomialCovectorZero.lean:48:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.ColumnSystems.Pf.monomial_mem_support`:
-  [NeZero X.m]
-  [Fact (Nat.Prime X.p)]
-  [Algebra (WF X.p X.n') O]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NeZero X.m] [Fact (Nat.Prime X.p)] [Algebra (WF X.p X.n') O] in theorem ...
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeReferenceFrame/LocalAssemblyPrincipal.lean:170:86: This simp argument is unused:
+  star_sub
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [15570/15664] Built Formalism.BehrendSets.StatementE (5.5s)
-⚠ [15571/15664] Built Formalism.GL3MeanSquares.GenusMeanAsymptotics.UnimodularClassRepresentatives.CoeCmbSingle (10s)
-warning: src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/UnimodularClassRepresentatives/CoeCmbSingle.lean:24:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLattices.Ext.L3.HU.crd_cmb`:
-  [NumberField K]
-  [StarRing K]
-  [DecidableEq κ]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField K] [StarRing K] [DecidableEq κ] in theorem ...
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hG_smul_left, hG_smul_right, hG_sub_left, star_natCast, star_star]
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/UnimodularClassRepresentatives/CoeCmbSingle.lean:27:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLattices.Ext.L3.HU.cmb_crd`:
-  [NumberField K]
-  [StarRing K]
-  [DecidableEq κ]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField K] [StarRing K] [DecidableEq κ] in theorem ...
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeReferenceFrame/LocalAssemblyPrincipal.lean:181:86: This simp argument is unused:
+  star_sub
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/UnimodularClassRepresentatives/CoeCmbSingle.lean:33:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLattices.Ext.L3.HU.coe_inA`:
-  [Fintype κ]
-  [DecidableEq κ]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype κ] [DecidableEq κ] in theorem ...
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hG_smul_left, hG_smul_right, hG_sub_left, star_natCast, star_star]
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/UnimodularClassRepresentatives/CoeCmbSingle.lean:38:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLattices.Ext.L3.HU.mk_eq_iff`:
-  [NumberField K]
-  [StarRing K]
-  [NumberField F]
-  [IsScalarTower (𝓞 K) K V]
-  [Fintype κ]
-  [DecidableEq κ]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField K] [StarRing K] [NumberField F] [IsScalarTower (𝓞 K) K V] [Fintype κ] [DecidableEq κ] in theorem ...
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [16102/16179] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeAutomorphismApprox.NatCastTmul (12s)
+✔ [16103/16179] Built Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.MeasCore (5.1s)
+✔ [16104/16179] Built Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.MeasInfCut (5.2s)
+⚠ [16105/16186] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeReferenceFrame.WeilBasisExistence (13s)
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeReferenceFrame/WeilBasisExistence.lean:22:17: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeReferenceFrame/WeilBasisExistence.lean:27:17: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeReferenceFrame/WeilBasisExistence.lean:32:17: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeReferenceFrame/WeilBasisExistence.lean:57:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/UnimodularClassRepresentatives/CoeCmbSingle.lean:44:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLattices.Ext.L3.HU.quotLocF_mk'`:
-  [Fintype κ]
-  [DecidableEq κ]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype κ] [DecidableEq κ] in theorem ...
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [15572/15665] Built Formalism.GL3MeanSquares.GenusMeanAsymptotics.UnimodularClassRepresentatives.AlphaNOfVdZeroUnit (7.5s)
-warning: src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/UnimodularClassRepresentatives/AlphaNOfVdZeroUnit.lean:19:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLattices.Ext.L3.unitaryAbsoluteValueBounds.abs_eta_pow`:
-  [NumberField K]
-  [StarRing K]
-  [NumberField F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField K] [StarRing K] [NumberField F] in theorem ...
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeReferenceFrame/WeilBasisExistence.lean:66:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeReferenceFrame/WeilBasisExistence.lean:103:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeReferenceFrame/WeilBasisExistence.lean:104:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeReferenceFrame/WeilBasisExistence.lean:105:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeReferenceFrame/WeilBasisExistence.lean:128:20: Try `simp at h1` instead of `simpa using h1`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeReferenceFrame/WeilBasisExistence.lean:88:15: This simp argument is unused:
+  hG_sum_right
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [φ, hG_add_right, hG_smul_right, hef, hee, Prod.fst_sum, Finset.sum_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeReferenceFrame/WeilBasisExistence.lean:89:15: This simp argument is unused:
+  hG_sum_right
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [φ, hG_add_right, hG_smul_right, hfe, hff, Prod.snd_sum, Finset.sum_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [16106/16189] Built Formalism.PeriodIntegrals.OrbitalBoundsConclusion.ScPiFrame (5.1s)
+✔ [16107/16189] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TensorFrameConstruction.InnerOfNorm (10s)
+✔ [16108/16192] Built Formalism.PeriodIntegrals.GaugeGap (5.4s)
