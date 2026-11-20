@@ -18,7 +18,7 @@ The original source checkout is separate from this repository and remains unchan
 
 The rented Ubuntu 22.04.5 container has **32 logical CPUs, a 60 GiB memory limit, and a 500 GiB data volume**. Host-wide `free` output is not the container memory limit. Everything is stored under `/root/autodl-tmp/rh-check` on that server. The operator's Windows computer controls SSH and relays network traffic in memory; project sources and build products are not saved there.
 
-Result uploads use HTTPS and the operator's existing GitHub credential through a task-specific, RAM-only Git credential-cache socket. The token is not written to disk or this repository. After the final upload succeeds, the runner stops only that task's credential-cache helper. SSH login credentials, private keys, and unrelated files are excluded from the result repository. The result checkout uses repository-local `http.proxy=''` and `http.curloptResolve=github.com:443:140.82.112.3` for its direct GitHub route; normal TLS certificate and hostname verification remain enabled. The official Lean archive is additionally checked against the upstream release digest.
+Result uploads use HTTPS and the operator's existing GitHub credential through a task-specific, RAM-only Git credential-cache socket. The token is not written to disk or this repository. After the final upload succeeds, the runner stops only that task's credential-cache helper. SSH login credentials, private keys, and unrelated files are excluded from the result repository. Pushes first use the direct GitHub route with `http.proxy=''` and the repository's `http.curloptResolve=github.com:443:140.82.112.3`. If it fails and the loopback proxy on `127.0.0.1:20081` is reachable, they retry through the operator's in-memory PC network relay, using the same repository and credentials. Normal TLS certificate and hostname verification remain enabled on both routes. The official Lean archive is additionally checked against the upstream release digest.
 
 The server's original Git 2.34.1 does not support `http.curloptResolve` and silently ignored that setting. This task uses official Git 2.56.1, installed under `BASE/tools/git-current`, to apply the direct route. The runner records the actual selected Git version and executable in the environment evidence. A timed-out Git operation kills only its own process group, including transport children.
 
@@ -30,7 +30,7 @@ The runner records these separate stages:
 4. `leanchecker --fresh -v Main`, which replays the entire import closure in a fresh environment. **This uses the same Lean kernel, not an independent implementation.**
 5. Final unchanged-source checks.
 
-This run launches with `LEAN_NUM_THREADS=4`; the build driver's fallback remains `2` when no launch setting is supplied. The actual launch setting is recorded in the environment evidence. An audit-side TOML copy adds only `weakLeanArgs = ["-j1"]` to limit each compiler's worker setting; the published project configuration and official binaries are unchanged. This is not an aggregate memory guarantee. Resource samples use cgroup limits and counters, with their scope and sampling limitations recorded.
+The current run launches with `LEAN_NUM_THREADS=16`; the build driver's fallback remains `2` when no launch setting is supplied. Earlier runs used 2 and 4. During the initial four-worker build, overall cgroup usage stayed near 18.6 GB, with about 15.3 GB of file cache and 2.24 GB of anonymous RSS. These observations supported increasing parallelism; they do not guarantee sufficient memory for later, larger import closures. Interrupted tuning runs and their evidence are retained. The actual launch setting is recorded in the environment evidence. An audit-side TOML copy adds only `weakLeanArgs = ["-j1"]` to limit each compiler's worker setting; the published project configuration and official Lean binaries are unchanged. This is not an aggregate memory guarantee. Resource samples use cgroup limits and counters, with their scope and sampling limitations recorded.
 
 The platform reports `vm.max_map_count=65530` and denied an attempt to raise it. The runner only records this limit and the process's soft/hard open-file limits; it changes no global setting. A large import closure may encounter mapping limits or additional RAM costs, which must be distinguished from a proof error. Any later scheduler tuning must be based on observed build load and recorded separately.
 
@@ -44,14 +44,14 @@ Completed `.setup.json` intermediates are deleted only after a newer successful 
 - [Evidence snapshots](results/evidence): versions, pinned source/dependency records, and the source/dependency prefetchers' explicit `result.json` provenance records.
 - [Final logs](results/final): compressed full logs and hash manifests after the run ends.
 
-The runner normally publishes every five minutes and on phase changes. If the network is unavailable, it retains server-side logs and retries. Final archive parts are at most 40 MiB; concatenate parts in manifest order, verify their SHA-256 values, and gunzip. A setup-only or statement-only success does not validate the proof. Stronger independent-checker results, if performed, will be reported separately.
+The runner starts each computation phase before its initial publication, so upload delays do not postpone the calculation. It normally publishes every five minutes and on phase changes. Each push route has a 60-second attempt limit for ordinary snapshots and a 900-second limit for the final archives; chosen routes and failures are logged. If the network is unavailable, it retains server-side logs and retries. Final archive parts are at most 40 MiB; concatenate parts in manifest order, verify their SHA-256 values, and gunzip. A setup-only or statement-only success does not validate the proof. Stronger independent-checker results, if performed, will be reported separately.
 
 ## Reproduction
 
 Install the prerequisites listed in the bootstrap script, configure a writable clone of this repository at `BASE/verification`, and provide a functioning network route. The included runner expects its loopback HTTPS proxy at `127.0.0.1:20080`; adapt that network setting for another environment.
 
 ```bash
-python3 /root/autodl-tmp/rh-check/verification/scripts/run_all.py \
+LEAN_NUM_THREADS=16 python3 /root/autodl-tmp/rh-check/verification/scripts/run_all.py \
   --base /root/autodl-tmp/rh-check
 ```
 

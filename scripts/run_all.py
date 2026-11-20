@@ -19,6 +19,7 @@ import resource
 import shlex
 import shutil
 import signal
+import socket
 import subprocess
 import sys
 import time
@@ -197,6 +198,9 @@ class Resources:
             p = self.groups["v2"][0]
             out["cgroup_memory_current_bytes"] = numeric(read(p / "memory.current"))
             out["cgroup_memory_peak_since_creation_bytes"] = numeric(read(p / "memory.peak"))
+            memory_stat = dict(line.split() for line in read(p / "memory.stat").splitlines())
+            out["cgroup_memory_stat_bytes"] = {key: numeric(memory_stat.get(key)) for key in
+                                                ("anon", "file", "file_mapped", "inactive_file")}
             stat = dict(line.split() for line in read(p / "cpu.stat").splitlines())
             out["cgroup_cpu_usage_seconds"] = int(stat["usage_usec"]) / 1e6 if "usage_usec" in stat else None
             out["cgroup_cpu_throttled_seconds"] = int(stat["throttled_usec"]) / 1e6 if "throttled_usec" in stat else None
@@ -206,6 +210,14 @@ class Resources:
                 p = self.groups["memory"][0]
                 out["cgroup_memory_current_bytes"] = numeric(read(p / "memory.usage_in_bytes"))
                 out["cgroup_memory_peak_since_creation_bytes"] = numeric(read(p / "memory.max_usage_in_bytes"))
+                memory_stat = dict(line.split() for line in read(p / "memory.stat").splitlines())
+                out["cgroup_memory_stat_bytes"] = {key: numeric(memory_stat.get(key)) for key in
+                                                    ("total_rss", "total_cache", "total_mapped_file", "total_inactive_file")}
+                out["cgroup_memory_failcnt"] = numeric(read(p / "memory.failcnt"))
+                oom_control = read(p / "memory.oom_control")
+                out["cgroup_memory_oom_control"] = ({key: numeric(value) for key, value in
+                                                      (line.split() for line in oom_control.splitlines())}
+                                                     if oom_control else None)
             if "cpuacct" in self.groups:
                 value = numeric(read(self.groups["cpuacct"][0] / "cpuacct.usage"))
                 out["cgroup_cpu_usage_seconds"] = value / 1e9 if value is not None else None
@@ -314,9 +326,9 @@ class Runner:
         with (self.run / "resources.jsonl").open("a") as out:
             out.write(json.dumps(self.status["resources"]) + "\n")
 
-    def git(self, *args):
+    def git(self, *args, timeout=180):
         try:
-            proc = run_process_group(["git", "-C", str(self.repo), *args], timeout=180)
+            proc = run_process_group(["git", "-C", str(self.repo), *args], timeout=timeout)
         except subprocess.TimeoutExpired as exc:
             with (self.audit / "publication.log").open("a") as out:
                 out.write(utc() + " git " + args[0] + " timed out; task process group killed\n" + (exc.output or "") + "\n")
@@ -326,6 +338,24 @@ class Runner:
         if proc.returncode:
             raise RuntimeError("git " + args[0] + " exited " + str(proc.returncode))
         return proc.stdout
+
+    def push_results(self, final=False):
+        timeout = 900 if final else 60
+        with (self.audit / "publication.log").open("a") as out:
+            out.write(utc() + f" push route: direct (repository DNS override; timeout {timeout}s)\n")
+        try:
+            return self.git("-c", "http.proxy=", "push", "origin", "HEAD:main", timeout=timeout)
+        except (OSError, RuntimeError, subprocess.TimeoutExpired) as direct_error:
+            try:
+                with socket.create_connection(("127.0.0.1", 20081), timeout=1):
+                    pass
+            except OSError:
+                with (self.audit / "publication.log").open("a") as out:
+                    out.write(utc() + " push fallback unavailable: loopback proxy 127.0.0.1:20081 is not reachable\n")
+                raise direct_error
+            with (self.audit / "publication.log").open("a") as out:
+                out.write(utc() + f" push route: in-memory PC relay via http://127.0.0.1:20081 (timeout {timeout}s)\n")
+            return self.git("-c", "http.proxy=http://127.0.0.1:20081", "push", "origin", "HEAD:main", timeout=timeout)
 
     def log_sources(self):
         sources = [("runner", p) for p in self.run.glob("*.log")]
@@ -417,7 +447,7 @@ class Runner:
                          "commit", "--only", "-m", "Verification " + self.status["state"] + " " + utc(), "--", *paths)
             elif changed != 0:
                 raise RuntimeError("git diff failed")
-            self.git("push", "origin", "HEAD:main")
+            self.push_results(final=final)
             self.last_push = time.monotonic()
             write_json(self.audit / "publication-status.json", {"last_success_utc": utc(), "final": final, "run_id": self.run_id})
             return True
@@ -452,11 +482,12 @@ class Runner:
 
     def run_phase(self, name, command):
         self.status.update(state="running", runner_stage=name)
-        self.refresh()
-        self.publish()
         with (self.run / (name + ".stdout.log")).open("wb") as output:
             self.child = subprocess.Popen(command, stdout=output, stderr=subprocess.STDOUT,
                                           env=os.environ.copy(), start_new_session=True)
+            # Begin computation before potentially slow result-upload networking.
+            self.refresh()
+            self.publish()
             stop_deadline = None
             while self.child.poll() is None:
                 self.refresh()
@@ -473,7 +504,8 @@ class Runner:
         self.child = None
         self.status[name + "_exit_code"] = result
         self.refresh()
-        self.publish()
+        # The next phase's initial snapshot (or the final snapshot) includes this
+        # completion, without blocking the next computation on an extra upload.
         return result
 
     def work(self):
