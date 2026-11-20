@@ -1,48 +1,141 @@
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/ToroidalCompactification/VtPull.lean:106:8: Unused tactic linter: `(
-  simp only [mulT, Category.assoc, whiskerRight_snd, lift_snd]
-  induction N with
-  | zero => simp
-  | succ n ih => simp [pow_succ, comp_mul, ih])` does nothing
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/ToroidalCompactification/VtPull.lean:126:8: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsAuxiliaryPlaceFamilyAtLevelMono.lean:349:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsAuxiliaryPlaceFamilyAtLevelMono.lean:373:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsAuxiliaryPlaceFamilyAtLevelMono.lean:374:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsAuxiliaryPlaceFamilyAtLevelMono.lean:408:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [35890/35938] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaloisEmbeddingCount (5.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaloisEmbeddingCount.lean:12:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaloisEmbeddingCount.lean:13:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaloisEmbeddingCount.lean:14:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [35891/35938] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPlaceEmb (8.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPlaceEmb.lean:24:0: automatically included section variable(s) unused in theorem `GlobalTheory.EmbThroughCompletion.norm_int_le_one`:
+  [NumberField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPlaceEmb.lean:119:17: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [35892/35938] Built Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.CrystallineSubrepresentation (15s)
+warning: src/Development/AbelianVarietyTheory/BlockTheory/NonGaloisCusps/CrystallineSubrepresentation.lean:57:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/BlockTheory/NonGaloisCusps/CrystallineSubrepresentation.lean:61:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [35893/35938] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NoInvTateDualStatement (5.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NoInvTateDualStatement.lean:11:59: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/ToroidalCompactification/VtPull.lean:126:8: Unused tactic linter: `simpa using hz1` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NoInvTateDualStatement.lean:11:107: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NoInvTateDualStatement.lean:11:59: Unused tactic linter: `exact GlobalTheory.TateDualInv.noInv_tateDual` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/ToroidalCompactification/VtPull.lean:138:0: automatically included section variable(s) unused in theorem `ReciprocityTheory.ChartRestriction.G.Geo.Tor.exists_pullRel`:
-  [GrpObj A]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [GrpObj A] in theorem ...
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NoInvTateDualStatement.lean:11:107: Unused tactic linter: `(intros; apply GlobalTheory.TateDualInv.noInv_tateDual <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/ToroidalCompactification/VtPull.lean:202:10: This simp argument is unused:
-  ← Over.comp_left
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [35894/35940] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsHeckeLEqToricSumNeZero (5.2s)
+⚠ [35895/35940] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameInertiaElementActsByScalarStatement (4.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TameInertiaElementActsByScalarStatement.lean:8:84: this tactic is never executed
 
-Hint: Omit it from the simp argument list.
-  [apply] simp
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TameInertiaElementActsByScalarStatement.lean:8:157: this tactic is never executed
 
-Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TameInertiaElementActsByScalarStatement.lean:8:84: Unused tactic linter: `exact GlobalTheory.TwSys.TameScalar.exists_scalar_tmat_of_tame_inertia` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/ToroidalCompactification/VtPull.lean:264:0: automatically included section variable(s) unused in theorem `ReciprocityTheory.ChartRestriction.G.Geo.Tor.vtOver_pull`:
-  [IsCommMonObj A]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsCommMonObj A] in theorem ...
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TameInertiaElementActsByScalarStatement.lean:8:157: Unused tactic linter: `(intros;
+  apply GlobalTheory.TwSys.TameScalar.exists_scalar_tmat_of_tame_inertia <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [35435/35489] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.LevelActionShortThetaSeriesRootOfUnityMul (30s)
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/LevelActionShortThetaSeriesRootOfUnityMul.lean:245:134: Variable name `hj` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [35896/35940] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ResidualSelmerBaseChangeCoefficientField (18s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ResidualSelmerBaseChangeCoefficientField.lean:39:17: `AddSubmonoidClass.coe_finset_sum` has been deprecated: Use `AddSubmonoidClass.coe_finsetSum` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ResidualSelmerBaseChangeCoefficientField.lean:100:11: Variable name `m` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hj
+  [apply] _m
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [35436/35489] Built Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LargeFor (7.9s)
-⚠ [35437/35489] Built Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsPlaceModelPlaceMap (15s)
-warning: src/Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/IsPlaceModelPlaceMap.lean:161:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ResidualSelmerBaseChangeCoefficientField.lean:100:13: Variable name `m'` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _m'
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ResidualSelmerBaseChangeCoefficientField.lean:100:30: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ResidualSelmerBaseChangeCoefficientField.lean:101:26: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ResidualSelmerBaseChangeCoefficientField.lean:168:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ResidualSelmerBaseChangeCoefficientField.lean:169:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -50,107 +143,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [35438/35492] Built Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.RowsExhaust (5.8s)
-⚠ [35439/35492] Built Formalism.SharpRestriction.Divisibility.GeneratorPowers.ConjugateMinimaInstance (7.7s)
-warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/ConjugateMinimaInstance.lean:35:84: This simp argument is unused:
-  Polynomial.aeval_C
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [map_add, map_sub, map_pow, map_one, map_natCast, Polynomial.aeval_X, algebraMap_int_eq, eq_intCast,
-    Int.cast_add, Int.cast_natCast, Int.cast_one]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/ConjugateMinimaInstance.lean:36:6: This simp argument is unused:
-  algebraMap_int_eq
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [map_add, map_sub, map_pow, map_one, map_natCast, Polynomial.aeval_X, Polynomial.aeval_C,
-    eq_intCast, Int.cast_add, Int.cast_natCast, Int.cast_one]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/ConjugateMinimaInstance.lean:36:25: This simp argument is unused:
-  eq_intCast
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [map_add, map_sub, map_pow, map_one, map_natCast, Polynomial.aeval_X, Polynomial.aeval_C,
-    algebraMap_int_eq, Int.cast_add, Int.cast_natCast, Int.cast_one]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/ConjugateMinimaInstance.lean:36:37: This simp argument is unused:
-  Int.cast_add
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [map_add, map_sub, map_pow, map_one, map_natCast, Polynomial.aeval_X, Polynomial.aeval_C,
-    algebraMap_int_eq, eq_intCast, Int.cast_natCast, Int.cast_one]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/ConjugateMinimaInstance.lean:36:51: This simp argument is unused:
-  Int.cast_natCast
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [map_add, map_sub, map_pow, map_one, map_natCast, Polynomial.aeval_X, Polynomial.aeval_C,
-    algebraMap_int_eq, eq_intCast, Int.cast_add, Int.cast_one]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/ConjugateMinimaInstance.lean:36:69: This simp argument is unused:
-  Int.cast_one
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [map_add, map_sub, map_pow, map_one, map_natCast, Polynomial.aeval_X, Polynomial.aeval_C,
-    algebraMap_int_eq, eq_intCast, Int.cast_add, Int.cast_natCast]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/ConjugateMinimaInstance.lean:22:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/ConjugateMinimaInstance.lean:48:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-✔ [35440/35492] Built Formalism.SharpRestriction.Divisibility.GeneratorPowers.GramSpace (8.1s)
-✔ [35441/35492] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUnivCharWithUnivChar (6.9s)
-✖ [35442/35494] Building Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.OverIx (2.6s)
-trace: .> LEAN_PATH=/root/autodl-tmp/rh-check/source/.lake/packages/Cli/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/batteries/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/Qq/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/aesop/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/proofwidgets/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/importGraph/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/plausible/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/mathlib/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/build/lib/lean /root/autodl-tmp/rh-check/tools/lean-4.33.1-linux/bin/lean -j1 --tstack=400000 /root/autodl-tmp/rh-check/source/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean -o /root/autodl-tmp/rh-check/source/.lake/build/lib/lean/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.olean -i /root/autodl-tmp/rh-check/source/.lake/build/lib/lean/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.ilean -c /root/autodl-tmp/rh-check/source/.lake/build/ir/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.c --setup /root/autodl-tmp/rh-check/source/.lake/build/ir/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.setup.json --json
-error: src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean:1:0: failed to read file '/root/autodl-tmp/rh-check/source/.lake/build/lib/lean/Development/AbelianVarietyTheory/Proofs/GenericRegularity/IsNoetherianRingTensor.olean'
-error: Lean exited with code 1
-✔ [35444/35496] Built Development.AbelianVarietyTheory.Proofs.GenericRegularity.SectionEqZeroOfGenericFramedPointValues (14s)
-⚠ [35445/35498] Built Formalism.SharpRestriction.Divisibility.GeneratorPowers.FrRatio (27s)
-warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/FrRatio.lean:44:70: This simp argument is unused:
-  Ideal.Quotient.lift_mk
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [jetCopy, jetMap, jetTrunc, liftJet, Ideal.Quotient.mkₐ_eq_mk, Ideal.Quotient.factor_mk,
-    MvPolynomial.bind₁_X_right]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/FrRatio.lean:45:30: This simp argument is unused:
-  MvPolynomial.bind₁_X_right
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [jetCopy, jetMap, jetTrunc, liftJet, Ideal.Quotient.mkₐ_eq_mk, Ideal.Quotient.lift_mk,
-    Ideal.Quotient.factor_mk]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [35446/35500] Built Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.ResidualConditionOnLinkedSides (5.1s)
-✔ [35447/35500] Built Formalism.SharpRestriction.LevelLetterCocycles.BlochKatoDuality (8.9s)
-✔ [35448/35501] Built Development.AbelianVarietyTheory.Proofs.UnitaryExistence.HkRelFrOfTransportIff (12s)
-⚠ [35449/35509] Built Formalism.SharpRestriction.Divisibility.GeneratorPowers.GmHomAt (9.0s)
-warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/GmHomAt.lean:70:28: Unused tactic linter: `rfl` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/GmHomAt.lean:73:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.ModuliIntegralCharts.H1.ExpGI.gm_homAt`:
-  [StarRing (𝓞 E)]
-  [Algebra ℚ S]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [StarRing (𝓞 E)] [Algebra ℚ S] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [35450/35509] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.WeightOnDatum (6.2s)
-⚠ [35452/35510] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SurjConj (6.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SurjConj.lean:18:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ResidualSelmerBaseChangeCoefficientField.lean:171:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -158,3 +151,10 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ResidualSelmerBaseChangeCoefficientField.lean:197:12: `AddSubmonoidClass.coe_finset_sum` has been deprecated: Use `AddSubmonoidClass.coe_finsetSum` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ResidualSelmerBaseChangeCoefficientField.lean:160:5: Variable name `hk` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hk
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
