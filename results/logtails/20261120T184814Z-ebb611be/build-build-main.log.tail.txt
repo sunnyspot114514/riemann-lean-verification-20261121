@@ -1,75 +1,45 @@
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:23:14: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:23:14: Unused tactic linter: `group` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:40:0: automatically included section variable(s) unused in theorem `Formalism.GaloisIrreducibility.CycleCommutantPowers.conj_key`:
-  [Fintype α]
-  [DecidableEq α]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype α] [DecidableEq α] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:55:20: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:58:20: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:63:20: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:55:20: Unused tactic linter: `simp [mul_assoc]` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:58:20: Unused tactic linter: `simp [mul_assoc]` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:63:20: Unused tactic linter: `simp only [mul_inv_rev, inv_inv, mul_assoc]` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:68:0: automatically included section variable(s) unused in theorem `Formalism.GaloisIrreducibility.CycleCommutantPowers.eq_zpow_on_support`:
-  [Fintype α]
-  [DecidableEq α]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype α] [DecidableEq α] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:90:0: automatically included section variable(s) unused in theorem `Formalism.GaloisIrreducibility.CycleCommutantPowers.exists_agree`:
-  [Fintype α]
-  [DecidableEq α]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype α] [DecidableEq α] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:107:8: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:107:8: Unused tactic linter: `(simp only [Function.Embedding.smul_apply, Subgroup.smul_def, Perm.smul_def] at h;
-  exact h)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [10519/10615] Built Formalism.GaloisIrreducibility.GaloisIrreducibilityProofs.OrbitSubSum (5.5s)
-✔ [10520/10615] Built Formalism.PadicSubsetSums.StableGradedCounts.ZCircleCharExtends (5.4s)
-⚠ [10521/10615] Built Formalism.PadicSubsetSums.StableGradedCounts.CharpolyFactorAnnihilator (6.9s)
-warning: src/Formalism/PadicSubsetSums/StableGradedCounts/CharpolyFactorAnnihilator.lean:28:38: This simp argument is unused:
-  Matrix.one_apply
-
 Hint: Omit it from the simp argument list.
-  [apply] simp [h]
+  [apply] simp [hb, Ne.symm hb]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [10522/10615] Built Formalism.ResultantValuation.ResultantAdjugateProofs.Window (5.8s)
-⚠ [10523/10615] Built Formalism.PadicSubsetSums.StableGradedCounts.ZGoodCuspidal (5.5s)
-warning: src/Formalism/PadicSubsetSums/StableGradedCounts/ZGoodCuspidal.lean:34:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Formalism/PadicSubsetSums/StableGradedCounts/ZGoodCuspidal.lean:35:2: Try this: 
+warning: src/Formalism/SharpRestriction/GrowthBounds/RootWeights/SpecialiseGenericMatrixInverse.lean:40:86: This simp argument is unused:
+  Ne.symm hb
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.diagonal_apply, hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/SharpRestriction/GrowthBounds/RootWeights/SpecialiseGenericMatrixInverse.lean:42:12: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/SharpRestriction/GrowthBounds/RootWeights/SpecialiseGenericMatrixInverse.lean:43:59: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hb, Ne.symm hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/SharpRestriction/GrowthBounds/RootWeights/SpecialiseGenericMatrixInverse.lean:43:82: This simp argument is unused:
+  hb
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.diagonal_apply, Ne.symm hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/SharpRestriction/GrowthBounds/RootWeights/SpecialiseGenericMatrixInverse.lean:45:12: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [11017/11153] Built Formalism.SharpRestriction.GrowthBounds.RootWeights.InvariantProjectionDenominatorBound (6.6s)
+⚠ [11018/11153] Built Formalism.SharpRestriction.GrowthBounds.RootWeights.DividedPowerMonomialExpansion (6.2s)
+warning: src/Formalism/SharpRestriction/GrowthBounds/RootWeights/DividedPowerMonomialExpansion.lean:53:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -77,84 +47,114 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/PadicSubsetSums/StableGradedCounts/ZGoodCuspidal.lean:46:10: This simp argument is unused:
-  Polynomial.natDegree_pow
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [hd1, hhdeg]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [10524/10617] Built Formalism.PadicSubsetSums.StableGradedCounts.FactorOverLocalSubalgebra (6.0s)
-✔ [10525/10617] Built Formalism.PadicSubsetSums.CentralIdempotents.FactorOverLocalSubalgebraMonic (6.6s)
-⚠ [10526/10617] Built Formalism.GaloisIrreducibility.GaloisIrreducibilityProofs.RestrictRoots (9.5s)
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/RestrictRoots.lean:18:21: `LinearMap.restrict_coe_apply` has been deprecated: Use `LinearMap.coe_restrict_apply` instead
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/RestrictRoots.lean:18:60: `LinearMap.restrict_coe_apply` has been deprecated: Use `LinearMap.coe_restrict_apply` instead
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/RestrictRoots.lean:54:6: `LinearMap.restrict_coe_apply` has been deprecated: Use `LinearMap.coe_restrict_apply` instead
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/RestrictRoots.lean:68:8: `LinearMap.restrict_coe_apply` has been deprecated: Use `LinearMap.coe_restrict_apply` instead
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/RestrictRoots.lean:77:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/RestrictRoots.lean:149:57: `LinearMap.restrict_coe_apply` has been deprecated: Use `LinearMap.coe_restrict_apply` instead
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/RestrictRoots.lean:174:16: `LinearMap.restrict_coe_apply` has been deprecated: Use `LinearMap.coe_restrict_apply` instead
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/RestrictRoots.lean:186:20: `LinearMap.restrict_coe_apply` has been deprecated: Use `LinearMap.coe_restrict_apply` instead
-✔ [10527/10617] Built Formalism.ResultantValuation.PrimePairDyadicDisjointAlt (4.0s)
-⚠ [10528/10620] Built Formalism.ResultantValuation.ResultantAdjugateProofs.Laplace (7.3s)
-warning: src/Formalism/ResultantValuation/ResultantAdjugateProofs/Laplace.lean:90:12: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/ResultantValuation/ResultantAdjugateProofs/Laplace.lean:90:2: Unused tactic linter: `all_goals rfl` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/ResultantValuation/ResultantAdjugateProofs/Laplace.lean:103:57: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead
-warning: src/Formalism/ResultantValuation/ResultantAdjugateProofs/Laplace.lean:103:80: `Fin.coe_castAdd` has been deprecated: Use `Fin.val_castAdd` instead
-warning: src/Formalism/ResultantValuation/ResultantAdjugateProofs/Laplace.lean:104:4: `Fin.coe_natAdd` has been deprecated: Use `Fin.val_natAdd` instead
-warning: src/Formalism/ResultantValuation/ResultantAdjugateProofs/Laplace.lean:104:87: This simp argument is unused:
-  mul_one
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Fin.prod_univ_add, Finset.prod_mul_distrib, Fin.lt_iff_val_lt_val, Fin.coe_castAdd, Fin.coe_natAdd,
-    add_lt_add_iff_left, hlt, hnlt, ↓reduceIte, Finset.prod_const_one, one_mul, mul_assoc]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [10529/10623] Built Formalism.GaussJetBounds.GaussJetProofs.OneRow (6.1s)
-✔ [10530/10623] Built Formalism.AlgebraicWeights.IsAlgWeight (8.5s)
-⚠ [10531/10623] Built Formalism.SizeWindowBrackets.ChainSlopeWindows.OneLeThresholdMulPowers (30s)
-warning: src/Formalism/SizeWindowBrackets/ChainSlopeWindows/OneLeThresholdMulPowers.lean:257:0: automatically included section variable(s) unused in theorem `Formalism.LFunctionChainParameters.PrimeWindowSizeBounds.Facts.r2`:
-  F
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit F in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [10532/10623] Built Formalism.LocalToGlobal.HermitianColumns.CocycleZeroMemInvariants (56s)
-warning: src/Formalism/LocalToGlobal/HermitianColumns/CocycleZeroMemInvariants.lean:82:12: Variable name `v` is not explicitly referenced.
+⚠ [11019/11153] Built Lemmata.GeneralBFactSecondTer.Imports (5.3s)
+warning: src/Lemmata/GeneralBFactSecondTer/Imports.lean:6:34: Variable name `inst` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _v
+  [apply] _inst
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [10533/10625] Built Formalism.ResultantValuation.ResultantAdjugateProofs.Mobius (4.0s)
-✔ [10534/10625] Built Formalism.ResultantValuation.ResultantAdjugateProofs.Parabolic (6.0s)
-⚠ [10535/10625] Built Formalism.GaloisIrreducibility.GaloisIrreducibilityProofs.NoSolvableOf (5.3s)
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/NoSolvableOf.lean:13:2: Try this: 
-  haveI̵
+⚠ [11020/11153] Built Formalism.SharpRestriction.GrowthBounds.FrobeniusPaths.LiftSubstitutionCoeffDivisible (10s)
+warning: src/Formalism/SharpRestriction/GrowthBounds/FrobeniusPaths/LiftSubstitutionCoeffDivisible.lean:55:6: `MvPolynomial.coeff_X'` has been deprecated: Use `MvPolynomial.coeff_X` instead
+warning: src/Formalism/SharpRestriction/GrowthBounds/FrobeniusPaths/LiftSubstitutionCoeffDivisible.lean:67:32: `MvPolynomial.coeff_X'` has been deprecated: Use `MvPolynomial.coeff_X` instead
+warning: src/Formalism/SharpRestriction/GrowthBounds/FrobeniusPaths/LiftSubstitutionCoeffDivisible.lean:288:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.LemmaBAlt.Theta_X`:
+  [IsDiscreteValuationRing O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDiscreteValuationRing O] in theorem ...
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/SharpRestriction/GrowthBounds/FrobeniusPaths/LiftSubstitutionCoeffDivisible.lean:292:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.LemmaBAlt.Theta_C`:
+  [IsDiscreteValuationRing O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDiscreteValuationRing O] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/NoSolvableOf.lean:14:8: `solvable_of_solvable_injective` has been deprecated: Use `Group.isSolvable_of_isSolvable_injective` instead
-✔ [10536/10626] Built Formalism.GaloisIrreducibility.GaloisIrreducibilityProofs.BlockBoundOfOrbits (6.0s)
-⚠ [10537/10626] Built Formalism.GaloisIrreducibility.GaloisIrreducibilityProofs.IrredOf (5.6s)
-warning: src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/IrredOf.lean:31:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/SharpRestriction/GrowthBounds/FrobeniusPaths/LiftSubstitutionCoeffDivisible.lean:296:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.LemmaBAlt.liftSubst_X_vec`:
+  [IsDiscreteValuationRing O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDiscreteValuationRing O] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/SharpRestriction/GrowthBounds/FrobeniusPaths/LiftSubstitutionCoeffDivisible.lean:314:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.LemmaBAlt.liftSubst_X_cov`:
+  [IsDiscreteValuationRing O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDiscreteValuationRing O] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/SharpRestriction/GrowthBounds/FrobeniusPaths/LiftSubstitutionCoeffDivisible.lean:395:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.LemmaBAlt.InWj_zero_iff`:
+  [IsDiscreteValuationRing O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDiscreteValuationRing O] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/SharpRestriction/GrowthBounds/FrobeniusPaths/LiftSubstitutionCoeffDivisible.lean:401:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.LemmaBAlt.mem_intSub`:
+  [IsDiscreteValuationRing O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDiscreteValuationRing O] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [11021/11153] Built Formalism.SharpRestriction.GrowthBounds.RootWeights.ExistsHighestCoordinateFunctional (8.1s)
+warning: src/Formalism/SharpRestriction/GrowthBounds/RootWeights/ExistsHighestCoordinateFunctional.lean:119:11: `Submodule.linearProjOfIsCompl` has been deprecated: Use `Submodule.projectionOnto` instead
+warning: src/Formalism/SharpRestriction/GrowthBounds/RootWeights/ExistsHighestCoordinateFunctional.lean:123:6: `Submodule.linearProjOfIsCompl_apply_left` has been deprecated: Use `Submodule.projectionOnto_apply_left` instead
+warning: src/Formalism/SharpRestriction/GrowthBounds/RootWeights/ExistsHighestCoordinateFunctional.lean:127:25: `Submodule.linearProjOfIsCompl_apply_right` has been deprecated: Use `Submodule.projectionOnto_apply_right` instead
+warning: src/Formalism/SharpRestriction/GrowthBounds/RootWeights/ExistsHighestCoordinateFunctional.lean:139:36: `Submodule.linearProjOfIsCompl_apply_left` has been deprecated: Use `Submodule.projectionOnto_apply_left` instead
+warning: src/Formalism/SharpRestriction/GrowthBounds/RootWeights/ExistsHighestCoordinateFunctional.lean:143:15: `Submodule.linearProjOfIsCompl_ker` has been deprecated: Use `Submodule.ker_projectionOnto` instead
+warning: src/Formalism/SharpRestriction/GrowthBounds/RootWeights/ExistsHighestCoordinateFunctional.lean:134:10: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/SharpRestriction/GrowthBounds/RootWeights/ExistsHighestCoordinateFunctional.lean:134:10: Unused tactic linter: `simp [e, LinearEquiv.toSpanNonzeroSingleton_apply]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [11022/11153] Built Formalism.ThetaLogCoordinates.DualWeylCoordinates.DefsObj (7.8s)
+⚠ [11023/11181] Built Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.QnPtEmpty (6.9s)
+warning: src/Formalism/ThetaLogCoordinates/DualWeylCoordinates/DualWeylProofs/QnPtEmpty.lean:39:35: This simp argument is unused:
+  hc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [qn_pt, hs, h1, h2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/ThetaLogCoordinates/DualWeylCoordinates/DualWeylProofs/QnPtEmpty.lean:98:24: This simp argument is unused:
+  Finsupp.filter_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h0, qn_off, h1]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/ThetaLogCoordinates/DualWeylCoordinates/DualWeylProofs/QnPtEmpty.lean:100:35: This simp argument is unused:
+  Finsupp.filter_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [qn_pt, qn_low, qn_off]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/ThetaLogCoordinates/DualWeylCoordinates/DualWeylProofs/QnPtEmpty.lean:102:35: This simp argument is unused:
+  Finsupp.filter_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [qn_pt, qn_low, qn_off, hac, h1]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [11024/11206] Built Formalism.SharpRestriction.GrowthBounds.FrobeniusPaths.ExteriorWedgeSqZero (9.7s)
+warning: src/Formalism/SharpRestriction/GrowthBounds/FrobeniusPaths/ExteriorWedgeSqZero.lean:196:14: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [11025/11208] Built Formalism.SharpRestriction.GrowthBounds.RootWeights.WeightProjectionDiagonalApplyEqSmul (7.8s)
+warning: src/Formalism/SharpRestriction/GrowthBounds/RootWeights/WeightProjectionDiagonalApplyEqSmul.lean:77:94: This simp argument is unused:
+  map_sub
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LinearMap.zero_apply, map_zero, sub_zero, zero_sub, homRepresentation_apply, map_neg] at h1 h2 ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/SharpRestriction/GrowthBounds/RootWeights/WeightProjectionDiagonalApplyEqSmul.lean:78:8: This simp argument is unused:
+  map_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LinearMap.zero_apply, map_zero, sub_zero, zero_sub, homRepresentation_apply, map_sub] at h1 h2 ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
