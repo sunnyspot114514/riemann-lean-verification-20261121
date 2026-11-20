@@ -1,160 +1,160 @@
-  [NumberField E]
-  [StarRing E]
+warning: src/Formalism/LocalToGlobal/GroupLattices/FockModels/SwRowDivZero.lean:49:77: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [h1, h2, if_true, if_false, sw_rowGen_X, map_zero, mul_zero, add_zero, Polynomial.derivative_add,
+    Polynomial.derivative_C, Polynomial.derivative_mul, Polynomial.derivative_X, zero_add, one_mul, mul_one,
+    Polynomial.derivative_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/LocalToGlobal/GroupLattices/FockModels/SwRowDivZero.lean:51:52: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [h1, h2, if_true, if_false, sw_rowGen_X, map_zero, mul_zero, zero_mul, add_zero,
+    Polynomial.derivative_add, Polynomial.derivative_C, Polynomial.derivative_mul, Polynomial.derivative_X, zero_add,
+    one_mul, Polynomial.derivative_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/LocalToGlobal/GroupLattices/FockModels/SwRowDivZero.lean:51:61: This simp argument is unused:
+  Polynomial.derivative_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [h1, h2, if_true, if_false, sw_rowGen_X, map_zero, mul_zero, zero_mul, add_zero,
+    Polynomial.derivative_add, Polynomial.derivative_C, Polynomial.derivative_mul, Polynomial.derivative_X, zero_add,
+    one_mul, mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/LocalToGlobal/GroupLattices/FockModels/SwRowDivZero.lean:81:10: This simp argument is unused:
+  MvPolynomial.smul_eq_C_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [14373/14456] Built Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FrobeniusLiftNorms.ExpansionsAtPlaces (5.3s)
+⚠ [14374/14456] Built Formalism.SharpRestriction.GrowthBounds.TensorLatticeBounds.DataLoc (8.3s)
+warning: src/Formalism/SharpRestriction/GrowthBounds/TensorLatticeBounds/DataLoc.lean:50:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.G.Inhab.colSpan_one`:
+  [IsDomain W]
+  [IsDiscreteValuationRing W]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [StarRing E] in theorem ...
+  omit [IsDomain W] [IsDiscreteValuationRing W] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/ClosedLocalOrbits/GaugeLatticeShifts/TermDefPf.lean:431:0: automatically included section variable(s) unused in theorem `Formalism.L2.SG.Pf.isUpUni_mul`:
-  [NumberField E]
-  [StarRing E]
+⚠ [14375/14456] Built Formalism.SharpRestriction.GrowthBounds.SegmentDegree.LateVectorsDistinctTops (8.1s)
+warning: src/Formalism/SharpRestriction/GrowthBounds/SegmentDegree/LateVectorsDistinctTops.lean:105:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Formalism/SharpRestriction/GrowthBounds/SegmentDegree/LateVectorsDistinctTops.lean:133:10: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [14376/14456] Built Formalism.LocalToGlobal.GroupLattices.FockModels.NablaLTwEqMap (8.8s)
+warning: src/Formalism/LocalToGlobal/GroupLattices/FockModels/NablaLTwEqMap.lean:86:0: automatically included section variable(s) unused in theorem `Formalism.L2.G.Model.map_map_alg`:
+  [IsDomain R']
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [StarRing E] in theorem ...
+  omit [IsDomain R'] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/ClosedLocalOrbits/GaugeLatticeShifts/TermDefPf.lean:452:0: automatically included section variable(s) unused in theorem `Formalism.L2.SG.Pf.zhatOM_mul`:
-  [NumberField E]
-  [StarRing E]
+warning: src/Formalism/LocalToGlobal/GroupLattices/FockModels/NablaLTwEqMap.lean:163:0: automatically included section variable(s) unused in theorem `Formalism.L2.G.Model.bc_tensorLat`:
+  [IsDomain R']
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [StarRing E] in theorem ...
+  omit [IsDomain R'] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [13914/13969] Built Formalism.SharpRestriction.InertJacobiLevels.ExtraNum (6.2s)
-✔ [13915/13969] Built Formalism.SharpRestriction.InertJacobiLevels.ExtraZero (6.0s)
-✔ [13916/13969] Built Formalism.SharpRestriction.InertJacobiLevels.ExtraNch (5.7s)
-⚠ [13917/13969] Built Formalism.SharpRestriction.InertJacobiLevels.ExtraTheta (6.8s)
-warning: src/Formalism/SharpRestriction/InertJacobiLevels/ExtraTheta.lean:25:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.Inhab.sum_extZ`:
-  [NumberField E]
-  [StarRing E]
+warning: src/Formalism/LocalToGlobal/GroupLattices/FockModels/NablaLTwEqMap.lean:210:0: automatically included section variable(s) unused in theorem `Formalism.L2.G.Model.bc_colSpan`:
+  [IsDomain R']
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [StarRing E] in theorem ...
+  omit [IsDomain R'] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [13918/13969] Built Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.InHHFinal (5.7s)
-⚠ [13919/13969] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HermitianClassFiniteness.CTFromBlocks (21s)
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/HermitianClassFiniteness/CTFromBlocks.lean:24:4: this tactic is never executed
+✔ [14377/14460] Built Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FrobeniusLiftNorms.EKernel (5.9s)
+✔ [14378/14460] Built Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementJ (5.3s)
+✔ [14379/14460] Built Formalism.SharpRestriction.GrowthBounds.MultisetValuation.IntRPsubst (7.2s)
+✔ [14380/14460] Built Formalism.ThetaLogCoordinates.UniformThetaSubstitution.KOneConsequence (5.2s)
+⚠ [14381/14460] Built Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.Letter (6.4s)
+warning: src/Formalism/LocalToGlobal/GroupLattices/FockModels/FlatModels/Letter.lean:79:6: `Matrix.det_of_lowerTriangular` has been deprecated: Use `Matrix.det_of_isLowerTriangular` instead
+✔ [14382/14460] Built Formalism.SharpRestriction.GrowthBounds.MultisetValuation.NmNEqZero (6.1s)
+✔ [14383/14460] Built Formalism.SharpRestriction.GrowthBounds.MultisetValuation.KernelProductForm (5.9s)
+✔ [14384/14460] Built Formalism.SharpRestriction.GrowthBounds.SegmentDegree.DiscriminantNonzeroModUniformiser (5.2s)
+✔ [14385/14460] Built Formalism.SharpRestriction.GrowthBounds.MultisetValuation.HkEsymmSmul (6.5s)
+✔ [14386/14460] Built Formalism.SharpRestriction.GrowthBounds.TensorLatticeBounds.ExistsHypothesesNonempty (6.2s)
+⚠ [14387/14460] Built Formalism.SharpRestriction.GrowthBounds.SegmentDegree.DivMulSubLeDivSubDiv (8.0s)
+warning: src/Formalism/SharpRestriction/GrowthBounds/SegmentDegree/DivMulSubLeDivSubDiv.lean:26:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Formalism/SharpRestriction/GrowthBounds/SegmentDegree/DivMulSubLeDivSubDiv.lean:31:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Formalism/SharpRestriction/GrowthBounds/SegmentDegree/DivMulSubLeDivSubDiv.lean:43:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.SelectionLemmas.Pf.eZ_lt_mul_Qc`:
+  [NeZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero K] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/HermitianClassFiniteness/CTFromBlocks.lean:24:4: Unused tactic linter: `(simp [sigR, inclE]; rfl)` does nothing
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/SharpRestriction/GrowthBounds/SegmentDegree/DivMulSubLeDivSubDiv.lean:67:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.SelectionLemmas.Pf.sum_la_lt`:
+  [NeZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero K] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/HermitianClassFiniteness/CTFromBlocks.lean:38:14: This simp argument is unused:
-  Matrix.one_apply
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/SharpRestriction/GrowthBounds/SegmentDegree/DivMulSubLeDivSubDiv.lean:67:19: Variable name `hX` is not explicitly referenced.
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [cT, hij, Ne.symm hij]
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hX
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/HermitianClassFiniteness/CTFromBlocks.lean:133:38: This simp argument is unused:
-  Matrix.one_apply
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [14388/14460] Built Formalism.LocalToGlobal.GroupLattices.FockModels.SwRowGenMonomial (7.3s)
+✔ [14389/14460] Built Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.EdgeLatOfG (7.5s)
+✔ [14390/14460] Built Formalism.SharpRestriction.GrowthBounds.ScaleEdges.ManyEdges (6.1s)
+✔ [14391/14466] Built Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FrobeniusLiftNorms.EChain (6.5s)
+✔ [14392/14470] Built Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementGK (5.7s)
+✔ [14393/14471] Built Formalism.SharpRestriction.GrowthBounds.SegmentDegree.LamMZero (13s)
+✔ [14394/14476] Built Formalism.SharpRestriction.GrowthBounds.SegmentDegree.GoodPathWeightAlt (5.1s)
+✔ [14395/14492] Built Formalism.SharpRestriction.GrowthBounds.MultisetValuation.NmPinvOfPlace (5.7s)
+⚠ [14396/14492] Built Formalism.SharpRestriction.GrowthBounds.MultisetValuation.InParamMap (7.0s)
+warning: src/Formalism/SharpRestriction/GrowthBounds/MultisetValuation/InParamMap.lean:17:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.FormalGroupSystem.Pf.lgF_const`:
+  hp
+  [Algebra (K0 p) K']
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hp [Algebra (K0 p) K'] in theorem ...
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.toBlocks₂₁, fr.MA_inl]
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [14397/14492] Built Formalism.LocalToGlobal.GroupLattices.FockModels.TransposeWords.FockR (4.8s)
+⚠ [14398/14506] Built Formalism.LocalToGlobal.GroupLattices.FockModels.LPBase (12s)
+warning: src/Formalism/LocalToGlobal/GroupLattices/FockModels/LPBase.lean:146:0: automatically included section variable(s) unused in theorem `Formalism.L2.G.Model.bc_extO`:
+  [IsDomain O']
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDomain O'] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/HermitianClassFiniteness/CTFromBlocks.lean:172:4: This simp argument is unused:
-  Matrix.mul_one
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/LocalToGlobal/GroupLattices/FockModels/LPBase.lean:152:0: automatically included section variable(s) unused in theorem `Formalism.L2.G.Model.bc_LeAt`:
+  [IsDomain O']
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDomain O'] in theorem ...
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Matrix.one_mul, Matrix.zero_mul, Matrix.mul_zero, add_zero, zero_add] at h12 h22
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/LocalToGlobal/GroupLattices/FockModels/LPBase.lean:244:0: automatically included section variable(s) unused in theorem `Formalism.L2.G.Model.lpAt_nondom`:
+  [IsDomain W]
+  [IsDiscreteValuationRing W]
+  [IsDomain O]
+  [IsDiscreteValuationRing O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDomain W] [IsDiscreteValuationRing W] [IsDomain O] [IsDiscreteValuationRing O] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/HermitianClassFiniteness/CTFromBlocks.lean:180:41: This simp argument is unused:
-  Units.val_mul
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Frame.MA, Subgroup.coe_mul, Matrix.mul_assoc]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [13920/13969] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TermsFiniteAtPoint.TermsAtFiniteOfFrameOpShortFin (5.3s)
-✔ [13921/13969] Built Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LevGapFacts (11s)
-⚠ [13922/13969] Built Formalism.HermitianCurvature.HeisenbergConjugationMeasurePreserving (19s)
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:444:53: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:447:53: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:450:53: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:456:51: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:459:51: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:457:58: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:457:58: Unused tactic linter: `ring` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:510:31: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:511:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:510:31: Unused tactic linter: `simp only [h]` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:534:12: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:555:12: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:576:6: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:576:6: Unused tactic linter: `simp [Complex.norm_exp_ofReal_mul_I]` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:581:30: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:583:30: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:581:30: Unused tactic linter: `ring` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:583:30: Unused tactic linter: `ring` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:616:15: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:629:15: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:631:72: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:617:60: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:618:60: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:631:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:616:15: Unused tactic linter: `first
-| exact hE
-| positivity` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:629:15: Unused tactic linter: `first
-| exact hdiv
-| positivity` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:631:72: Unused tactic linter: `omega` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:674:19: This simp argument is unused:
-  Bool.false_eq_true
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [↓reduceIte] at hl ⊢
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:669:19: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:820:23: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:813:17: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Formalism/HermitianCurvature/HeisenbergConjugationMeasurePreserving.lean:820:23: Unused tactic linter: `ring` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
