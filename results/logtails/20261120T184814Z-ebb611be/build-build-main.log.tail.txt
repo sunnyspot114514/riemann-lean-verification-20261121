@@ -1,8 +1,33 @@
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+  apply _root_.GlobalTheory.ModularAutomorphism.unimodular_of_contracted <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/WeightVectorsSpanDense.lean:19:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HaarSubgroupBiInvariant.lean:32:4: Unused tactic linter: `(intros;
+  apply @_root_.GlobalTheory.ModularAutomorphism.unimodular_of_contracted <;>
+    first
+    | assumption
+    | infer_instance)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HaarSubgroupBiInvariant.lean:33:4: Unused tactic linter: `(intros; exact _root_.GlobalTheory.ModularAutomorphism.unimodular_of_contracted ..)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [25930/26019] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitarySubgroupChartAlmostIsometricNearOne (8.6s)
+⚠ [25931/26019] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsNilpotentAlgebraIsotropicFlagUnipotentRadiStatement (5.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsNilpotentAlgebraIsotropicFlagUnipotentRadiStatement.lean:7:64: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsNilpotentAlgebraIsotropicFlagUnipotentRadiStatement.lean:7:117: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsNilpotentAlgebraIsotropicFlagUnipotentRadiStatement.lean:7:64: Unused tactic linter: `exact GlobalTheory.RadicalAlg.exists_algebra_flagN` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsNilpotentAlgebraIsotropicFlagUnipotentRadiStatement.lean:7:117: Unused tactic linter: `(intros; apply GlobalTheory.RadicalAlg.exists_algebra_flagN <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [25932/26024] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsRiemannianHaarOnSubgroupSigmaFiniteUnique (7.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsRiemannianHaarOnSubgroupSigmaFiniteUnique.lean:78:42: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsRiemannianHaarOnSubgroupSigmaFiniteUnique.lean:100:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -10,28 +35,30 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/WeightVectorsSpanDense.lean:33:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsRiemannianHaarOnSubgroupSigmaFiniteUnique.lean:101:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsRiemannianHaarOnSubgroupSigmaFiniteUnique.lean:102:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsRiemannianHaarOnSubgroupSigmaFiniteUnique.lean:108:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
 If you'd rather continue using `push_neg` in your project, you can implement it as follows:
 ```
 open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-⚠ [25372/25480] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorusWeightDecompositionStatement (4.0s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TorusWeightDecompositionStatement.lean:7:61: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TorusWeightDecompositionStatement.lean:7:111: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TorusWeightDecompositionStatement.lean:7:61: Unused tactic linter: `exact GlobalTheory.CompanionTheory.RgDsTor.torW` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TorusWeightDecompositionStatement.lean:7:111: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.RgDsTor.torW <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [25373/25480] Built CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.HilbertSpaceModels.HilbertLowestWeightOfInputs (13s)
-warning: src/CompanionTheory/RealGroups/DiscreteSeries/DiscreteSeriesClassification/HilbertSpaceModels/HilbertLowestWeightOfInputs.lean:100:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsRiemannianHaarOnSubgroupSigmaFiniteUnique.lean:113:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -39,7 +66,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/CompanionTheory/RealGroups/DiscreteSeries/DiscreteSeriesClassification/HilbertSpaceModels/HilbertLowestWeightOfInputs.lean:101:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsRiemannianHaarOnSubgroupSigmaFiniteUnique.lean:115:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -47,114 +74,87 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/CompanionTheory/RealGroups/DiscreteSeries/DiscreteSeriesClassification/HilbertSpaceModels/HilbertLowestWeightOfInputs.lean:197:4: Try this: 
-  haveI̵
+✔ [25933/26024] Built Development.AutomorphicArithmetic.IntegralCasts.IsOpenStabOfMemNhds (5.9s)
+✔ [25934/26026] Built CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.CoverExistsOf (6.6s)
+⚠ [25935/26026] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.TendstoRescaledIntegralOfDensityOne (8.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/TendstoRescaledIntegralOfDensityOne.lean:83:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/TendstoRescaledIntegralOfDensityOne.lean:86:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [25936/26028] Built Development.AutomorphicArithmetic.IntegralCasts.RegAlgFam (5.7s)
+⚠ [25937/26028] Built Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsOpenKerFinIdele (8.7s)
+warning: src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/IsOpenKerFinIdele.lean:107:0: automatically included section variable(s) unused in theorem `GlobalTheory.CuspRep.exists_lin`:
+  [Fintype ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] in theorem ...
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [25374/25480] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BetaWeightOfTorusFactsStatement (5.0s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/BetaWeightOfTorusFactsStatement.lean:7:71: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/BetaWeightOfTorusFactsStatement.lean:7:131: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/BetaWeightOfTorusFactsStatement.lean:7:71: Unused tactic linter: `exact GlobalTheory.CompanionTheory.TorusSymbol.betaWeight` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/BetaWeightOfTorusFactsStatement.lean:7:131: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.TorusSymbol.betaWeight <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [25375/25483] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorusRestrictionRepresentationStatement (5.0s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TorusRestrictionRepresentationStatement.lean:7:65: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TorusRestrictionRepresentationStatement.lean:7:119: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [25938/26028] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitarySubgroupChartSurjectiveNearOrigin (8.9s)
+⚠ [25939/26028] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsRiemannianHaarUnitaryJSubgroupOfAlgebraStatement (5.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsRiemannianHaarUnitaryJSubgroupOfAlgebraStatement.lean:7:65: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TorusRestrictionRepresentationStatement.lean:7:65: Unused tactic linter: `exact GlobalTheory.CompanionTheory.RgTorus.rhoTorus` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TorusRestrictionRepresentationStatement.lean:7:119: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.RgTorus.rhoTorus <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [25376/25483] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CharacterFormulaOfDiscreteSeriesDatum (10s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CharacterFormulaOfDiscreteSeriesDatum.lean:231:28: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-⚠ [25377/25483] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactExhaustionStatementStatement (4.0s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CompactExhaustionStatementStatement.lean:7:64: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsRiemannianHaarUnitaryJSubgroupOfAlgebraStatement.lean:7:119: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CompactExhaustionStatementStatement.lean:7:117: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsRiemannianHaarUnitaryJSubgroupOfAlgebraStatement.lean:7:65: Unused tactic linter: `exact GlobalTheory.GaugeSubExists.exists_isGaugeSub` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsRiemannianHaarUnitaryJSubgroupOfAlgebraStatement.lean:7:119: Unused tactic linter: `(intros; apply GlobalTheory.GaugeSubExists.exists_isGaugeSub <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [25940/26030] Built CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.OrbitDerivatives.EtaleClosedPointLiftsSimpleRootsMonic (16s)
+⚠ [25941/26030] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitarySubgroupChartAlmostIsometricNearOneStatement (5.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/UnitarySubgroupChartAlmostIsometricNearOneStatement.lean:8:67: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CompactExhaustionStatementStatement.lean:7:64: Unused tactic linter: `exact GlobalTheory.CompanionTheory.WordFam.exhaust` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CompactExhaustionStatementStatement.lean:7:117: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.WordFam.exhaust <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [25378/25483] Built Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.SchurOrthogonalitySquareIntegrable (9.6s)
-warning: src/Development/AbelianVarietyTheory/PublishedTheorems/TwistedTraceFormula/SchurOrthogonalitySquareIntegrable.lean:105:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/PublishedTheorems/TwistedTraceFormula/SchurOrthogonalitySquareIntegrable.lean:124:10: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AbelianVarietyTheory/PublishedTheorems/TwistedTraceFormula/SchurOrthogonalitySquareIntegrable.lean:134:8: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AbelianVarietyTheory/PublishedTheorems/TwistedTraceFormula/SchurOrthogonalitySquareIntegrable.lean:134:39: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AbelianVarietyTheory/PublishedTheorems/TwistedTraceFormula/SchurOrthogonalitySquareIntegrable.lean:212:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/PublishedTheorems/TwistedTraceFormula/SchurOrthogonalitySquareIntegrable.lean:213:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [25379/25485] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TransferStatementStatement (5.1s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TransferStatementStatement.lean:7:71: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/UnitarySubgroupChartAlmostIsometricNearOneStatement.lean:8:123: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TransferStatementStatement.lean:7:131: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/UnitarySubgroupChartAlmostIsometricNearOneStatement.lean:8:67: Unused tactic linter: `exact GlobalTheory.GaugeSubLip.chart_almost_isometric` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/UnitarySubgroupChartAlmostIsometricNearOneStatement.lean:8:123: Unused tactic linter: `(intros; apply GlobalTheory.GaugeSubLip.chart_almost_isometric <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [25942/26030] Built CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HaarExistence (5.0s)
+warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/StableLattices/HaarExistence.lean:28:6: `LinearEquiv.ofLinear` has been deprecated: Use `LinearEquiv.ofLinearMap` instead
+warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/StableLattices/HaarExistence.lean:41:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [25943/26033] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsRiemannianHaarOnSubgroupSigmaFiniteUniqueStatement (5.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsRiemannianHaarOnSubgroupSigmaFiniteUniqueStatement.lean:8:61: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TransferStatementStatement.lean:7:71: Unused tactic linter: `exact GlobalTheory.CompanionTheory.RgKeyTransfer.transfer` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TransferStatementStatement.lean:7:131: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.RgKeyTransfer.transfer <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [25380/25485] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LowDegreeAlgebraFactsStatement (5.1s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LowDegreeAlgebraFactsStatement.lean:7:64: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsRiemannianHaarOnSubgroupSigmaFiniteUniqueStatement.lean:8:111: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LowDegreeAlgebraFactsStatement.lean:7:117: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsRiemannianHaarOnSubgroupSigmaFiniteUniqueStatement.lean:8:61: Unused tactic linter: `exact GlobalTheory.GaugeSubHaar.isGaugeSub_haar` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsRiemannianHaarOnSubgroupSigmaFiniteUniqueStatement.lean:8:111: Unused tactic linter: `(intros; apply GlobalTheory.GaugeSubHaar.isGaugeSub_haar <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [25944/26034] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharacterUnramifiedAeAndExistsLevel (6.8s)
+⚠ [25945/26036] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.TendstoRescaledIntegralOfDensityOneStatement (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/TendstoRescaledIntegralOfDensityOneStatement.lean:8:73: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LowDegreeAlgebraFactsStatement.lean:7:64: Unused tactic linter: `exact GlobalTheory.CompanionTheory.GlLowest.lowAlg` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/TendstoRescaledIntegralOfDensityOneStatement.lean:8:135: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/TendstoRescaledIntegralOfDensityOneStatement.lean:8:73: Unused tactic linter: `exact GlobalTheory.tendsto_rescaled_integral_of_density_one` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LowDegreeAlgebraFactsStatement.lean:7:117: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.GlLowest.lowAlg <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/TendstoRescaledIntegralOfDensityOneStatement.lean:8:135: Unused tactic linter: `(intros;
+  apply GlobalTheory.tendsto_rescaled_integral_of_density_one <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [25946/26038] Built Development.AbelianVarietyTheory.Definitions.Foundations.SimpleSum (6.3s)
+✔ [25947/26041] Built Development.AutomorphicArithmetic.IntegralCasts.Imports (4.9s)
+✔ [25948/26041] Built CompanionTheory.RealGroups.FormalDegrees.ArchimedeanFormalDegrees.NormIndOfSteps (6.4s)
+✔ [25949/26042] Built CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.OmegaScalar (8.1s)
+⚠ [25950/26042] Built CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.HeckeAlgebraActions.HeckeUnitTensors.CompLeftSmulOne (8.6s)
+warning: src/CompanionTheory/RealGroups/DiscreteSeries/DiscreteSeriesClassification/DiscreteSeriesExhaustion/HeckeAlgebraActions/HeckeUnitTensors/CompLeftSmulOne.lean:82:12: `continuous_finset_prod` has been deprecated: Use `continuous_finsetProd` instead
