@@ -1,87 +1,13 @@
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/UniformizationProofs/ExpandsFOfIntegral.lean:46:0: automatically included section variable(s) unused in theorem `GlobalTheory.ThetaSpecialise.secVal_add'`:
-  [GrpObj A]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [GrpObj A] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/UniformizationProofs/ExpandsFOfIntegral.lean:51:0: automatically included section variable(s) unused in theorem `GlobalTheory.ThetaSpecialise.secVal_smul'`:
-  [GrpObj A]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [GrpObj A] in theorem ...
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [31476/31527] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsZpowMulIsUnitOfMem (9.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsZpowMulIsUnitOfMem.lean:125:8: Overlapping instance parameters in `norm_const`:
-
-⚠️ `[IsDomain V]` and `[IsDiscreteValuationRing V]` each imply `[Nontrivial V]`.
-💡️ Of these, `[IsDomain V]` and `[IsDiscreteValuationRing V]` may be removed.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-✔ [31477/31531] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.CharEqZeroOfIsProper (8.0s)
-✔ [31478/31531] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.BasisSeparates (8.4s)
-⚠ [31479/31533] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusCoordUnitAndSectionEqExpansionStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/TorusCoordUnitAndSectionEqExpansionStatement.lean:15:66: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/TorusCoordUnitAndSectionEqExpansionStatement.lean:15:121: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/TorusCoordUnitAndSectionEqExpansionStatement.lean:15:66: Unused tactic linter: `exact GlobalTheory.ZH.IntegralSum.gtN_zero_and_parAt` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/TorusCoordUnitAndSectionEqExpansionStatement.lean:15:121: Unused tactic linter: `(intros; apply GlobalTheory.ZH.IntegralSum.gtN_zero_and_parAt <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [31480/31535] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaSectionsIndependentOnClosedFibreStatement (5.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaSectionsIndependentOnClosedFibreStatement.lean:15:66: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaSectionsIndependentOnClosedFibreStatement.lean:15:121: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaSectionsIndependentOnClosedFibreStatement.lean:15:66: Unused tactic linter: `exact GlobalTheory.ZH.IndepFib.indep_on_closed_fibre` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaSectionsIndependentOnClosedFibreStatement.lean:15:121: Unused tactic linter: `(intros; apply GlobalTheory.ZH.IndepFib.indep_on_closed_fibre <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [31481/31538] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaParameterOfThetaParameterMulDegreeStatement (5.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaParameterOfThetaParameterMulDegreeStatement.lean:14:268: Variable name `l` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _l
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaParameterOfThetaParameterMulDegreeStatement.lean:15:65: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaParameterOfThetaParameterMulDegreeStatement.lean:15:119: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaParameterOfThetaParameterMulDegreeStatement.lean:15:65: Unused tactic linter: `exact GlobalTheory.ParameterRoot.parAt_of_parAt_mul` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaParameterOfThetaParameterMulDegreeStatement.lean:15:119: Unused tactic linter: `(intros; apply GlobalTheory.ParameterRoot.parAt_of_parAt_mul <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [31482/31566] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsTorsionPullback (10s)
-✔ [31483/31570] Built Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UnifAssembly (5.5s)
-⚠ [31484/31574] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.LinearIndependentThetaBasisGeometricFibreStatement (5.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/LinearIndependentThetaBasisGeometricFibreStatement.lean:13:70: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/LinearIndependentThetaBasisGeometricFibreStatement.lean:13:129: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/LinearIndependentThetaBasisGeometricFibreStatement.lean:13:70: Unused tactic linter: `exact GlobalTheory.ZH.FibreIndep.linearIndependent_moved` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/LinearIndependentThetaBasisGeometricFibreStatement.lean:13:129: Unused tactic linter: `(intros; apply GlobalTheory.ZH.FibreIndep.linearIndependent_moved <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [31485/31578] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniformisationCompleteLocalDomainPrime (64s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsUniformisationCompleteLocalDomainPrime.lean:201:4: Try this: 
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [32121/32195] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.QuotientIsFiniteLocallyOfFiniteTypeDescend (5.3s)
+✔ [32122/32195] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.MemMapKerOfOneTmulEqZeroOfFlat (6.3s)
+⚠ [32123/32195] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSpreadThetaLevelAbelianSchemeAway (9.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAway.lean:86:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -89,15 +15,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsUniformisationCompleteLocalDomainPrime.lean:209:8: Overlapping instance parameters in `exists_unif`:
-
-⚠️ `[IsDomain R]` and `[IsLocalRing R]` each imply `[Nontrivial R]`.
-💡️ Of these, `[IsDomain R]` and `[IsLocalRing R]` may be removed.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-✔ [31486/31578] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsOperators (10s)
-⚠ [31487/31578] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ClassicalPointsRegular (6.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ClassicalPointsRegular.lean:18:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAway.lean:87:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -105,7 +23,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ClassicalPointsRegular.lean:19:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAway.lean:96:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -113,7 +31,15 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ClassicalPointsRegular.lean:60:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAway.lean:97:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAway.lean:98:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -121,7 +47,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ClassicalPointsRegular.lean:61:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAway.lean:113:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -129,32 +55,106 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [31488/31578] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AbelianSectionsProportionalOfCoordinatesStatement (6.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/AbelianSectionsProportionalOfCoordinatesStatement.lean:13:63: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAway.lean:114:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAway.lean:115:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [32124/32201] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.FlatOfTameDescent (8.6s)
+⚠ [32125/32203] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsDifferentiableOnVerticalVectorFieldStatement (5.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsDifferentiableOnVerticalVectorFieldStatement.lean:14:78: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/AbelianSectionsProportionalOfCoordinatesStatement.lean:13:115: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsDifferentiableOnVerticalVectorFieldStatement.lean:14:145: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/AbelianSectionsProportionalOfCoordinatesStatement.lean:13:63: Unused tactic linter: `exact GlobalTheory.ZH.SecProp.proportional_of_crd` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsDifferentiableOnVerticalVectorFieldStatement.lean:14:78: Unused tactic linter: `exact GlobalTheory.KS.VertField.exists_differentiableOn_vertical` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/AbelianSectionsProportionalOfCoordinatesStatement.lean:13:115: Unused tactic linter: `(intros; apply GlobalTheory.ZH.SecProp.proportional_of_crd <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsDifferentiableOnVerticalVectorFieldStatement.lean:14:145: Unused tactic linter: `(intros;
+  apply GlobalTheory.KS.VertField.exists_differentiableOn_vertical <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [31489/31581] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.BasisSeparatesStatement (5.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/BasisSeparatesStatement.lean:15:62: this tactic is never executed
+⚠ [32126/32203] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.PushforwardPolarisationBundleInvertibleOnModelStatement (5.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/PushforwardPolarisationBundleInvertibleOnModelStatement.lean:15:64: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/BasisSeparatesStatement.lean:15:113: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/PushforwardPolarisationBundleInvertibleOnModelStatement.lean:15:117: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/BasisSeparatesStatement.lean:15:62: Unused tactic linter: `exact GlobalTheory.ZH.AdaptedSep.basis_separates` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/PushforwardPolarisationBundleInvertibleOnModelStatement.lean:15:64: Unused tactic linter: `exact GlobalTheory.PushInv.pushInvertible_of_model` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/BasisSeparatesStatement.lean:15:113: Unused tactic linter: `(intros; apply GlobalTheory.ZH.AdaptedSep.basis_separates <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/PushforwardPolarisationBundleInvertibleOnModelStatement.lean:15:117: Unused tactic linter: `(intros; apply GlobalTheory.PushInv.pushInvertible_of_model <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [31490/31583] Built Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsUniqueLiftSpecOfIsLocalizationAway (8.3s)
-✔ [31491/31583] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.FrameUnit (6.0s)
-✔ [31492/31583] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.EqOfValFGeneric (6.8s)
+✔ [32127/32203] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsProjOverCompFinite (5.3s)
+⚠ [32128/32203] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.ModuliLevelQuotientByFiniteGroupStatement (5.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ModuliLevelQuotientByFiniteGroupStatement.lean:16:62: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ModuliLevelQuotientByFiniteGroupStatement.lean:16:113: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ModuliLevelQuotientByFiniteGroupStatement.lean:16:62: Unused tactic linter: `exact GlobalTheory.LevQuot.exists_level_quotient` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ModuliLevelQuotientByFiniteGroupStatement.lean:16:113: Unused tactic linter: `(intros; apply GlobalTheory.LevQuot.exists_level_quotient <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [32129/32203] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.QuotientIsReducedIsNormalFlat (5.4s)
+✔ [32130/32203] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.LbIsoPullOfIsConst (5.7s)
+⚠ [32131/32203] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.LevelChangeExtendsBaseModelStatement (5.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/LevelChangeExtendsBaseModelStatement.lean:16:59: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/LevelChangeExtendsBaseModelStatement.lean:16:107: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/LevelChangeExtendsBaseModelStatement.lean:16:59: Unused tactic linter: `exact GlobalTheory.Models.extendsAut_of_above` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/LevelChangeExtendsBaseModelStatement.lean:16:107: Unused tactic linter: `(intros; apply GlobalTheory.Models.extendsAut_of_above <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [32132/32203] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsGenOfQuotientOfRigid (10s)
+⚠ [32133/32203] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.QuotientIsFiniteLocallyOfFiniteTypeDescendStatement (5.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/QuotientIsFiniteLocallyOfFiniteTypeDescendStatement.lean:12:78: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/QuotientIsFiniteLocallyOfFiniteTypeDescendStatement.lean:12:145: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/QuotientIsFiniteLocallyOfFiniteTypeDescendStatement.lean:12:78: Unused tactic linter: `exact GlobalTheory.quotient_isFinite_locallyOfFiniteType_descend` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/QuotientIsFiniteLocallyOfFiniteTypeDescendStatement.lean:12:145: Unused tactic linter: `(intros;
+  apply GlobalTheory.quotient_isFinite_locallyOfFiniteType_descend <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [32134/32207] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSecOnNonvanishingOfTameQuotient (14s)
+⚠ [32135/32208] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSpreadThetaLevelAbelianSchemeAwayStatement (5.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAwayStatement.lean:14:60: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAwayStatement.lean:14:109: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAwayStatement.lean:14:60: Unused tactic linter: `exact GlobalTheory.SpreadGeneric.exists_spread` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAwayStatement.lean:14:109: Unused tactic linter: `(intros; apply GlobalTheory.SpreadGeneric.exists_spread <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [32136/32208] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.LocDerRegularCoeff (10s)
