@@ -1,70 +1,55 @@
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CharacterTheory/IndRestrictEqCardFixedByMulStatement.lean:7:125: Unused tactic linter: `(intros; apply GlobalTheory.BI.ind_restrict_eq_card_fixedBy_mul <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [21206/21390] Built Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsMirClass (6.9s)
+✔ [21207/21390] Built Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.FinrankMumfordBundleCechHomologyOrigin (8.6s)
+✔ [21208/21390] Built Development.AbelianVarietyTheory.Definitions.Divisors.SplitDoublingNBlock (6.0s)
+⚠ [21209/21390] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GroupAlgebraTraceIdempotentAndIrreducibleDegreeStatement (5.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GroupAlgebraTraceIdempotentAndIrreducibleDegreeStatement.lean:9:43: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/ExceptionalGroupG2/ExistenceG2/FormulaF.lean:168:4: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GroupAlgebraTraceIdempotentAndIrreducibleDegreeStatement.lean:9:75: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/ExceptionalGroupG2/ExistenceG2/FormulaF.lean:166:4: Unused tactic linter: `exact Submodule.inner_orthogonalProjection_eq_of_mem_left ⟨a, ha⟩ y` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GroupAlgebraTraceIdempotentAndIrreducibleDegreeStatement.lean:9:43: Unused tactic linter: `exact GlobalTheory.GLq.trIdem` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/ExceptionalGroupG2/ExistenceG2/FormulaF.lean:167:4: Unused tactic linter: `exact inner_orthogonalProjection_eq_of_mem_left ⟨a, ha⟩ y` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GroupAlgebraTraceIdempotentAndIrreducibleDegreeStatement.lean:9:75: Unused tactic linter: `(intros; apply GlobalTheory.GLq.trIdem <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/ExceptionalGroupG2/ExistenceG2/FormulaF.lean:168:4: Unused tactic linter: `simp` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [20723/20829] Built Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.EqCompSectionOfSurjectiveAppTop (5.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/AbelianSchemeLawProofs/EqCompSectionOfSurjectiveAppTop.lean:45:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [20724/20829] Built ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.SectionScalarValuation (8.1s)
-⚠ [20725/20832] Built Development.AbelianVarietyTheory.Definitions.QuasicoherentCohomology.IsQuasiRegularSeqSelfIffLocalizationMaximal (18s)
-warning: src/Development/AbelianVarietyTheory/Definitions/QuasicoherentCohomology/IsQuasiRegularSeqSelfIffLocalizationMaximal.lean:352:35: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-⚠ [20726/20833] Built Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.LinearIndependentOfCommSmul (6.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/AbelianSchemeLawProofs/LinearIndependentOfCommSmul.lean:75:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/AbelianSchemeLawProofs/LinearIndependentOfCommSmul.lean:110:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-✔ [20727/20834] Built ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.SectionDivision (5.9s)
-⚠ [20728/20834] Built ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.SectionArithmetic (6.9s)
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/FirstCohomology/SectionArithmetic.lean:57:13: This simp argument is unused:
-  Category.assoc
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/FirstCohomology/SectionArithmetic.lean:135:16: this tactic is never executed
+✔ [21210/21390] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CanonListLength (5.3s)
+✔ [21211/21390] Built ReciprocityTheory.AnalyticForms.RegularLocalRings.BijOnClosedPointsOfIsIso (6.5s)
+⚠ [21212/21390] Built Development.AbelianVarietyTheory.Proofs.CharacterTheory.ExistsIsCharEqAddOfPairNeZeroStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/CharacterTheory/ExistsIsCharEqAddOfPairNeZeroStatement.lean:7:72: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/FirstCohomology/SectionArithmetic.lean:135:16: Unused tactic linter: `simp` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/CharacterTheory/ExistsIsCharEqAddOfPairNeZeroStatement.lean:7:133: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CharacterTheory/ExistsIsCharEqAddOfPairNeZeroStatement.lean:7:72: Unused tactic linter: `exact GlobalTheory.BI.exists_isChar_eq_add_of_pair_ne_zero` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [20729/20835] Built Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.IsFieldGlobalFnsSpec (7.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/AbelianSchemeLawProofs/IsFieldGlobalFnsSpec.lean:19:2: Try this: 
-  letI̵
+warning: src/Development/AbelianVarietyTheory/Proofs/CharacterTheory/ExistsIsCharEqAddOfPairNeZeroStatement.lean:7:133: Unused tactic linter: `(intros; apply GlobalTheory.BI.exists_isChar_eq_add_of_pair_ne_zero <;> assumption)` does nothing
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [21213/21390] Built Development.AbelianVarietyTheory.Definitions.Divisors.BadElt (6.1s)
+⚠ [21214/21390] Built Development.AbelianVarietyTheory.Proofs.CharacterTheory.ExistsIrrCharAddStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/CharacterTheory/ExistsIrrCharAddStatement.lean:7:54: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/AbelianSchemeLawProofs/IsFieldGlobalFnsSpec.lean:20:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CharacterTheory/ExistsIrrCharAddStatement.lean:7:97: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CharacterTheory/ExistsIrrCharAddStatement.lean:7:54: Unused tactic linter: `exact GlobalTheory.BI.exists_irrChar_add` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CharacterTheory/ExistsIrrCharAddStatement.lean:7:97: Unused tactic linter: `(intros; apply GlobalTheory.BI.exists_irrChar_add <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [21215/21390] Built Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GreenCuspidalIff (5.3s)
+⚠ [21216/21390] Built Development.AbelianVarietyTheory.Proofs.CharacterTheory.ExistsAbelianByPrimePowerNotDvdCardFixedBy (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/CharacterTheory/ExistsAbelianByPrimePowerNotDvdCardFixedBy.lean:40:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -72,83 +57,38 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/AbelianSchemeLawProofs/IsFieldGlobalFnsSpec.lean:41:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [20730/20835] Built Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsLineBundleExtension (13s)
-warning: src/Development/AbelianVarietyTheory/Proofs/AbelianSchemeLawProofs/ExistsLineBundleExtension.lean:98:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/AbelianSchemeLawProofs/ExistsLineBundleExtension.lean:99:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [20731/20835] Built Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsUniqueWeilIs (8.6s)
-✔ [20732/20835] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.ExceptionalGroupG2.ExistenceG2.SigLamMemLpOfNe (7.2s)
-✔ [20733/20840] Built Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.InvariantFunctionsDescend (6.9s)
-✔ [20734/20842] Built ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.ProdNeg (6.7s)
-⚠ [20735/20842] Built ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.WeightedChartPullback.CancelSecAct (13s)
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ExtensionDescent/ChartPullbacks/WeightedChartPullback/CancelSecAct.lean:32:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ExtensionDescent/ChartPullbacks/WeightedChartPullback/CancelSecAct.lean:37:4: This simp argument is unused:
-  reassoc_of% hq
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [act, Category.assoc, IsMonHom.mul_hom, CartesianMonoidalCategory.lift_map_assoc, hq,
-    reassoc_of% hf, MonObj.lift_comp_one_left]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ExtensionDescent/ChartPullbacks/WeightedChartPullback/CancelSecAct.lean:40:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ExtensionDescent/ChartPullbacks/WeightedChartPullback/CancelSecAct.lean:48:0: automatically included section variable(s) unused in theorem `ReciprocityTheory.ChartRestriction.G.Out.WeightPf.sec_snd`:
-  [GrpObj G]
-  [IsCommMonObj G]
+⚠ [21217/21390] Built ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjDehomA (13s)
+warning: src/ReciprocityTheory/AnalyticForms/RegularLocalRings/ProjDehomA.lean:32:0: automatically included section variable(s) unused in theorem `ReciprocityTheory.AnForm.R.prod_update_eq`:
+  [(k : K) → Fintype (ι k)]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [GrpObj G] [IsCommMonObj G] in theorem ...
+  omit [(k : K) → Fintype (ι k)] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [20736/20843] Built Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.IsWeaklyRegularIffIsQuasiRegularSeqOfIsLocalRing (9.6s)
-✔ [20737/20843] Built Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.WeilIsIffCommIsOfAndLiftSubsingleton (6.5s)
-✔ [20738/20844] Built ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.SquareUnits (6.8s)
-⚠ [20739/20844] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.ExceptionalGroupG2.ExistenceG2.IsDSSigLam (5.2s)
-warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/ExceptionalGroupG2/ExistenceG2/IsDSSigLam.lean:41:6: this tactic is never executed
+warning: src/ReciprocityTheory/AnalyticForms/RegularLocalRings/ProjDehomA.lean:53:0: automatically included section variable(s) unused in theorem `ReciprocityTheory.AnForm.R.segreMap_X`:
+  [(k : K) → Fintype (ι k)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [(k : K) → Fintype (ι k)] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/ExceptionalGroupG2/ExistenceG2/IsDSSigLam.lean:41:6: Unused tactic linter: `(
-  unfold Hlam closGen
-  exact (Submodule.isClosed_topologicalClosure _).completeSpace_coe)` does nothing
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/ReciprocityTheory/AnalyticForms/RegularLocalRings/ProjDehomA.lean:57:0: automatically included section variable(s) unused in theorem `ReciprocityTheory.AnForm.R.mk_eq_of_segreMap_eq`:
+  [(k : K) → Fintype (ι k)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [(k : K) → Fintype (ι k)] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [20740/20844] Built Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ThetaGrpActsLinearly (12s)
-warning: src/Development/AbelianVarietyTheory/Proofs/AbelianSchemeLawProofs/ThetaGrpActsLinearly.lean:178:10: `LinearEquiv.ofLinear` has been deprecated: Use `LinearEquiv.ofLinearMap` instead
-⚠ [20741/20844] Built Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.IsAffineHomFromSpecResidueField (8.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/AbelianSchemeLawProofs/IsAffineHomFromSpecResidueField.lean:18:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/ReciprocityTheory/AnalyticForms/RegularLocalRings/ProjDehomA.lean:132:0: automatically included section variable(s) unused in theorem `ReciprocityTheory.AnForm.R.mk_one_mul_invW`:
+  [(k : K) → Fintype (ι k)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [(k : K) → Fintype (ι k)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/ReciprocityTheory/AnalyticForms/RegularLocalRings/ProjDehomA.lean:137:0: automatically included section variable(s) unused in theorem `ReciprocityTheory.AnForm.R.mk_pow_eq_mul_invW`:
+  [(k : K) → Fintype (ι k)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [(k : K) → Fintype (ι k)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/ReciprocityTheory/AnalyticForms/RegularLocalRings/ProjDehomA.lean:168:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -156,5 +96,65 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [20742/20844] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsMemPowSubMemPowSucc (5.5s)
-✔ [20743/20844] Built Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsUniqueFactorCompletedStalkOfMap (8.6s)
+warning: src/ReciprocityTheory/AnalyticForms/RegularLocalRings/ProjDehomA.lean:186:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/ReciprocityTheory/AnalyticForms/RegularLocalRings/ProjDehomA.lean:187:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/ReciprocityTheory/AnalyticForms/RegularLocalRings/ProjDehomA.lean:190:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [21218/21390] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsBilinCyclic (12s)
+✔ [21219/21390] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.PatternGroupSubgroupOrderCharacter (6.4s)
+✔ [21220/21390] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotypicTraceEqOfOneDoubleCoset (6.9s)
+✔ [21221/21390] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIrreducibleCharpolyMemRootsBar (5.0s)
+⚠ [21222/21390] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsConjRenumber (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsConjRenumber.lean:27:4: `Finsupp.finset_sum_apply` has been deprecated: Use `Finsupp.finsetSum_apply` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsConjRenumber.lean:27:30: `MonoidAlgebra.coeff_single_apply` has been deprecated: Use `Finsupp.single_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ {α : Type u_1} {M : Type u_5} [inst : Zero M] {a a' : α} {b : M} [inst_1 : Decidable (a = a')],
+    (fun₀ | a => b) a' = if a = a' then b else 0
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] {a a' : M} {b : R} [inst_1 : Decidable (a = a')],
+    (MonoidAlgebra.single a b).coeff a' = if a = a' then b else 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coeff_single_apply` to `Finsupp.single_apply x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsConjRenumber.lean:68:13: This simp argument is unused:
+  MulAut.conj_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [e]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [21223/21390] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardLeCardMulCardSupport (6.1s)
+✔ [21224/21390] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardProperSubfieldElementsLt (6.0s)
+⚠ [21225/21390] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.GgOneAndIsClass (7.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/GgOneAndIsClass.lean:12:36: `Matrix.det_of_upperTriangular` has been deprecated: Use `Matrix.det_of_isUpperTriangular` instead
+⚠ [21226/21390] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.SumGraphEqSumEntN (8.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/SumGraphEqSumEntN.lean:54:23: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/SumGraphEqSumEntN.lean:65:17: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead
+✔ [21227/21390] Built Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.DetCharacterMemPrincipalCongruenceFixedVectors (31s)
+⚠ [21228/21390] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsClassFunctionBernsteinZelevinskyDerivative (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsClassFunctionBernsteinZelevinskyDerivative.lean:17:0: automatically included section variable(s) unused in theorem `GlobalTheory.GLm.DerClass.exists_blocks`:
+  [Fact (Nat.Prime g)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (Nat.Prime g)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
