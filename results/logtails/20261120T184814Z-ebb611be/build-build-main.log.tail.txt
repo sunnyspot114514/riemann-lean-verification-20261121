@@ -1,17 +1,33 @@
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero r] [NeZero J] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Formalism/SharpRestriction/GrowthBounds/BinomialRatio/PairLift.lean:68:5: Variable name `h2` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/SharpRestriction/GrowthBounds/PlaneCoefficients/MultidegSingle.lean:69:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.PairMembershipBlocks.LkD.ph_lab`:
+  [NeZero r]
+  [NeZero J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero r] [NeZero J] in theorem ...
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _h2
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/SharpRestriction/GrowthBounds/PlaneCoefficients/MultidegSingle.lean:74:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.PairMembershipBlocks.LkD.ph_wc`:
+  [NeZero r]
+  [NeZero J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero r] [NeZero J] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [14956/15294] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PartialDerivativeMinors.LapComm (15s)
-✔ [14957/15294] Built Formalism.PeriodIntegrals.OrbitalBoundsConclusion.OrbRestr (5.3s)
-✔ [14958/15294] Built Formalism.SharpRestriction.GrowthBounds.HermitianTensor.SubCoeffP (5.6s)
-✔ [14959/15294] Built Formalism.PeriodIntegrals.OrbitalBoundsConclusion.OrbRestrOne (5.7s)
-⚠ [14960/15295] Built Formalism.SharpRestriction.GrowthBounds.FockGramWindow.RestWinOfLvl (5.8s)
-warning: src/Formalism/SharpRestriction/GrowthBounds/FockGramWindow/RestWinOfLvl.lean:29:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/SharpRestriction/GrowthBounds/PlaneCoefficients/MultidegSingle.lean:79:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.PairMembershipBlocks.LkD.PhiJ_X`:
+  [NeZero J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/SharpRestriction/GrowthBounds/PlaneCoefficients/MultidegSingle.lean:175:45: `MvPolynomial.mem_vars` has been deprecated: Use `MvPolynomial.mem_vars_iff_mem_support` instead
+✔ [15561/15661] Built Formalism.SharpRestriction.GrowthBounds.PlaneCoefficients.ProdRangeZmod (7.5s)
+✔ [15562/15661] Built Formalism.GL3MeanSquares.WeightedSumIntegralFormula (4.8s)
+✔ [15563/15661] Built Formalism.GL3MeanSquares.GenusMeanAsymptotics.UnimodularClassRepresentatives.RepMassEqProdPsi (5.2s)
+⚠ [15564/15661] Built Formalism.GL3MeanSquares.HookFormulaTorsion.CharacterEstimateOfHypothesis (18s)
+warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/CharacterEstimateOfHypothesis.lean:11:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -19,142 +35,126 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [14961/15296] Built Formalism.SharpRestriction.GrowthBounds.BinomialRatio.SegLow (6.6s)
-warning: src/Formalism/SharpRestriction/GrowthBounds/BinomialRatio/SegLow.lean:113:6: this tactic is never executed
+warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/CharacterEstimateOfHypothesis.lean:71:55: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/SharpRestriction/GrowthBounds/BinomialRatio/SegLow.lean:114:6: this tactic is never executed
+warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/CharacterEstimateOfHypothesis.lean:92:56: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/CharacterEstimateOfHypothesis.lean:71:55: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/CharacterEstimateOfHypothesis.lean:408:10: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/SharpRestriction/GrowthBounds/BinomialRatio/SegLow.lean:115:14: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/SharpRestriction/GrowthBounds/BinomialRatio/SegLow.lean:113:6: Unused tactic linter: `rw [Int.toNat_coe_nat]` does nothing
+warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/CharacterEstimateOfHypothesis.lean:408:10: Unused tactic linter: `exact integral_complex_ofReal` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/SharpRestriction/GrowthBounds/BinomialRatio/SegLow.lean:114:6: Unused tactic linter: `simp only [Int.toNat_ofNat]` does nothing
+✔ [15565/15661] Built Formalism.GL3MeanSquares.PrimePairOfBoxAndWeakMeanSquareHypotheses (4.8s)
+⚠ [15566/15662] Built Formalism.SharpRestriction.GrowthBounds.PlaneCoefficients.FortyEightBoundArith (14s)
+warning: src/Formalism/SharpRestriction/GrowthBounds/PlaneCoefficients/FortyEightBoundArith.lean:15:5: Variable name `ha` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/SharpRestriction/GrowthBounds/BinomialRatio/SegLow.lean:115:14: Unused tactic linter: `omega` does nothing
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ha
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [14962/15296] Built Formalism.SharpRestriction.GrowthBounds.BinomialRatio.LeAndHalfLeProdOneSubExpNegOfBounds (14s)
-⚠ [14963/15297] Built Formalism.SharpRestriction.GrowthBounds.BinomialRatio.PartnersFactorsOfKernelSmith (9.7s)
-warning: src/Formalism/SharpRestriction/GrowthBounds/BinomialRatio/PartnersFactorsOfKernelSmith.lean:238:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Formalism/SharpRestriction/GrowthBounds/BinomialRatio/PartnersFactorsOfKernelSmith.lean:329:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.ColumnSystems.Pf.fock_zero_left`:
-  [IsDiscreteValuationRing O]
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [15567/15662] Built Formalism.GL3MeanSquares.ZeroDensityBox (4.7s)
+⚠ [15568/15664] Built Formalism.GL3MeanSquares.GenusMeanAsymptotics.UnimodularClassRepresentatives.ExistsMassConstOne (9.1s)
+warning: src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/UnimodularClassRepresentatives/ExistsMassConstOne.lean:20:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLattices.Ext.L3.RankOne.trace_pos`:
+  [Module (𝓞 K) V]
+  [IsScalarTower (𝓞 K) K V]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsDiscreteValuationRing O] in theorem ...
+  omit [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/SharpRestriction/GrowthBounds/BinomialRatio/PartnersFactorsOfKernelSmith.lean:344:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.ColumnSystems.Pf.fock_bilin`:
-  [IsDiscreteValuationRing O]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsDiscreteValuationRing O] in theorem ...
+warning: src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/UnimodularClassRepresentatives/ExistsMassConstOne.lean:67:20: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [14964/15297] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.OrbitJetLogarithm.OrbitsAddAtConjugate (7.3s)
-✔ [14965/15297] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MsMul (5.5s)
-✔ [14966/15298] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PartialDerivativeMinors.EntAtDOf (5.3s)
-✔ [14967/15298] Built Formalism.SharpRestriction.GrowthBounds.HermitianTensor.DPsiMonomialIwh (6.3s)
-✔ [14968/15298] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.OrbitSumCount.TauPlBijective (5.6s)
-✔ [14969/15301] Built Formalism.SharpRestriction.GrowthBounds.DualFockLinear.DvdOfCompl (6.5s)
-✔ [14970/15301] Built Formalism.SharpRestriction.GrowthBounds.BinomialRatio.DualFlatOf (5.6s)
-⚠ [14971/15301] Built Formalism.SharpRestriction.GrowthBounds.DualFockLinear.DgFalseDiag (7.8s)
-warning: src/Formalism/SharpRestriction/GrowthBounds/DualFockLinear/DgFalseDiag.lean:86:47: `Finsupp.finset_sum_apply` has been deprecated: Use `Finsupp.finsetSum_apply` instead
-warning: src/Formalism/SharpRestriction/GrowthBounds/DualFockLinear/DgFalseDiag.lean:198:42: `Finsupp.finset_sum_apply` has been deprecated: Use `Finsupp.finsetSum_apply` instead
-warning: src/Formalism/SharpRestriction/GrowthBounds/DualFockLinear/DgFalseDiag.lean:225:36: `Finsupp.finset_sum_apply` has been deprecated: Use `Finsupp.finsetSum_apply` instead
-warning: src/Formalism/SharpRestriction/GrowthBounds/DualFockLinear/DgFalseDiag.lean:232:20: This simp argument is unused:
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/UnimodularClassRepresentatives/ExistsMassConstOne.lean:67:9: Unused tactic linter: `intro x y` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/UnimodularClassRepresentatives/ExistsMassConstOne.lean:67:20: Unused tactic linter: `simp [hh, starRingEnd_apply, mul_comm]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [15569/15664] Built Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.ColumnPolynomialCovectorZero (6.8s)
+warning: src/Formalism/SharpRestriction/GrowthBounds/StandardPolynomials/ColumnPolynomialCovectorZero.lean:26:10: This simp argument is unused:
   Finsupp.single_apply
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [dg, hb]
+  [apply] simp at h2
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/SharpRestriction/GrowthBounds/DualFockLinear/DgFalseDiag.lean:292:48: `isRegular_of_ne_zero` has been deprecated: Use `IsRegular.of_ne_zero` instead
-⚠ [14972/15301] Built Formalism.SharpRestriction.GrowthBounds.HermitianTensor.InitialMinorLiftFirstEntry (8.3s)
-warning: src/Formalism/SharpRestriction/GrowthBounds/HermitianTensor/InitialMinorLiftFirstEntry.lean:46:6: `MvPolynomial.coeff_X'` has been deprecated: Use `MvPolynomial.coeff_X` instead
-warning: src/Formalism/SharpRestriction/GrowthBounds/HermitianTensor/InitialMinorLiftFirstEntry.lean:53:20: This simp argument is unused:
-  Finsupp.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [rowDeg, Prod.ext_iff, hb]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/SharpRestriction/GrowthBounds/HermitianTensor/InitialMinorLiftFirstEntry.lean:160:17: This simp argument is unused:
-  Pi.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [qcLiftI, hne, hl]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/SharpRestriction/GrowthBounds/HermitianTensor/InitialMinorLiftFirstEntry.lean:190:17: This simp argument is unused:
-  Fin.val_mk
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [14973/15301] Built Formalism.SharpRestriction.GrowthBounds.BinomialRatio.FinalTheorems (6.3s)
-warning: src/Formalism/SharpRestriction/GrowthBounds/BinomialRatio/FinalTheorems.lean:34:43: Variable name `C0` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _C0
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Formalism/SharpRestriction/GrowthBounds/BinomialRatio/FinalTheorems.lean:34:46: Variable name `CE1` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _CE1
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Formalism/SharpRestriction/GrowthBounds/BinomialRatio/FinalTheorems.lean:34:50: Variable name `CE2` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _CE2
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [14974/15301] Built Formalism.SharpRestriction.GrowthBounds.DualFockLinear.TestSideCounting (8.7s)
-warning: src/Formalism/SharpRestriction/GrowthBounds/DualFockLinear/TestSideCounting.lean:331:22: This simp argument is unused:
-  Pi.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [restW, flW, hi]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [14975/15301] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.OrbitJetDegreeBound.ConstantCoeffZeroOfBoundGeneral (8.2s)
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/OrbitJetDegreeBound/ConstantCoeffZeroOfBoundGeneral.lean:15:0: automatically included section variable(s) unused in theorem `PI.OrbJet.AU.applyAt0_congr`:
-  [Fintype Lt]
-  [DecidableEq Lt]
+warning: src/Formalism/SharpRestriction/GrowthBounds/StandardPolynomials/ColumnPolynomialCovectorZero.lean:30:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.ColumnSystems.Pf.level_degree_le_prime_pow`:
+  [NeZero X.m]
+  [Fact (Nat.Prime X.p)]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype Lt] [DecidableEq Lt] in theorem ...
+  omit [NeZero X.m] [Fact (Nat.Prime X.p)] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/OrbitJetDegreeBound/ConstantCoeffZeroOfBoundGeneral.lean:23:0: automatically included section variable(s) unused in theorem `PI.OrbJet.AU.applyAt0_zero_left`:
-  [Fintype Lt]
-  [DecidableEq Lt]
+warning: src/Formalism/SharpRestriction/GrowthBounds/StandardPolynomials/ColumnPolynomialCovectorZero.lean:43:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.ColumnSystems.Pf.level_degree_covector_zero`:
+  [NeZero X.m]
+  [Fact (Nat.Prime X.p)]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype Lt] [DecidableEq Lt] in theorem ...
+  omit [NeZero X.m] [Fact (Nat.Prime X.p)] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/OrbitJetDegreeBound/ConstantCoeffZeroOfBoundGeneral.lean:28:0: automatically included section variable(s) unused in theorem `PI.OrbJet.AU.applyAt0_add_left`:
-  [Fintype Lt]
-  [DecidableEq Lt]
+warning: src/Formalism/SharpRestriction/GrowthBounds/StandardPolynomials/ColumnPolynomialCovectorZero.lean:48:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.ColumnSystems.Pf.monomial_mem_support`:
+  [NeZero X.m]
+  [Fact (Nat.Prime X.p)]
+  [Algebra (WF X.p X.n') O]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype Lt] [DecidableEq Lt] in theorem ...
+  omit [NeZero X.m] [Fact (Nat.Prime X.p)] [Algebra (WF X.p X.n') O] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/OrbitJetDegreeBound/ConstantCoeffZeroOfBoundGeneral.lean:35:0: automatically included section variable(s) unused in theorem `PI.OrbJet.AU.applyAt0_smul_left`:
-  [Fintype Lt]
-  [DecidableEq Lt]
+✔ [15570/15664] Built Formalism.BehrendSets.StatementE (5.5s)
+⚠ [15571/15664] Built Formalism.GL3MeanSquares.GenusMeanAsymptotics.UnimodularClassRepresentatives.CoeCmbSingle (10s)
+warning: src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/UnimodularClassRepresentatives/CoeCmbSingle.lean:24:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLattices.Ext.L3.HU.crd_cmb`:
+  [NumberField K]
+  [StarRing K]
+  [DecidableEq κ]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype Lt] [DecidableEq Lt] in theorem ...
+  omit [NumberField K] [StarRing K] [DecidableEq κ] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [14976/15301] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.OrbitValuationBounds.AdmissibleOfJetBounds (5.6s)
+warning: src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/UnimodularClassRepresentatives/CoeCmbSingle.lean:27:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLattices.Ext.L3.HU.cmb_crd`:
+  [NumberField K]
+  [StarRing K]
+  [DecidableEq κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField K] [StarRing K] [DecidableEq κ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/UnimodularClassRepresentatives/CoeCmbSingle.lean:33:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLattices.Ext.L3.HU.coe_inA`:
+  [Fintype κ]
+  [DecidableEq κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype κ] [DecidableEq κ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/UnimodularClassRepresentatives/CoeCmbSingle.lean:38:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLattices.Ext.L3.HU.mk_eq_iff`:
+  [NumberField K]
+  [StarRing K]
+  [NumberField F]
+  [IsScalarTower (𝓞 K) K V]
+  [Fintype κ]
+  [DecidableEq κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField K] [StarRing K] [NumberField F] [IsScalarTower (𝓞 K) K V] [Fintype κ] [DecidableEq κ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/UnimodularClassRepresentatives/CoeCmbSingle.lean:44:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLattices.Ext.L3.HU.quotLocF_mk'`:
+  [Fintype κ]
+  [DecidableEq κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype κ] [DecidableEq κ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [15572/15665] Built Formalism.GL3MeanSquares.GenusMeanAsymptotics.UnimodularClassRepresentatives.AlphaNOfVdZeroUnit (7.5s)
+warning: src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/UnimodularClassRepresentatives/AlphaNOfVdZeroUnit.lean:19:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLattices.Ext.L3.unitaryAbsoluteValueBounds.abs_eta_pow`:
+  [NumberField K]
+  [StarRing K]
+  [NumberField F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField K] [StarRing K] [NumberField F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
