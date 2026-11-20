@@ -1,35 +1,58 @@
 # Riemann Hypothesis Lean verification
 
-Status: **setup in progress; no proof verification result yet**.
-
-This repository records an attempt to independently compile and check the published Lean formalization claiming the Riemann Hypothesis and GRH for Dirichlet L-functions. It does not assert that the claim is correct.
+This repository records a compilation and kernel-checking attempt. **No successful proof verification has been recorded yet.** The latest machine-readable state is [results/status.json](results/status.json); it will appear after the server runner starts. A `running`, `failed`, or `runner_error` state is not a successful verification.
 
 ## Source under test
 
-- Mirror: https://github.com/CocoSgt/riemann-hypothesis-lean
-- Pinned commit: `7cbf7a0c32fca1badf05931879a37c3f8a2b03b4`
-- Lean: official `leanprover/lean4:v4.33.1`
-- Mathlib: official `0df444a360eaa60ab8c11dca51a86af692955474`
+- Published mirror: https://github.com/CocoSgt/riemann-hypothesis-lean
+- Exact source commit: `7cbf7a0c32fca1badf05931879a37c3f8a2b03b4`
+- Exact `src` tree: `b41b516b1f7baee4d83ced235ecc71fd43c97695`
+- Official Lean: `leanprover/lean4:v4.33.1`
+- Linux release archive SHA-256: `890afd185370f85666025b883914ab4f4b339136f8c96167b69cfb62aecaf235`
+- Official Mathlib revision: `0df444a360eaa60ab8c11dca51a86af692955474`
 - Author announcement: https://alpo.ge/remark.pdf
 
-The source checkout will be kept separate from verification scripts and logs. Compilation will reuse the official Mathlib build cache, and rebuild the submission's own modules.
+The original source checkout is separate from this repository and remains unchanged. The bootstrap verifies all nine dependency pins, downloads the official Mathlib cache, and records exact versions. The submission's own modules are rebuilt from source. At this pinned source commit, all 175,187 submission modules belong to the `Main` import closure.
 
-## Execution environment
+## Execution and evidence
 
-Ubuntu 22.04.5 LTS, x86_64, AMD EPYC 9654 host. The rented container is assigned **32 logical CPUs and 60 GiB RAM**, with a **500 GiB data volume**. Host-wide memory reported by `free` is not the container's usable memory limit.
+The rented Ubuntu 22.04.5 container has **32 logical CPUs, a 60 GiB memory limit, and a 500 GiB data volume**. Host-wide `free` output is not the container memory limit. Everything is stored under `/root/autodl-tmp/rh-check` on that server. The operator's Windows computer controls SSH and relays network traffic in memory; project sources and build products are not saved there.
 
-All project sources, tools, build products and logs are stored on the rented server. The operator's Windows computer is used only to control SSH and access existing GitHub credentials.
+The server uses a repository-specific GitHub deploy key for result uploads. SSH login credentials, OAuth tokens, private keys, and unrelated files are excluded from the result repository. TLS certificate verification remains enabled for downloads; the official Lean archive is also checked against the upstream release digest.
 
-## Planned evidence
+The runner records these separate stages:
 
-1. Pinned source identity and unchanged-source checks.
-2. Complete `lake build Main` result, logs and exit status. All 175,187 submission modules are in its import closure at the pinned commit.
-3. Exact axiom dependencies of all five final theorems and an explicit standard-RH type check.
-4. `leanchecker --fresh Main` replay, if compilation and the axiom checks succeed. This uses the same Lean kernel and is **not an independently implemented verifier**.
-5. Any stronger independent-checker runs will be recorded separately with their exact versions and outcomes.
+1. Toolchain, source, dependency, cache and `Statements` environment preparation.
+2. `lake --no-cache build Main`, with full output, time report and exact exit code.
+3. An explicit type check against the standard Mathlib `RiemannHypothesis` and `#print axioms` for all five final theorems. Only `propext`, `Classical.choice` and `Quot.sound` are accepted by the axiom-report validator.
+4. `leanchecker --fresh -v Main`, which replays the entire import closure in a fresh environment. **This uses the same Lean kernel, not an independent implementation.**
+5. Final unchanged-source checks.
 
-Setup or build failures will be published as failures, with the relevant stage and logs. A successful source scan or statement-only build is not a successful proof check.
+The initial scheduler setting is `LEAN_NUM_THREADS=2`. An audit-side TOML copy adds only `weakLeanArgs = ["-j1"]` to limit each compiler's worker setting; the published project configuration and official binaries are unchanged. This is not an aggregate memory guarantee. Resource samples use cgroup limits and counters, with their scope and sampling limitations recorded.
+
+Completed `.setup.json` intermediates are deleted only after a newer successful Lake trace and nonempty `.olean` exist. Source and proof artifacts are retained. This controls disk usage in a project where large repeated import metadata would otherwise dominate storage.
+
+## Viewing progress
+
+- [Current status](results/status.json): running stage, exit codes, timestamps and resource samples.
+- [Environment](results/environment.json): actual container limits and measurement scope.
+- [Log tails](results/logtails): periodically updated recent output.
+- [Evidence snapshots](results/evidence): versions and pinned source/dependency records.
+- [Final logs](results/final): compressed full logs and hash manifests after the run ends.
+
+The runner normally publishes every five minutes and on phase changes. If the network is unavailable, it retains server-side logs and retries. Final archive parts are at most 40 MiB; concatenate parts in manifest order, verify their SHA-256 values, and gunzip. A setup-only or statement-only success does not validate the proof. Stronger independent-checker results, if performed, will be reported separately.
+
+## Reproduction
+
+Install the prerequisites listed in the bootstrap script, configure a writable clone of this repository at `BASE/verification`, and provide a functioning network route. The included runner expects its loopback HTTPS proxy at `127.0.0.1:20080`; adapt that network setting for another environment.
+
+```bash
+python3 /root/autodl-tmp/rh-check/verification/scripts/run_all.py \
+  --base /root/autodl-tmp/rh-check
+```
+
+The detached session uses `BASE/control/tmux.sock`. Server status and complete logs remain in `BASE/audit`, even if publishing is interrupted. The Windows relay accepts SSH configuration through standard input and does not write credentials or downloaded artifacts to disk.
 
 ## Provenance
 
-The mathematical claim and original source belong to Levent Alpöge and the collaborators credited in his announcement. This repository contains verification tooling and evidence; it does not claim authorship of the proof.
+The mathematical claim and original source belong to Levent Alpöge and the collaborators credited in his announcement. This repository contains verification tooling and observations and does not claim authorship of the proof. Successful compilation, axiom inspection, fresh replay, and verification by independently implemented kernels are distinct pieces of evidence.
