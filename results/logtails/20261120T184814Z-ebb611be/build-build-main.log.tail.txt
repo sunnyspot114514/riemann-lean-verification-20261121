@@ -1,51 +1,41 @@
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MinimalPolynomialLinearFactorSplitStatement.lean:16:53: Unused tactic linter: `exact GlobalTheory.EigProj.eigProj_poly` does nothing
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/ReciprocityTheory/AnalyticForms/PlurisubharmonicFunctions/PartsCalc.lean:172:20: This simp argument is unused:
+  g'
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MinimalPolynomialLinearFactorSplitStatement.lean:16:95: Unused tactic linter: `(intros; apply GlobalTheory.EigProj.eigProj_poly <;> assumption)` does nothing
+Hint: Omit it from the simp argument list.
+  [apply] simp only [g, Fin.cons_zero, Fin.cases_zero]
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [38662/38713] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.JetMorphismAdmissibleConnectionStatement (7.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/JetMorphismAdmissibleConnectionStatement.lean:18:59: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/ReciprocityTheory/AnalyticForms/PlurisubharmonicFunctions/PartsCalc.lean:172:24: This simp argument is unused:
+  Fin.cons_zero
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/JetMorphismAdmissibleConnectionStatement.lean:18:107: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp only [g, g', Fin.cases_zero]
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/JetMorphismAdmissibleConnectionStatement.lean:12:8: Overlapping instance parameters in `GlobalTheory.T.jet_morphism_admissible_connection`:
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/ReciprocityTheory/AnalyticForms/PlurisubharmonicFunctions/PartsCalc.lean:174:17: This simp argument is unused:
+  g
 
-⚠️ `[IsDomain R]` and `[IsLocalRing R]` each imply `[Nontrivial R]`.
-💡️ Of these, `[IsDomain R]` and `[IsLocalRing R]` may be removed.
+Hint: Omit it from the simp argument list.
+  [apply] simp only [g', Fin.cons_succ, Fin.cases_succ]
 
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/JetMorphismAdmissibleConnectionStatement.lean:18:59: Unused tactic linter: `exact GlobalTheory.JetLiftMain.exists_jetLift` does nothing
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/ReciprocityTheory/AnalyticForms/PlurisubharmonicFunctions/PartsCalc.lean:174:20: This simp argument is unused:
+  g'
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/JetMorphismAdmissibleConnectionStatement.lean:18:107: Unused tactic linter: `(intros; apply GlobalTheory.JetLiftMain.exists_jetLift <;> assumption)` does nothing
+Hint: Omit it from the simp argument list.
+  [apply] simp only [g, Fin.cons_succ, Fin.cases_succ]
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [38663/38713] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentialZeroOfNotTangentStatement (6.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DifferentialZeroOfNotTangentStatement.lean:22:81: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/ReciprocityTheory/AnalyticForms/PlurisubharmonicFunctions/PartsCalc.lean:174:24: This simp argument is unused:
+  Fin.cons_succ
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DifferentialZeroOfNotTangentStatement.lean:22:151: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp only [g, g', Fin.cases_succ]
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DifferentialZeroOfNotTangentStatement.lean:22:81: Unused tactic linter: `exact GlobalTheory.UnifOffOrigin.eq_zero_of_isDiff_of_not_isTangent` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DifferentialZeroOfNotTangentStatement.lean:22:151: Unused tactic linter: `(intros;
-  apply GlobalTheory.UnifOffOrigin.eq_zero_of_isDiff_of_not_isTangent <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [38664/38713] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeMultiplicationStable (10s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeMultiplicationStable.lean:68:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeMultiplicationStable.lean:76:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [39326/39431] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRingHomCompAlgebraMapEq (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsRingHomCompAlgebraMapEq.lean:12:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -53,108 +43,118 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeMultiplicationStable.lean:81:7: `Pi.ringHom` has been deprecated: Use `RingHom.pi` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsRingHomCompAlgebraMapEq.lean:13:2: Try this: 
+  haveI̵
 
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.ringHom` to `RingHom.pi x`).
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeMultiplicationStable.lean:105:25: This simp argument is unused:
-  Submodule.coe_smul
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [hρ, Algebra.smul_def, hcoe, map_mul, Complex.ofReal_mul, Complex.conj_ofReal]
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsRingHomCompAlgebraMapEq.lean:29:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeMultiplicationStable.lean:186:25: This simp argument is unused:
-  Submodule.coe_add
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Hc, map_add, Matrix.diagonal_add]
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsRingHomCompAlgebraMapEq.lean:30:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [38665/38713] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieImagePolynomialEndomorphismStatement (7.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LieImagePolynomialEndomorphismStatement.lean:17:69: this tactic is never executed
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LieImagePolynomialEndomorphismStatement.lean:17:127: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsRingHomCompAlgebraMapEq.lean:31:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LieImagePolynomialEndomorphismStatement.lean:17:69: Unused tactic linter: `exact GlobalTheory.LieImagePoly.exists_isLieImage_aeval` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LieImagePolynomialEndomorphismStatement.lean:17:127: Unused tactic linter: `(intros; apply GlobalTheory.LieImagePoly.exists_isLieImage_aeval <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [38666/38713] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateUniformizationDifferentialZeroStatement (7.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ConjugateUniformizationDifferentialZeroStatement.lean:24:73: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ConjugateUniformizationDifferentialZeroStatement.lean:24:135: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ConjugateUniformizationDifferentialZeroStatement.lean:24:73: Unused tactic linter: `exact GlobalTheory.ConjTangent.isDiff_zero_of_isGrpPullback` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ConjugateUniformizationDifferentialZeroStatement.lean:24:135: Unused tactic linter: `(intros;
-  apply GlobalTheory.ConjTangent.isDiff_zero_of_isGrpPullback <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [38667/38714] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrimitiveLatticeMultiplierStatement (7.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPrimitiveLatticeMultiplierStatement.lean:14:51: Variable name `U` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [39327/39431] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NefFibPowIff (5.7s)
+⚠ [39328/39431] Built ReciprocityTheory.AnalyticForms.PotentialTheory.AtlasIndep (7.3s)
+warning: src/ReciprocityTheory/AnalyticForms/PotentialTheory/AtlasIndep.lean:76:5: Variable name `hU` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _U
+  [apply] _hU
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPrimitiveLatticeMultiplierStatement.lean:16:72: this tactic is never executed
+⚠ [39329/39432] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertEisensteinJetAddDirectionStatement (6.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HilbertEisensteinJetAddDirectionStatement.lean:14:64: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPrimitiveLatticeMultiplierStatement.lean:16:133: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HilbertEisensteinJetAddDirectionStatement.lean:14:117: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPrimitiveLatticeMultiplierStatement.lean:16:72: Unused tactic linter: `exact GlobalTheory.OrderPrimitive.exists_primitive_mul_mem` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HilbertEisensteinJetAddDirectionStatement.lean:14:64: Unused tactic linter: `exact GlobalTheory.HilbFam.jet_add_dir_of_hasLevel` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPrimitiveLatticeMultiplierStatement.lean:16:133: Unused tactic linter: `(intros; apply GlobalTheory.OrderPrimitive.exists_primitive_mul_mem <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HilbertEisensteinJetAddDirectionStatement.lean:14:117: Unused tactic linter: `(intros; apply GlobalTheory.HilbFam.jet_add_dir_of_hasLevel <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [38668/38716] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmDeRhamPeriodMapEquivariantStatement (7.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CmDeRhamPeriodMapEquivariantStatement.lean:19:59: this tactic is never executed
+✔ [39330/39434] Built ReciprocityTheory.AnalyticForms.PotentialTheory.PotentialContDiffAt (7.4s)
+✔ [39331/39435] Built ReciprocityTheory.AnalyticForms.PotentialTheory.FubiniStudyPotentialProductIsPotential (6.4s)
+⚠ [39332/39435] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasQExpansionOfLevelHilbertEisensteinQuasiPeriodStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasQExpansionOfLevelHilbertEisensteinQuasiPeriodStatement.lean:11:55: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CmDeRhamPeriodMapEquivariantStatement.lean:19:107: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasQExpansionOfLevelHilbertEisensteinQuasiPeriodStatement.lean:11:99: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CmDeRhamPeriodMapEquivariantStatement.lean:19:59: Unused tactic linter: `exact GlobalTheory.PeriodLattice.periods_unif` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasQExpansionOfLevelHilbertEisensteinQuasiPeriodStatement.lean:11:55: Unused tactic linter: `exact GlobalTheory.HilbFam.ExpH.hasQ_hfun` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CmDeRhamPeriodMapEquivariantStatement.lean:19:107: Unused tactic linter: `(intros; apply GlobalTheory.PeriodLattice.periods_unif <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasQExpansionOfLevelHilbertEisensteinQuasiPeriodStatement.lean:11:99: Unused tactic linter: `(intros; apply GlobalTheory.HilbFam.ExpH.hasQ_hfun <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [38669/38716] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomomorphismDescendsToAlgebraicStatement (7.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HomomorphismDescendsToAlgebraicStatement.lean:17:58: this tactic is never executed
+✔ [39333/39435] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsogenyFormulaWeierstrassPIntegral (5.7s)
+⚠ [39334/39437] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertEisensteinJetSmulDirectionStatement (6.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HilbertEisensteinJetSmulDirectionStatement.lean:14:65: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HomomorphismDescendsToAlgebraicStatement.lean:17:105: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HilbertEisensteinJetSmulDirectionStatement.lean:14:119: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HomomorphismDescendsToAlgebraicStatement.lean:17:58: Unused tactic linter: `exact GlobalTheory.HomDescentQb.hom_descends` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HilbertEisensteinJetSmulDirectionStatement.lean:14:65: Unused tactic linter: `exact GlobalTheory.HilbFam.jet_smul_dir_of_hasLevel` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HomomorphismDescendsToAlgebraicStatement.lean:17:105: Unused tactic linter: `(intros; apply GlobalTheory.HomDescentQb.hom_descends <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HilbertEisensteinJetSmulDirectionStatement.lean:14:119: Unused tactic linter: `(intros; apply GlobalTheory.HilbFam.jet_smul_dir_of_hasLevel <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [38670/38719] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.EndomorphismDescendsToAlgebraicModelStatement (7.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EndomorphismDescendsToAlgebraicModelStatement.lean:15:74: this tactic is never executed
+✔ [39335/39437] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraicNormalizedWeierstrassValuesCm (5.8s)
+⚠ [39336/39437] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsContinuousReadOnAffineOpenRingHomsStatement (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsContinuousReadOnAffineOpenRingHomsStatement.lean:12:194: Variable name `hU` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hU
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsContinuousReadOnAffineOpenRingHomsStatement.lean:13:64: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EndomorphismDescendsToAlgebraicModelStatement.lean:15:137: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsContinuousReadOnAffineOpenRingHomsStatement.lean:13:117: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EndomorphismDescendsToAlgebraicModelStatement.lean:15:74: Unused tactic linter: `exact GlobalTheory.RealMult.Obj.exists_end_descend_algebraic` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsContinuousReadOnAffineOpenRingHomsStatement.lean:13:64: Unused tactic linter: `exact GlobalTheory.ContRead.exists_continuous_read` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EndomorphismDescendsToAlgebraicModelStatement.lean:15:137: Unused tactic linter: `(intros;
-  apply GlobalTheory.RealMult.Obj.exists_end_descend_algebraic <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsContinuousReadOnAffineOpenRingHomsStatement.lean:13:117: Unused tactic linter: `(intros; apply GlobalTheory.ContRead.exists_continuous_read <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [38671/38720] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateCurveTangentCompat (8.5s)
-✔ [38672/38722] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusPeriodChange (7.6s)
+⚠ [39337/39437] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivPowMemSectionsOfMulPowMemStatement (5.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DivPowMemSectionsOfMulPowMemStatement.lean:13:68: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DivPowMemSectionsOfMulPowMemStatement.lean:13:125: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DivPowMemSectionsOfMulPowMemStatement.lean:13:68: Unused tactic linter: `exact GlobalTheory.VolBr.Pair.div_pow_mem_H_of_mul_pow` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DivPowMemSectionsOfMulPowMemStatement.lean:13:125: Unused tactic linter: `(intros; apply GlobalTheory.VolBr.Pair.div_pow_mem_H_of_mul_pow <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
