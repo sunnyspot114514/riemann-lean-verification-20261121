@@ -114,7 +114,12 @@ def pipe(source, target):
         # One direction ending must not truncate a response still flowing back.
         # The owning serve() closes both endpoints after the response direction ends.
         try:
-            target.shutdown(socket.SHUT_WR)
+            if isinstance(target, ssl.SSLSocket):
+                # SSLSocket.shutdown() discards its SSL state even for SHUT_WR;
+                # preserve that state so the opposite pipe can decrypt replies.
+                socket.socket.shutdown(target, socket.SHUT_WR)
+            else:
+                target.shutdown(socket.SHUT_WR)
         except Exception:
             pass
 

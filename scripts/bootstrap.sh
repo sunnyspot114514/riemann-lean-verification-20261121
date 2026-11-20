@@ -12,8 +12,9 @@ RH_TOOLCHAIN_DIR="$RH_CHECK_BASE/tools/lean-4.33.1-linux"
 RH_SCRIPTS_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
 RH_TOOLCHAIN_SHA=890afd185370f85666025b883914ab4f4b339136f8c96167b69cfb62aecaf235
 RH_TOOLCHAIN_BYTES=570405234
-RH_TOOLCHAIN_URL=https://github.com/leanprover/lean4/releases/download/v4.33.1/lean-4.33.1-linux.tar.zst
+RH_TOOLCHAIN_URL=https://api.github.com/repos/leanprover/lean4/releases/assets/523687465
 RH_ARCHIVE="$RH_CHECK_BASE/downloads/lean-4.33.1-linux.tar.zst"
+RH_ARIA2_PART="$RH_ARCHIVE.aria2.part"
 RH_INSTALL_INVENTORY="$RH_CHECK_BASE/metadata/lean-4.33.1-files.sha256"
 
 mkdir -p "$RH_CHECK_BASE"/{downloads,tools,metadata,cache/mathlib,tmp,audit,bootstrap-runs}
@@ -55,7 +56,7 @@ stage() {
 preflight() {
     test "$(uname -s)" = Linux
     test "$(uname -m)" = x86_64
-    for RH_CMD in curl git python3 tar zstd sha256sum stat flock realpath make cc; do
+    for RH_CMD in aria2c curl git python3 tar zstd sha256sum stat flock realpath make cc; do
         command -v "$RH_CMD" >/dev/null || { echo "Missing prerequisite: $RH_CMD" >&2; return 1; }
     done
     test -f "$RH_SCRIPTS_DIR/prepare_dependencies.py"
@@ -71,13 +72,25 @@ PY
 
 download_toolchain() {
     if [[ ! -f "$RH_ARCHIVE" ]]; then
-        curl --fail --location --proto '=https' --proto-redir '=https' \
-            --retry 6 --retry-all-errors --retry-delay 5 --connect-timeout 30 \
-            --speed-limit 1024 --speed-time 90 --max-time 7200 \
-            --continue-at - --output "$RH_ARCHIVE.part" "$RH_TOOLCHAIN_URL"
-        test "$(stat -c %s "$RH_ARCHIVE.part")" = "$RH_TOOLCHAIN_BYTES"
-        printf '%s  %s\n' "$RH_TOOLCHAIN_SHA" "$RH_ARCHIVE.part" | sha256sum -c -
-        mv -- "$RH_ARCHIVE.part" "$RH_ARCHIVE"
+        # The server reaches GitHub's official asset API directly. Only this
+        # subprocess bypasses the runner's proxy; git/cache operations inherit it.
+        # Keep aria2's partial file and .aria2 control file distinct from any
+        # earlier curl .part download. --out fixes the name across redirects.
+        env -u http_proxy -u https_proxy -u all_proxy \
+            -u HTTP_PROXY -u HTTPS_PROXY -u ALL_PROXY \
+            aria2c --no-conf=true --no-netrc=true \
+            --split=16 --max-connection-per-server=16 --min-split-size=1M \
+            --continue=true --check-integrity=true --file-allocation=none \
+            --auto-file-renaming=false --auto-save-interval=30 \
+            --max-tries=6 --retry-wait=5 --connect-timeout=60 --timeout=60 \
+            --summary-interval=30 --console-log-level=notice --download-result=full \
+            --header='Accept: application/octet-stream' \
+            --checksum="sha-256=$RH_TOOLCHAIN_SHA" \
+            --dir="$(dirname -- "$RH_ARIA2_PART")" \
+            --out="$(basename -- "$RH_ARIA2_PART")" "$RH_TOOLCHAIN_URL"
+        test "$(stat -c %s "$RH_ARIA2_PART")" = "$RH_TOOLCHAIN_BYTES"
+        printf '%s  %s\n' "$RH_TOOLCHAIN_SHA" "$RH_ARIA2_PART" | sha256sum -c -
+        mv -- "$RH_ARIA2_PART" "$RH_ARCHIVE"
     fi
     test "$(stat -c %s "$RH_ARCHIVE")" = "$RH_TOOLCHAIN_BYTES"
     printf '%s  %s\n' "$RH_TOOLCHAIN_SHA" "$RH_ARCHIVE" | sha256sum -c -

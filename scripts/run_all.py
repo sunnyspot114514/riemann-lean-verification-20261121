@@ -27,6 +27,15 @@ import uuid
 PIN = "7cbf7a0c32fca1badf05931879a37c3f8a2b03b4"
 EXPECTED_CHECKS = ("build-main", "axioms", "validate-axioms", "fresh-replay")
 CHUNK_BYTES = 40 * 1024 * 1024
+EVIDENCE_PATTERNS = (
+    "source.json", "dependencies-before-cache.json", "dependencies-after-cache.json",
+    "release.sha256", "source-commit.txt", "lean-version.txt", "lake-version.txt",
+    "final-source-status.txt", "build-config-sha256.txt", "lakefile-resource.toml",
+    "resource-controls.txt", "Check.lean", "*.command.sh", "cgroup-start.txt", "cgroup-end.txt",
+)
+FINAL_PATTERNS = (
+    "source-index*.txt", "*.time.txt", "*.exit-code.txt", "final-*.diff",
+) + EVIDENCE_PATTERNS
 
 
 def utc():
@@ -293,7 +302,7 @@ class Runner:
         for group, path in self.phase_dirs().items():
             if path:
                 # Only final publication includes the (large) full source index.
-                for pattern in ("source-index*.txt", "*.time.txt", "*.exit-code.txt", "final-*.diff", "final-source-status.txt", "source-commit.txt", "lean-version.txt", "lake-version.txt"):
+                for pattern in FINAL_PATTERNS:
                     sources.extend((group, p) for p in path.glob(pattern) if p.is_file() and not p.is_symlink())
         manifests, files = [], []
         temporary = self.run / "archives"
@@ -343,12 +352,12 @@ class Runner:
             for group, directory in self.phase_dirs().items():
                 if not directory:
                     continue
-                for name in ("source.json", "dependencies-before-cache.json", "dependencies-after-cache.json", "release.sha256", "source-commit.txt", "lean-version.txt", "lake-version.txt", "final-source-status.txt"):
-                    src = directory / name
-                    if src.is_file() and not src.is_symlink() and src.stat().st_size <= 2 * 1024 * 1024:
-                        dest = evidence / (group + "-" + name)
-                        shutil.copyfile(src, dest)
-                        files.append(dest)
+                for pattern in EVIDENCE_PATTERNS:
+                    for src in sorted(directory.glob(pattern)):
+                        if src.is_file() and not src.is_symlink() and src.stat().st_size <= 2 * 1024 * 1024:
+                            dest = evidence / (group + "-" + src.name)
+                            shutil.copyfile(src, dest)
+                            files.append(dest)
             if final:
                 files.extend(self.archive_final())
             # Explicit path list, including commit --only, preserves unrelated staged files.
@@ -475,6 +484,10 @@ def main():
     os.environ["TMPDIR"] = str(args.base / "tmp")
     for key in ("http_proxy", "https_proxy", "HTTP_PROXY", "HTTPS_PROXY"):
         os.environ[key] = "http://127.0.0.1:20080"
+    # These official data endpoints are directly reachable from this server.
+    # Keep large Mathlib cache transfers off the control computer's SSH tunnel.
+    for key in ("no_proxy", "NO_PROXY"):
+        os.environ[key] = ".blob.core.windows.net,api.github.com,codeload.github.com"
     if args.worker:
         return Runner(args).work()
     socket = args.base / "control/tmux.sock"
