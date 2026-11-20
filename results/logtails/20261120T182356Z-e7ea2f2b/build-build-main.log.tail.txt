@@ -1,20 +1,25 @@
-  Complex.neg_im
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [Jpq, dotProduct, Matrix.fromBlocks_mulVec, Fintype.sum_sum_type, Complex.re_sum, stdform_normSq,
-    re_conj_mul_self_eq_normSq, sub_eq_add_neg, Matrix.neg_mulVec, Matrix.one_mulVec, Complex.normSq_apply,
-    Complex.neg_re, mul_neg, Finset.sum_neg_distrib]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [8970/9517] Built Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelvsplit (8.7s)
-warning: src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Levelvsplit.lean:80:0: automatically included section variable(s) unused in theorem `Formalism.UG.P.levelvsplit_int_mul`:
-  [DecidableEq n]
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9001/9517] Built Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.DeRham (11s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/DeRham.lean:196:0: automatically included section variable(s) unused in theorem `Reformulated.AutPerF.BdRPlus.xi_ne_zero`:
+  [IsAlgClosed (FractionRing R)]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [DecidableEq n] in theorem ...
+  omit [IsAlgClosed (FractionRing R)] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [8971/9517] Built Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelv (20s)
-warning: src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Levelv.lean:34:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/DeRham.lean:261:0: automatically included section variable(s) unused in theorem `Reformulated.AutPerF.BdR.algebraMap_injective`:
+  [IsDomain R]
+  [ValuationRing R]
+  [CharZero R]
+  [IsAlgClosed (FractionRing R)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDomain R] [ValuationRing R] [CharZero R] [IsAlgClosed (FractionRing R)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9002/9517] Built Formalism.LatticeSlopes.LatticeSlopesProofs.SaturationProperties (6.2s)
+warning: src/Formalism/LatticeSlopes/LatticeSlopesProofs/SaturationProperties.lean:26:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -22,68 +27,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Levelv.lean:44:17: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Levelv.lean:44:17: Unused tactic linter: `ring` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Levelv.lean:88:12: This simp argument is unused:
-  Pi.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [hj]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Levelv.lean:134:10: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Levelv.lean:135:10: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Levelv.lean:134:10: Unused tactic linter: `(rw [map_one] at h; exact h)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Levelv.lean:135:10: Unused tactic linter: `simpa using h` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Levelv.lean:160:21: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Levelv.lean:160:21: Unused tactic linter: `ring` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Levelv.lean:214:0: automatically included section variable(s) unused in theorem `Formalism.UG.P.levelv_mem_lat`:
-  [Fintype n]
-  [DecidableEq n]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype n] [DecidableEq n] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Levelv.lean:252:0: automatically included section variable(s) unused in theorem `Formalism.UG.P.levelv_nsmul_inj`:
-  [NumberField E]
-  [Fintype n]
-  [DecidableEq n]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [Fintype n] [DecidableEq n] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [8972/9517] Built Formalism.SatakeDualWeyl.StatementG (5.5s)
-✔ [8973/9517] Built Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AfsplitA (5.6s)
-⚠ [8974/9517] Built Formalism.SatakeDualWeyl.AdelicIwasawaHecke.LevelSubgroupFiniteAdelicStandard (7.8s)
-warning: src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/LevelSubgroupFiniteAdelicStandard.lean:42:0: automatically included section variable(s) unused in theorem `Formalism.UG.P.easyc_single_mem`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [8975/9517] Built Formalism.FrobeniusOrbits.Statement (8.9s)
-✔ [8976/9517] Built Formalism.TameInertiaTowers.CentralOrderTwo.Galois (10s)
-✔ [8977/9517] Built Formalism.TameInertiaTowers.CentralOrderTwo.ConjEqInvOfPowEqOne (6.7s)
-✔ [8978/9517] Built Formalism.TameInertiaTowers.CentralOrderTwo.NormalOrderTwoCentral (5.0s)
-✔ [8979/9517] Built Formalism.TameInertiaTowers.CentralOrderTwo.OrderOfThreeUnitsTwoPow (7.6s)
-⚠ [8980/9517] Built Formalism.TameInertiaTowers.CentralOrderTwo.NegOneNeOneUnitsZmodFour (9.5s)
-warning: src/Formalism/TameInertiaTowers/CentralOrderTwo/NegOneNeOneUnitsZmodFour.lean:60:2: Try this: 
+warning: src/Formalism/LatticeSlopes/LatticeSlopesProofs/SaturationProperties.lean:34:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -91,70 +35,126 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [8981/9517] Built Formalism.TameInertiaTowers.CentralOrderTwo.DecompositionSubgroupIndex (16s)
-warning: src/Formalism/TameInertiaTowers/CentralOrderTwo/DecompositionSubgroupIndex.lean:21:98: this tactic is never executed
+warning: src/Formalism/LatticeSlopes/LatticeSlopesProofs/SaturationProperties.lean:39:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/TameInertiaTowers/CentralOrderTwo/DecompositionSubgroupIndex.lean:21:157: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/TameInertiaTowers/CentralOrderTwo/DecompositionSubgroupIndex.lean:21:209: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LatticeSlopes/LatticeSlopesProofs/SaturationProperties.lean:50:4: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/TameInertiaTowers/CentralOrderTwo/DecompositionSubgroupIndex.lean:21:269: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/TameInertiaTowers/CentralOrderTwo/DecompositionSubgroupIndex.lean:21:346: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LatticeSlopes/LatticeSlopesProofs/SaturationProperties.lean:51:4: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/TameInertiaTowers/CentralOrderTwo/DecompositionSubgroupIndex.lean:21:398: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/TameInertiaTowers/CentralOrderTwo/DecompositionSubgroupIndex.lean:21:447: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LatticeSlopes/LatticeSlopesProofs/SaturationProperties.lean:68:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/TameInertiaTowers/CentralOrderTwo/DecompositionSubgroupIndex.lean:21:494: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/TameInertiaTowers/CentralOrderTwo/DecompositionSubgroupIndex.lean:21:539: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LatticeSlopes/LatticeSlopesProofs/SaturationProperties.lean:69:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/TameInertiaTowers/CentralOrderTwo/DecompositionSubgroupIndex.lean:21:580: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/TameInertiaTowers/CentralOrderTwo/DecompositionSubgroupIndex.lean:21:80: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9003/9517] Built Formalism.LatticeSlopes.LatticeSlopesProofs.OrthSum (7.5s)
+warning: src/Formalism/LatticeSlopes/LatticeSlopesProofs/OrthSum.lean:28:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Formalism/TameInertiaTowers/CentralOrderTwo/DecompositionSubgroupIndex.lean:21:98: Unused tactic linter: `(intros; apply Bl.FirstBlockLemmaE.goal1 <;> assumption)` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/TameInertiaTowers/CentralOrderTwo/DecompositionSubgroupIndex.lean:21:157: Unused tactic linter: `(apply @Bl.FirstBlockLemmaE.goal1 <;> assumption)` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LatticeSlopes/LatticeSlopesProofs/OrthSum.lean:70:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/TameInertiaTowers/CentralOrderTwo/DecompositionSubgroupIndex.lean:21:209: Unused tactic linter: `(intros; apply @Bl.FirstBlockLemmaE.goal1 <;> assumption)` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/TameInertiaTowers/CentralOrderTwo/DecompositionSubgroupIndex.lean:21:269: Unused tactic linter: `(apply @Bl.FirstBlockLemmaE.goal1 <;>
-    first
-    | assumption
-    | infer_instance)` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LatticeSlopes/LatticeSlopesProofs/OrthSum.lean:76:4: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/TameInertiaTowers/CentralOrderTwo/DecompositionSubgroupIndex.lean:21:346: Unused tactic linter: `exact @Bl.FirstBlockLemmaE.goal1 L ‹_› ‹_› x c hx` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/TameInertiaTowers/CentralOrderTwo/DecompositionSubgroupIndex.lean:21:398: Unused tactic linter: `exact @Bl.FirstBlockLemmaE.goal1 L ‹_› ‹_› x c` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LatticeSlopes/LatticeSlopesProofs/OrthSum.lean:87:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/TameInertiaTowers/CentralOrderTwo/DecompositionSubgroupIndex.lean:21:447: Unused tactic linter: `exact @Bl.FirstBlockLemmaE.goal1 L ‹_› ‹_› x` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/TameInertiaTowers/CentralOrderTwo/DecompositionSubgroupIndex.lean:21:494: Unused tactic linter: `exact @Bl.FirstBlockLemmaE.goal1 L ‹_› ‹_›` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LatticeSlopes/LatticeSlopesProofs/OrthSum.lean:109:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/TameInertiaTowers/CentralOrderTwo/DecompositionSubgroupIndex.lean:21:539: Unused tactic linter: `exact @Bl.FirstBlockLemmaE.goal1 L ‹_›` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/TameInertiaTowers/CentralOrderTwo/DecompositionSubgroupIndex.lean:21:580: Unused tactic linter: `exact @Bl.FirstBlockLemmaE.goal1 L` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LatticeSlopes/LatticeSlopesProofs/OrthSum.lean:110:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LatticeSlopes/LatticeSlopesProofs/OrthSum.lean:111:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LatticeSlopes/LatticeSlopesProofs/OrthSum.lean:112:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LatticeSlopes/LatticeSlopesProofs/OrthSum.lean:199:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LatticeSlopes/LatticeSlopesProofs/OrthSum.lean:200:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [9004/9517] Built Formalism.SharpRestriction.LevelLetterCocycles.LocCoh (8.1s)
+✔ [9005/9517] Built Formalism.RealPlaceAnalysis.StatementU (7.1s)
