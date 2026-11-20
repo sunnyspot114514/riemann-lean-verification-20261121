@@ -1,13 +1,16 @@
+⚠️ `[IsDomain V]` and `[IsLocalRing V]` each imply `[Nontrivial V]`.
+💡️ Of these, `[IsDomain V]` and `[IsLocalRing V]` may be removed.
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ArcDataDescendsFromCompleteDVRStatement.lean:18:67: Unused tactic linter: `exact GlobalTheory.ArcDataDescent.hasArcData_descends` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [32121/32195] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.QuotientIsFiniteLocallyOfFiniteTypeDescend (5.3s)
-✔ [32122/32195] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.MemMapKerOfOneTmulEqZeroOfFlat (6.3s)
-⚠ [32123/32195] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSpreadThetaLevelAbelianSchemeAway (9.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAway.lean:86:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ArcDataDescendsFromCompleteDVRStatement.lean:18:123: Unused tactic linter: `(intros; apply GlobalTheory.ArcDataDescent.hasArcData_descends <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [32720/32786] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TwistTxNest (6.6s)
+⚠ [32721/32786] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFullAll (9.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsFullAll.lean:70:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -15,7 +18,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAway.lean:87:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsFullAll.lean:82:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -23,7 +26,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAway.lean:96:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsFullAll.lean:83:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -31,7 +34,61 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAway.lean:97:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsFullAll.lean:100:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [32722/32786] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsCountableModel (10s)
+⚠ [32723/32786] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsTorsionMapOfThetaMatching (6.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsTorsionMapOfThetaMatching.lean:17:58: This simp argument is unused:
+  div_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [NumD.txT, NumD.vt, NumD.wQ, NumB.uth, NumB.mth, NumB.uV, hp, toAdd_one, NumD.ψ_zero,
+    NumD.Gt.s_zero, NumD.c_zero, N.cub.N_one, N.cub.face, _root_.one_mul, NumD.Gt.pow_b, Units.val_one, div_eq_mul_inv,
+    Units.val_mul, inv_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [32724/32786] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIsoOnG (12s)
+⚠ [32725/32788] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaRecognitionMatchedPartsDimEq (9.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaRecognitionMatchedPartsDimEq.lean:184:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaRecognitionMatchedPartsDimEq.lean:210:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [32726/32788] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsTraitSpecialisationOfMemClosureThetaPoints (16s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsTraitSpecialisationOfMemClosureThetaPoints.lean:72:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsTraitSpecialisationOfMemClosureThetaPoints.lean:73:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsTraitSpecialisationOfMemClosureThetaPoints.lean:86:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -39,7 +96,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAway.lean:98:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsTraitSpecialisationOfMemClosureThetaPoints.lean:89:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -47,7 +104,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAway.lean:113:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsTraitSpecialisationOfMemClosureThetaPoints.lean:92:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -55,7 +112,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAway.lean:114:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsTraitSpecialisationOfMemClosureThetaPoints.lean:128:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -63,7 +120,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAway.lean:115:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsTraitSpecialisationOfMemClosureThetaPoints.lean:129:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -71,90 +128,33 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [32124/32201] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.FlatOfTameDescent (8.6s)
-⚠ [32125/32203] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsDifferentiableOnVerticalVectorFieldStatement (5.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsDifferentiableOnVerticalVectorFieldStatement.lean:14:78: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsTraitSpecialisationOfMemClosureThetaPoints.lean:154:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsDifferentiableOnVerticalVectorFieldStatement.lean:14:145: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsDifferentiableOnVerticalVectorFieldStatement.lean:14:78: Unused tactic linter: `exact GlobalTheory.KS.VertField.exists_differentiableOn_vertical` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsTraitSpecialisationOfMemClosureThetaPoints.lean:158:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsDifferentiableOnVerticalVectorFieldStatement.lean:14:145: Unused tactic linter: `(intros;
-  apply GlobalTheory.KS.VertField.exists_differentiableOn_vertical <;> assumption)` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [32126/32203] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.PushforwardPolarisationBundleInvertibleOnModelStatement (5.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/PushforwardPolarisationBundleInvertibleOnModelStatement.lean:15:64: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsTraitSpecialisationOfMemClosureThetaPoints.lean:160:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/PushforwardPolarisationBundleInvertibleOnModelStatement.lean:15:117: this tactic is never executed
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/PushforwardPolarisationBundleInvertibleOnModelStatement.lean:15:64: Unused tactic linter: `exact GlobalTheory.PushInv.pushInvertible_of_model` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsTraitSpecialisationOfMemClosureThetaPoints.lean:84:312: Variable name `Y` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/PushforwardPolarisationBundleInvertibleOnModelStatement.lean:15:117: Unused tactic linter: `(intros; apply GlobalTheory.PushInv.pushInvertible_of_model <;> assumption)` does nothing
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _Y
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [32127/32203] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsProjOverCompFinite (5.3s)
-⚠ [32128/32203] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.ModuliLevelQuotientByFiniteGroupStatement (5.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ModuliLevelQuotientByFiniteGroupStatement.lean:16:62: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ModuliLevelQuotientByFiniteGroupStatement.lean:16:113: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ModuliLevelQuotientByFiniteGroupStatement.lean:16:62: Unused tactic linter: `exact GlobalTheory.LevQuot.exists_level_quotient` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ModuliLevelQuotientByFiniteGroupStatement.lean:16:113: Unused tactic linter: `(intros; apply GlobalTheory.LevQuot.exists_level_quotient <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [32129/32203] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.QuotientIsReducedIsNormalFlat (5.4s)
-✔ [32130/32203] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.LbIsoPullOfIsConst (5.7s)
-⚠ [32131/32203] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.LevelChangeExtendsBaseModelStatement (5.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/LevelChangeExtendsBaseModelStatement.lean:16:59: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/LevelChangeExtendsBaseModelStatement.lean:16:107: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/LevelChangeExtendsBaseModelStatement.lean:16:59: Unused tactic linter: `exact GlobalTheory.Models.extendsAut_of_above` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/LevelChangeExtendsBaseModelStatement.lean:16:107: Unused tactic linter: `(intros; apply GlobalTheory.Models.extendsAut_of_above <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [32132/32203] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsGenOfQuotientOfRigid (10s)
-⚠ [32133/32203] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.QuotientIsFiniteLocallyOfFiniteTypeDescendStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/QuotientIsFiniteLocallyOfFiniteTypeDescendStatement.lean:12:78: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/QuotientIsFiniteLocallyOfFiniteTypeDescendStatement.lean:12:145: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/QuotientIsFiniteLocallyOfFiniteTypeDescendStatement.lean:12:78: Unused tactic linter: `exact GlobalTheory.quotient_isFinite_locallyOfFiniteType_descend` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/QuotientIsFiniteLocallyOfFiniteTypeDescendStatement.lean:12:145: Unused tactic linter: `(intros;
-  apply GlobalTheory.quotient_isFinite_locallyOfFiniteType_descend <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [32134/32207] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSecOnNonvanishingOfTameQuotient (14s)
-⚠ [32135/32208] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSpreadThetaLevelAbelianSchemeAwayStatement (5.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAwayStatement.lean:14:60: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAwayStatement.lean:14:109: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAwayStatement.lean:14:60: Unused tactic linter: `exact GlobalTheory.SpreadGeneric.exists_spread` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsSpreadThetaLevelAbelianSchemeAwayStatement.lean:14:109: Unused tactic linter: `(intros; apply GlobalTheory.SpreadGeneric.exists_spread <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [32136/32208] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.LocDerRegularCoeff (10s)
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
