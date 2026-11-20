@@ -4,20 +4,20 @@
   "started_utc": "2026-11-20T18:23:56+00:00",
   "state": "running",
   "runner_stage": "bootstrap",
-  "bootstrap_exit_code": null,
+  "bootstrap_exit_code": 0,
   "driver_exit_code": null,
   "verification_passed": false,
-  "updated_utc": "2026-11-20T18:26:06+00:00",
+  "updated_utc": "2026-11-20T18:26:35+00:00",
   "resources": {
-    "sampled_utc": "2026-11-20T18:26:06+00:00",
-    "cgroup_memory_current_bytes": 16447090688,
+    "sampled_utc": "2026-11-20T18:26:35+00:00",
+    "cgroup_memory_current_bytes": 16446234624,
     "cgroup_memory_peak_since_creation_bytes": 17469517824,
-    "cgroup_cpu_usage_seconds": 905.059971907,
+    "cgroup_cpu_usage_seconds": 936.091000225,
     "sampled_memory_peak_this_runner_bytes": 16451403776,
-    "cgroup_cpu_seconds_since_runner_start": 2.2235811219999277,
-    "disk_free_bytes": 521739698176,
+    "cgroup_cpu_seconds_since_runner_start": 33.25460943999997,
+    "disk_free_bytes": 521739501568,
     "disk_total_bytes": 536870912000,
-    "disk_free_inodes": 729747351
+    "disk_free_inodes": 729749474
   },
   "phases": {
     "source-prefetch": {
@@ -77,8 +77,55 @@
       }
     },
     "bootstrap": {
-      "status": "not_started",
-      "stages": {}
+      "run_directory_name": "20261120T182606Z-94565",
+      "status": "complete:toolchain,source,dependencies,mathlib-cache,statements,source-unchanged",
+      "stages": {
+        "bootstrap": {
+          "exit_code": 0,
+          "start_utc": null,
+          "end_utc": "2026-11-20T18:26:28Z"
+        },
+        "dependency-fetch": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:26:17Z",
+          "end_utc": "2026-11-20T18:26:18Z"
+        },
+        "mathlib-cache": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:26:18Z",
+          "end_utc": "2026-11-20T18:26:22Z"
+        },
+        "preflight": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:26:06Z",
+          "end_utc": "2026-11-20T18:26:06Z"
+        },
+        "source-fetch": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:26:17Z",
+          "end_utc": "2026-11-20T18:26:17Z"
+        },
+        "source-integrity": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:26:27Z",
+          "end_utc": "2026-11-20T18:26:28Z"
+        },
+        "statements-sanity": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:26:22Z",
+          "end_utc": "2026-11-20T18:26:27Z"
+        },
+        "toolchain-download": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:26:06Z",
+          "end_utc": "2026-11-20T18:26:08Z"
+        },
+        "toolchain-install": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:26:08Z",
+          "end_utc": "2026-11-20T18:26:17Z"
+        }
+      }
     },
     "build": {
       "status": "not_started",
