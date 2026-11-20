@@ -3,19 +3,19 @@
   "source_commit_requested": "7cbf7a0c32fca1badf05931879a37c3f8a2b03b4",
   "started_utc": "2026-11-20T18:48:14+00:00",
   "state": "running",
-  "runner_stage": "bootstrap",
-  "bootstrap_exit_code": null,
+  "runner_stage": "driver",
+  "bootstrap_exit_code": 0,
   "driver_exit_code": null,
   "verification_passed": false,
-  "updated_utc": "2026-11-20T18:48:31+00:00",
+  "updated_utc": "2026-11-20T18:48:49+00:00",
   "resources": {
-    "sampled_utc": "2026-11-20T18:48:31+00:00",
-    "cgroup_memory_current_bytes": 16658247680,
+    "sampled_utc": "2026-11-20T18:48:49+00:00",
+    "cgroup_memory_current_bytes": 16536997888,
     "cgroup_memory_peak_since_creation_bytes": 19717738496,
     "cgroup_memory_stat_bytes": {
-      "total_rss": 388747264,
-      "total_cache": 15353712640,
-      "total_mapped_file": 791408640,
+      "total_rss": 294653952,
+      "total_cache": 15353982976,
+      "total_mapped_file": 8110080,
       "total_inactive_file": 5031464960
     },
     "cgroup_memory_failcnt": 0,
@@ -24,12 +24,12 @@
       "under_oom": 0,
       "oom_kill": 0
     },
-    "cgroup_cpu_usage_seconds": 3010.922737836,
+    "cgroup_cpu_usage_seconds": 3022.426580245,
     "sampled_memory_peak_this_runner_bytes": 16658247680,
-    "cgroup_cpu_seconds_since_runner_start": 21.06324703700011,
-    "disk_free_bytes": 521515565056,
+    "cgroup_cpu_seconds_since_runner_start": 32.567089445999954,
+    "disk_free_bytes": 521515421696,
     "disk_total_bytes": 536870912000,
-    "disk_free_inodes": 729742954
+    "disk_free_inodes": 729744333
   },
   "phases": {
     "source-prefetch": {
@@ -90,8 +90,13 @@
     },
     "bootstrap": {
       "run_directory_name": "20261120T184814Z-97032",
-      "status": "running:statements-sanity",
+      "status": "complete:toolchain,source,dependencies,mathlib-cache,statements,source-unchanged",
       "stages": {
+        "bootstrap": {
+          "exit_code": 0,
+          "start_utc": null,
+          "end_utc": "2026-11-20T18:48:36Z"
+        },
         "dependency-fetch": {
           "exit_code": 0,
           "start_utc": "2026-11-20T18:48:25Z",
@@ -111,6 +116,16 @@
           "exit_code": 0,
           "start_utc": "2026-11-20T18:48:24Z",
           "end_utc": "2026-11-20T18:48:25Z"
+        },
+        "source-integrity": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:48:35Z",
+          "end_utc": "2026-11-20T18:48:36Z"
+        },
+        "statements-sanity": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:48:30Z",
+          "end_utc": "2026-11-20T18:48:35Z"
         },
         "toolchain-download": {
           "exit_code": 0,
