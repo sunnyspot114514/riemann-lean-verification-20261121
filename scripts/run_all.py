@@ -2,7 +2,7 @@
 """Detach the pinned RH verification, monitor it, and publish an explicit result set.
 
 Usage: python3 run_all.py --base /root/autodl-tmp/rh-check
-The verification checkout and its SSH authentication must already be configured.
+The verification checkout and its Git authentication must already be configured.
 No credentials, source checkout, toolchain, or control files are added to Git.
 """
 
@@ -15,6 +15,7 @@ import json
 import os
 from pathlib import Path
 import platform
+import resource
 import shlex
 import shutil
 import signal
@@ -32,6 +33,7 @@ EVIDENCE_PATTERNS = (
     "release.sha256", "source-commit.txt", "lean-version.txt", "lake-version.txt",
     "final-source-status.txt", "build-config-sha256.txt", "lakefile-resource.toml",
     "resource-controls.txt", "Check.lean", "*.command.sh", "cgroup-start.txt", "cgroup-end.txt",
+    "result.json",
 )
 FINAL_PATTERNS = (
     "source-index*.txt", "*.time.txt", "*.exit-code.txt", "final-*.diff",
@@ -62,6 +64,14 @@ def numeric(text):
         return int(text)
     except (ValueError, TypeError):
         return None
+
+
+def process_limits():
+    soft, hard = resource.getrlimit(resource.RLIMIT_NOFILE)
+    return {"vm_max_map_count": numeric(read("/proc/sys/vm/max_map_count")),
+            "nofile_soft": None if soft == resource.RLIM_INFINITY else soft,
+            "nofile_hard": None if hard == resource.RLIM_INFINITY else hard,
+            "note": "Observed only; this runner does not change global VM or process limits."}
 
 
 def cpu_set_count(value):
@@ -242,6 +252,7 @@ class Runner:
         self.environment = {"recorded_utc": utc(), "system": platform.system(),
                             "kernel_release": platform.release(), "machine": platform.machine(),
                             "python_version": platform.python_version(), "limits": self.resources.limits(),
+                            "process_and_vm_limits": process_limits(),
                             "resource_scope": "Cgroup counters include every process in the same cgroup. Sampled peak can miss brief spikes; kernel peak is since cgroup creation. GNU time maximum RSS is not aggregate cgroup memory.",
                             "sampling_seconds": args.sample_seconds, "publication_seconds": args.publish_seconds,
                             "runner_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
@@ -257,7 +268,9 @@ class Runner:
             boot = None
         if build and str(build) == self.old_driver_pointer:
             build = None
-        return {"bootstrap": boot, "build": build}
+        return {"source-prefetch": safe_run_dir(self.base / "source-prefetch-current-run.txt", self.base / "source-prefetch-runs"),
+                "dependency-prefetch": safe_run_dir(self.base / "dependency-prefetch-current-run.txt", self.base / "dependency-prefetch-runs"),
+                "bootstrap": boot, "build": build}
 
     def refresh(self):
         self.status["updated_utc"] = utc()
@@ -285,6 +298,10 @@ class Runner:
 
     def log_sources(self):
         sources = [("runner", p) for p in self.run.glob("*.log")]
+        for group in ("source-prefetch", "dependency-prefetch"):
+            path = self.audit / (group + ".log")
+            if path.is_file() and not path.is_symlink():
+                sources.append((group, path))
         for group, path in self.phase_dirs().items():
             if path:
                 sources.extend((group, p) for p in path.glob("*.log") if p.is_file() and not p.is_symlink())
@@ -387,6 +404,21 @@ class Runner:
             except ProcessLookupError:
                 pass
 
+    def clear_task_credential_cache(self):
+        """Stop only this task's in-memory helper, after confirmed final push."""
+        socket = self.base / "control/git-credential.sock"
+        if not socket.exists():
+            return
+        record = {"attempted_utc": utc(), "scope": "task-specific credential-cache socket"}
+        try:
+            completed = subprocess.run(["git", "credential-cache", "--socket=" + str(socket), "exit"],
+                                       stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL,
+                                       stderr=subprocess.DEVNULL, timeout=10)
+            record["exit_code"] = completed.returncode
+        except (OSError, subprocess.TimeoutExpired) as exc:
+            record["error_type"] = type(exc).__name__
+        write_json(self.audit / "credential-cache-cleanup.json", record)
+
     def run_phase(self, name, command):
         self.status.update(state="running", runner_stage=name)
         self.refresh()
@@ -463,6 +495,8 @@ class Runner:
                         break
                     time.sleep(15)
                     success = self.publish(final=True)
+                if success:
+                    self.clear_task_credential_cache()
             return 0 if self.status["verification_passed"] and success else (self.status.get("exit_code") or 1)
 
 

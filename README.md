@@ -1,6 +1,6 @@
 # Riemann Hypothesis Lean verification
 
-This repository records a compilation and kernel-checking attempt. **No successful proof verification has been recorded yet.** The latest machine-readable state is [results/status.json](results/status.json); it will appear after the server runner starts. A `running`, `failed`, or `runner_error` state is not a successful verification.
+This repository records a compilation and kernel-checking attempt. The latest machine-readable state and verification outcome are in [results/status.json](results/status.json). A `running`, `failed`, or `runner_error` state is not a successful verification.
 
 ## Source under test
 
@@ -18,7 +18,7 @@ The original source checkout is separate from this repository and remains unchan
 
 The rented Ubuntu 22.04.5 container has **32 logical CPUs, a 60 GiB memory limit, and a 500 GiB data volume**. Host-wide `free` output is not the container memory limit. Everything is stored under `/root/autodl-tmp/rh-check` on that server. The operator's Windows computer controls SSH and relays network traffic in memory; project sources and build products are not saved there.
 
-The server uses a repository-specific GitHub deploy key for result uploads. SSH login credentials, OAuth tokens, private keys, and unrelated files are excluded from the result repository. TLS certificate verification remains enabled for downloads; the official Lean archive is also checked against the upstream release digest.
+Result uploads use HTTPS and the operator's existing GitHub credential through a task-specific, RAM-only Git credential-cache socket. The token is not written to disk or this repository. After the final upload succeeds, the runner stops only that task's credential-cache helper. SSH login credentials, private keys, and unrelated files are excluded from the result repository. The result checkout uses repository-local `http.proxy=''` and `http.curloptResolve=github.com:443:140.82.112.3` for its direct GitHub route; normal TLS certificate and hostname verification remain enabled. The official Lean archive is additionally checked against the upstream release digest.
 
 The runner records these separate stages:
 
@@ -30,6 +30,8 @@ The runner records these separate stages:
 
 The initial scheduler setting is `LEAN_NUM_THREADS=2`. An audit-side TOML copy adds only `weakLeanArgs = ["-j1"]` to limit each compiler's worker setting; the published project configuration and official binaries are unchanged. This is not an aggregate memory guarantee. Resource samples use cgroup limits and counters, with their scope and sampling limitations recorded.
 
+The platform reports `vm.max_map_count=65530` and denied an attempt to raise it. The runner only records this limit and the process's soft/hard open-file limits; it changes no global setting. A large import closure may encounter mapping limits or additional RAM costs, which must be distinguished from a proof error. Scheduler parallelism remains at its initial setting until actual build load is observed.
+
 Completed `.setup.json` intermediates are deleted only after a newer successful Lake trace and nonempty `.olean` exist. Source and proof artifacts are retained. This controls disk usage in a project where large repeated import metadata would otherwise dominate storage.
 
 ## Viewing progress
@@ -37,7 +39,7 @@ Completed `.setup.json` intermediates are deleted only after a newer successful 
 - [Current status](results/status.json): running stage, exit codes, timestamps and resource samples.
 - [Environment](results/environment.json): actual container limits and measurement scope.
 - [Log tails](results/logtails): periodically updated recent output.
-- [Evidence snapshots](results/evidence): versions and pinned source/dependency records.
+- [Evidence snapshots](results/evidence): versions, pinned source/dependency records, and the source/dependency prefetchers' explicit `result.json` provenance records.
 - [Final logs](results/final): compressed full logs and hash manifests after the run ends.
 
 The runner normally publishes every five minutes and on phase changes. If the network is unavailable, it retains server-side logs and retries. Final archive parts are at most 40 MiB; concatenate parts in manifest order, verify their SHA-256 values, and gunzip. A setup-only or statement-only success does not validate the proof. Stronger independent-checker results, if performed, will be reported separately.
