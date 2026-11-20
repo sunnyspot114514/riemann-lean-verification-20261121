@@ -4,30 +4,40 @@
   "started_utc": "2026-11-20T17:00:55+00:00",
   "state": "running",
   "runner_stage": "bootstrap",
-  "bootstrap_exit_code": null,
+  "bootstrap_exit_code": 56,
   "driver_exit_code": null,
   "verification_passed": false,
-  "updated_utc": "2026-11-20T17:07:22+00:00",
+  "updated_utc": "2026-11-20T17:08:57+00:00",
   "resources": {
-    "sampled_utc": "2026-11-20T17:07:22+00:00",
-    "cgroup_memory_current_bytes": 719065088,
+    "sampled_utc": "2026-11-20T17:08:57+00:00",
+    "cgroup_memory_current_bytes": 715464704,
     "cgroup_memory_peak_since_creation_bytes": 800960512,
-    "cgroup_cpu_usage_seconds": 65.93403462,
+    "cgroup_cpu_usage_seconds": 67.991597748,
     "sampled_memory_peak_this_runner_bytes": 725241856,
-    "cgroup_cpu_seconds_since_runner_start": 8.920921180000008,
-    "disk_free_bytes": 536870404096,
+    "cgroup_cpu_seconds_since_runner_start": 10.978484308000006,
+    "disk_free_bytes": 536868802560,
     "disk_total_bytes": 536870912000,
-    "disk_free_inodes": 730305969
+    "disk_free_inodes": 730304664
   },
   "phases": {
     "bootstrap": {
       "run_directory_name": "20261120T170105Z-6035",
-      "status": "running:toolchain-download",
+      "status": "failed:toolchain-download",
       "stages": {
+        "bootstrap": {
+          "exit_code": 56,
+          "start_utc": null,
+          "end_utc": "2026-11-20T17:08:42Z"
+        },
         "preflight": {
           "exit_code": 0,
           "start_utc": "2026-11-20T17:01:05Z",
           "end_utc": "2026-11-20T17:01:05Z"
+        },
+        "toolchain-download": {
+          "exit_code": 56,
+          "start_utc": "2026-11-20T17:01:05Z",
+          "end_utc": "2026-11-20T17:08:42Z"
         }
       }
     },
