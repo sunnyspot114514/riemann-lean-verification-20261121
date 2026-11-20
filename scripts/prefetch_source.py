@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """Prepare the unchanged Git checkout from author archive plus Git metadata.
 
-The fourteen archive parts are fetched directly. Git requests inherit the
-runner's proxy. The shared lock makes bootstrap wait for this preparation.
-No dependency or Lean build is run here. The published Git tree is the final gate.
+The fourteen archive parts are fetched directly. The exact upstream commit
+bytes and pinned mirror blobs are verified by their original Git object IDs.
+The shared lock makes bootstrap wait. No dependency or Lean build is run here.
+The complete published Git tree and object graph are the final gates.
 """
 import argparse
+import base64
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import datetime as dt
 import fcntl
@@ -17,6 +19,8 @@ import shutil
 import subprocess
 import sys
 import tarfile
+import time
+import urllib.request
 
 sys.dont_write_bytecode = True
 from prepare_dependencies import SOURCE_URL, SOURCE_REV, SOURCE_TREE, verify
@@ -24,6 +28,62 @@ from prepare_dependencies import SOURCE_URL, SOURCE_REV, SOURCE_TREE, verify
 ROOT_TREE = "02cfa4b3810fc22f6d43b317409071f380a5f1b4"
 ARCHIVE_BYTES = 239275554
 ARCHIVE_SHA256 = "9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc"
+
+
+def git_object_sha(kind, payload):
+    return hashlib.sha1(kind.encode() + b" " + str(len(payload)).encode() + b"\0" + payload).hexdigest()
+
+
+def install_original_commit(worktree):
+    """Restore exact upstream commit bytes, never generate a replacement commit."""
+    metadata = json.loads(Path(__file__).with_name("source_metadata.json").read_text())
+    if (metadata["source_commit"], metadata["root_tree"], metadata["src_tree"]) != (SOURCE_REV, ROOT_TREE, SOURCE_TREE):
+        raise RuntimeError("Unexpected source metadata pin")
+    raw = base64.b64decode(metadata["raw_commit_base64"], validate=True)
+    if git_object_sha("commit", raw) != SOURCE_REV or raw.splitlines()[0] != ("tree " + ROOT_TREE).encode():
+        raise RuntimeError("Original commit bytes do not hash to the published commit")
+    result = subprocess.run(["git", "-C", str(worktree), "hash-object", "-t", "commit", "-w", "--stdin"],
+                            input=raw, stdout=subprocess.PIPE, check=True, env=git_env(no_lazy=True))
+    if result.stdout.decode().strip() != SOURCE_REV:
+        raise RuntimeError("Git rejected exact commit identity")
+    # This is the same explicit history boundary as a depth-one fetch. Parent
+    # history is not claimed to be present; the complete target tree is checked.
+    (worktree / ".git/shallow").write_text(SOURCE_REV + "\n")
+    return metadata
+
+
+def fetch_mirror_files(worktree, metadata):
+    files = metadata["mirror_files"]
+    if set(files) != {"README.md", ".gitignore"}:
+        raise RuntimeError("Unexpected mirror-only files")
+    opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+    for name, info in files.items():
+        if info["mode"] != "100644":
+            raise RuntimeError("Unexpected mirror file mode")
+        raw_url = f"https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/{SOURCE_REV}/{name}"
+        api_url = f"https://api.github.com/repos/CocoSgt/riemann-hypothesis-lean/git/blobs/{info['blob_sha']}"
+        payload = None
+        for attempt in range(3):
+            for url in (raw_url, api_url):
+                try:
+                    request = urllib.request.Request(url, headers={"User-Agent": "RH-verification"})
+                    with opener.open(request, timeout=25) as response:
+                        data = response.read(2 * 1024 * 1024)
+                    candidate = (base64.b64decode(json.loads(data)["content"])
+                                 if url == api_url else data)
+                    if git_object_sha("blob", candidate) != info["blob_sha"]:
+                        raise RuntimeError("Mirror file Git blob mismatch")
+                    payload = candidate
+                    break
+                except (OSError, ValueError, KeyError, RuntimeError):
+                    continue
+            if payload is not None:
+                break
+            time.sleep(3)
+        if payload is None:
+            raise RuntimeError(f"Could not retrieve the verified upstream blob for {name}")
+        with (worktree / name).open("xb") as output:
+            output.write(payload)
 
 
 def utc():
@@ -190,26 +250,17 @@ def main():
 
             stage("author-archive-download")
             archive = archive_download(downloads, args.workers)
-            stage("metadata-fetch")
+            stage("exact-commit-snapshot")
             worktree = base / f"source-prefetch-staging-{os.getpid()}"
             worktree.mkdir()  # Never reuse a partially hydrated or unknown staging directory.
-            git(worktree, "init", "--quiet")
+            git(worktree, "init", "--quiet", "--object-format=sha1")
             git(worktree, "remote", "add", "origin", SOURCE_URL)
-            git(worktree, "config", "remote.origin.promisor", "true")
-            git(worktree, "config", "remote.origin.partialclonefilter", "blob:none")
-            git(worktree, "fetch", "--no-tags", "--depth=1", "--filter=blob:none", "origin", SOURCE_REV)
-            if git(worktree, "rev-parse", "FETCH_HEAD", capture=True) != SOURCE_REV:
-                raise RuntimeError("Fetched commit identity mismatch")
-            if git(worktree, "rev-parse", f"{SOURCE_REV}^{{tree}}", capture=True) != ROOT_TREE:
-                raise RuntimeError("Fetched root tree identity mismatch")
+            metadata = install_original_commit(worktree)
 
             stage("archive-extraction")
             files = extract_verified_archive(archive, worktree)
-            stage("mirror-readme-fetch")
-            # The mirror adds only these two files to the author's archive.
-            # This is the sole intentional lazy fetch, for two small public blobs.
-            git(worktree, "checkout", SOURCE_REV, "--", "README.md", ".gitignore")
-            git(worktree, "config", "remote.origin.promisor", "false")
+            stage("mirror-blob-fetch")
+            fetch_mirror_files(worktree, metadata)
 
             stage("hydrate-and-check-tree")
             # HEAD is still unborn, so add hashes the extracted worktree against
@@ -230,7 +281,8 @@ def main():
                 raise RuntimeError("Source destination appeared while locked; refusing to overwrite")
             os.rename(worktree, source)
             record.update(path=str(source), src_tree=SOURCE_TREE, archive_sha256=ARCHIVE_SHA256,
-                          archive_bytes=ARCHIVE_BYTES, extracted_files=files, finished_utc=utc())
+                          archive_bytes=ARCHIVE_BYTES, extracted_files=files, finished_utc=utc(),
+                          retrieval="verified author archive, exact original commit bytes, pinned upstream mirror blobs")
             (run / "result.json").write_text(json.dumps(record, indent=2) + "\n")
             (run / "status.txt").write_text("complete:archive,git-objects,root-tree,source-unchanged\n")
             print(f"{utc()} verified source installed at {source}", flush=True)

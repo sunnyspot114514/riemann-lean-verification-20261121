@@ -131,12 +131,17 @@ def main():
     project = args.project.absolute()
     records = [source_record(project, args.phase == "source")]
     if args.phase != "source":
-        package_dir = project / ".lake/packages"
-        if package_dir.is_symlink() or (project / ".lake").is_symlink():
-            raise RuntimeError("Refusing symlink package storage")
-        for name, url, rev in dependencies(project):
-            action = fetch_exact if args.phase == "dependencies" else verify
-            records.append(action(package_dir / name, url, rev))
+        # source_record has released the source lock before taking this lock.
+        # The optional fast prefetcher may hold it while awaiting source setup.
+        with (project.parent / "dependencies.prepare.lock").open("a") as lock:
+            print("Waiting for the dependency preparation lock", flush=True)
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            package_dir = project / ".lake/packages"
+            if package_dir.is_symlink() or (project / ".lake").is_symlink():
+                raise RuntimeError("Refusing symlink package storage")
+            for name, url, rev in dependencies(project):
+                action = fetch_exact if args.phase == "dependencies" else verify
+                records.append(action(package_dir / name, url, rev))
     result = {"phase": args.phase, "finished_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
               "source_commit": SOURCE_REV, "repositories": records}
     args.output.parent.mkdir(parents=True, exist_ok=True)
