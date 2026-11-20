@@ -1,160 +1,160 @@
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/AdelicUnitaryOrbits/QuadFiniteDimensional.lean:137:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/AdelicUnitaryOrbits/QuadFiniteDimensional.lean:138:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/AdelicUnitaryOrbits/QuadFiniteDimensional.lean:137:4: Unused tactic linter: `(unfold quadBasis; exact coe_basisOfLinearIndependentOfCardEqFinrank hli _)` does nothing
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/LocalToGlobal/IndefiniteReal/LevelTypeEquivalence/AdlEqZeroOfMemNbhd.lean:19:44: Unused tactic linter: `exact InfinitePlace.nonneg w _` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/AdelicUnitaryOrbits/QuadFiniteDimensional.lean:138:4: Unused tactic linter: `simp [quadBasis]` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/AdelicUnitaryOrbits/QuadFiniteDimensional.lean:151:0: automatically included section variable(s) unused in theorem `PIW.AdelicOrbitU.quadBasisR_zero`:
-  [CharZero F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [CharZero F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/AdelicUnitaryOrbits/QuadFiniteDimensional.lean:154:4: this tactic is never executed
+warning: src/Formalism/LocalToGlobal/IndefiniteReal/LevelTypeEquivalence/AdlEqZeroOfMemNbhd.lean:59:8: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/AdelicUnitaryOrbits/QuadFiniteDimensional.lean:154:4: Unused tactic linter: `simp [quadBasisR, quadBasis_coe]` does nothing
+warning: src/Formalism/LocalToGlobal/IndefiniteReal/LevelTypeEquivalence/AdlEqZeroOfMemNbhd.lean:59:8: Unused tactic linter: `exact Valued.integer_isOpen _` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/AdelicUnitaryOrbits/QuadFiniteDimensional.lean:156:0: automatically included section variable(s) unused in theorem `PIW.AdelicOrbitU.quadBasisR_one`:
-  [CharZero F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [CharZero F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/AdelicUnitaryOrbits/QuadFiniteDimensional.lean:159:4: this tactic is never executed
+warning: src/Formalism/LocalToGlobal/IndefiniteReal/LevelTypeEquivalence/AdlEqZeroOfMemNbhd.lean:67:31: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/AdelicUnitaryOrbits/QuadFiniteDimensional.lean:159:4: Unused tactic linter: `simp [quadBasisR, quadBasis_coe]` does nothing
+warning: src/Formalism/LocalToGlobal/IndefiniteReal/LevelTypeEquivalence/AdlEqZeroOfMemNbhd.lean:67:31: Unused tactic linter: `simp` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/AdelicUnitaryOrbits/QuadFiniteDimensional.lean:185:8: automatically included section variable(s) unused in theorem `_private.Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicUnitaryOrbits.QuadFiniteDimensional.0.PIW.AdelicOrbitU.sigR_tmul_adelic_unitary_orbits`:
-  [CharZero F]
+warning: src/Formalism/LocalToGlobal/IndefiniteReal/LevelTypeEquivalence/AdlEqZeroOfMemNbhd.lean:69:0: automatically included section variable(s) unused in theorem `Formalism.IndefR.Eqv.G5.adl_norm_algebraMap`:
+  [NumberField F]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [CharZero F] in theorem ...
+  omit [NumberField F] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/AdelicUnitaryOrbits/QuadFiniteDimensional.lean:188:4: this tactic is never executed
+warning: src/Formalism/LocalToGlobal/IndefiniteReal/LevelTypeEquivalence/AdlEqZeroOfMemNbhd.lean:72:16: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/AdelicUnitaryOrbits/QuadFiniteDimensional.lean:189:4: this tactic is never executed
+warning: src/Formalism/LocalToGlobal/IndefiniteReal/LevelTypeEquivalence/AdlEqZeroOfMemNbhd.lean:72:16: Unused tactic linter: `simp [WithAbs.equiv, WithAbs.toAbs]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/LocalToGlobal/IndefiniteReal/LevelTypeEquivalence/AdlEqZeroOfMemNbhd.lean:120:17: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+✔ [18483/18555] Built Formalism.SharpRestriction.CuspSpanNormBounds.BridgeDeepQ (7.5s)
+⚠ [18484/18555] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.DualFamilyCounting.NcRealPf (18s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/DualFamilyCounting/NcRealPf.lean:23:6: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/AdelicUnitaryOrbits/QuadFiniteDimensional.lean:188:4: Unused tactic linter: `simp [sigR]` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/AdelicUnitaryOrbits/QuadFiniteDimensional.lean:189:4: Unused tactic linter: `(unfold sigR; simp)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/AdelicUnitaryOrbits/QuadFiniteDimensional.lean:196:0: automatically included section variable(s) unused in theorem `PIW.AdelicOrbitU.quad_tmul_algebraMap`:
-  [CharZero F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [CharZero F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [17909/18048] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicUnitaryOrbits.InclRAlgebraMap (5.9s)
-✔ [17910/18048] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndices.FirstRaisingMemEquivariant (26s)
-✔ [17911/18048] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicUnitaryOrbits.HformEntry (5.0s)
-✔ [17912/18048] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeColumns.IdxAsm (5.2s)
-⚠ [17913/18048] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HermitianDiagonalization.ExistsOrthogonalFamily (6.1s)
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/HermitianDiagonalization/ExistsOrthogonalFamily.lean:70:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/HermitianDiagonalization/ExistsOrthogonalFamily.lean:93:12: `linearIndependent_fin_cons` has been deprecated: Use `linearIndependent_finCons` instead
-✔ [17914/18051] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelStructures.LevelCongruenceTypedPlaces (7.7s)
-⚠ [17915/18054] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MassComputations.ContinuousCrdAllSymm (10s)
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/MassComputations/ContinuousCrdAllSymm.lean:19:0: automatically included section variable(s) unused in theorem `MassDataMassesW.KCptW.continuous_crdAll`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/MassComputations/ContinuousCrdAllSymm.lean:25:0: automatically included section variable(s) unused in theorem `MassDataMassesW.KCptW.continuous_crdAll_symm`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/MassComputations/ContinuousCrdAllSymm.lean:31:0: automatically included section variable(s) unused in theorem `MassDataMassesW.KCptW.ratV_single`:
-  [NumberField E]
-  [FiniteDimensional F E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [FiniteDimensional F E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/MassComputations/ContinuousCrdAllSymm.lean:42:6: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/MassComputations/ContinuousCrdAllSymm.lean:39:0: automatically included section variable(s) unused in theorem `MassDataMassesW.KCptW.single_mem_Bint`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/MassComputations/ContinuousCrdAllSymm.lean:101:0: automatically included section variable(s) unused in theorem `MassDataMassesW.KCptW.mem_std_iff`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [17916/18054] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndices.ImAGOthNotDvd (7.6s)
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeIndices/ImAGOthNotDvd.lean:44:10: `zero_le'` has been deprecated: Use `zero_le` instead
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeIndices/ImAGOthNotDvd.lean:52:37: `zero_le'` has been deprecated: Use `zero_le` instead
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeIndices/ImAGOthNotDvd.lean:81:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeIndices/ImAGOthNotDvd.lean:92:26: `zero_le'` has been deprecated: Use `zero_le` instead
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeIndices/ImAGOthNotDvd.lean:107:53: `zero_le'` has been deprecated: Use `zero_le` instead
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeIndices/ImAGOthNotDvd.lean:70:10: this tactic is never executed
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/DualFamilyCounting/NcRealPf.lean:24:6: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeIndices/ImAGOthNotDvd.lean:71:10: this tactic is never executed
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/DualFamilyCounting/NcRealPf.lean:23:6: Unused tactic linter: `exact MeasureTheory.Measure.measure_pos_of_mem_nhds _ hKn` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/DualFamilyCounting/NcRealPf.lean:24:6: Unused tactic linter: `exact (measure_pos_of_nonempty_interior _ ⟨1, mem_interior_iff_mem_nhds.mpr hKn⟩)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/DualFamilyCounting/NcRealPf.lean:185:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/DualFamilyCounting/NcRealPf.lean:186:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/DualFamilyCounting/NcRealPf.lean:217:44: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeIndices/ImAGOthNotDvd.lean:70:10: Unused tactic linter: `norm_cast` does nothing
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/DualFamilyCounting/NcRealPf.lean:203:25: Unused tactic linter: `ring` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeIndices/ImAGOthNotDvd.lean:71:10: Unused tactic linter: `simp` does nothing
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/DualFamilyCounting/NcRealPf.lean:214:25: Unused tactic linter: `ring` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [17917/18055] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicUnitaryOrbits.LocalSum (9.2s)
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/AdelicUnitaryOrbits/LocalSum.lean:54:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/AdelicUnitaryOrbits/LocalSum.lean:83:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/AdelicUnitaryOrbits/LocalSum.lean:124:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-✔ [17918/18058] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerVolume.RestrProd (6.8s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/DualFamilyCounting/NcRealPf.lean:217:23: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/DualFamilyCounting/NcRealPf.lean:217:44: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [18485/18561] Built Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.DstarIdxPf (9.8s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/FlagStabilizerTensors/RootLatticeThresholds/DstarIdxPf.lean:132:83: This simp argument is unused:
+  Nat.card_sum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Formalism.FourierDecayAlt.S3.Idx, Formalism.FourierDecayAlt.S3.Mid, Nat.card_eq_fintype_card,
+    Fintype.card_sum, Fintype.card_fin, Fintype.card_unit, Formalism.BasicNotions.Ranks.rS]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/FlagStabilizerTensors/RootLatticeThresholds/DstarIdxPf.lean:170:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [18486/18561] Built Formalism.SharpRestriction.CuspSpanNormBounds.BridgeLevelGenA (12s)
+✔ [18487/18561] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FundamentalDomainTransfer.IsFundamentalDomainOfIsFundDom (8.9s)
+✔ [18488/18561] Built Formalism.LocalToGlobal.SiegelLatticeTheory.TraceIntegralEstimates.MSOrdP (6.1s)
+⚠ [18489/18563] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.UnramifiedFactorEqOne (8.1s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/UnramifiedFactorEqOne.lean:111:28: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+✔ [18490/18563] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirVolumeRatios.GeoObj (5.4s)
+✔ [18491/18569] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirVolumeRatios.VolumeClassRepresentatives.IwasawaCovolume (5.5s)
+✔ [18492/18569] Built Formalism.PeriodIntegrals.OrbitalBoundsConclusion.LocMassTyp (5.4s)
+✔ [18493/18569] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeColumns.AdaptedBasisEveryPlace (5.0s)
+⚠ [18494/18569] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.MassDataXHaarPos (13s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/MassDataXHaarPos.lean:27:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/MassDataXHaarPos.lean:175:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/MassDataXHaarPos.lean:185:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/MassDataXHaarPos.lean:211:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/MassDataXHaarPos.lean:213:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/MassDataXHaarPos.lean:215:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18495/18571] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ValuationLocalVolumes.VolUTyp (6.6s)
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/ValuationLocalVolumes/VolUTyp.lean:93:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/ValuationLocalVolumes/VolUTyp.lean:98:5: `Algebra.isUnramifiedAt_iff_of_isDedekindDomain` has been deprecated: Use `Ideal.ramificationIdx'_eq_one_iff` instead.
+✔ [18496/18571] Built Formalism.LocalToGlobal.GlobalTheory.GL5.Statement (6.5s)
