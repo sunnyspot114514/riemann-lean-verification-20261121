@@ -1,61 +1,22 @@
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/TaylorDiscriminants/WickVanishing/LogChain.lean:162:68: This simp argument is unused:
-  Finsupp.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [huv]
+  [apply] simp
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/TaylorDiscriminants/WickVanishing/LogChain.lean:163:68: This simp argument is unused:
-  Finsupp.single_apply
+✔ [34438/34499] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.PowMemRatOneSupCongOne (12s)
+⚠ [34439/34499] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHeckeCharTrivOnRealSubfieldInfinityTypeStatement (5.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsHeckeCharTrivOnRealSubfieldInfinityTypeStatement.lean:10:70: this tactic is never executed
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [Ne.symm huv]
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsHeckeCharTrivOnRealSubfieldInfinityTypeStatement.lean:10:129: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/TaylorDiscriminants/WickVanishing/LogChain.lean:177:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-✔ [33820/33907] Built ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.TaylorComp (5.3s)
-✔ [33821/33907] Built Development.AutomorphicArithmetic.FrobeniusLocalisation.DiffDefs (5.7s)
-⚠ [33822/33907] Built Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LevelStructureProperties (17s)
-warning: src/Development/AbelianVarietyTheory/Proofs/SiegelThetaTransformation/LevelStructureProperties.lean:194:0: automatically included section variable(s) unused in theorem `GlobalTheory.SW.Lev.O_smul`:
-  [NumberField E]
-  [IsCMField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [IsCMField E] in theorem ...
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsHeckeCharTrivOnRealSubfieldInfinityTypeStatement.lean:10:70: Unused tactic linter: `exact GlobalTheory.Mem.Chr.AntiExist.exists_hecke_trivOn` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SiegelThetaTransformation/LevelStructureProperties.lean:247:0: automatically included section variable(s) unused in theorem `GlobalTheory.SW.Lev.lin_apply`:
-  [NumberField E]
-  [IsCMField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [IsCMField E] in theorem ...
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsHeckeCharTrivOnRealSubfieldInfinityTypeStatement.lean:10:129: Unused tactic linter: `(intros; apply GlobalTheory.Mem.Chr.AntiExist.exists_hecke_trivOn <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SiegelThetaTransformation/LevelStructureProperties.lean:250:0: automatically included section variable(s) unused in theorem `GlobalTheory.SW.Lev.lin_mul`:
-  [NumberField E]
-  [IsCMField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [IsCMField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SiegelThetaTransformation/LevelStructureProperties.lean:285:0: automatically included section variable(s) unused in theorem `GlobalTheory.SW.Lev.mem_idq`:
-  [IsCMField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsCMField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SiegelThetaTransformation/LevelStructureProperties.lean:294:0: automatically included section variable(s) unused in theorem `GlobalTheory.SW.Lev.smul_le_idq`:
-  [IsCMField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsCMField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SiegelThetaTransformation/LevelStructureProperties.lean:584:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [34440/34499] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.FieldSizeSupAdd (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/FieldSizeSupAdd.lean:57:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -63,98 +24,137 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SiegelThetaTransformation/LevelStructureProperties.lean:634:144: Variable name `idx` is not explicitly referenced.
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/FieldSizeSupAdd.lean:58:2: Try this: 
+  letI̵
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _idx
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [33823/33907] Built Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.HalfLevelCoefficients (6.3s)
-✔ [33824/33907] Built Formalism.LocalToGlobal.ProjectiveLattices.ExistsParPinsOfRec (5.4s)
-✔ [33825/33907] Built ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.ExistsSmallMemIdeal (6.7s)
-⚠ [33826/33907] Built ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.RealFlowPeriodsSpanEqTop (7.4s)
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/FundamentalDomains/RealFlowPeriodsSpanEqTop.lean:66:23: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/FundamentalDomains/RealFlowPeriodsSpanEqTop.lean:66:23: Unused tactic linter: `ring` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [33827/33907] Built ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.TaylorMul (8.2s)
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/TaylorDiscriminants/WickVanishing/TaylorMul.lean:137:13: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/TaylorDiscriminants/WickVanishing/TaylorMul.lean:137:44: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/TaylorDiscriminants/WickVanishing/TaylorMul.lean:157:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-⚠ [33828/33907] Built Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsWeilOfSymplecticStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/SiegelThetaTransformation/ExistsWeilOfSymplecticStatement.lean:8:61: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SiegelThetaTransformation/ExistsWeilOfSymplecticStatement.lean:8:111: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SiegelThetaTransformation/ExistsWeilOfSymplecticStatement.lean:8:61: Unused tactic linter: `exact GlobalTheory.SW.exists_weil_of_symplectic` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SiegelThetaTransformation/ExistsWeilOfSymplecticStatement.lean:8:111: Unused tactic linter: `(intros; apply GlobalTheory.SW.exists_weil_of_symplectic <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [33829/33907] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.HarmAMemSpanShort (8.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/HarmAMemSpanShort.lean:14:0: automatically included section variable(s) unused in theorem `GlobalTheory.StdHarm.mem_std`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/HarmAMemSpanShort.lean:28:0: automatically included section variable(s) unused in theorem `GlobalTheory.StdHarm.std_fg`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [33830/33907] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.SupLeL2PrincipalTorus (5.4s)
-⚠ [33831/33908] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCmAdeleUnitCharacterReadingHeckeCharStatement (5.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsCmAdeleUnitCharacterReadingHeckeCharStatement.lean:11:59: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsCmAdeleUnitCharacterReadingHeckeCharStatement.lean:11:107: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsCmAdeleUnitCharacterReadingHeckeCharStatement.lean:11:59: Unused tactic linter: `exact GlobalTheory.CharTransport.exists_chrEq` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsCmAdeleUnitCharacterReadingHeckeCharStatement.lean:11:107: Unused tactic linter: `(intros; apply GlobalTheory.CharTransport.exists_chrEq <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [33832/33908] Built Development.AutomorphicArithmetic.FrobeniusLocalisation.CardImgOneDvd (5.5s)
-warning: src/Development/AutomorphicArithmetic/FrobeniusLocalisation/CardImgOneDvd.lean:28:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [33833/33908] Built Development.AutomorphicArithmetic.FrobeniusLocalisation.ImgOneGcd (5.3s)
-⚠ [33834/33908] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsResOfTameAt (7.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsIsResOfTameAt.lean:49:2: Try this: 
-  haveI̵
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/FieldSizeSupAdd.lean:59:2: Try this: 
+  letI̵
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsIsResOfTameAt.lean:46:0: automatically included section variable(s) unused in theorem `GlobalTheory.TameResidue.exists_lift`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/FieldSizeSupAdd.lean:60:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/FieldSizeSupAdd.lean:69:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/FieldSizeSupAdd.lean:70:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [34441/34499] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CompletelySplitPrimeHostPlacePropertiesStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CompletelySplitPrimeHostPlacePropertiesStatement.lean:10:53: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CompletelySplitPrimeHostPlacePropertiesStatement.lean:10:95: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CompletelySplitPrimeHostPlacePropertiesStatement.lean:10:53: Unused tactic linter: `exact GlobalTheory.Mem.Chr.splitsC_main` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CompletelySplitPrimeHostPlacePropertiesStatement.lean:10:95: Unused tactic linter: `(intros; apply GlobalTheory.Mem.Chr.splitsC_main <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [34442/34501] Built Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.PotentiallyKnownOfSameLambdaBundleStatement (5.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaLawProofs/PotentiallyKnownOfSameLambdaBundleStatement.lean:14:65: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaLawProofs/PotentiallyKnownOfSameLambdaBundleStatement.lean:14:119: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaLawProofs/PotentiallyKnownOfSameLambdaBundleStatement.lean:14:65: Unused tactic linter: `exact GlobalTheory.KeyFam.SameLam.potKnown_of_lamIs` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaLawProofs/PotentiallyKnownOfSameLambdaBundleStatement.lean:14:119: Unused tactic linter: `(intros; apply GlobalTheory.KeyFam.SameLam.potKnown_of_lamIs <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [34443/34501] Built Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CmHostRootComplexEqPmSqrt (15s)
+✔ [34444/34508] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsInjectiveCharacterOfIsCyclic (5.6s)
+⚠ [34445/34509] Built Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.SiegelFamilyNearbyPeriodsSameComponentStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaLawProofs/SiegelFamilyNearbyPeriodsSameComponentStatement.lean:14:66: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaLawProofs/SiegelFamilyNearbyPeriodsSameComponentStatement.lean:14:121: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaLawProofs/SiegelFamilyNearbyPeriodsSameComponentStatement.lean:14:66: Unused tactic linter: `exact GlobalTheory.SiegelNearby.exists_nhds_sameComp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaLawProofs/SiegelFamilyNearbyPeriodsSameComponentStatement.lean:14:121: Unused tactic linter: `(intros; apply GlobalTheory.SiegelNearby.exists_nhds_sameComp <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [34446/34509] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnramifiedCmTypeHeckeCharOnHostStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsUnramifiedCmTypeHeckeCharOnHostStatement.lean:10:62: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsUnramifiedCmTypeHeckeCharOnHostStatement.lean:10:113: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsUnramifiedCmTypeHeckeCharOnHostStatement.lean:10:62: Unused tactic linter: `exact GlobalTheory.Mem.ChiPsiExist.exists_chiPsi` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsUnramifiedCmTypeHeckeCharOnHostStatement.lean:10:113: Unused tactic linter: `(intros; apply GlobalTheory.Mem.ChiPsiExist.exists_chiPsi <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [34447/34510] Built Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.KeyInvariantIndependentOfSectionsStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaLawProofs/KeyInvariantIndependentOfSectionsStatement.lean:19:58: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaLawProofs/KeyInvariantIndependentOfSectionsStatement.lean:19:105: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaLawProofs/KeyInvariantIndependentOfSectionsStatement.lean:19:58: Unused tactic linter: `exact GlobalTheory.KaIndep.kaVal_independent` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaLawProofs/KeyInvariantIndependentOfSectionsStatement.lean:19:105: Unused tactic linter: `(intros; apply GlobalTheory.KaIndep.kaVal_independent <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [34448/34510] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharFiniteOrderOfTrivialAtInfinity (7.2s)
+⚠ [34449/34510] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdeleCharacterTrivialOnLocalUnitsStatement (5.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IdeleCharacterTrivialOnLocalUnitsStatement.lean:10:60: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IdeleCharacterTrivialOnLocalUnitsStatement.lean:10:109: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IdeleCharacterTrivialOnLocalUnitsStatement.lean:10:60: Unused tactic linter: `exact GlobalTheory.Mem.LocTriv.eq_one_of_local` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IdeleCharacterTrivialOnLocalUnitsStatement.lean:10:109: Unused tactic linter: `(intros; apply GlobalTheory.Mem.LocTriv.eq_one_of_local <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [34450/34510] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.FieldSizeSupAddStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/FieldSizeSupAddStatement.lean:8:49: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/FieldSizeSupAddStatement.lean:8:87: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/FieldSizeSupAddStatement.lean:8:49: Unused tactic linter: `exact GlobalTheory.FieldSize.sz_sup` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/FieldSizeSupAddStatement.lean:8:87: Unused tactic linter: `(intros; apply GlobalTheory.FieldSize.sz_sup <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
