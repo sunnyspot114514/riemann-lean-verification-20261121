@@ -1,82 +1,88 @@
 {
-  "run_id": "20261120T171614Z-da196255",
+  "run_id": "20261120T182356Z-e7ea2f2b",
   "source_commit_requested": "7cbf7a0c32fca1badf05931879a37c3f8a2b03b4",
-  "started_utc": "2026-11-20T17:16:14+00:00",
-  "state": "interrupted",
-  "runner_stage": "driver",
-  "bootstrap_exit_code": 0,
-  "driver_exit_code": -9,
+  "started_utc": "2026-11-20T18:23:56+00:00",
+  "state": "running",
+  "runner_stage": "bootstrap",
+  "bootstrap_exit_code": null,
+  "driver_exit_code": null,
   "verification_passed": false,
-  "updated_utc": "2026-11-20T18:05:43+00:00",
+  "updated_utc": "2026-11-20T18:23:56+00:00",
   "resources": {
-    "sampled_utc": "2026-11-20T18:05:43+00:00",
-    "cgroup_memory_current_bytes": 15814119424,
+    "sampled_utc": "2026-11-20T18:23:56+00:00",
+    "cgroup_memory_current_bytes": 16451284992,
     "cgroup_memory_peak_since_creation_bytes": 17469517824,
-    "cgroup_cpu_usage_seconds": 589.491176943,
-    "sampled_memory_peak_this_runner_bytes": 17429626880,
-    "cgroup_cpu_seconds_since_runner_start": 511.12691989900003,
-    "disk_free_bytes": 522337140736,
+    "cgroup_cpu_usage_seconds": 902.846842779,
+    "sampled_memory_peak_this_runner_bytes": 16451403776,
+    "cgroup_cpu_seconds_since_runner_start": 0.010451993999936349,
+    "disk_free_bytes": 521739874304,
     "disk_total_bytes": 536870912000,
-    "disk_free_inodes": 729757292
+    "disk_free_inodes": 729747800
   },
   "phases": {
-    "bootstrap": {
-      "run_directory_name": "20261120T171628Z-6619",
-      "status": "complete:toolchain,source,dependencies,mathlib-cache,statements,source-unchanged",
+    "source-prefetch": {
+      "run_directory_name": "20261120T175221Z-7145",
+      "status": "complete:archive,git-objects,root-tree,source-unchanged",
+      "stages": {}
+    },
+    "dependency-prefetch": {
+      "run_directory_name": "20261120T175221Z-7147",
+      "status": "complete:nine-dependencies,trees,objects,source-unchanged",
       "stages": {
-        "bootstrap": {
+        "Cli": {
           "exit_code": 0,
-          "start_utc": null,
-          "end_utc": "2026-11-20T18:02:09Z"
+          "start_utc": "2026-11-20T17:53:45.353245+00:00",
+          "end_utc": "2026-11-20T17:53:49.096668+00:00"
         },
-        "dependency-fetch": {
+        "LeanSearchClient": {
           "exit_code": 0,
-          "start_utc": "2026-11-20T17:53:34Z",
-          "end_utc": "2026-11-20T17:57:57Z"
+          "start_utc": "2026-11-20T17:53:34.810443+00:00",
+          "end_utc": "2026-11-20T17:53:36.116847+00:00"
         },
-        "mathlib-cache": {
+        "Qq": {
           "exit_code": 0,
-          "start_utc": "2026-11-20T17:57:57Z",
-          "end_utc": "2026-11-20T18:01:59Z"
+          "start_utc": "2026-11-20T17:53:39.347836+00:00",
+          "end_utc": "2026-11-20T17:53:40.128211+00:00"
         },
-        "preflight": {
+        "aesop": {
           "exit_code": 0,
-          "start_utc": "2026-11-20T17:16:28Z",
-          "end_utc": "2026-11-20T17:16:28Z"
+          "start_utc": "2026-11-20T17:53:37.750546+00:00",
+          "end_utc": "2026-11-20T17:53:39.347627+00:00"
         },
-        "source-fetch": {
+        "batteries": {
           "exit_code": 0,
-          "start_utc": "2026-11-20T17:38:09Z",
-          "end_utc": "2026-11-20T17:53:34Z"
+          "start_utc": "2026-11-20T17:53:40.128412+00:00",
+          "end_utc": "2026-11-20T17:53:45.353135+00:00"
         },
-        "source-integrity": {
+        "importGraph": {
           "exit_code": 0,
-          "start_utc": "2026-11-20T18:02:08Z",
-          "end_utc": "2026-11-20T18:02:09Z"
+          "start_utc": "2026-11-20T17:53:36.116989+00:00",
+          "end_utc": "2026-11-20T17:53:37.750339+00:00"
         },
-        "statements-sanity": {
+        "mathlib": {
           "exit_code": 0,
-          "start_utc": "2026-11-20T18:01:59Z",
-          "end_utc": "2026-11-20T18:02:08Z"
+          "start_utc": "2026-11-20T17:53:34.809462+00:00",
+          "end_utc": "2026-11-20T17:57:57.023193+00:00"
         },
-        "toolchain-download": {
+        "plausible": {
           "exit_code": 0,
-          "start_utc": "2026-11-20T17:16:28Z",
-          "end_utc": "2026-11-20T17:37:55Z"
+          "start_utc": "2026-11-20T17:53:34.809803+00:00",
+          "end_utc": "2026-11-20T17:53:37.133186+00:00"
         },
-        "toolchain-install": {
+        "proofwidgets": {
           "exit_code": 0,
-          "start_utc": "2026-11-20T17:37:55Z",
-          "end_utc": "2026-11-20T17:38:09Z"
+          "start_utc": "2026-11-20T17:53:37.133294+00:00",
+          "end_utc": "2026-11-20T17:54:12.775609+00:00"
         }
       }
     },
+    "bootstrap": {
+      "status": "not_started",
+      "stages": {}
+    },
     "build": {
-      "run_directory_name": "20261120T180419Z-88000",
-      "status": "running:build-main",
+      "status": "not_started",
       "stages": {}
     }
-  },
-  "exit_code": -9,
-  "finished_utc": "2026-11-20T18:05:43+00:00"
+  }
 }
