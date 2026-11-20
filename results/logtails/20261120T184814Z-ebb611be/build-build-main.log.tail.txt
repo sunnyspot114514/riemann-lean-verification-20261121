@@ -1,160 +1,160 @@
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:204:4: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/SemistableReductionSplitOfPadicStatement.lean:15:58: Unused tactic linter: `exact GlobalTheory.SS.semistablePol_of_padic` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/SemistableReductionSplitOfPadicStatement.lean:15:105: Unused tactic linter: `(intros; apply GlobalTheory.SS.semistablePol_of_padic <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [30372/30436] Built Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsIsoOfFlatOfClosedPoint (9.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/UniformizationProofs/IsIsoOfFlatOfClosedPoint.lean:143:8: Overlapping instance parameters in `exists_section_translate`:
+
+⚠️ `[IsDomain V]` and `[IsDiscreteValuationRing V]` each imply `[Nontrivial V]`.
+💡️ Of these, `[IsDomain V]` and `[IsDiscreteValuationRing V]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+⚠ [30373/30436] Built Development.AbelianVarietyTheory.Proofs.UniformizationProofs.EqTopOfClosedFibre (6.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/UniformizationProofs/EqTopOfClosedFibre.lean:79:8: Overlapping instance parameters in `triv_of_forall_thick`:
+
+⚠️ `[IsDomain V]` and `[IsDiscreteValuationRing V]` each imply `[Nontrivial V]`.
+💡️ Of these, `[IsDomain V]` and `[IsDiscreteValuationRing V]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+⚠ [30374/30439] Built Development.AbelianVarietyTheory.Proofs.UnitaryExistence.SupNormDefiniteOnCuspFormsGoodEmbeddingStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/SupNormDefiniteOnCuspFormsGoodEmbeddingStatement.lean:18:57: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:201:4: Unused tactic linter: `(
-  refine continuous_pi fun j => continuous_pi fun k => ?_
-  unfold wedge
-  fun_prop)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:204:4: Unused tactic linter: `(
-  refine continuous_pi fun j => continuous_pi fun k => ?_
-  simp only [wedge]
-  exact
-    (((continuous_apply j).comp continuous_fst).mul ((continuous_apply k).comp continuous_snd)).sub
-      (((continuous_apply k).comp continuous_fst).mul ((continuous_apply j).comp continuous_snd)))` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:213:4: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/SupNormDefiniteOnCuspFormsGoodEmbeddingStatement.lean:18:103: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:213:4: Unused tactic linter: `exact
-  (continuous_finset_sum _ fun j _ =>
-        continuous_finset_sum _ fun k _ => (((continuous_apply k).comp (continuous_apply j)).norm.pow 2)).div_const
-    2` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/SupNormDefiniteOnCuspFormsGoodEmbeddingStatement.lean:18:57: Unused tactic linter: `exact GlobalTheory.supNorm_definite_on_cusp` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:231:6: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/SupNormDefiniteOnCuspFormsGoodEmbeddingStatement.lean:18:103: Unused tactic linter: `(intros; apply GlobalTheory.supNorm_definite_on_cusp <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [30375/30441] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsVeryAmplePowerStatement (5.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsVeryAmplePowerStatement.lean:15:72: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:231:6: Unused tactic linter: `(
-  have hc' : Tendsto e'.symm (𝓝 (e' y)) (𝓝 (e'.symm (e' y))) := e'.continuousAt_symm (e'.map_source hy')
-  rwa [e'.left_inv hy'] at hc')` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:269:77: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsVeryAmplePowerStatement.lean:15:133: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:269:101: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsVeryAmplePowerStatement.lean:15:72: Unused tactic linter: `exact GlobalTheory.Algebraise.exists_veryAmple_h1Zero_pull` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsVeryAmplePowerStatement.lean:15:133: Unused tactic linter: `(intros; apply GlobalTheory.Algebraise.exists_veryAmple_h1Zero_pull <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [30376/30441] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.ModuliSchemeLevelMapsHeckePoints (5.3s)
+✔ [30377/30441] Built Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CubWeilOfGen (7.7s)
+✔ [30378/30442] Built Development.AbelianVarietyTheory.Proofs.UnitaryExistence.DifferentiableOnThetaAlgebraicGeneratorFactor (8.7s)
+⚠ [30379/30442] Built Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsAlgebraizationGroupOperationsCdvrStatement (5.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/UniformizationProofs/ExistsAlgebraizationGroupOperationsCdvrStatement.lean:16:63: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:282:4: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/UniformizationProofs/ExistsAlgebraizationGroupOperationsCdvrStatement.lean:16:115: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:283:4: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/UniformizationProofs/ExistsAlgebraizationGroupOperationsCdvrStatement.lean:15:8: Overlapping instance parameters in `GlobalTheory.T.exists_algebraization_group_operations_cdvr`:
+
+⚠️ `[IsDomain V]` and `[IsDiscreteValuationRing V]` each imply `[Nontrivial V]`.
+💡️ Of these, `[IsDomain V]` and `[IsDiscreteValuationRing V]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+warning: src/Development/AbelianVarietyTheory/Proofs/UniformizationProofs/ExistsAlgebraizationGroupOperationsCdvrStatement.lean:16:63: Unused tactic linter: `exact GlobalTheory.GrpAlg.exists_group_operations` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/UniformizationProofs/ExistsAlgebraizationGroupOperationsCdvrStatement.lean:16:115: Unused tactic linter: `(intros; apply GlobalTheory.GrpAlg.exists_group_operations <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [30380/30442] Built Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SquareOfCubical (6.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/UniformizationProofs/SquareOfCubical.lean:77:8: automatically included section variable(s) unused in theorem `_private.Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SquareOfCubical.0.GlobalTheory.Square.translPt_eq_fst_comp_mul_snd`:
+  [IsCommMonObj B]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsCommMonObj B] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/UniformizationProofs/SquareOfCubical.lean:81:8: automatically included section variable(s) unused in theorem `_private.Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SquareOfCubical.0.GlobalTheory.Square.over_comp_mul`:
+  [IsCommMonObj B]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsCommMonObj B] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [30381/30443] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFormCorrectionNextThickeningLocal (10s)
+✔ [30382/30443] Built Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsClosedStabiliser (6.0s)
+✔ [30383/30443] Built Development.AbelianVarietyTheory.Proofs.UniformizationProofs.EvSurjective (9.3s)
+⚠ [30384/30447] Built Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CuspFormsDominantWeightFiniteDimensional (14s)
+warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/CuspFormsDominantWeightFiniteDimensional.lean:53:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/CuspFormsDominantWeightFiniteDimensional.lean:70:60: `Cardinal.nat_lt_aleph0` has been deprecated: Use `Cardinal.natCast_lt_aleph0` instead
+⚠ [30385/30447] Built Development.AbelianVarietyTheory.Proofs.UniformizationProofs.LocallyQuasiFiniteOfFiniteStabiliser (7.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/UniformizationProofs/LocallyQuasiFiniteOfFiniteStabiliser.lean:32:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [30386/30447] Built Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CubWeilOneLeft (6.4s)
+⚠ [30387/30447] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.ModuliSchemeLevelMapsHeckePointsStatement (5.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ModuliSchemeLevelMapsHeckePointsStatement.lean:13:67: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:269:77: Unused tactic linter: `exact_mod_cast le_top` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:269:101: Unused tactic linter: `norm_num` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:282:4: Unused tactic linter: `exact hc.congr_of_eventuallyEq hEv.symm` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:283:4: Unused tactic linter: `exact (continuousAt_congr hEv).mp hc` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:292:77: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ModuliSchemeLevelMapsHeckePointsStatement.lean:13:123: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:292:101: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ModuliSchemeLevelMapsHeckePointsStatement.lean:13:67: Unused tactic linter: `exact GlobalTheory.moduliScheme_levelMaps_heckePoints` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ModuliSchemeLevelMapsHeckePointsStatement.lean:13:123: Unused tactic linter: `(intros; apply GlobalTheory.moduliScheme_levelMaps_heckePoints <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [30388/30451] Built Development.AbelianVarietyTheory.Proofs.UnitaryExistence.DifferentiableOnThetaAlgebraicGeneratorFactorStatement (5.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/DifferentiableOnThetaAlgebraicGeneratorFactorStatement.lean:17:73: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:305:4: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/DifferentiableOnThetaAlgebraicGeneratorFactorStatement.lean:17:135: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:306:4: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/DifferentiableOnThetaAlgebraicGeneratorFactorStatement.lean:17:73: Unused tactic linter: `exact GlobalTheory.HolGen.differentiableOn_generator_factor` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/DifferentiableOnThetaAlgebraicGeneratorFactorStatement.lean:17:135: Unused tactic linter: `(intros;
+  apply GlobalTheory.HolGen.differentiableOn_generator_factor <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [30389/30451] Built Development.AbelianVarietyTheory.Proofs.UniformizationProofs.OverPointsExtOfInjective (5.7s)
+⚠ [30390/30451] Built Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsAbelianSchemeOfCompatibleThickenings (5.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/UniformizationProofs/IsAbelianSchemeOfCompatibleThickenings.lean:21:8: Overlapping instance parameters in `isAbelianScheme_of_thickenings`:
+
+⚠️ `[IsDomain V]` and `[IsDiscreteValuationRing V]` each imply `[Nontrivial V]`.
+💡️ Of these, `[IsDomain V]` and `[IsDiscreteValuationRing V]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+✔ [30391/30453] Built Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsFiniteSeparablePoint (6.9s)
+✔ [30392/30454] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSectionPrimitiveBundleTranslateLocalRing (8.4s)
+⚠ [30393/30454] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFormCorrectionNextThickeningLocalStatement (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsFormCorrectionNextThickeningLocalStatement.lean:15:67: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:292:77: Unused tactic linter: `exact_mod_cast le_top` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:292:101: Unused tactic linter: `norm_num` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:305:4: Unused tactic linter: `exact hc.congr_of_eventuallyEq hEv.symm` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:306:4: Unused tactic linter: `exact (continuousAt_congr hEv).mp hc` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:321:4: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsFormCorrectionNextThickeningLocalStatement.lean:15:123: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:322:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:321:4: Unused tactic linter: `exact hc.congr_of_eventuallyEq hEv.symm` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsFormCorrectionNextThickeningLocalStatement.lean:15:67: Unused tactic linter: `exact GlobalTheory.Degen.exists_form_correction_local` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:322:4: Unused tactic linter: `exact (continuousAt_congr hEv).mp hc` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsFormCorrectionNextThickeningLocalStatement.lean:15:123: Unused tactic linter: `(intros; apply GlobalTheory.Degen.exists_form_correction_local <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:369:8: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:393:6: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:394:6: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:401:6: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:402:6: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:403:6: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:418:8: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:449:8: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:369:8: Unused tactic linter: `(
-  obtain ⟨C, hC⟩ := (hcs.isCompact_range hφ).isBounded.exists_norm_le
-  exact ⟨C, fun x => hC _ ⟨x, rfl⟩⟩)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:393:6: Unused tactic linter: `exact PiLp.norm_apply_le_norm v j` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:394:6: Unused tactic linter: `(
-  rw [EuclideanSpace.norm_eq]
-  exact
-    (le_abs_self _).trans
-      (Real.abs_le_sqrt
-        (Finset.single_le_sum (f := fun i => ‖v i‖ ^ 2) (fun i _ => sq_nonneg _) (Finset.mem_univ j))))` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:401:6: Unused tactic linter: `exact (EuclideanSpace.proj (𝕜 := ℂ) j).continuous` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:402:6: Unused tactic linter: `exact PiLp.continuous_apply 2 _ j` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:403:6: Unused tactic linter: `continuity` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:418:8: Unused tactic linter: `exact
-  Finset.aestronglyMeasurable_sum' _ fun j _ => (hdc j).aestronglyMeasurable.mul (hGj j)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:449:8: Unused tactic linter: `exact h1.prod_mk h2` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:495:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:495:4: Unused tactic linter: `exact
-  div_nonneg (Finset.sum_nonneg fun j _ => Finset.sum_nonneg fun k _ => sq_nonneg _) (by norm_num)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/L2DbarEstimates/Localization/LocalizeA.lean:510:63: `MeasureTheory.lintegral_finset_sum'` has been deprecated: Use `MeasureTheory.lintegral_finsetSum'` instead
+✔ [30394/30454] Built Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsCoverNonzeroLocus (7.1s)
+✔ [30395/30454] Built Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CardTorsionGeometricPointOfField (7.6s)
+✔ [30396/30454] Built Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsAffineWeightUnits (7.8s)
+✔ [30397/30462] Built Development.AbelianVarietyTheory.Proofs.UniformizationProofs.LocallyQuasiFiniteOfCubicalPowIsoPull (7.9s)
