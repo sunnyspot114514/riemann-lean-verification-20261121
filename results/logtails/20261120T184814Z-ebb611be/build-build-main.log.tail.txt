@@ -1,82 +1,104 @@
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPrimeDvdMem.lean:7:49: Variable name `inst` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [26467/26545] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.RationalMatrixMulThetaLatticesStatement (5.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/RationalMatrixMulThetaLatticesStatement.lean:10:62: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/RationalMatrixMulThetaLatticesStatement.lean:10:113: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/RationalMatrixMulThetaLatticesStatement.lean:10:62: Unused tactic linter: `exact GlobalTheory.ThetaStab.mulV_theta_lattices` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/RationalMatrixMulThetaLatticesStatement.lean:10:113: Unused tactic linter: `(intros; apply GlobalTheory.ThetaStab.mulV_theta_lattices <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [26468/26545] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.WeilOperatorConjHeisenbergMovedLatticeStatement (5.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/WeilOperatorConjHeisenbergMovedLatticeStatement.lean:9:54: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/WeilOperatorConjHeisenbergMovedLatticeStatement.lean:9:97: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/WeilOperatorConjHeisenbergMovedLatticeStatement.lean:9:54: Unused tactic linter: `exact GlobalTheory.WeilEquiv.om_wd_moved` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/WeilOperatorConjHeisenbergMovedLatticeStatement.lean:9:97: Unused tactic linter: `(intros; apply GlobalTheory.WeilEquiv.om_wd_moved <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [26469/26545] Built Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.SlopeBoundOfConditionsWithErrorForFrames (5.2s)
-✔ [26470/26547] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntegralUnfoldFundamentalDomain (5.7s)
-✔ [26471/26547] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntegralCexpGaussianPlane (6.1s)
-⚠ [26472/26549] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRealSpanEqConjFixedPrimeMulRelNorm (11s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRealSpanEqConjFixedPrimeMulRelNorm.lean:38:4: Try this: 
-  haveI̵
-
 The goal is a proposition, so `have` is preferred over `haveI`.
 The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRealSpanEqConjFixedPrimeMulRelNorm.lean:62:55: `Prime.not_unit` has been deprecated: Use `Prime.not_isUnit` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRealSpanEqConjFixedPrimeMulRelNorm.lean:115:4: `count_associates_factors_eq` has been deprecated: Use `Ideal.count_associates_factors_eq` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRealSpanEqConjFixedPrimeMulRelNorm.lean:125:0: automatically included section variable(s) unused in theorem `GlobalTheory.FixedPrimeNorm.fixed_mem_range`:
-  [NumberField F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] in theorem ...
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsSmoothCompactSupportFixLowestKType.lean:226:21: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRealSpanEqConjFixedPrimeMulRelNorm.lean:136:0: automatically included section variable(s) unused in theorem `GlobalTheory.FixedPrimeNorm.conj_conj`:
-  [NumberField F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] in theorem ...
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+✔ [27089/27254] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryToSpecialUnitaryLocal (6.1s)
+✔ [27090/27254] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.SmoothOnGroupOfSpecial (6.0s)
+✔ [27091/27254] Built Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.DiscreteSeriesSUIff (5.0s)
+⚠ [27092/27254] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.SmulOneMem (6.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/SmulOneMem.lean:75:25: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRealSpanEqConjFixedPrimeMulRelNorm.lean:214:0: automatically included section variable(s) unused in theorem `GlobalTheory.FixedPrimeNorm.exists_mul_sq_integral`:
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/SmulOneMem.lean:75:57: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/SmulOneMem.lean:101:10: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+⚠ [27093/27254] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.HarishChandraCentralAction (7.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HarishChandraCentralAction.lean:130:66: `ContinuousLinearMap.sub_apply` has been deprecated: Use `_root_.sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `_root_.sub_apply x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HarishChandraCentralAction.lean:131:6: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
+✔ [27094/27254] Built Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.DiscreteSeriesCharacterSUTrivialTwo (5.9s)
+⚠ [27095/27254] Built CompanionTheory.RealGroups.UnitaryAdmissibility.ArchimedeanUnitaryDual.InhabitedFinite (6.0s)
+warning: src/CompanionTheory/RealGroups/UnitaryAdmissibility/ArchimedeanUnitaryDual/InhabitedFinite.lean:105:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/CompanionTheory/RealGroups/UnitaryAdmissibility/ArchimedeanUnitaryDual/InhabitedFinite.lean:111:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [27096/27254] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsAvgClosure (6.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsAvgClosure.lean:57:8: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
+✔ [27097/27254] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsHermitianJmBracket (5.6s)
+✔ [27098/27254] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfOrthKfin (7.4s)
+✔ [27099/27254] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsKFinDRep (6.0s)
+⚠ [27100/27254] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InnerKAvgNeZero (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/InnerKAvgNeZero.lean:50:65: This simp argument is unused:
+  inner_add_left
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [φ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/InnerKAvgNeZero.lean:53:77: This simp argument is unused:
+  inner_smul_left
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [φ, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/InnerKAvgNeZero.lean:59:66: This simp argument is unused:
+  inner_add_right
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [φ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/InnerKAvgNeZero.lean:62:61: This simp argument is unused:
+  inner_smul_right
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [φ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [27101/27254] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsClosedDerivativeFamiliesModerateGrowth (7.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsClosedDerivativeFamiliesModerateGrowth.lean:34:19: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsClosedDerivativeFamiliesModerateGrowth.lean:40:17: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsClosedDerivativeFamiliesModerateGrowth.lean:73:19: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+⚠ [27102/27254] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsInnerApprox (6.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsInnerApprox.lean:37:4: `continuousOn_finset_sum` has been deprecated: Use `continuousOn_finsetSum` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsInnerApprox.lean:37:41: `continuousOn_finset_sum` has been deprecated: Use `continuousOn_finsetSum` instead
+✔ [27103/27254] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SobolevInequalityAtOneIndefiniteUnitary (10s)
+✔ [27104/27254] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasTypeTransport (6.0s)
+✔ [27105/27254] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OneAddHsConjLe (7.2s)
+✔ [27106/27254] Built CompanionTheory.RealGroups.UnitaryAdmissibility.ArchimedeanUnitaryDual.StSandwich (6.2s)
+✔ [27107/27254] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.DerivativesCoefficientsConvolutionFixedVector (8.3s)
+✔ [27108/27255] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.MatrixConclIffOfIsDS (6.5s)
+✔ [27109/27255] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdelesInf (5.5s)
+⚠ [27110/27255] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLeviLeviElt (6.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsLeviLeviElt.lean:20:0: automatically included section variable(s) unused in theorem `GlobalTheory.ThKCtFin.isLevi_leviElt`:
   [NumberField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [NumberField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRealSpanEqConjFixedPrimeMulRelNorm.lean:227:25: This simp argument is unused:
-  RingOfIntegers.coe_eq_algebraMap
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsLeviLeviElt.lean:32:0: automatically included section variable(s) unused in theorem `GlobalTheory.ThKCtFin.ctLevi_apply`:
+  [NumberField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] in theorem ...
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [map_zero, map_eq_zero] at e
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRealSpanEqConjFixedPrimeMulRelNorm.lean:285:29: This simp argument is unused:
-  RingOfIntegers.coe_eq_algebraMap
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [map_zero] at hπv
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRealSpanEqConjFixedPrimeMulRelNorm.lean:324:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [27111/27255] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.MaxCompactIrreducibleHasHighestWeightAndIso (9.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MaxCompactIrreducibleHasHighestWeightAndIso.lean:289:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -84,27 +106,38 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [26473/26549] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.SetIntegralCharImEqZero (6.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SetIntegralCharImEqZero.lean:29:2: Try this: 
-  haveI̵
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MaxCompactIrreducibleHasHighestWeightAndIso.lean:290:83: `Submodule.orthogonalProjection` has been deprecated: Use `Submodule.orthogonalProjectionOnto` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MaxCompactIrreducibleHasHighestWeightAndIso.lean:291:30: `Submodule.orthogonalProjection` has been deprecated: Use `Submodule.orthogonalProjectionOnto` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MaxCompactIrreducibleHasHighestWeightAndIso.lean:292:30: `Submodule.orthogonalProjection` has been deprecated: Use `Submodule.orthogonalProjectionOnto` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MaxCompactIrreducibleHasHighestWeightAndIso.lean:293:28: `Submodule.orthogonalProjection_mem_subspace_eq_self` has been deprecated: Use `Submodule.orthogonalProjectionOnto_mem_subspace_eq_self` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MaxCompactIrreducibleHasHighestWeightAndIso.lean:294:55: `Submodule.orthogonalProjection` has been deprecated: Use `Submodule.orthogonalProjectionOnto` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MaxCompactIrreducibleHasHighestWeightAndIso.lean:294:98: `Submodule.orthogonalProjection` has been deprecated: Use `Submodule.orthogonalProjectionOnto` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MaxCompactIrreducibleHasHighestWeightAndIso.lean:296:27: `Submodule.orthogonalProjection` has been deprecated: Use `Submodule.orthogonalProjectionOnto` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MaxCompactIrreducibleHasHighestWeightAndIso.lean:296:64: `Submodule.orthogonalProjection` has been deprecated: Use `Submodule.orthogonalProjectionOnto` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MaxCompactIrreducibleHasHighestWeightAndIso.lean:297:27: `Submodule.orthogonalProjection` has been deprecated: Use `Submodule.orthogonalProjectionOnto` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MaxCompactIrreducibleHasHighestWeightAndIso.lean:299:10: `Submodule.orthogonalProjection_mem_subspace_orthogonalComplement_eq_zero` has been deprecated: Use `Submodule.orthogonalProjectionOnto_apply_of_mem_orthogonal` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MaxCompactIrreducibleHasHighestWeightAndIso.lean:300:42: `Submodule.orthogonalProjection` has been deprecated: Use `Submodule.orthogonalProjectionOnto` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MaxCompactIrreducibleHasHighestWeightAndIso.lean:302:47: `Submodule.orthogonalProjection` has been deprecated: Use `Submodule.orthogonalProjectionOnto` instead
+✔ [27112/27255] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.FixedVectorDifferentiable (9.8s)
+⚠ [27113/27255] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ClassificationRankOneStatement (4.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ClassificationRankOneStatement.lean:8:65: this tactic is never executed
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ClassificationRankOneStatement.lean:8:119: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [26474/26549] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ConjInvolutiveAndExistsHalfIdempotent (5.3s)
-⚠ [26475/26551] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.SummableExpNegHerm (7.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SummableExpNegHerm.lean:21:13: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SummableExpNegHerm.lean:28:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ClassificationRankOneStatement.lean:8:65: Unused tactic linter: `exact GlobalTheory.DSSU.Triv.classS_one_classU_zero` does nothing
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ClassificationRankOneStatement.lean:8:119: Unused tactic linter: `(intros; apply GlobalTheory.DSSU.Triv.classS_one_classU_zero <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SummableExpNegHerm.lean:67:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [27114/27255] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.WeightLeOfMemWtSpan (6.4s)
+⚠ [27115/27255] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.LeviModulusOneLinearReductiveExpMulExp (8.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LeviModulusOneLinearReductiveExpMulExp.lean:50:8: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LeviModulusOneLinearReductiveExpMulExp.lean:50:8: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LeviModulusOneLinearReductiveExpMulExp.lean:111:38: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LeviModulusOneLinearReductiveExpMulExp.lean:149:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -112,49 +145,16 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SummableExpNegHerm.lean:68:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SummableExpNegHerm.lean:70:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [26476/26553] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsOrthonormalEigenbasis (8.1s)
-✔ [26477/26553] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumCompSurjective (5.5s)
-✔ [26478/26553] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsThetaLatticeCorrespondenceWeilOperator (10s)
-✔ [26479/26553] Built CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.ImportsExtraRest (6.2s)
-⚠ [26480/26553] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaLatticeAgreeOfTrivialAtPrimeStatement (5.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ThetaLatticeAgreeOfTrivialAtPrimeStatement.lean:9:59: this tactic is never executed
+⚠ [27116/27255] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ProdShiftedCyclicWordExpansionStatement (5.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ProdShiftedCyclicWordExpansionStatement.lean:8:58: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ThetaLatticeAgreeOfTrivialAtPrimeStatement.lean:9:107: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ProdShiftedCyclicWordExpansionStatement.lean:8:105: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ThetaLatticeAgreeOfTrivialAtPrimeStatement.lean:9:59: Unused tactic linter: `exact GlobalTheory.NormSum.La_agree_of_trivAt` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ProdShiftedCyclicWordExpansionStatement.lean:8:58: Unused tactic linter: `exact GlobalTheory.TraceBinom.trace_binomial` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ThetaLatticeAgreeOfTrivialAtPrimeStatement.lean:9:107: Unused tactic linter: `(intros; apply GlobalTheory.NormSum.La_agree_of_trivAt <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [26481/26555] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntegralUnfoldFundamentalDomainStatement (5.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IntegralUnfoldFundamentalDomainStatement.lean:9:66: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IntegralUnfoldFundamentalDomainStatement.lean:9:121: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IntegralUnfoldFundamentalDomainStatement.lean:9:66: Unused tactic linter: `exact GlobalTheory.integral_unfold_fundamentalDomain` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IntegralUnfoldFundamentalDomainStatement.lean:9:121: Unused tactic linter: `(intros; apply GlobalTheory.integral_unfold_fundamentalDomain <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ProdShiftedCyclicWordExpansionStatement.lean:8:105: Unused tactic linter: `(intros; apply GlobalTheory.TraceBinom.trace_binomial <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
