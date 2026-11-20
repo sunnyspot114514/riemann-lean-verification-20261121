@@ -1,76 +1,87 @@
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [30932/31066] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.UtestGeomNonempty (16s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/UtestGeomNonempty.lean:43:8: `AddSubmonoidClass.coe_finset_sum` has been deprecated: Use `AddSubmonoidClass.coe_finsetSum` instead
-⚠ [30933/31066] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.CardTorsionTranslateZerosLt (29s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/CardTorsionTranslateZerosLt.lean:422:8: Overlapping instance parameters in `card_torsion_translate_zeros_lt`:
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/UniformizationProofs/ExpandsFOfIntegral.lean:46:0: automatically included section variable(s) unused in theorem `GlobalTheory.ThetaSpecialise.secVal_add'`:
+  [GrpObj A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [GrpObj A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/UniformizationProofs/ExpandsFOfIntegral.lean:51:0: automatically included section variable(s) unused in theorem `GlobalTheory.ThetaSpecialise.secVal_smul'`:
+  [GrpObj A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [GrpObj A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [31476/31527] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsZpowMulIsUnitOfMem (9.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsZpowMulIsUnitOfMem.lean:125:8: Overlapping instance parameters in `norm_const`:
 
 ⚠️ `[IsDomain V]` and `[IsDiscreteValuationRing V]` each imply `[Nontrivial V]`.
 💡️ Of these, `[IsDomain V]` and `[IsDiscreteValuationRing V]` may be removed.
 
 Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-⚠ [30934/31069] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.QuasiFiniteAtAffineSpaceHomOfVectorOfCoord (6.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/QuasiFiniteAtAffineSpaceHomOfVectorOfCoord.lean:31:71: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-✔ [30935/31069] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsClassicalPointLiftingResiduePoint (6.9s)
-⚠ [30936/31069] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsOpensEtaleOfUniqueClassicalPoints (9.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsOpensEtaleOfUniqueClassicalPoints.lean:268:4: `isDiscrete_iff_forall_exists_isOpen` has been deprecated: Use `isDiscrete_iff_forall_mem_exists_isOpen` instead
-⚠ [30937/31069] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsDominantHomOfVectorOfQuasiFiniteAt (6.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/IsDominantHomOfVectorOfQuasiFiniteAt.lean:17:4: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/IsDominantHomOfVectorOfQuasiFiniteAt.lean:18:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/IsDominantHomOfVectorOfQuasiFiniteAt.lean:19:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/IsDominantHomOfVectorOfQuasiFiniteAt.lean:60:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/IsDominantHomOfVectorOfQuasiFiniteAt.lean:61:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [30938/31069] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AlgHomEqOfReductionEqOfCoordsEq (6.1s)
-⚠ [30939/31069] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaSystemOrthogonalLabelsAreTorusPointsStatement (5.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaSystemOrthogonalLabelsAreTorusPointsStatement.lean:22:59: this tactic is never executed
+✔ [31477/31531] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.CharEqZeroOfIsProper (8.0s)
+✔ [31478/31531] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.BasisSeparates (8.4s)
+⚠ [31479/31533] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusCoordUnitAndSectionEqExpansionStatement (5.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/TorusCoordUnitAndSectionEqExpansionStatement.lean:15:66: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaSystemOrthogonalLabelsAreTorusPointsStatement.lean:22:107: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/TorusCoordUnitAndSectionEqExpansionStatement.lean:15:121: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaSystemOrthogonalLabelsAreTorusPointsStatement.lean:22:59: Unused tactic linter: `exact GlobalTheory.TestFibre.perp_torus_point` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/TorusCoordUnitAndSectionEqExpansionStatement.lean:15:66: Unused tactic linter: `exact GlobalTheory.ZH.IntegralSum.gtN_zero_and_parAt` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaSystemOrthogonalLabelsAreTorusPointsStatement.lean:22:107: Unused tactic linter: `(intros; apply GlobalTheory.TestFibre.perp_torus_point <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/TorusCoordUnitAndSectionEqExpansionStatement.lean:15:121: Unused tactic linter: `(intros; apply GlobalTheory.ZH.IntegralSum.gtN_zero_and_parAt <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [30940/31069] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TestCartOfSpecialFibreSurjective (6.7s)
-⚠ [30941/31069] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsLocalCoordinates (10s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsLocalCoordinates.lean:12:2: Try this: 
+⚠ [31480/31535] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaSectionsIndependentOnClosedFibreStatement (5.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaSectionsIndependentOnClosedFibreStatement.lean:15:66: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaSectionsIndependentOnClosedFibreStatement.lean:15:121: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaSectionsIndependentOnClosedFibreStatement.lean:15:66: Unused tactic linter: `exact GlobalTheory.ZH.IndepFib.indep_on_closed_fibre` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaSectionsIndependentOnClosedFibreStatement.lean:15:121: Unused tactic linter: `(intros; apply GlobalTheory.ZH.IndepFib.indep_on_closed_fibre <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [31481/31538] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaParameterOfThetaParameterMulDegreeStatement (5.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaParameterOfThetaParameterMulDegreeStatement.lean:14:268: Variable name `l` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _l
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaParameterOfThetaParameterMulDegreeStatement.lean:15:65: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaParameterOfThetaParameterMulDegreeStatement.lean:15:119: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaParameterOfThetaParameterMulDegreeStatement.lean:15:65: Unused tactic linter: `exact GlobalTheory.ParameterRoot.parAt_of_parAt_mul` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ThetaParameterOfThetaParameterMulDegreeStatement.lean:15:119: Unused tactic linter: `(intros; apply GlobalTheory.ParameterRoot.parAt_of_parAt_mul <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [31482/31566] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsTorsionPullback (10s)
+✔ [31483/31570] Built Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UnifAssembly (5.5s)
+⚠ [31484/31574] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.LinearIndependentThetaBasisGeometricFibreStatement (5.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/LinearIndependentThetaBasisGeometricFibreStatement.lean:13:70: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/LinearIndependentThetaBasisGeometricFibreStatement.lean:13:129: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/LinearIndependentThetaBasisGeometricFibreStatement.lean:13:70: Unused tactic linter: `exact GlobalTheory.ZH.FibreIndep.linearIndependent_moved` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/LinearIndependentThetaBasisGeometricFibreStatement.lean:13:129: Unused tactic linter: `(intros; apply GlobalTheory.ZH.FibreIndep.linearIndependent_moved <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [31485/31578] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniformisationCompleteLocalDomainPrime (64s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsUniformisationCompleteLocalDomainPrime.lean:201:4: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -78,15 +89,15 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsLocalCoordinates.lean:13:2: Try this: 
-  letI̵
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsUniformisationCompleteLocalDomainPrime.lean:209:8: Overlapping instance parameters in `exists_unif`:
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+⚠️ `[IsDomain R]` and `[IsLocalRing R]` each imply `[Nontrivial R]`.
+💡️ Of these, `[IsDomain R]` and `[IsLocalRing R]` may be removed.
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsLocalCoordinates.lean:14:2: Try this: 
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+✔ [31486/31578] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsOperators (10s)
+⚠ [31487/31578] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ClassicalPointsRegular (6.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ClassicalPointsRegular.lean:18:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -94,7 +105,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsLocalCoordinates.lean:15:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ClassicalPointsRegular.lean:19:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -102,15 +113,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsLocalCoordinates.lean:16:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsLocalCoordinates.lean:64:4: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ClassicalPointsRegular.lean:60:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -118,7 +121,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsLocalCoordinates.lean:66:4: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ClassicalPointsRegular.lean:61:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -126,35 +129,32 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsLocalCoordinates.lean:98:2: Try this: 
-  letI̵
+⚠ [31488/31578] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AbelianSectionsProportionalOfCoordinatesStatement (6.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/AbelianSectionsProportionalOfCoordinatesStatement.lean:13:63: this tactic is never executed
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/AbelianSectionsProportionalOfCoordinatesStatement.lean:13:115: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsLocalCoordinates.lean:99:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/AbelianSectionsProportionalOfCoordinatesStatement.lean:13:63: Unused tactic linter: `exact GlobalTheory.ZH.SecProp.proportional_of_crd` does nothing
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/AbelianSectionsProportionalOfCoordinatesStatement.lean:13:115: Unused tactic linter: `(intros; apply GlobalTheory.ZH.SecProp.proportional_of_crd <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsLocalCoordinates.lean:106:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [31489/31581] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.BasisSeparatesStatement (5.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/BasisSeparatesStatement.lean:15:62: this tactic is never executed
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/BasisSeparatesStatement.lean:15:113: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/ExistsLocalCoordinates.lean:108:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/BasisSeparatesStatement.lean:15:62: Unused tactic linter: `exact GlobalTheory.ZH.AdaptedSep.basis_separates` does nothing
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/BasisSeparatesStatement.lean:15:113: Unused tactic linter: `(intros; apply GlobalTheory.ZH.AdaptedSep.basis_separates <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [31490/31583] Built Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsUniqueLiftSpecOfIsLocalizationAway (8.3s)
+✔ [31491/31583] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.FrameUnit (6.0s)
+✔ [31492/31583] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.EqOfValFGeneric (6.8s)
