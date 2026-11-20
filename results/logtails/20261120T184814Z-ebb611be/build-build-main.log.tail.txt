@@ -1,160 +1,160 @@
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsFixedIff.lean:113:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsFixedIff.lean:193:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsFixedIff.lean:194:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [34980/35018] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SumLogEmbeddingAddFinsumLogAdicAbvEqZero (5.6s)
-✔ [34981/35018] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteNonemptyOffCharts (5.5s)
-⚠ [34982/35019] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValuativeExtensionPointStatement (5.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ValuativeExtensionPointStatement.lean:8:67: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ValuativeExtensionPointStatement.lean:8:123: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ValuativeExtensionPointStatement.lean:8:67: Unused tactic linter: `exact GlobalTheory.TrueGeo.exists_valuationRing_point` does nothing
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/ToroidalCompactification/VtPull.lean:106:8: Unused tactic linter: `(
+  simp only [mulT, Category.assoc, whiskerRight_snd, lift_snd]
+  induction N with
+  | zero => simp
+  | succ n ih => simp [pow_succ, comp_mul, ih])` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ValuativeExtensionPointStatement.lean:8:123: Unused tactic linter: `(intros; apply GlobalTheory.TrueGeo.exists_valuationRing_point <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [34983/35019] Built Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PeriodComparisonProvisional (11s)
-✔ [34984/35019] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RingKrullDimRingOfIntegers (6.3s)
-✔ [34985/35023] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinitePlacesLgNeZero (5.7s)
-✔ [34986/35027] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasInfExpOfOrder (13s)
-⚠ [34987/35027] Built Formalism.LocalToGlobal.GroupLattices.TiedFamilies.LocPackC (8.2s)
-warning: src/Formalism/LocalToGlobal/GroupLattices/TiedFamilies/LocPackC.lean:18:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/LocalToGlobal/GroupLattices/TiedFamilies/LocPackC.lean:19:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/LocalToGlobal/GroupLattices/TiedFamilies/LocPackC.lean:22:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [34988/35029] Built Formalism.LocalToGlobal.GroupLattices.TiedRec (8.0s)
-✔ [34989/35031] Built Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StdLvPr (22s)
-✔ [34990/35031] Built Formalism.LocalToGlobal.ProjectiveLattices.DepLaws (5.4s)
-⚠ [34991/35031] Built Development.AbelianVarietyTheory.Proofs.UnitaryExistence.PsiCoordExistsUniqueUpToUnitLocalStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/PsiCoordExistsUniqueUpToUnitLocalStatement.lean:11:51: this tactic is never executed
+warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/ToroidalCompactification/VtPull.lean:126:8: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/PsiCoordExistsUniqueUpToUnitLocalStatement.lean:11:91: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/PsiCoordExistsUniqueUpToUnitLocalStatement.lean:10:8: Overlapping instance parameters in `GlobalTheory.T.psiCoord_exists_unique_up_to_unit_local`:
-
-⚠️ `[IsDomain R]` and `[IsLocalRing R]` each imply `[Nontrivial R]`.
-💡️ Of these, `[IsDomain R]` and `[IsLocalRing R]` may be removed.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/PsiCoordExistsUniqueUpToUnitLocalStatement.lean:11:51: Unused tactic linter: `exact GlobalTheory.PsiCoordLocal.main` does nothing
+warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/ToroidalCompactification/VtPull.lean:126:8: Unused tactic linter: `simpa using hz1` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/PsiCoordExistsUniqueUpToUnitLocalStatement.lean:11:91: Unused tactic linter: `(intros; apply GlobalTheory.PsiCoordLocal.main <;> assumption)` does nothing
+warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/ToroidalCompactification/VtPull.lean:138:0: automatically included section variable(s) unused in theorem `ReciprocityTheory.ChartRestriction.G.Geo.Tor.exists_pullRel`:
+  [GrpObj A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [GrpObj A] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [34992/35031] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSmallOfSmallSec (7.1s)
-⚠ [34993/35039] Built Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LocAutHodgeTateWeightsLevelZeroDef (21s)
-warning: src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/LocAutHodgeTateWeightsLevelZeroDef.lean:222:11: Variable name `i` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/ToroidalCompactification/VtPull.lean:202:10: This simp argument is unused:
+  ← Over.comp_left
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/ToroidalCompactification/VtPull.lean:264:0: automatically included section variable(s) unused in theorem `ReciprocityTheory.ChartRestriction.G.Geo.Tor.vtOver_pull`:
+  [IsCommMonObj A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsCommMonObj A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [35435/35489] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.LevelActionShortThetaSeriesRootOfUnityMul (30s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/LevelActionShortThetaSeriesRootOfUnityMul.lean:245:134: Variable name `hj` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _i
+  [apply] _hj
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/LocAutHodgeTateWeightsLevelZeroDef.lean:223:11: Variable name `i` is not explicitly referenced.
+✔ [35436/35489] Built Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LargeFor (7.9s)
+⚠ [35437/35489] Built Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsPlaceModelPlaceMap (15s)
+warning: src/Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/IsPlaceModelPlaceMap.lean:161:2: Try this: 
+  haveI̵
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _i
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [34994/35039] Built Development.AbelianVarietyTheory.Proofs.UnitaryExistence.BetaAtAddLeftAndDiagEqTwoOrder (12s)
-warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/BetaAtAddLeftAndDiagEqTwoOrder.lean:44:33: This simp argument is unused:
-  toOpen_top
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [35438/35492] Built Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.RowsExhaust (5.8s)
+⚠ [35439/35492] Built Formalism.SharpRestriction.Divisibility.GeneratorPowers.ConjugateMinimaInstance (7.7s)
+warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/ConjugateMinimaInstance.lean:35:84: This simp argument is unused:
+  Polynomial.aeval_C
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [RingHom.comp_apply] at h1
+  [apply] simp only [map_add, map_sub, map_pow, map_one, map_natCast, Polynomial.aeval_X, algebraMap_int_eq, eq_intCast,
+    Int.cast_add, Int.cast_natCast, Int.cast_one]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/BetaAtAddLeftAndDiagEqTwoOrder.lean:47:0: automatically included section variable(s) unused in theorem `GlobalTheory.BetaAdd.toGen_eq`:
-  [IsDomain R]
+warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/ConjugateMinimaInstance.lean:36:6: This simp argument is unused:
+  algebraMap_int_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_add, map_sub, map_pow, map_one, map_natCast, Polynomial.aeval_X, Polynomial.aeval_C,
+    eq_intCast, Int.cast_add, Int.cast_natCast, Int.cast_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/ConjugateMinimaInstance.lean:36:25: This simp argument is unused:
+  eq_intCast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_add, map_sub, map_pow, map_one, map_natCast, Polynomial.aeval_X, Polynomial.aeval_C,
+    algebraMap_int_eq, Int.cast_add, Int.cast_natCast, Int.cast_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/ConjugateMinimaInstance.lean:36:37: This simp argument is unused:
+  Int.cast_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_add, map_sub, map_pow, map_one, map_natCast, Polynomial.aeval_X, Polynomial.aeval_C,
+    algebraMap_int_eq, eq_intCast, Int.cast_natCast, Int.cast_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/ConjugateMinimaInstance.lean:36:51: This simp argument is unused:
+  Int.cast_natCast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_add, map_sub, map_pow, map_one, map_natCast, Polynomial.aeval_X, Polynomial.aeval_C,
+    algebraMap_int_eq, eq_intCast, Int.cast_add, Int.cast_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/ConjugateMinimaInstance.lean:36:69: This simp argument is unused:
+  Int.cast_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_add, map_sub, map_pow, map_one, map_natCast, Polynomial.aeval_X, Polynomial.aeval_C,
+    algebraMap_int_eq, eq_intCast, Int.cast_add, Int.cast_natCast]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/ConjugateMinimaInstance.lean:22:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/ConjugateMinimaInstance.lean:48:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [35440/35492] Built Formalism.SharpRestriction.Divisibility.GeneratorPowers.GramSpace (8.1s)
+✔ [35441/35492] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUnivCharWithUnivChar (6.9s)
+✖ [35442/35494] Building Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.OverIx (2.6s)
+trace: .> LEAN_PATH=/root/autodl-tmp/rh-check/source/.lake/packages/Cli/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/batteries/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/Qq/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/aesop/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/proofwidgets/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/importGraph/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/plausible/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/mathlib/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/build/lib/lean /root/autodl-tmp/rh-check/tools/lean-4.33.1-linux/bin/lean -j1 --tstack=400000 /root/autodl-tmp/rh-check/source/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean -o /root/autodl-tmp/rh-check/source/.lake/build/lib/lean/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.olean -i /root/autodl-tmp/rh-check/source/.lake/build/lib/lean/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.ilean -c /root/autodl-tmp/rh-check/source/.lake/build/ir/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.c --setup /root/autodl-tmp/rh-check/source/.lake/build/ir/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.setup.json --json
+error: src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean:1:0: failed to read file '/root/autodl-tmp/rh-check/source/.lake/build/lib/lean/Development/AbelianVarietyTheory/Proofs/GenericRegularity/IsNoetherianRingTensor.olean'
+error: Lean exited with code 1
+✔ [35444/35496] Built Development.AbelianVarietyTheory.Proofs.GenericRegularity.SectionEqZeroOfGenericFramedPointValues (14s)
+⚠ [35445/35498] Built Formalism.SharpRestriction.Divisibility.GeneratorPowers.FrRatio (27s)
+warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/FrRatio.lean:44:70: This simp argument is unused:
+  Ideal.Quotient.lift_mk
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [jetCopy, jetMap, jetTrunc, liftJet, Ideal.Quotient.mkₐ_eq_mk, Ideal.Quotient.factor_mk,
+    MvPolynomial.bind₁_X_right]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/FrRatio.lean:45:30: This simp argument is unused:
+  MvPolynomial.bind₁_X_right
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [jetCopy, jetMap, jetTrunc, liftJet, Ideal.Quotient.mkₐ_eq_mk, Ideal.Quotient.lift_mk,
+    Ideal.Quotient.factor_mk]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [35446/35500] Built Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.ResidualConditionOnLinkedSides (5.1s)
+✔ [35447/35500] Built Formalism.SharpRestriction.LevelLetterCocycles.BlochKatoDuality (8.9s)
+✔ [35448/35501] Built Development.AbelianVarietyTheory.Proofs.UnitaryExistence.HkRelFrOfTransportIff (12s)
+⚠ [35449/35509] Built Formalism.SharpRestriction.Divisibility.GeneratorPowers.GmHomAt (9.0s)
+warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/GmHomAt.lean:70:28: Unused tactic linter: `rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/GmHomAt.lean:73:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.ModuliIntegralCharts.H1.ExpGI.gm_homAt`:
+  [StarRing (𝓞 E)]
+  [Algebra ℚ S]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsDomain R] in theorem ...
+  omit [StarRing (𝓞 E)] [Algebra ℚ S] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/BetaAtAddLeftAndDiagEqTwoOrder.lean:93:53: This simp argument is unused:
-  ptK
+✔ [35450/35509] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.WeightOnDatum (6.2s)
+⚠ [35452/35510] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SurjConj (6.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SurjConj.lean:18:2: Try this: 
+  haveI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/BetaAtAddLeftAndDiagEqTwoOrder.lean:118:67: This simp argument is unused:
-  ptK
-
-Hint: Omit it from the simp argument list.
-  [apply] simp
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/BetaAtAddLeftAndDiagEqTwoOrder.lean:126:0: automatically included section variable(s) unused in theorem `GlobalTheory.BetaAdd.norm_unit`:
-  [IsDomain R]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsDomain R] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/BetaAtAddLeftAndDiagEqTwoOrder.lean:140:0: automatically included section variable(s) unused in theorem `GlobalTheory.BetaAdd.over_sec`:
-  [IsDomain R]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsDomain R] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/BetaAtAddLeftAndDiagEqTwoOrder.lean:208:14: This simp argument is unused:
-  ptK
-
-Hint: Omit it from the simp argument list.
-  [apply] simp
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/BetaAtAddLeftAndDiagEqTwoOrder.lean:144:8: Overlapping instance parameters in `main`:
-
-⚠️ `[IsDomain R]` and `[IsLocalRing R]` each imply `[Nontrivial R]`.
-💡️ Of these, `[IsDomain R]` and `[IsLocalRing R]` may be removed.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-✔ [34995/35042] Built Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.ArcDictExpZeroSection (6.0s)
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
