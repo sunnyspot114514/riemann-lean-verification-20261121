@@ -1,147 +1,24 @@
-  [apply] simp only [FGLaw.add, hF, hA, h1, h2, ha] at h
+  [IsDomain R']
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDomain R] [IsDomain R'] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean:227:34: This simp argument is unused:
-  h1
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ExtensionDescent/ChartPullbacks/UniformBaseChange/PullbackDegree/EpsPullbackFst.lean:135:0: automatically included section variable(s) unused in theorem `ReciprocityTheory.ChartRestriction.G.Out.UBC.kapS_comm`:
+  [IsDomain R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDomain R] in theorem ...
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [FGLaw.add, hF, hA, h2, hs, ha] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean:227:42: This simp argument is unused:
-  hs
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [FGLaw.add, hF, hA, h1, h2, ha] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean:233:15: This simp argument is unused:
-  FGLaw.add
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ExtensionDescent/ChartPullbacks/UniformBaseChange/PullbackDegree/EpsPullbackFst.lean:139:13: This simp argument is unused:
+  IsLocalization.map_eq
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [hF, hA, h1, h2, hs, ha] at h
+  [apply] simp [kap]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean:233:26: This simp argument is unused:
-  hF
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [FGLaw.add, hA, h1, h2, hs, ha] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean:233:30: This simp argument is unused:
-  hA
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [FGLaw.add, hF, h1, h2, hs, ha] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean:233:34: This simp argument is unused:
-  h1
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [FGLaw.add, hF, hA, h2, hs, ha] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean:233:38: This simp argument is unused:
-  h2
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [FGLaw.add, hF, hA, h1, hs, ha] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean:233:42: This simp argument is unused:
-  hs
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [FGLaw.add, hF, hA, h1, h2, ha] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean:239:15: This simp argument is unused:
-  FGLaw.add
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [hF, hA, h1, h2, hs, ha] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean:239:26: This simp argument is unused:
-  hF
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [FGLaw.add, hA, h1, h2, hs, ha] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean:239:34: This simp argument is unused:
-  h1
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [FGLaw.add, hF, hA, h2, hs, ha] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean:239:38: This simp argument is unused:
-  h2
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [FGLaw.add, hF, hA, h1, hs, ha] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean:239:42: This simp argument is unused:
-  hs
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [FGLaw.add, hF, hA, h1, h2, ha] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean:245:15: This simp argument is unused:
-  FGLaw.add
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [hF, hA, h1, h2, hs, ha] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean:245:26: This simp argument is unused:
-  hF
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [FGLaw.add, hA, h1, h2, hs, ha] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean:245:42: This simp argument is unused:
-  hs
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [FGLaw.add, hF, hA, h1, h2, ha] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean:251:15: This simp argument is unused:
-  FGLaw.add
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [hF, hA, h1, h2, hs, ha] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean:251:26: This simp argument is unused:
-  hF
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [FGLaw.add, hA, h1, h2, hs, ha] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean:251:34: This simp argument is unused:
-  h1
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [FGLaw.add, hF, hA, h2, hs, ha] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean:251:38: This simp argument is unused:
-  h2
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [FGLaw.add, hF, hA, h1, hs, ha] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean:340:2: Try this: 
+✔ [36944/37014] Built ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.BaseChangeKernels.AffineSt (5.2s)
+⚠ [36945/37015] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.ChartLocalDepthLeOfValuedExtensionBound (9.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ChartLocalDepthLeOfValuedExtensionBound.lean:106:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -149,7 +26,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean:342:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ChartLocalDepthLeOfValuedExtensionBound.lean:108:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -157,4 +34,127 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [36415/36481] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PrincipalCongruenceFixedVectorsLeSmoothVectors (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ChartLocalDepthLeOfValuedExtensionBound.lean:121:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ChartLocalDepthLeOfValuedExtensionBound.lean:127:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [36946/37015] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsExtraMore (5.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsExtraMore.lean:5:29: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [36947/37015] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StarSubdivisionNoNewCellOfMaximalMultiplicityFan (7.7s)
+⚠ [36948/37015] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsRegularLocalRingAdicCompletion (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsRegularLocalRingAdicCompletion.lean:13:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [36949/37015] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StarSubdivisionEstimateOffCentreCellStatement (7.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/StarSubdivisionEstimateOffCentreCellStatement.lean:9:64: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/StarSubdivisionEstimateOffCentreCellStatement.lean:9:117: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/StarSubdivisionEstimateOffCentreCellStatement.lean:9:64: Unused tactic linter: `exact GlobalTheory.PolFan.StarKey.OffCell.off_cell` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/StarSubdivisionEstimateOffCentreCellStatement.lean:9:117: Unused tactic linter: `(intros; apply GlobalTheory.PolFan.StarKey.OffCell.off_cell <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [36950/37021] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNonzeroSectionOfPolarisedGenericFibreStatement (5.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNonzeroSectionOfPolarisedGenericFibreStatement.lean:18:72: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNonzeroSectionOfPolarisedGenericFibreStatement.lean:18:133: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNonzeroSectionOfPolarisedGenericFibreStatement.lean:18:72: Unused tactic linter: `exact GlobalTheory.ThetaDomain.exists_sec_ne_zero_of_polAt` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNonzeroSectionOfPolarisedGenericFibreStatement.lean:18:133: Unused tactic linter: `(intros; apply GlobalTheory.ThetaDomain.exists_sec_ne_zero_of_polAt <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [36951/37022] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RegularLocalRingNormalDomain (7.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RegularLocalRingNormalDomain.lean:64:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RegularLocalRingNormalDomain.lean:65:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RegularLocalRingNormalDomain.lean:66:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RegularLocalRingNormalDomain.lean:64:4: Unused tactic linter: `(intros; apply _root_.GlobalTheory.SaturatedNotDvd.main <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RegularLocalRingNormalDomain.lean:65:4: Unused tactic linter: `(intros;
+  apply @_root_.GlobalTheory.SaturatedNotDvd.main <;>
+    first
+    | assumption
+    | infer_instance)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RegularLocalRingNormalDomain.lean:66:4: Unused tactic linter: `(intros; exact _root_.GlobalTheory.SaturatedNotDvd.main ..)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RegularLocalRingNormalDomain.lean:83:63: `Prime.not_unit` has been deprecated: Use `Prime.not_isUnit` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RegularLocalRingNormalDomain.lean:91:64: `Prime.not_unit` has been deprecated: Use `Prime.not_isUnit` instead
+⚠ [36952/37022] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralOfMemAdjoinInv (9.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsIntegralOfMemAdjoinInv.lean:15:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsIntegralOfMemAdjoinInv.lean:98:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsIntegralOfMemAdjoinInv.lean:99:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsIntegralOfMemAdjoinInv.lean:100:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsIntegralOfMemAdjoinInv.lean:71:8: Overlapping instance parameters in `dvd_of_forall_cdvr`:
+
+⚠️ `[IsDomain R]` and `[IsLocalRing R]` each imply `[Nontrivial R]`.
+💡️ Of these, `[IsDomain R]` and `[IsLocalRing R]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+✔ [36953/37024] Built Development.AbelianVarietyTheory.Proofs.TorusSplitting.DegenerationDataAtModelPointOfUniformisation (8.3s)
+✔ [36954/37024] Built Development.AbelianVarietyTheory.BlockTheory.JetGauges.ThetaSectionsClosedFibre (7.6s)
+⚠ [36955/37026] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsInvariantOrbitCentreMarkingPolyFanStatement (7.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsInvariantOrbitCentreMarkingPolyFanStatement.lean:21:62: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsInvariantOrbitCentreMarkingPolyFanStatement.lean:21:113: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsInvariantOrbitCentreMarkingPolyFanStatement.lean:21:62: Unused tactic linter: `exact GlobalTheory.PolFan.OrbMark.centres_exists` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsInvariantOrbitCentreMarkingPolyFanStatement.lean:21:113: Unused tactic linter: `(intros; apply GlobalTheory.PolFan.OrbMark.centres_exists <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
