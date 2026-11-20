@@ -1,101 +1,35 @@
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsRationalMultiplierOfComplexMultiplierStatement.lean:6:129: Unused tactic linter: `(intros; apply GlobalTheory.exists_rational_multiplier_of_complex <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [41517/41624] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DomainPointStabilizerTrivial (8.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DomainPointStabilizerTrivial.lean:17:85: this tactic is never executed
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DomainPointStabilizerTrivial.lean:18:4: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/SmoothOfRelativeDimensionTensor.lean:38:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DomainPointStabilizerTrivial.lean:19:4: this tactic is never executed
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DomainPointStabilizerTrivial.lean:20:4: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/SmoothOfRelativeDimensionTensor.lean:39:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DomainPointStabilizerTrivial.lean:17:85: Unused tactic linter: `assumption` does nothing
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DomainPointStabilizerTrivial.lean:18:4: Unused tactic linter: `(intros;
-  apply _root_.GlobalTheory.FirstColumnConjugation.exists_conj_first_col_zero <;> assumption)` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/SmoothOfRelativeDimensionTensor.lean:72:75: This simp argument is unused:
+  GrpObj.comp_inv
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DomainPointStabilizerTrivial.lean:19:4: Unused tactic linter: `(intros;
-  apply @_root_.GlobalTheory.FirstColumnConjugation.exists_conj_first_col_zero <;>
-    first
-    | assumption
-    | infer_instance)` does nothing
+Hint: Omit it from the simp argument list.
+  [apply] simp [MonObj.comp_mul]
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DomainPointStabilizerTrivial.lean:20:4: Unused tactic linter: `(intros;
-  exact _root_.GlobalTheory.FirstColumnConjugation.exists_conj_first_col_zero ..)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [41518/41624] Built ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.GGConnA (7.9s)
-⚠ [41519/41624] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDominantWeightShiftFlatLineDetStatement (5.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsDominantWeightShiftFlatLineDetStatement.lean:7:55: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsDominantWeightShiftFlatLineDetStatement.lean:7:99: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsDominantWeightShiftFlatLineDetStatement.lean:7:55: Unused tactic linter: `exact GlobalTheory.FlatShift.exists_shift` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsDominantWeightShiftFlatLineDetStatement.lean:7:99: Unused tactic linter: `(intros; apply GlobalTheory.FlatShift.exists_shift <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [41520/41624] Built ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.CubeSplit (6.8s)
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/SquareIntegrability/CubeSplit.lean:34:0: automatically included section variable(s) unused in theorem `ReciprocityTheory.ChartRestriction.G.I2.ZM.uc_rsmul`:
-  [IsCMField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsCMField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [41521/41624] Built ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.RhGradFPf (7.6s)
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovVolumes/UpperBounds/RhGradFPf.lean:34:6: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovVolumes/UpperBounds/RhGradFPf.lean:34:6: Unused tactic linter: `fun_prop` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovVolumes/UpperBounds/RhGradFPf.lean:39:6: `Matrix.det_of_lowerTriangular` has been deprecated: Use `Matrix.det_of_isLowerTriangular` instead
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovVolumes/UpperBounds/RhGradFPf.lean:49:34: `Fin.coe_castLE` has been deprecated: Use `Fin.val_castLE` instead
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovVolumes/UpperBounds/RhGradFPf.lean:51:49: `Fin.coe_castLE` has been deprecated: Use `Fin.val_castLE` instead
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovVolumes/UpperBounds/RhGradFPf.lean:63:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovVolumes/UpperBounds/RhGradFPf.lean:63:4: Unused tactic linter: `fun_prop` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovVolumes/UpperBounds/RhGradFPf.lean:110:6: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovVolumes/UpperBounds/RhGradFPf.lean:119:6: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovVolumes/UpperBounds/RhGradFPf.lean:126:6: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovVolumes/UpperBounds/RhGradFPf.lean:132:6: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovVolumes/UpperBounds/RhGradFPf.lean:110:6: Unused tactic linter: `fun_prop` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovVolumes/UpperBounds/RhGradFPf.lean:119:6: Unused tactic linter: `fun_prop` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovVolumes/UpperBounds/RhGradFPf.lean:126:6: Unused tactic linter: `fun_prop` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovVolumes/UpperBounds/RhGradFPf.lean:132:6: Unused tactic linter: `simpa using (Complex.lt_def.mp h).1` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [41522/41624] Built ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.OntoStatementPfJ (7.6s)
-⚠ [41523/41624] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormsComponentFiniteDimensionalAndSpanned (9.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspFormsComponentFiniteDimensionalAndSpanned.lean:19:4: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [42082/42129] Built Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HarmonicConnectionValueEqPolynomialDerivative (5.7s)
+⚠ [42083/42129] Built Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsGrpPullbackAbVarModel (21s)
+warning: src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/IsGrpPullbackAbVarModel.lean:70:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -103,8 +37,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [41524/41624] Built ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.CharMain (49s)
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/SquareIntegrability/CharMain.lean:20:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/IsGrpPullbackAbVarModel.lean:71:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -112,7 +45,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/SquareIntegrability/CharMain.lean:21:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/IsGrpPullbackAbVarModel.lean:79:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -120,41 +53,108 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [41525/41624] Built ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.FrameMeasStatementPf (8.6s)
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovVolumes/UpperBounds/FrameMeasStatementPf.lean:100:12: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/IsGrpPullbackAbVarModel.lean:185:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/IsGrpPullbackAbVarModel.lean:287:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/IsGrpPullbackAbVarModel.lean:297:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/IsGrpPullbackAbVarModel.lean:298:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [42084/42131] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.ArcWitnessThetaPullbackStatement (5.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/ArcWitnessThetaPullbackStatement.lean:10:64: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovVolumes/UpperBounds/FrameMeasStatementPf.lean:100:2: Unused tactic linter: `all_goals exact hlast` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/ArcWitnessThetaPullbackStatement.lean:10:117: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/ArcWitnessThetaPullbackStatement.lean:10:64: Unused tactic linter: `exact GlobalTheory.ArcQ.thetaClause_iff_thetaAlong` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [41526/41625] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HorizGenZpowMulMemSS (6.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HorizGenZpowMulMemSS.lean:30:0: automatically included section variable(s) unused in theorem `GlobalTheory.FlatCore.HorizMul.differentiable_matDet`:
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/ArcWitnessThetaPullbackStatement.lean:10:117: Unused tactic linter: `(intros; apply GlobalTheory.ArcQ.thetaClause_iff_thetaAlong <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [42085/42138] Built Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsLeftInverse (6.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/ExistsLeftInverse.lean:53:32: This simp argument is unused:
+  MonObj.comp_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.cons_val_zero, Matrix.cons_val_one, map_add, map_zsmul, ← pull_comp, Category.comp_id,
+    ← Over.comp_left, Out.mulA, map_zero, pow_two, MonObj.comp_mul] at h₃
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [42086/42138] Built Development.AbelianVarietyTheory.BlockTheory.JetGauges.EndomorphismPullbackRigid (8.1s)
+warning: src/Development/AbelianVarietyTheory/BlockTheory/JetGauges/EndomorphismPullbackRigid.lean:78:0: automatically included section variable(s) unused in theorem `GlobalTheory.IndefiniteRowSideFullHecke.EndomorphismPullbackRigid.lift_transl`:
+  [IsCommMonObj A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsCommMonObj A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [42087/42138] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsArcBasisBaseChange (8.6s)
+⚠ [42088/42139] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.LieIdentityArcWitnessIffStatement (5.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/LieIdentityArcWitnessIffStatement.lean:10:51: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/LieIdentityArcWitnessIffStatement.lean:10:91: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/LieIdentityArcWitnessIffStatement.lean:9:8: Overlapping instance parameters in `GlobalTheory.T.lie_identity_arc_witness_iff`:
+
+⚠️ `[IsDomain A]` and `[IsLocalRing A]` each imply `[Nontrivial A]`.
+💡️ Of these, `[IsDomain A]` and `[IsLocalRing A]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/LieIdentityArcWitnessIffStatement.lean:10:51: Unused tactic linter: `exact GlobalTheory.LieIdImg.lieId_iff` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/LieIdentityArcWitnessIffStatement.lean:10:91: Unused tactic linter: `(intros; apply GlobalTheory.LieIdImg.lieId_iff <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [42089/42140] Built Development.AbelianVarietyTheory.Definitions.Foundations.MemUnitaryGroupIffIsIsometry (28s)
+warning: src/Development/AbelianVarietyTheory/Definitions/Foundations/MemUnitaryGroupIffIsIsometry.lean:897:0: automatically included section variable(s) unused in theorem `GlobalTheory.CMTensor.algebraMap_right_injective`:
   [NumberField E]
   [IsCMField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [NumberField E] [IsCMField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HorizGenZpowMulMemSS.lean:35:0: automatically included section variable(s) unused in theorem `GlobalTheory.FlatCore.HorizMul.horizGen_rmul'`:
-  [NumberField E]
-  [IsCMField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [IsCMField E] in theorem ...
+✔ [42090/42144] Built Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FormalTwistingNeTrivial (25s)
+⚠ [42091/42144] Built Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NonemptyTorusExtensionOfSurjectivePointsStatement (5.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/NonemptyTorusExtensionOfSurjectivePointsStatement.lean:14:80: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HorizGenZpowMulMemSS.lean:41:0: automatically included section variable(s) unused in theorem `GlobalTheory.FlatCore.HorizMul.horizGen_lact'`:
-  [NumberField E]
-  [IsCMField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [IsCMField E] in theorem ...
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/NonemptyTorusExtensionOfSurjectivePointsStatement.lean:14:149: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HorizGenZpowMulMemSS.lean:51:4: `Matrix.det_of_upperTriangular` has been deprecated: Use `Matrix.det_of_isUpperTriangular` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HorizGenZpowMulMemSS.lean:47:0: automatically included section variable(s) unused in theorem `GlobalTheory.FlatCore.HorizMul.bchar_zsmul_modelFlat`:
-  [NumberField E]
-  [IsCMField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [IsCMField E] in theorem ...
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/NonemptyTorusExtensionOfSurjectivePointsStatement.lean:14:80: Unused tactic linter: `exact GlobalTheory.SS.nonempty_torusExtension_of_surjective_points` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [41527/41625] Built ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.InterpStatementPfB (6.8s)
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DegenerationProofs/NonemptyTorusExtensionOfSurjectivePointsStatement.lean:14:149: Unused tactic linter: `(intros;
+  apply GlobalTheory.SS.nonempty_torusExtension_of_surjective_points <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [42092/42147] Built Development.AbelianVarietyTheory.BlockTheory.JetGauges.PerfectPairings (5.5s)
