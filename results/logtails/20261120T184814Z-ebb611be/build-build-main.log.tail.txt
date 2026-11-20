@@ -1,160 +1,160 @@
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/FactorialProductRearrangement.lean:281:35: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:317:6: This simp argument is unused:
+  Finset.mul_sum
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/FactorialProductRearrangement.lean:281:56: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mulVec, dotProduct, vecMulVec, of_apply, Pi.smul_apply, smul_eq_mul, Finset.sum_mul]
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/FactorialProductRearrangement.lean:229:27: Unused tactic linter: `done` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/FactorialProductRearrangement.lean:229:35: Unused tactic linter: `(field_simp; ring)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/FactorialProductRearrangement.lean:241:27: Unused tactic linter: `done` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/FactorialProductRearrangement.lean:241:35: Unused tactic linter: `(field_simp; ring)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/FactorialProductRearrangement.lean:256:51: Unused tactic linter: `exact le_self_pow hy0 (by norm_num)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/FactorialProductRearrangement.lean:258:51: Unused tactic linter: `exact le_self_pow hy0 (by norm_num)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/FactorialProductRearrangement.lean:281:27: Unused tactic linter: `done` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/FactorialProductRearrangement.lean:281:35: Unused tactic linter: `(field_simp; ring)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/FactorialProductRearrangement.lean:281:56: Unused tactic linter: `ring` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [11968/12033] Built Formalism.GL3MeanSquares.HookFormulaTorsion.HolderExponentialMoments (9.9s)
-warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/HolderExponentialMoments.lean:12:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/HolderExponentialMoments.lean:160:35: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/HolderExponentialMoments.lean:160:48: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/HolderExponentialMoments.lean:160:35: Unused tactic linter: `field_simp` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/GL3MeanSquares/HookFormulaTorsion/HolderExponentialMoments.lean:160:48: Unused tactic linter: `ring` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [11969/12044] Built Formalism.GL3MeanSquares.HookFormulaTorsion.WeightShiftProduct (10s)
-⚠ [11970/12046] Built Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.TraceConjMulEqHilbertSchmidt (18s)
-warning: src/Formalism/SharpRestriction/CuspSpanNormBounds/BruhatCellsKronecker/TraceConjMulEqHilbertSchmidt.lean:105:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/SharpRestriction/CuspSpanNormBounds/BruhatCellsKronecker/TraceConjMulEqHilbertSchmidt.lean:120:10: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/SharpRestriction/CuspSpanNormBounds/BruhatCellsKronecker/TraceConjMulEqHilbertSchmidt.lean:140:8: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/SharpRestriction/CuspSpanNormBounds/BruhatCellsKronecker/TraceConjMulEqHilbertSchmidt.lean:141:8: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/SharpRestriction/CuspSpanNormBounds/BruhatCellsKronecker/TraceConjMulEqHilbertSchmidt.lean:145:8: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/SharpRestriction/CuspSpanNormBounds/BruhatCellsKronecker/TraceConjMulEqHilbertSchmidt.lean:146:8: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/SharpRestriction/CuspSpanNormBounds/BruhatCellsKronecker/TraceConjMulEqHilbertSchmidt.lean:147:8: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/SharpRestriction/CuspSpanNormBounds/BruhatCellsKronecker/TraceConjMulEqHilbertSchmidt.lean:120:10: Unused tactic linter: `simp only [Submodule.starProjection_apply,
-  Submodule.orthogonalProjection_mem_subspace_eq_self]` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/SharpRestriction/CuspSpanNormBounds/BruhatCellsKronecker/TraceConjMulEqHilbertSchmidt.lean:140:8: Unused tactic linter: `exact fun a b => hpos.isSelfAdjoint.isSymmetric a b` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/SharpRestriction/CuspSpanNormBounds/BruhatCellsKronecker/TraceConjMulEqHilbertSchmidt.lean:141:8: Unused tactic linter: `exact fun a b => hpos.isSymmetric a b` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/SharpRestriction/CuspSpanNormBounds/BruhatCellsKronecker/TraceConjMulEqHilbertSchmidt.lean:145:8: Unused tactic linter: `exact hpos.2 x` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/SharpRestriction/CuspSpanNormBounds/BruhatCellsKronecker/TraceConjMulEqHilbertSchmidt.lean:146:8: Unused tactic linter: `exact (Complex.nonneg_iff.mp (hpos.2 x)).1` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/SharpRestriction/CuspSpanNormBounds/BruhatCellsKronecker/TraceConjMulEqHilbertSchmidt.lean:147:8: Unused tactic linter: `exact (Complex.nonneg_iff.mp (hpos.inner_nonneg_left x)).1` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/SharpRestriction/CuspSpanNormBounds/BruhatCellsKronecker/TraceConjMulEqHilbertSchmidt.lean:315:26: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
-warning: src/Formalism/SharpRestriction/CuspSpanNormBounds/BruhatCellsKronecker/TraceConjMulEqHilbertSchmidt.lean:337:35: try 'simp' instead of 'simpa'
-
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-warning: src/Formalism/SharpRestriction/CuspSpanNormBounds/BruhatCellsKronecker/TraceConjMulEqHilbertSchmidt.lean:347:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:390:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Formalism/SharpRestriction/CuspSpanNormBounds/BruhatCellsKronecker/TraceConjMulEqHilbertSchmidt.lean:671:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/SharpRestriction/CuspSpanNormBounds/BruhatCellsKronecker/TraceConjMulEqHilbertSchmidt.lean:773:8: this tactic is never executed
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:425:4: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/SharpRestriction/CuspSpanNormBounds/BruhatCellsKronecker/TraceConjMulEqHilbertSchmidt.lean:773:8: Unused tactic linter: `simp only [Submodule.starProjection_apply,
-  Submodule.orthogonalProjection_mem_subspace_eq_self]` does nothing
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:425:4: Unused tactic linter: `exact
+  Continuous.prodMk (continuous_pi fun j => (continuous_apply _).comp (continuous_apply _))
+    (Complex.continuous_im.comp ((continuous_apply _).comp (continuous_apply _)))` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/SharpRestriction/CuspSpanNormBounds/BruhatCellsKronecker/TraceConjMulEqHilbertSchmidt.lean:914:2: Try this: 
-  haveI̵
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:448:4: this tactic is never executed
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:448:4: Unused tactic linter: `exact
+  (Complex.continuous_ofReal.comp ((Complex.continuous_re.comp hc).neg.div_const 2)).add
+    ((Complex.continuous_ofReal.comp continuous_snd).mul continuous_const)` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/SharpRestriction/CuspSpanNormBounds/BruhatCellsKronecker/TraceConjMulEqHilbertSchmidt.lean:917:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:501:63: This simp argument is unused:
+  iL_val
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: Omit it from the simp argument list.
+  [apply] simp only [first_index_val, lev_val]
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [11971/12046] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.KernelQuotientFinite (14s)
-✔ [11972/12046] Built Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.WeightedProjectionSumSelfAdjoint (7.8s)
-✔ [11973/12046] Built Formalism.HermitianCurvature.StatementK (5.1s)
-✔ [11974/12046] Built Formalism.GL3MeanSquares.HookFormulaTorsion.TeichmullerUnitAllPrimes (10s)
-✔ [11975/12051] Built Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.DecayHypothesisOfLargeConstants (5.8s)
-✔ [11976/12054] Built Formalism.FlagUnipotentLattices.UnipotentStabiliserCharacterisation (11s)
-✔ [11977/12054] Built Formalism.LocalToGlobal.GlobalTheory.GL6.Statement (5.3s)
-⚠ [11978/12058] Built Formalism.LocalToGlobal.GlobalTheory.GL4.PShortFrame (16s)
-warning: src/Formalism/LocalToGlobal/GlobalTheory/GL4/PShortFrame.lean:108:73: Variable name `hq0` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:501:71: This simp argument is unused:
+  lev_val
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hq0
+Hint: Omit it from the simp argument list.
+  [apply] simp only [first_index_val, iL_val]
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [11979/12058] Built Formalism.GL3MeanSquares.HookFormulaTorsion.GaussianIntegralFormula (25s)
-✔ [11980/12058] Built Formalism.HermitianCurvature.StatementB (12s)
-✔ [11981/12059] Built Formalism.HermitianCurvature.MemParahoricTimesPrincipalCongruenceIff (9.2s)
-✔ [11982/12059] Built Formalism.FlagUnipotentLattices.MinkowskiFactorialBounds.NormalisationIdentity (4.9s)
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:501:90: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:501:130: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:501:90: Unused tactic linter: `(rw [lev_val]; constructor <;> omega)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:501:130: Unused tactic linter: `(simp_all [Fin.ext_iff] <;> omega)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:507:46: This simp argument is unused:
+  first_index_val
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [iL_val, lev_val]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:507:71: This simp argument is unused:
+  lev_val
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [first_index_val, iL_val]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:507:90: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:507:130: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:507:90: Unused tactic linter: `(rw [lev_val]; constructor <;> omega)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:507:130: Unused tactic linter: `(simp_all [Fin.ext_iff] <;> omega)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:514:63: This simp argument is unused:
+  iL_val
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [first_index_val, lev_val]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:514:90: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:514:130: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:514:90: Unused tactic linter: `(rw [lev_val]; constructor <;> omega)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:514:130: Unused tactic linter: `(simp_all [Fin.ext_iff] <;> omega)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:521:46: This simp argument is unused:
+  first_index_val
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [iL_val, lev_val]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:521:90: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:521:130: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:521:90: Unused tactic linter: `(rw [lev_val]; constructor <;> omega)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:521:130: Unused tactic linter: `(simp_all [Fin.ext_iff] <;> omega)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:529:46: This simp argument is unused:
+  first_index_val
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [iL_val, lev_val]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:529:63: This simp argument is unused:
+  iL_val
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [first_index_val, lev_val]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:529:90: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:529:130: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:529:90: Unused tactic linter: `(rw [lev_val]; constructor <;> omega)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:529:130: Unused tactic linter: `(simp_all [Fin.ext_iff] <;> omega)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:680:31: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:692:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:680:31: Unused tactic linter: `abel` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/HeisenbergLeviConjugationMeasure.lean:692:6: Unused tactic linter: `exact
+  (IsOpenPosMeasure.open_pos (μ := (volume : Measure (HPar k r'))) Set.univ isOpen_univ Set.univ_nonempty)
+    (by rw [h]; rfl)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [12393/12437] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.PhaseFunctionDerivatives (24s)
+✔ [12394/12444] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.WordStatementsAllHold (5.0s)
