@@ -7,16 +7,16 @@
   "bootstrap_exit_code": null,
   "driver_exit_code": null,
   "verification_passed": false,
-  "updated_utc": "2026-11-20T18:48:14+00:00",
+  "updated_utc": "2026-11-20T18:48:31+00:00",
   "resources": {
-    "sampled_utc": "2026-11-20T18:48:14+00:00",
-    "cgroup_memory_current_bytes": 16534949888,
+    "sampled_utc": "2026-11-20T18:48:31+00:00",
+    "cgroup_memory_current_bytes": 16658247680,
     "cgroup_memory_peak_since_creation_bytes": 19717738496,
     "cgroup_memory_stat_bytes": {
-      "total_rss": 294486016,
+      "total_rss": 388747264,
       "total_cache": 15353712640,
-      "total_mapped_file": 8515584,
-      "total_inactive_file": 5039980544
+      "total_mapped_file": 791408640,
+      "total_inactive_file": 5031464960
     },
     "cgroup_memory_failcnt": 0,
     "cgroup_memory_oom_control": {
@@ -24,12 +24,12 @@
       "under_oom": 0,
       "oom_kill": 0
     },
-    "cgroup_cpu_usage_seconds": 2989.86884833,
-    "sampled_memory_peak_this_runner_bytes": 16534949888,
-    "cgroup_cpu_seconds_since_runner_start": 0.0093575310002052,
-    "disk_free_bytes": 521515782144,
+    "cgroup_cpu_usage_seconds": 3010.922737836,
+    "sampled_memory_peak_this_runner_bytes": 16658247680,
+    "cgroup_cpu_seconds_since_runner_start": 21.06324703700011,
+    "disk_free_bytes": 521515565056,
     "disk_total_bytes": 536870912000,
-    "disk_free_inodes": 729744441
+    "disk_free_inodes": 729742954
   },
   "phases": {
     "source-prefetch": {
@@ -89,8 +89,40 @@
       }
     },
     "bootstrap": {
-      "status": "not_started",
-      "stages": {}
+      "run_directory_name": "20261120T184814Z-97032",
+      "status": "running:statements-sanity",
+      "stages": {
+        "dependency-fetch": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:48:25Z",
+          "end_utc": "2026-11-20T18:48:26Z"
+        },
+        "mathlib-cache": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:48:26Z",
+          "end_utc": "2026-11-20T18:48:30Z"
+        },
+        "preflight": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:48:14Z",
+          "end_utc": "2026-11-20T18:48:14Z"
+        },
+        "source-fetch": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:48:24Z",
+          "end_utc": "2026-11-20T18:48:25Z"
+        },
+        "toolchain-download": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:48:14Z",
+          "end_utc": "2026-11-20T18:48:15Z"
+        },
+        "toolchain-install": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:48:15Z",
+          "end_utc": "2026-11-20T18:48:24Z"
+        }
+      }
     },
     "build": {
       "status": "not_started",
