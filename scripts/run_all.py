@@ -74,6 +74,31 @@ def process_limits():
             "note": "Observed only; this runner does not change global VM or process limits."}
 
 
+def run_process_group(command, timeout):
+    """Capture a command and kill only its own process group if it times out."""
+    proc = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                            text=True, start_new_session=True)
+    try:
+        output, _ = proc.communicate(timeout=timeout)
+    except subprocess.TimeoutExpired as exc:
+        try:
+            os.killpg(proc.pid, signal.SIGKILL)
+        except ProcessLookupError:
+            pass
+        output, _ = proc.communicate()
+        exc.output = output
+        raise
+    return subprocess.CompletedProcess(command, proc.returncode, output)
+
+
+def git_version():
+    try:
+        result = run_process_group(["git", "--version"], timeout=10)
+        return result.stdout.strip() if result.returncode == 0 else None
+    except (OSError, subprocess.TimeoutExpired):
+        return None
+
+
 def cpu_set_count(value):
     count = 0
     for part in value.split(","):
@@ -252,6 +277,8 @@ class Runner:
         self.environment = {"recorded_utc": utc(), "system": platform.system(),
                             "kernel_release": platform.release(), "machine": platform.machine(),
                             "python_version": platform.python_version(), "limits": self.resources.limits(),
+                            "git_version": git_version(), "git_executable": shutil.which("git"),
+                            "lean_num_threads_launch_environment": os.environ.get("LEAN_NUM_THREADS", "2"),
                             "process_and_vm_limits": process_limits(),
                             "resource_scope": "Cgroup counters include every process in the same cgroup. Sampled peak can miss brief spikes; kernel peak is since cgroup creation. GNU time maximum RSS is not aggregate cgroup memory.",
                             "sampling_seconds": args.sample_seconds, "publication_seconds": args.publish_seconds,
@@ -288,8 +315,12 @@ class Runner:
             out.write(json.dumps(self.status["resources"]) + "\n")
 
     def git(self, *args):
-        proc = subprocess.run(["git", "-C", str(self.repo), *args], stdout=subprocess.PIPE,
-                              stderr=subprocess.STDOUT, timeout=180, text=True)
+        try:
+            proc = run_process_group(["git", "-C", str(self.repo), *args], timeout=180)
+        except subprocess.TimeoutExpired as exc:
+            with (self.audit / "publication.log").open("a") as out:
+                out.write(utc() + " git " + args[0] + " timed out; task process group killed\n" + (exc.output or "") + "\n")
+            raise
         with (self.audit / "publication.log").open("a") as out:
             out.write(utc() + " git " + args[0] + "\n" + proc.stdout + "\n")
         if proc.returncode:
@@ -513,7 +544,11 @@ def main():
     args.base = args.base.resolve()
     for name in ("audit", "control", "tmp", "cache"):
         (args.base / name).mkdir(parents=True, exist_ok=True)
-    os.environ["PATH"] = str(args.base / "tools/lean-4.33.1-linux/bin") + os.pathsep + os.environ.get("PATH", "")
+    tool_paths = [str(args.base / "tools/lean-4.33.1-linux/bin")]
+    task_git = args.base / "tools/git-current/bin"
+    if (task_git / "git").is_file():
+        tool_paths.insert(0, str(task_git))
+    os.environ["PATH"] = os.pathsep.join(tool_paths + [os.environ.get("PATH", "")])
     os.environ["XDG_CACHE_HOME"] = str(args.base / "cache")
     os.environ["TMPDIR"] = str(args.base / "tmp")
     for key in ("http_proxy", "https_proxy", "HTTP_PROXY", "HTTPS_PROXY"):

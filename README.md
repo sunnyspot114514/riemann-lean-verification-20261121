@@ -20,6 +20,8 @@ The rented Ubuntu 22.04.5 container has **32 logical CPUs, a 60 GiB memory limit
 
 Result uploads use HTTPS and the operator's existing GitHub credential through a task-specific, RAM-only Git credential-cache socket. The token is not written to disk or this repository. After the final upload succeeds, the runner stops only that task's credential-cache helper. SSH login credentials, private keys, and unrelated files are excluded from the result repository. The result checkout uses repository-local `http.proxy=''` and `http.curloptResolve=github.com:443:140.82.112.3` for its direct GitHub route; normal TLS certificate and hostname verification remain enabled. The official Lean archive is additionally checked against the upstream release digest.
 
+The server's original Git 2.34.1 does not support `http.curloptResolve` and silently ignored that setting. This task uses official Git 2.56.1, installed under `BASE/tools/git-current`, to apply the direct route. The runner records the actual selected Git version and executable in the environment evidence. A timed-out Git operation kills only its own process group, including transport children.
+
 The runner records these separate stages:
 
 1. Toolchain, source, dependency, cache and `Statements` environment preparation.
@@ -28,9 +30,9 @@ The runner records these separate stages:
 4. `leanchecker --fresh -v Main`, which replays the entire import closure in a fresh environment. **This uses the same Lean kernel, not an independent implementation.**
 5. Final unchanged-source checks.
 
-The initial scheduler setting is `LEAN_NUM_THREADS=2`. An audit-side TOML copy adds only `weakLeanArgs = ["-j1"]` to limit each compiler's worker setting; the published project configuration and official binaries are unchanged. This is not an aggregate memory guarantee. Resource samples use cgroup limits and counters, with their scope and sampling limitations recorded.
+This run launches with `LEAN_NUM_THREADS=4`; the build driver's fallback remains `2` when no launch setting is supplied. The actual launch setting is recorded in the environment evidence. An audit-side TOML copy adds only `weakLeanArgs = ["-j1"]` to limit each compiler's worker setting; the published project configuration and official binaries are unchanged. This is not an aggregate memory guarantee. Resource samples use cgroup limits and counters, with their scope and sampling limitations recorded.
 
-The platform reports `vm.max_map_count=65530` and denied an attempt to raise it. The runner only records this limit and the process's soft/hard open-file limits; it changes no global setting. A large import closure may encounter mapping limits or additional RAM costs, which must be distinguished from a proof error. Scheduler parallelism remains at its initial setting until actual build load is observed.
+The platform reports `vm.max_map_count=65530` and denied an attempt to raise it. The runner only records this limit and the process's soft/hard open-file limits; it changes no global setting. A large import closure may encounter mapping limits or additional RAM costs, which must be distinguished from a proof error. Any later scheduler tuning must be based on observed build load and recorded separately.
 
 Completed `.setup.json` intermediates are deleted only after a newer successful Lake trace and nonempty `.olean` exist. Source and proof artifacts are retained. This controls disk usage in a project where large repeated import metadata would otherwise dominate storage.
 
