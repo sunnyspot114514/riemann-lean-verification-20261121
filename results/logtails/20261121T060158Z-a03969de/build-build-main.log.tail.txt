@@ -1,10 +1,143 @@
 
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [98729/98765] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalEqualSignKernelsLargeConstantsStatement (6.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RationalEqualSignKernelsLargeConstantsStatement.lean:11:57: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RationalEqualSignKernelsLargeConstantsStatement.lean:11:103: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RationalEqualSignKernelsLargeConstantsStatement.lean:11:57: Unused tactic linter: `exact GlobalTheory.KerConjMean.ratTopAt_big` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RationalEqualSignKernelsLargeConstantsStatement.lean:11:103: Unused tactic linter: `(intros; apply GlobalTheory.KerConjMean.ratTopAt_big <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [98730/98765] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjTorsionTranslateCombinationEntireGaussianGro (5.8s)
+⚠ [98731/98766] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussianGrowthConjTorsionTranslatesVacuum (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/GaussianGrowthConjTorsionTranslatesVacuum.lean:46:14: This simp argument is unused:
+  vBar_vBar
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [cBar]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [98732/98766] Built Development.AutomorphicArithmetic.CyclotomicBounds.WildJets.ImportsBis (9.2s)
+⚠ [98733/98766] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.OppositeKernelsRationalRowMapLargeConstants (6.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/OppositeKernelsRationalRowMapLargeConstants.lean:17:2: Try this: intro D _ _ _ Γ _ _ Pl0 T A Ks _ _ _ R _ _ ch _ _ hK Φ β d hd c i
+⚠ [98734/98773] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanSumSizeBoundLargeDataFromFactors (43s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanSumSizeBoundLargeDataFromFactors.lean:40:2: Try this: 
+  haveI̵
+
 The goal is a proposition, so `have` is preferred over `haveI`.
 The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LevelChainUOperatorCommutationOfPointPairLaw.lean:79:4: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanSumSizeBoundLargeDataFromFactors.lean:43:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanSumSizeBoundLargeDataFromFactors.lean:79:15: This simp argument is unused:
+  Finset.coe_sort_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Set.Finite.coe_toFinset]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanSumSizeBoundLargeDataFromFactors.lean:108:65: Variable name `hr` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hr
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanSumSizeBoundLargeDataFromFactors.lean:164:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanSumSizeBoundLargeDataFromFactors.lean:165:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanSumSizeBoundLargeDataFromFactors.lean:265:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanSumSizeBoundLargeDataFromFactors.lean:326:60: `Matrix.toEuclideanLin_apply` has been deprecated: Use `Matrix.toLpLin_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ {m : Type u_1} {n : Type u_2} {R : Type u_4} [inst : Fintype n] [inst_1 : DecidableEq n] [inst_2 : CommRing R]
+    (p q : ENNReal) (M : Matrix m n R) (v : WithLp p (n → R)), ((toLpLin p q) M) v = WithLp.toLp q (M *ᵥ v.ofLp)
+instead of
+  ∀ {𝕜 : Type u_3} [inst : RCLike 𝕜] {m : Type u_7} {n : Type u_8} [inst_1 : Fintype n] [inst_2 : DecidableEq n]
+    (M : Matrix m n 𝕜) (v : EuclideanSpace 𝕜 n), (toEuclideanLin M) v = WithLp.toLp 2 (M *ᵥ v.ofLp)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanSumSizeBoundLargeDataFromFactors.lean:399:0: automatically included section variable(s) unused in theorem `DeltaFormSums.GlobalTheory.CompanionTheory.InfAssembly.valAt_eq`:
+  [NumberField K]
+  [StarRing K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField K] [StarRing K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanSumSizeBoundLargeDataFromFactors.lean:407:0: automatically included section variable(s) unused in theorem `DeltaFormSums.GlobalTheory.CompanionTheory.InfAssembly.form_eq`:
+  [NumberField K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanSumSizeBoundLargeDataFromFactors.lean:423:6: This simp argument is unused:
+  RingHom.id_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [blk, map_sum, LinearMap.sum_apply, LinearMap.map_smulₛₗ, LinearMap.smul_apply, map_smul,
+    smul_eq_mul, hpk, hm, Finset.mul_sum]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanSumSizeBoundLargeDataFromFactors.lean:494:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanSumSizeBoundLargeDataFromFactors.lean:495:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanSumSizeBoundLargeDataFromFactors.lean:541:31: Variable name `hA` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hA
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanSumSizeBoundLargeDataFromFactors.lean:629:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanSumSizeBoundLargeDataFromFactors.lean:631:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -12,149 +145,16 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [98460/98486] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FormsStableOfTgtEq (5.5s)
-⚠ [98461/98488] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.InvTrKEmbGLApply (11s)
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/InvTrKEmbGLApply.lean:20:0: automatically included section variable(s) unused in theorem `GlobalTheory.LvT.BuiltChain.mem_dualFr_tauLat`:
-  [NumberField E]
-  [NumberField K]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [NumberField K] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/InvTrKEmbGLApply.lean:117:0: automatically included section variable(s) unused in theorem `GlobalTheory.LvT.BuiltChain.evV_rho`:
-  [NumberField K]
-  [StarRing E]
-  [StarRing K]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField K] [StarRing E] [StarRing K] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [98462/98488] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExtInOfValIn (7.7s)
-⚠ [98463/98490] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceValuationLocalDegreeArithmeticStatement (5.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PlaceValuationLocalDegreeArithmeticStatement.lean:26:44: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanSumSizeBoundLargeDataFromFactors.lean:901:90: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PlaceValuationLocalDegreeArithmeticStatement.lean:26:77: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanSumSizeBoundLargeDataFromFactors.lean:901:169: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PlaceValuationLocalDegreeArithmeticStatement.lean:26:44: Unused tactic linter: `exact GlobalTheory.vw_lw_arith` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanSumSizeBoundLargeDataFromFactors.lean:901:90: Unused tactic linter: `exact DeltaFormSums.GlobalTheory.CompanionTheory.InfAssembly.infK_of_factors` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PlaceValuationLocalDegreeArithmeticStatement.lean:26:77: Unused tactic linter: `(intros; apply GlobalTheory.vw_lw_arith <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanSumSizeBoundLargeDataFromFactors.lean:901:169: Unused tactic linter: `(intros;
+  apply DeltaFormSums.GlobalTheory.CompanionTheory.InfAssembly.infK_of_factors <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [98464/98491] Built Formalism.PieriBlockIdeals.PieriColumnMinors.ExactExponentLatticeIncl (5.0s)
-✔ [98465/98496] Built Formalism.PieriBlockIdeals.JointCW5 (4.0s)
-✔ [98466/98496] Built Formalism.PieriBlockIdeals.PieriColumnMinors.SL2BinomialLattices (10s)
-✔ [98467/98496] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LevelChainSharpColumnValuationOfPointKernelLiftL (5.6s)
-✔ [98468/98497] Built Formalism.PieriBlockIdeals.PieriColumnMinors.LabelSumNeedsLeFalse (8.9s)
-✔ [98469/98499] Built Formalism.PieriBlockIdeals.PieriColumnMinors.MinorValuationBoundHolds (5.4s)
-⚠ [98470/98499] Built Formalism.PieriBlockIdeals.PieriColumnMinors.ContentLinkageHolds (5.3s)
-warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/ContentLinkageHolds.lean:25:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/ContentLinkageHolds.lean:38:13: This simp argument is unused:
-  map_intCast
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [ψ]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [98471/98499] Built Formalism.PieriBlockIdeals.PieriColumnMinors.JointCorollaryFiveBound (4.9s)
-✔ [98472/98499] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ConjugatePrimeBoundPointKernelOfCoefficientKerne (6.6s)
-⚠ [98473/98502] Built Formalism.PieriBlockIdeals.PieriColumnMinors.DividedPowerZeroZeroVector (15s)
-warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/DividedPowerZeroZeroVector.lean:33:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/DividedPowerZeroZeroVector.lean:46:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/DividedPowerZeroZeroVector.lean:249:42: `Polynomial.finset_sum_coeff` has been deprecated: Use `Polynomial.finsetSum_coeff` instead
-warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/DividedPowerZeroZeroVector.lean:325:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/DividedPowerZeroZeroVector.lean:340:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/DividedPowerZeroZeroVector.lean:646:15: This simp argument is unused:
-  colLen
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Finset.mem_filter, Finset.mem_univ, true_and]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/DividedPowerZeroZeroVector.lean:659:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/DividedPowerZeroZeroVector.lean:674:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/DividedPowerZeroZeroVector.lean:967:10: This simp argument is unused:
-  Fin.sum_univ_succ
-
-Hint: Omit it from the simp argument list.
-  [apply] simp
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [98474/98502] Built Formalism.PieriBlockIdeals.PieriColumnMinors.WeightExchangeBoundHolds (8.2s)
-warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/WeightExchangeBoundHolds.lean:55:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-⚠ [98475/98502] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteInfiniteFormBounds (20s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteInfiniteFormBounds.lean:25:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteInfiniteFormBounds.lean:26:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteInfiniteFormBounds.lean:27:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteInfiniteFormBounds.lean:25:4: Unused tactic linter: `(intros; apply _root_.GlobalTheory.BigConstantConjunction.bigC_and <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteInfiniteFormBounds.lean:26:4: Unused tactic linter: `(intros;
-  apply @_root_.GlobalTheory.BigConstantConjunction.bigC_and <;>
-    first
-    | assumption
-    | infer_instance)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteInfiniteFormBounds.lean:27:4: Unused tactic linter: `(intros; exact _root_.GlobalTheory.BigConstantConjunction.bigC_and ..)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteInfiniteFormBounds.lean:45:164: Variable name `R` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _R
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [98476/98505] Built Formalism.PieriBlockIdeals.PieriColumnMinors.LogarithmEquivalence (5.4s)
-✔ [98477/98505] Built Formalism.PieriBlockIdeals.PieriColumnMinors.SharperSizeNeedsMleKFalse (7.7s)
-✔ [98478/98505] Built Formalism.PieriBlockIdeals.ExZTranslate (4.7s)
