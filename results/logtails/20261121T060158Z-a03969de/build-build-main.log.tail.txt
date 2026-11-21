@@ -1,70 +1,28 @@
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RingAutFixingSmallFieldFixesDeltaValuesStatement.lean:12:121: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RingAutFixingSmallFieldFixesDeltaValuesStatement.lean:12:66: Unused tactic linter: `exact GlobalTheory.DeltaFixed.aut_fixes_delta_values` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RingAutFixingSmallFieldFixesDeltaValuesStatement.lean:12:121: Unused tactic linter: `(intros; apply GlobalTheory.DeltaFixed.aut_fixes_delta_values <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [103161/103193] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoefficientPolynomialGLFunctionNeZero (9.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCoefficientPolynomialGLFunctionNeZero.lean:29:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/AdelicCharacterFactorPrimitiveOnIdempotentSum.lean:158:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
 If you'd rather continue using `push_neg` in your project, you can implement it as follows:
 ```
 open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-✔ [103162/103194] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaSpanAndGoodRangeObj (9.8s)
-⚠ [103163/103199] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjRootOfExp (10s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ConjRootOfExp.lean:25:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ConjRootOfExp.lean:26:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [103164/103199] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CommutesAllOfCommutesRationalUnitaryPoints (11s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CommutesAllOfCommutesRationalUnitaryPoints.lean:31:53: This simp argument is unused:
-  MvPolynomial.aeval_X
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Formalism.GradedWeylDivisibility.blockAct]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CommutesAllOfCommutesRationalUnitaryPoints.lean:233:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-⚠ [103165/103199] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoefficientPolynomialGLFunctionNeZeroStatement (9.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCoefficientPolynomialGLFunctionNeZeroStatement.lean:23:69: this tactic is never executed
+⚠ [103249/103287] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepApplyEqSmulOfHalfIndicatorBaseStatement (33s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/WeilRepApplyEqSmulOfHalfIndicatorBaseStatement.lean:15:67: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCoefficientPolynomialGLFunctionNeZeroStatement.lean:23:127: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/WeilRepApplyEqSmulOfHalfIndicatorBaseStatement.lean:15:123: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCoefficientPolynomialGLFunctionNeZeroStatement.lean:23:69: Unused tactic linter: `exact GlobalTheory.CoeffNonvanish.exists_coefFn_ne_zero` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/WeilRepApplyEqSmulOfHalfIndicatorBaseStatement.lean:15:67: Unused tactic linter: `exact GlobalTheory.PullModelLaw.om_apply_eq_smul_pull` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCoefficientPolynomialGLFunctionNeZeroStatement.lean:23:127: Unused tactic linter: `(intros; apply GlobalTheory.CoeffNonvanish.exists_coefFn_ne_zero <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/WeilRepApplyEqSmulOfHalfIndicatorBaseStatement.lean:15:123: Unused tactic linter: `(intros; apply GlobalTheory.PullModelLaw.om_apply_eq_smul_pull <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [103166/103199] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedExistence (13s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdaptedExistence.lean:26:2: Try this: 
+✔ [103250/103287] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.TameKernelTypePlaceThetaVectorLatticeFixed (16s)
+⚠ [103251/103289] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ScalarDilationElementSupportDetPullback (43s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ScalarDilationElementSupportDetPullback.lean:60:53: `zero_le'` has been deprecated: Use `zero_le` instead
+⚠ [103252/103289] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRationalDataRealization (49s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsRationalDataRealization.lean:34:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -72,89 +30,131 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdaptedExistence.lean:27:2: Try this: 
-  haveI̵
+⚠ [103253/103289] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalSeriesOfReciprocityHypotheses (73s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RationalSeriesOfReciprocityHypotheses.lean:120:2: Try this: 
+  letI̵
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdaptedExistence.lean:28:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdaptedExistence.lean:29:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdaptedExistence.lean:30:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdaptedExistence.lean:36:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdaptedExistence.lean:39:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdaptedExistence.lean:165:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdaptedExistence.lean:167:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [103167/103200] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCoefScale (22s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsCoefScale.lean:65:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [103168/103200] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CommutesAllOfCommutesRationalUnitaryPointsStatement (5.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CommutesAllOfCommutesRationalUnitaryPointsStatement.lean:17:53: this tactic is never executed
+⚠ [103254/103289] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.TameKernelTypePlaceThetaVectorLatticeFixedStatement (21s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TameKernelTypePlaceThetaVectorLatticeFixedStatement.lean:15:57: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CommutesAllOfCommutesRationalUnitaryPointsStatement.lean:17:95: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TameKernelTypePlaceThetaVectorLatticeFixedStatement.lean:15:103: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CommutesAllOfCommutesRationalUnitaryPointsStatement.lean:17:53: Unused tactic linter: `exact GlobalTheory.RatDenseEnd.comm_all` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TameKernelTypePlaceThetaVectorLatticeFixedStatement.lean:15:57: Unused tactic linter: `exact GlobalTheory.KerTypeVec.typeVec_fixed` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CommutesAllOfCommutesRationalUnitaryPointsStatement.lean:17:95: Unused tactic linter: `(intros; apply GlobalTheory.RatDenseEnd.comm_all <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TameKernelTypePlaceThetaVectorLatticeFixedStatement.lean:15:103: Unused tactic linter: `(intros; apply GlobalTheory.KerTypeVec.typeVec_fixed <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [103255/103289] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegralIffSelfDualTraceCharacterSplitPlaces (52s)
+⚠ [103256/103289] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrameMatrixIntegralIffUniformiserMultipleOnHalfStatement (46s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FrameMatrixIntegralIffUniformiserMultipleOnHalfStatement.lean:15:56: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FrameMatrixIntegralIffUniformiserMultipleOnHalfStatement.lean:15:101: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FrameMatrixIntegralIffUniformiserMultipleOnHalfStatement.lean:15:56: Unused tactic linter: `exact GlobalTheory.HalfUniInt.half_int_iff` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FrameMatrixIntegralIffUniformiserMultipleOnHalfStatement.lean:15:101: Unused tactic linter: `(intros; apply GlobalTheory.HalfUniInt.half_int_iff <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [103257/103289] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsHalfUniformiserFrameMatrixPrescribedReductStatement (37s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsHalfUniformiserFrameMatrixPrescribedReductStatement.lean:15:70: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsHalfUniformiserFrameMatrixPrescribedReductStatement.lean:15:129: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsHalfUniformiserFrameMatrixPrescribedReductStatement.lean:15:70: Unused tactic linter: `exact GlobalTheory.HalfFrameLift.exists_half_redM_frMapO` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsHalfUniformiserFrameMatrixPrescribedReductStatement.lean:15:129: Unused tactic linter: `(intros; apply GlobalTheory.HalfFrameLift.exists_half_redM_frMapO <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [103258/103289] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsConjHalfCosetRepsScalarDilation (40s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsConjHalfCosetRepsScalarDilation.lean:78:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsConjHalfCosetRepsScalarDilation.lean:79:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsConjHalfCosetRepsScalarDilation.lean:102:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsConjHalfCosetRepsScalarDilation.lean:53:71: Variable name `hKH` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hKH
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsConjHalfCosetRepsScalarDilation.lean:261:30: `DistribMulAction.toAddMonoidHom` has been deprecated: Use `DistribSMul.toAddMonoidHom` instead
+
+Note: The updated constant has a different type:
+  {M : Type u_1} → (A : Type u_7) → [inst : AddZeroClass A] → [DistribSMul M A] → M → A →+ A
+instead of
+  {M : Type u_1} → (A : Type u_7) → [inst : Monoid M] → [inst_1 : AddMonoid A] → [DistribMulAction M A] → M → A →+ A
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.toAddMonoidHom` to `DistribSMul.toAddMonoidHom x`).
+⚠ [103259/103289] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjugateThetaLiftsIsConjugateCuspExpansion (90s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ConjugateThetaLiftsIsConjugateCuspExpansion.lean:212:25: `MultilinearMap.sum_apply` has been deprecated: Use `_root_.sum_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `_root_.sum_apply x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ConjugateThetaLiftsIsConjugateCuspExpansion.lean:212:51: `MultilinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ConjugateThetaLiftsIsConjugateCuspExpansion.lean:221:25: `MultilinearMap.sum_apply` has been deprecated: Use `_root_.sum_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `_root_.sum_apply x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ConjugateThetaLiftsIsConjugateCuspExpansion.lean:221:51: `MultilinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
+⚠ [103260/103297] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ScalarDilationElementSupportDetPullbackStatement (27s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ScalarDilationElementSupportDetPullbackStatement.lean:15:59: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ScalarDilationElementSupportDetPullbackStatement.lean:15:107: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ScalarDilationElementSupportDetPullbackStatement.lean:15:59: Unused tactic linter: `exact GlobalTheory.DilScalar.scalar_dil_facts` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ScalarDilationElementSupportDetPullbackStatement.lean:15:107: Unused tactic linter: `(intros; apply GlobalTheory.DilScalar.scalar_dil_facts <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [103261/103299] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdelicCharacterFactorPrimitiveOnIdempotentSumStatement (49s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/AdelicCharacterFactorPrimitiveOnIdempotentSumStatement.lean:15:57: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/AdelicCharacterFactorPrimitiveOnIdempotentSumStatement.lean:15:103: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/AdelicCharacterFactorPrimitiveOnIdempotentSumStatement.lean:15:57: Unused tactic linter: `exact GlobalTheory.IdemCharLift.factor_prim` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/AdelicCharacterFactorPrimitiveOnIdempotentSumStatement.lean:15:103: Unused tactic linter: `(intros; apply GlobalTheory.IdemCharLift.factor_prim <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [103262/103299] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumHeisenbergTranslatesBaseVectorEqCardSmul (31s)
