@@ -1,160 +1,160 @@
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/SharpSpanCounting/GraphTransport.lean:119:10: This simp argument is unused:
-  Fin.castLE_refl
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Hint: Omit it from the simp argument list.
-  [apply] simp
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/IsCompactIntLowSet.lean:370:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [117469/117567] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.PartnerCountOfIso (5.9s)
-✔ [117470/117567] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.HermitianW0SpanZero (7.4s)
-⚠ [117471/117567] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.LocCnt0G (4.5s)
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/LocCnt0G.lean:5:4: The namespace `LocCnt0G` is duplicated in the declaration `Formalism.L2.SG.LocalCountModules.LocCnt0G.LocCnt0G`.
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.dupNamespace false`
-✔ [117472/117567] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalGluing.ExistsIntegralMultiple (5.7s)
-✔ [117473/117567] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalGluing.RieszRepresentationHolds (5.4s)
-✔ [117474/117567] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalOrderProjection.IsFieldOfNonsq (7.5s)
-✔ [117475/117567] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalOrderProjection.ProjOfFreeIdem (7.6s)
-✔ [117476/117567] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalGluing.MemOfProjEqZero (6.4s)
-⚠ [117477/117567] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.SharpSpanCounting.AdjLast (5.7s)
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/SharpSpanCounting/AdjLast.lean:21:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-✔ [117478/117577] Built Formalism.PeriodIntegrals.OrbitalBoundsConclusion.LocOProj (4.8s)
-✔ [117479/117587] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.ThetaLocalCount.LocCnt0GOfTheta (5.4s)
-⚠ [117480/117594] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.CornerDeterminantCounts.MulVecMemHeadColsU (24s)
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/CornerDeterminantCounts/MulVecMemHeadColsU.lean:161:8: This simp argument is unused:
-  Matrix.mulVecLin_apply
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/IsCompactIntLowSet.lean:371:2: Try this: 
+  haveI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.mulVec, dotProduct, Pi.single_apply, hY]
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/CornerDeterminantCounts/MulVecMemHeadColsU.lean:197:10: This simp argument is unused:
-  Pi.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [(Fin.castSucc_lt_last i).ne]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/CornerDeterminantCounts/MulVecMemHeadColsU.lean:205:10: This simp argument is unused:
-  Pi.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [(Fin.castSucc_lt_last i).ne]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/CornerDeterminantCounts/MulVecMemHeadColsU.lean:346:0: automatically included section variable(s) unused in theorem `Formalism.L2.SG.LocalCountModules.UnitaryGroupMassFormula.LocCntUL.mk_sub_extL`:
-  hY₁
-  hal₁
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [117748/117813] Built Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.ScalarFramePfL (8.0s)
+✔ [117749/117813] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.BaseAt (5.4s)
+✔ [117750/117813] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.UnitShiftSplitting.StepSplitHolds (4.8s)
+✔ [117751/117813] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ProdEFinal (5.6s)
+✔ [117752/117813] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.SignTransposeTwisted (7.0s)
+✔ [117753/117813] Built Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.ScalarFramePf (5.1s)
+✔ [117754/117813] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.FStarCohPf (8.1s)
+✔ [117755/117819] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.LocalCountConclusions.ThetaMbe0True (4.8s)
+⚠ [117756/117819] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.FStarFrameLA (8.5s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/FStarFrameLA.lean:59:0: automatically included section variable(s) unused in theorem `Formalism.L2.SG.Pf.FrameGlobalPatching.FStar.FsLA.adj_last`:
+  [NumberField E]
+  [StarRing E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit hY₁ hal₁ in theorem ...
+  omit [NumberField E] [StarRing E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/CornerDeterminantCounts/MulVecMemHeadColsU.lean:376:2: `LinearEquiv.ofLinear` has been deprecated: Use `LinearEquiv.ofLinearMap` instead
-✔ [117481/117594] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalGluing.LocGlueOf (4.7s)
-✔ [117482/117594] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.GlueFwdOf (8.1s)
-✔ [117483/117594] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.SharpSpanCounting.OmPMemSpan (6.1s)
-✔ [117484/117594] Built Formalism.PeriodIntegrals.OrbitalBoundsConclusion.LocGlue (4.7s)
-✔ [117485/117594] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.DeterminantUnitTheta.Development (5.5s)
-⚠ [117486/117594] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.LocCntUG (4.6s)
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/LocCntUG.lean:5:4: The namespace `LocCntUG` is duplicated in the declaration `Formalism.L2.SG.LocalCountModules.LocCntUG.LocCntUG`.
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/FStarFrameLA.lean:67:0: automatically included section variable(s) unused in theorem `Formalism.L2.SG.Pf.FrameGlobalPatching.FStar.FsLA.leadMinorE_full`:
+  [NumberField E]
+  [StarRing E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] [StarRing E] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.dupNamespace false`
-⚠ [117487/117594] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.UnitShiftSplitting.DetUpdateRowLastSingle (6.7s)
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/UnitShiftSplitting/DetUpdateRowLastSingle.lean:42:10: This simp argument is unused:
-  Matrix.updateRow_ne (Fin.castSucc_lt_last a).ne
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/FStarFrameLA.lean:73:0: automatically included section variable(s) unused in theorem `Formalism.L2.SG.Pf.FrameGlobalPatching.FStar.FsLA.mulVec_adjCol`:
+  [NumberField E]
+  [StarRing E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] [StarRing E] in theorem ...
 
-Hint: Omit it from the simp argument list.
-  [apply] simp
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/FStarFrameLA.lean:80:0: automatically included section variable(s) unused in theorem `Formalism.L2.SG.Pf.FrameGlobalPatching.FStar.FsLA.mul_eq_zero_of_last`:
+  [NumberField E]
+  [StarRing E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] [StarRing E] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/UnitShiftSplitting/DetUpdateRowLastSingle.lean:61:27: This simp argument is unused:
-  Pi.single_apply
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/FStarFrameLA.lean:89:0: automatically included section variable(s) unused in theorem `Formalism.L2.SG.Pf.FrameGlobalPatching.FStar.FsLA.quad_last`:
+  [NumberField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] in theorem ...
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [cornerM, hj]
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/FStarFrameLA.lean:121:0: automatically included section variable(s) unused in theorem `Formalism.L2.SG.Pf.FrameGlobalPatching.FStar.FsLA.solM_mulVec`:
+  [NumberField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/UnitShiftSplitting/DetUpdateRowLastSingle.lean:62:25: This simp argument is unused:
-  Matrix.updateRow_ne hi
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [cornerM, hi]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/UnitShiftSplitting/DetUpdateRowLastSingle.lean:89:23: This simp argument is unused:
-  Pi.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [cornerM, hi]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [117488/117594] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.CornerDeterminantCounts.DetEqEllUB (5.3s)
-✔ [117489/117594] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.UnitShiftSplitting.ThetaMbeG (4.0s)
-⚠ [117490/117633] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.PcBridgeB (16s)
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PcBridgeB.lean:47:23: Variable name `hZ` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [117757/117819] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.UnitShiftSplitting.AlgGUNS (6.3s)
+⚠ [117758/117819] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.CountBaseT (9.4s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/CountBaseT.lean:40:10: `Matrix.det_of_lowerTriangular` has been deprecated: Use `Matrix.det_of_isLowerTriangular` instead
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/CountBaseT.lean:43:10: `Matrix.det_of_lowerTriangular` has been deprecated: Use `Matrix.det_of_isLowerTriangular` instead
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/CountBaseT.lean:48:10: `Matrix.det_of_upperTriangular` has been deprecated: Use `Matrix.det_of_isUpperTriangular` instead
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/CountBaseT.lean:51:10: `Matrix.det_of_upperTriangular` has been deprecated: Use `Matrix.det_of_isUpperTriangular` instead
+✔ [117759/117819] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.IsLoOfIntLow (7.0s)
+✔ [117760/117822] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.FixesBaseIff (11s)
+✔ [117761/117824] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.FStarFrame (5.8s)
+✔ [117762/117824] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.LocalCountConclusions.LocalCountZeroGlobalHolds (4.7s)
+✔ [117763/117824] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.FStarCohPfB (8.1s)
+⚠ [117764/117824] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.UnitShiftSplitting.ScaleCh (6.2s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/UnitShiftSplitting/ScaleCh.lean:14:38: Variable name `hs` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hZ
+  [apply] _hs
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PcBridgeB.lean:110:0: automatically included section variable(s) unused in theorem `Formalism.L2.SG.Pf.PCount.BI.schur_M`:
-  hbe
+⚠ [117765/117826] Built Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.ScalarFramePfM (12s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/ClosedLocalOrbits/GaugeLatticeShifts/ScalarFramePfM.lean:131:9: Variable name `x` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _x
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/ClosedLocalOrbits/GaugeLatticeShifts/ScalarFramePfM.lean:132:9: Variable name `y` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _y
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [117766/117827] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.IntDiag (5.9s)
+⚠ [117767/117827] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ConjugatorMemUnipotent (5.9s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ConjugatorMemUnipotent.lean:22:62: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [117768/117829] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.FStarOmPart (6.9s)
+✔ [117769/117829] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.FStarCohPfC (5.3s)
+⚠ [117770/117829] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.FStarMinors (6.1s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/FStarMinors.lean:14:0: automatically included section variable(s) unused in theorem `Formalism.L2.SG.Pf.FrameGlobalPatching.FStar.FsLA.lm_one`:
+  [NumberField E]
+  [StarRing E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit hbe in theorem ...
+  omit [NumberField E] [StarRing E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PcBridgeB.lean:276:19: This simp argument is unused:
-  Subring.smul_def
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [toE]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PcBridgeB.lean:314:19: This simp argument is unused:
-  Subring.smul_def
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [toE]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PcBridgeB.lean:406:8: `Matrix.det_of_lowerTriangular` has been deprecated: Use `Matrix.det_of_isLowerTriangular` instead
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PcBridgeB.lean:409:8: `Matrix.det_of_upperTriangular` has been deprecated: Use `Matrix.det_of_isUpperTriangular` instead
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PcBridgeB.lean:412:8: `Matrix.det_of_lowerTriangular` has been deprecated: Use `Matrix.det_of_isLowerTriangular` instead
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PcBridgeB.lean:416:8: `Matrix.det_of_upperTriangular` has been deprecated: Use `Matrix.det_of_isUpperTriangular` instead
-⚠ [117491/117633] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.SharpSpanCounting.DlRSwapZero (6.0s)
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/SharpSpanCounting/DlRSwapZero.lean:61:0: automatically included section variable(s) unused in theorem `Formalism.L2.SG.LocalCountModules.LocCntCommon.span_swap`:
-  [TopologicalSpace E]
-  [MeasurableSpace E]
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/FStarMinors.lean:33:0: automatically included section variable(s) unused in theorem `Formalism.L2.SG.Pf.FrameGlobalPatching.FStar.FsLA.zhatOM_one_eq`:
+  [NumberField E]
+  [StarRing E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [TopologicalSpace E] [MeasurableSpace E] in theorem ...
+  omit [NumberField E] [StarRing E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [117492/117652] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.DeterminantUnitTheta.DetAddCor (6.4s)
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/DeterminantUnitTheta/DetAddCor.lean:19:23: This simp argument is unused:
-  Pi.single_apply
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/FStarMinors.lean:48:0: automatically included section variable(s) unused in theorem `Formalism.L2.SG.Pf.FrameGlobalPatching.FStar.FsLA.zhatOM_zhatOM`:
+  [NumberField E]
+  [StarRing E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] [StarRing E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [117771/117829] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.UnitShiftSplitting.ZzScale (6.4s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/UnitShiftSplitting/ZzScale.lean:38:53: This simp argument is unused:
+  and_true
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [cor, hb]
+  [apply] simp only [ha, hb, and_false, if_false, if_true] at hZab ⊢
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/DeterminantUnitTheta/DetAddCor.lean:20:21: This simp argument is unused:
-  Matrix.updateRow_ne ha
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/UnitShiftSplitting/ZzScale.lean:50:23: This simp argument is unused:
+  false_and
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [cor, ha]
+  [apply] simp only [ha, hb, and_false, if_false] at hZab ⊢
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/DeterminantUnitTheta/DetAddCor.lean:27:32: This simp argument is unused:
-  Matrix.updateRow_ne (Fin.castSucc_lt_last a).ne
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/UnitShiftSplitting/ZzScale.lean:43:17: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [Fin.succAbove_last]
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/UnitShiftSplitting/ZzScale.lean:49:17: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [117772/117832] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.FStarLprExistA (6.1s)
+✔ [117773/117832] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.BwdTermOfGx (5.3s)
+✔ [117774/117832] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.P2MemZ2OfMemZ2 (12s)
+✔ [117775/117832] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.TauKPIff (7.2s)
+✔ [117776/117832] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.FStarBwdBetaRep (5.3s)
+✔ [117777/117832] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.FStarOmRepPf (8.8s)
+✔ [117778/117836] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.FStarGenLoc (5.3s)
