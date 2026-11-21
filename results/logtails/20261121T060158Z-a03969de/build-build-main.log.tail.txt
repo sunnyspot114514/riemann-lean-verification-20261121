@@ -1,160 +1,160 @@
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/NormalisedSubgroupColumnMatricesEntryZero.lean:89:90: This simp argument is unused:
-  h0m
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Units.val_mul, tU_val, tU_inv_val, add_mul, mul_add, sub_mul, mul_sub, one_mul, mul_one,
-    vmv_mul_vmv, Matrix.smul_mul, Matrix.mul_smul, smul_smul, single_dotProduct, Pi.single_apply, h01, h1m, h01.symm,
-    h0m.symm, h1m.symm, if_false, if_true, mul_zero, zero_smul, add_zero, sub_zero, zero_mul, mul_one]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/NormalisedSubgroupColumnMatricesEntryZero.lean:89:120: This simp argument is unused:
-  h1m.symm
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Units.val_mul, tU_val, tU_inv_val, add_mul, mul_add, sub_mul, mul_sub, one_mul, mul_one,
-    vmv_mul_vmv, Matrix.smul_mul, Matrix.mul_smul, smul_smul, single_dotProduct, Pi.single_apply, h01, h0m, h1m,
-    h01.symm, h0m.symm, if_false, if_true, mul_zero, zero_smul, add_zero, sub_zero, zero_mul, mul_one]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/NormalisedSubgroupColumnMatricesEntryZero.lean:90:54: This simp argument is unused:
-  sub_zero
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Units.val_mul, tU_val, tU_inv_val, add_mul, mul_add, sub_mul, mul_sub, one_mul, mul_one,
-    vmv_mul_vmv, Matrix.smul_mul, Matrix.mul_smul, smul_smul, single_dotProduct, Pi.single_apply, h01, h0m, h1m,
-    h01.symm, h0m.symm, h1m.symm, if_false, if_true, mul_zero, zero_smul, add_zero, zero_mul, mul_one]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [124584/124638] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MassRatioAllUnramifiedCmFields (5.1s)
-⚠ [124585/124638] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelEisensteinContinuationAndPolesStatement (6.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/SiegelEisensteinContinuationAndPolesStatement.lean:17:65: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/SiegelEisensteinContinuationAndPolesStatement.lean:17:119: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/SiegelEisensteinContinuationAndPolesStatement.lean:17:65: Unused tactic linter: `exact GlobalTheory.Eis.doublingMethod_of_eisenstein` does nothing
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FittingLaterStagesRowIsConstructionStateStatement.lean:17:95: Unused tactic linter: `(intros; apply GlobalTheory.Mem.R3.Rw.st_of_fits <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/SiegelEisensteinContinuationAndPolesStatement.lean:17:119: Unused tactic linter: `(intros; apply GlobalTheory.Eis.doublingMethod_of_eisenstein <;> assumption)` does nothing
+✔ [124642/124698] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BlockBaseChange (5.5s)
+⚠ [124643/124701] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResetModelsMeasuresFormsEnlargedCoefficientBase (48s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ResetModelsMeasuresFormsEnlargedCoefficientBase.lean:154:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [124586/124638] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DiscreteSeriesThreeOfHyp (7.3s)
-⚠ [124587/124638] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelWeilDoubledSpaceOfStandardUnitaryStatement (7.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/SiegelWeilDoubledSpaceOfStandardUnitaryStatement.lean:15:57: this tactic is never executed
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/SiegelWeilDoubledSpaceOfStandardUnitaryStatement.lean:15:103: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [124644/124701] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsAbsIrrCharMapRingHom (6.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsAbsIrrCharMapRingHom.lean:17:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/SiegelWeilDoubledSpaceOfStandardUnitaryStatement.lean:15:57: Unused tactic linter: `exact GlobalTheory.StdUnn.sw_doubled_of_std` does nothing
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/SiegelWeilDoubledSpaceOfStandardUnitaryStatement.lean:15:103: Unused tactic linter: `(intros; apply GlobalTheory.StdUnn.sw_doubled_of_std <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [124588/124638] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingMethodOfEisensteinFacts (6.1s)
-⚠ [124589/124638] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingMethodOfEisensteinFactsStatement (5.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/DoublingMethodOfEisensteinFactsStatement.lean:7:56: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/DoublingMethodOfEisensteinFactsStatement.lean:7:101: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/DoublingMethodOfEisensteinFactsStatement.lean:7:56: Unused tactic linter: `exact GlobalTheory.doublingMethod_of_three` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/DoublingMethodOfEisensteinFactsStatement.lean:7:101: Unused tactic linter: `(intros; apply GlobalTheory.doublingMethod_of_three <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [124590/124639] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.SiegelWeilDoublingAssembly (9.3s)
-⚠ [124591/124640] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.SiegelWeilDoublingAssemblyStatement (9.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SiegelWeilDoublingAssemblyStatement.lean:8:57: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SiegelWeilDoublingAssemblyStatement.lean:8:103: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SiegelWeilDoublingAssemblyStatement.lean:8:57: Unused tactic linter: `exact GlobalTheory.PrimIn.hypotheses3_intro` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SiegelWeilDoublingAssemblyStatement.lean:8:103: Unused tactic linter: `(intros; apply GlobalTheory.PrimIn.hypotheses3_intro <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [124592/124640] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormalisedSubgroupColumnMatricesEntryZeroStatement (35s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/NormalisedSubgroupColumnMatricesEntryZeroStatement.lean:10:52: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/NormalisedSubgroupColumnMatricesEntryZeroStatement.lean:10:93: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/NormalisedSubgroupColumnMatricesEntryZeroStatement.lean:10:52: Unused tactic linter: `exact GlobalTheory.PosAgree.entry_zero` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/NormalisedSubgroupColumnMatricesEntryZeroStatement.lean:10:93: Unused tactic linter: `(intros; apply GlobalTheory.PosAgree.entry_zero <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [124593/124640] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.AtDatMultEq (33s)
-✔ [124594/124640] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ArchimedeanInputsImply (32s)
-✔ [124595/124640] Built Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsBaseEnlargementFixedCoefFieldOfCoeffEnlargemen (6.7s)
-✔ [124596/124640] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.Hypotheses3OfSiegelWeil (11s)
-⚠ [124597/124642] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinrankLiftLabelEqFinrankFace3 (182s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FinrankLiftLabelEqFinrankFace3.lean:28:342: Variable name `Z` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [124645/124702] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TameCharactersTypePrimesEqOfExtension (9.9s)
+⚠ [124646/124702] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EnlargedBaseCoefficientSpacesIsometricMapsStatement (17s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/EnlargedBaseCoefficientSpacesIsometricMapsStatement.lean:26:46: Variable name `hX'` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _Z
+  [apply] _hX'
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FinrankLiftLabelEqFinrankFace3.lean:85:350: Variable name `Z` is not explicitly referenced.
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/EnlargedBaseCoefficientSpacesIsometricMapsStatement.lean:26:90: Variable name `Wt'` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _Z
+  [apply] _Wt'
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FinrankLiftLabelEqFinrankFace3.lean:167:526: Variable name `Z` is not explicitly referenced.
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/EnlargedBaseCoefficientSpacesIsometricMapsStatement.lean:37:51: this tactic is never executed
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _Z
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/EnlargedBaseCoefficientSpacesIsometricMapsStatement.lean:37:91: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FinrankLiftLabelEqFinrankFace3.lean:191:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/EnlargedBaseCoefficientSpacesIsometricMapsStatement.lean:37:51: Unused tactic linter: `exact GlobalTheory.Mem.RsCoef.rs_coef` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/EnlargedBaseCoefficientSpacesIsometricMapsStatement.lean:37:91: Unused tactic linter: `(intros; apply GlobalTheory.Mem.RsCoef.rs_coef <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [124647/124702] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsAbsIrrCharMapRingHomStatement (5.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsAbsIrrCharMapRingHomStatement.lean:8:59: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsAbsIrrCharMapRingHomStatement.lean:8:107: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsAbsIrrCharMapRingHomStatement.lean:8:59: Unused tactic linter: `exact GlobalTheory.AbsIrrMap.isAbsIrrChar_map` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsAbsIrrCharMapRingHomStatement.lean:8:107: Unused tactic linter: `(intros; apply GlobalTheory.AbsIrrMap.isAbsIrrChar_map <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [124648/124705] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResetModelsMeasuresFormsEnlargedCoefficientBaseStatement (7.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ResetModelsMeasuresFormsEnlargedCoefficientBaseStatement.lean:32:49: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ResetModelsMeasuresFormsEnlargedCoefficientBaseStatement.lean:32:87: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ResetModelsMeasuresFormsEnlargedCoefficientBaseStatement.lean:32:49: Unused tactic linter: `exact GlobalTheory.Mem.R3.Rw.resetW` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ResetModelsMeasuresFormsEnlargedCoefficientBaseStatement.lean:32:87: Unused tactic linter: `(intros; apply GlobalTheory.Mem.R3.Rw.resetW <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [124649/124706] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KsFormBaseChange (5.7s)
+✔ [124650/124706] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FormsDataExtendedDataBaseChangeSameValues (12s)
+⚠ [124651/124706] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GoodCharactersExtendedDataEqMapSmallerData (16s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/GoodCharactersExtendedDataEqMapSmallerData.lean:49:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
 If you'd rather continue using `push_neg` in your project, you can implement it as follows:
 ```
 open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FinrankLiftLabelEqFinrankFace3.lean:209:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FinrankLiftLabelEqFinrankFace3.lean:188:524: Variable name `Z` is not explicitly referenced.
+⚠ [124652/124710] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChiROfEnlarged (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ChiROfEnlarged.lean:54:2: Try this: 
+  letI̵
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _Z
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FinrankLiftLabelEqFinrankFace3.lean:333:531: Variable name `Z` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [124653/124711] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GeometricHalfCoreFormsOfWeakCharacterisation (18s)
+✔ [124654/124712] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LawsJEnl (10s)
+✔ [124655/124713] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KapMoved (7.6s)
+✔ [124656/124714] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ModelSame (9.0s)
+⚠ [124657/124715] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoreBaseFramesEqModelFramesEnlargedCoefficientBa (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CoreBaseFramesEqModelFramesEnlargedCoefficientBa.lean:76:2: Try this: 
+  letI̵
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _Z
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FinrankLiftLabelEqFinrankFace3.lean:370:574: Variable name `Z` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [124658/124716] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAdelicReadingDefiniteFormsGivenCoefficient (129s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsAdelicReadingDefiniteFormsGivenCoefficient.lean:114:2: Try this: 
+  letI̵
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _Z
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FinrankLiftLabelEqFinrankFace3.lean:415:520: Variable name `Z` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [124659/124716] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AlgebraMapEqOtoLLEOOfPin (7.2s)
+✔ [124660/124717] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TwistDataAgreeAcrossCoefficientsLocalized (248s)
+✔ [124661/124717] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KsFormBaseChangeCrd (23s)
+⚠ [124662/124719] Built Development.AutomorphicArithmetic.UnitTensorPairings.ExtVecPairingIndepOfBaseSamePre (19s)
+warning: src/Development/AutomorphicArithmetic/UnitTensorPairings/ExtVecPairingIndepOfBaseSamePre.lean:90:2: Try this: 
+  letI̵
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _Z
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [124598/124642] Built Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Forms (20s)
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/UnitTensorPairings/ExtVecPairingIndepOfBaseSamePre.lean:91:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [124663/124719] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAdelicReadingDefiniteFormsGivenCoefficientStatement (14s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsAdelicReadingDefiniteFormsGivenCoefficientStatement.lean:11:60: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsAdelicReadingDefiniteFormsGivenCoefficientStatement.lean:11:109: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsAdelicReadingDefiniteFormsGivenCoefficientStatement.lean:11:60: Unused tactic linter: `exact GlobalTheory.Mem.R3.BrgAt.exists_brgL_at` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsAdelicReadingDefiniteFormsGivenCoefficientStatement.lean:11:109: Unused tactic linter: `(intros; apply GlobalTheory.Mem.R3.BrgAt.exists_brgL_at <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [124664/124719] Built Development.AutomorphicArithmetic.UnitTensorPairings.CuspCoreDatumTransportOfSamePre (21s)
+✔ [124665/124719] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.E0ReadThirdLocalOfCoeff (46s)
+⚠ [124666/124719] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsEigenReadThirdLocal (46s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsEigenReadThirdLocal.lean:43:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
