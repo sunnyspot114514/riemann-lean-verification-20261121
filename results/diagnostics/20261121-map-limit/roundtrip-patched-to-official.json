@@ -1,0 +1,27 @@
+{
+  "case": "patched-arena-artifact-read-by-official",
+  "passed": true,
+  "compile": {
+    "argv": [
+      "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2/bin/lean",
+      "-j1",
+      "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "-o",
+      "/root/autodl-tmp/rh-check/audit/loader-roundtrip-v2/LoaderArtifact.olean",
+      "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderArtifact.lean"
+    ],
+    "exit": 0,
+    "output": ""
+  },
+  "read": {
+    "argv": [
+      "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux/bin/lean",
+      "-j1",
+      "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderImportArtifact.lean"
+    ],
+    "exit": 0,
+    "output": "ARTIFACT_IMPORT_OK\n"
+  },
+  "artifact_sha256": "4c8199c3717323cb0b108f5be88058f3ebaf33d177712063732aaf31a9c442a6"
+}

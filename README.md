@@ -42,6 +42,8 @@ The modified runtime is a separately installed **release relink**, not the offic
 
 [Regression tooling](scripts/test_lean_loader.py) compares the official and modified runtimes, checks acceptance/rejection and direct kernel rejection, tests imported artifact compatibility and bad headers, forces real arena use, observes region freeing, and replays the previously failing module without writing into the active project build. Build attempts and regression evidence are archived under [results/loader-fix](results/loader-fix). A passed loader regression does not imply that the full RH verification has passed.
 
+On 2026-11-21 the arena runtime passed all **29 loader regression cases**, including direct kernel rejection, invalid artifact rejection, forced arena use, cross-segment freeing, and ShapeWin under budgets 0 and 50,000. A separate 60,000-budget ShapeWin replay also passed, with 60,087 sampled VMAs and about 590 MiB of anonymous RSS; file-backed resident pages still consume reclaimable cache. An artifact compiled through the patched forced-arena path was successfully imported by the original official compiler. These observations inform the initial continuation settings; they are not a full-project memory guarantee. The complete measured test report is archived under `results/loader-fix`, with additional [budget tuning](results/diagnostics/20261121-map-limit/shape-win-patched-v2-budget60000.json) and [reverse compatibility](results/diagnostics/20261121-map-limit/roundtrip-patched-to-official.json) records.
+
 The runner still bootstraps and checks the original official release first. For a patched continuation, it then explicitly selects the separate runtime and records `verification_runtime="loader-patched"`, its arena directory and mmap budget. It preserves the previous run's terminal snapshots and the incremental build cache. The four final verification gates are unchanged. Increasing disk or RAM alone does not alter the host's mapping limit; this repair changes how artifact buffers are allocated.
 
 Completed `.setup.json` intermediates are deleted only after a newer successful Lake trace and nonempty `.olean` exist. Source and proof artifacts are retained. This controls disk usage in a project where large repeated import metadata would otherwise dominate storage.
@@ -72,7 +74,7 @@ python3 /root/autodl-tmp/rh-check/verification/scripts/run_all.py \
   --base /root/autodl-tmp/rh-check \
   --toolchain-dir /root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2 \
   --olean-arena-dir /root/autodl-tmp/rh-check/tmp/olean-arena \
-  --mmap-regions 50000 --lean-num-threads 4
+  --mmap-regions 60000 --lean-num-threads 8
 ```
 
 When resuming an existing terminal run, additionally pass its ID with `--resumed-from-run-id`; do not run two Lake builds against the same output directory.

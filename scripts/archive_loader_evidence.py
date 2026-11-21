@@ -126,6 +126,33 @@ def main():
         add(toolchain, toolchain / name, "toolchain/" + name)
 
     report = load_summary(tests / "test-report.json")
+    # Preserve the exact per-module import setup before resumed builds remove it.
+    setup_root = base / "source/.lake/build/ir"
+    setup_fingerprints = {}
+    for case in report.get("cases", []):
+        argv = case.get("argv", [])
+        for index, argument in enumerate(argv):
+            if argument == "--setup":
+                if index + 1 >= len(argv):
+                    raise RuntimeError("Recorded --setup has no argument")
+                value = argv[index + 1]
+            elif isinstance(argument, str) and argument.startswith("--setup="):
+                value = argument[len("--setup="):]
+            else:
+                continue
+            if not isinstance(value, str) or not value:
+                raise RuntimeError("Recorded --setup path is empty or invalid")
+            candidate = Path(value)
+            if not candidate.is_absolute():
+                candidate = Path(case.get("cwd", str(base / "source"))) / candidate
+            # Normalize '..' without following symlinks; regular_file checks the
+            # entire path from BASE, including source/.lake/build/ir itself.
+            candidate = Path(os.path.abspath(candidate))
+            if setup_root not in candidate.parents or not candidate.name.endswith(".setup.json") or not regular_file(base, candidate):
+                raise RuntimeError("Required setup is missing, symlinked, or outside the allowed build IR tree: " + str(candidate))
+            archive_path = "input-setups/" + candidate.relative_to(setup_root).as_posix()
+            selected[archive_path] = candidate
+            setup_fingerprints.setdefault(archive_path, fingerprint(candidate.stat()))
     stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ") + "-" + uuid.uuid4().hex[:8]
     destination = base / "verification/results/loader-fix" / stamp
     destination.mkdir(parents=True, exist_ok=False)
@@ -152,6 +179,8 @@ def main():
                         before = os.fstat(stream.fileno())
                         if not stat.S_ISREG(before.st_mode):
                             raise RuntimeError("Evidence changed to a non-regular file: " + str(path))
+                        if archive_path in setup_fingerprints and fingerprint(before) != setup_fingerprints[archive_path]:
+                            raise RuntimeError("Required setup changed after collection: " + str(path))
                         info = tarfile.TarInfo(archive_path)
                         info.size, info.mode, info.mtime = before.st_size, 0o644, int(before.st_mtime)
                         reader = HashReader(stream)
@@ -185,14 +214,18 @@ def main():
             raise RuntimeError("Report/manifest changed after snapshot: " + str(original))
         direct.append({"path": name, "bytes": target.stat().st_size, "sha256": digest})
     summary.update(source_file_count=len(sources), source_bytes=sum(x["bytes"] for x in sources),
-                   compressed_bytes=total_compressed, archive_parts=len(parts))
+                   compressed_bytes=total_compressed, archive_parts=len(parts),
+                   input_setup_count=len(setup_fingerprints))
     summary_path = destination / "summary.json"
     summary_path.write_text(json.dumps(summary, indent=2, ensure_ascii=False) + "\n")
     direct.append({"path": "summary.json", "bytes": summary_path.stat().st_size, "sha256": sha(summary_path)})
     manifest = {"schema": 1, "format": "tar.gz", "max_file_bytes": LIMIT,
                 "archive_sha256": compressed_sha, "archive_bytes": total_compressed,
                 "restore": "Concatenate archive_parts in listed order, then extract the resulting gzip tar stream.",
-                "archive_parts": parts, "direct_files": direct, "source_files": sources}
+                "archive_parts": parts, "direct_files": direct, "source_files": sources,
+                "input_setups": [{"path": item["path"], "original_path": str(selected[item["path"]]),
+                                  "bytes": item["bytes"], "sha256": item["sha256"]}
+                                 for item in sources if item["path"] in setup_fingerprints]}
     (destination / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
     paths = sorted(destination.iterdir())
     if any(path.stat().st_size > LIMIT for path in paths):
