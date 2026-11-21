@@ -1,41 +1,42 @@
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_mul]
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/RankOneFibreMeasureLocal.lean:231:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/RankOneFibreMeasureLocal.lean:232:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [65318/65392] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StagedDisintegrationCompositionStatement (6.0s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/StagedDisintegrationCompositionStatement.lean:12:84: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [66004/66101] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.MvPowerSeriesEvalTruncSubstEqSumStatement (5.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MvPowerSeriesEvalTruncSubstEqSumStatement.lean:7:64: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/StagedDisintegrationCompositionStatement.lean:12:157: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MvPowerSeriesEvalTruncSubstEqSumStatement.lean:7:117: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/StagedDisintegrationCompositionStatement.lean:12:84: Unused tactic linter: `exact GlobalTheory.CompanionTheory.WeilSiegel.StageAbs.stages_abstract` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MvPowerSeriesEvalTruncSubstEqSumStatement.lean:7:64: Unused tactic linter: `exact GlobalTheory.DivSub.eval_trunc'_subst_eq_sum` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/StagedDisintegrationCompositionStatement.lean:12:157: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.WeilSiegel.StageAbs.stages_abstract <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MvPowerSeriesEvalTruncSubstEqSumStatement.lean:7:117: Unused tactic linter: `(intros; apply GlobalTheory.DivSub.eval_trunc'_subst_eq_sum <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [65319/65393] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteVolumeRankOneEuler (7.5s)
-⚠ [65320/65393] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsotropicFreeVectorsSameGram (8.2s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/IsotropicFreeVectorsSameGram.lean:80:2: Try this: 
+✔ [66005/66101] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentEqZeroOfFormalGroupLawCoboundaryOneEqZero (6.3s)
+⚠ [66006/66101] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasPeriodReduceAlongThetaToIntegersStatement (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasPeriodReduceAlongThetaToIntegersStatement.lean:6:326: Variable name `hε` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hε
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasPeriodReduceAlongThetaToIntegersStatement.lean:7:54: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasPeriodReduceAlongThetaToIntegersStatement.lean:7:97: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasPeriodReduceAlongThetaToIntegersStatement.lean:7:54: Unused tactic linter: `exact GlobalTheory.QLog.hasPeriod_reduce` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasPeriodReduceAlongThetaToIntegersStatement.lean:7:97: Unused tactic linter: `(intros; apply GlobalTheory.QLog.hasPeriod_reduce <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [66007/66101] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubstEqAddOfCob1EqZero (6.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SubstEqAddOfCob1EqZero.lean:108:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -43,73 +44,99 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/IsotropicFreeVectorsSameGram.lean:81:2: Try this: 
-  haveI̵
+⚠ [66008/66101] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasValSubstPolyStatement (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasValSubstPolyStatement.lean:7:55: this tactic is never executed
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasValSubstPolyStatement.lean:7:99: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [65321/65393] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalContentZetaSeries (7.3s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LocalContentZetaSeries.lean:53:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasValSubstPolyStatement.lean:7:55: Unused tactic linter: `exact GlobalTheory.QLog.hasVal_subst_poly` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasValSubstPolyStatement.lean:7:99: Unused tactic linter: `(intros; apply GlobalTheory.QLog.hasVal_subst_poly <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [66009/66105] Built Development.WeilBound.RepresentationTheoryGL.SiegelWeil.ArchimedeanSiegelWeil.PlaceIntegrals.SiegelWeilFreeOfBlockNonemptyFrames (17s)
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeil/ArchimedeanSiegelWeil/PlaceIntegrals/SiegelWeilFreeOfBlockNonemptyFrames.lean:45:4: This simp argument is unused:
+  AlgHom.coe_toRingHom
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hE, hform, Pi.smul_apply, smul_eq_mul, Finset.mul_sum, map_mul, RingHom.coe_coe]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeil/ArchimedeanSiegelWeil/PlaceIntegrals/SiegelWeilFreeOfBlockNonemptyFrames.lean:51:42: This simp argument is unused:
+  AlgHom.coe_toRingHom
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hE, hform, map_sum, map_mul, RingHom.coe_coe, hσ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeil/ArchimedeanSiegelWeil/PlaceIntegrals/SiegelWeilFreeOfBlockNonemptyFrames.lean:145:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
 If you'd rather continue using `push_neg` in your project, you can implement it as follows:
 ```
 open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-⚠ [65322/65393] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicFourierMemSchwartzTotallyReal (8.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdelicFourierMemSchwartzTotallyReal.lean:29:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdelicFourierMemSchwartzTotallyReal.lean:30:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdelicFourierMemSchwartzTotallyReal.lean:31:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdelicFourierMemSchwartzTotallyReal.lean:32:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdelicFourierMemSchwartzTotallyReal.lean:48:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [65323/65393] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StabiliserSplittingAdelic (13s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/StabiliserSplittingAdelic.lean:21:2: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/StabiliserSplittingAdelic.lean:28:2: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/StabiliserSplittingAdelic.lean:53:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.WeilSiegel.HypStep.Unf.Struct.lift_hz`:
-  [TopologicalSpace R]
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeil/ArchimedeanSiegelWeil/PlaceIntegrals/SiegelWeilFreeOfBlockNonemptyFrames.lean:172:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.WeilSiegel.Free.hE_hypOne_cons`:
+  [NumberField F]
+  [NumberField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [TopologicalSpace R] in theorem ...
+  omit [NumberField F] [NumberField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/StabiliserSplittingAdelic.lean:233:2: Try this: 
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeil/ArchimedeanSiegelWeil/PlaceIntegrals/SiegelWeilFreeOfBlockNonemptyFrames.lean:201:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeil/ArchimedeanSiegelWeil/PlaceIntegrals/SiegelWeilFreeOfBlockNonemptyFrames.lean:323:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.WeilSiegel.Free.frames_right`:
+  [NumberField F]
+  [NumberField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] [NumberField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeil/ArchimedeanSiegelWeil/PlaceIntegrals/SiegelWeilFreeOfBlockNonemptyFrames.lean:351:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.WeilSiegel.Free.frames_left`:
+  [NumberField F]
+  [NumberField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] [NumberField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeil/ArchimedeanSiegelWeil/PlaceIntegrals/SiegelWeilFreeOfBlockNonemptyFrames.lean:384:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.WeilSiegel.Free.frames_tail_aniso`:
+  [NumberField F]
+  [NumberField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] [NumberField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [66010/66105] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConnectedPDivGroupChartCoboundaryTwoCoordStatement (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ConnectedPDivGroupChartCoboundaryTwoCoordStatement.lean:10:78: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ConnectedPDivGroupChartCoboundaryTwoCoordStatement.lean:10:145: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ConnectedPDivGroupChartCoboundaryTwoCoordStatement.lean:10:78: Unused tactic linter: `exact GlobalTheory.Katz.CobCoord.evA_cob2_eq_cobTwo_and_op_assoc` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ConnectedPDivGroupChartCoboundaryTwoCoordStatement.lean:10:145: Unused tactic linter: `(intros;
+  apply GlobalTheory.Katz.CobCoord.evA_cob2_eq_cobTwo_and_op_assoc <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [66011/66105] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFormalGroupLawLiftOfSurjective (6.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsFormalGroupLawLiftOfSurjective.lean:51:10: This simp argument is unused:
+  Finsupp.embDomain_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsFormalGroupLawLiftOfSurjective.lean:58:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -117,44 +144,17 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/StabiliserSplittingAdelic.lean:234:2: Try this: 
-  haveI̵
+⚠ [66012/66109] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiLogarithmBasisLiftPdThickeningStatement (5.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/QuasiLogarithmBasisLiftPdThickeningStatement.lean:7:43: this tactic is never executed
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/QuasiLogarithmBasisLiftPdThickeningStatement.lean:7:75: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/StabiliserSplittingAdelic.lean:235:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/QuasiLogarithmBasisLiftPdThickeningStatement.lean:7:43: Unused tactic linter: `exact GlobalTheory.basis_lift` does nothing
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/QuasiLogarithmBasisLiftPdThickeningStatement.lean:7:75: Unused tactic linter: `(intros; apply GlobalTheory.basis_lift <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/StabiliserSplittingAdelic.lean:237:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/StabiliserSplittingAdelic.lean:238:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/StabiliserSplittingAdelic.lean:239:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/StabiliserSplittingAdelic.lean:254:10: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [66013/66109] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeAtOfPrismaticDieudonneAt (6.7s)
