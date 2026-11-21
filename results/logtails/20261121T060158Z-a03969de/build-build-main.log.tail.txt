@@ -1,10 +1,87 @@
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/HasSumLocalEulerFactorHeckeOperators.lean:90:6: Try this: 
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [118668/118701] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JointHarmonicHighestWeightMultiplicityOneStatement (5.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/JointHarmonicHighestWeightMultiplicityOneStatement.lean:26:52: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/JointHarmonicHighestWeightMultiplicityOneStatement.lean:26:93: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/JointHarmonicHighestWeightMultiplicityOneStatement.lean:26:52: Unused tactic linter: `exact GlobalTheory.HarmLine.joint_line` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/JointHarmonicHighestWeightMultiplicityOneStatement.lean:26:93: Unused tactic linter: `(intros; apply GlobalTheory.HarmLine.joint_line <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [118669/118702] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaIntegralVacuumIntertwinesSphericalHeckeStatement (5.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ThetaIntegralVacuumIntertwinesSphericalHeckeStatement.lean:15:57: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ThetaIntegralVacuumIntertwinesSphericalHeckeStatement.lean:15:103: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ThetaIntegralVacuumIntertwinesSphericalHeckeStatement.lean:15:57: Unused tactic linter: `exact GlobalTheory.ThetaIntHecke.liftInt_hk` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ThetaIntegralVacuumIntertwinesSphericalHeckeStatement.lean:15:103: Unused tactic linter: `(intros; apply GlobalTheory.ThetaIntHecke.liftInt_hk <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [118670/118702] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalThetaCorrespondenceInertPlaceOfHoweStatement (5.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/SphericalThetaCorrespondenceInertPlaceOfHoweStatement.lean:15:63: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/SphericalThetaCorrespondenceInertPlaceOfHoweStatement.lean:15:115: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/SphericalThetaCorrespondenceInertPlaceOfHoweStatement.lean:15:63: Unused tactic linter: `exact GlobalTheory.Hk3.CorrInert.sphCorr_of_inert` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/SphericalThetaCorrespondenceInertPlaceOfHoweStatement.lean:15:115: Unused tactic linter: `(intros; apply GlobalTheory.Hk3.CorrInert.sphCorr_of_inert <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [118671/118702] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftGoodProjectorIntertwinesMatchedHeckeStatement (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ThetaLiftGoodProjectorIntertwinesMatchedHeckeStatement.lean:15:61: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ThetaLiftGoodProjectorIntertwinesMatchedHeckeStatement.lean:15:111: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ThetaLiftGoodProjectorIntertwinesMatchedHeckeStatement.lean:15:61: Unused tactic linter: `exact GlobalTheory.DefLiftHecke.matchW_of_match` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ThetaLiftGoodProjectorIntertwinesMatchedHeckeStatement.lean:15:111: Unused tactic linter: `(intros; apply GlobalTheory.DefLiftHecke.matchW_of_match <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [118672/118702] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MirabolicAverageEqCoeffSinglePlaceElementStatement (5.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MirabolicAverageEqCoeffSinglePlaceElementStatement.lean:28:59: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MirabolicAverageEqCoeffSinglePlaceElementStatement.lean:28:107: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MirabolicAverageEqCoeffSinglePlaceElementStatement.lean:28:59: Unused tactic linter: `exact GlobalTheory.MirAvg.mirC_eq_coeff_mirEl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MirabolicAverageEqCoeffSinglePlaceElementStatement.lean:28:107: Unused tactic linter: `(intros; apply GlobalTheory.MirAvg.mirC_eq_coeff_mirEl <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [118673/118706] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TypeNZOfNonVanGen (5.6s)
+⚠ [118674/118706] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DefiniteSpaceFormsFunctionalPrincipalTypeStatement (9.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DefiniteSpaceFormsFunctionalPrincipalTypeStatement.lean:22:58: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DefiniteSpaceFormsFunctionalPrincipalTypeStatement.lean:22:105: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DefiniteSpaceFormsFunctionalPrincipalTypeStatement.lean:22:58: Unused tactic linter: `exact GlobalTheory.DefiniteType.hasType_extV` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DefiniteSpaceFormsFunctionalPrincipalTypeStatement.lean:22:105: Unused tactic linter: `(intros; apply GlobalTheory.DefiniteType.hasType_extV <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [118675/118706] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitaryBasisGeneralLinearSeries (9.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/UnitaryBasisGeneralLinearSeries.lean:156:6: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -12,149 +89,72 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [118417/118439] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CentralLocalStableIntegral (24s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CentralLocalStableIntegral.lean:68:94: Variable name `t` is not explicitly referenced.
+⚠ [118676/118706] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodProjectorConvMirabolicAvgEqZero (5.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GoodProjectorConvMirabolicAvgEqZero.lean:48:2: Try this: 
+  haveI̵
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _t
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CentralLocalStableIntegral.lean:68:96: Variable name `nch` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _nch
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CentralLocalStableIntegral.lean:68:100: Variable name `n` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _n
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [118418/118441] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuotientEquivRestrictedComponentFamilies (5.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/QuotientEquivRestrictedComponentFamilies.lean:24:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/QuotientEquivRestrictedComponentFamilies.lean:74:54: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-⚠ [118419/118441] Built Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LatIndexEqOneOfMem (7.0s)
-warning: src/Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/LatIndexEqOneOfMem.lean:17:57: Variable name `hg` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hg
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [118420/118441] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsHeckeRepresentativesRightTranslateIdentity (18s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsHeckeRepresentativesRightTranslateIdentity.lean:29:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsHeckeRepresentativesRightTranslateIdentity.lean:112:41: `ContinuousLinearMap.sum_apply` has been deprecated: Use `_root_.sum_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `_root_.sum_apply x`).
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsHeckeRepresentativesRightTranslateIdentity.lean:119:6: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-⚠ [118421/118443] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RightInvariantMulEqFinprodComponentsStatement (5.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RightInvariantMulEqFinprodComponentsStatement.lean:7:73: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [118677/118706] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ChainInnerStepIntertwinesMatchedHecke (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ChainInnerStepIntertwinesMatchedHecke.lean:86:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [118678/118706] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaVacuaMatchingConjugatePrime (6.6s)
+⚠ [118679/118706] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodProjectorConvMirabolicAvgEqZeroStatement (5.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GoodProjectorConvMirabolicAvgEqZeroStatement.lean:23:57: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RightInvariantMulEqFinprodComponentsStatement.lean:7:135: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GoodProjectorConvMirabolicAvgEqZeroStatement.lean:23:103: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RightInvariantMulEqFinprodComponentsStatement.lean:7:73: Unused tactic linter: `exact GlobalTheory.finprod_components_of_rightInvariant_mul` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GoodProjectorConvMirabolicAvgEqZeroStatement.lean:23:57: Unused tactic linter: `exact GlobalTheory.GoodNoChiTr.conv_mirC_eC` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RightInvariantMulEqFinprodComponentsStatement.lean:7:135: Unused tactic linter: `(intros;
-  apply GlobalTheory.finprod_components_of_rightInvariant_mul <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GoodProjectorConvMirabolicAvgEqZeroStatement.lean:23:103: Unused tactic linter: `(intros; apply GlobalTheory.GoodNoChiTr.conv_mirC_eC <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [118422/118455] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EulerOperatorInjectiveEigenvector (9.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/EulerOperatorInjectiveEigenvector.lean:35:172: Variable name `s` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _s
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/EulerOperatorInjectiveEigenvector.lean:127:40: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/EulerOperatorInjectiveEigenvector.lean:133:40: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/EulerOperatorInjectiveEigenvector.lean:178:46: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/EulerOperatorInjectiveEigenvector.lean:195:23: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-⚠ [118423/118455] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasSumLocalEulerFactorHeckeOperatorsStatement (5.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/HasSumLocalEulerFactorHeckeOperatorsStatement.lean:8:54: this tactic is never executed
+⚠ [118680/118706] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitaryBasisGeneralLinearSeriesStatement (5.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/UnitaryBasisGeneralLinearSeriesStatement.lean:25:68: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/HasSumLocalEulerFactorHeckeOperatorsStatement.lean:8:97: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/UnitaryBasisGeneralLinearSeriesStatement.lean:25:125: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/HasSumLocalEulerFactorHeckeOperatorsStatement.lean:8:54: Unused tactic linter: `exact GlobalTheory.UpInj.localSum_hasSum` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/UnitaryBasisGeneralLinearSeriesStatement.lean:25:68: Unused tactic linter: `exact GlobalTheory.LowestKType.lowestKType_irreducible` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/HasSumLocalEulerFactorHeckeOperatorsStatement.lean:8:97: Unused tactic linter: `(intros; apply GlobalTheory.UpInj.localSum_hasSum <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/UnitaryBasisGeneralLinearSeriesStatement.lean:25:125: Unused tactic linter: `(intros; apply GlobalTheory.LowestKType.lowestKType_irreducible <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [118424/118459] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuotientEquivRestrictedComponentFamiliesStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/QuotientEquivRestrictedComponentFamiliesStatement.lean:7:66: this tactic is never executed
+⚠ [118681/118706] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftTransferHeckePolySplitPrime (12s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ThetaLiftTransferHeckePolySplitPrime.lean:62:43: This simp argument is unused:
+  Nat.lt_succ_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [and_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [118682/118708] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ChainInnerStepIntertwinesMatchedHeckeStatement (5.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ChainInnerStepIntertwinesMatchedHeckeStatement.lean:15:55: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/QuotientEquivRestrictedComponentFamiliesStatement.lean:7:121: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ChainInnerStepIntertwinesMatchedHeckeStatement.lean:15:99: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/QuotientEquivRestrictedComponentFamiliesStatement.lean:7:66: Unused tactic linter: `exact GlobalTheory.quotient_equiv_restrictedFamilies` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ChainInnerStepIntertwinesMatchedHeckeStatement.lean:15:55: Unused tactic linter: `exact GlobalTheory.ChainStepHecke.step_hk` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/QuotientEquivRestrictedComponentFamiliesStatement.lean:7:121: Unused tactic linter: `(intros; apply GlobalTheory.quotient_equiv_restrictedFamilies <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ChainInnerStepIntertwinesMatchedHeckeStatement.lean:15:99: Unused tactic linter: `(intros; apply GlobalTheory.ChainStepHecke.step_hk <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [118425/118459] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelfDualSumLe (10s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SelfDualSumLe.lean:12:0: automatically included section variable(s) unused in theorem `GlobalTheory.HermNbr.good_map`:
-  [IsDomain O]
-  [IsDiscreteValuationRing O]
-  [IsFractionRing O K]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsDomain O] [IsDiscreteValuationRing O] [IsFractionRing O K] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SelfDualSumLe.lean:13:58: Variable name `hϖ` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hϖ
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SelfDualSumLe.lean:67:8: Overlapping instance parameters in `GlobalTheory.HermNbr.selfDual_sum_le`:
-
-⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.
-💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-⚠ [118426/118459] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsHeckeRepresentativesRightTranslateIdentityStatement (5.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsHeckeRepresentativesRightTranslateIdentityStatement.lean:20:48: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsHeckeRepresentativesRightTranslateIdentityStatement.lean:20:85: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsHeckeRepresentativesRightTranslateIdentityStatement.lean:20:48: Unused tactic linter: `exact GlobalTheory.UpInj.heckeReps` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsHeckeRepresentativesRightTranslateIdentityStatement.lean:20:85: Unused tactic linter: `(intros; apply GlobalTheory.UpInj.heckeReps <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [118427/118459] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EulerOperatorInjectiveEigenvectorStatement (5.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/EulerOperatorInjectiveEigenvectorStatement.lean:7:56: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/EulerOperatorInjectiveEigenvectorStatement.lean:7:101: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/EulerOperatorInjectiveEigenvectorStatement.lean:7:56: Unused tactic linter: `exact GlobalTheory.eulerOp_injective_eigen` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/EulerOperatorInjectiveEigenvectorStatement.lean:7:101: Unused tactic linter: `(intros; apply GlobalTheory.eulerOp_injective_eigen <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [118428/118459] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TrivialLevelCosetRepresentativeMemLevel (7.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TrivialLevelCosetRepresentativeMemLevel.lean:26:12: Variable name `R` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _R
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [118683/118708] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HoweDualityCompactPairPolynomialFockAllRealPlace (6.3s)
+⚠ [118684/118711] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodTypesExcludeLevelCharacter (6.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GoodTypesExcludeLevelCharacter.lean:101:57: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+✔ [118685/118712] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RegularisedThetaPairingIdentity (8.1s)
