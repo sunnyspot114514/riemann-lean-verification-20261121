@@ -1,42 +1,11 @@
-Hint: Omit it from the simp argument list.
-  [apply] simp only [map_mul]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [66004/66101] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.MvPowerSeriesEvalTruncSubstEqSumStatement (5.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MvPowerSeriesEvalTruncSubstEqSumStatement.lean:7:64: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MvPowerSeriesEvalTruncSubstEqSumStatement.lean:7:117: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MvPowerSeriesEvalTruncSubstEqSumStatement.lean:7:64: Unused tactic linter: `exact GlobalTheory.DivSub.eval_trunc'_subst_eq_sum` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MvPowerSeriesEvalTruncSubstEqSumStatement.lean:7:117: Unused tactic linter: `(intros; apply GlobalTheory.DivSub.eval_trunc'_subst_eq_sum <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/WeilDatumDoubleSpaceActsUnitScalarSeesawCM.lean:26:139: Unused tactic linter: `(intros;
+  apply PositivityTheory.ThKW.weil_rep_unitary_pair_equivariant <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [66005/66101] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentEqZeroOfFormalGroupLawCoboundaryOneEqZero (6.3s)
-⚠ [66006/66101] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasPeriodReduceAlongThetaToIntegersStatement (5.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasPeriodReduceAlongThetaToIntegersStatement.lean:6:326: Variable name `hε` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hε
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasPeriodReduceAlongThetaToIntegersStatement.lean:7:54: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasPeriodReduceAlongThetaToIntegersStatement.lean:7:97: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasPeriodReduceAlongThetaToIntegersStatement.lean:7:54: Unused tactic linter: `exact GlobalTheory.QLog.hasPeriod_reduce` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasPeriodReduceAlongThetaToIntegersStatement.lean:7:97: Unused tactic linter: `(intros; apply GlobalTheory.QLog.hasPeriod_reduce <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [66007/66101] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubstEqAddOfCob1EqZero (6.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SubstEqAddOfCob1EqZero.lean:108:2: Try this: 
+⚠ [66631/66734] Built Development.WeilBound.ThetaLifts.Reductions.WeilPairs.PrSingle (10s)
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/PrSingle.lean:120:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -44,99 +13,15 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [66008/66101] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasValSubstPolyStatement (5.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasValSubstPolyStatement.lean:7:55: this tactic is never executed
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/PrSingle.lean:123:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasValSubstPolyStatement.lean:7:99: this tactic is never executed
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasValSubstPolyStatement.lean:7:55: Unused tactic linter: `exact GlobalTheory.QLog.hasVal_subst_poly` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasValSubstPolyStatement.lean:7:99: Unused tactic linter: `(intros; apply GlobalTheory.QLog.hasVal_subst_poly <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [66009/66105] Built Development.WeilBound.RepresentationTheoryGL.SiegelWeil.ArchimedeanSiegelWeil.PlaceIntegrals.SiegelWeilFreeOfBlockNonemptyFrames (17s)
-warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeil/ArchimedeanSiegelWeil/PlaceIntegrals/SiegelWeilFreeOfBlockNonemptyFrames.lean:45:4: This simp argument is unused:
-  AlgHom.coe_toRingHom
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [hE, hform, Pi.smul_apply, smul_eq_mul, Finset.mul_sum, map_mul, RingHom.coe_coe]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeil/ArchimedeanSiegelWeil/PlaceIntegrals/SiegelWeilFreeOfBlockNonemptyFrames.lean:51:42: This simp argument is unused:
-  AlgHom.coe_toRingHom
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [hE, hform, map_sum, map_mul, RingHom.coe_coe, hσ]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeil/ArchimedeanSiegelWeil/PlaceIntegrals/SiegelWeilFreeOfBlockNonemptyFrames.lean:145:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeil/ArchimedeanSiegelWeil/PlaceIntegrals/SiegelWeilFreeOfBlockNonemptyFrames.lean:172:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.WeilSiegel.Free.hE_hypOne_cons`:
-  [NumberField F]
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeil/ArchimedeanSiegelWeil/PlaceIntegrals/SiegelWeilFreeOfBlockNonemptyFrames.lean:201:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeil/ArchimedeanSiegelWeil/PlaceIntegrals/SiegelWeilFreeOfBlockNonemptyFrames.lean:323:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.WeilSiegel.Free.frames_right`:
-  [NumberField F]
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeil/ArchimedeanSiegelWeil/PlaceIntegrals/SiegelWeilFreeOfBlockNonemptyFrames.lean:351:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.WeilSiegel.Free.frames_left`:
-  [NumberField F]
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeil/ArchimedeanSiegelWeil/PlaceIntegrals/SiegelWeilFreeOfBlockNonemptyFrames.lean:384:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.WeilSiegel.Free.frames_tail_aniso`:
-  [NumberField F]
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [66010/66105] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConnectedPDivGroupChartCoboundaryTwoCoordStatement (7.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ConnectedPDivGroupChartCoboundaryTwoCoordStatement.lean:10:78: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ConnectedPDivGroupChartCoboundaryTwoCoordStatement.lean:10:145: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ConnectedPDivGroupChartCoboundaryTwoCoordStatement.lean:10:78: Unused tactic linter: `exact GlobalTheory.Katz.CobCoord.evA_cob2_eq_cobTwo_and_op_assoc` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ConnectedPDivGroupChartCoboundaryTwoCoordStatement.lean:10:145: Unused tactic linter: `(intros;
-  apply GlobalTheory.Katz.CobCoord.evA_cob2_eq_cobTwo_and_op_assoc <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [66011/66105] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFormalGroupLawLiftOfSurjective (6.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsFormalGroupLawLiftOfSurjective.lean:51:10: This simp argument is unused:
-  Finsupp.embDomain_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsFormalGroupLawLiftOfSurjective.lean:58:4: Try this: 
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/PrSingle.lean:124:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -144,17 +29,132 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [66012/66109] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiLogarithmBasisLiftPdThickeningStatement (5.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/QuasiLogarithmBasisLiftPdThickeningStatement.lean:7:43: this tactic is never executed
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/PrSingle.lean:125:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/PrSingle.lean:127:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/PrSingle.lean:119:8: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/QuasiLogarithmBasisLiftPdThickeningStatement.lean:7:75: this tactic is never executed
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/PrSingle.lean:119:8: Unused tactic linter: `fun_prop` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [66632/66737] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryCharEqOneOfTrivialRationalSplitPlace (5.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UnitaryCharEqOneOfTrivialRationalSplitPlace.lean:14:77: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/QuasiLogarithmBasisLiftPdThickeningStatement.lean:7:43: Unused tactic linter: `exact GlobalTheory.basis_lift` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UnitaryCharEqOneOfTrivialRationalSplitPlace.lean:14:143: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UnitaryCharEqOneOfTrivialRationalSplitPlace.lean:14:77: Unused tactic linter: `exact PositivityTheory.ThKW.character_trivial_of_rational_split` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/QuasiLogarithmBasisLiftPdThickeningStatement.lean:7:75: Unused tactic linter: `(intros; apply GlobalTheory.basis_lift <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UnitaryCharEqOneOfTrivialRationalSplitPlace.lean:14:143: Unused tactic linter: `(intros;
+  apply PositivityTheory.ThKW.character_trivial_of_rational_split <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [66013/66109] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeAtOfPrismaticDieudonneAt (6.7s)
+✔ [66633/66739] Built GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableParabolic (7.5s)
+✔ [66634/66742] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryHeckeCharEqOneOfTrivialOverSplitPlacesCm (5.9s)
+⚠ [66635/66754] Built Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairExistence.ExistsIsWeilDatumOF (6.9s)
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/WeilPairExistence/ExistsIsWeilDatumOF.lean:19:0: automatically included section variable(s) unused in theorem `PositivityTheory.ThKW.S.isHeckeCharF_div_pow`:
+  [NumberField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/WeilPairExistence/ExistsIsWeilDatumOF.lean:30:0: automatically included section variable(s) unused in theorem `PositivityTheory.ThKW.S.resEtaF_div_pow`:
+  [NumberField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [66636/66757] Built Development.WeilBound.ThetaLifts.Reductions.WeilPairs.ParsevalAdelicPairFundamental (7.4s)
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/ParsevalAdelicPairFundamental.lean:71:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/ParsevalAdelicPairFundamental.lean:72:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/ParsevalAdelicPairFundamental.lean:74:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/ParsevalAdelicPairFundamental.lean:75:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/ParsevalAdelicPairFundamental.lean:93:12: `ofReal_norm_eq_enorm` has been deprecated: Use `ofReal_norm` instead
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/ParsevalAdelicPairFundamental.lean:93:36: `ofReal_norm_eq_enorm` has been deprecated: Use `ofReal_norm` instead
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/ParsevalAdelicPairFundamental.lean:97:82: `ofReal_norm_eq_enorm` has been deprecated: Use `ofReal_norm` instead
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/ParsevalAdelicPairFundamental.lean:119:46: `ofReal_norm_eq_enorm` has been deprecated: Use `ofReal_norm` instead
+⚠ [66637/66757] Built GroundTheory.AutomorphicForms.ArchimedeanWhittaker.ContinuousMultilinearOfFiniteDimensional (16s)
+info: src/GroundTheory/AutomorphicForms/ArchimedeanWhittaker/ContinuousMultilinearOfFiniteDimensional.lean:339:26: Try this:
+  [apply] abel_nf
+warning: src/GroundTheory/AutomorphicForms/ArchimedeanWhittaker/ContinuousMultilinearOfFiniteDimensional.lean:326:0: automatically included section variable(s) unused in theorem `GroundTheory.Automorphic.IsExpLieAlgebra.continuous_apply_apply`:
+  [NormedAlgebra ℝ 𝔸]
+  [CompleteSpace 𝔸]
+  [FiniteDimensional ℝ 𝔸]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedAlgebra ℝ 𝔸] [CompleteSpace 𝔸] [FiniteDimensional ℝ 𝔸] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [66638/66758] Built Development.WeilBound.ThetaLifts.Reductions.WeilPairs.OneAddPow (14s)
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/OneAddPow.lean:28:42: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/OneAddPow.lean:28:52: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/OneAddPow.lean:28:23: Unused tactic linter: `done` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/OneAddPow.lean:28:32: Unused tactic linter: `simp_all` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/OneAddPow.lean:28:42: Unused tactic linter: `norm_num` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/OneAddPow.lean:28:52: Unused tactic linter: `done` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/WeilBound/ThetaLifts/Reductions/WeilPairs/OneAddPow.lean:74:64: This simp argument is unused:
+  smul_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [add_mul, mul_add, smul_mul_assoc, mul_smul_comm, smul_smul, a, b, smul_zero, add_zero, zero_add,
+    hxy, hyx, one_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [66639/66760] Built GroundTheory.AutomorphicForms.TensorProductTheorem.MatrixCoeff (7.0s)
+✔ [66640/66764] Built GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableCartan (18s)
+✔ [66641/66764] Built GroundTheory.AutomorphicForms.PartialDifferential.Sobolev (24s)
