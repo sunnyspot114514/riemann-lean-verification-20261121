@@ -1,160 +1,160 @@
+  [FiniteDimensional ℂ Wq]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℂ Wq] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AmplifierOfHypotheses.lean:355:41: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AmplifierOfHypotheses.lean:390:40: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AmplifierOfHypotheses.lean:411:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AmplifierOfHypotheses.lean:469:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AmplifierOfHypotheses.lean:470:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AmplifierOfHypotheses.lean:471:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AmplifierOfHypotheses.lean:479:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AmplifierOfHypotheses.lean:506:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AmplifierOfHypotheses.lean:535:15: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
-✔ [105126/105149] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselPeriodAdjointPair (6.6s)
-⚠ [105127/105149] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselGapIntegrabilityStatement (5.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/BesselGapIntegrabilityStatement.lean:9:47: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [105400/105436] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.MemLpBzOfSup (5.5s)
+✔ [105401/105436] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.FmSmulLeft (5.8s)
+✔ [105402/105445] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.NormExpMulISubOne (16s)
+✔ [105403/105448] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.CWConsPlus (5.4s)
+✔ [105404/105449] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.BlockKWaveC (9.3s)
+✔ [105405/105449] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.WaveDiffForm (8.3s)
+✔ [105406/105450] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.BuiltBoundsCompactOfParts (14s)
+✔ [105407/105450] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.LoeZeroOfPsd (6.0s)
+✔ [105408/105451] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.NormSumLeOfGram (6.2s)
+⚠ [105409/105451] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.TendstoRatioPow (7.1s)
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/TendstoRatioPow.lean:60:4: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/BesselGapIntegrabilityStatement.lean:9:83: this tactic is never executed
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/TendstoRatioPow.lean:60:4: Unused tactic linter: `field_simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/TendstoRatioPow.lean:110:4: Unused tactic linter: `beta_reduce` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/TendstoRatioPow.lean:114:4: Unused tactic linter: `beta_reduce` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [105410/105451] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.SliceOmBlock (5.4s)
+✔ [105411/105451] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.FormModel (5.1s)
+✔ [105412/105451] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.WaveLocalPositiveCompactSupport (6.3s)
+✔ [105413/105451] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.WaveLSubOneCcle (6.6s)
+✔ [105414/105451] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.IntegrableBlockIntegrand (7.5s)
+✔ [105415/105451] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.XiBound (8.3s)
+✔ [105416/105453] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.FormWaveMDiff (10s)
+✔ [105417/105453] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.ThresholdsPositive (6.5s)
+✔ [105418/105453] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.PositivityBoundOfActual (7.9s)
+✔ [105419/105453] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.IntegralBoundOfParts (10s)
+✔ [105420/105453] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.SliceIntCut (5.2s)
+✔ [105421/105453] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.GermLocTail (5.4s)
+⚠ [105422/105453] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.PtEntryAppendStart (6.3s)
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/PtEntryAppendStart.lean:64:13: `ContinuousLinearMap.zero_apply` has been deprecated: Use `zero_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.zero_apply` to `zero_apply x`).
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/PtEntryAppendStart.lean:61:0: automatically included section variable(s) unused in theorem `Formalism.FourierDecayAlt.P.PBL.hsInner_zero_right'`:
+  [FiniteDimensional ℂ Wp]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℂ Wp] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/PtEntryAppendStart.lean:66:0: automatically included section variable(s) unused in theorem `Formalism.FourierDecayAlt.P.PBL.vecV_of_G`:
+  [FiniteDimensional ℂ Wp]
+  [FiniteDimensional ℂ Wq]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℂ Wp] [FiniteDimensional ℂ Wq] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [105423/105455] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.PtSizePtG (5.6s)
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/PtSizePtG.lean:24:73: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/BesselGapIntegrabilityStatement.lean:9:47: Unused tactic linter: `exact GlobalTheory.be_apply_isBes` does nothing
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/PtSizePtG.lean:24:73: Unused tactic linter: `omega` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/BesselGapIntegrabilityStatement.lean:9:83: Unused tactic linter: `(intros; apply GlobalTheory.be_apply_isBes <;> assumption)` does nothing
+✔ [105424/105457] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.ContinuousUnipotentVectorScalar (37s)
+✔ [105425/105457] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.UniformDecayOfPlace (18s)
+⚠ [105426/105458] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.IntegralNormLeDecay (6.1s)
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/IntegralNormLeDecay.lean:25:40: Variable name `hφ` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [105128/105149] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselFormalDegreePairingStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/BesselFormalDegreePairingStatement.lean:9:51: this tactic is never executed
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hφ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [105427/105458] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.YGSlice (5.3s)
+✔ [105428/105459] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.LiftLocalPositiveCompactSupport (10s)
+✔ [105429/105463] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.GermLocalOfRealised (7.2s)
+✔ [105430/105463] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.BetaCongrRight (8.5s)
+⚠ [105431/105463] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.SecondDefectNonneg (8.8s)
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/SecondDefectNonneg.lean:198:43: `ContinuousLinearMap.comp_finset_sum` has been deprecated: Use `ContinuousLinearMap.comp_finsetSum` instead
+✔ [105432/105470] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.NormSumLeOfForm (5.9s)
+✔ [105433/105470] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.WaveDiffFormOf (31s)
+✔ [105434/105470] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.GermLocalOfFibres (7.0s)
+⚠ [105435/105478] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.SliceOrbitalBlock (7.0s)
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/SliceOrbitalBlock.lean:17:0: automatically included section variable(s) unused in theorem `Formalism.FourierDecayAlt.P.FormNormSumIdentities.GlobalTheory.coreQ`:
+  [CompleteSpace E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompleteSpace E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [105436/105483] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.LenEqLenI (6.7s)
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/LenEqLenI.lean:18:0: automatically included section variable(s) unused in theorem `Formalism.FourierDecayAlt.P.PBL.ntop_eq_N''`:
+  [∀ (x : InfinitePlace E), FiniteDimensional ℂ (Wp x)]
+  [∀ (x : InfinitePlace E), FiniteDimensional ℂ (Wq x)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [∀ (x : InfinitePlace E),
+  FiniteDimensional ℂ (Wp x)] [∀ (x : InfinitePlace E), FiniteDimensional ℂ (Wq x)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/LenEqLenI.lean:21:0: automatically included section variable(s) unused in theorem `Formalism.FourierDecayAlt.P.PBL.len_eq_lenI'`:
+  [∀ (x : InfinitePlace E), FiniteDimensional ℂ (Wp x)]
+  [∀ (x : InfinitePlace E), FiniteDimensional ℂ (Wq x)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [∀ (x : InfinitePlace E),
+  FiniteDimensional ℂ (Wp x)] [∀ (x : InfinitePlace E), FiniteDimensional ℂ (Wq x)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/LenEqLenI.lean:40:104: Variable name `hs2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [105437/105483] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.LoeSubStates (6.2s)
+✔ [105438/105483] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.BoundOnEarlierRegion (5.2s)
+⚠ [105439/105486] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.CcCoefMMono (18s)
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CcCoefMMono.lean:144:20: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/BesselFormalDegreePairingStatement.lean:9:91: this tactic is never executed
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CcCoefMMono.lean:144:9: Unused tactic linter: `push_cast` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CcCoefMMono.lean:144:20: Unused tactic linter: `try ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [105440/105486] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.WaveLocBOf (5.5s)
+✔ [105441/105486] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.PsiNegBetaL (5.1s)
+⚠ [105442/105486] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.SliceIntegralCutoff (18s)
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/SliceIntegralCutoff.lean:131:20: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/BesselFormalDegreePairingStatement.lean:9:51: Unused tactic linter: `exact GlobalTheory.integral_xi_mul_Ph` does nothing
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/SliceIntegralCutoff.lean:131:9: Unused tactic linter: `push_cast` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/BesselFormalDegreePairingStatement.lean:9:91: Unused tactic linter: `(intros; apply GlobalTheory.integral_xi_mul_Ph <;> assumption)` does nothing
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/SliceIntegralCutoff.lean:131:20: Unused tactic linter: `try ring` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [105129/105149] Built Development.AbelianVarietyTheory.Proofs.CovolumeBounds.GramPositiveVolumeContinuousStatement (4.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/CovolumeBounds/GramPositiveVolumeContinuousStatement.lean:8:84: this tactic is never executed
+⚠ [105443/105486] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.SecondDefectPlusWordLe (5.6s)
+warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/SecondDefectPlusWordLe.lean:30:71: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_zero, sub_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [105444/105486] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.HcTypeWContinuousUnitaryIrreducibleStatement (5.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HcTypeWContinuousUnitaryIrreducibleStatement.lean:8:47: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CovolumeBounds/GramPositiveVolumeContinuousStatement.lean:8:157: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HcTypeWContinuousUnitaryIrreducibleStatement.lean:8:83: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CovolumeBounds/GramPositiveVolumeContinuousStatement.lean:8:84: Unused tactic linter: `exact GlobalTheory.HCXi.GramPos.gram_vHalf_pos_measurable_continuousOn` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HcTypeWContinuousUnitaryIrreducibleStatement.lean:8:47: Unused tactic linter: `exact GlobalTheory.ThA.hcType_rep` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CovolumeBounds/GramPositiveVolumeContinuousStatement.lean:8:157: Unused tactic linter: `(intros;
-  apply GlobalTheory.HCXi.GramPos.gram_vHalf_pos_measurable_continuousOn <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HcTypeWContinuousUnitaryIrreducibleStatement.lean:8:83: Unused tactic linter: `(intros; apply GlobalTheory.ThA.hcType_rep <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [105130/105149] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsQuotientMeasureBesselPeriodSubgroupUnitaryStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsQuotientMeasureBesselPeriodSubgroupUnitaryStatement.lean:11:66: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsQuotientMeasureBesselPeriodSubgroupUnitaryStatement.lean:11:121: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsQuotientMeasureBesselPeriodSubgroupUnitaryStatement.lean:11:66: Unused tactic linter: `exact GlobalTheory.exists_isQuotMeas_bessel_subgroup` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsQuotientMeasureBesselPeriodSubgroupUnitaryStatement.lean:11:121: Unused tactic linter: `(intros; apply GlobalTheory.exists_isQuotMeas_bessel_subgroup <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [105131/105151] Built Development.AbelianVarietyTheory.Proofs.CovolumeBounds.GramMinorDetTriangularMul (5.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/CovolumeBounds/GramMinorDetTriangularMul.lean:48:62: `Matrix.det_of_upperTriangular` has been deprecated: Use `Matrix.det_of_isUpperTriangular` instead
-⚠ [105132/105151] Built Development.AbelianVarietyTheory.Proofs.CovolumeBounds.FrameIsotropicOrthonormalStatement (5.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/CovolumeBounds/FrameIsotropicOrthonormalStatement.lean:8:75: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CovolumeBounds/FrameIsotropicOrthonormalStatement.lean:8:139: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CovolumeBounds/FrameIsotropicOrthonormalStatement.lean:8:75: Unused tactic linter: `exact GlobalTheory.HCXi.FrameOrth.frame_orthonormal_isotropic` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CovolumeBounds/FrameIsotropicOrthonormalStatement.lean:8:139: Unused tactic linter: `(intros;
-  apply GlobalTheory.HCXi.FrameOrth.frame_orthonormal_isotropic <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [105133/105151] Built Development.AbelianVarietyTheory.Proofs.CovolumeBounds.KsetTransitive (6.5s)
-⚠ [105134/105151] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselPeriodAdjointPairStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/BesselPeriodAdjointPairStatement.lean:9:49: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/BesselPeriodAdjointPairStatement.lean:9:87: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/BesselPeriodAdjointPairStatement.lean:9:49: Unused tactic linter: `exact GlobalTheory.isCoef_ckOn_inCC` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/BesselPeriodAdjointPairStatement.lean:9:87: Unused tactic linter: `(intros; apply GlobalTheory.isCoef_ckOn_inCC <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [105135/105158] Built Development.AbelianVarietyTheory.Proofs.CovolumeBounds.BlockEmbConjTranspose (4.0s)
-✔ [105136/105158] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselGapExistsNonzero (5.7s)
-✔ [105137/105158] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselDatumBothSidesAreSides (5.3s)
-⚠ [105138/105158] Built Development.AbelianVarietyTheory.Proofs.CovolumeBounds.GramMinorDetTriangularMulStatement (4.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/CovolumeBounds/GramMinorDetTriangularMulStatement.lean:8:74: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CovolumeBounds/GramMinorDetTriangularMulStatement.lean:8:137: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CovolumeBounds/GramMinorDetTriangularMulStatement.lean:8:74: Unused tactic linter: `exact GlobalTheory.HCXi.det_leading_gram_mul_upperTriangular` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CovolumeBounds/GramMinorDetTriangularMulStatement.lean:8:137: Unused tactic linter: `(intros;
-  apply GlobalTheory.HCXi.det_leading_gram_mul_upperTriangular <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [105445/105487] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.WaveDifferenceForm (5.3s)
+✔ [105446/105487] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.SliceGermPoints (6.8s)
+✔ [105447/105487] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.OneAddPowLeExp (9.7s)
+✔ [105448/105487] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.UpqRepVocabularyAgree (5.0s)
