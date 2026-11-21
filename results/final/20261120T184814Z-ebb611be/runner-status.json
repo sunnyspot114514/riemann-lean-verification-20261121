@@ -1,0 +1,150 @@
+{
+  "run_id": "20261120T184814Z-ebb611be",
+  "source_commit_requested": "7cbf7a0c32fca1badf05931879a37c3f8a2b03b4",
+  "started_utc": "2026-11-20T18:48:14+00:00",
+  "state": "interrupted",
+  "runner_stage": "driver",
+  "bootstrap_exit_code": 0,
+  "driver_exit_code": -15,
+  "verification_passed": false,
+  "updated_utc": "2026-11-21T05:56:47+00:00",
+  "resources": {
+    "sampled_utc": "2026-11-21T05:56:47+00:00",
+    "cgroup_memory_current_bytes": 38410559488,
+    "cgroup_memory_peak_since_creation_bytes": 64424509440,
+    "cgroup_memory_stat_bytes": {
+      "total_rss": 303202304,
+      "total_cache": 37407834112,
+      "total_mapped_file": 9191424,
+      "total_inactive_file": 7330725888
+    },
+    "cgroup_memory_failcnt": 0,
+    "cgroup_memory_oom_control": {
+      "oom_kill_disable": 0,
+      "under_oom": 0,
+      "oom_kill": 0
+    },
+    "cgroup_cpu_usage_seconds": 643205.036633229,
+    "sampled_memory_peak_this_runner_bytes": 64041234432,
+    "cgroup_cpu_seconds_since_runner_start": 640215.17714243,
+    "disk_free_bytes": 468356608000,
+    "disk_total_bytes": 536870912000,
+    "disk_free_inodes": 729385635
+  },
+  "phases": {
+    "source-prefetch": {
+      "run_directory_name": "20261120T175221Z-7145",
+      "status": "complete:archive,git-objects,root-tree,source-unchanged",
+      "stages": {}
+    },
+    "dependency-prefetch": {
+      "run_directory_name": "20261120T175221Z-7147",
+      "status": "complete:nine-dependencies,trees,objects,source-unchanged",
+      "stages": {
+        "Cli": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T17:53:45.353245+00:00",
+          "end_utc": "2026-11-20T17:53:49.096668+00:00"
+        },
+        "LeanSearchClient": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T17:53:34.810443+00:00",
+          "end_utc": "2026-11-20T17:53:36.116847+00:00"
+        },
+        "Qq": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T17:53:39.347836+00:00",
+          "end_utc": "2026-11-20T17:53:40.128211+00:00"
+        },
+        "aesop": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T17:53:37.750546+00:00",
+          "end_utc": "2026-11-20T17:53:39.347627+00:00"
+        },
+        "batteries": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T17:53:40.128412+00:00",
+          "end_utc": "2026-11-20T17:53:45.353135+00:00"
+        },
+        "importGraph": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T17:53:36.116989+00:00",
+          "end_utc": "2026-11-20T17:53:37.750339+00:00"
+        },
+        "mathlib": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T17:53:34.809462+00:00",
+          "end_utc": "2026-11-20T17:57:57.023193+00:00"
+        },
+        "plausible": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T17:53:34.809803+00:00",
+          "end_utc": "2026-11-20T17:53:37.133186+00:00"
+        },
+        "proofwidgets": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T17:53:37.133294+00:00",
+          "end_utc": "2026-11-20T17:54:12.775609+00:00"
+        }
+      }
+    },
+    "bootstrap": {
+      "run_directory_name": "20261120T184814Z-97032",
+      "status": "complete:toolchain,source,dependencies,mathlib-cache,statements,source-unchanged",
+      "stages": {
+        "bootstrap": {
+          "exit_code": 0,
+          "start_utc": null,
+          "end_utc": "2026-11-20T18:48:36Z"
+        },
+        "dependency-fetch": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:48:25Z",
+          "end_utc": "2026-11-20T18:48:26Z"
+        },
+        "mathlib-cache": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:48:26Z",
+          "end_utc": "2026-11-20T18:48:30Z"
+        },
+        "preflight": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:48:14Z",
+          "end_utc": "2026-11-20T18:48:14Z"
+        },
+        "source-fetch": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:48:24Z",
+          "end_utc": "2026-11-20T18:48:25Z"
+        },
+        "source-integrity": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:48:35Z",
+          "end_utc": "2026-11-20T18:48:36Z"
+        },
+        "statements-sanity": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:48:30Z",
+          "end_utc": "2026-11-20T18:48:35Z"
+        },
+        "toolchain-download": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:48:14Z",
+          "end_utc": "2026-11-20T18:48:15Z"
+        },
+        "toolchain-install": {
+          "exit_code": 0,
+          "start_utc": "2026-11-20T18:48:15Z",
+          "end_utc": "2026-11-20T18:48:24Z"
+        }
+      }
+    },
+    "build": {
+      "run_directory_name": "20261120T184849Z-97538",
+      "status": "running:build-main",
+      "stages": {}
+    }
+  },
+  "exit_code": -15,
+  "finished_utc": "2026-11-21T05:56:47+00:00"
+}
