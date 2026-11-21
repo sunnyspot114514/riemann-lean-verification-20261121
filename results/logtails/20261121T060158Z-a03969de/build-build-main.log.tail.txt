@@ -1,139 +1,16 @@
-  [apply] simp only [formalδ, formalτE, H.linearMap_apply]
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [83420/83604] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsBisAltTer (4.0s)
-✔ [83421/83605] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.TwistSplitLoc (9.6s)
-✔ [83422/83605] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.AltSumEqOfEventually (5.9s)
-✔ [83423/83607] Built GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PDoubleCechX (5.1s)
-✔ [83424/83607] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.CellResMemLocPart (15s)
-✔ [83425/83607] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsTerLast (4.8s)
-✔ [83426/83607] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.TrdegEqOfLeOfIsAlgebraic (10s)
-✔ [83427/83611] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.CechDMemLocPart (18s)
-✔ [83428/83613] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PReindexDim (8.1s)
-✔ [83429/83614] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsMoreTail (4.7s)
-✔ [83430/83614] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.InterNumRestrictSt (4.7s)
-✔ [83431/83614] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.LineBundleRestrictSt (4.8s)
-✔ [83432/83615] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsSide (5.7s)
-✔ [83433/83617] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsTerSide (4.7s)
-✔ [83434/83617] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsTer (4.7s)
-✔ [83435/83617] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ExistsHomogOfMemQuotPartBis (13s)
-✔ [83436/83617] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.XMemMIdealOverIff (10s)
-✔ [83437/83617] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.CoordIdealXgen (7.5s)
-✔ [83438/83621] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.XBaseMemMIdealOverGraph (5.1s)
-✔ [83439/83624] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsBisAltBis (5.1s)
-✔ [83440/83624] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.MemMIdealOverIff (7.6s)
-✔ [83441/83626] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PLineBundleRestrict (19s)
-✔ [83442/83634] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsBisAltMore (5.2s)
-✔ [83443/83635] Built GroundTheory.HeightsAndTheta.Heights.ThetaKeyFormula.RigSymFormTauINontrivial (7.1s)
-✔ [83444/83635] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PTwinEqCech (11s)
-✔ [83445/83636] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.DegreeOneCellEqChartUpdate (15s)
-✔ [83446/83636] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.MConeMapOverBaseRename (6.6s)
-✔ [83447/83641] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PTildeTailCone (8.2s)
-✔ [83448/83641] Built GroundTheory.HeightsAndTheta.Heights.ThetaKeyFormula.ZeroSetFinite (4.9s)
-✔ [83449/83641] Built GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PGradedCech (4.8s)
-✔ [83450/83641] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PIdealTwistFamily (13s)
-✔ [83451/83641] Built GroundTheory.HeightsAndTheta.Heights.ThetaKeyFormula.ThetaThreeFamLinearIndependent (10s)
-✔ [83452/83641] Built GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.AcyclicLeray (93s)
-✔ [83453/83641] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.LocAtRatio (6.8s)
-✔ [83454/83643] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PInterNumRestrict (5.3s)
-✔ [83455/83643] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PTildeTailLoc (8.0s)
-✔ [83456/83643] Built GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PRestrictQuotX (11s)
-✔ [83457/83644] Built GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.ResidueChartModel (6.5s)
-✔ [83458/83644] Built GroundTheory.HeightsAndTheta.Heights.ThetaKeyFormula.RigSymFormTauIIsBasisOf (5.2s)
-✔ [83459/83644] Built GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsLiftBirationalNef (4.7s)
-✔ [83460/83645] Built GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.RelativeSerre (7.1s)
-✔ [83461/83645] Built GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.ResidueChartTransport (4.7s)
-✔ [83462/83645] Built GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsNefPlusAmpleDegree (4.6s)
-✔ [83463/83645] Built GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.ResidueFiniteModel (4.9s)
-⚠ [83464/83646] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PTildeVanishCone (10s)
-warning: src/GroundTheory/HeightsAndTheta/Heights/KleimanAmpleness/PTildeVanishCone.lean:31:0: automatically included section variable(s) unused in theorem `GroundTheory.Heights₂.Heights.Kleiman.coneE_ext`:
-  [Field Ω]
-  [Algebra S Ω]
-  [Module Ω E]
-  [IsScalarTower S Ω E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Field Ω] [Algebra S Ω] [Module Ω E] [IsScalarTower S Ω E] in theorem ...
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ProperBirationalPrimeCriterion.lean:39:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/GroundTheory/HeightsAndTheta/Heights/KleimanAmpleness/PTildeVanishCone.lean:34:0: automatically included section variable(s) unused in theorem `GroundTheory.Heights₂.Heights.Kleiman.coeffE_singleE_same`:
-  [Field Ω]
-  [Algebra S Ω]
-  [Module Ω E]
-  [IsScalarTower S Ω E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Field Ω] [Algebra S Ω] [Module Ω E] [IsScalarTower S Ω E] in theorem ...
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/GroundTheory/HeightsAndTheta/Heights/KleimanAmpleness/PTildeVanishCone.lean:37:0: automatically included section variable(s) unused in theorem `GroundTheory.Heights₂.Heights.Kleiman.coeffE_singleE_ne`:
-  [Field Ω]
-  [Algebra S Ω]
-  [Module Ω E]
-  [IsScalarTower S Ω E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Field Ω] [Algebra S Ω] [Module Ω E] [IsScalarTower S Ω E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/GroundTheory/HeightsAndTheta/Heights/KleimanAmpleness/PTildeVanishCone.lean:40:0: automatically included section variable(s) unused in theorem `GroundTheory.Heights₂.Heights.Kleiman.coeffE_omega_smul`:
-  [Algebra S Ω]
-  [IsScalarTower S Ω E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Algebra S Ω] [IsScalarTower S Ω E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/GroundTheory/HeightsAndTheta/Heights/KleimanAmpleness/PTildeVanishCone.lean:45:0: automatically included section variable(s) unused in theorem `GroundTheory.Heights₂.Heights.Kleiman.mem_suppE`:
-  [Field Ω]
-  [Algebra S Ω]
-  [Module Ω E]
-  [IsScalarTower S Ω E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Field Ω] [Algebra S Ω] [Module Ω E] [IsScalarTower S Ω E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/GroundTheory/HeightsAndTheta/Heights/KleimanAmpleness/PTildeVanishCone.lean:48:0: automatically included section variable(s) unused in theorem `GroundTheory.Heights₂.Heights.Kleiman.sum_singleE`:
-  [Field Ω]
-  [Algebra S Ω]
-  [Module Ω E]
-  [IsScalarTower S Ω E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Field Ω] [Algebra S Ω] [Module Ω E] [IsScalarTower S Ω E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/GroundTheory/HeightsAndTheta/Heights/KleimanAmpleness/PTildeVanishCone.lean:69:0: automatically included section variable(s) unused in theorem `GroundTheory.Heights₂.Heights.Kleiman.coeffE_shiftE`:
-  [Algebra S Ω]
-  [IsScalarTower S Ω E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Algebra S Ω] [IsScalarTower S Ω E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/GroundTheory/HeightsAndTheta/Heights/KleimanAmpleness/PTildeVanishCone.lean:86:0: automatically included section variable(s) unused in theorem `GroundTheory.Heights₂.Heights.Kleiman.coneE_smul`:
-  [Module S E]
-  [IsScalarTower S Ω E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Module S E] [IsScalarTower S Ω E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [83465/83650] Built GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.VanishingCechResidue (4.7s)
-✔ [83466/83650] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PRestrLenRestrict (27s)
-✔ [83467/83650] Built GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsNefAmpleGeneric (4.6s)
-✔ [83468/83652] Built GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsNefFibresAmple (4.7s)
-✔ [83469/83654] Built GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PLiftBirationalNef (9.1s)
-✔ [83470/83662] Built GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PVanishingCechResidue (4.9s)
-✔ [83471/83664] Built GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsNefAmpleFibre (4.6s)
-✔ [83472/83665] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PTildeVanishLoc (8.9s)
-✔ [83473/83666] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsExtraMore (4.6s)
-✔ [83474/83667] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.SegreJoin (4.8s)
-✔ [83475/83669] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.NefGenericDVRSt (5.2s)
-✔ [83476/83669] Built GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ExistsLinearIndependentOfGenerates (6.8s)
-✔ [83477/83670] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.SegreLiftVal (5.4s)
-✔ [83478/83670] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.TwistSubEqChartSecOver (6.7s)
-✔ [83479/83671] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.BlockVecSegreJoin (4.5s)
-✔ [83480/83671] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.TwistSplitCech (79s)
-✔ [83481/83671] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsSideTail (4.0s)
-✔ [83482/83671] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsSideSide (4.6s)
-✔ [83483/83671] Built GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNefAmpleGeneric (5.4s)
-✔ [83484/83671] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PSegreBase (6.5s)
-⚠ [83485/83671] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PTildeVanish (13s)
-warning: src/GroundTheory/HeightsAndTheta/Heights/KleimanAmpleness/PTildeVanish.lean:99:4: Try this: 
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ProperBirationalPrimeCriterion.lean:40:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -141,20 +18,143 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [83486/83671] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsTailAlt (4.8s)
-✔ [83487/83671] Built GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.FinitenessStep (25s)
-✔ [83488/83671] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsTailBis (4.8s)
-✔ [83489/83671] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsTailTer (4.9s)
-✔ [83490/83675] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsTailFurther (4.6s)
-✔ [83491/83675] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsSideLast (4.8s)
-✔ [83492/83675] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsTailExtra (4.7s)
-✔ [83493/83675] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsSideRest (4.6s)
-✔ [83494/83675] Built GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNefPlusAmpleDegree (5.1s)
-✔ [83495/83675] Built Development.WeilBound.CoreStatements.HodgeTatePoints.Imports (4.8s)
-✔ [83496/83675] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PSegreFibresNef (4.9s)
-✔ [83497/83677] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.SegreLiftMapMap (7.8s)
-✔ [83498/83677] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PTwistSplit (11s)
-✔ [83499/83677] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.NefFibresSegreSt (4.8s)
-✔ [83500/83677] Built GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperFiniteness (10s)
-✔ [83501/83677] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.RelDimMIdealOverEqTrdeg (5.2s)
-✔ [83502/83683] Built GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StInterNumEventual (4.5s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ProperBirationalPrimeCriterion.lean:48:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ProperBirationalPrimeCriterion.lean:49:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ProperBirationalPrimeCriterion.lean:57:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ProperBirationalPrimeCriterion.lean:60:58: Unused tactic linter: `infer_instance` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ProperBirationalPrimeCriterion.lean:61:71: Unused tactic linter: `infer_instance` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [83785/83926] Built GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.FiniteHZeroOfExact (12s)
+⚠ [83786/83926] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProperSupportPullbackSystem (6.1s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ProperSupportPullbackSystem.lean:69:31: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [83787/83926] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubsetOfClosedFibre (5.3s)
+✔ [83788/83926] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GenHom (4.9s)
+⚠ [83789/83926] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoherentExtensionSurjectionOpen (5.5s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CoherentExtensionSurjectionOpen.lean:23:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CoherentExtensionSurjectionOpen.lean:25:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CoherentExtensionSurjectionOpen.lean:29:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [83790/83926] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedSectionsCauchyLimit (6.4s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TwistedSectionsCauchyLimit.lean:27:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TwistedSectionsCauchyLimit.lean:28:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TwistedSectionsCauchyLimit.lean:38:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TwistedSectionsCauchyLimit.lean:39:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TwistedSectionsCauchyLimit.lean:43:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [83791/83926] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubobjectLeOfAffineCover (8.2s)
+✔ [83792/83926] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedIdealPowerLeSections (6.9s)
+✔ [83793/83926] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KerOpsComm (5.8s)
+✔ [83794/83928] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KerSCShortExact (6.2s)
+✔ [83795/83928] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistSmulHomApp (6.6s)
+⚠ [83796/83928] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsChowCoverIntegralStatement (5.0s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsChowCoverIntegralStatement.lean:7:77: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsChowCoverIntegralStatement.lean:7:143: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsChowCoverIntegralStatement.lean:7:77: Unused tactic linter: `exact GlobalTheory.CompanionTheory.GE.ChowOpen.exists_chow_open` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsChowCoverIntegralStatement.lean:7:143: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.GE.ChowOpen.exists_chow_open <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [83797/83928] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProperInfIdealSheavesStatement (4.0s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ProperInfIdealSheavesStatement.lean:8:70: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ProperInfIdealSheavesStatement.lean:8:129: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ProperInfIdealSheavesStatement.lean:8:70: Unused tactic linter: `exact GlobalTheory.CompanionTheory.GE.Union.isProper_inf` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ProperInfIdealSheavesStatement.lean:8:129: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.GE.Union.isProper_inf <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
