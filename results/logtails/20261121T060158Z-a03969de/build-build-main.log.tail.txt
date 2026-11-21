@@ -1,53 +1,26 @@
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/CardLeUnramifiedTwistsCuspidalSupportJacquetStatement.lean:13:125: Unused tactic linter: `(intros; apply GlobalTheory.JacSuppCount.card_le_ncard_unrTwist <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [119334/119357] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.LeviRepParabolicCharStatement (5.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/LeviRepParabolicCharStatement.lean:14:62: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/Adm2OfPublishedInputsStatement.lean:9:46: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/LeviRepParabolicCharStatement.lean:14:113: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/Adm2OfPublishedInputsStatement.lean:9:81: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/LeviRepParabolicCharStatement.lean:14:62: Unused tactic linter: `exact GlobalTheory.EigenFactor.exists_eig_factor` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/Adm2OfPublishedInputsStatement.lean:9:46: Unused tactic linter: `exact GlobalTheory.GalClose.main` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/LeviRepParabolicCharStatement.lean:14:113: Unused tactic linter: `(intros; apply GlobalTheory.EigenFactor.exists_eig_factor <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/Adm2OfPublishedInputsStatement.lean:9:81: Unused tactic linter: `(intros; apply GlobalTheory.GalClose.main <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [119335/119357] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaPairingOfInvariantTrilinearForm (6.6s)
-⚠ [119336/119357] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.InSupportMulUnramifiedCharOfIntegralEigenvector (7.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/InSupportMulUnramifiedCharOfIntegralEigenvector.lean:23:0: automatically included section variable(s) unused in theorem `GlobalTheory.SphSupport.gl_one_comm`:
-  [ValuativeRel k]
-  [TopologicalSpace k]
-  [IsNonarchimedeanLocalField k]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/InSupportMulUnramifiedCharOfIntegralEigenvector.lean:32:0: automatically included section variable(s) unused in theorem `GlobalTheory.SphSupport.scalar_det_fin_one`:
-  [ValuativeRel k]
-  [TopologicalSpace k]
-  [IsNonarchimedeanLocalField k]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/InSupportMulUnramifiedCharOfIntegralEigenvector.lean:37:42: This simp argument is unused:
-  Matrix.det_fin_one
+⚠ [119663/119691] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaloisHodgeOfCuspidal (25s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GaloisHodgeOfCuspidal.lean:93:75: This simp argument is unused:
+  Matrix.one_apply
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.GeneralLinearGroup.scalar]
+  [apply] simp [GeneralLinearGroup.scalar, Matrix.diagonal, h]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/InSupportMulUnramifiedCharOfIntegralEigenvector.lean:39:0: automatically included section variable(s) unused in theorem `GlobalTheory.SphSupport.det_scalar_fin_one`:
-  [ValuativeRel k]
-  [TopologicalSpace k]
-  [IsNonarchimedeanLocalField k]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/InSupportMulUnramifiedCharOfIntegralEigenvector.lean:101:4: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GaloisHodgeOfCuspidal.lean:184:6: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -55,106 +28,133 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/InSupportMulUnramifiedCharOfIntegralEigenvector.lean:122:27: This simp argument is unused:
-  det_scalar_fin_one
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GaloisHodgeOfCuspidal.lean:165:0: automatically included section variable(s) unused in theorem `GlobalTheory.HodgeOfTrue.conj_of_frob`:
+  [NumberField E]
+  [IsCMField E]
+  [IsAlgClosure E Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] [IsCMField E] [IsAlgClosure E Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GaloisHodgeOfCuspidal.lean:188:0: automatically included section variable(s) unused in theorem `GlobalTheory.HodgeOfTrue.potCrys_twistBy`:
+  [NumberField E]
+  [IsCMField E]
+  [IsAlgClosure E Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] [IsCMField E] [IsAlgClosure E Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GaloisHodgeOfCuspidal.lean:266:29: This simp argument is unused:
+  Matrix.det_fin_one
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [g, hu]
+  [apply] simp [Matrix.charpoly, Matrix.charmatrix_apply]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/InSupportMulUnramifiedCharOfIntegralEigenvector.lean:126:17: This simp argument is unused:
-  det_scalar_fin_one
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GaloisHodgeOfCuspidal.lean:266:49: This simp argument is unused:
+  Matrix.charmatrix_apply
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [g]
+  [apply] simp [Matrix.charpoly, Matrix.det_fin_one]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [119337/119359] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.CharInCuspidalSupportOfJacquetSubquotientFactor (17s)
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/CharInCuspidalSupportOfJacquetSubquotientFactor.lean:54:32: Variable name `hφ` is not explicitly referenced.
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GaloisHodgeOfCuspidal.lean:370:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GaloisHodgeOfCuspidal.lean:419:31: `MonoidHom.finset_prod_apply` has been deprecated: Use `MonoidHom.finsetProd_apply` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GaloisHodgeOfCuspidal.lean:428:31: `MonoidHom.finset_prod_apply` has been deprecated: Use `MonoidHom.finsetProd_apply` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GaloisHodgeOfCuspidal.lean:545:33: `MonoidHom.finset_prod_apply` has been deprecated: Use `MonoidHom.finsetProd_apply` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GaloisHodgeOfCuspidal.lean:548:33: `MonoidHom.finset_prod_apply` has been deprecated: Use `MonoidHom.finsetProd_apply` instead
+⚠ [119664/119691] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFrobFixOfEisensteinStatement (5.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsFrobFixOfEisensteinStatement.lean:14:72: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsFrobFixOfEisensteinStatement.lean:14:133: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsFrobFixOfEisensteinStatement.lean:14:72: Unused tactic linter: `exact GlobalTheory.TameRecip.exists_frob_fix_of_eisenstein` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsFrobFixOfEisensteinStatement.lean:14:133: Unused tactic linter: `(intros; apply GlobalTheory.TameRecip.exists_frob_fix_of_eisenstein <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [119665/119691] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistTripleEigenvectorInGoodPartStatement (5.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TwistTripleEigenvectorInGoodPartStatement.lean:10:404: Variable name `Bs` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hφ
+  [apply] _Bs
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/CharInCuspidalSupportOfJacquetSubquotientFactor.lean:194:12: This simp argument is unused:
-  Pi.mulSingle_eq_of_ne hb
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [diagonal_apply, hb, one_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/CharInCuspidalSupportOfJacquetSubquotientFactor.lean:384:49: This simp argument is unused:
-  hlt
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [hE, ht j hj]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/CharInCuspidalSupportOfJacquetSubquotientFactor.lean:404:16: This simp argument is unused:
-  Pi.mulSingle_eq_of_ne hj
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [diagonal_apply, hE, heq, hj, one_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [119338/119359] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaTrilinearFormLocalGroupInvariant (7.7s)
-⚠ [119339/119359] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.NonemptyJoinOfAgreementStatement (6.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/NonemptyJoinOfAgreementStatement.lean:11:48: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TwistTripleEigenvectorInGoodPartStatement.lean:11:57: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/NonemptyJoinOfAgreementStatement.lean:11:85: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TwistTripleEigenvectorInGoodPartStatement.lean:11:103: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/NonemptyJoinOfAgreementStatement.lean:11:48: Unused tactic linter: `exact GlobalTheory.JoinExists.main` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TwistTripleEigenvectorInGoodPartStatement.lean:11:57: Unused tactic linter: `exact GlobalTheory.TwInputs.goodE_of_eigOcc` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/NonemptyJoinOfAgreementStatement.lean:11:85: Unused tactic linter: `(intros; apply GlobalTheory.JoinExists.main <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TwistTripleEigenvectorInGoodPartStatement.lean:11:103: Unused tactic linter: `(intros; apply GlobalTheory.TwInputs.goodE_of_eigOcc <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [119340/119361] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.RowsAOfJumpCountStatement (5.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/RowsAOfJumpCountStatement.lean:8:145: Variable name `P` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _P
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/RowsAOfJumpCountStatement.lean:9:48: this tactic is never executed
+✔ [119666/119692] Built Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CharpolyEqOfIsRowPar (6.3s)
+✔ [119667/119694] Built Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.ReadingAllLemmas (5.0s)
+✔ [119668/119696] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsTripleForOfOff (5.4s)
+✔ [119669/119698] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.FullConclusionOfInputs (21s)
+⚠ [119670/119698] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaloisHodgeOfCuspidalStatement (5.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GaloisHodgeOfCuspidalStatement.lean:14:74: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/RowsAOfJumpCountStatement.lean:9:85: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GaloisHodgeOfCuspidalStatement.lean:14:137: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/RowsAOfJumpCountStatement.lean:9:48: Unused tactic linter: `exact GlobalTheory.RowsAClose.main` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GaloisHodgeOfCuspidalStatement.lean:14:74: Unused tactic linter: `exact GlobalTheory.HodgeOfTrue.galHodge_galoisReps_of_cgTrue` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/RowsAOfJumpCountStatement.lean:9:85: Unused tactic linter: `(intros; apply GlobalTheory.RowsAClose.main <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GaloisHodgeOfCuspidalStatement.lean:14:137: Unused tactic linter: `(intros;
+  apply GlobalTheory.HodgeOfTrue.galHodge_galoisReps_of_cgTrue <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [119341/119364] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ParahoricBlockTypeVectorCuspidalSupportTameChara (5.7s)
-⚠ [119342/119364] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaPairingOfInvariantTrilinearFormStatement (5.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ThetaPairingOfInvariantTrilinearFormStatement.lean:11:71: this tactic is never executed
+✔ [119671/119700] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UupEqOneOfLeOne (5.8s)
+⚠ [119672/119700] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIneOfUnit (7.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsIneOfUnit.lean:56:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ThetaPairingOfInvariantTrilinearFormStatement.lean:11:131: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ThetaPairingOfInvariantTrilinearFormStatement.lean:11:71: Unused tactic linter: `exact GlobalTheory.ThetaRiesz.thetaPair_of_invariant_form` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [119673/119700] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonoidAlgebraExistsRightInvOfMapField (5.7s)
+⚠ [119674/119704] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSubfieldAdjoinRootsOfUnityEmbeddingComplex (6.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsSubfieldAdjoinRootsOfUnityEmbeddingComplex.lean:9:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ThetaPairingOfInvariantTrilinearFormStatement.lean:11:131: Unused tactic linter: `(intros; apply GlobalTheory.ThetaRiesz.thetaPair_of_invariant_form <;> assumption)` does nothing
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [119343/119365] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.InSupportMulUnramifiedCharOfIntegralEigenvectorStatement (5.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/InSupportMulUnramifiedCharOfIntegralEigenvectorStatement.lean:14:77: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsSubfieldAdjoinRootsOfUnityEmbeddingComplex.lean:10:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/InSupportMulUnramifiedCharOfIntegralEigenvectorStatement.lean:14:143: this tactic is never executed
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/InSupportMulUnramifiedCharOfIntegralEigenvectorStatement.lean:14:77: Unused tactic linter: `exact GlobalTheory.SphSupport.inSupport_mul_unrChar_of_KO_eigen` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsSubfieldAdjoinRootsOfUnityEmbeddingComplex.lean:15:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/InSupportMulUnramifiedCharOfIntegralEigenvectorStatement.lean:14:143: Unused tactic linter: `(intros;
-  apply GlobalTheory.SphSupport.inSupport_mul_unrChar_of_KO_eigen <;> assumption)` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [119675/119704] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StableSubmoduleMeetsCharacterTypeVectors (6.5s)
+✔ [119676/119704] Built Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TypePreservedOfAdmissibleIntegral (9.9s)
