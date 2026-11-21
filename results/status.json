@@ -10,16 +10,16 @@
   "verification_runtime": "loader-patched",
   "resumed_from_run_id": "20261120T184814Z-ebb611be",
   "resume_mode": "incremental",
-  "updated_utc": "2026-11-21T06:01:58+00:00",
+  "updated_utc": "2026-11-21T06:02:11+00:00",
   "resources": {
-    "sampled_utc": "2026-11-21T06:01:58+00:00",
-    "cgroup_memory_current_bytes": 38579159040,
+    "sampled_utc": "2026-11-21T06:02:11+00:00",
+    "cgroup_memory_current_bytes": 40407420928,
     "cgroup_memory_peak_since_creation_bytes": 64424509440,
     "cgroup_memory_stat_bytes": {
-      "total_rss": 298954752,
-      "total_cache": 37582086144,
-      "total_mapped_file": 10272768,
-      "total_inactive_file": 7461027840
+      "total_rss": 323321856,
+      "total_cache": 39379009536,
+      "total_mapped_file": 35278848,
+      "total_inactive_file": 9167929344
     },
     "cgroup_memory_failcnt": 0,
     "cgroup_memory_oom_control": {
@@ -27,12 +27,12 @@
       "under_oom": 0,
       "oom_kill": 0
     },
-    "cgroup_cpu_usage_seconds": 643223.317567856,
-    "sampled_memory_peak_this_runner_bytes": 38579159040,
-    "cgroup_cpu_seconds_since_runner_start": 0.012557312031276524,
-    "disk_free_bytes": 468310716416,
+    "cgroup_cpu_usage_seconds": 643237.496242752,
+    "sampled_memory_peak_this_runner_bytes": 40407420928,
+    "cgroup_cpu_seconds_since_runner_start": 14.191232207929716,
+    "disk_free_bytes": 468310487040,
     "disk_total_bytes": 536870912000,
-    "disk_free_inodes": 729384437
+    "disk_free_inodes": 729384370
   },
   "phases": {
     "source-prefetch": {
@@ -92,8 +92,25 @@
       }
     },
     "bootstrap": {
-      "status": "not_started",
-      "stages": {}
+      "run_directory_name": "20261121T060158Z-475652",
+      "status": "running:source-fetch",
+      "stages": {
+        "preflight": {
+          "exit_code": 0,
+          "start_utc": "2026-11-21T06:01:58Z",
+          "end_utc": "2026-11-21T06:01:58Z"
+        },
+        "toolchain-download": {
+          "exit_code": 0,
+          "start_utc": "2026-11-21T06:01:58Z",
+          "end_utc": "2026-11-21T06:02:00Z"
+        },
+        "toolchain-install": {
+          "exit_code": 0,
+          "start_utc": "2026-11-21T06:02:00Z",
+          "end_utc": "2026-11-21T06:02:11Z"
+        }
+      }
     },
     "build": {
       "status": "not_started",
