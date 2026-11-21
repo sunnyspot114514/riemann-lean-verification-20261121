@@ -1,160 +1,160 @@
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UnitEqNormCompletionTensorOfIsInertAt.lean:168:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UnitEqNormCompletionTensorOfIsInertAt.lean:243:49: This simp argument is unused:
-  map_ofNat
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [62983/63157] Built Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.AbsoluteConvergence.DifferentiableSecondCayleyBlockDilation (7.5s)
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AbsoluteConvergence/DifferentiableSecondCayleyBlockDilation.lean:129:4: This simp argument is unused:
+  Matrix.one_mul
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [map_sub, map_add, map_mul, map_pow] at hQm
+  [apply] simp only [Matrix.mul_zero, Matrix.zero_mul, add_zero, zero_add, Matrix.mul_one, Matrix.mul_neg,
+    Matrix.neg_mul, h.1, h.2, neg_zero]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [62478/62669] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MaxEvenLatticeRankOneSplit (7.0s)
-⚠ [62479/62669] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeStabilizerCompact (12s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LatticeStabilizerCompact.lean:213:39: try 'simp' instead of 'simpa'
-
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LatticeStabilizerCompact.lean:221:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LatticeStabilizerCompact.lean:222:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LatticeStabilizerCompact.lean:223:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LatticeStabilizerCompact.lean:225:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [62480/62669] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitOrderFgIdealProduct (6.7s)
-⚠ [62481/62669] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeMaxEvenAlmostAll (12s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LatticeMaxEvenAlmostAll.lean:45:10: This simp argument is unused:
-  Pi.single_apply
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AbsoluteConvergence/DifferentiableSecondCayleyBlockDilation.lean:170:40: `DifferentiableAt.fun_finset_prod` has been deprecated: Use `DifferentiableAt.fun_finsetProd` instead
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AbsoluteConvergence/DifferentiableSecondCayleyBlockDilation.lean:210:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [62984/63157] Built Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.AnalyticDeterminants.TopComp (7.3s)
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AnalyticDeterminants/TopComp.lean:83:41: This simp argument is unused:
+  blkB
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [hj]
+  [apply] simp [matrixBlockRestriction, bdiag, ha, hb]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [62482/62669] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianSplitRankOne (8.0s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/HermitianSplitRankOne.lean:45:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-✔ [62483/62669] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianValuationSplitCriterion (7.3s)
-✔ [62484/62669] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.CocompactOfMemIffAdelic (26s)
-⚠ [62485/62669] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TensorFixedByInvolutionIsBase (6.7s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TensorFixedByInvolutionIsBase.lean:18:2: Try this: 
-  haveI̵
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AnalyticDeterminants/TopComp.lean:111:32: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AnalyticDeterminants/TopComp.lean:111:64: `ContinuousLinearMap.neg_apply` has been deprecated: Use `_root_.neg_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.neg_apply` to `_root_.neg_apply x`).
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AnalyticDeterminants/TopComp.lean:123:13: `ContinuousLinearMap.zero_apply` has been deprecated: Use `_root_.zero_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.zero_apply` to `_root_.zero_apply x`).
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AnalyticDeterminants/TopComp.lean:133:13: `ContinuousLinearMap.zero_apply` has been deprecated: Use `_root_.zero_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.zero_apply` to `_root_.zero_apply x`).
+✔ [62985/63157] Built Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.AbsoluteConvergence.TopSing (6.4s)
+✔ [62986/63157] Built Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.AbsoluteConvergence.SecDerMSt (5.1s)
+✔ [62987/63157] Built Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.AnalyticDeterminants.FderivDeterminantPowerColumnSum (6.0s)
+⚠ [62988/63161] Built Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.AbsoluteConvergence.HolomorphicSectionExtensionExists (6.5s)
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AbsoluteConvergence/HolomorphicSectionExtensionExists.lean:39:14: This simp argument is unused:
+  diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Ac, hab]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AbsoluteConvergence/HolomorphicSectionExtensionExists.lean:39:39: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AbsoluteConvergence/HolomorphicSectionExtensionExists.lean:39:39: Unused tactic linter: `fun_prop` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [62989/63161] Built Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.AnalyticDeterminants.IteratedFDerivMulConstOf (8.4s)
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AnalyticDeterminants/IteratedFDerivMulConstOf.lean:28:29: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [62990/63161] Built GroundTheory.AutomorphicForms.AutomorphicFormSpaces.Uniform (7.5s)
+warning: src/GroundTheory/AutomorphicForms/AutomorphicFormSpaces/Uniform.lean:205:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [62486/62669] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsMaxEvenAdaptedLattice (9.1s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsMaxEvenAdaptedLattice.lean:92:2: Try this: 
-  haveI̵
+⚠ [62991/63161] Built Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.AbsoluteConvergence.WeightFactorDilation (6.9s)
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AbsoluteConvergence/WeightFactorDilation.lean:36:26: This simp argument is unused:
+  Matrix.conjTranspose_mul
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: Omit it from the simp argument list.
+  [apply] simp only [InG, JJ, nU, fromBlocks_conjTranspose, fromBlocks_multiply, hb']
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsMaxEvenAdaptedLattice.lean:131:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AbsoluteConvergence/WeightFactorDilation.lean:36:99: This simp argument is unused:
+  hb'
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: Omit it from the simp argument list.
+  [apply] simp only [InG, JJ, nU, Matrix.conjTranspose_mul, fromBlocks_conjTranspose, fromBlocks_multiply]
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsMaxEvenAdaptedLattice.lean:139:18: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsMaxEvenAdaptedLattice.lean:149:20: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-⚠ [62487/62669] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FockSplittingMaximalCompactStatement (7.1s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FockSplittingMaximalCompactStatement.lean:16:66: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AbsoluteConvergence/WeightFactorDilation.lean:95:43: This simp argument is unused:
+  ← Complex.ofReal_mul
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FockSplittingMaximalCompactStatement.lean:16:121: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp [diagonal_mul_diagonal, ← Real.exp_add, Matrix.mul_assoc, ← Complex.exp_add]
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FockSplittingMaximalCompactStatement.lean:16:66: Unused tactic linter: `exact GlobalTheory.CompanionTheory.PfSWUS.fockSplitK` does nothing
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FockSplittingMaximalCompactStatement.lean:16:121: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.PfSWUS.fockSplitK <;> assumption)` does nothing
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AbsoluteConvergence/WeightFactorDilation.lean:95:65: This simp argument is unused:
+  ← Real.exp_add
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [62488/62669] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviMatrixOneStatement (5.7s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LeviMatrixOneStatement.lean:9:73: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp [diagonal_mul_diagonal, ← Complex.ofReal_mul, Matrix.mul_assoc, ← Complex.exp_add]
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LeviMatrixOneStatement.lean:9:135: this tactic is never executed
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LeviMatrixOneStatement.lean:9:73: Unused tactic linter: `exact GlobalTheory.CompanionTheory.KFin.LeviOne.leviMat_one` does nothing
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AbsoluteConvergence/WeightFactorDilation.lean:97:33: This simp argument is unused:
+  Matrix.diagonal_apply
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LeviMatrixOneStatement.lean:9:135: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.KFin.LeviOne.leviMat_one <;> assumption)` does nothing
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.one_apply, hij]
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [62489/62669] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilSchrodingerRealParameter (7.0s)
-⚠ [62490/62669] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviMatrixMapBaseChangeStatement (5.7s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LeviMatrixMapBaseChangeStatement.lean:9:65: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AbsoluteConvergence/WeightFactorDilation.lean:97:56: This simp argument is unused:
+  Matrix.one_apply
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LeviMatrixMapBaseChangeStatement.lean:9:119: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.diagonal_apply, hij]
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LeviMatrixMapBaseChangeStatement.lean:9:65: Unused tactic linter: `exact GlobalTheory.CompanionTheory.KFin.leviMat_map` does nothing
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AbsoluteConvergence/WeightFactorDilation.lean:119:55: This simp argument is unused:
+  Finset.sum_add_distrib
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LeviMatrixMapBaseChangeStatement.lean:9:119: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.KFin.leviMat_map <;> assumption)` does nothing
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Finset.sum_neg_distrib, ← Finset.mul_sum]
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [62491/62669] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryInvTransposeOfScaledInverseGram (8.2s)
-✔ [62492/62671] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSiegelParabolicConjInvTranspose (10s)
-⚠ [62493/62671] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BlockTriangularMemMinimalParabolicLocalStatement (5.9s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/BlockTriangularMemMinimalParabolicLocalStatement.lean:8:224: Variable name `Y` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [62992/63161] Built Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.GlobalGaussLaws.DenseTau (6.0s)
+⚠ [62993/63162] Built Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.AbsoluteConvergence.DenseCell (7.5s)
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AbsoluteConvergence/DenseCell.lean:113:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AbsoluteConvergence/DenseCell.lean:123:8: `Set.Finite.diff` has been deprecated: Use `Set.Finite.sdiff` instead
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AbsoluteConvergence/DenseCell.lean:130:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AbsoluteConvergence/DenseCell.lean:130:13: This simp argument is unused:
+  Set.mem_setOf_eq
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _Y
+Hint: Omit it from the simp argument list.
+  [apply] simp only [nbG_low]
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/BlockTriangularMemMinimalParabolicLocalStatement.lean:9:68: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [62994/63162] Built Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.AbsoluteConvergence.SphericalCharacterInvCompact (6.6s)
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AbsoluteConvergence/SphericalCharacterInvCompact.lean:79:14: This simp argument is unused:
+  det_fromBlocks_zero₂₁
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/BlockTriangularMemMinimalParabolicLocalStatement.lean:9:125: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp [nU]
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/BlockTriangularMemMinimalParabolicLocalStatement.lean:9:68: Unused tactic linter: `exact GlobalTheory.CompanionTheory.KFin.emb_mem_minPar` does nothing
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/HolomorphicContinuation/AbsoluteConvergence/SphericalCharacterInvCompact.lean:91:81: This simp argument is unused:
+  mul_one
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/BlockTriangularMemMinimalParabolicLocalStatement.lean:9:125: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.KFin.emb_mem_minPar <;> assumption)` does nothing
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.cpow_zero, one_mul, F0, hmul, mR_mkG, nbEl, det_mul, hdetN, mul_zpow, mul_assoc,
+    integral_const_mul]
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [62995/63163] Built Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.AbsoluteConvergence.SecZero (5.6s)
+⚠ [62996/63163] Built GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.AdicFrames.IsHermitianForExH (10s)
+warning: src/GroundTheory/HeightsAndTheta/Theta/EisensteinZeta/AdicFrames/IsHermitianForExH.lean:322:15: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [exH, Matrix.transpose_apply, Matrix.map_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/GroundTheory/HeightsAndTheta/Theta/EisensteinZeta/AdicFrames/IsHermitianForExH.lean:322:62: This simp argument is unused:
+  Matrix.map_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [exH, Matrix.diagonal_apply, Matrix.transpose_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
