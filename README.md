@@ -7,7 +7,7 @@ This repository records a compilation and kernel-checking attempt. The latest ma
 - Published mirror: https://github.com/CocoSgt/riemann-hypothesis-lean
 - Exact source commit: `7cbf7a0c32fca1badf05931879a37c3f8a2b03b4`
 - Exact `src` tree: `b41b516b1f7baee4d83ced235ecc71fd43c97695`
-- Official Lean: `leanprover/lean4:v4.33.1`
+- Base compiler release: `leanprover/lean4:v4.33.1` (the original release is retained; a separately identified loader repair is available below)
 - Linux release archive SHA-256: `890afd185370f85666025b883914ab4f4b339136f8c96167b69cfb62aecaf235`
 - Official Mathlib revision: `0df444a360eaa60ab8c11dca51a86af692955474`
 - Author announcement: https://alpo.ge/remark.pdf
@@ -30,9 +30,21 @@ The runner records these separate stages:
 4. `leanchecker --fresh -v Main`, which replays the entire import closure in a fresh environment. **This uses the same Lean kernel, not an independent implementation.**
 5. Final unchanged-source checks.
 
-The current run launches with `LEAN_NUM_THREADS=16`; the build driver's fallback remains `2` when no launch setting is supplied. Earlier runs used 2 and 4. During the initial four-worker build, overall cgroup usage stayed near 18.6 GB, with about 15.3 GB of file cache and 2.24 GB of anonymous RSS. These observations supported increasing parallelism; they do not guarantee sufficient memory for later, larger import closures. Interrupted tuning runs and their evidence are retained. The actual launch setting is recorded in the environment evidence. An audit-side TOML copy adds only `weakLeanArgs = ["-j1"]` to limit each compiler's worker setting; the published project configuration and official Lean binaries are unchanged. This is not an aggregate memory guarantee. Resource samples use cgroup limits and counters, with their scope and sampling limitations recorded.
+The original run used 16 Lake scheduler workers with `-j1` for each compiler. Continuations select the scheduler count explicitly with `--lean-num-threads`, and record the actual setting in the environment evidence. An audit-side TOML copy adds only `weakLeanArgs = ["-j1"]`; the published proof configuration and source stay unchanged. Resource samples use the container's cgroup limits and counters.
 
-The platform reports `vm.max_map_count=65530` and denied an attempt to raise it. The runner only records this limit and the process's soft/hard open-file limits; it changes no global setting. A large import closure may encounter mapping limits or additional RAM costs, which must be distinguished from a proof error. Any later scheduler tuning must be based on observed build load and recorded separately.
+## Loader repair for the platform's mapping limit
+
+The original run encountered `vm.max_map_count=65530`. A recorded ShapeWin reproduction reached approximately 65,532 mappings and showed file/anonymous `mmap` returning `ENOMEM`, followed by a null-buffer `read` returning `EFAULT`. The platform could not raise the host limit. See the [original diagnosis](results/diagnostics/20261121-map-limit/README.md).
+
+The [reviewable loader patch](patches/lean-4.33.1-bounded-mmap-arena.patch) leaves the mathematical source, artifact format, header/version checks and region relocation logic unchanged. It limits direct file-mapping attempts and provides an opt-in disk-backed pool for ordinary v2 artifact copies. The temporary files are private, immediately unlinked, preallocated, and shared-mapped in 256 MiB segments; the last region releases its segment. v3 incremental snapshots retain their heap fallback. This backend targets standalone compiler and spawn/exec use, not arbitrary fork/COW behavior. [Implementation and scope](patches/ARENA-NOTES.md)
+
+The modified runtime is a separately installed **release relink**, not the official binary and not a full compiler bootstrap. It reuses the official Lean/Init/Std objects and verifies that every kernel archive object is byte-for-byte unchanged. Only the loader object, the upstream shell object and the runtime members needed for the shared-library TLS model are rebuilt. Both original and modified binary hashes, source identities, exact commands and the patch digest are recorded in `loader-build-manifest.json`. The original release is never replaced.
+
+[Regression tooling](scripts/test_lean_loader.py) compares the official and modified runtimes, checks acceptance/rejection and direct kernel rejection, tests imported artifact compatibility and bad headers, forces real arena use, observes region freeing, and replays the previously failing module without writing into the active project build. Build attempts and regression evidence are archived under [results/loader-fix](results/loader-fix). A passed loader regression does not imply that the full RH verification has passed.
+
+On 2026-11-21 the arena runtime passed all **29 loader regression cases**, including direct kernel rejection, invalid artifact rejection, forced arena use, cross-segment freeing, and ShapeWin under budgets 0 and 50,000. A separate 60,000-budget ShapeWin replay also passed, with 60,087 sampled VMAs and about 590 MiB of anonymous RSS; file-backed resident pages still consume reclaimable cache. An artifact compiled through the patched forced-arena path was successfully imported by the original official compiler. These observations inform the initial continuation settings; they are not a full-project memory guarantee. The complete measured test report is archived under `results/loader-fix`, with additional [budget tuning](results/diagnostics/20261121-map-limit/shape-win-patched-v2-budget60000.json) and [reverse compatibility](results/diagnostics/20261121-map-limit/roundtrip-patched-to-official.json) records.
+
+The runner still bootstraps and checks the original official release first. For a patched continuation, it then explicitly selects the separate runtime and records `verification_runtime="loader-patched"`, its arena directory and mmap budget. It preserves the previous run's terminal snapshots and the incremental build cache. The four final verification gates are unchanged. Increasing disk or RAM alone does not alter the host's mapping limit; this repair changes how artifact buffers are allocated.
 
 Completed `.setup.json` intermediates are deleted only after a newer successful Lake trace and nonempty `.olean` exist. Source and proof artifacts are retained. This controls disk usage in a project where large repeated import metadata would otherwise dominate storage.
 
@@ -51,9 +63,21 @@ The runner starts each computation phase before its initial publication, so uplo
 Install the prerequisites listed in the bootstrap script, configure a writable clone of this repository at `BASE/verification`, and provide a functioning network route. The included runner expects its loopback HTTPS proxy at `127.0.0.1:20080`; adapt that network setting for another environment.
 
 ```bash
-LEAN_NUM_THREADS=16 python3 /root/autodl-tmp/rh-check/verification/scripts/run_all.py \
-  --base /root/autodl-tmp/rh-check
+python3 /root/autodl-tmp/rh-check/verification/scripts/run_all.py \
+  --base /root/autodl-tmp/rh-check --lean-num-threads 16
 ```
+
+For a loader-patched run, build the separate runtime with [scripts/build_lean_loader.py](scripts/build_lean_loader.py), run the loader regressions, and select it explicitly:
+
+```bash
+python3 /root/autodl-tmp/rh-check/verification/scripts/run_all.py \
+  --base /root/autodl-tmp/rh-check \
+  --toolchain-dir /root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2 \
+  --olean-arena-dir /root/autodl-tmp/rh-check/tmp/olean-arena \
+  --mmap-regions 60000 --lean-num-threads 8
+```
+
+When resuming an existing terminal run, additionally pass its ID with `--resumed-from-run-id`; do not run two Lake builds against the same output directory.
 
 The detached session uses `BASE/control/tmux.sock`. Server status and complete logs remain in `BASE/audit`, even if publishing is interrupted. The Windows relay accepts SSH configuration through standard input and does not write credentials or downloaded artifacts to disk.
 

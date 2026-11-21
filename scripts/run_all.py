@@ -15,6 +15,7 @@ import json
 import os
 from pathlib import Path
 import platform
+import re
 import resource
 import shlex
 import shutil
@@ -34,7 +35,8 @@ EVIDENCE_PATTERNS = (
     "release.sha256", "source-commit.txt", "lean-version.txt", "lake-version.txt",
     "final-source-status.txt", "build-config-sha256.txt", "lakefile-resource.toml",
     "resource-controls.txt", "Check.lean", "*.command.sh", "cgroup-start.txt", "cgroup-end.txt",
-    "result.json",
+    "result.json", "resume.json", "toolchain-provenance.json", "toolchain-binaries.sha256",
+    "loader-build-manifest.json", "loader-patch.diff",
 )
 FINAL_PATTERNS = (
     "source-index*.txt", "*.time.txt", "*.exit-code.txt", "final-*.diff",
@@ -285,8 +287,11 @@ class Runner:
         self.status = {"run_id": self.run_id, "source_commit_requested": PIN,
                        "started_utc": utc(), "state": "starting", "runner_stage": None,
                        "bootstrap_exit_code": None, "driver_exit_code": None,
-                       "verification_passed": False}
-        self.environment = {"recorded_utc": utc(), "system": platform.system(),
+                       "verification_passed": False,
+                       "verification_runtime": "loader-patched" if args.toolchain_dir else "official",
+                       "resumed_from_run_id": args.resumed_from_run_id,
+                       "resume_mode": "incremental" if args.resumed_from_run_id else None}
+        self.environment = {"run_id": self.run_id, "recorded_utc": utc(), "system": platform.system(),
                             "kernel_release": platform.release(), "machine": platform.machine(),
                             "python_version": platform.python_version(), "limits": self.resources.limits(),
                             "git_version": git_version(), "git_executable": shutil.which("git"),
@@ -295,6 +300,14 @@ class Runner:
                             "resource_scope": "Cgroup counters include every process in the same cgroup. Sampled peak can miss brief spikes; kernel peak is since cgroup creation. GNU time maximum RSS is not aggregate cgroup memory.",
                             "sampling_seconds": args.sample_seconds, "publication_seconds": args.publish_seconds,
                             "runner_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
+        self.environment["bootstrap_toolchain"] = {
+            "kind": "official", "path": str(self.base / "tools/lean-4.33.1-linux")}
+        self.environment["verification_toolchain_requested"] = {
+            "kind": self.status["verification_runtime"],
+            "path": str(args.toolchain_dir or self.base / "tools/lean-4.33.1-linux"),
+            "olean_arena_dir": str(args.olean_arena_dir) if args.olean_arena_dir else None,
+            "mmap_regions": args.mmap_regions if args.toolchain_dir else None}
+        self.previous_snapshot_files = []
         self.last_push = 0.0
         self.last_attempt = 0.0
         self.last_fingerprint = None
@@ -321,8 +334,16 @@ class Runner:
                 value = read(dirs["build"] / filename)
                 if value:
                     self.environment[key] = value
+            provenance_path = dirs["build"] / "toolchain-provenance.json"
+            if provenance_path.is_file():
+                provenance = json.loads(provenance_path.read_text())
+                self.environment["verification_toolchain"] = provenance
+                self.status["verification_runtime"] = provenance["kind"]
+                self.status["toolchain_provenance_sha256"] = hashlib.sha256(provenance_path.read_bytes()).hexdigest()
         write_json(self.audit / "status.json", self.status)
         write_json(self.audit / "environment.json", self.environment)
+        write_json(self.run / "status.json", self.status)
+        write_json(self.run / "environment.json", self.environment)
         with (self.run / "resources.jsonl").open("a") as out:
             out.write(json.dumps(self.status["resources"]) + "\n")
 
@@ -376,8 +397,9 @@ class Runner:
             return self.final_archives
         target = self.result / "final" / self.run_id
         target.mkdir(parents=True, exist_ok=True)
-        sources = self.log_sources() + [("runner", self.run / "resources.jsonl")]
-        for group, path in self.phase_dirs().items():
+        sources = self.log_sources() + [("runner", self.run / name) for name in
+                                      ("resources.jsonl", "status.json", "environment.json")]
+        for group, path in {"runner": self.run, **self.phase_dirs()}.items():
             if path:
                 # Only final publication includes the (large) full source index.
                 for pattern in FINAL_PATTERNS:
@@ -414,7 +436,7 @@ class Runner:
         self.last_attempt = time.monotonic()
         try:
             self.result.mkdir(parents=True, exist_ok=True)
-            files = []
+            files = list(self.previous_snapshot_files)
             for name, data in (("status.json", self.status), ("environment.json", self.environment)):
                 path = self.result / name
                 write_json(path, data)
@@ -427,7 +449,7 @@ class Runner:
                 files.append(dest)
             evidence = self.result / "evidence" / self.run_id
             evidence.mkdir(parents=True, exist_ok=True)
-            for group, directory in self.phase_dirs().items():
+            for group, directory in {"runner": self.run, **self.phase_dirs()}.items():
                 if not directory:
                     continue
                 for pattern in EVIDENCE_PATTERNS:
@@ -508,6 +530,52 @@ class Runner:
         # completion, without blocking the next computation on an extra upload.
         return result
 
+    def preserve_previous_run(self):
+        """Freeze the prior terminal records before replacing the latest pointers."""
+        previous_id = self.args.resumed_from_run_id
+        if not previous_id:
+            return
+        previous = self.audit / "runner-runs" / previous_id
+        if not previous.is_dir() or previous.is_symlink():
+            raise RuntimeError("Requested previous runner directory does not exist.")
+        status_path = previous / "status.json"
+        if not status_path.is_file():
+            status_path = self.audit / "status.json"
+        status = json.loads(status_path.read_text())
+        if status.get("run_id") != previous_id or status.get("state") not in {
+                "completed", "failed", "interrupted", "runner_error"}:
+            raise RuntimeError("Previous run must finish normally and record a terminal state before resuming.")
+        environment_path = previous / "environment.json"
+        if not environment_path.is_file():
+            # Older runners kept these records only at the latest audit paths.
+            latest = json.loads((self.audit / "status.json").read_text())
+            if latest.get("run_id") != previous_id:
+                raise RuntimeError("Cannot associate the latest environment with the requested previous run.")
+            environment_path = self.audit / "environment.json"
+        environment = json.loads(environment_path.read_text())
+        if environment.get("run_id", previous_id) != previous_id:
+            raise RuntimeError("Previous environment belongs to a different run.")
+        write_json(previous / "status.json", status)
+        write_json(previous / "environment.json", environment)
+        archived = self.result / "final" / previous_id
+        archived.mkdir(parents=True, exist_ok=True)
+        snapshots = []
+        for name in ("status.json", "environment.json"):
+            src = previous / name
+            dest = archived / ("runner-" + name)
+            data = src.read_bytes()
+            if dest.exists() and dest.read_bytes() != data:
+                raise RuntimeError("Refusing to overwrite a different archived previous-run snapshot.")
+            dest.write_bytes(data)
+            self.previous_snapshot_files.append(dest)
+            snapshots.append({"filename": dest.name, "sha256": hashlib.sha256(data).hexdigest()})
+        write_json(self.run / "resume.json", {
+            "resumed_from_run_id": previous_id, "previous_state": status["state"],
+            "previous_verification_passed": status.get("verification_passed", False),
+            "source_commit_requested": PIN, "resume_mode": "incremental",
+            "retained_artifacts": "Existing .lake build outputs and traces; no clean/reset performed.",
+            "previous_snapshots": snapshots})
+
     def work(self):
         self.audit.mkdir(parents=True, exist_ok=True)
         with (self.audit / "runner.lock").open("a+") as lock:
@@ -521,6 +589,8 @@ class Runner:
             lock.flush()
             signal.signal(signal.SIGTERM, self.interrupted_signal)
             signal.signal(signal.SIGINT, self.interrupted_signal)
+            # A refused resume must leave the previous latest records intact.
+            self.preserve_previous_run()
             try:
                 if self.git("branch", "--show-current").strip() != "main":
                     raise RuntimeError("Verification results checkout must be on main.")
@@ -528,9 +598,19 @@ class Runner:
                 if rc == 0 and not self.interrupted:
                     self.driver_started = True
                     rc = self.run_phase("driver", ["bash", "-c",
-                        'set -e; set -a; source "$1"; set +a; exec bash "$2" "$3" "$4"', "rh-driver",
+                        'set -e; set -a; source "$1"; set +a; '
+                        'export RH_ORIGINAL_TOOLCHAIN_DIR="$RH_TOOLCHAIN_DIR"; '
+                        'if [ -n "$5" ]; then export RH_TOOLCHAIN_DIR="$5"; '
+                        'mkdir -p -m 700 -- "$6"; chmod 700 -- "$6"; '
+                        'export LEAN_OLEAN_ARENA_DIR="$6"; export LEAN_MAX_MMAP_REGIONS="$7"; fi; '
+                        'export PATH="$RH_TOOLCHAIN_DIR/bin:$PATH"; '
+                        'export LEAN_SYSROOT="$RH_TOOLCHAIN_DIR"; '
+                        'exec bash "$2" "$3" "$4"', "rh-driver",
                         str(self.base / "bootstrap.env"), str(self.scripts / "build_and_check.sh"),
-                        str(self.base / "source"), str(self.audit)])
+                        str(self.base / "source"), str(self.audit),
+                        str(self.args.toolchain_dir) if self.args.toolchain_dir else "",
+                        str(self.args.olean_arena_dir) if self.args.olean_arena_dir else "",
+                        str(self.args.mmap_regions)])
                 self.refresh()
                 build = self.status["phases"]["build"]
                 checks = build["stages"]
@@ -570,10 +650,40 @@ def main():
     parser.add_argument("--sample-seconds", type=int, default=15)
     parser.add_argument("--publish-seconds", type=int, default=300)
     parser.add_argument("--session", default="rh-verify")
+    parser.add_argument("--toolchain-dir", type=Path,
+                        help="Separate loader-patched toolchain; bootstrap still verifies the official release.")
+    parser.add_argument("--resumed-from-run-id",
+                        help="Archive this terminal run's records and resume existing Lake outputs in a new run.")
+    parser.add_argument("--lean-num-threads", type=int, default=4,
+                        help="Lake scheduler workers for this run (default: 4); each compiler still uses -j1.")
+    parser.add_argument("--olean-arena-dir", type=Path,
+                        help="Patched loader arena directory; default: BASE/tmp/olean-arena.")
+    parser.add_argument("--mmap-regions", type=int, default=50000,
+                        help="Patched loader's original-file mmap budget (default: 50000).")
     args = parser.parse_args()
     if args.sample_seconds < 1 or args.publish_seconds < 1:
         parser.error("Intervals must be positive.")
+    if args.lean_num_threads < 1:
+        parser.error("--lean-num-threads must be positive.")
+    if args.mmap_regions < 0:
+        parser.error("--mmap-regions must be non-negative.")
+    if args.resumed_from_run_id and not re.fullmatch(r"\d{8}T\d{6}Z-[0-9a-f]{8}", args.resumed_from_run_id):
+        parser.error("--resumed-from-run-id must be an existing runner ID.")
     args.base = args.base.resolve()
+    if args.toolchain_dir:
+        args.toolchain_dir = args.toolchain_dir.resolve()
+        official = args.base / "tools/lean-4.33.1-linux"
+        if args.toolchain_dir == official.resolve() or not (args.toolchain_dir / "loader-build-manifest.json").is_file():
+            parser.error("--toolchain-dir must be a separate directory with loader-build-manifest.json.")
+        args.olean_arena_dir = (args.olean_arena_dir or args.base / "tmp/olean-arena").resolve()
+        if args.base not in args.olean_arena_dir.parents:
+            parser.error("--olean-arena-dir must be a task directory beneath --base.")
+    elif args.olean_arena_dir:
+        parser.error("--olean-arena-dir requires --toolchain-dir.")
+    os.environ["LEAN_NUM_THREADS"] = str(args.lean_num_threads)
+    # Runtime selection is injected only after the official bootstrap finishes.
+    for key in ("LEAN_SYSROOT", "LEAN_OLEAN_ARENA_DIR", "LEAN_MAX_MMAP_REGIONS"):
+        os.environ.pop(key, None)
     for name in ("audit", "control", "tmp", "cache"):
         (args.base / name).mkdir(parents=True, exist_ok=True)
     tool_paths = [str(args.base / "tools/lean-4.33.1-linux/bin")]
@@ -597,7 +707,14 @@ def main():
         print("Already running. Attach with:", shlex.join(tmux + ["attach", "-t", args.session]))
         return 0
     command = [sys.executable, str(Path(__file__).resolve()), "--worker", "--base", str(args.base),
-               "--sample-seconds", str(args.sample_seconds), "--publish-seconds", str(args.publish_seconds)]
+               "--sample-seconds", str(args.sample_seconds), "--publish-seconds", str(args.publish_seconds),
+               "--lean-num-threads", str(args.lean_num_threads)]
+    if args.toolchain_dir:
+        command.extend(["--toolchain-dir", str(args.toolchain_dir),
+                        "--olean-arena-dir", str(args.olean_arena_dir),
+                        "--mmap-regions", str(args.mmap_regions)])
+    if args.resumed_from_run_id:
+        command.extend(["--resumed-from-run-id", args.resumed_from_run_id])
     shell_command = shlex.join(command) + " >>" + shlex.quote(str(args.base / "audit/runner-console.log")) + " 2>&1"
     subprocess.run(tmux + ["new-session", "-d", "-s", args.session, shell_command], check=True)
     print("Detached verification. Attach with:", shlex.join(tmux + ["attach", "-t", args.session]))
@@ -607,3 +724,4 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+
