@@ -60,37 +60,69 @@ def exported_symbols(text):
     return {line.split()[-1] for line in text.splitlines() if line.split()}
 
 
+def archive_member_payloads(path):
+    """Yield individual regular-ar members without merging duplicate basenames."""
+    with Path(path).open("rb") as f:
+        if f.read(8) != b"!<arch>\n":
+            raise RuntimeError(f"Expected a non-thin Unix archive: {path}")
+        names = b""
+        while True:
+            header = f.read(60)
+            if not header:
+                break
+            if len(header) != 60 or header[58:60] != b"`\n":
+                raise RuntimeError(f"Malformed archive member in {path}")
+            size = int(header[48:58].strip())
+            name = header[:16].decode("ascii").strip()
+            payload = f.read(size)
+            if len(payload) != size:
+                raise RuntimeError(f"Truncated archive member in {path}")
+            if size % 2 and len(f.read(1)) != 1:
+                raise RuntimeError(f"Missing archive padding in {path}")
+            if name == "//":
+                names = payload
+                continue
+            if name in ("/", "/SYM64/"):
+                continue
+            if name.startswith("#1/"):
+                n = int(name[3:])
+                name, payload = payload[:n].rstrip(b"\0").decode(), payload[n:]
+            elif name.startswith("/"):
+                n = int(name[1:])
+                name = names[n:].split(b"\n", 1)[0].rstrip(b"/").decode()
+            else:
+                name = name.rstrip("/")
+            yield name, payload
+
+
 def archive_objects(path):
-    """Hash regular ar members, retaining duplicate names and their ordering."""
-    data = Path(path).read_bytes()
-    if not data.startswith(b"!<arch>\n"):
-        raise RuntimeError(f"Expected a non-thin Unix archive: {path}")
-    pos, names, records = 8, b"", []
-    while pos < len(data):
-        header = data[pos:pos + 60]
-        if len(header) != 60 or header[58:60] != b"`\n":
-            raise RuntimeError(f"Malformed archive member in {path}")
-        size = int(header[48:58].strip())
-        name = header[:16].decode("ascii").strip()
-        payload = data[pos + 60:pos + 60 + size]
-        if len(payload) != size:
-            raise RuntimeError(f"Truncated archive member in {path}")
-        pos += 60 + size + size % 2
-        if name == "//":
-            names = payload
+    """Hash members, retaining duplicate names and their ordering."""
+    return [{"name": name, "sha256": hashlib.sha256(payload).hexdigest()}
+            for name, payload in archive_member_payloads(path)]
+
+
+def select_root_lean_object(archive, obj_dir, inspect_symbols):
+    """Identify the root object by definition, not its possibly repeated name."""
+    names = {"Lean.c.o", "Lean.c.o.export", "Lean.o", "Lean.o.export"}
+    unique, candidates = {}, []
+    for index, (name, payload) in enumerate(archive_member_payloads(archive)):
+        if name not in names:
             continue
-        if name in ("/", "/SYM64/"):
-            continue
-        if name.startswith("#1/"):
-            n = int(name[3:])
-            name, payload = payload[:n].rstrip(b"\0").decode(), payload[n:]
-        elif name.startswith("/"):
-            n = int(name[1:])
-            name = names[n:].split(b"\n", 1)[0].rstrip(b"/").decode()
-        else:
-            name = name.rstrip("/")
-        records.append({"name": name, "sha256": hashlib.sha256(payload).hexdigest()})
-    return records
+        digest = hashlib.sha256(payload).hexdigest()
+        if digest not in unique:
+            path = obj_dir / f"Lean.candidate-{len(unique)}.o"
+            path.write_bytes(payload)
+            defined = exported_symbols(inspect_symbols(path, len(unique)))
+            unique[digest] = {"path": path, "defines_initialize_Lean": "initialize_Lean" in defined}
+        candidates.append({"archive_index": index, "member_name": name, "sha256": digest,
+                           "defines_initialize_Lean": unique[digest]["defines_initialize_Lean"]})
+    roots = [(digest, info) for digest, info in unique.items() if info["defines_initialize_Lean"]]
+    if len(roots) != 1:
+        raise RuntimeError(f"Expected one distinct object defining initialize_Lean; candidates: {candidates}")
+    digest, info = roots[0]
+    destination = obj_dir / "Lean.root.o"
+    shutil.copy2(info["path"], destination)
+    return destination, {"selected_sha256": digest, "candidates": candidates}
 
 
 def compare_archive(original, rebuilt, allowed):
@@ -197,9 +229,6 @@ def main():
                    for name, path in archives.items()}
         if members["libleancpp.a"].count("module.cpp.o") != 1:
             raise RuntimeError("Expected exactly one module.cpp.o in the official C++ archive")
-        root_candidates = [m for m in members["libLean.a"] if m in ("Lean.c.o", "Lean.c.o.export", "Lean.o", "Lean.o.export")]
-        if len(root_candidates) != 1:
-            raise RuntimeError(f"Cannot uniquely identify the root Lean object: {root_candidates}")
         rt_relocations = capture("runtime-original-relocations", ["readelf", "-rW", archives["libleanrt.a"]])
         rt_members = tls_members(rt_relocations)
         if not rt_members:
@@ -225,6 +254,10 @@ def main():
             f'#define LEAN_GITHASH "{LEAN_COMMIT}"\n')
         obj_dir = work / "objects"
         obj_dir.mkdir()
+        lean_root_object, root_object_evidence = select_root_lean_object(
+            archives["libLean.a"], obj_dir,
+            lambda path, index: capture("root-candidate-symbols-" + str(index), ["nm", "-g", "--defined-only", path]))
+        (work / "root-lean-object.json").write_text(json.dumps(root_object_evidence, indent=2) + "\n")
         common = [llvm / "bin/clang++", "-std=c++20", "-stdlib=libc++", "-O3", "-DNDEBUG",
                   '-DLEAN_BUILD_TYPE="Release"', "-DLEAN_EXPORTING", "-DLEAN_MMAP",
                   "-DLEAN_MULTI_THREAD", "-DLEAN_USE_GMP", "-DLEAN_CHECK_OLEAN_VERSION", "-D__CLANG__",
@@ -269,10 +302,6 @@ def main():
         new_relocations = capture("runtime-new-relocations", ["readelf", "-rW", rt_archive])
         if TLS_RE.search(new_relocations):
             raise RuntimeError("The relink runtime still contains local-exec TLS relocations")
-        lean_root_object = obj_dir / "Lean.root.o"
-        with lean_root_object.open("wb") as f:
-            subprocess.run([str(ar), "p", str(archives["libLean.a"]), root_candidates[0]], stdout=f, check=True)
-
         # Read the actual release's bundled-toolchain linker flags, rather than
         # substituting host GMP/libuv/OpenSSL/C++ runtimes.
         flags_program = work / "LinkFlags.lean"
@@ -335,6 +364,7 @@ def main():
             "cxx_tool_environment": {"LD_LIBRARY_PATH": cxx_env["LD_LIBRARY_PATH"]},
             "rebuilt_objects": rebuilt_objects, "runtime_tls_members_recompiled": rt_members,
             "archive_object_comparison": archive_comparison,
+            "root_lean_object": root_object_evidence,
             "kernel_objects": "unchanged official archive members; only module.cpp.o replaced in libleancpp.a",
             "stdlib_objects": "unchanged official libLean.a/libInit.a/libStd.a",
             "full_bootstrap_performed": False, "upstream_full_test_suite_performed": False,
