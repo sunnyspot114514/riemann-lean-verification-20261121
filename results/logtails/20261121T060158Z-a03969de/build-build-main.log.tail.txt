@@ -1,33 +1,10 @@
-  haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
 The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HeckeLFunctionBottomPair.lean:355:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [98240/98268] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcRigidityTwoModelsOfMono (5.3s)
-⚠ [98241/98268] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsIsSplit (9.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ExistsIsSplit.lean:108:77: This simp argument is unused:
-  ofMul_zpow
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Fintype.prod_sum_type, Fin.prod_univ_succ, ofMul_mul, ofMul_inv, ofMul_pow]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [98242/98268] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsKeyIntegral (13s)
-✔ [98243/98272] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.SplitBaseChange (10s)
-✔ [98244/98272] Built Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MemLieVectorLineIdealIffMemLieLattice (5.1s)
-✔ [98245/98272] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.DiscrMulXiIntegral (11s)
-⚠ [98246/98272] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcFramedPointIntegralOpenDisc (42s)
-warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ArcFramedPointIntegralOpenDisc.lean:110:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LevelChainUOperatorCommutationOfPointPairLaw.lean:79:4: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -35,126 +12,149 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ArcFramedPointIntegralOpenDisc.lean:108:8: Overlapping instance parameters in `integral_of_isArcFr`:
-
-⚠️ `[IsDomain A]` and `[IsLocalRing A]` each imply `[Nontrivial A]`.
-💡️ Of these, `[IsDomain A]` and `[IsLocalRing A]` may be removed.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-⚠ [98247/98272] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsArcInOverValuationRing (7.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ExistsArcInOverValuationRing.lean:25:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [98248/98275] Built Development.AbelianVarietyTheory.Counterexamples.UniformisationSurvey.EquivIffOfIsEmpty (6.2s)
-warning: src/Development/AbelianVarietyTheory/Counterexamples/UniformisationSurvey/EquivIffOfIsEmpty.lean:71:0: automatically included section variable(s) unused in theorem `GlobalTheory.TorsionPairTest.hom_eq`:
-  [IsDomain R]
+✔ [98460/98486] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FormsStableOfTgtEq (5.5s)
+⚠ [98461/98488] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.InvTrKEmbGLApply (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/InvTrKEmbGLApply.lean:20:0: automatically included section variable(s) unused in theorem `GlobalTheory.LvT.BuiltChain.mem_dualFr_tauLat`:
+  [NumberField E]
+  [NumberField K]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsDomain R] in theorem ...
+  omit [NumberField E] [NumberField K] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [98249/98277] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcFramedPointEqOfModelsOverBase (14s)
-✔ [98250/98278] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefiniteThetaPairNormNeZeroOfCoordNeZero (14s)
-✔ [98251/98278] Built Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LieLetterIntegralOfLocalGenerator (14s)
-⚠ [98252/98279] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcFramedPointIntegralOpenDiscStatement (13s)
-warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ArcFramedPointIntegralOpenDiscStatement.lean:10:57: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/InvTrKEmbGLApply.lean:117:0: automatically included section variable(s) unused in theorem `GlobalTheory.LvT.BuiltChain.evV_rho`:
+  [NumberField K]
+  [StarRing E]
+  [StarRing K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField K] [StarRing E] [StarRing K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [98462/98488] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExtInOfValIn (7.7s)
+⚠ [98463/98490] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceValuationLocalDegreeArithmeticStatement (5.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PlaceValuationLocalDegreeArithmeticStatement.lean:26:44: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ArcFramedPointIntegralOpenDiscStatement.lean:10:103: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PlaceValuationLocalDegreeArithmeticStatement.lean:26:77: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ArcFramedPointIntegralOpenDiscStatement.lean:9:8: Overlapping instance parameters in `GlobalTheory.T.arc_framedPoint_integral_open_disc`:
-
-⚠️ `[IsDomain A]` and `[IsLocalRing A]` each imply `[Nontrivial A]`.
-💡️ Of these, `[IsDomain A]` and `[IsLocalRing A]` may be removed.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ArcFramedPointIntegralOpenDiscStatement.lean:10:57: Unused tactic linter: `exact GlobalTheory.ArcQ.integral_of_isArcFr` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PlaceValuationLocalDegreeArithmeticStatement.lean:26:44: Unused tactic linter: `exact GlobalTheory.vw_lw_arith` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ArcFramedPointIntegralOpenDiscStatement.lean:10:103: Unused tactic linter: `(intros; apply GlobalTheory.ArcQ.integral_of_isArcFr <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PlaceValuationLocalDegreeArithmeticStatement.lean:26:77: Unused tactic linter: `(intros; apply GlobalTheory.vw_lw_arith <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [98253/98279] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcFramedPointEqOfModelsOverBaseStatement (5.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ArcFramedPointEqOfModelsOverBaseStatement.lean:10:60: this tactic is never executed
+✔ [98464/98491] Built Formalism.PieriBlockIdeals.PieriColumnMinors.ExactExponentLatticeIncl (5.0s)
+✔ [98465/98496] Built Formalism.PieriBlockIdeals.JointCW5 (4.0s)
+✔ [98466/98496] Built Formalism.PieriBlockIdeals.PieriColumnMinors.SL2BinomialLattices (10s)
+✔ [98467/98496] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LevelChainSharpColumnValuationOfPointKernelLiftL (5.6s)
+✔ [98468/98497] Built Formalism.PieriBlockIdeals.PieriColumnMinors.LabelSumNeedsLeFalse (8.9s)
+✔ [98469/98499] Built Formalism.PieriBlockIdeals.PieriColumnMinors.MinorValuationBoundHolds (5.4s)
+⚠ [98470/98499] Built Formalism.PieriBlockIdeals.PieriColumnMinors.ContentLinkageHolds (5.3s)
+warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/ContentLinkageHolds.lean:25:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/ContentLinkageHolds.lean:38:13: This simp argument is unused:
+  map_intCast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [ψ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [98471/98499] Built Formalism.PieriBlockIdeals.PieriColumnMinors.JointCorollaryFiveBound (4.9s)
+✔ [98472/98499] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ConjugatePrimeBoundPointKernelOfCoefficientKerne (6.6s)
+⚠ [98473/98502] Built Formalism.PieriBlockIdeals.PieriColumnMinors.DividedPowerZeroZeroVector (15s)
+warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/DividedPowerZeroZeroVector.lean:33:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/DividedPowerZeroZeroVector.lean:46:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/DividedPowerZeroZeroVector.lean:249:42: `Polynomial.finset_sum_coeff` has been deprecated: Use `Polynomial.finsetSum_coeff` instead
+warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/DividedPowerZeroZeroVector.lean:325:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/DividedPowerZeroZeroVector.lean:340:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/DividedPowerZeroZeroVector.lean:646:15: This simp argument is unused:
+  colLen
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Finset.mem_filter, Finset.mem_univ, true_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/DividedPowerZeroZeroVector.lean:659:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/DividedPowerZeroZeroVector.lean:674:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/DividedPowerZeroZeroVector.lean:967:10: This simp argument is unused:
+  Fin.sum_univ_succ
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [98474/98502] Built Formalism.PieriBlockIdeals.PieriColumnMinors.WeightExchangeBoundHolds (8.2s)
+warning: src/Formalism/PieriBlockIdeals/PieriColumnMinors/WeightExchangeBoundHolds.lean:55:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [98475/98502] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteInfiniteFormBounds (20s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteInfiniteFormBounds.lean:25:4: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ArcFramedPointEqOfModelsOverBaseStatement.lean:10:109: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteInfiniteFormBounds.lean:26:4: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ArcFramedPointEqOfModelsOverBaseStatement.lean:10:60: Unused tactic linter: `exact GlobalTheory.ArcQ.isArcFr_eq_of_overBase` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteInfiniteFormBounds.lean:27:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteInfiniteFormBounds.lean:25:4: Unused tactic linter: `(intros; apply _root_.GlobalTheory.BigConstantConjunction.bigC_and <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ArcFramedPointEqOfModelsOverBaseStatement.lean:10:109: Unused tactic linter: `(intros; apply GlobalTheory.ArcQ.isArcFr_eq_of_overBase <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [98254/98280] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeanValuationNormOverDegreeSmulEqAddValuation (17s)
-✔ [98255/98280] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PartialZetaValuesAtNegIntUnique (6.1s)
-⚠ [98256/98280] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareNuTwistedTupleIsCMValueHeckeCharacterStatement (5.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SquareNuTwistedTupleIsCMValueHeckeCharacterStatement.lean:15:63: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SquareNuTwistedTupleIsCMValueHeckeCharacterStatement.lean:15:115: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SquareNuTwistedTupleIsCMValueHeckeCharacterStatement.lean:15:63: Unused tactic linter: `exact GlobalTheory.SqTop.TwVal.isValChar_nu_twist` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SquareNuTwistedTupleIsCMValueHeckeCharacterStatement.lean:15:115: Unused tactic linter: `(intros; apply GlobalTheory.SqTop.TwVal.isValChar_nu_twist <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [98257/98280] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefiniteThetaPairNormNeZeroOfCoordNeZeroStatement (6.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DefiniteThetaPairNormNeZeroOfCoordNeZeroStatement.lean:14:62: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DefiniteThetaPairNormNeZeroOfCoordNeZeroStatement.lean:14:113: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DefiniteThetaPairNormNeZeroOfCoordNeZeroStatement.lean:14:62: Unused tactic linter: `exact GlobalTheory.NormPos.norm_ne_zero_of_coord` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DefiniteThetaPairNormNeZeroOfCoordNeZeroStatement.lean:14:113: Unused tactic linter: `(intros; apply GlobalTheory.NormPos.norm_ne_zero_of_coord <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [98258/98280] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.BottomConstantOfTheta (39s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomConstantOfTheta.lean:38:77: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomConstantOfTheta.lean:39:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomConstantOfTheta.lean:40:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomConstantOfTheta.lean:41:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomConstantOfTheta.lean:38:77: Unused tactic linter: `assumption` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomConstantOfTheta.lean:39:4: Unused tactic linter: `(intros;
-  apply _root_.GlobalTheory.PrimeMembershipExistence.exists_prime_mem <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomConstantOfTheta.lean:40:4: Unused tactic linter: `(intros;
-  apply @_root_.GlobalTheory.PrimeMembershipExistence.exists_prime_mem <;>
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteInfiniteFormBounds.lean:26:4: Unused tactic linter: `(intros;
+  apply @_root_.GlobalTheory.BigConstantConjunction.bigC_and <;>
     first
     | assumption
     | infer_instance)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomConstantOfTheta.lean:41:4: Unused tactic linter: `(intros; exact _root_.GlobalTheory.PrimeMembershipExistence.exists_prime_mem ..)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteInfiniteFormBounds.lean:27:4: Unused tactic linter: `(intros; exact _root_.GlobalTheory.BigConstantConjunction.bigC_and ..)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomConstantOfTheta.lean:80:2: Try this: 
-  haveI̵
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteInfiniteFormBounds.lean:45:164: Variable name `R` is not explicitly referenced.
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [98476/98505] Built Formalism.PieriBlockIdeals.PieriColumnMinors.LogarithmEquivalence (5.4s)
+✔ [98477/98505] Built Formalism.PieriBlockIdeals.PieriColumnMinors.SharperSizeNeedsMleKFalse (7.7s)
+✔ [98478/98505] Built Formalism.PieriBlockIdeals.ExZTranslate (4.7s)
