@@ -1,52 +1,93 @@
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/WeilBound/RepresentationTheoryGL/ResidualSpectrum/ExponentialNegativity/ExponentialGluing/ExpNegGlueHolds.lean:118:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [67691/67815] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InfinitesimalCharacterInduced (16s)
+✔ [67692/67818] Built Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.ConjugationDifferences.ExpDivExpEq (6.7s)
+✔ [67693/67823] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BoundOfNatDegree (6.7s)
+⚠ [67694/67825] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UpdateLeUpdate (6.3s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/UpdateLeUpdate.lean:133:14: This simp argument is unused:
+  Function.update_of_ne hr
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Finset.mem_insert, hr]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [67695/67825] Built Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.ConstantTermSteps.UnipGLMemAdelicBorel (7.5s)
+✔ [67696/67825] Built Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.PolynomialKilling.KillPoly4 (6.7s)
+✔ [67697/67827] Built Development.AutomorphicSpectrum.PublishedTheorems.PublishedGlobalResults.HasInfCharOfIsRegAlg (8.3s)
+⚠ [67698/67830] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.LineLatticeClassMeanSumNonzeroUnfoldStatement (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/LineLatticeClassMeanSumNonzeroUnfoldStatement.lean:7:74: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IsCompactDetSqrtCoverMaxCompactStatement.lean:9:54: Unused tactic linter: `exact GlobalTheory.PolarU.isCompact_Kset` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IsCompactDetSqrtCoverMaxCompactStatement.lean:9:97: Unused tactic linter: `(intros; apply GlobalTheory.PolarU.isCompact_Kset <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [67175/67315] Built GroundTheory.AutomorphicForms.GKModules.KernelCalculus (17s)
-⚠ [67176/67317] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.LowestKTypeFunctionEquivalence (13s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LowestKTypeFunctionEquivalence.lean:204:13: `ContinuousLinearMap.neg_apply` has been deprecated: Use `_root_.neg_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.neg_apply` to `_root_.neg_apply x`).
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LowestKTypeFunctionEquivalence.lean:204:44: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LowestKTypeFunctionEquivalence.lean:205:4: `ContinuousLinearMap.sub_apply` has been deprecated: Use `_root_.sub_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `_root_.sub_apply x`).
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LowestKTypeFunctionEquivalence.lean:194:27: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/LineLatticeClassMeanSumNonzeroUnfoldStatement.lean:7:137: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LowestKTypeFunctionEquivalence.lean:198:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LowestKTypeFunctionEquivalence.lean:194:27: Unused tactic linter: `ring` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/LineLatticeClassMeanSumNonzeroUnfoldStatement.lean:7:74: Unused tactic linter: `exact GlobalTheory.FlagBase.SiegelUnfold.latMean_sum_ne_zero` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LowestKTypeFunctionEquivalence.lean:226:14: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LowestKTypeFunctionEquivalence.lean:230:14: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-⚠ [67177/67318] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.JacobianActionUpperRightBlockExpCoordsStatement (5.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/JacobianActionUpperRightBlockExpCoordsStatement.lean:9:57: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/JacobianActionUpperRightBlockExpCoordsStatement.lean:9:103: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/JacobianActionUpperRightBlockExpCoordsStatement.lean:9:57: Unused tactic linter: `exact GlobalTheory.PolarU.jacobian_action_p` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/LineLatticeClassMeanSumNonzeroUnfoldStatement.lean:7:137: Unused tactic linter: `(intros;
+  apply GlobalTheory.FlagBase.SiegelUnfold.latMean_sum_ne_zero <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/JacobianActionUpperRightBlockExpCoordsStatement.lean:9:103: Unused tactic linter: `(intros; apply GlobalTheory.PolarU.jacobian_action_p <;> assumption)` does nothing
+✔ [67699/67830] Built GroundTheory.AutomorphicForms.CuspidalDiscreteness.SummandsContinuous (17s)
+✔ [67700/67830] Built Development.AbelianVarietyTheory.Definitions.Divisors.CentralNilGL (5.1s)
+⚠ [67701/67830] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SingleVecMulUnipMatrix (8.5s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SingleVecMulUnipMatrix.lean:87:10: This simp argument is unused:
+  Pi.single_apply
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [67178/67318] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.KAveragedMinorOperatorExpPosBoundAnalytic (7.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/KAveragedMinorOperatorExpPosBoundAnalytic.lean:88:4: Try this: 
+Hint: Omit it from the simp argument list.
+  [apply] simp [hj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [67702/67830] Built Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.ExistsHasInfCharGL (7.1s)
+✔ [67703/67831] Built Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.L2Gluing.IntegralLeToReal (8.2s)
+✔ [67704/67832] Built Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.BoxVolumes.SumRangeSuccMulSubPred (5.9s)
+✔ [67705/67832] Built Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.CommonEigenvectors.KillPoly (5.7s)
+⚠ [67706/67833] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SetLIntegralLeOfBound (11s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SetLIntegralLeOfBound.lean:133:55: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SetLIntegralLeOfBound.lean:134:28: This simp argument is unused:
+  not_not
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Set.mem_inter_iff, Set.mem_compl_iff, Set.mem_setOf_eq, Set.mem_empty_iff_false, iff_false,
+    not_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SetLIntegralLeOfBound.lean:227:12: `ofReal_norm_eq_enorm` has been deprecated: Use `ofReal_norm` instead
+✔ [67707/67845] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProdEntrywiseLe (5.8s)
+⚠ [67708/67848] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsNcardEntrywiseBoxLe (6.6s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsNcardEntrywiseBoxLe.lean:13:7: `setOf` has been deprecated: Use `Set.ofPred` instead
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsNcardEntrywiseBoxLe.lean:16:19: `setOf` has been deprecated: Use `Set.ofPred` instead
+✔ [67709/67852] Built Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.ConstantTermSteps.CtstepglueHolds (8.0s)
+⚠ [67710/67852] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsMonicAevalAddOfKill (17s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsMonicAevalAddOfKill.lean:77:4: `Algebra.adjoinCommRingOfComm` has been deprecated: Use `Algebra.isMulCommutative_adjoin` instead
+
+Note: The updated constant has a different type:
+  ∀ (R : Type uR) {A : Type uA} [inst : CommSemiring R] [inst_1 : Semiring A] [inst_2 : Algebra R A] {s : Set A},
+    (∀ x ∈ s, ∀ y ∈ s, x * y = y * x) → IsMulCommutative ↥(Algebra.adjoin R s)
+instead of
+  (R : Type uR) →
+    {A : Type uA} →
+      [inst : CommRing R] →
+        [inst_1 : Ring A] →
+          [inst_2 : Algebra R A] → {s : Set A} → (∀ a ∈ s, ∀ b ∈ s, a * b = b * a) → CommRing ↥(Algebra.adjoin R s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsMonicAevalAddOfKill.lean:76:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsMonicAevalAddOfKill.lean:152:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -54,7 +95,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/KAveragedMinorOperatorExpPosBoundAnalytic.lean:89:4: Try this: 
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsMonicAevalAddOfKill.lean:212:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -62,99 +103,58 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/KAveragedMinorOperatorExpPosBoundAnalytic.lean:83:45: This simp argument is unused:
-  Complex.norm_real
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsMonicAevalAddOfKill.lean:324:2: Try this: 
+  letI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [norm_pow, RCLike.norm_ofReal, Real.norm_eq_abs, abs_norm] at hb
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/KAveragedMinorOperatorExpPosBoundAnalytic.lean:83:64: This simp argument is unused:
-  Real.norm_eq_abs
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsMonicAevalAddOfKill.lean:325:2: Try this: 
+  haveI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [norm_pow, RCLike.norm_ofReal, Complex.norm_real, abs_norm] at hb
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/KAveragedMinorOperatorExpPosBoundAnalytic.lean:71:10: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsMonicAevalAddOfKill.lean:326:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/KAveragedMinorOperatorExpPosBoundAnalytic.lean:71:10: Unused tactic linter: `exact integral_ofReal` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [67179/67318] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealThetaIntertwinerAdjointIsRealThetaIntertwineStatement (5.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/RealThetaIntertwinerAdjointIsRealThetaIntertwineStatement.lean:11:90: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsMonicAevalAddOfKill.lean:330:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/RealThetaIntertwinerAdjointIsRealThetaIntertwineStatement.lean:11:169: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/RealThetaIntertwinerAdjointIsRealThetaIntertwineStatement.lean:11:90: Unused tactic linter: `exact GlobalTheory.Adopt.realThetaIntertwiner_adjoint_isRealThetaIntertwiner` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [67711/67852] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExponentMemFinset (5.0s)
+✔ [67712/67871] Built Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.PInfAsc (6.4s)
+✔ [67713/67871] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlkEquivInl (6.8s)
+✔ [67714/67871] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CountLeOfDvd (16s)
+⚠ [67715/67871] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.GlNormOneAdelicQuotientVolumeSiegelStep (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/GlNormOneAdelicQuotientVolumeSiegelStep.lean:20:11: `continuous_finset_prod` has been deprecated: Use `continuous_finsetProd` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/GlNormOneAdelicQuotientVolumeSiegelStep.lean:57:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/GlNormOneAdelicQuotientVolumeSiegelStep.lean:96:0: automatically included section variable(s) unused in theorem `GlobalTheory.FlagBase.SiegelStep.tsum_eq_zero_add`:
+  [NumberField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/RealThetaIntertwinerAdjointIsRealThetaIntertwineStatement.lean:11:169: Unused tactic linter: `(intros;
-  apply GlobalTheory.Adopt.realThetaIntertwiner_adjoint_isRealThetaIntertwiner <;> assumption)` does nothing
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [67716/67871] Built Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.BoxVolumes.MeasureBoxGLLe (13s)
+warning: src/Development/WeilBound/RepresentationTheoryGL/ResidualSpectrum/ExponentialNegativity/BoxVolumes/MeasureBoxGLLe.lean:69:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [67180/67318] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NonemptyFockModelUnitaryDualPairStatement (5.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/NonemptyFockModelUnitaryDualPairStatement.lean:7:55: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/NonemptyFockModelUnitaryDualPairStatement.lean:7:99: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/NonemptyFockModelUnitaryDualPairStatement.lean:7:55: Unused tactic linter: `exact GlobalTheory.nonempty_fockData_pair` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/NonemptyFockModelUnitaryDualPairStatement.lean:7:99: Unused tactic linter: `(intros; apply GlobalTheory.nonempty_fockData_pair <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [67181/67321] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsBiinvariantProbabilityOnCompactSubgroupStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsBiinvariantProbabilityOnCompactSubgroupStatement.lean:9:83: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsBiinvariantProbabilityOnCompactSubgroupStatement.lean:9:155: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsBiinvariantProbabilityOnCompactSubgroupStatement.lean:9:83: Unused tactic linter: `exact GlobalTheory.exists_biinvariant_probability_on_compact_subgroup` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsBiinvariantProbabilityOnCompactSubgroupStatement.lean:9:155: Unused tactic linter: `(intros;
-  apply GlobalTheory.exists_biinvariant_probability_on_compact_subgroup <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [67182/67324] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockMinimalKTypeSecondMemberStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FockMinimalKTypeSecondMemberStatement.lean:8:51: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FockMinimalKTypeSecondMemberStatement.lean:8:91: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FockMinimalKTypeSecondMemberStatement.lean:8:51: Unused tactic linter: `exact GlobalTheory.FockAlg.min_second` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FockMinimalKTypeSecondMemberStatement.lean:8:91: Unused tactic linter: `(intros; apply GlobalTheory.FockAlg.min_second <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [67183/67324] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.LintegralHaarEqCompactSubgroupTransversalStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LintegralHaarEqCompactSubgroupTransversalStatement.lean:9:68: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LintegralHaarEqCompactSubgroupTransversalStatement.lean:9:125: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LintegralHaarEqCompactSubgroupTransversalStatement.lean:9:68: Unused tactic linter: `exact GlobalTheory.Twist.lintegral_haar_eq_transversal` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LintegralHaarEqCompactSubgroupTransversalStatement.lean:9:125: Unused tactic linter: `(intros; apply GlobalTheory.Twist.lintegral_haar_eq_transversal <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [67184/67324] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegWBlattnerLeOfBlattnerCone (6.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DegWBlattnerLeOfBlattnerCone.lean:70:4: Unused tactic linter: `beta_reduce` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [67185/67324] Built GroundTheory.AutomorphicForms.ArchimedeanWhittaker.Weights (12s)
-warning: src/GroundTheory/AutomorphicForms/ArchimedeanWhittaker/Weights.lean:290:30: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
-✔ [67186/67324] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.LieAlgebrasAtPlaceActFockVectorsByFockOperators (7.7s)
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [67717/67871] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemRiemannRochSpaceIffRegularAtEverywhere (6.6s)
