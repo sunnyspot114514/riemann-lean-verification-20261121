@@ -1,8 +1,50 @@
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+  [apply] _l0
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ContainsRayFieldOfRayIn.lean:254:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [126083/126120] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitPlaceIdempotentCmEmbeddingCompat (8.1s)
+⚠ [126084/126120] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGlobalMatrixApproximationModIntegral (6.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsGlobalMatrixApproximationModIntegral.lean:32:8: Overlapping instance parameters in `exists_glob_approx`:
+
+⚠️ `[∀ (q : ι),
+   IsDomain (W q)]` and `[∀ (q : ι), IsDiscreteValuationRing (W q)]` each imply `[∀ (q : ι), Nontrivial (W q)]`.
+💡️ Of these, `[∀ (q : ι), IsDomain (W q)]` and `[∀ (q : ι), IsDiscreteValuationRing (W q)]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+⚠ [126085/126120] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsApproxFinitePlacesNumberFieldStatement (4.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsApproxFinitePlacesNumberFieldStatement.lean:7:60: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsApproxFinitePlacesNumberFieldStatement.lean:7:109: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsApproxFinitePlacesNumberFieldStatement.lean:7:60: Unused tactic linter: `exact GlobalTheory.exists_approx_finite_places` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsApproxFinitePlacesNumberFieldStatement.lean:7:109: Unused tactic linter: `(intros; apply GlobalTheory.exists_approx_finite_places <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [126086/126120] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HeckeCharacterisationTransferMovedReadings (483s)
+⚠ [126087/126120] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemLocalisedWeylLatticeIffTargetPairingIntegralStatement (5.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/MemLocalisedWeylLatticeIffTargetPairingIntegralStatement.lean:11:198: Variable name `l0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _l0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/MemLocalisedWeylLatticeIffTargetPairingIntegralStatement.lean:12:70: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/MemLocalisedWeylLatticeIffTargetPairingIntegralStatement.lean:12:129: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/MemLocalisedWeylLatticeIffTargetPairingIntegralStatement.lean:12:70: Unused tactic linter: `exact GlobalTheory.Mem.IntDualT.mem_locW_iff_prTC_le_one` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/MemLocalisedWeylLatticeIffTargetPairingIntegralStatement.lean:12:129: Unused tactic linter: `(intros; apply GlobalTheory.Mem.IntDualT.mem_locW_iff_prTC_le_one <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [126088/126120] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitPlaceEmbeddingAtOrbitPositionEqInduced (6.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SplitPlaceEmbeddingAtOrbitPositionEqInduced.lean:23:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -10,7 +52,28 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ContainsRayFieldOfRayIn.lean:255:2: Try this: 
+⚠ [126089/126120] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGlobalMatrixApproximationModIntegralStatement (4.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsGlobalMatrixApproximationModIntegralStatement.lean:7:59: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsGlobalMatrixApproximationModIntegralStatement.lean:7:107: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsGlobalMatrixApproximationModIntegralStatement.lean:6:8: Overlapping instance parameters in `GlobalTheory.T.exists_global_matrix_approximation_mod_integral`:
+
+⚠️ `[∀ (q : ι),
+   IsDomain (W q)]` and `[∀ (q : ι), IsDiscreteValuationRing (W q)]` each imply `[∀ (q : ι), Nontrivial (W q)]`.
+💡️ Of these, `[∀ (q : ι), IsDomain (W q)]` and `[∀ (q : ι), IsDiscreteValuationRing (W q)]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsGlobalMatrixApproximationModIntegralStatement.lean:7:59: Unused tactic linter: `exact GlobalTheory.GlobApx.exists_glob_approx` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsGlobalMatrixApproximationModIntegralStatement.lean:7:107: Unused tactic linter: `(intros; apply GlobalTheory.GlobApx.exists_glob_approx <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [126090/126120] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StepZeroClassesServedPlaceEqLocalOrbitPairs (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/StepZeroClassesServedPlaceEqLocalOrbitPairs.lean:25:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -18,104 +81,14 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [125928/125976] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRationalHeckeFamilyOnRationalDatumFormsStatement (6.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsRationalHeckeFamilyOnRationalDatumFormsStatement.lean:17:91: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsRationalHeckeFamilyOnRationalDatumFormsStatement.lean:17:171: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsRationalHeckeFamilyOnRationalDatumFormsStatement.lean:17:91: Unused tactic linter: `exact GlobalTheory.Adopt.exists_rational_hecke_family_on_rational_datum_forms` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsRationalHeckeFamilyOnRationalDatumFormsStatement.lean:17:171: Unused tactic linter: `(intros;
-  apply GlobalTheory.Adopt.exists_rational_hecke_family_on_rational_datum_forms <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [125929/125979] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HeckeTransformCuspFormsReadsCosetSumStatement (17s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/HeckeTransformCuspFormsReadsCosetSumStatement.lean:13:64: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/HeckeTransformCuspFormsReadsCosetSumStatement.lean:13:117: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/HeckeTransformCuspFormsReadsCosetSumStatement.lean:13:64: Unused tactic linter: `exact GlobalTheory.HeckeSupReal.readsCusp_realSide` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/HeckeTransformCuspFormsReadsCosetSumStatement.lean:13:117: Unused tactic linter: `(intros; apply GlobalTheory.HeckeSupReal.readsCusp_realSide <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [125930/125980] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsRationalHeckeReadAsCosetSums (22s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsRationalHeckeReadAsCosetSums.lean:74:342: Variable name `fw` is not explicitly referenced.
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/StepZeroClassesServedPlaceEqLocalOrbitPairs.lean:13:18: Variable name `t` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _fw
+  [apply] _t
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [125931/125980] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIntermediateCoefficientPlaceBetween (6.6s)
-⚠ [125932/125989] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CuspFormTypeEqAtCorrespondingLiftsStatement (6.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CuspFormTypeEqAtCorrespondingLiftsStatement.lean:21:60: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CuspFormTypeEqAtCorrespondingLiftsStatement.lean:21:109: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CuspFormTypeEqAtCorrespondingLiftsStatement.lean:21:60: Unused tactic linter: `exact GlobalTheory.Mem.R3.Rw.Ext.cuspA_type_eq` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CuspFormTypeEqAtCorrespondingLiftsStatement.lean:21:109: Unused tactic linter: `(intros; apply GlobalTheory.Mem.R3.Rw.Ext.cuspA_type_eq <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [125933/125989] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TameCharactersTypePrimesEqOfExtensionStatement (6.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TameCharactersTypePrimesEqOfExtensionStatement.lean:21:62: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TameCharactersTypePrimesEqOfExtensionStatement.lean:21:113: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TameCharactersTypePrimesEqOfExtensionStatement.lean:21:62: Unused tactic linter: `exact GlobalTheory.Mem.R3.Rw.ChiTr.embLL_chi_ext` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TameCharactersTypePrimesEqOfExtensionStatement.lean:21:113: Unused tactic linter: `(intros; apply GlobalTheory.Mem.R3.Rw.ChiTr.embLL_chi_ext <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [125934/125989] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsRationalHeckeReadAsCosetSumsStatement (9.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsRationalHeckeReadAsCosetSumsStatement.lean:11:376: Variable name `fw` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _fw
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsRationalHeckeReadAsCosetSumsStatement.lean:12:77: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsRationalHeckeReadAsCosetSumsStatement.lean:12:143: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsRationalHeckeReadAsCosetSumsStatement.lean:12:77: Unused tactic linter: `exact GlobalTheory.HeckeReadRational.rationalHecke_of_readsCusp` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsRationalHeckeReadAsCosetSumsStatement.lean:12:143: Unused tactic linter: `(intros;
-  apply GlobalTheory.HeckeReadRational.rationalHecke_of_readsCusp <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [125935/125989] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdxDefsUp (23s)
-⚠ [125936/125989] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntFormDescentBelow (25s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IntFormDescentBelow.lean:47:10: This simp argument is unused:
-  Module.Basis.equivFun_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Pi.single_apply, Finsupp.single_apply, eq_comm]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IntFormDescentBelow.lean:47:56: This simp argument is unused:
-  Finsupp.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Module.Basis.equivFun_apply, Pi.single_apply, eq_comm]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IntFormDescentBelow.lean:110:2: Try this: 
+⚠ [126091/126120] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KernelEntriesFormTrueChains (14s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/KernelEntriesFormTrueChains.lean:35:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -123,38 +96,65 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IntFormDescentBelow.lean:151:48: This simp argument is unused:
-  map_smul
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/KernelEntriesFormTrueChains.lean:229:167: Variable name `l0` is not explicitly referenced.
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [CoreJ.phiJ, map_sum, map_smulₛₗ, Finset.smul_sum]
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _l0
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [125937/125989] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StdCopy (20s)
-⚠ [125938/125989] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIntermediateCoefficientPlaceBetweenStatement (6.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsIntermediateCoefficientPlaceBetweenStatement.lean:21:64: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [126092/126120] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFreeSeriesKernelServedPlace (9.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsFreeSeriesKernelServedPlace.lean:53:0: automatically included section variable(s) unused in theorem `GlobalTheory.KerTieServed.blkInv_mul_blk`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsFreeSeriesKernelServedPlace.lean:74:0: automatically included section variable(s) unused in theorem `GlobalTheory.KerTieServed.sum_coefInv_coef`:
+  [DecidableEq J₁]
+  [DecidableEq J₂]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq J₁] [DecidableEq J₂] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsFreeSeriesKernelServedPlace.lean:97:60: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsIntermediateCoefficientPlaceBetweenStatement.lean:21:117: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsFreeSeriesKernelServedPlace.lean:97:89: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsIntermediateCoefficientPlaceBetweenStatement.lean:21:64: Unused tactic linter: `exact GlobalTheory.Mem.Top.Bl.exists_below_between` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsFreeSeriesKernelServedPlace.lean:97:52: Unused tactic linter: `done` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsIntermediateCoefficientPlaceBetweenStatement.lean:21:117: Unused tactic linter: `(intros; apply GlobalTheory.Mem.Top.Bl.exists_below_between <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsFreeSeriesKernelServedPlace.lean:97:60: Unused tactic linter: `(simp [hc, hc.symm]; done)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [125939/125989] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ProjectedThetaLiftExtremalVectorEqClassSum (41s)
-⚠ [125940/125989] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReferenceTupleLiftFormsPassToCoeffEnlargementStatement (7.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ReferenceTupleLiftFormsPassToCoeffEnlargementStatement.lean:21:60: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ReferenceTupleLiftFormsPassToCoeffEnlargementStatement.lean:21:109: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ReferenceTupleLiftFormsPassToCoeffEnlargementStatement.lean:21:60: Unused tactic linter: `exact GlobalTheory.Mem.R3.Tr.lift_refTuple_enl` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsFreeSeriesKernelServedPlace.lean:97:89: Unused tactic linter: `simp [hb, hb.symm, hc, hc.symm]` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ReferenceTupleLiftFormsPassToCoeffEnlargementStatement.lean:21:109: Unused tactic linter: `(intros; apply GlobalTheory.Mem.R3.Tr.lift_refTuple_enl <;> assumption)` does nothing
+⚠ [126093/126121] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RealizationOfPublishedStatement (21s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RealizationOfPublishedStatement.lean:21:64: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RealizationOfPublishedStatement.lean:21:117: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RealizationOfPublishedStatement.lean:21:64: Unused tactic linter: `exact GlobalTheory.ExportClose.exportAt_of_bundles` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RealizationOfPublishedStatement.lean:21:117: Unused tactic linter: `(intros; apply GlobalTheory.ExportClose.exportAt_of_bundles <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [126094/126121] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitPlaceEmbeddingAtOrbitPositionEqInducedStatement (6.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SplitPlaceEmbeddingAtOrbitPositionEqInducedStatement.lean:22:96: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SplitPlaceEmbeddingAtOrbitPositionEqInducedStatement.lean:22:181: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SplitPlaceEmbeddingAtOrbitPositionEqInducedStatement.lean:22:96: Unused tactic linter: `exact GlobalTheory.Mem.Top.KerOne.splitPlace_embedding_at_orbitPosition_eq_induced` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SplitPlaceEmbeddingAtOrbitPositionEqInducedStatement.lean:22:181: Unused tactic linter: `(intros;
+  apply GlobalTheory.Mem.Top.KerOne.splitPlace_embedding_at_orbitPosition_eq_induced <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
