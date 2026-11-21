@@ -1,160 +1,160 @@
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/JSmooth.lean:200:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/JSmooth.lean:219:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [104566/104609] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.JSymBetaA (7.8s)
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/JSymBetaA.lean:128:37: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/JSymBetaA.lean:128:72: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/JSymBetaA.lean:150:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+✔ [104567/104609] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.SepMinors (8.5s)
+✔ [104568/104609] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.JDicho (5.6s)
+⚠ [104569/104609] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.JBetaInfA (6.9s)
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/JBetaInfA.lean:33:59: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/JBetaInfA.lean:92:2: Try this: 
+  haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
 The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RankReducedLetterMatrixEqRankModMaximal.lean:298:45: Variable name `F` is not explicitly referenced.
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/JBetaInfA.lean:96:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/JBetaInfA.lean:97:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/JBetaInfA.lean:98:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/JBetaInfA.lean:106:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/JBetaInfA.lean:110:6: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [104570/104612] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.BigCellCommuteFrameElement (6.4s)
+⚠ [104571/104612] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.JRankOne (5.1s)
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/JRankOne.lean:28:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/JRankOne.lean:11:12: This simp argument is unused:
+  Complex.star_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp at h1
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [104572/104612] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.JMixedA (6.8s)
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/JMixedA.lean:63:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/JMixedA.lean:99:19: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+⚠ [104573/104612] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.FrameBlockWMem (6.0s)
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/FrameBlockWMem.lean:22:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [104574/104612] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.TheoremMOf (5.6s)
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/TheoremMOf.lean:19:39: Variable name `h4b` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _F
+  [apply] _h4b
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [104319/104354] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsHwOfFonOfCmpOfStatement (4.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsHwOfFonOfCmpOfStatement.lean:8:60: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsHwOfFonOfCmpOfStatement.lean:8:109: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsHwOfFonOfCmpOfStatement.lean:8:60: Unused tactic linter: `exact GlobalTheory.HWL.exists_hwOf_fonOf_cmpOf` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsHwOfFonOfCmpOfStatement.lean:8:109: Unused tactic linter: `(intros; apply GlobalTheory.HWL.exists_hwOf_fonOf_cmpOf <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [104320/104354] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsContinuousCrystallineMatrixRepOfIntertwinesDetStatement (5.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsContinuousCrystallineMatrixRepOfIntertwinesDetStatement.lean:7:56: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsContinuousCrystallineMatrixRepOfIntertwinesDetStatement.lean:7:101: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsContinuousCrystallineMatrixRepOfIntertwinesDetStatement.lean:7:56: Unused tactic linter: `exact GlobalTheory.WachPlace.matGood_of_tw` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsContinuousCrystallineMatrixRepOfIntertwinesDetStatement.lean:7:101: Unused tactic linter: `(intros; apply GlobalTheory.WachPlace.matGood_of_tw <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [104321/104354] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeRhamComponentWachLetterBasisFiltrationStatement (14s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DeRhamComponentWachLetterBasisFiltrationStatement.lean:8:51: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DeRhamComponentWachLetterBasisFiltrationStatement.lean:8:91: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DeRhamComponentWachLetterBasisFiltrationStatement.lean:8:51: Unused tactic linter: `exact GlobalTheory.NL.CompD.component` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DeRhamComponentWachLetterBasisFiltrationStatement.lean:8:91: Unused tactic linter: `(intros; apply GlobalTheory.NL.CompD.component <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [104322/104354] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.WachModuleMapMatrixCompMulStatement (13s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/WachModuleMapMatrixCompMulStatement.lean:7:60: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/WachModuleMapMatrixCompMulStatement.lean:7:109: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/WachModuleMapMatrixCompMulStatement.lean:7:60: Unused tactic linter: `exact GlobalTheory.WachPlace.isMapMat_comp_mul` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/WachModuleMapMatrixCompMulStatement.lean:7:109: Unused tactic linter: `(intros; apply GlobalTheory.WachPlace.isMapMat_comp_mul <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [104323/104362] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWachModuleMapMatrixReductionCommStatement (11s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsWachModuleMapMatrixReductionCommStatement.lean:7:61: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsWachModuleMapMatrixReductionCommStatement.lean:7:111: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsWachModuleMapMatrixReductionCommStatement.lean:7:61: Unused tactic linter: `exact GlobalTheory.WachMap.exists_mapMat_redHom` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsWachModuleMapMatrixReductionCommStatement.lean:7:111: Unused tactic linter: `(intros; apply GlobalTheory.WachMap.exists_mapMat_redHom <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [104324/104363] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsHwFonCmpTies (5.1s)
-⚠ [104325/104365] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFrameOkEig (7.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsFrameOkEig.lean:62:30: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-✔ [104326/104365] Built Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.LocalInvariantsOfColumns (6.3s)
-⚠ [104327/104365] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankReducedLetterMatrixEqRankModMaximalStatement (12s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RankReducedLetterMatrixEqRankModMaximalStatement.lean:6:109: Variable name `F` is not explicitly referenced.
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/TheoremMOf.lean:19:73: Variable name `h5` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _F
+  [apply] _h5
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RankReducedLetterMatrixEqRankModMaximalStatement.lean:7:46: this tactic is never executed
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/TheoremMOf.lean:19:87: Variable name `h6` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RankReducedLetterMatrixEqRankModMaximalStatement.lean:7:81: this tactic is never executed
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h6
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RankReducedLetterMatrixEqRankModMaximalStatement.lean:7:46: Unused tactic linter: `exact GlobalTheory.WachRank.main` does nothing
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/TheoremMOf.lean:20:5: Variable name `h7` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RankReducedLetterMatrixEqRankModMaximalStatement.lean:7:81: Unused tactic linter: `(intros; apply GlobalTheory.WachRank.main <;> assumption)` does nothing
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h7
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [104328/104365] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatGoodOfBlockExtensionTwist (15s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:20:4: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/TheoremMOf.lean:21:5: Variable name `hR` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:21:4: this tactic is never executed
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hR
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:22:4: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [104575/104618] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.JDichoW (5.8s)
+⚠ [104576/104623] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.JDichoG (5.5s)
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/JDichoG.lean:23:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:23:4: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:24:4: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/JDichoG.lean:24:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:25:4: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:20:4: Unused tactic linter: `exact @_root_.GlobalTheory.MulVecZeroDenominator.target` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/JDichoG.lean:25:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:21:4: Unused tactic linter: `exact _root_.GlobalTheory.MulVecZeroDenominator.target` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:22:4: Unused tactic linter: `(apply _root_.GlobalTheory.MulVecZeroDenominator.target <;> assumption)` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/MultiplicityOne/JDichoG.lean:26:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:23:4: Unused tactic linter: `(intros; apply _root_.GlobalTheory.MulVecZeroDenominator.target <;> assumption)` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:24:4: Unused tactic linter: `(intros;
-  apply @_root_.GlobalTheory.MulVecZeroDenominator.target <;>
-    first
-    | assumption
-    | infer_instance)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:25:4: Unused tactic linter: `(intros; exact _root_.GlobalTheory.MulVecZeroDenominator.target ..)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [104329/104368] Built Development.AbelianVarietyTheory.Definitions.Divisors.BlockPairCycPow (10s)
-⚠ [104330/104370] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.CharpolyEqRankPartMul (5.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/CharpolyEqRankPartMul.lean:19:8: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
-✔ [104331/104370] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulVecEqPow (11s)
-⚠ [104332/104376] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatGoodOfBlockExtensionTwistStatement (5.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwistStatement.lean:7:66: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwistStatement.lean:7:121: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwistStatement.lean:7:66: Unused tactic linter: `exact GlobalTheory.WachPlace.FullRankSum.matGood_sum` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwistStatement.lean:7:121: Unused tactic linter: `(intros; apply GlobalTheory.WachPlace.FullRankSum.matGood_sum <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [104333/104376] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMatrixRangeEq (6.2s)
-✔ [104334/104376] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitRootCyclotomicExpExpansions (11s)
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
