@@ -1,0 +1,178 @@
+--- a/src/library/module.cpp
++++ b/src/library/module.cpp
+@@ -16,6 +16,10 @@
+ #include <sys/stat.h>
+ #include <cerrno>
+ #include <cstring>
++#include <atomic>
++#include <cstdlib>
++#include <limits>
++#include <memory>
+ #include "runtime/thread.h"
+ #include "runtime/interrupt.h"
+ #include "runtime/sstream.h"
+@@ -60,6 +64,82 @@
+ namespace lean {
+ 
+ namespace {
++/* Linux limits the number of VMAs per process. Keep the common, early imports
++   file-backed, but leave room for allocator segments, stacks, and other mappings.
++   This is a lifetime budget of file-mapping attempts, not a live-mapping count:
++   spending a slot on a failed or subsequently freed mapping is intentional.
++   The monotone counter needs no bookkeeping in serialized CompactedRegion data.
++   Setting LEAN_MAX_MMAP_REGIONS=0 exercises the existing relocation path. */
++bool take_compacted_region_mmap_slot() {
++#if defined(__linux__)
++    static std::atomic<size_t> remaining{[]() -> size_t {
++        char const * value = std::getenv("LEAN_MAX_MMAP_REGIONS");
++        if (!value) return 50000;
++        if (!*value) throw exception("LEAN_MAX_MMAP_REGIONS must be a non-negative integer");
++        size_t result = 0;
++        for (char const * p = value; *p; ++p) {
++            if (*p < '0' || *p > '9' ||
++                result > (std::numeric_limits<size_t>::max() - (*p - '0')) / 10) {
++                throw exception("LEAN_MAX_MMAP_REGIONS must be a non-negative integer");
++            }
++            result = result * 10 + (*p - '0');
++        }
++        return result;
++    }()};
++    size_t available = remaining.load(std::memory_order_relaxed);
++    while (available != 0) {
++        if (remaining.compare_exchange_weak(available, available - 1,
++                                            std::memory_order_relaxed)) {
++            return true;
++        }
++    }
++    return false;
++#else
++    return true;
++#endif
++}
++
++/* Use the allocator already bundled with Lean. Unlike one large glibc mmap per
++   buffer, ordinary regions share mimalloc segments. Huge allocations and other
++   users of mmap still consume VMAs; the file-map budget is not a process quota. */
++void * alloc_compacted_region_buffer(size_t size) {
++#if defined(__linux__) && defined(LEAN_MIMALLOC)
++    return mi_malloc(size);
++#else
++    return malloc(size);
++#endif
++}
++
++void free_compacted_region_buffer(char * buffer, size_t size, bool is_mmap) {
++    if (!buffer) return;
++    if (is_mmap) {
++#if defined(__has_feature)
++#if __has_feature(address_sanitizer)
++        __lsan_unregister_root_region(buffer, size);
++#endif
++#endif
++#ifdef LEAN_WINDOWS
++        lean_always_assert(UnmapViewOfFile(buffer));
++#else
++        lean_always_assert(munmap(buffer, size) == 0);
++#endif
++    } else {
++#if defined(__linux__) && defined(LEAN_MIMALLOC)
++        mi_free(buffer);
++#else
++        free_sized(buffer, size);
++#endif
++    }
++}
++
++struct compacted_region_buffer_deleter {
++    size_t size;
++    bool is_mmap;
++    void operator()(char * buffer) const {
++        free_compacted_region_buffer(buffer, size, is_mmap);
++    }
++};
++
+ /** Read up to `n` bytes from `fd` into `buf`, handling `EINTR`. */
+ ssize_t readn(int fd, void * buf, size_t n) {
+     size_t bytes_read_total = 0;
+@@ -507,6 +587,7 @@
+         // closure fn pointers in place. Unwritten pages remain shared with the page cache under
+         // `MAP_PRIVATE` regardless of protection, so `PROT_WRITE` is free when no fixup happens.
+ #ifdef LEAN_MMAP
++        if (take_compacted_region_mmap_slot()) {
+ #ifdef LEAN_WINDOWS
+         HANDLE h_map = CreateFileMapping(h_file, NULL, PAGE_WRITECOPY, 0, 0, NULL);
+         if (h_map != NULL) {
+@@ -541,6 +622,7 @@
+             buffer = nullptr;
+         }
+ #endif
++        }
+ #endif
+ 
+         // A `--incr-load` snapshot bakes the whole environment into the region, including mutable
+@@ -557,12 +639,30 @@
+ #endif
+ 
+         if (!buffer) {
+-            buffer = static_cast<char *>(malloc(size));
+-            lseek(fd.get(), 0, SEEK_SET);
++            buffer = static_cast<char *>(alloc_compacted_region_buffer(size));
++            if (!buffer) {
++                return io_result_mk_error((sstream() << "failed to read file '" << olean_fn
++                    << "': could not allocate " << size << " bytes for compacted region").str());
++            }
++        }
++        // Transfer ownership to the Lean region only after every read and fixup succeeds.
++        std::unique_ptr<char, compacted_region_buffer_deleter> buffer_owner(
++            buffer, compacted_region_buffer_deleter{size, is_mmap});
++        if (!is_mmap) {
++            if (lseek(fd.get(), 0, SEEK_SET) == -1) {
++                int err = errno;
++                return io_result_mk_error((sstream() << "failed to seek file '" << olean_fn
++                    << "': " << strerror(err)).str());
++            }
+             ssize_t r = readn(fd.get(), buffer, size);
+-            if (r < 0 || r != static_cast<ssize_t>(size)) {
+-                free(buffer);
+-                return io_result_mk_error((sstream() << "failed to read file '" << olean_fn << "'").str());
++            if (r < 0) {
++                int err = errno;
++                return io_result_mk_error((sstream() << "failed to read file '" << olean_fn
++                    << "': " << strerror(err)).str());
++            }
++            if (r != static_cast<ssize_t>(size)) {
++                return io_result_mk_error((sstream() << "failed to read file '" << olean_fn
++                    << "': short read (" << r << " of " << size << " bytes)").str());
+             }
+             // The buffer outlives this call (its lifetime is the Lean `CompactedRegion`'s, freed by
+             // `lean_compacted_region_free`). It is only reached through interior pointers (the
+@@ -614,6 +714,7 @@
+         // logical address, `size` = the file size), not the inner data section.
+         cnstr_set(pair, 1, mk_compacted_region(ofname, mod,
+             buffer, reinterpret_cast<size_t>(base_addr), size, is_mmap));
++        buffer_owner.release();
+         return io_result_mk_ok(pair);
+     } catch (exception & ex) {
+         return io_result_mk_error((sstream() << "failed to read '" << olean_fn << "': " << ex.what()).str());
+@@ -630,20 +731,7 @@
+     // refcount-free buffer object, so it needs no decrement.
+     lean_ctor_set(region, 1, lean_box(0));
+     lean_dec_ref(region);
+-    if (is_mmap) {
+-#if defined(__has_feature)
+-#if __has_feature(address_sanitizer)
+-        __lsan_unregister_root_region(buffer, full_sz);
+-#endif
+-#endif
+-#ifdef LEAN_WINDOWS
+-        lean_always_assert(UnmapViewOfFile(buffer));
+-#else
+-        lean_always_assert(munmap(buffer, full_sz) == 0);
+-#endif
+-    } else {
+-        free_sized(buffer, full_sz);
+-    }
++    free_compacted_region_buffer(buffer, full_sz, is_mmap);
+     return lean_io_result_mk_ok(lean_box(0));
+ }
+ 
