@@ -3,7 +3,13 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/FubGen.lean:48:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SliceTransformSchwartzBijective.lean:69:0: automatically included section variable(s) unused in theorem `GlobalTheory.SwapSliceBij.SB_le_span_boxFun`:
+  [CommRing k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CommRing k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SliceTransformSchwartzBijective.lean:102:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -11,13 +17,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/FubGen.lean:39:0: automatically included section variable(s) unused in theorem `PositivityTheory.ThKG.Fub.Split.fub`:
-  [T2Space G]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [T2Space G] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/FubGen.lean:70:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SliceTransformSchwartzBijective.lean:103:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -25,57 +25,101 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/FubGen.lean:67:0: automatically included section variable(s) unused in theorem `PositivityTheory.ThKG.Fub.exists_haar`:
-  [LocallyCompactSpace G]
-  [SecondCountableTopology G]
-  [T2Space G]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [LocallyCompactSpace G] [SecondCountableTopology G] [T2Space G] in theorem ...
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SliceTransformSchwartzBijective.lean:104:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/FubGen.lean:67:38: Variable name `hS` is not explicitly referenced.
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hS
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SliceTransformSchwartzBijective.lean:105:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/FubGen.lean:91:0: automatically included section variable(s) unused in theorem `PositivityTheory.ThKG.Fub.mem_part`:
-  [TopologicalSpace G]
-  [IsTopologicalGroup G]
-  [LocallyCompactSpace G]
-  [SecondCountableTopology G]
-  [T2Space G]
-  [MeasurableSpace G]
-  [BorelSpace G]
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SliceTransformSchwartzBijective.lean:106:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SliceTransformSchwartzBijective.lean:108:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [87206/87222] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrientedHermitianFormQuadSumEqTrace (15s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/OrientedHermitianFormQuadSumEqTrace.lean:48:0: automatically included section variable(s) unused in theorem `GlobalTheory.RouteCoords.submatrix_eq_fromCols`:
   [CommRing R]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [TopologicalSpace
-  G] [IsTopologicalGroup
-  G] [LocallyCompactSpace
-  G] [SecondCountableTopology G] [T2Space G] [MeasurableSpace G] [BorelSpace G] [CommRing R] in theorem ...
+  omit [CommRing R] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/FubGen.lean:95:0: automatically included section variable(s) unused in theorem `PositivityTheory.ThKG.Fub.Sys.closed`:
-  [IsTopologicalGroup G]
-  [LocallyCompactSpace G]
-  [SecondCountableTopology G]
-  [BorelSpace G]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTopologicalGroup G] [LocallyCompactSpace G] [SecondCountableTopology G] [BorelSpace G] in theorem ...
+⚠ [87207/87223] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalWeylElementDoubledStatement (6.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalWeylElementDoubledStatement.lean:26:54: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/FubGen.lean:120:0: automatically included section variable(s) unused in theorem `PositivityTheory.ThKG.Fub.Sys.good_sum`:
-  [IsTopologicalGroup G]
-  [LocallyCompactSpace G]
-  [SecondCountableTopology G]
-  [T2Space G]
-  [BorelSpace G]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTopologicalGroup
-  G] [LocallyCompactSpace G] [SecondCountableTopology G] [T2Space G] [BorelSpace G] in theorem ...
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalWeylElementDoubledStatement.lean:26:97: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/FubGen.lean:144:4: Try this: 
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalWeylElementDoubledStatement.lean:26:54: Unused tactic linter: `exact GlobalTheory.DblDiag.swap_at_place` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalWeylElementDoubledStatement.lean:26:97: Unused tactic linter: `(intros; apply GlobalTheory.DblDiag.swap_at_place <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [87208/87223] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalIdempotentCharacterValue (9.3s)
+⚠ [87209/87232] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplittingPreservesLocalSchwartzStatement (5.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SplittingPreservesLocalSchwartzStatement.lean:27:56: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SplittingPreservesLocalSchwartzStatement.lean:27:101: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SplittingPreservesLocalSchwartzStatement.lean:27:56: Unused tactic linter: `exact GlobalTheory.LocSplitOp.exists_locOp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SplittingPreservesLocalSchwartzStatement.lean:27:101: Unused tactic linter: `(intros; apply GlobalTheory.LocSplitOp.exists_locOp <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [87210/87237] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SliceTransformSchwartzBijectiveStatement (5.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SliceTransformSchwartzBijectiveStatement.lean:21:58: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SliceTransformSchwartzBijectiveStatement.lean:21:105: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SliceTransformSchwartzBijectiveStatement.lean:21:58: Unused tactic linter: `exact GlobalTheory.SwapSliceBij.sliceT_bijOn` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SliceTransformSchwartzBijectiveStatement.lean:21:105: Unused tactic linter: `(intros; apply GlobalTheory.SwapSliceBij.sliceT_bijOn <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [87211/87237] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalIdempotentCharacterValueStatement (6.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalIdempotentCharacterValueStatement.lean:30:57: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalIdempotentCharacterValueStatement.lean:30:103: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalIdempotentCharacterValueStatement.lean:30:57: Unused tactic linter: `exact GlobalTheory.SwapAtPlace.swap_at_acts` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalIdempotentCharacterValueStatement.lean:30:103: Unused tactic linter: `(intros; apply GlobalTheory.SwapAtPlace.swap_at_acts <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [87212/87239] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAtCoord (6.2s)
+⚠ [87213/87247] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSBZero (20s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsSBZero.lean:102:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -83,78 +127,34 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/FubGen.lean:144:19: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/FubGen.lean:145:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/FubGen.lean:166:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/FubGen.lean:166:19: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/FubGen.lean:166:35: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [86933/86960] Built Development.WeilBound.ThetaLifts.EigenvalueEndgame.EigenKilling.RealVanishOf (9.1s)
-⚠ [86934/86964] Built Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.FubTate (6.9s)
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/FubTate.lean:51:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/FubTate.lean:77:18: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/FubTate.lean:86:18: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/FubTate.lean:89:103: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/FubTate.lean:92:22: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-⚠ [86935/86964] Built Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.IdealA (14s)
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/IdealA.lean:31:0: automatically included section variable(s) unused in theorem `PositivityTheory.ThKG.Loc.Cone.Id.smul_eq`:
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsSBZero.lean:280:0: automatically included section variable(s) unused in theorem `GlobalTheory.SplitTransportPair.one_mem_UAt`:
   [NumberField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [NumberField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/IdealA.lean:144:0: automatically included section variable(s) unused in theorem `PositivityTheory.ThKG.Loc.Cone.Id.mem_cj`:
-  [NumberField F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] in theorem ...
+⚠ [87214/87247] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledVacuumTwistedVacuumConditionDoubledLattic (9.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DoubledVacuumTwistedVacuumConditionDoubledLattic.lean:27:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [87215/87255] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationLeOneOfMem (18s)
+⚠ [87216/87255] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnderMemAndPlaceAboveEqOfMem (25s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UnderMemAndPlaceAboveEqOfMem.lean:475:22: Unused tactic linter: `change 1 ≤ D.R.m - i` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/IdealA.lean:153:0: automatically included section variable(s) unused in theorem `PositivityTheory.ThKG.Loc.Cone.Id.mem_one_conj`:
-  [NumberField F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [86936/86964] Built Development.WeilBound.ThetaLifts.EigenvalueEndgame.SignatureSplitting.ConvCont (8.1s)
-✔ [86937/86966] Built Formalism.UnipotentAdelicQuotients.SiegelSetsSL2Adelic (4.9s)
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [87217/87257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsRestExtra (6.5s)
+✔ [87218/87259] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBaseFieldGeneratorLocalDifferentInertPlace (6.0s)
+⚠ [87219/87260] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoatomOfFiniteLength (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCoatomOfFiniteLength.lean:66:22: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [87220/87260] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInertLocalUniformizerImports (5.9s)
+✔ [87221/87260] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetNeZeroOfHasSig (5.7s)
