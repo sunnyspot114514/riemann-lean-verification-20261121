@@ -1,84 +1,154 @@
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [90842/90870] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.PhiInvarianceRamifiedPlaceSharp (5.2s)
-⚠ [90843/90870] Built Formalism.LocalToGlobal.GenusGluing.GenusApproximation.GenusApproximationProofs.AsmOfMemComplF (19s)
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:14:8: automatically included section variable(s) unused in theorem `_private.Formalism.LocalToGlobal.GenusGluing.GenusApproximation.GenusApproximationProofs.AsmOfMemComplF.0.Formalism.L2.GenusGluing.Gen.glEquiv_apply_lemma`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:46:0: automatically included section variable(s) unused in theorem `Formalism.L2.GenusGluing.Gen.asm_smul_mulVec`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:59:6: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsSplitIdempotentAtConjugatePrimeStatement.lean:13:123: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:59:6: Unused tactic linter: `rw [IsScalarTower.algebraMap_apply (𝓞 F) (𝓞 E) E r]` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsSplitIdempotentAtConjugatePrimeStatement.lean:13:67: Unused tactic linter: `exact GlobalTheory.SplitEtaIdem.exists_isIdemAt_conjP` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:70:0: automatically included section variable(s) unused in theorem `Formalism.L2.GenusGluing.Gen.asm_smul_apply`:
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsSplitIdempotentAtConjugatePrimeStatement.lean:13:123: Unused tactic linter: `(intros; apply GlobalTheory.SplitEtaIdem.exists_isIdemAt_conjP <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [91048/91078] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemCompletedSelfDualLatticeIffIntegralStdFrame (6.4s)
+⚠ [91049/91078] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLatticeVacuumNonsplitPlaceVacuumAtPrimeStatement (5.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ThetaLatticeVacuumNonsplitPlaceVacuumAtPrimeStatement.lean:18:61: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ThetaLatticeVacuumNonsplitPlaceVacuumAtPrimeStatement.lean:18:111: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ThetaLatticeVacuumNonsplitPlaceVacuumAtPrimeStatement.lean:18:61: Unused tactic linter: `exact GlobalTheory.VacInertAt.isVacAt_of_vacFin` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ThetaLatticeVacuumNonsplitPlaceVacuumAtPrimeStatement.lean:18:111: Unused tactic linter: `(intros; apply GlobalTheory.VacInertAt.isVacAt_of_vacFin <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [91050/91082] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsRationalUnitaryEquivRowStageCompatStatement (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsRationalUnitaryEquivRowStageCompatStatement.lean:19:62: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsRationalUnitaryEquivRowStageCompatStatement.lean:19:113: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsRationalUnitaryEquivRowStageCompatStatement.lean:19:62: Unused tactic linter: `exact GlobalTheory.Mem.R3.RowStdRat.stdRat_equiv` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsRationalUnitaryEquivRowStageCompatStatement.lean:19:113: Unused tactic linter: `(intros; apply GlobalTheory.Mem.R3.RowStdRat.stdRat_equiv <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [91051/91085] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConjPrimeIdempotentMulEqZeroOfVanishingAtPlaceStatement (5.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ConjPrimeIdempotentMulEqZeroOfVanishingAtPlaceStatement.lean:13:58: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ConjPrimeIdempotentMulEqZeroOfVanishingAtPlaceStatement.lean:13:105: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ConjPrimeIdempotentMulEqZeroOfVanishingAtPlaceStatement.lean:13:58: Unused tactic linter: `exact GlobalTheory.IdemSupp.idem_mul_eq_zero` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ConjPrimeIdempotentMulEqZeroOfVanishingAtPlaceStatement.lean:13:105: Unused tactic linter: `(intros; apply GlobalTheory.IdemSupp.idem_mul_eq_zero <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [91052/91086] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemCompletedSelfDualLatticeIffIntegralStdFrameStatement (5.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/MemCompletedSelfDualLatticeIffIntegralStdFrameStatement.lean:13:62: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/MemCompletedSelfDualLatticeIffIntegralStdFrameStatement.lean:13:113: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/MemCompletedSelfDualLatticeIffIntegralStdFrameStatement.lean:13:62: Unused tactic linter: `exact GlobalTheory.Mem.SDFrameStd.lamHat_iff_int` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/MemCompletedSelfDualLatticeIffIntegralStdFrameStatement.lean:13:113: Unused tactic linter: `(intros; apply GlobalTheory.Mem.SDFrameStd.lamHat_iff_int <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [91053/91087] Built Formalism.SharpRestriction.GrowthBounds.ChartedClasses.OrbitOfPts (11s)
+✔ [91054/91087] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceIdempotentVacuumHyperspecialDictionary (6.5s)
+✔ [91055/91087] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SupportedAtConjPrimeIdempotentOfTrivialOffPlace (9.4s)
+⚠ [91056/91087] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RowFormsFiniteGroupActionEqFlagLevelRightTranslaStatement (27s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RowFormsFiniteGroupActionEqFlagLevelRightTranslaStatement.lean:20:54: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RowFormsFiniteGroupActionEqFlagLevelRightTranslaStatement.lean:20:97: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RowFormsFiniteGroupActionEqFlagLevelRightTranslaStatement.lean:20:54: Unused tactic linter: `exact GlobalTheory.Mem.R3.RowAct.act_tie` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RowFormsFiniteGroupActionEqFlagLevelRightTranslaStatement.lean:20:97: Unused tactic linter: `(intros; apply GlobalTheory.Mem.R3.RowAct.act_tie <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [91057/91087] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.InTypeIsoSortedPos (6.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InTypeIsoSortedPos.lean:37:22: Variable name `p` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _p
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InTypeIsoSortedPos.lean:40:0: automatically included section variable(s) unused in theorem `GlobalTheory.InertTypeIso.iso_of_perm`:
+  [NumberField E]
+  [StarRing E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] [StarRing E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InTypeIsoSortedPos.lean:59:0: automatically included section variable(s) unused in theorem `GlobalTheory.InertTypeIso.iso_filter_pos`:
+  [NumberField E]
+  [StarRing E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] [StarRing E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [91058/91087] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CardKilledByInType (7.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CardKilledByInType.lean:60:25: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CardKilledByInType.lean:56:0: automatically included section variable(s) unused in theorem `GlobalTheory.InertDivUniq.card_killedBy_congr`:
   [NumberField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [NumberField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:74:0: automatically included section variable(s) unused in theorem `Formalism.L2.GenusGluing.Gen.asm_mem_std`:
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CardKilledByInType.lean:69:23: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CardKilledByInType.lean:64:0: automatically included section variable(s) unused in theorem `GlobalTheory.InertDivUniq.card_killedBy_inType`:
   [NumberField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [NumberField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:90:0: automatically included section variable(s) unused in theorem `Formalism.L2.GenusGluing.Gen.asm_mem_complF`:
-  [NumberField F]
-  [NumberField E]
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CardKilledByInType.lean:103:25: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+✔ [91059/91091] Built Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan (25s)
+⚠ [91060/91091] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SupportedAtConjPrimeIdempotentOfTrivialOffPlaceStatement (5.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SupportedAtConjPrimeIdempotentOfTrivialOffPlaceStatement.lean:13:71: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SupportedAtConjPrimeIdempotentOfTrivialOffPlaceStatement.lean:13:131: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SupportedAtConjPrimeIdempotentOfTrivialOffPlaceStatement.lean:13:71: Unused tactic linter: `exact GlobalTheory.Mem.SuppOffPlace.suppAt_of_trivial_off` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SupportedAtConjPrimeIdempotentOfTrivialOffPlaceStatement.lean:13:131: Unused tactic linter: `(intros; apply GlobalTheory.Mem.SuppOffPlace.suppAt_of_trivial_off <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [91061/91091] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DecoRawMulIdem (9.7s)
+⚠ [91062/91093] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeElementUniformizerRatioDeterminant (16s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/HeckeElementUniformizerRatioDeterminant.lean:56:57: This simp argument is unused:
+  Matrix.det_reindex_self
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.GeneralLinearGroup.val_det_apply, castGL]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [91063/91093] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InvMulIntAway (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/InvMulIntAway.lean:13:0: automatically included section variable(s) unused in theorem `GlobalTheory.InertNbr.idS_smul_latS`:
+  [StarRing E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] [NumberField E] in theorem ...
+  omit [StarRing E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:95:0: automatically included section variable(s) unused in theorem `Formalism.L2.GenusGluing.Gen.asm_of_mem_complF`:
-  [NumberField F]
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:148:14: This simp argument is unused:
-  Subring.smul_def
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Pi.single_apply, Ne.symm hb]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:157:12: This simp argument is unused:
-  Pi.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [h]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:178:43: This simp argument is unused:
-  ite_mul
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Pi.single_apply, apply_ite star, Finset.sum_ite_eq', Finset.sum_ite_eq]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:178:72: This simp argument is unused:
-  Finset.sum_ite_eq
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Pi.single_apply, apply_ite star, ite_mul, Finset.sum_ite_eq']
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:183:2: Try this: 
+✔ [91064/91093] Built Formalism.SharpRestriction.GrowthBounds.ChartedClasses.ExistsIsCGBases (13s)
+⚠ [91065/91093] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.HasRatBasisOfAct (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/HasRatBasisOfAct.lean:29:32: `Finsupp.coe_finset_sum` has been deprecated: Use `Finsupp.coe_finsetSum` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/HasRatBasisOfAct.lean:61:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -86,75 +156,5 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:184:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:187:8: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:194:10: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:199:10: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:207:8: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:211:8: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:212:8: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:187:8: Unused tactic linter: `exact ⟨fun x => (Algebra.IsIntegral.isIntegral (R := ℤ) x).tower_top⟩` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:194:10: Unused tactic linter: `exact IsScalarTower.algebraMap_apply (𝓞 F) (𝓞 E) E a` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:199:10: Unused tactic linter: `exact IsScalarTower.algebraMap_apply (𝓞 F) F E a` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:207:8: Unused tactic linter: `exact Ideal.exists_ideal_over_maximal_of_isIntegral inferInstance v.asIdeal hker` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:211:8: Unused tactic linter: `exact
-  Ring.ne_bot_of_isMaximal_of_not_isField hQ (NumberField.RingOfIntegers.not_isField E)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:212:8: Unused tactic linter: `exact Ideal.IsMaximal.ne_bot_of_isIntegral_int hQ` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:298:8: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:299:8: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:298:8: Unused tactic linter: `exact
-  Ring.ne_bot_of_isMaximal_of_not_isField hM (NumberField.RingOfIntegers.not_isField F)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:299:8: Unused tactic linter: `exact Ideal.IsMaximal.ne_bot_of_isIntegral_int hM` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:416:8: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:417:8: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:416:8: Unused tactic linter: `exact
-  Ring.ne_bot_of_isMaximal_of_not_isField hp (NumberField.RingOfIntegers.not_isField E)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/LocalToGlobal/GenusGluing/GenusApproximation/GenusApproximationProofs/AsmOfMemComplF.lean:417:8: Unused tactic linter: `exact Ideal.IsMaximal.ne_bot_of_isIntegral_int hp` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [90844/90870] Built Formalism.LocalToGlobal.GenusGluing.GenusApproximation.GenusApproximationProofs.DetAddDiagonalCons (6.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/HasRatBasisOfAct.lean:77:8: `Finsupp.coe_finset_sum` has been deprecated: Use `Finsupp.coe_finsetSum` instead
+✔ [91066/91098] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.CoefActionReprMemSubfield (6.6s)
