@@ -1,17 +1,12 @@
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/RealActionOnVertexWeightContinuousStatement.lean:21:67: Unused tactic linter: `exact GlobalTheory.RealActCont.realAct_inv_continuous` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/PadOneMemSecondBlockTriangular.lean:65:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/RealActionOnVertexWeightContinuousStatement.lean:21:123: Unused tactic linter: `(intros; apply GlobalTheory.RealActCont.realAct_inv_continuous <;> assumption)` does nothing
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/PadOneMemSecondBlockTriangular.lean:156:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [90133/90173] Built Development.AutomorphicArithmetic.LocalEmbeddings.JetsGlue (18s)
+warning: src/Development/AutomorphicArithmetic/LocalEmbeddings/JetsGlue.lean:110:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -19,95 +14,98 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/PadOneMemSecondBlockTriangular.lean:511:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+warning: src/Development/AutomorphicArithmetic/LocalEmbeddings/JetsGlue.lean:194:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/LocalEmbeddings/JetsGlue.lean:195:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/LocalEmbeddings/JetsGlue.lean:309:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/LocalEmbeddings/JetsGlue.lean:311:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [90134/90175] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.GivenStageFunctionRowArrowEqHalfExtensionStatement (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/GivenStageFunctionRowArrowEqHalfExtensionStatement.lean:11:64: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/GivenStageFunctionRowArrowEqHalfExtensionStatement.lean:11:117: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/GivenStageFunctionRowArrowEqHalfExtensionStatement.lean:11:64: Unused tactic linter: `exact GlobalTheory.CosetRow.givenFn_right_eq_extFn` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/GivenStageFunctionRowArrowEqHalfExtensionStatement.lean:11:117: Unused tactic linter: `(intros; apply GlobalTheory.CosetRow.givenFn_right_eq_extFn <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [90135/90175] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.KerFockMovedReal (9.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/KerFockMovedReal.lean:62:48: This simp argument is unused:
+  Prod.ext_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [GridData.toPair, map_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/KerFockMovedReal.lean:148:51: This simp argument is unused:
+  LinearMap.smul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [GridData.Weil.ker, thetaKO, map_smul, Pi.smul_apply, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [90136/90175] Built Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.RealDataStabilizer (12s)
+warning: src/Development/AbelianVarietyTheory/BlockTheory/TwistedDiscreteSeries/RealDataStabilizer.lean:327:89: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [90137/90179] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.GivenFnEqExtDat (15s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/GivenFnEqExtDat.lean:123:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
 If you'd rather continue using `push_neg` in your project, you can implement it as follows:
 ```
 open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-⚠ [89882/89940] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.VacuumRealRestrictionGaussianMulTheta (6.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/VacuumRealRestrictionGaussianMulTheta.lean:46:23: This simp argument is unused:
-  Matrix.of_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [frPt]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [89883/89940] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaGridBlockCongruenceOffTypePrimeDescription (8.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaGridBlockCongruenceOffTypePrimeDescription.lean:78:102: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaGridBlockCongruenceOffTypePrimeDescription.lean:78:193: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaGridBlockCongruenceOffTypePrimeDescription.lean:78:102: Unused tactic linter: `exact
-  IwahoriGroupOffset.GlobalTheory.CompanionTheory.StepGroupOff.mem_map_stepGroup_iff` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaGridBlockCongruenceOffTypePrimeDescription.lean:78:193: Unused tactic linter: `(intros;
-  apply IwahoriGroupOffset.GlobalTheory.CompanionTheory.StepGroupOff.mem_map_stepGroup_iff <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [89884/89941] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaGridBlockCongruenceTypePrimeDescription (9.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaGridBlockCongruenceTypePrimeDescription.lean:48:4: try 'simp' instead of 'simpa'
-
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaGridBlockCongruenceTypePrimeDescription.lean:45:0: automatically included section variable(s) unused in theorem `IteratedIwahori.GlobalTheory.CompanionTheory.IterJ.blk_le`:
-  [Fintype r]
-  [DecidableEq r]
-  [Fintype t]
-  [DecidableEq t]
+⚠ [90138/90179] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.FirstColumnTypeTwistDatumEqGivenFunction (15s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/FirstColumnTypeTwistDatumEqGivenFunction.lean:118:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [90139/90179] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompactUnitaryAverageFockPolynomialJetFunctional (9.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/CompactUnitaryAverageFockPolynomialJetFunctional.lean:21:0: automatically included section variable(s) unused in theorem `GlobalTheory.AvgJet.evalL_apply`:
+  [Fintype ι]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype r] [DecidableEq r] [Fintype t] [DecidableEq t] in theorem ...
+  omit [Fintype ι] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaGridBlockCongruenceTypePrimeDescription.lean:50:0: automatically included section variable(s) unused in theorem `IteratedIwahori.GlobalTheory.CompanionTheory.IterJ.blk_ixSucc_inl`:
-  [Fintype r]
-  [DecidableEq r]
-  [Fintype t]
-  [DecidableEq t]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype r] [DecidableEq r] [Fintype t] [DecidableEq t] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaGridBlockCongruenceTypePrimeDescription.lean:53:0: automatically included section variable(s) unused in theorem `IteratedIwahori.GlobalTheory.CompanionTheory.IterJ.blk_ixSucc_inr`:
-  [Fintype r]
-  [DecidableEq r]
-  [Fintype t]
-  [DecidableEq t]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype r] [DecidableEq r] [Fintype t] [DecidableEq t] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaGridBlockCongruenceTypePrimeDescription.lean:198:92: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaGridBlockCongruenceTypePrimeDescription.lean:198:173: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaGridBlockCongruenceTypePrimeDescription.lean:198:92: Unused tactic linter: `exact IteratedIwahori.GlobalTheory.CompanionTheory.IterJ.mem_stepGroup_map_iff` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaGridBlockCongruenceTypePrimeDescription.lean:198:173: Unused tactic linter: `(intros;
-  apply IteratedIwahori.GlobalTheory.CompanionTheory.IterJ.mem_stepGroup_map_iff <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [89885/89941] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.VacuumRealRestrictionGaussianMulThetaStatement (5.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/VacuumRealRestrictionGaussianMulThetaStatement.lean:13:61: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/VacuumRealRestrictionGaussianMulThetaStatement.lean:13:111: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/VacuumRealRestrictionGaussianMulThetaStatement.lean:13:61: Unused tactic linter: `exact GlobalTheory.VacRealForm.vacuum_real_form` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/VacuumRealRestrictionGaussianMulThetaStatement.lean:13:111: Unused tactic linter: `(intros; apply GlobalTheory.VacRealForm.vacuum_real_form <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [89886/89941] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeStabilizerReductionEqLocalReduction (17s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeStabilizerReductionEqLocalReduction.lean:23:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/CompactUnitaryAverageFockPolynomialJetFunctional.lean:98:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -115,46 +113,48 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeStabilizerReductionEqLocalReduction.lean:127:97: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/CompactUnitaryAverageFockPolynomialJetFunctional.lean:122:26: This simp argument is unused:
+  one_mul
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeStabilizerReductionEqLocalReduction.lean:127:183: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_one, Matrix.coe_units_inv]
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeStabilizerReductionEqLocalReduction.lean:127:97: Unused tactic linter: `exact ReductionComponent.GlobalTheory.CompanionTheory.RedComp.redFn_entry_eq_mk_iff` does nothing
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [90140/90179] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.BranchingPairingMemCoefficientField (8.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/BranchingPairingMemCoefficientField.lean:41:0: automatically included section variable(s) unused in theorem `GlobalTheory.BrRat.map_frDet`:
+  [Fintype ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeStabilizerReductionEqLocalReduction.lean:127:183: Unused tactic linter: `(intros;
-  apply ReductionComponent.GlobalTheory.CompanionTheory.RedComp.redFn_entry_eq_mk_iff <;> assumption)` does nothing
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/BranchingPairingMemCoefficientField.lean:48:0: automatically included section variable(s) unused in theorem `GlobalTheory.BrRat.map_dualSubst`:
+  [Fintype ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [89887/89943] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.FlatIntegrandFlippedTensorLocallyConstantCompact (9.8s)
-⚠ [89888/89944] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaGridBlockCongruenceOffTypePrimeDescriptionStatement (5.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaGridBlockCongruenceOffTypePrimeDescriptionStatement.lean:21:88: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/BranchingPairingMemCoefficientField.lean:120:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaGridBlockCongruenceOffTypePrimeDescriptionStatement.lean:21:165: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaGridBlockCongruenceOffTypePrimeDescriptionStatement.lean:21:88: Unused tactic linter: `exact GlobalTheory.Adopt.thetaGridBlockCongruence_offTypePrime_description` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [90141/90179] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalVectorRightEdgeCosine (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LocalVectorRightEdgeCosine.lean:18:139: Variable name `R` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaGridBlockCongruenceOffTypePrimeDescriptionStatement.lean:21:165: Unused tactic linter: `(intros;
-  apply GlobalTheory.Adopt.thetaGridBlockCongruence_offTypePrime_description <;> assumption)` does nothing
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [89889/89946] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaGridBlockCongruenceTypePrimeDescriptionStatement (5.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaGridBlockCongruenceTypePrimeDescriptionStatement.lean:21:85: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [90142/90179] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockComponentTransportedPointsEqJetOperator (7.2s)
+⚠ [90143/90179] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.EquivariantGLOfEquivariantUnitaryCoefficientSpac (8.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/EquivariantGLOfEquivariantUnitaryCoefficientSpac.lean:28:22: This simp argument is unused:
+  aeval_C
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaGridBlockCongruenceTypePrimeDescriptionStatement.lean:21:159: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp [T, MvPolynomial.algebraMap_eq, map_C, eval_C]
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaGridBlockCongruenceTypePrimeDescriptionStatement.lean:21:85: Unused tactic linter: `exact GlobalTheory.Adopt.thetaGridBlockCongruence_typePrime_description` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaGridBlockCongruenceTypePrimeDescriptionStatement.lean:21:159: Unused tactic linter: `(intros;
-  apply GlobalTheory.Adopt.thetaGridBlockCongruence_typePrime_description <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [89890/89948] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticePointSignEqThetaLawSemicharacter (11s)
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [90144/90180] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFockFrameChangeLastColumnDefinitePair (8.2s)
