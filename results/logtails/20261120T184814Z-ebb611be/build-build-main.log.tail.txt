@@ -1,27 +1,141 @@
-  [apply] simp only [LinearMap.comp_apply, Submodule.mkQ_apply, LinearEquiv.coe_coe, MonoidHom.comp_apply, jac, jacU,
-    twist_apply, jacquet_mk, LinearEquiv.map_smul, Submodule.quotEquivOfEq_mk, deltaHalf_thetaL, MonoidHom.inv_apply]
+  [apply] simp only [ContinuousLinearMap.smul_apply, ContinuousLinearMap.comp_apply, Function.comp_apply,
+    Complex.ofRealCLM_apply, innerSL_apply_apply, smul_eq_mul, nsmul_eq_mul, ContinuousLinearMap.coe_smul']
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [60499/60605] Built GroundTheory.PAdicHodge.FieldOfNormsRing (9.1s)
-✔ [60500/60605] Built GroundTheory.PAdicHodge.BdRAlgCl (24s)
-✔ [60501/60605] Built GroundTheory.PAdicHodge.FWCyclotomicNorm (10s)
-⚠ [60502/60605] Built Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.DerFin (17s)
-warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/DerFin.lean:99:0: automatically included section variable(s) unused in theorem `PositivityTheory.RgGu.NR.DerFin.phi_lift2`:
-  [ValuativeRel k]
-  [TopologicalSpace k]
-  [IsNonarchimedeanLocalField k]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] in theorem ...
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/VacuumProjectorRangeAnnihilated.lean:39:13: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/DerFin.lean:105:0: automatically included section variable(s) unused in theorem `PositivityTheory.RgGu.NR.DerFin.phi_continuous`:
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
+⚠ [60882/61065] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.PowSubCreationVacuumFockBoundStatement (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/PowSubCreationVacuumFockBoundStatement.lean:7:54: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/PowSubCreationVacuumFockBoundStatement.lean:7:97: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/PowSubCreationVacuumFockBoundStatement.lean:7:54: Unused tactic linter: `exact GlobalTheory.pow_vacuum_fock_bound` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/PowSubCreationVacuumFockBoundStatement.lean:7:97: Unused tactic linter: `(intros; apply GlobalTheory.pow_vacuum_fock_bound <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [60883/61065] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.EqZeroAtOneOfIteratedDerivsVanishOfGrowthStatement (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/EqZeroAtOneOfIteratedDerivsVanishOfGrowthStatement.lean:7:73: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/EqZeroAtOneOfIteratedDerivsVanishOfGrowthStatement.lean:7:135: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/EqZeroAtOneOfIteratedDerivsVanishOfGrowthStatement.lean:7:73: Unused tactic linter: `exact GlobalTheory.vanish_at_one_of_derivs_vanish_of_growth` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/EqZeroAtOneOfIteratedDerivsVanishOfGrowthStatement.lean:7:135: Unused tactic linter: `(intros;
+  apply GlobalTheory.vanish_at_one_of_derivs_vanish_of_growth <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [60884/61065] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEuclideanCoordsHermitianCartanInvolution (6.3s)
+⚠ [60885/61065] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormCreationAnnihilationWordLeNumberOperatorPowStatement (5.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPowStatement.lean:7:56: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPowStatement.lean:7:101: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPowStatement.lean:7:56: Unused tactic linter: `exact GlobalTheory.norm_word_le_number_pow` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPowStatement.lean:7:101: Unused tactic linter: `(intros; apply GlobalTheory.norm_word_le_number_pow <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [60886/61065] Built Development.AutomorphicArithmetic.ThetaCorrespondence.FockModels.GlnTemp (8.4s)
+✔ [60887/61067] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeakWeilRepEqUnitSmulOscillatorRealPoints (10s)
+⚠ [60888/61067] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.VacuumProjectorRangeAnnihilatedStatement (5.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/VacuumProjectorRangeAnnihilatedStatement.lean:9:65: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/VacuumProjectorRangeAnnihilatedStatement.lean:9:119: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/VacuumProjectorRangeAnnihilatedStatement.lean:9:65: Unused tactic linter: `exact GlobalTheory.Mem.Lift.VacAnn.proj_annihilated` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/VacuumProjectorRangeAnnihilatedStatement.lean:9:119: Unused tactic linter: `(intros; apply GlobalTheory.Mem.Lift.VacAnn.proj_annihilated <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [60889/61072] Built Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.IotaBounded (8.7s)
+✔ [60890/61074] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsOpenLevelFixingThetaFunction (7.4s)
+⚠ [60891/61079] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEuclideanCoordsHermitianCartanInvolutionStatement (5.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsEuclideanCoordsHermitianCartanInvolutionStatement.lean:9:63: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsEuclideanCoordsHermitianCartanInvolutionStatement.lean:9:115: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsEuclideanCoordsHermitianCartanInvolutionStatement.lean:9:63: Unused tactic linter: `exact GlobalTheory.Twist.EuclidCoord.exists_coord` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsEuclideanCoordsHermitianCartanInvolutionStatement.lean:9:115: Unused tactic linter: `(intros; apply GlobalTheory.Twist.EuclidCoord.exists_coord <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [60892/61079] Built Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaKernelOrthonormalFrameInDomainPeriodLinear (9.9s)
+⚠ [60893/61081] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeakWeilRepEqUnitSmulOscillatorRealPointsStatement (5.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/WeakWeilRepEqUnitSmulOscillatorRealPointsStatement.lean:11:61: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/WeakWeilRepEqUnitSmulOscillatorRealPointsStatement.lean:11:111: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/WeakWeilRepEqUnitSmulOscillatorRealPointsStatement.lean:11:61: Unused tactic linter: `exact GlobalTheory.Mem.LiftCmp.weil_eq_smul_osc` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/WeakWeilRepEqUnitSmulOscillatorRealPointsStatement.lean:11:111: Unused tactic linter: `(intros; apply GlobalTheory.Mem.LiftCmp.weil_eq_smul_osc <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [60894/61084] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaGrowthOfThetaSquareIntegrable (22s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ThetaGrowthOfThetaSquareIntegrable.lean:324:44: `ofReal_norm_eq_enorm` has been deprecated: Use `ofReal_norm` instead
+⚠ [60895/61084] Built Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.WittSmallGroupEmbeddingMemPointwiseStabilizerIso (35s)
+warning: src/Development/AbelianVarietyTheory/Definitions/TwistedInnerProducts/WittSmallGroupEmbeddingMemPointwiseStabilizerIso.lean:507:4: Unused tactic linter: `change (_ : Matrix _ _ D.host.E) *ᵥ _ = 0` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Definitions/TwistedInnerProducts/WittSmallGroupEmbeddingMemPointwiseStabilizerIso.lean:511:4: Unused tactic linter: `change (_ : Matrix _ _ D.host.E) *ᵥ _ = 0` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [60896/61086] Built Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CompletedTensorLatticeStrongApproxOpenCompactStatement (5.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SiegelThetaTransformation/CompletedTensorLatticeStrongApproxOpenCompactStatement.lean:13:107: Variable name `C` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _C
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SiegelThetaTransformation/CompletedTensorLatticeStrongApproxOpenCompactStatement.lean:14:53: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SiegelThetaTransformation/CompletedTensorLatticeStrongApproxOpenCompactStatement.lean:14:95: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SiegelThetaTransformation/CompletedTensorLatticeStrongApproxOpenCompactStatement.lean:14:53: Unused tactic linter: `exact GlobalTheory.Ker.HatLat.hatA_tens` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SiegelThetaTransformation/CompletedTensorLatticeStrongApproxOpenCompactStatement.lean:14:95: Unused tactic linter: `(intros; apply GlobalTheory.Ker.HatLat.hatA_tens <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [60897/61088] Built Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.SegmentJacquetSubquotients.StageC (66s)
+warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/SegmentJacquetSubquotients/StageC.lean:115:0: automatically included section variable(s) unused in theorem `PositivityTheory.RgGu.SRC.StageC.sum_app`:
   [ValuativeRel k]
   [IsNonarchimedeanLocalField k]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [ValuativeRel k] [IsNonarchimedeanLocalField k] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/DerFin.lean:192:4: Try this: 
+warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/SegmentJacquetSubquotients/StageC.lean:246:9: `ENat.one_le_iff_ne_zero` has been deprecated: Use `Order.one_le_iff_ne_zero` instead
+
+Note: The updated constant has a different type:
+  ∀ {α : Type u_1} {x : α} [inst : PartialOrder α] [inst_1 : AddMonoidWithOne α] [NeZero 1] [SuccAddOrder α]
+    [IsBotZeroClass α], 1 ≤ x ↔ x ≠ 0
+instead of
+  ∀ {n : ℕ∞}, 1 ≤ n ↔ n ≠ 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_le_iff_ne_zero` to `Order.one_le_iff_ne_zero x`).
+warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/SegmentJacquetSubquotients/StageC.lean:274:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -29,132 +143,18 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/DerFin.lean:204:6: Try this: 
-  haveI̵
+✔ [60898/61089] Built GroundTheory.PAdicHodge.SenTateCharTrace (18s)
+⚠ [60899/61089] Built Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaKernelOrthonormalFrameInDomainPeriodLinearStatement (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SiegelThetaTransformation/ThetaKernelOrthonormalFrameInDomainPeriodLinearStatement.lean:14:57: this tactic is never executed
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SiegelThetaTransformation/ThetaKernelOrthonormalFrameInDomainPeriodLinearStatement.lean:14:103: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/DerFin.lean:209:4: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SiegelThetaTransformation/ThetaKernelOrthonormalFrameInDomainPeriodLinearStatement.lean:14:57: Unused tactic linter: `exact GlobalTheory.Ker.onBasis_frame_period` does nothing
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SiegelThetaTransformation/ThetaKernelOrthonormalFrameInDomainPeriodLinearStatement.lean:14:103: Unused tactic linter: `(intros; apply GlobalTheory.Ker.onBasis_frame_period <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/DerFin.lean:296:6: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/DerFin.lean:297:6: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [60503/60605] Built GroundTheory.PAdicHodge.ACrisGalois (54s)
-✔ [60504/60606] Built GroundTheory.PAdicHodge.FieldOfNormsRam (10s)
-✔ [60505/60611] Built Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.NontrivialOfIsIrreducible (21s)
-⚠ [60506/60611] Built GroundTheory.PAdicHodge.BdRField (31s)
-warning: src/GroundTheory/PAdicHodge/BdRField.lean:60:0: automatically included section variable(s) unused in theorem `GroundTheory.PAdicHodge.IsPerfectoidField.varpi_mem_bDeRhamSubmonoid`:
-  [CharZero K]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [CharZero K] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/GroundTheory/PAdicHodge/BdRField.lean:122:15: `Int.ofNat_eq_coe` has been deprecated: Use `Int.ofNat_eq_natCast` instead
-warning: src/GroundTheory/PAdicHodge/BdRField.lean:180:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/GroundTheory/PAdicHodge/BdRField.lean:203:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/GroundTheory/PAdicHodge/BdRField.lean:350:8: try 'simp' instead of 'simpa'
-
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-ℹ [60507/60613] Built GroundTheory.PAdicHodge.FieldOfNormsField (11s)
-info: src/GroundTheory/PAdicHodge/FieldOfNormsField.lean:346:4: Try this:
-  [apply] ring_nf
-  
-  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
-    
-  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
-info: src/GroundTheory/PAdicHodge/FieldOfNormsField.lean:356:4: Try this:
-  [apply] ring_nf
-  
-  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
-    
-  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
-⚠ [60508/60614] Built Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.SomeRed (34s)
-warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/SomeRed.lean:38:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/SomeRed.lean:47:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/SomeRed.lean:115:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/SomeRed.lean:148:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/SomeRed.lean:182:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [60509/60615] Built GroundTheory.PAdicHodge.UnramifiedACris (12s)
-⚠ [60510/60616] Built GroundTheory.PAdicHodge.OrthoBasis (8.3s)
-warning: src/GroundTheory/PAdicHodge/OrthoBasis.lean:53:0: automatically included section variable(s) unused in theorem `GroundTheory.PAdicHodge.exists_orthogonal_fin`:
-  [IsUltrametricDist k]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsUltrametricDist k] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [60511/60619] Built GroundTheory.PAdicHodge.PerfectoidCriterion (8.1s)
-✔ [60512/60621] Built GroundTheory.PAdicHodge.UntiltField (12s)
-⚠ [60513/60625] Built GroundTheory.PAdicHodge.BdRTGalois (19s)
-warning: src/GroundTheory/PAdicHodge/BdRTGalois.lean:68:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [60514/60625] Built GroundTheory.PAdicHodge.FieldOfNormsLocal (8.4s)
-✔ [60515/60627] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalSwapProductGeneric (25s)
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [60900/61090] Built Development.AbelianVarietyTheory.Definitions.Divisors.PerCEmb (6.3s)
