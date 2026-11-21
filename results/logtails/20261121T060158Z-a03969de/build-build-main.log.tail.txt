@@ -1,116 +1,123 @@
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LocalUnitaryOrbits/ExistsIntBasis.lean:72:18: try 'simp' instead of 'simpa'
-
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LocalUnitaryOrbits/ExistsIntBasis.lean:114:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [109380/109444] Built Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.JacConstWbGlue (6.5s)
-✔ [109381/109444] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalUnitaryOrbits.OmLocUOfOnto (5.2s)
-✔ [109382/109444] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ValuationLocalVolumes.PrimIff (7.3s)
-⚠ [109383/109444] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.FamilyRowWeightSumUnfoldingIdentityProofStatement (5.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/FamilyRowWeightSumUnfoldingIdentityProofStatement.lean:7:80: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/StabiliserUnitaryGroupHasGaugeMeasureStatement.lean:7:93: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/FamilyRowWeightSumUnfoldingIdentityProofStatement.lean:7:149: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/StabiliserUnitaryGroupHasGaugeMeasureStatement.lean:7:52: Unused tactic linter: `exact GlobalTheory.GaugeKExists.gaugeK` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/StabiliserUnitaryGroupHasGaugeMeasureStatement.lean:7:93: Unused tactic linter: `(intros; apply GlobalTheory.GaugeKExists.gaugeK <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [109701/109730] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.GramInvariantPowLeHaarWeight (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/GramInvariantPowLeHaarWeight.lean:143:14: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/FamilyRowWeightSumUnfoldingIdentityProofStatement.lean:7:80: Unused tactic linter: `exact GlobalTheory.SnFam.familyRowWeightSumUnfoldingIdentity_proof` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/GramInvariantPowLeHaarWeight.lean:144:14: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/GramInvariantPowLeHaarWeight.lean:143:14: Unused tactic linter: `exact apply_nonneg v (-1)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/FamilyRowWeightSumUnfoldingIdentityProofStatement.lean:7:149: Unused tactic linter: `(intros;
-  apply GlobalTheory.SnFam.familyRowWeightSumUnfoldingIdentity_proof <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/GramInvariantPowLeHaarWeight.lean:144:14: Unused tactic linter: `positivity` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [109384/109444] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ValuationLocalVolumes.FixedMemRange (5.3s)
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/ValuationLocalVolumes/FixedMemRange.lean:31:2: Try this: 
-  haveI̵
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/GramInvariantPowLeHaarWeight.lean:156:8: this tactic is never executed
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/GramInvariantPowLeHaarWeight.lean:157:8: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/ValuationLocalVolumes/FixedMemRange.lean:32:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/GramInvariantPowLeHaarWeight.lean:156:8: Unused tactic linter: `exact apply_nonneg w x` does nothing
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/GramInvariantPowLeHaarWeight.lean:157:8: Unused tactic linter: `positivity` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/ValuationLocalVolumes/FixedMemRange.lean:38:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-✔ [109385/109446] Built Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.JacConstBHVolS (5.2s)
-⚠ [109386/109446] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ValuationLocalVolumes.FfHSelfOfSnd (6.3s)
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/ValuationLocalVolumes/FfHSelfOfSnd.lean:40:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/ValuationLocalVolumes/FfHSelfOfSnd.lean:102:46: This simp argument is unused:
-  Matrix.mulVecLin_apply
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [109702/109730] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ArchimedeanOrbitMeasures.HuaInvOfTauDeriv (8.3s)
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/ArchimedeanOrbitMeasures/HuaInvOfTauDeriv.lean:111:52: This simp argument is unused:
+  Complex.star_def
 
 Hint: Omit it from the simp argument list.
   [apply] simp
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [109387/109446] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalUnitaryOrbits.TwoNeZeroV (11s)
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LocalUnitaryOrbits/TwoNeZeroV.lean:57:0: automatically included section variable(s) unused in theorem `PI.OmLocU.UnN.sc_eq`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/ArchimedeanOrbitMeasures/HuaInvOfTauDeriv.lean:136:62: This simp argument is unused:
+  Complex.star_def
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [109388/109452] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ValuationLocalVolumes.OmVMemEFHolds (6.4s)
-⚠ [109389/109452] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalUnitaryOrbits.GramInvOHolds (13s)
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LocalUnitaryOrbits/GramInvOHolds.lean:26:17: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [109703/109730] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ArchimedeanOrbitMeasures.NuBridgeA (7.9s)
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/ArchimedeanOrbitMeasures/NuBridgeA.lean:41:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/ArchimedeanOrbitMeasures/NuBridgeA.lean:42:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/ArchimedeanOrbitMeasures/NuBridgeA.lean:80:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/ArchimedeanOrbitMeasures/NuBridgeA.lean:112:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [109704/109730] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ArchimedeanOrbitMeasures.HasFDerivAtTauR (9.5s)
+⚠ [109705/109730] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormsInvariantsGenericRationalFramePair (6.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/NormsInvariantsGenericRationalFramePair.lean:70:56: Variable name `Y` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _Y
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [109706/109730] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.StabilizerTubeGaugeMassAsymptoticStatement (4.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/StabilizerTubeGaugeMassAsymptoticStatement.lean:7:50: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LocalUnitaryOrbits/GramInvOHolds.lean:26:17: Unused tactic linter: `rfl` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/StabilizerTubeGaugeMassAsymptoticStatement.lean:7:89: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/StabilizerTubeGaugeMassAsymptoticStatement.lean:7:50: Unused tactic linter: `exact GlobalTheory.StabTube.tubeLimK` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LocalUnitaryOrbits/GramInvOHolds.lean:31:0: automatically included section variable(s) unused in theorem `PI.OmLocU.oEv_one`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/StabilizerTubeGaugeMassAsymptoticStatement.lean:7:89: Unused tactic linter: `(intros; apply GlobalTheory.StabTube.tubeLimK <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [109390/109452] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalUnitaryOrbits.ResAlgOfSpan (7.4s)
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LocalUnitaryOrbits/ResAlgOfSpan.lean:31:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [109707/109732] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.GramInvariantPowLeHaarWeightStatement (5.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/GramInvariantPowLeHaarWeightStatement.lean:7:60: this tactic is never executed
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/GramInvariantPowLeHaarWeightStatement.lean:7:109: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LocalUnitaryOrbits/ResAlgOfSpan.lean:32:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/GramInvariantPowLeHaarWeightStatement.lean:7:60: Unused tactic linter: `exact GlobalTheory.HaarWeight.gram_pow_le_haar` does nothing
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/GramInvariantPowLeHaarWeightStatement.lean:7:109: Unused tactic linter: `(intros; apply GlobalTheory.HaarWeight.gram_pow_le_haar <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LocalUnitaryOrbits/ResAlgOfSpan.lean:33:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [109708/109732] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ArchimedeanOrbitMeasures.DKForm (15s)
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/ArchimedeanOrbitMeasures/DKForm.lean:17:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -118,38 +125,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LocalUnitaryOrbits/ResAlgOfSpan.lean:39:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LocalUnitaryOrbits/ResAlgOfSpan.lean:40:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LocalUnitaryOrbits/ResAlgOfSpan.lean:45:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LocalUnitaryOrbits/ResAlgOfSpan.lean:90:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LocalUnitaryOrbits/ResAlgOfSpan.lean:91:2: Try this: 
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/ArchimedeanOrbitMeasures/DKForm.lean:18:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -157,4 +133,28 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [109391/109452] Built Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.JacConstAll (5.0s)
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/ArchimedeanOrbitMeasures/DKForm.lean:19:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/ArchimedeanOrbitMeasures/DKForm.lean:38:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/ArchimedeanOrbitMeasures/DKForm.lean:39:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [109709/109732] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ArchimedeanOrbitMeasures.NormSqDetOfUnitary (15s)
