@@ -1,104 +1,6 @@
-  Matrix.sub_mul
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Matrix.mul_sub, Matrix.mul_one, Matrix.one_mul, Matrix.mul_smul, Matrix.smul_mul, Matrix.neg_mul]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/CenterMtEqSmulOne.lean:72:63: This simp argument is unused:
-  Matrix.one_mul
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Matrix.mul_sub, Matrix.sub_mul, Matrix.mul_one, Matrix.mul_smul, Matrix.smul_mul, Matrix.neg_mul]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/CenterMtEqSmulOne.lean:72:96: This simp argument is unused:
-  Matrix.smul_mul
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Matrix.mul_sub, Matrix.sub_mul, Matrix.mul_one, Matrix.one_mul, Matrix.mul_smul, Matrix.neg_mul]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/CenterMtEqSmulOne.lean:91:0: automatically included section variable(s) unused in theorem `GlobalTheory.CenterScalar.map_smulE`:
-  [Fintype n]
-  [DecidableEq n]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype n] [DecidableEq n] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/CenterMtEqSmulOne.lean:94:0: automatically included section variable(s) unused in theorem `GlobalTheory.CenterScalar.map_subE`:
-  [Fintype n]
-  [DecidableEq n]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype n] [DecidableEq n] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/CenterMtEqSmulOne.lean:97:0: automatically included section variable(s) unused in theorem `GlobalTheory.CenterScalar.map_addE`:
-  [Fintype n]
-  [DecidableEq n]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype n] [DecidableEq n] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/CenterMtEqSmulOne.lean:100:0: automatically included section variable(s) unused in theorem `GlobalTheory.CenterScalar.map_oneE`:
-  [Fintype n]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype n] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/CenterMtEqSmulOne.lean:102:0: automatically included section variable(s) unused in theorem `GlobalTheory.CenterScalar.map_mulE`:
-  [DecidableEq n]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [DecidableEq n] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/CenterMtEqSmulOne.lean:194:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-⚠ [110823/110851] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IndexZeroLevelCharacterEqBesselCharacterStatement (7.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/IndexZeroLevelCharacterEqBesselCharacterStatement.lean:11:61: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/IndexZeroLevelCharacterEqBesselCharacterStatement.lean:11:111: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/IndexZeroLevelCharacterEqBesselCharacterStatement.lean:11:61: Unused tactic linter: `exact GlobalTheory.LevZeroChar.levChi_eq_psiBes` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/IndexZeroLevelCharacterEqBesselCharacterStatement.lean:11:111: Unused tactic linter: `(intros; apply GlobalTheory.LevZeroChar.levChi_eq_psiBes <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [110824/110851] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalLatticeSpanAtPlace (7.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LocalLatticeSpanAtPlace.lean:19:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LocalLatticeSpanAtPlace.lean:20:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LocalLatticeSpanAtPlace.lean:21:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LocalLatticeSpanAtPlace.lean:18:70: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LocalLatticeSpanAtPlace.lean:19:4: Unused tactic linter: `(intros;
-  apply _root_.GlobalTheory.NonzeroSmulMem.exists_ne_zero_smul_mem <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LocalLatticeSpanAtPlace.lean:20:4: Unused tactic linter: `(intros;
-  apply @_root_.GlobalTheory.NonzeroSmulMem.exists_ne_zero_smul_mem <;>
-    first
-    | assumption
-    | infer_instance)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LocalLatticeSpanAtPlace.lean:21:4: Unused tactic linter: `(intros; exact _root_.GlobalTheory.NonzeroSmulMem.exists_ne_zero_smul_mem ..)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LocalLatticeSpanAtPlace.lean:52:2: Try this: 
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsStepLevelConjBaseLatticeUnitary.lean:81:8: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -106,7 +8,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LocalLatticeSpanAtPlace.lean:62:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsStepLevelConjBaseLatticeUnitary.lean:82:8: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -114,47 +16,145 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LocalLatticeSpanAtPlace.lean:60:250: Variable name `hI` is not explicitly referenced.
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsStepLevelConjBaseLatticeUnitary.lean:90:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+✔ [111053/111080] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FrameGlInt (16s)
+⚠ [111054/111082] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FrameImageTrivialOffLevelPrimeStatement (6.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/FrameImageTrivialOffLevelPrimeStatement.lean:23:67: this tactic is never executed
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hI
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/FrameImageTrivialOffLevelPrimeStatement.lean:23:123: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [110825/110852] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelPrimeDiamondRepresentation (6.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LevelPrimeDiamondRepresentation.lean:98:98: Variable name `hc` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/FrameImageTrivialOffLevelPrimeStatement.lean:23:67: Unused tactic linter: `exact GlobalTheory.AdForm.FrameTriv.frame_trivial_off` does nothing
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hc
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/FrameImageTrivialOffLevelPrimeStatement.lean:23:123: Unused tactic linter: `(intros; apply GlobalTheory.AdForm.FrameTriv.frame_trivial_off <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LevelPrimeDiamondRepresentation.lean:99:19: Variable name `hI` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [111055/111082] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DiamondElementIntegralSupportLastRow (36s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DiamondElementIntegralSupportLastRow.lean:57:19: `zero_le'` has been deprecated: Use `zero_le` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DiamondElementIntegralSupportLastRow.lean:58:52: `zero_le'` has been deprecated: Use `zero_le` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DiamondElementIntegralSupportLastRow.lean:127:24: This simp argument is unused:
+  Matrix.one_apply
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hI
+Hint: Omit it from the simp argument list.
+  [apply] simp [hb.symm]
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [110826/110852] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.OffTypePinnedLocalGroups (22s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/OffTypePinnedLocalGroups.lean:271:4: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DiamondElementIntegralSupportLastRow.lean:129:24: This simp argument is unused:
+  Pi.single_apply
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: Omit it from the simp argument list.
+  [apply] simp [hb]
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [110827/110853] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelPrimeDiamondPreservesIntegralForms (6.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LevelPrimeDiamondPreservesIntegralForms.lean:14:0: automatically included section variable(s) unused in theorem `GlobalTheory.Mem.Col2.DiaLat.evV_rho_tr`:
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DiamondElementIntegralSupportLastRow.lean:138:24: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DiamondElementIntegralSupportLastRow.lean:143:22: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DiamondElementIntegralSupportLastRow.lean:144:12: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hk]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DiamondElementIntegralSupportLastRow.lean:157:23: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hk]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DiamondElementIntegralSupportLastRow.lean:231:0: automatically included section variable(s) unused in theorem `GlobalTheory.Mem.Dil.mulVec_ee`:
   [StarRing E]
-  [NumberField K]
-  [StarRing K]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [StarRing E] [NumberField K] [StarRing K] in theorem ...
+  omit [StarRing E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LevelPrimeDiamondPreservesIntegralForms.lean:47:243: Variable name `hI` is not explicitly referenced.
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DiamondElementIntegralSupportLastRow.lean:238:16: This simp argument is unused:
+  Pi.single_apply
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hI
+Hint: Omit it from the simp argument list.
+  [apply] simp [ee, hk]
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [110828/110853] Built Development.AbelianVarietyTheory.Definitions.LatticeFrames.BuiltGIntro (5.4s)
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DiamondElementIntegralSupportLastRow.lean:317:40: `zero_le'` has been deprecated: Use `zero_le` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DiamondElementIntegralSupportLastRow.lean:346:67: `zero_le'` has been deprecated: Use `zero_le` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DiamondElementIntegralSupportLastRow.lean:357:0: automatically included section variable(s) unused in theorem `GlobalTheory.Mem.Dil.ee_self`:
+  [StarRing E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [StarRing E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DiamondElementIntegralSupportLastRow.lean:360:0: automatically included section variable(s) unused in theorem `GlobalTheory.Mem.Dil.ee_ne`:
+  [StarRing E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [StarRing E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DiamondElementIntegralSupportLastRow.lean:361:12: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [ee, h.symm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DiamondElementIntegralSupportLastRow.lean:366:0: automatically included section variable(s) unused in theorem `GlobalTheory.Mem.Dil.mem_of_smul_eq_zero`:
+  [StarRing E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [StarRing E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [111056/111082] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsStepLevelConjBaseLatticeUnitaryStatement (5.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsStepLevelConjBaseLatticeUnitaryStatement.lean:10:68: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsStepLevelConjBaseLatticeUnitaryStatement.lean:10:125: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsStepLevelConjBaseLatticeUnitaryStatement.lean:10:68: Unused tactic linter: `exact GlobalTheory.Mem.Col2.ChEx.exists_stepLevel_conj` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsStepLevelConjBaseLatticeUnitaryStatement.lean:10:125: Unused tactic linter: `(intros; apply GlobalTheory.Mem.Col2.ChEx.exists_stepLevel_conj <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [111057/111086] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ScalarFormsOnChartsOfTrueColumnTuple (8.8s)
+⚠ [111058/111086] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PlacedBesselPairRelationStatement (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/PlacedBesselPairRelationStatement.lean:18:63: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/PlacedBesselPairRelationStatement.lean:18:115: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/PlacedBesselPairRelationStatement.lean:18:63: Unused tactic linter: `exact GlobalTheory.MiTop.finE_centralRatio_mem_St` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/PlacedBesselPairRelationStatement.lean:18:115: Unused tactic linter: `(intros; apply GlobalTheory.MiTop.finE_centralRatio_mem_St <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [111059/111086] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DiamondElementIntegralSupportLastRowStatement (5.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DiamondElementIntegralSupportLastRowStatement.lean:9:49: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DiamondElementIntegralSupportLastRowStatement.lean:9:87: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DiamondElementIntegralSupportLastRowStatement.lean:9:49: Unused tactic linter: `exact GlobalTheory.Mem.Dil.dia_data` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DiamondElementIntegralSupportLastRowStatement.lean:9:87: Unused tactic linter: `(intros; apply GlobalTheory.Mem.Dil.dia_data <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [111060/111086] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsChartPointRightTranslateStabilizerSplitPla (9.2s)
+✔ [111061/111088] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitLocalLevelFirstFactorReadsComponent (7.9s)
