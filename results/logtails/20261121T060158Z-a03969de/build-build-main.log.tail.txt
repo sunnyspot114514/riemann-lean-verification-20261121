@@ -1,160 +1,160 @@
-  [IsFractionRing O K]
-  [CharZero K]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsDomain O] [IsPrincipalIdealRing O] [IsFractionRing O K] [CharZero K] in theorem ...
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsPrimeUnderFirstFactorAtPlaceOverPStatement.lean:10:125: Unused tactic linter: `(intros; apply GlobalTheory.TwV.Xc.PrimeAt.exists_primeOf_place <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [114561/114602] Built Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.OrthogonalGaussModels.HermitianBlockFrames.TransposeMulBlockDiagMul (6.0s)
-warning: src/Formalism/LocalToGlobal/TorsionIntegrality/UniformGaussModels/OrthogonalGaussModels/HermitianBlockFrames/TransposeMulBlockDiagMul.lean:16:0: automatically included section variable(s) unused in theorem `Formalism.L2.Th1.Top.FrP.UnitaryGroupMassFormula.HermFrame.Loc.blockDiag_mul_apply'`:
-  [DecidableEq n]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [DecidableEq n] in theorem ...
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [114865/114902] Built Formalism.LocalToGlobal.InertKernelTheory.SubBSplit (7.1s)
+⚠ [114866/114902] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ChiAlgUnitInert (5.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ChiAlgUnitInert.lean:25:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/TorsionIntegrality/UniformGaussModels/OrthogonalGaussModels/HermitianBlockFrames/TransposeMulBlockDiagMul.lean:22:0: automatically included section variable(s) unused in theorem `Formalism.L2.Th1.Top.FrP.UnitaryGroupMassFormula.HermFrame.Loc.mul_bd4_apply`:
-  [DecidableEq n]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [DecidableEq n] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/TorsionIntegrality/UniformGaussModels/OrthogonalGaussModels/HermitianBlockFrames/TransposeMulBlockDiagMul.lean:56:0: automatically included section variable(s) unused in theorem `Formalism.L2.Th1.Top.FrP.UnitaryGroupMassFormula.HermFrame.Loc.blockDiag_map'`:
-  [Fintype n]
-  [DecidableEq n]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype n] [DecidableEq n] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/TorsionIntegrality/UniformGaussModels/OrthogonalGaussModels/HermitianBlockFrames/TransposeMulBlockDiagMul.lean:61:0: automatically included section variable(s) unused in theorem `Formalism.L2.Th1.Top.FrP.UnitaryGroupMassFormula.HermFrame.Loc.bd4_transpose`:
-  [Fintype n]
-  [DecidableEq n]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype n] [DecidableEq n] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/TorsionIntegrality/UniformGaussModels/OrthogonalGaussModels/HermitianBlockFrames/TransposeMulBlockDiagMul.lean:72:0: automatically included section variable(s) unused in theorem `Formalism.L2.Th1.Top.FrP.UnitaryGroupMassFormula.HermFrame.Loc.bd4_smul`:
-  [Fintype n]
-  [DecidableEq n]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype n] [DecidableEq n] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-info: src/Formalism/LocalToGlobal/TorsionIntegrality/UniformGaussModels/OrthogonalGaussModels/HermitianBlockFrames/TransposeMulBlockDiagMul.lean:90:2: Try this:
-  [apply] ring_nf
-  
-  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
-    
-  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
-✔ [114562/114606] Built Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.OrthogonalGaussModels.HermitianBlockFrames.HermFrameOfLocCore (5.1s)
-✔ [114563/114606] Built Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepAsm (9.2s)
-✔ [114564/114606] Built Formalism.LocalToGlobal.PairingIndexBounds.RowActionCoefficients.AdmissibleInterpolation.FinalTheorems (6.5s)
-✔ [114565/114606] Built Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.AlgTrans (9.2s)
-⚠ [114566/114606] Built Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.OrthogonalGaussModels.HermitianBlockFrames.RelativeIndexIdentityLatticeDiscSeven (6.4s)
-warning: src/Formalism/LocalToGlobal/TorsionIntegrality/UniformGaussModels/OrthogonalGaussModels/HermitianBlockFrames/RelativeIndexIdentityLatticeDiscSeven.lean:20:17: This simp argument is unused:
-  Complex.div_im
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [cmTheta]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/TorsionIntegrality/UniformGaussModels/OrthogonalGaussModels/HermitianBlockFrames/RelativeIndexIdentityLatticeDiscSeven.lean:29:27: This simp argument is unused:
-  Matrix.one_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [blk4]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/TorsionIntegrality/UniformGaussModels/OrthogonalGaussModels/HermitianBlockFrames/RelativeIndexIdentityLatticeDiscSeven.lean:30:16: This simp argument is unused:
-  Matrix.one_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [blk4, hab]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/TorsionIntegrality/UniformGaussModels/OrthogonalGaussModels/HermitianBlockFrames/RelativeIndexIdentityLatticeDiscSeven.lean:53:66: This simp argument is unused:
-  Complex.div_re
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [cmTheta]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/TorsionIntegrality/UniformGaussModels/OrthogonalGaussModels/HermitianBlockFrames/RelativeIndexIdentityLatticeDiscSeven.lean:54:76: This simp argument is unused:
-  Complex.div_im
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [cmTheta]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/TorsionIntegrality/UniformGaussModels/OrthogonalGaussModels/HermitianBlockFrames/RelativeIndexIdentityLatticeDiscSeven.lean:81:89: This simp argument is unused:
-  Complex.one_re
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Complex.add_re, Complex.mul_re, Complex.intCast_re, Complex.intCast_im, Complex.one_im, theta7_re,
-    theta7_im, mul_one, mul_zero, sub_zero]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/TorsionIntegrality/UniformGaussModels/OrthogonalGaussModels/HermitianBlockFrames/RelativeIndexIdentityLatticeDiscSeven.lean:82:8: This simp argument is unused:
-  Complex.one_im
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Complex.add_re, Complex.mul_re, Complex.intCast_re, Complex.intCast_im, Complex.one_re, theta7_re,
-    theta7_im, mul_one, mul_zero, sub_zero]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/TorsionIntegrality/UniformGaussModels/OrthogonalGaussModels/HermitianBlockFrames/RelativeIndexIdentityLatticeDiscSeven.lean:82:55: This simp argument is unused:
-  mul_zero
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Complex.add_re, Complex.mul_re, Complex.intCast_re, Complex.intCast_im, Complex.one_re,
-    Complex.one_im, theta7_re, theta7_im, mul_one, sub_zero]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/TorsionIntegrality/UniformGaussModels/OrthogonalGaussModels/HermitianBlockFrames/RelativeIndexIdentityLatticeDiscSeven.lean:82:65: This simp argument is unused:
-  sub_zero
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Complex.add_re, Complex.mul_re, Complex.intCast_re, Complex.intCast_im, Complex.one_re,
-    Complex.one_im, theta7_re, theta7_im, mul_one, mul_zero]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/TorsionIntegrality/UniformGaussModels/OrthogonalGaussModels/HermitianBlockFrames/RelativeIndexIdentityLatticeDiscSeven.lean:89:89: This simp argument is unused:
-  Complex.one_re
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Complex.add_im, Complex.mul_im, Complex.intCast_re, Complex.intCast_im, Complex.one_im, theta7_re,
-    theta7_im, mul_one, mul_zero, zero_mul, add_zero, zero_add]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/TorsionIntegrality/UniformGaussModels/OrthogonalGaussModels/HermitianBlockFrames/RelativeIndexIdentityLatticeDiscSeven.lean:90:8: This simp argument is unused:
-  Complex.one_im
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Complex.add_im, Complex.mul_im, Complex.intCast_re, Complex.intCast_im, Complex.one_re, theta7_re,
-    theta7_im, mul_one, mul_zero, zero_mul, add_zero, zero_add]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/TorsionIntegrality/UniformGaussModels/OrthogonalGaussModels/HermitianBlockFrames/RelativeIndexIdentityLatticeDiscSeven.lean:90:55: This simp argument is unused:
-  mul_zero
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Complex.add_im, Complex.mul_im, Complex.intCast_re, Complex.intCast_im, Complex.one_re,
-    Complex.one_im, theta7_re, theta7_im, mul_one, zero_mul, add_zero, zero_add]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/TorsionIntegrality/UniformGaussModels/OrthogonalGaussModels/HermitianBlockFrames/RelativeIndexIdentityLatticeDiscSeven.lean:138:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [114567/114612] Built Formalism.LocalToGlobal.InertKernelTheory.StatementJets (5.5s)
-✔ [114568/114616] Built Formalism.LocalToGlobal.InertKernelTheory.DefsBasis (5.5s)
-⚠ [114569/114616] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IntRing (5.3s)
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/IntRing.lean:4:15: Variable name `inst` is not explicitly referenced.
+✔ [114867/114902] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.CompanionLatticeEqPointLatticeOverCompanion (7.8s)
+⚠ [114868/114904] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.StepChartsPlacesFirstFactorEqStepZeroStatement (6.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/StepChartsPlacesFirstFactorEqStepZeroStatement.lean:7:88: Variable name `L` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst
+  [apply] _L
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [114570/114616] Built Formalism.LocalToGlobal.PairingIndexBounds.PendingAdmissibility.LocalFDerivAdmissibility.AdmRed (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/StepChartsPlacesFirstFactorEqStepZeroStatement.lean:7:90: Variable name `hT` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hT
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/StepChartsPlacesFirstFactorEqStepZeroStatement.lean:7:93: Variable name `Gi` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _Gi
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/StepChartsPlacesFirstFactorEqStepZeroStatement.lean:7:96: Variable name `Gl` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _Gl
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/StepChartsPlacesFirstFactorEqStepZeroStatement.lean:7:99: Variable name `Kc` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _Kc
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/StepChartsPlacesFirstFactorEqStepZeroStatement.lean:7:102: Variable name `Dx` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _Dx
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/StepChartsPlacesFirstFactorEqStepZeroStatement.lean:7:105: Variable name `cX` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _cX
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/StepChartsPlacesFirstFactorEqStepZeroStatement.lean:7:108: Variable name `ex` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ex
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/StepChartsPlacesFirstFactorEqStepZeroStatement.lean:7:111: Variable name `u` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _u
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/StepChartsPlacesFirstFactorEqStepZeroStatement.lean:7:113: Variable name `μ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _μ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/StepChartsPlacesFirstFactorEqStepZeroStatement.lean:7:117: Variable name `hg` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hg
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/StepChartsPlacesFirstFactorEqStepZeroStatement.lean:7:120: Variable name `Lv` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _Lv
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/StepChartsPlacesFirstFactorEqStepZeroStatement.lean:7:125: Variable name `H` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _H
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/StepChartsPlacesFirstFactorEqStepZeroStatement.lean:7:127: Variable name `X` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _X
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/StepChartsPlacesFirstFactorEqStepZeroStatement.lean:7:171: Variable name `std` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _std
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/StepChartsPlacesFirstFactorEqStepZeroStatement.lean:7:175: Variable name `t` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _t
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/StepChartsPlacesFirstFactorEqStepZeroStatement.lean:7:180: Variable name `S` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _S
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/StepChartsPlacesFirstFactorEqStepZeroStatement.lean:8:72: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/StepChartsPlacesFirstFactorEqStepZeroStatement.lean:8:133: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/StepChartsPlacesFirstFactorEqStepZeroStatement.lean:8:72: Unused tactic linter: `exact GlobalTheory.TwV.Xc.chart_places_firstFactor_eq_zero` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/StepChartsPlacesFirstFactorEqStepZeroStatement.lean:8:133: Unused tactic linter: `(intros; apply GlobalTheory.TwV.Xc.chart_places_firstFactor_eq_zero <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [114869/114904] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntegralHilbert90FiniteIdelesTrivialWhereTrivialStatement (5.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/IntegralHilbert90FiniteIdelesTrivialWhereTrivialStatement.lean:11:115: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/IntegralHilbert90FiniteIdelesTrivialWhereTrivialStatement.lean:11:219: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/IntegralHilbert90FiniteIdelesTrivialWhereTrivialStatement.lean:11:115: Unused tactic linter: `exact
+  GlobalTheory.TwU.IntegralHilbert90Unramified.exists_integral_h90_preimage_trivial_where_trivial` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/IntegralHilbert90FiniteIdelesTrivialWhereTrivialStatement.lean:11:219: Unused tactic linter: `(intros;
+  apply GlobalTheory.TwU.IntegralHilbert90Unramified.exists_integral_h90_preimage_trivial_where_trivial <;>
+    assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [114870/114906] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.KernelLatticeFirstFactorLatticeTuplePoint (7.3s)
+⚠ [114871/114906] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.CompanionLatticeEqPointLatticeOverCompanionStatement (6.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/CompanionLatticeEqPointLatticeOverCompanionStatement.lean:11:66: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/CompanionLatticeEqPointLatticeOverCompanionStatement.lean:11:121: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/CompanionLatticeEqPointLatticeOverCompanionStatement.lean:11:66: Unused tactic linter: `exact GlobalTheory.LatCoCompan.latCo_eq_latAd_compan` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/CompanionLatticeEqPointLatticeOverCompanionStatement.lean:11:121: Unused tactic linter: `(intros; apply GlobalTheory.LatCoCompan.latCo_eq_latAd_compan <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
