@@ -1,102 +1,144 @@
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _t
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsBreuilKisinModuleBasisOfFCrystal.lean:545:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RowParameterOfLocalLanglandsStatement.lean:18:157: Variable name `nch` is not explicitly referenced.
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _nch
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsBreuilKisinModuleBasisOfFCrystal.lean:552:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RowParameterOfLocalLanglandsStatement.lean:18:161: Variable name `n` is not explicitly referenced.
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _n
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RowParameterOfLocalLanglandsStatement.lean:20:65: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RowParameterOfLocalLanglandsStatement.lean:20:119: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RowParameterOfLocalLanglandsStatement.lean:20:65: Unused tactic linter: `exact GlobalTheory.GalLoc.RowParamAt.rowParam_atMem` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RowParameterOfLocalLanglandsStatement.lean:20:119: Unused tactic linter: `(intros; apply GlobalTheory.GalLoc.RowParamAt.rowParam_atMem <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [120042/120091] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIsComplOfSaturated (5.3s)
-⚠ [120043/120091] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsDualLatticeIsOpenPerfectPairingStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsDualLatticeIsOpenPerfectPairingStatement.lean:19:67: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsDualLatticeIsOpenPerfectPairingStatement.lean:19:123: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsDualLatticeIsOpenPerfectPairingStatement.lean:19:67: Unused tactic linter: `exact GlobalTheory.Pass.LocDual.exists_dualLat_isOpen` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsDualLatticeIsOpenPerfectPairingStatement.lean:19:123: Unused tactic linter: `(intros; apply GlobalTheory.Pass.LocDual.exists_dualLat_isOpen <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [120044/120091] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsStableComplActK (7.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsStableComplActK.lean:32:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsStableComplActK.lean:33:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsStableComplActK.lean:34:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsStableComplActK.lean:32:4: Unused tactic linter: `(intros; apply _root_.GlobalTheory.ComplementedSup.complemented_sup <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsStableComplActK.lean:33:4: Unused tactic linter: `(intros;
-  apply @_root_.GlobalTheory.ComplementedSup.complemented_sup <;>
-    first
-    | assumption
-    | infer_instance)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsStableComplActK.lean:34:4: Unused tactic linter: `(intros; exact _root_.GlobalTheory.ComplementedSup.complemented_sup ..)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsStableComplActK.lean:46:0: automatically included section variable(s) unused in theorem `GlobalTheory.BlockSum.blockAct_apply`:
-  [DecidableEq ι]
-  [DecidableEq n]
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [120206/120249] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DividedTwoVariableSubringSubsetGeneratorSet (6.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DividedTwoVariableSubringSubsetGeneratorSet.lean:13:0: automatically included section variable(s) unused in theorem `GlobalTheory.CrysPrism.LTo0_zero`:
+  [NeZero a]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [DecidableEq ι] [DecidableEq n] in theorem ...
+  omit [NeZero a] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsStableComplActK.lean:66:0: automatically included section variable(s) unused in theorem `GlobalTheory.BlockSum.blockSub_mono`:
-  [DecidableEq ι]
-  [Fintype n]
-  [DecidableEq n]
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DividedTwoVariableSubringSubsetGeneratorSet.lean:16:0: automatically included section variable(s) unused in theorem `GlobalTheory.CrysPrism.LTo0_add`:
+  [NeZero a]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [DecidableEq ι] [Fintype n] [DecidableEq n] in theorem ...
+  omit [NeZero a] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsStableComplActK.lean:70:0: automatically included section variable(s) unused in theorem `GlobalTheory.BlockSum.blockSub_empty`:
-  [DecidableEq ι]
-  [Fintype n]
-  [DecidableEq n]
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DividedTwoVariableSubringSubsetGeneratorSet.lean:19:0: automatically included section variable(s) unused in theorem `GlobalTheory.CrysPrism.LTo0_neg`:
+  [NeZero a]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [DecidableEq ι] [Fintype n] [DecidableEq n] in theorem ...
+  omit [NeZero a] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsStableComplActK.lean:77:0: automatically included section variable(s) unused in theorem `GlobalTheory.BlockSum.blockSub_univ`:
-  [DecidableEq ι]
-  [Fintype n]
-  [DecidableEq n]
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DividedTwoVariableSubringSubsetGeneratorSet.lean:22:0: automatically included section variable(s) unused in theorem `GlobalTheory.CrysPrism.LTo0_single`:
+  [NeZero a]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [DecidableEq ι] [Fintype n] [DecidableEq n] in theorem ...
+  omit [NeZero a] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [120045/120091] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsTopRingLL (22s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsTopRingLL.lean:34:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DividedTwoVariableSubringSubsetGeneratorSet.lean:25:0: automatically included section variable(s) unused in theorem `GlobalTheory.CrysPrism.LTo0_conv`:
+  [NeZero a]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero a] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DividedTwoVariableSubringSubsetGeneratorSet.lean:48:0: automatically included section variable(s) unused in theorem `GlobalTheory.CrysPrism.PPSet_zero`:
+  [IsUltrametricDist K]
+  [IsUnitBall O K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsUltrametricDist K] [IsUnitBall O K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DividedTwoVariableSubringSubsetGeneratorSet.lean:51:0: automatically included section variable(s) unused in theorem `GlobalTheory.CrysPrism.PPSet_one`:
+  [IsUltrametricDist K]
+  [IsUnitBall O K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsUltrametricDist K] [IsUnitBall O K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DividedTwoVariableSubringSubsetGeneratorSet.lean:61:0: automatically included section variable(s) unused in theorem `GlobalTheory.CrysPrism.PPSet_add`:
+  [IsUltrametricDist K]
+  [IsUnitBall O K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsUltrametricDist K] [IsUnitBall O K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DividedTwoVariableSubringSubsetGeneratorSet.lean:68:0: automatically included section variable(s) unused in theorem `GlobalTheory.CrysPrism.PPSet_neg`:
+  [IsUltrametricDist K]
+  [IsUnitBall O K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsUltrametricDist K] [IsUnitBall O K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DividedTwoVariableSubringSubsetGeneratorSet.lean:91:58: `Nat.add_div_le_add_div` has been deprecated: Use `Nat.div_add_div_le_add_div` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DividedTwoVariableSubringSubsetGeneratorSet.lean:73:0: automatically included section variable(s) unused in theorem `GlobalTheory.CrysPrism.PPSet_mul`:
+  [IsUltrametricDist K]
+  [IsUnitBall O K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsUltrametricDist K] [IsUnitBall O K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [120207/120249] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIntegralRetractionFiniteExtensionQl (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsIntegralRetractionFiniteExtensionQl.lean:110:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [120208/120249] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DividedPowerSeriesSubringEqGeneratorSet (6.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DividedPowerSeriesSubringEqGeneratorSet.lean:14:0: automatically included section variable(s) unused in theorem `GlobalTheory.CrysPrism.lTo0_atTop`:
+  [NeZero a]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero a] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DividedPowerSeriesSubringEqGeneratorSet.lean:17:0: automatically included section variable(s) unused in theorem `GlobalTheory.CrysPrism.sdSet_zero`:
+  [IsUltrametricDist K]
+  [IsUnitBall O K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsUltrametricDist K] [IsUnitBall O K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DividedPowerSeriesSubringEqGeneratorSet.lean:20:0: automatically included section variable(s) unused in theorem `GlobalTheory.CrysPrism.sdSet_one`:
+  [IsUltrametricDist K]
+  [IsUnitBall O K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsUltrametricDist K] [IsUnitBall O K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DividedPowerSeriesSubringEqGeneratorSet.lean:28:0: automatically included section variable(s) unused in theorem `GlobalTheory.CrysPrism.sdSet_neg`:
+  [IsUltrametricDist K]
+  [IsUnitBall O K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsUltrametricDist K] [IsUnitBall O K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DividedPowerSeriesSubringEqGeneratorSet.lean:34:0: automatically included section variable(s) unused in theorem `GlobalTheory.CrysPrism.sdSet_add`:
+  [IsUltrametricDist K]
+  [IsUnitBall O K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsUltrametricDist K] [IsUnitBall O K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DividedPowerSeriesSubringEqGeneratorSet.lean:44:34: `Nat.add_div_le_add_div` has been deprecated: Use `Nat.div_add_div_le_add_div` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DividedPowerSeriesSubringEqGeneratorSet.lean:46:0: automatically included section variable(s) unused in theorem `GlobalTheory.CrysPrism.sdSet_mul`:
+  [IsUltrametricDist K]
+  [IsUnitBall O K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsUltrametricDist K] [IsUnitBall O K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [120209/120249] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CrystallineOfExtensionLattice (12s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CrystallineOfExtensionLattice.lean:57:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -104,57 +146,15 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsTopRingLL.lean:74:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [120046/120091] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CutCocFinsetCommon (11s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CutCocFinsetCommon.lean:44:0: automatically included section variable(s) unused in theorem `GlobalTheory.Pass.LocDual.OneX.Combine.blk_append`:
-  [AddCommGroup V]
+⚠ [120210/120249] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameTypeOfExtensionLattice (15s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TameTypeOfExtensionLattice.lean:59:0: automatically included section variable(s) unused in theorem `GlobalTheory.TameExt.actVB_mulVB'`:
+  [Algebra Qp K₀']
+  [IsScalarTower Qp K₀' B]
+  [Algebra K₀' BdR]
+  [IsScalarTower Qp K₀' BdR]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [AddCommGroup V] in theorem ...
+  omit [Algebra Qp K₀'] [IsScalarTower Qp K₀' B] [Algebra K₀' BdR] [IsScalarTower Qp K₀' BdR] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [120047/120092] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsComplementedSubrepLocalMatrixRepTwistedSumStatement (5.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsComplementedSubrepLocalMatrixRepTwistedSumStatement.lean:13:62: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsComplementedSubrepLocalMatrixRepTwistedSumStatement.lean:13:113: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsComplementedSubrepLocalMatrixRepTwistedSumStatement.lean:13:62: Unused tactic linter: `exact GlobalTheory.Pass.LocDual.isSummandTw_locU` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsComplementedSubrepLocalMatrixRepTwistedSumStatement.lean:13:113: Unused tactic linter: `(intros; apply GlobalTheory.Pass.LocDual.isSummandTw_locU <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [120048/120092] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TateDualTwistedSumSummandIsDeRhamStatement (7.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TateDualTwistedSumSummandIsDeRhamStatement.lean:17:51: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TateDualTwistedSumSummandIsDeRhamStatement.lean:17:91: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TateDualTwistedSumSummandIsDeRhamStatement.lean:17:51: Unused tactic linter: `exact GlobalTheory.SummandDualDR.main` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TateDualTwistedSumSummandIsDeRhamStatement.lean:17:91: Unused tactic linter: `(intros; apply GlobalTheory.SummandDualDR.main <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [120049/120094] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PotentialFamilySummandRestrictionStatement (7.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PotentialFamilySummandRestrictionStatement.lean:19:50: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PotentialFamilySummandRestrictionStatement.lean:19:89: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PotentialFamilySummandRestrictionStatement.lean:19:50: Unused tactic linter: `exact GlobalTheory.SummandDual.xdual` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PotentialFamilySummandRestrictionStatement.lean:19:89: Unused tactic linter: `(intros; apply GlobalTheory.SummandDual.xdual <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [120211/120249] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CharacterSetMapCoefficientFieldProperties (5.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CharacterSetMapCoefficientFieldProperties.lean:38:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
