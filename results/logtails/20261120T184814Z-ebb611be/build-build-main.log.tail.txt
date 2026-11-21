@@ -1,35 +1,8 @@
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [54333/54436] Built CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.MaxMultiplicityLtTopStatement (6.6s)
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/MaxMultiplicityLtTopStatement.lean:9:92: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/MaxMultiplicityLtTopStatement.lean:9:173: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/MaxMultiplicityLtTopStatement.lean:9:92: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Fan.MaxMultiplicityFinite.maxMult_lt_top` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/MaxMultiplicityLtTopStatement.lean:9:173: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.Fan.MaxMultiplicityFinite.maxMult_lt_top <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [54334/54436] Built CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.StarFunctionOffCellStatement (6.8s)
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/StarFunctionOffCellStatement.lean:10:76: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/StarFunctionOffCellStatement.lean:10:141: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/StarFunctionOffCellStatement.lean:10:76: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Fan.StarOffCell.off_cell` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/StarFunctionOffCellStatement.lean:10:141: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.Fan.StarOffCell.off_cell <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [54335/54436] Built CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.MultipleCellsAmongPolyhedralFan (10s)
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/MultipleCellsAmongPolyhedralFan.lean:54:2: Try this: 
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LinearIndepOnPowOfIsDomainTensorPurelyInseparabl.lean:49:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -37,7 +10,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/MultipleCellsAmongPolyhedralFan.lean:59:4: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LinearIndepOnPowOfIsDomainTensorPurelyInseparabl.lean:55:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -45,7 +18,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/MultipleCellsAmongPolyhedralFan.lean:62:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LinearIndepOnPowOfIsDomainTensorPurelyInseparabl.lean:56:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -53,108 +26,135 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [54336/54436] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaGeneratorValuesScalarMulLocalUnit (14s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaGeneratorValuesScalarMulLocalUnit.lean:157:95: This simp argument is unused:
-  one_mul
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LinearIndepOnPowOfIsDomainTensorPurelyInseparabl.lean:58:2: Try this: 
+  haveI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [DegPre.famε, Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.cons_val_two, Matrix.cons_val_three,
-    Matrix.head_cons, Matrix.tail_cons, Nat.cast_one, sub_self, zpow_zero, zpow_one, zpow_neg, Category.comp_id,
-    Category.id_comp, mul_inv_cancel_right]
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaGeneratorValuesScalarMulLocalUnit.lean:158:40: This simp argument is unused:
-  mul_inv_cancel_right
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [54950/55021] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFibrePowerPointFiniteExtensionDvr (8.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsFibrePowerPointFiniteExtensionDvr.lean:19:8: Overlapping instance parameters in `exists_fibrePow_point_of_polAV`:
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [DegPre.famε, Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.cons_val_two, Matrix.cons_val_three,
-    Matrix.head_cons, Matrix.tail_cons, Nat.cast_one, sub_self, zpow_zero, zpow_one, zpow_neg, one_mul,
-    Category.comp_id, Category.id_comp]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaGeneratorValuesScalarMulLocalUnit.lean:161:8: Overlapping instance parameters in `theta_values`:
-
-⚠️ `[IsDomain V₁]` and `[IsLocalRing V₁]` each imply `[Nontrivial V₁]`.
-💡️ Of these, `[IsDomain V₁]` and `[IsLocalRing V₁]` may be removed.
+⚠️ `[IsDomain V]` and `[IsLocalRing V]` each imply `[Nontrivial V]`.
+💡️ Of these, `[IsDomain V]` and `[IsLocalRing V]` may be removed.
 
 Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-⚠ [54337/54439] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeneratorValuesMemSubfieldGaloisDescentStatement (7.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/GeneratorValuesMemSubfieldGaloisDescentStatement.lean:31:57: this tactic is never executed
+⚠ [54951/55023] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomogeneousFormChartChangeCoeffIdealPowStatement (7.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HomogeneousFormChartChangeCoeffIdealPowStatement.lean:10:59: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/GeneratorValuesMemSubfieldGaloisDescentStatement.lean:31:103: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HomogeneousFormChartChangeCoeffIdealPowStatement.lean:10:107: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/GeneratorValuesMemSubfieldGaloisDescentStatement.lean:31:57: Unused tactic linter: `exact GlobalTheory.Poinc.Sep.gen_values_mem` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HomogeneousFormChartChangeCoeffIdealPowStatement.lean:10:59: Unused tactic linter: `exact GlobalTheory.FormalAlg.Charts.ev_change` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/GeneratorValuesMemSubfieldGaloisDescentStatement.lean:31:103: Unused tactic linter: `(intros; apply GlobalTheory.Poinc.Sep.gen_values_mem <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HomogeneousFormChartChangeCoeffIdealPowStatement.lean:10:107: Unused tactic linter: `(intros; apply GlobalTheory.FormalAlg.Charts.ev_change <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [54338/54439] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaSystemUniversalUnitaryDeepTowersStatement (7.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaSystemUniversalUnitaryDeepTowersStatement.lean:13:58: this tactic is never executed
+✔ [54952/55023] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonemptyAlgHomAdjoin (7.1s)
+⚠ [54953/55023] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformSerreVanishingCechCocycles (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UniformSerreVanishingCechCocycles.lean:143:35: This simp argument is unused:
+  proj_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_pow, mul_assoc, proj_sub, proj_Xpow_mul, hF'p, ↓reduceIte] at this
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [54954/55023] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdempotentTensorEqZeroOrOneOfIsPurelyInseparableStatement (5.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IdempotentTensorEqZeroOrOneOfIsPurelyInseparableStatement.lean:8:88: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaSystemUniversalUnitaryDeepTowersStatement.lean:13:105: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IdempotentTensorEqZeroOrOneOfIsPurelyInseparableStatement.lean:8:165: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaSystemUniversalUnitaryDeepTowersStatement.lean:13:58: Unused tactic linter: `exact GlobalTheory.GSep.UTower.deep_of_uLink` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IdempotentTensorEqZeroOrOneOfIsPurelyInseparableStatement.lean:8:88: Unused tactic linter: `exact GlobalTheory.idempotent_tensor_eq_zero_or_one_of_isPurelyInseparable` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaSystemUniversalUnitaryDeepTowersStatement.lean:13:105: Unused tactic linter: `(intros; apply GlobalTheory.GSep.UTower.deep_of_uLink <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IdempotentTensorEqZeroOrOneOfIsPurelyInseparableStatement.lean:8:165: Unused tactic linter: `(intros;
+  apply GlobalTheory.idempotent_tensor_eq_zero_or_one_of_isPurelyInseparable <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [54339/54441] Built CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.OldCellMultLeAfterStar (7.2s)
-⚠ [54340/54443] Built CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.ExistsTwistedSimplicialStarLabel (8.3s)
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/ExistsTwistedSimplicialStarLabel.lean:100:13: `LinearIndependent.fin_cons'` has been deprecated: Use `LinearIndependent.finCons'` instead
-✔ [54341/54443] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HarishChandraLabels.GreenHCLabelOf (5.4s)
-✔ [54342/54445] Built CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.SmoothOfMaxMultiplicityLeOne (6.9s)
-⚠ [54343/54445] Built CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.PsdBalancedFormVanishesLowRankStatement (7.1s)
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/PsdBalancedFormVanishesLowRankStatement.lean:9:111: this tactic is never executed
+✔ [54955/55025] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsConsecutiveVeryAmplePowersRelAmple (7.0s)
+⚠ [54956/55025] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemOOfPowEqOne (8.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MemOOfPowEqOne.lean:19:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MemOOfPowEqOne.lean:35:6: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [54957/55025] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtendAlgHomAdjoinIntegralRootStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtendAlgHomAdjoinIntegralRootStatement.lean:6:68: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/PsdBalancedFormVanishesLowRankStatement.lean:9:211: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtendAlgHomAdjoinIntegralRootStatement.lean:6:125: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/PsdBalancedFormVanishesLowRankStatement.lean:9:111: Unused tactic linter: `exact
-  GlobalTheory.CompanionTheory.Ar.Fan.VanishingInRationalCone.vanish_of_inRCone_of_genRank_le` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtendAlgHomAdjoinIntegralRootStatement.lean:6:68: Unused tactic linter: `exact GlobalTheory.extend_alg_hom_adjoin_integral_root` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/PsdBalancedFormVanishesLowRankStatement.lean:9:211: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.Fan.VanishingInRationalCone.vanish_of_inRCone_of_genRank_le <;>
-    assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtendAlgHomAdjoinIntegralRootStatement.lean:6:125: Unused tactic linter: `(intros; apply GlobalTheory.extend_alg_hom_adjoin_integral_root <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [54344/54447] Built Development.WeilBound.CoreStatements.FiniteTypeHarishChandra.FiniteDimensionalHcSpace (7.5s)
-⚠ [54345/54447] Built CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.EvalPullbackSemilinearSurjectiveStatement (7.4s)
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/EvalPullbackSemilinearSurjectiveStatement.lean:12:108: this tactic is never executed
+⚠ [54958/55025] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CobOneEqZeroOfConnecting (33s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CobOneEqZeroOfConnecting.lean:28:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [54959/55025] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsChartCocycleOfPullbackPowerStandardStatement (6.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsChartCocycleOfPullbackPowerStandardStatement.lean:10:71: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/EvalPullbackSemilinearSurjectiveStatement.lean:12:205: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsChartCocycleOfPullbackPowerStandardStatement.lean:10:131: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/EvalPullbackSemilinearSurjectiveStatement.lean:12:108: Unused tactic linter: `exact
-  GlobalTheory.CompanionTheory.Ar.Fan.SemilinearPullbackEval.eval_pull_semilinear_of_isTwG` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsChartCocycleOfPullbackPowerStandardStatement.lean:10:71: Unused tactic linter: `exact GlobalTheory.FormalAlg.exists_chart_cocycle_of_pull` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/EvalPullbackSemilinearSurjectiveStatement.lean:12:205: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.Fan.SemilinearPullbackEval.eval_pull_semilinear_of_isTwG <;>
-    assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsChartCocycleOfPullbackPowerStandardStatement.lean:10:131: Unused tactic linter: `(intros; apply GlobalTheory.FormalAlg.exists_chart_cocycle_of_pull <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [54346/54449] Built CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.MultipleCellsAmongPolyhedralFanStatement (7.0s)
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/MultipleCellsAmongPolyhedralFanStatement.lean:10:97: this tactic is never executed
+⚠ [54960/55025] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftSectionsNextThickeningStandardChartsStatement (7.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LiftSectionsNextThickeningStandardChartsStatement.lean:10:52: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/MultipleCellsAmongPolyhedralFanStatement.lean:10:183: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LiftSectionsNextThickeningStandardChartsStatement.lean:10:93: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/MultipleCellsAmongPolyhedralFanStatement.lean:10:97: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Fan.MultipleCells.multCellsAmong_of_isPolyFan` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LiftSectionsNextThickeningStandardChartsStatement.lean:10:52: Unused tactic linter: `exact GlobalTheory.FormalAlg.lift_cech` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/ConvexCones/MultipleCellsAmongPolyhedralFanStatement.lean:10:183: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.Fan.MultipleCells.multCellsAmong_of_isPolyFan <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LiftSectionsNextThickeningStandardChartsStatement.lean:10:93: Unused tactic linter: `(intros; apply GlobalTheory.FormalAlg.lift_cech <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [54347/54449] Built CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.NewCellMultLtAfterStar (9.6s)
-✔ [54348/54451] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianPartDescendsOfThetaTermsRatios (8.1s)
+✔ [54961/55025] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineBundleIsoOfCompatibleAdicReductions (8.1s)
+⚠ [54962/55026] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinearIndepOnPowOfIsDomainTensorPurelyInseparablStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LinearIndepOnPowOfIsDomainTensorPurelyInseparablStatement.lean:7:87: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LinearIndepOnPowOfIsDomainTensorPurelyInseparablStatement.lean:7:163: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LinearIndepOnPowOfIsDomainTensorPurelyInseparablStatement.lean:7:87: Unused tactic linter: `exact GlobalTheory.linearIndepOn_pow_of_isDomain_tensor_purelyInseparable` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LinearIndepOnPowOfIsDomainTensorPurelyInseparablStatement.lean:7:163: Unused tactic linter: `(intros;
+  apply GlobalTheory.linearIndepOn_pow_of_isDomain_tensor_purelyInseparable <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
