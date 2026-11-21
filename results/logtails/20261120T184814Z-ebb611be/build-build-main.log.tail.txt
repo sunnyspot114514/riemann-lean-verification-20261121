@@ -1,46 +1,27 @@
+  [apply] simp only [LinearMap.comp_apply, Submodule.mkQ_apply, LinearEquiv.coe_coe, MonoidHom.comp_apply, jac, jacU,
+    twist_apply, jacquet_mk, LinearEquiv.map_smul, Submodule.quotEquivOfEq_mk, deltaHalf_thetaL, MonoidHom.inv_apply]
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ProductSingleNonzeroFactorEquivStatement.lean:9:155: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.FineProd.ProdSingle.prodIrr_single <;> assumption)` does nothing
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [60499/60605] Built GroundTheory.PAdicHodge.FieldOfNormsRing (9.1s)
+✔ [60500/60605] Built GroundTheory.PAdicHodge.BdRAlgCl (24s)
+✔ [60501/60605] Built GroundTheory.PAdicHodge.FWCyclotomicNorm (10s)
+⚠ [60502/60605] Built Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.DerFin (17s)
+warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/DerFin.lean:99:0: automatically included section variable(s) unused in theorem `PositivityTheory.RgGu.NR.DerFin.phi_lift2`:
+  [ValuativeRel k]
+  [TopologicalSpace k]
+  [IsNonarchimedeanLocalField k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [60182/60258] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictionMirabolicTwistedKernelStatement (5.3s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/RestrictionMirabolicTwistedKernelStatement.lean:7:77: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/DerFin.lean:105:0: automatically included section variable(s) unused in theorem `PositivityTheory.RgGu.NR.DerFin.phi_continuous`:
+  [ValuativeRel k]
+  [IsNonarchimedeanLocalField k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ValuativeRel k] [IsNonarchimedeanLocalField k] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/RestrictionMirabolicTwistedKernelStatement.lean:7:143: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/RestrictionMirabolicTwistedKernelStatement.lean:7:77: Unused tactic linter: `exact GlobalTheory.CompanionTheory.BZMirDer.twKer_resM_derUnipM` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/RestrictionMirabolicTwistedKernelStatement.lean:7:143: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.BZMirDer.twKer_resM_derUnipM <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [60183/60258] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHomTrivOutsideLoc (7.6s)
-⚠ [60184/60260] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentTermInjectiveStatement (5.1s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SegmentTermInjectiveStatement.lean:8:148: Variable name `hA` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hA
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SegmentTermInjectiveStatement.lean:9:71: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SegmentTermInjectiveStatement.lean:9:131: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SegmentTermInjectiveStatement.lean:9:71: Unused tactic linter: `exact GlobalTheory.CompanionTheory.SegTerm.term_injective` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SegmentTermInjectiveStatement.lean:9:131: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.SegTerm.term_injective <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [60185/60262] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.JacquetWordMultiplicityAdditiveJordanHolder (7.3s)
-⚠ [60186/60262] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IrreducibleAdmissibleDecomposableCompEquiv (5.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IrreducibleAdmissibleDecomposableCompEquiv.lean:29:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/DerFin.lean:192:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -48,16 +29,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [60187/60267] Built Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.SegmentDerivatives.DerivSub (4.0s)
-⚠ [60188/60270] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdmissibleOfFiniteLengthSubquotients (7.3s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/AdmissibleOfFiniteLengthSubquotients.lean:62:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/AdmissibleOfFiniteLengthSubquotients.lean:62:4: Unused tactic linter: `simp only [Representation.ofModule', MonoidAlgebra.lift_symm_apply,
-  Algebra.lsmul_coe]` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/AdmissibleOfFiniteLengthSubquotients.lean:140:4: Try this: 
+warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/DerFin.lean:204:6: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -65,7 +37,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/AdmissibleOfFiniteLengthSubquotients.lean:142:4: Try this: 
+warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/DerFin.lean:209:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -73,15 +45,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/AdmissibleOfFiniteLengthSubquotients.lean:154:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/AdmissibleOfFiniteLengthSubquotients.lean:155:2: Try this: 
+warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/DerFin.lean:296:6: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -89,12 +53,60 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [60189/60270] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimensionalOfSmIndFixed (7.9s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FiniteDimensionalOfSmIndFixed.lean:113:6: try 'simp' instead of 'simpa'
+warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/DerFin.lean:297:6: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [60503/60605] Built GroundTheory.PAdicHodge.ACrisGalois (54s)
+✔ [60504/60606] Built GroundTheory.PAdicHodge.FieldOfNormsRam (10s)
+✔ [60505/60611] Built Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.NontrivialOfIsIrreducible (21s)
+⚠ [60506/60611] Built GroundTheory.PAdicHodge.BdRField (31s)
+warning: src/GroundTheory/PAdicHodge/BdRField.lean:60:0: automatically included section variable(s) unused in theorem `GroundTheory.PAdicHodge.IsPerfectoidField.varpi_mem_bDeRhamSubmonoid`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/GroundTheory/PAdicHodge/BdRField.lean:122:15: `Int.ofNat_eq_coe` has been deprecated: Use `Int.ofNat_eq_natCast` instead
+warning: src/GroundTheory/PAdicHodge/BdRField.lean:180:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/GroundTheory/PAdicHodge/BdRField.lean:203:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/GroundTheory/PAdicHodge/BdRField.lean:350:8: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [60190/60274] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsIrreducibleOfFixed (8.4s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsIrreducibleOfFixed.lean:65:2: Try this: 
+ℹ [60507/60613] Built GroundTheory.PAdicHodge.FieldOfNormsField (11s)
+info: src/GroundTheory/PAdicHodge/FieldOfNormsField.lean:346:4: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: src/GroundTheory/PAdicHodge/FieldOfNormsField.lean:356:4: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [60508/60614] Built Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.SomeRed (34s)
+warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/SomeRed.lean:38:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/SomeRed.lean:47:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -102,46 +114,14 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsIrreducibleOfFixed.lean:76:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsIrreducibleOfFixed.lean:150:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsIrreducibleOfFixed.lean:236:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsIrreducibleOfFixed.lean:257:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsIrreducibleOfFixed.lean:260:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/SomeRed.lean:115:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
 If you'd rather continue using `push_neg` in your project, you can implement it as follows:
 ```
 open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsIrreducibleOfFixed.lean:306:2: Try this: 
+warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/SomeRed.lean:148:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -149,8 +129,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [60191/60274] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EqZeroOfSumApplyEqZero (7.2s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/EqZeroOfSumApplyEqZero.lean:19:2: Try this: 
+warning: src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/SomeRed.lean:182:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -158,3 +137,24 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [60509/60615] Built GroundTheory.PAdicHodge.UnramifiedACris (12s)
+⚠ [60510/60616] Built GroundTheory.PAdicHodge.OrthoBasis (8.3s)
+warning: src/GroundTheory/PAdicHodge/OrthoBasis.lean:53:0: automatically included section variable(s) unused in theorem `GroundTheory.PAdicHodge.exists_orthogonal_fin`:
+  [IsUltrametricDist k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsUltrametricDist k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [60511/60619] Built GroundTheory.PAdicHodge.PerfectoidCriterion (8.1s)
+✔ [60512/60621] Built GroundTheory.PAdicHodge.UntiltField (12s)
+⚠ [60513/60625] Built GroundTheory.PAdicHodge.BdRTGalois (19s)
+warning: src/GroundTheory/PAdicHodge/BdRTGalois.lean:68:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [60514/60625] Built GroundTheory.PAdicHodge.FieldOfNormsLocal (8.4s)
+✔ [60515/60627] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalSwapProductGeneric (25s)
