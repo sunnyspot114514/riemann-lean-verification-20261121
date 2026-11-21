@@ -2,21 +2,21 @@
   "run_id": "20261120T184814Z-ebb611be",
   "source_commit_requested": "7cbf7a0c32fca1badf05931879a37c3f8a2b03b4",
   "started_utc": "2026-11-20T18:48:14+00:00",
-  "state": "running",
+  "state": "interrupted",
   "runner_stage": "driver",
   "bootstrap_exit_code": 0,
-  "driver_exit_code": null,
+  "driver_exit_code": -15,
   "verification_passed": false,
-  "updated_utc": "2026-11-21T05:53:58+00:00",
+  "updated_utc": "2026-11-21T05:56:47+00:00",
   "resources": {
-    "sampled_utc": "2026-11-21T05:53:58+00:00",
-    "cgroup_memory_current_bytes": 45179670528,
+    "sampled_utc": "2026-11-21T05:56:47+00:00",
+    "cgroup_memory_current_bytes": 38410559488,
     "cgroup_memory_peak_since_creation_bytes": 64424509440,
     "cgroup_memory_stat_bytes": {
-      "total_rss": 6963314688,
-      "total_cache": 34930675712,
-      "total_mapped_file": 6673379328,
-      "total_inactive_file": 8024408064
+      "total_rss": 303202304,
+      "total_cache": 37407834112,
+      "total_mapped_file": 9191424,
+      "total_inactive_file": 7330725888
     },
     "cgroup_memory_failcnt": 0,
     "cgroup_memory_oom_control": {
@@ -24,12 +24,12 @@
       "under_oom": 0,
       "oom_kill": 0
     },
-    "cgroup_cpu_usage_seconds": 640551.064888087,
+    "cgroup_cpu_usage_seconds": 643205.036633229,
     "sampled_memory_peak_this_runner_bytes": 64041234432,
-    "cgroup_cpu_seconds_since_runner_start": 637561.205397288,
-    "disk_free_bytes": 468545441792,
+    "cgroup_cpu_seconds_since_runner_start": 640215.17714243,
+    "disk_free_bytes": 468356608000,
     "disk_total_bytes": 536870912000,
-    "disk_free_inodes": 729387379
+    "disk_free_inodes": 729385635
   },
   "phases": {
     "source-prefetch": {
@@ -144,5 +144,7 @@
       "status": "running:build-main",
       "stages": {}
     }
-  }
+  },
+  "exit_code": -15,
+  "finished_utc": "2026-11-21T05:56:47+00:00"
 }
