@@ -1,160 +1,160 @@
-✔ [61974/62147] Built Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.ExistsBaseRingOfConjugationFixedTensor (8.5s)
-✔ [61975/62147] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzBoundFiniteInfinite (7.1s)
-✔ [61976/62147] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OfHermEBijective (6.2s)
-✔ [61977/62148] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MapUnitsInvEqScal (9.7s)
-⚠ [61978/62149] Built Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.AdelicConjTransposeBlockMatrixTwoByTwoFin (17s)
-warning: src/Development/AbelianVarietyTheory/PublishedTheorems/SiegelWeil₂/AdelicConjTransposeBlockMatrixTwoByTwoFin.lean:41:33: This simp argument is unused:
-  Matrix.one_apply
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UnitEqNormCompletionTensorOfIsInertAt.lean:168:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UnitEqNormCompletionTensorOfIsInertAt.lean:243:49: This simp argument is unused:
+  map_ofNat
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [h]
+  [apply] simp only [map_sub, map_add, map_mul, map_pow] at hQm
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/PublishedTheorems/SiegelWeil₂/AdelicConjTransposeBlockMatrixTwoByTwoFin.lean:121:65: Variable name `p` is not explicitly referenced.
+✔ [62478/62669] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MaxEvenLatticeRankOneSplit (7.0s)
+⚠ [62479/62669] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeStabilizerCompact (12s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LatticeStabilizerCompact.lean:213:39: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LatticeStabilizerCompact.lean:221:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LatticeStabilizerCompact.lean:222:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LatticeStabilizerCompact.lean:223:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LatticeStabilizerCompact.lean:225:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [62480/62669] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitOrderFgIdealProduct (6.7s)
+⚠ [62481/62669] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeMaxEvenAlmostAll (12s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LatticeMaxEvenAlmostAll.lean:45:10: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [62482/62669] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianSplitRankOne (8.0s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/HermitianSplitRankOne.lean:45:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [62483/62669] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianValuationSplitCriterion (7.3s)
+✔ [62484/62669] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.CocompactOfMemIffAdelic (26s)
+⚠ [62485/62669] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TensorFixedByInvolutionIsBase (6.7s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TensorFixedByInvolutionIsBase.lean:18:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [62486/62669] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsMaxEvenAdaptedLattice (9.1s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsMaxEvenAdaptedLattice.lean:92:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsMaxEvenAdaptedLattice.lean:131:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsMaxEvenAdaptedLattice.lean:139:18: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsMaxEvenAdaptedLattice.lean:149:20: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [62487/62669] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FockSplittingMaximalCompactStatement (7.1s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FockSplittingMaximalCompactStatement.lean:16:66: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FockSplittingMaximalCompactStatement.lean:16:121: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FockSplittingMaximalCompactStatement.lean:16:66: Unused tactic linter: `exact GlobalTheory.CompanionTheory.PfSWUS.fockSplitK` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FockSplittingMaximalCompactStatement.lean:16:121: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.PfSWUS.fockSplitK <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [62488/62669] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviMatrixOneStatement (5.7s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LeviMatrixOneStatement.lean:9:73: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LeviMatrixOneStatement.lean:9:135: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LeviMatrixOneStatement.lean:9:73: Unused tactic linter: `exact GlobalTheory.CompanionTheory.KFin.LeviOne.leviMat_one` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LeviMatrixOneStatement.lean:9:135: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.KFin.LeviOne.leviMat_one <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [62489/62669] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilSchrodingerRealParameter (7.0s)
+⚠ [62490/62669] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviMatrixMapBaseChangeStatement (5.7s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LeviMatrixMapBaseChangeStatement.lean:9:65: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LeviMatrixMapBaseChangeStatement.lean:9:119: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LeviMatrixMapBaseChangeStatement.lean:9:65: Unused tactic linter: `exact GlobalTheory.CompanionTheory.KFin.leviMat_map` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LeviMatrixMapBaseChangeStatement.lean:9:119: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.KFin.leviMat_map <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [62491/62669] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryInvTransposeOfScaledInverseGram (8.2s)
+✔ [62492/62671] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSiegelParabolicConjInvTranspose (10s)
+⚠ [62493/62671] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BlockTriangularMemMinimalParabolicLocalStatement (5.9s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/BlockTriangularMemMinimalParabolicLocalStatement.lean:8:224: Variable name `Y` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _p
+  [apply] _Y
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/PublishedTheorems/SiegelWeil₂/AdelicConjTransposeBlockMatrixTwoByTwoFin.lean:135:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/PublishedTheorems/SiegelWeil₂/AdelicConjTransposeBlockMatrixTwoByTwoFin.lean:145:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/PublishedTheorems/SiegelWeil₂/AdelicConjTransposeBlockMatrixTwoByTwoFin.lean:146:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/PublishedTheorems/SiegelWeil₂/AdelicConjTransposeBlockMatrixTwoByTwoFin.lean:147:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/PublishedTheorems/SiegelWeil₂/AdelicConjTransposeBlockMatrixTwoByTwoFin.lean:151:50: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AbelianVarietyTheory/PublishedTheorems/SiegelWeil₂/AdelicConjTransposeBlockMatrixTwoByTwoFin.lean:167:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [61979/62149] Built Development.AbelianVarietyTheory.Definitions.LatticeFrames.KerBF (7.0s)
-⚠ [61980/62150] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualOfCovolumeOneStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/SelfDualOfCovolumeOneStatement.lean:8:77: this tactic is never executed
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/BlockTriangularMemMinimalParabolicLocalStatement.lean:9:68: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/SelfDualOfCovolumeOneStatement.lean:8:143: this tactic is never executed
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/BlockTriangularMemMinimalParabolicLocalStatement.lean:9:125: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/SelfDualOfCovolumeOneStatement.lean:8:77: Unused tactic linter: `exact GlobalTheory.CovolumeOneSelfDual.selfDual_of_covolume_one` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/BlockTriangularMemMinimalParabolicLocalStatement.lean:9:68: Unused tactic linter: `exact GlobalTheory.CompanionTheory.KFin.emb_mem_minPar` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/SelfDualOfCovolumeOneStatement.lean:8:143: Unused tactic linter: `(intros;
-  apply GlobalTheory.CovolumeOneSelfDual.selfDual_of_covolume_one <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [61981/62150] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsOrthogonalIdempotentsOfSumMulEqOneStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ExistsOrthogonalIdempotentsOfSumMulEqOneStatement.lean:6:97: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ExistsOrthogonalIdempotentsOfSumMulEqOneStatement.lean:6:183: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ExistsOrthogonalIdempotentsOfSumMulEqOneStatement.lean:6:97: Unused tactic linter: `exact GlobalTheory.AdeleIdempotents.exists_orthogonal_idempotents_of_sum_mul_eq_one` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ExistsOrthogonalIdempotentsOfSumMulEqOneStatement.lean:6:183: Unused tactic linter: `(intros;
-  apply GlobalTheory.AdeleIdempotents.exists_orthogonal_idempotents_of_sum_mul_eq_one <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [61982/62150] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.GlobalDoublingZetaFormSelfDualLatticeTransfer (9.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/GlobalDoublingZetaFormSelfDualLatticeTransfer.lean:159:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/GlobalDoublingZetaFormSelfDualLatticeTransfer.lean:160:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/GlobalDoublingZetaFormSelfDualLatticeTransfer.lean:161:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [61983/62150] Built Development.WeilBound.CoreStatements.CrystallinePeriodRings.ExistsMapEqOfPowMul (24s)
-⚠ [61984/62150] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsHermitianDetNeZeroTwoStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ExistsHermitianDetNeZeroTwoStatement.lean:6:65: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ExistsHermitianDetNeZeroTwoStatement.lean:6:119: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ExistsHermitianDetNeZeroTwoStatement.lean:6:65: Unused tactic linter: `exact GlobalTheory.exists_hermitian_det_ne_zero_two` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ExistsHermitianDetNeZeroTwoStatement.lean:6:119: Unused tactic linter: `(intros; apply GlobalTheory.exists_hermitian_det_ne_zero_two <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [61985/62150] Built Development.WeilBound.CoreStatements.TemperedRepresentationTheory.WeilSiegelTheta.EisCellsDefs (6.2s)
-warning: src/Development/WeilBound/CoreStatements/TemperedRepresentationTheory/WeilSiegelTheta/EisCellsDefs.lean:55:10: Variable name `U` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _U
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [61986/62150] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzCoordinatesInInfiniteFamilyStatement (5.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SchwartzCoordinatesInInfiniteFamilyStatement.lean:12:71: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SchwartzCoordinatesInInfiniteFamilyStatement.lean:12:131: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SchwartzCoordinatesInInfiniteFamilyStatement.lean:12:71: Unused tactic linter: `exact GlobalTheory.SchwartzCoord.mem_schwartzA_comp_coord` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SchwartzCoordinatesInInfiniteFamilyStatement.lean:12:131: Unused tactic linter: `(intros; apply GlobalTheory.SchwartzCoord.mem_schwartzA_comp_coord <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [61987/62150] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MatrixFieldStableRangeOneDetNeZeroStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/MatrixFieldStableRangeOneDetNeZeroStatement.lean:6:56: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/MatrixFieldStableRangeOneDetNeZeroStatement.lean:6:101: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/MatrixFieldStableRangeOneDetNeZeroStatement.lean:6:56: Unused tactic linter: `exact GlobalTheory.matrix_stableRange_one'` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/MatrixFieldStableRangeOneDetNeZeroStatement.lean:6:101: Unused tactic linter: `(intros; apply GlobalTheory.matrix_stableRange_one' <;> assumption)` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/BlockTriangularMemMinimalParabolicLocalStatement.lean:9:125: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.KFin.emb_mem_minPar <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
