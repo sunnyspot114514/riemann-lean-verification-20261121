@@ -1,160 +1,160 @@
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsPositiveAdd.lean:73:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsPositiveAdd.lean:80:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [88863/88893] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.AestronglyMeasurableCompRep (9.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AestronglyMeasurableCompRep.lean:40:0: automatically included section variable(s) unused in theorem `GlobalTheory.RightRegFund.ae_good`:
+  [TopologicalSpace G]
+  [IsTopologicalGroup G]
+  [BorelSpace G]
+  [μ.IsMulLeftInvariant]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [TopologicalSpace G] [IsTopologicalGroup G] [BorelSpace G] [μ.IsMulLeftInvariant] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AestronglyMeasurableCompRep.lean:117:0: automatically included section variable(s) unused in theorem `GlobalTheory.RightRegFund.map_one`:
+  [μ.IsMulRightInvariant]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [μ.IsMulRightInvariant] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AestronglyMeasurableCompRep.lean:135:10: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+✔ [88864/88893] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransvectionSubgroupCocompactHaarFundamentalDoma (14s)
+⚠ [88865/88893] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseFrameBorelActsExtremalVectorByWeightStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BaseFrameBorelActsExtremalVectorByWeightStatement.lean:9:59: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BaseFrameBorelActsExtremalVectorByWeightStatement.lean:9:107: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BaseFrameBorelActsExtremalVectorByWeightStatement.lean:9:59: Unused tactic linter: `exact GlobalTheory.HolDict.VKill.borel_extVec` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [88556/88587] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RowSumOfHyp (6.5s)
-⚠ [88557/88588] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.OpenSubgroupTranslateHeightBound (18s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/OpenSubgroupTranslateHeightBound.lean:119:15: `Finsupp.finset_sum_apply` has been deprecated: Use `Finsupp.finsetSum_apply` instead
-⚠ [88558/88589] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.KernelRouteBigVertexRationalLeftInvariantStatement (5.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KernelRouteBigVertexRationalLeftInvariantStatement.lean:14:162: Variable name `hL` is not explicitly referenced.
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BaseFrameBorelActsExtremalVectorByWeightStatement.lean:9:107: Unused tactic linter: `(intros; apply GlobalTheory.HolDict.VKill.borel_extVec <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [88866/88893] Built Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsStdIsVacVec (6.8s)
+✔ [88867/88893] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTupChars (6.9s)
+✔ [88868/88894] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.NegativeThetaLevelSixth (7.2s)
+✔ [88869/88896] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SobolevBoundForSmoothVectors (13s)
+✔ [88870/88896] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianSpacesSameSignatureIsometric (6.7s)
+⚠ [88871/88900] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.InvariantExtensionIntegrableOnCompact (7.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/InvariantExtensionIntegrableOnCompact.lean:41:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/InvariantExtensionIntegrableOnCompact.lean:17:8: automatically included section variable(s) unused in theorem `_private.Development.AbelianVarietyTheory.Proofs.FlagMeasures.InvariantExtensionIntegrableOnCompact.0.GlobalTheory.LocalL2Isometry.card_le_of_translates_mem_mul_inv_tsum_indicator`:
+  [TopologicalSpace G]
+  [IsTopologicalGroup G]
+  [MeasurableSpace G]
+  [BorelSpace G]
+  [Countable ↥Γ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [TopologicalSpace G] [IsTopologicalGroup G] [MeasurableSpace G] [BorelSpace G] [Countable ↥Γ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/InvariantExtensionIntegrableOnCompact.lean:81:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/InvariantExtensionIntegrableOnCompact.lean:90:8: `MeasureTheory.eLpNorm_eq_lintegral_rpow_enorm` has been deprecated: Use `MeasureTheory.eLpNorm_eq_lintegral_rpow_enorm_toReal` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/InvariantExtensionIntegrableOnCompact.lean:91:6: `MeasureTheory.eLpNorm_eq_lintegral_rpow_enorm` has been deprecated: Use `MeasureTheory.eLpNorm_eq_lintegral_rpow_enorm_toReal` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/InvariantExtensionIntegrableOnCompact.lean:119:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/InvariantExtensionIntegrableOnCompact.lean:120:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/InvariantExtensionIntegrableOnCompact.lean:121:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/InvariantExtensionIntegrableOnCompact.lean:123:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/InvariantExtensionIntegrableOnCompact.lean:124:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [88872/88900] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.RightRegularRepUnitaryStronglyContinuous (5.9s)
+⚠ [88873/88901] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransvectionSubgroupCocompactHaarFundamentalDomaStatement (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TransvectionSubgroupCocompactHaarFundamentalDomaStatement.lean:9:67: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TransvectionSubgroupCocompactHaarFundamentalDomaStatement.lean:9:123: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TransvectionSubgroupCocompactHaarFundamentalDomaStatement.lean:9:67: Unused tactic linter: `exact GlobalTheory.TransvMeasure.transvection_measure` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TransvectionSubgroupCocompactHaarFundamentalDomaStatement.lean:9:123: Unused tactic linter: `(intros; apply GlobalTheory.TransvMeasure.transvection_measure <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [88874/88901] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtremalVectorMatrixCoeffHolomorphicType (7.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalVectorMatrixCoeffHolomorphicType.lean:128:33: Variable name `hq` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hL
+  [apply] _hq
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KernelRouteBigVertexRationalLeftInvariantStatement.lean:15:140: Variable name `hΘ` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hΘ
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KernelRouteBigVertexRationalLeftInvariantStatement.lean:17:59: this tactic is never executed
+⚠ [88875/88904] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.NegativeThetaLevelSixthStatement (6.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NegativeThetaLevelSixthStatement.lean:18:65: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KernelRouteBigVertexRationalLeftInvariantStatement.lean:17:107: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NegativeThetaLevelSixthStatement.lean:18:119: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KernelRouteBigVertexRationalLeftInvariantStatement.lean:17:59: Unused tactic linter: `exact GlobalTheory.BigRouteInv.kerBig_rat_mul` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NegativeThetaLevelSixthStatement.lean:18:65: Unused tactic linter: `exact GlobalTheory.CuspTypeApproxX.lift_approx_fock` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KernelRouteBigVertexRationalLeftInvariantStatement.lean:17:107: Unused tactic linter: `(intros; apply GlobalTheory.BigRouteInv.kerBig_rat_mul <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [88559/88592] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.MixedModelTermDerivAlongRationalPairingStatement (5.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MixedModelTermDerivAlongRationalPairingStatement.lean:9:63: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MixedModelTermDerivAlongRationalPairingStatement.lean:9:115: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MixedModelTermDerivAlongRationalPairingStatement.lean:9:63: Unused tactic linter: `exact GlobalTheory.MixedTerm.DerLaw.term_derAlong` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MixedModelTermDerivAlongRationalPairingStatement.lean:9:115: Unused tactic linter: `(intros; apply GlobalTheory.MixedTerm.DerLaw.term_derAlong <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [88560/88592] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.RowTestLiftFormulaPrincipalLevel (23s)
-⚠ [88561/88592] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.OpenSubgroupTranslateHeightBoundStatement (5.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/OpenSubgroupTranslateHeightBoundStatement.lean:9:56: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/OpenSubgroupTranslateHeightBoundStatement.lean:9:101: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/OpenSubgroupTranslateHeightBoundStatement.lean:9:56: Unused tactic linter: `exact GlobalTheory.LevelHeight.levelheight` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/OpenSubgroupTranslateHeightBoundStatement.lean:9:101: Unused tactic linter: `(intros; apply GlobalTheory.LevelHeight.levelheight <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [88562/88598] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RowSumOfPublishedInputsStatement (6.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RowSumOfPublishedInputsStatement.lean:7:62: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RowSumOfPublishedInputsStatement.lean:7:113: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RowSumOfPublishedInputsStatement.lean:7:62: Unused tactic linter: `exact GlobalTheory.RowClaim.rowSum_of_hypotheses` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RowSumOfPublishedInputsStatement.lean:7:113: Unused tactic linter: `(intros; apply GlobalTheory.RowClaim.rowSum_of_hypotheses <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [88563/88598] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsThetaFunOOfMatchedSquareBigRouteStatement (5.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsThetaFunOOfMatchedSquareBigRouteStatement.lean:19:69: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsThetaFunOOfMatchedSquareBigRouteStatement.lean:19:127: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsThetaFunOOfMatchedSquareBigRouteStatement.lean:19:69: Unused tactic linter: `exact GlobalTheory.RouteSeesaw.isThetaFunO_of_isMatched` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsThetaFunOOfMatchedSquareBigRouteStatement.lean:19:127: Unused tactic linter: `(intros; apply GlobalTheory.RouteSeesaw.isThetaFunO_of_isMatched <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [88564/88598] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnipotentRadicalMeanEqVolumeMulRationalMean (28s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/UnipotentRadicalMeanEqVolumeMulRationalMean.lean:53:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/UnipotentRadicalMeanEqVolumeMulRationalMean.lean:54:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/UnipotentRadicalMeanEqVolumeMulRationalMean.lean:79:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/UnipotentRadicalMeanEqVolumeMulRationalMean.lean:80:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/UnipotentRadicalMeanEqVolumeMulRationalMean.lean:88:39: This simp argument is unused:
-  smul_eq_mul
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [l1, hinv, integral_const] at hswap
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/UnipotentRadicalMeanEqVolumeMulRationalMean.lean:181:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/UnipotentRadicalMeanEqVolumeMulRationalMean.lean:212:24: This simp argument is unused:
-  add_mul
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [sub_mul, mul_sub, mul_add, one_mul, mul_one, smul_mul_assoc, mul_smul_comm, huu, huq, hqu, hqq,
-    smul_zero, smul_smul]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/UnipotentRadicalMeanEqVolumeMulRationalMean.lean:213:22: This simp argument is unused:
-  smul_smul
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [sub_mul, add_mul, mul_sub, mul_add, one_mul, mul_one, smul_mul_assoc, mul_smul_comm, huu, huq, hqu,
-    hqq, smul_zero]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [88565/88599] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumAdjointNegSourceKernelsAgreeStatement (5.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/WeilDatumAdjointNegSourceKernelsAgreeStatement.lean:20:63: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/WeilDatumAdjointNegSourceKernelsAgreeStatement.lean:20:115: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/WeilDatumAdjointNegSourceKernelsAgreeStatement.lean:20:63: Unused tactic linter: `exact GlobalTheory.AdjSwap.weil_adjoint_negSource` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/WeilDatumAdjointNegSourceKernelsAgreeStatement.lean:20:115: Unused tactic linter: `(intros; apply GlobalTheory.AdjSwap.weil_adjoint_negSource <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NegativeThetaLevelSixthStatement.lean:18:119: Unused tactic linter: `(intros; apply GlobalTheory.CuspTypeApproxX.lift_approx_fock <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
