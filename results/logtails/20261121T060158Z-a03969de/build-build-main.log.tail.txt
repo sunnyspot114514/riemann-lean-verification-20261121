@@ -1,7 +1,10 @@
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FiniteLambdaPowerTorsionFieldModInt.lean:19:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FinrankAndKernelOfLetterImageTensor.lean:103:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -9,65 +12,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [122768/122801] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CutCocyclesLocallyConstantKilledByUniformiserPow (21s)
-✔ [122769/122801] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsBlochKatoReadOfTensorSelmerAddCoboundary (98s)
-⚠ [122770/122802] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCoboundaryReadOfTwistedCharacterCoboundary (88s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsCoboundaryReadOfTwistedCharacterCoboundary.lean:18:57: This simp argument is unused:
-  LinearMap.restrict_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Formalism.WeaklyAdmissibleFiltrations.actT, LinearMap.smul_apply, LinearMap.id_apply,
-    Submodule.coe_smul]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsCoboundaryReadOfTwistedCharacterCoboundary.lean:37:8: This simp argument is unused:
-  stdLatG
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [matRep, mapM, Matrix.mulVec, dotProduct, Algebra.smul_def]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsCoboundaryReadOfTwistedCharacterCoboundary.lean:98:10: Variable name `w` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _w
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsCoboundaryReadOfTwistedCharacterCoboundary.lean:98:12: Variable name `hw` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hw
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [122771/122805] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GammaOperatorSemisimpleOfConclusionsStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GammaOperatorSemisimpleOfConclusionsStatement.lean:9:55: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GammaOperatorSemisimpleOfConclusionsStatement.lean:9:99: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GammaOperatorSemisimpleOfConclusionsStatement.lean:9:55: Unused tactic linter: `exact GlobalTheory.dss_semisimple_of_used` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GammaOperatorSemisimpleOfConclusionsStatement.lean:9:99: Unused tactic linter: `(intros; apply GlobalTheory.dss_semisimple_of_used <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [122772/122805] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmissibleQuotientKerIffFullLattices (16s)
-⚠ [122773/122807] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteLambdaPowerTorsionFieldModIntStatement (6.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FiniteLambdaPowerTorsionFieldModIntStatement.lean:11:55: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FiniteLambdaPowerTorsionFieldModIntStatement.lean:11:99: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FiniteLambdaPowerTorsionFieldModIntStatement.lean:11:55: Unused tactic linter: `exact GlobalTheory.UseLoc.Cases.finite_Xq` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FiniteLambdaPowerTorsionFieldModIntStatement.lean:11:99: Unused tactic linter: `(intros; apply GlobalTheory.UseLoc.Cases.finite_Xq <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [122774/122807] Built Development.AutomorphicArithmetic.CyclotomicBounds.DeRhamLattices.ExistsLatticeEqAddSmulOfStableFgSubmodule (5.7s)
-warning: src/Development/AutomorphicArithmetic/CyclotomicBounds/DeRhamLattices/ExistsLatticeEqAddSmulOfStableFgSubmodule.lean:34:4: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FinrankAndKernelOfLetterImageTensor.lean:166:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -75,86 +20,141 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [122775/122808] Built Development.AutomorphicArithmetic.CyclotomicBounds.DeRhamLattices.ExistsLinearEquivQuotientOfLatticeSum (5.7s)
-✔ [122776/122808] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUnramifiedReadOfTrivialTwistCoboundaryOnSubgro (85s)
-⚠ [122777/122809] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.TmulSurjectiveRankOne (5.0s)
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/TmulSurjectiveRankOne.lean:4:22: Variable name `inst` is not explicitly referenced.
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FinrankAndKernelOfLetterImageTensor.lean:167:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FinrankAndKernelOfLetterImageTensor.lean:168:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FinrankAndKernelOfLetterImageTensor.lean:169:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FinrankAndKernelOfLetterImageTensor.lean:170:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FinrankAndKernelOfLetterImageTensor.lean:171:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [122938/122974] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StableLeSpanInvariantsOfSemilinearFamily (5.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/StableLeSpanInvariantsOfSemilinearFamily.lean:73:12: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [122939/122980] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FixedOfFixedByDeltaGammaLiftsStatement (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FixedOfFixedByDeltaGammaLiftsStatement.lean:7:111: Variable name `AI` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _AI
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FixedOfFixedByDeltaGammaLiftsStatement.lean:8:62: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FixedOfFixedByDeltaGammaLiftsStatement.lean:8:113: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FixedOfFixedByDeltaGammaLiftsStatement.lean:8:62: Unused tactic linter: `exact GlobalTheory.RedDense.fixed_of_fixed_lifts` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FixedOfFixedByDeltaGammaLiftsStatement.lean:8:113: Unused tactic linter: `(intros; apply GlobalTheory.RedDense.fixed_of_fixed_lifts <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [122940/122980] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinrankAndKernelOfLetterImageTensorStatement (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FinrankAndKernelOfLetterImageTensorStatement.lean:8:47: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FinrankAndKernelOfLetterImageTensorStatement.lean:8:83: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FinrankAndKernelOfLetterImageTensorStatement.lean:8:47: Unused tactic linter: `exact GlobalTheory.RedDim.dim_ker` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FinrankAndKernelOfLetterImageTensorStatement.lean:8:83: Unused tactic linter: `(intros; apply GlobalTheory.RedDim.dim_ker <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [122941/122982] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GammaActionReductionStatement (8.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GammaActionReductionStatement.lean:9:62: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GammaActionReductionStatement.lean:9:113: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GammaActionReductionStatement.lean:9:62: Unused tactic linter: `exact GlobalTheory.RedAct.gamma_action_reduction` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GammaActionReductionStatement.lean:9:113: Unused tactic linter: `(intros; apply GlobalTheory.RedAct.gamma_action_reduction <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [122942/122982] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsExactFunctorPhiGammaOfFrames (14s)
+✔ [122943/122982] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFrameOfTorsionInvariants (10s)
+⚠ [122944/122984] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AevalApplyComm (5.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/AevalApplyComm.lean:28:29: Variable name `inst` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _inst
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/TmulSurjectiveRankOne.lean:5:5: Variable name `inst_1` is not explicitly referenced.
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/AevalApplyComm.lean:28:60: Variable name `inst_1` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _inst_1
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/TmulSurjectiveRankOne.lean:5:31: Variable name `inst_2` is not explicitly referenced.
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/AevalApplyComm.lean:28:79: Variable name `inst_2` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _inst_2
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/TmulSurjectiveRankOne.lean:5:60: Variable name `inst_3` is not explicitly referenced.
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/AevalApplyComm.lean:28:115: Variable name `inst_3` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _inst_3
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/TmulSurjectiveRankOne.lean:5:86: Variable name `inst_4` is not explicitly referenced.
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/AevalApplyComm.lean:28:141: Variable name `inst_4` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _inst_4
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [122778/122811] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ActExtLApply (9.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ActExtLApply.lean:24:0: automatically included section variable(s) unused in theorem `GlobalTheory.UseLoc.Cases.AdmW.actExtL_apply`:
-  [TopologicalSpace G]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [TopologicalSpace G] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ActExtLApply.lean:27:0: automatically included section variable(s) unused in theorem `GlobalTheory.UseLoc.Cases.AdmW.actT_one'`:
-  [TopologicalSpace G]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [TopologicalSpace G] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ActExtLApply.lean:29:0: automatically included section variable(s) unused in theorem `GlobalTheory.UseLoc.Cases.AdmW.actT_mul'`:
-  [TopologicalSpace G]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [TopologicalSpace G] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ActExtLApply.lean:78:13: This simp argument is unused:
-  Submodule.mem_bot
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only at hm
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ActExtLApply.lean:91:0: automatically included section variable(s) unused in theorem `GlobalTheory.UseLoc.Cases.AdmW.kerExt_kill`:
-  [TopologicalSpace G]
-  [Algebra O LL]
-  [IsScalarTower O LL V]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [TopologicalSpace G] [Algebra O LL] [IsScalarTower O LL V] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [122779/122811] Built Development.AutomorphicArithmetic.CyclotomicBounds.DeRhamLattices.ExistsGaloisStableLatticeOfPeriodData (6.3s)
-warning: src/Development/AutomorphicArithmetic/CyclotomicBounds/DeRhamLattices/ExistsGaloisStableLatticeOfPeriodData.lean:88:73: Variable name `Λ` is not explicitly referenced.
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/AevalApplyComm.lean:28:163: Variable name `inst_5` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _Λ
+  [apply] _inst_5
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [122780/122811] Built Development.AutomorphicArithmetic.CyclotomicBounds.DeRhamLattices.HasPresOfInjectiveEquivariant (5.4s)
-warning: src/Development/AutomorphicArithmetic/CyclotomicBounds/DeRhamLattices/HasPresOfInjectiveEquivariant.lean:25:4: Try this: 
-  haveI̵
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/AevalApplyComm.lean:28:189: Variable name `inst_6` is not explicitly referenced.
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_6
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
