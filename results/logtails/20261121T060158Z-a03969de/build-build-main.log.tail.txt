@@ -4,157 +4,157 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/GroundTheory/HeightsAndTheta/Heights/ComplexAnalyticSets/PVarWirtinger.lean:197:34: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/GroundTheory/HeightsAndTheta/Heights/ComplexAnalyticSets/PVarWirtinger.lean:242:17: `Set.mem_diff` has been deprecated: Use `Set.mem_sdiff` instead
-warning: src/GroundTheory/HeightsAndTheta/Heights/ComplexAnalyticSets/PVarWirtinger.lean:242:50: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/GroundTheory/HeightsAndTheta/Heights/ComplexAnalyticSets/PVarWirtinger.lean:244:10: `MeasureTheory.measure_diff_null` has been deprecated: Use `MeasureTheory.measure_sdiff_null` instead
-⚠ [85272/85299] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.GelfandInvariantsCentralCharacter (6.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/GelfandInvariantsCentralCharacter.lean:43:19: `Polynomial.eval_finset_sum` has been deprecated: Use `Polynomial.eval_finsetSum` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/GelfandInvariantsCentralCharacter.lean:64:18: `Polynomial.eval_finset_sum` has been deprecated: Use `Polynomial.eval_finsetSum` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/GelfandInvariantsCentralCharacter.lean:81:27: `Polynomial.eval_finset_sum` has been deprecated: Use `Polynomial.eval_finsetSum` instead
-✔ [85273/85299] Built Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.TensorRelationsGL.StepFormula (6.2s)
-✔ [85274/85302] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PVarLelongMono (5.3s)
-✔ [85275/85304] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharConjSelfDualFiniteIdelicIffLocal (6.5s)
-✔ [85276/85308] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PTangentGraphLowerDensity (15s)
-⚠ [85277/85309] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharConjSelfDualInfinityInfinitesimalIffFie (7.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/HeckeCharConjSelfDualInfinityInfinitesimalIffFie.lean:14:0: automatically included section variable(s) unused in theorem `GlobalTheory.CuspRep.CsdInf.star_expU`:
-  [NumberField L]
-  [IsCMField L]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField L] [IsCMField L] in theorem ...
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/PairingConvolutionSwap.lean:27:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [85278/85343] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CapelliComplements.ProductIdentities (5.4s)
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CapelliComplements/ProductIdentities.lean:23:16: Variable name `inst` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CapelliComplements/ProductIdentities.lean:23:39: Variable name `inst_1` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_1
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [85279/85363] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.GalRepRankTwo (10s)
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/GalRepRankTwo.lean:20:279: Variable name `P` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _P
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [85280/85363] Built Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.TensorRelationsGL.ClozelCohomologicalOf (6.7s)
-⚠ [85281/85365] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharConjSelfDualFiniteIdelicIffLocalStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/HeckeCharConjSelfDualFiniteIdelicIffLocalStatement.lean:8:51: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/HeckeCharConjSelfDualFiniteIdelicIffLocalStatement.lean:8:91: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/HeckeCharConjSelfDualFiniteIdelicIffLocalStatement.lean:8:51: Unused tactic linter: `exact GlobalTheory.CuspRep.csdFin_iff` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/HeckeCharConjSelfDualFiniteIdelicIffLocalStatement.lean:8:91: Unused tactic linter: `(intros; apply GlobalTheory.CuspRep.csdFin_iff <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [85282/85365] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfinitesimalCharacterQuantumDet (7.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InfinitesimalCharacterQuantumDet.lean:16:27: Variable name `φ` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _φ
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InfinitesimalCharacterQuantumDet.lean:20:32: Variable name `φ` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _φ
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InfinitesimalCharacterQuantumDet.lean:21:36: Variable name `φ` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _φ
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InfinitesimalCharacterQuantumDet.lean:22:33: Variable name `φ` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _φ
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InfinitesimalCharacterQuantumDet.lean:23:36: Variable name `φ` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _φ
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InfinitesimalCharacterQuantumDet.lean:24:35: Variable name `φ` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _φ
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [85283/85368] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharConjSelfDualInfinityInfinitesimalIffFieStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/HeckeCharConjSelfDualInfinityInfinitesimalIffFieStatement.lean:8:51: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/HeckeCharConjSelfDualInfinityInfinitesimalIffFieStatement.lean:8:91: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/HeckeCharConjSelfDualInfinityInfinitesimalIffFieStatement.lean:8:51: Unused tactic linter: `exact GlobalTheory.CuspRep.csdInf_iff` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/HeckeCharConjSelfDualInfinityInfinitesimalIffFieStatement.lean:8:91: Unused tactic linter: `(intros; apply GlobalTheory.CuspRep.csdInf_iff <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [85284/85368] Built Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.TensorRelationsGL.QdetFacts (7.4s)
-✔ [85285/85368] Built Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.KugaAbsoluteValues.KSumApply (6.1s)
-⚠ [85286/85371] Built Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.UnitaryCurves.ExistsUnitaryCurve (6.3s)
-warning: src/Development/WeilBound/RepresentationTheoryGL/CasimirAlgebra/KugaCoordinates/UnitaryCurves/ExistsUnitaryCurve.lean:38:4: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [85287/85371] Built Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.CompactUnitaryGroups.IsCompactUnitaryGroup (6.0s)
-✔ [85288/85371] Built Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.IsStarRep (6.5s)
-⚠ [85289/85371] Built Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.CasimirBounds.CountSame (5.4s)
-warning: src/Development/WeilBound/RepresentationTheoryGL/CasimirAlgebra/KugaCoordinates/CasimirBounds/CountSame.lean:11:0: automatically included section variable(s) unused in theorem `PositivityTheory.Rg.Cz.count_rhs`:
-  [Fintype Q]
-  [DecidableEq Q]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype Q] [DecidableEq Q] in theorem ...
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/PairingConvolutionSwap.lean:28:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/RepresentationTheoryGL/CasimirAlgebra/KugaCoordinates/CasimirBounds/CountSame.lean:22:0: automatically included section variable(s) unused in theorem `PositivityTheory.Rg.Cz.count_up`:
-  [Fintype Q]
-  [DecidableEq Q]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype Q] [DecidableEq Q] in theorem ...
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/RepresentationTheoryGL/CasimirAlgebra/KugaCoordinates/CasimirBounds/CountSame.lean:46:0: automatically included section variable(s) unused in theorem `PositivityTheory.Rg.Cz.count_eqb`:
-  [Fintype Q]
-  [DecidableEq Q]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype Q] [DecidableEq Q] in theorem ...
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [85617/85640] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.EqZeroOfOrthogonalCompactUnitaryPolyFunStatement (5.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/EqZeroOfOrthogonalCompactUnitaryPolyFunStatement.lean:23:62: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/RepresentationTheoryGL/CasimirAlgebra/KugaCoordinates/CasimirBounds/CountSame.lean:71:0: automatically included section variable(s) unused in theorem `PositivityTheory.Rg.Cz.count_same`:
-  [Fintype Q]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype Q] in theorem ...
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/EqZeroOfOrthogonalCompactUnitaryPolyFunStatement.lean:23:113: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [85290/85371] Built Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.TensorRelationsGL.PWallQuot (6.0s)
-✔ [85291/85371] Built Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.TensorRelationsGL.LiftCommEAt (6.0s)
-✔ [85292/85371] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AlternatingMapEqZeroOfSpan (5.1s)
-⚠ [85293/85371] Built Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.TensorRelationsGL.PQdetFacts (8.1s)
-warning: src/Development/WeilBound/RepresentationTheoryGL/CasimirAlgebra/TensorRelationsGL/PQdetFacts.lean:154:16: `Polynomial.finset_sum_coeff` has been deprecated: Use `Polynomial.finsetSum_coeff` instead
-warning: src/Development/WeilBound/RepresentationTheoryGL/CasimirAlgebra/TensorRelationsGL/PQdetFacts.lean:178:19: `Polynomial.eval_finset_sum` has been deprecated: Use `Polynomial.eval_finsetSum` instead
-warning: src/Development/WeilBound/RepresentationTheoryGL/CasimirAlgebra/TensorRelationsGL/PQdetFacts.lean:187:13: `Polynomial.finset_sum_coeff` has been deprecated: Use `Polynomial.finsetSum_coeff` instead
-✔ [85294/85371] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InvarianceContraction (5.2s)
-✔ [85295/85371] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KDKDelApply (5.2s)
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/EqZeroOfOrthogonalCompactUnitaryPolyFunStatement.lean:23:62: Unused tactic linter: `exact GlobalTheory.KFourier.eq_zero_of_orth_poly` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/EqZeroOfOrthogonalCompactUnitaryPolyFunStatement.lean:23:113: Unused tactic linter: `(intros; apply GlobalTheory.KFourier.eq_zero_of_orth_poly <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [85618/85673] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.CompactUnitaryCasimirInverseTopDegreeBoundStatement (5.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/CompactUnitaryCasimirInverseTopDegreeBoundStatement.lean:23:63: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/CompactUnitaryCasimirInverseTopDegreeBoundStatement.lean:23:115: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/CompactUnitaryCasimirInverseTopDegreeBoundStatement.lean:23:63: Unused tactic linter: `exact GlobalTheory.KFourier.casimir_inverse_bound` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/CompactUnitaryCasimirInverseTopDegreeBoundStatement.lean:23:115: Unused tactic linter: `(intros; apply GlobalTheory.KFourier.casimir_inverse_bound <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [85619/85678] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.L2normLeIntegralKernelMulTranslateDiff (22s)
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/L2normLeIntegralKernelMulTranslateDiff.lean:31:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/L2normLeIntegralKernelMulTranslateDiff.lean:32:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/L2normLeIntegralKernelMulTranslateDiff.lean:39:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/L2normLeIntegralKernelMulTranslateDiff.lean:40:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/L2normLeIntegralKernelMulTranslateDiff.lean:68:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [85620/85678] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.IterateOnePlusCasOfEq (5.6s)
+✔ [85621/85680] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoefBoundTwo (5.9s)
+⚠ [85622/85680] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsOrthogonalProjectionPolynomialCompactUnita (5.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/ExistsOrthogonalProjectionPolynomialCompactUnita.lean:33:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/ExistsOrthogonalProjectionPolynomialCompactUnita.lean:34:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/ExistsOrthogonalProjectionPolynomialCompactUnita.lean:35:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/ExistsOrthogonalProjectionPolynomialCompactUnita.lean:32:74: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/ExistsOrthogonalProjectionPolynomialCompactUnita.lean:33:4: Unused tactic linter: `(intros;
+  apply _root_.GlobalTheory.OrthogonalProjectionPoly.exists_proj_polyV <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/ExistsOrthogonalProjectionPolynomialCompactUnita.lean:34:4: Unused tactic linter: `(intros;
+  apply @_root_.GlobalTheory.OrthogonalProjectionPoly.exists_proj_polyV <;>
+    first
+    | assumption
+    | infer_instance)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/ExistsOrthogonalProjectionPolynomialCompactUnita.lean:35:4: Unused tactic linter: `(intros; exact _root_.GlobalTheory.OrthogonalProjectionPoly.exists_proj_polyV ..)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [85623/85683] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.CompactUnitaryCasimirPowPairingModerateGrowthBouStatement (5.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/CompactUnitaryCasimirPowPairingModerateGrowthBouStatement.lean:23:71: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/CompactUnitaryCasimirPowPairingModerateGrowthBouStatement.lean:23:131: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/CompactUnitaryCasimirPowPairingModerateGrowthBouStatement.lean:23:71: Unused tactic linter: `exact GlobalTheory.KFourier.CasimirMove.casimir_pow_bound` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/CompactUnitaryCasimirPowPairingModerateGrowthBouStatement.lean:23:131: Unused tactic linter: `(intros; apply GlobalTheory.KFourier.CasimirMove.casimir_pow_bound <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [85624/85683] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.PairingConvolutionSwapStatement (5.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/PairingConvolutionSwapStatement.lean:23:66: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/PairingConvolutionSwapStatement.lean:23:121: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/PairingConvolutionSwapStatement.lean:23:66: Unused tactic linter: `exact GlobalTheory.KFourier.pairing_convolution_swap` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/PairingConvolutionSwapStatement.lean:23:121: Unused tactic linter: `(intros; apply GlobalTheory.KFourier.pairing_convolution_swap <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [85625/85683] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.L2normLeIntegralKernelMulTranslateDiffStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/L2normLeIntegralKernelMulTranslateDiffStatement.lean:24:95: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/L2normLeIntegralKernelMulTranslateDiffStatement.lean:24:179: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/L2normLeIntegralKernelMulTranslateDiffStatement.lean:24:95: Unused tactic linter: `exact GlobalTheory.KFourier.sqrt_integral_normSq_le_integral_kernel_mul_translate` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/L2normLeIntegralKernelMulTranslateDiffStatement.lean:24:179: Unused tactic linter: `(intros;
+  apply GlobalTheory.KFourier.sqrt_integral_normSq_le_integral_kernel_mul_translate <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [85626/85683] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.GoodParOfSigOK (5.6s)
+✔ [85627/85685] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.InvSqrtTwo (4.9s)
