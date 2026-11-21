@@ -1,134 +1,140 @@
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/FlagPairDefinitePartLatticeDiscriminantEqQuotienStatement.lean:12:53: Unused tactic linter: `exact GlobalTheory.DegCnt.PrimPerp.main` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/FlagPairDefinitePartLatticeDiscriminantEqQuotienStatement.lean:12:95: Unused tactic linter: `(intros; apply GlobalTheory.DegCnt.PrimPerp.main <;> assumption)` does nothing
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/LatDetHMapInjectiveIsometry.lean:82:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [107396/107427] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsHermIsometryGraphModScalarFlagPairIotaStatement (4.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsHermIsometryGraphModScalarFlagPairIotaStatement.lean:12:55: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsHermIsometryGraphModScalarFlagPairIotaStatement.lean:12:99: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/LatDetHMapInjectiveIsometry.lean:77:0: automatically included section variable(s) unused in theorem `GlobalTheory.LoopC.DetMap.genIdxH_map`:
+  [StarRing K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [StarRing K] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsHermIsometryGraphModScalarFlagPairIotaStatement.lean:12:55: Unused tactic linter: `exact GlobalTheory.ModIdent.isModIso_iota` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsHermIsometryGraphModScalarFlagPairIotaStatement.lean:12:99: Unused tactic linter: `(intros; apply GlobalTheory.ModIdent.isModIso_iota <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [107397/107429] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermFramePairNormalFormUniqueUpToUnipotent (7.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermFramePairNormalFormUniqueUpToUnipotent.lean:91:0: automatically included section variable(s) unused in theorem `GlobalTheory.DegAsm.NFUnique.wt_e`:
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/LatDetHMapInjectiveIsometry.lean:85:0: automatically included section variable(s) unused in theorem `GlobalTheory.LoopC.DetMap.mem_dual`:
   [NumberField K]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [NumberField K] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermFramePairNormalFormUniqueUpToUnipotent.lean:94:0: automatically included section variable(s) unused in theorem `GlobalTheory.DegAsm.NFUnique.wt_e'`:
+⚠ [107722/107753] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardIntegralFramesFixedLiftLeStatement (5.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/CardIntegralFramesFixedLiftLeStatement.lean:9:63: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/CardIntegralFramesFixedLiftLeStatement.lean:9:115: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/CardIntegralFramesFixedLiftLeStatement.lean:9:63: Unused tactic linter: `exact GlobalTheory.LoopC.FixedLift.card_frames_le` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/CardIntegralFramesFixedLiftLeStatement.lean:9:115: Unused tactic linter: `(intros; apply GlobalTheory.LoopC.FixedLift.card_frames_le <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [107723/107753] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsZEquivGramBoundedMinors (7.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsZEquivGramBoundedMinors.lean:40:41: `Pi.ringHom` has been deprecated: Use `RingHom.pi` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.ringHom` to `RingHom.pi x`).
+✔ [107724/107755] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermPairCountBoundOfSiegelMassRatios (11s)
+⚠ [107725/107755] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowLatticesMeanEqGenusMeanStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/RowLatticesMeanEqGenusMeanStatement.lean:10:66: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/RowLatticesMeanEqGenusMeanStatement.lean:10:121: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/RowLatticesMeanEqGenusMeanStatement.lean:10:66: Unused tactic linter: `exact GlobalTheory.MeanGenus.mean_rows_eq_mean_genus` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/RowLatticesMeanEqGenusMeanStatement.lean:10:121: Unused tactic linter: `(intros; apply GlobalTheory.MeanGenus.mean_rows_eq_mean_genus <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [107726/107755] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsPairMoveByIntegralUnipotentStatement (4.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsPairMoveByIntegralUnipotentStatement.lean:10:57: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsPairMoveByIntegralUnipotentStatement.lean:10:103: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsPairMoveByIntegralUnipotentStatement.lean:10:57: Unused tactic linter: `exact GlobalTheory.LoopC.PairMove.pair_move` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsPairMoveByIntegralUnipotentStatement.lean:10:103: Unused tactic linter: `(intros; apply GlobalTheory.LoopC.PairMove.pair_move <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [107727/107758] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.PairIsometryUniqueOnOrthModIsotropic (8.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/PairIsometryUniqueOnOrthModIsotropic.lean:118:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [107728/107758] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.LatDetHMapInjectiveIsometryStatement (4.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/LatDetHMapInjectiveIsometryStatement.lean:10:57: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/LatDetHMapInjectiveIsometryStatement.lean:10:103: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/LatDetHMapInjectiveIsometryStatement.lean:10:57: Unused tactic linter: `exact GlobalTheory.LoopC.DetMap.latDetH_map` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/LatDetHMapInjectiveIsometryStatement.lean:10:103: Unused tactic linter: `(intros; apply GlobalTheory.LoopC.DetMap.latDetH_map <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [107729/107758] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsZEquivGramBoundedMinorsStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsZEquivGramBoundedMinorsStatement.lean:11:59: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsZEquivGramBoundedMinorsStatement.lean:11:107: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsZEquivGramBoundedMinorsStatement.lean:11:59: Unused tactic linter: `exact GlobalTheory.ReducedGram.exists_reduced` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsZEquivGramBoundedMinorsStatement.lean:11:107: Unused tactic linter: `(intros; apply GlobalTheory.ReducedGram.exists_reduced <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [107730/107758] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.IdxNOneMulAbsNorm (12s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IdxNOneMulAbsNorm.lean:84:0: automatically included section variable(s) unused in theorem `GlobalTheory.LoopC.FrameDet.smul_mem_pseudo`:
   [NumberField K]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [NumberField K] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermFramePairNormalFormUniqueUpToUnipotent.lean:97:0: automatically included section variable(s) unused in theorem `GlobalTheory.DegAsm.NFUnique.wt_ist`:
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IdxNOneMulAbsNorm.lean:93:0: automatically included section variable(s) unused in theorem `GlobalTheory.LoopC.FrameDet.pseudo_le`:
   [NumberField K]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [NumberField K] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [107398/107429] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsHermFramePairNormalFormMovedByIsometry (12s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsHermFramePairNormalFormMovedByIsometry.lean:160:69: This simp argument is unused:
-  memK
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IdxNOneMulAbsNorm.lean:116:58: This simp argument is unused:
+  Pi.single_apply
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [mv_e, mv_Xa, smulLat_smul, ← map_smul, ← map_sub, memR]
+  [apply] simp +contextual
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsHermFramePairNormalFormMovedByIsometry.lean:226:0: automatically included section variable(s) unused in theorem `GlobalTheory.DegMove.mvN_Ist`:
-  [NumberField K]
-  [Module (𝓞 K) V]
-  [IsScalarTower (𝓞 K) K V]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField K] [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] in theorem ...
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IdxNOneMulAbsNorm.lean:207:71: This simp argument is unused:
+  diagonal_apply
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsHermFramePairNormalFormMovedByIsometry.lean:245:0: automatically included section variable(s) unused in theorem `GlobalTheory.DegMove.mvN_R`:
-  [NumberField K]
-  [Module (𝓞 K) V]
-  [IsScalarTower (𝓞 K) K V]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField K] [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] in theorem ...
+Hint: Omit it from the simp argument list.
+  [apply] simp [FlagG.fvec, Formalism.MainNotions.hT_swap_zero (F.z_orth b), (Fin.castSucc_ne_last b).symm]
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsHermFramePairNormalFormMovedByIsometry.lean:271:0: automatically included section variable(s) unused in theorem `GlobalTheory.DegMove.mvN_gI`:
-  [NumberField K]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField K] in theorem ...
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IdxNOneMulAbsNorm.lean:209:34: This simp argument is unused:
+  diagonal_apply
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsHermFramePairNormalFormMovedByIsometry.lean:276:0: automatically included section variable(s) unused in theorem `GlobalTheory.DegMove.mvN_nD`:
-  [Module (𝓞 K) V]
-  [IsScalarTower (𝓞 K) K V]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] in theorem ...
+Hint: Omit it from the simp argument list.
+  [apply] simp [FlagG.fvec, F.z_orth a, Fin.castSucc_ne_last]
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [107399/107429] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.SignedBlockAntidiagWithLeadingMinorsEncardLe (7.0s)
-⚠ [107400/107431] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsStarStableIdealAbsorbingMinorsStatement (4.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsStarStableIdealAbsorbingMinorsStatement.lean:12:69: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsStarStableIdealAbsorbingMinorsStatement.lean:12:127: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsStarStableIdealAbsorbingMinorsStatement.lean:12:69: Unused tactic linter: `exact GlobalTheory.DegCnt.Absorb.exists_absorbing_ideal` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsStarStableIdealAbsorbingMinorsStatement.lean:12:127: Unused tactic linter: `(intros; apply GlobalTheory.DegCnt.Absorb.exists_absorbing_ideal <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [107401/107432] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermFramePairNormalFormUniqueUpToUnipotentStatement (4.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermFramePairNormalFormUniqueUpToUnipotentStatement.lean:12:49: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermFramePairNormalFormUniqueUpToUnipotentStatement.lean:12:87: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermFramePairNormalFormUniqueUpToUnipotentStatement.lean:12:49: Unused tactic linter: `exact GlobalTheory.DegAsm.nf_unique` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermFramePairNormalFormUniqueUpToUnipotentStatement.lean:12:87: Unused tactic linter: `(intros; apply GlobalTheory.DegAsm.nf_unique <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [107402/107433] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsHermFramePairNormalFormMovedByIsometryStatement (4.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsHermFramePairNormalFormMovedByIsometryStatement.lean:12:53: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsHermFramePairNormalFormMovedByIsometryStatement.lean:12:95: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsHermFramePairNormalFormMovedByIsometryStatement.lean:12:53: Unused tactic linter: `exact GlobalTheory.DegMove.exists_moved` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsHermFramePairNormalFormMovedByIsometryStatement.lean:12:95: Unused tactic linter: `(intros; apply GlobalTheory.DegMove.exists_moved <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [107403/107433] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.SignedBlockAntidiagWithLeadingMinorsEncardLeStatement (4.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/SignedBlockAntidiagWithLeadingMinorsEncardLeStatement.lean:12:51: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/SignedBlockAntidiagWithLeadingMinorsEncardLeStatement.lean:12:91: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/SignedBlockAntidiagWithLeadingMinorsEncardLeStatement.lean:12:51: Unused tactic linter: `exact GlobalTheory.signed_block_count` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/SignedBlockAntidiagWithLeadingMinorsEncardLeStatement.lean:12:91: Unused tactic linter: `(intros; apply GlobalTheory.signed_block_count <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [107404/107435] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.EncardLatticesNearReferenceLatticeLe (7.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/EncardLatticesNearReferenceLatticeLe.lean:67:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [107731/107758] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardLeOfSpan (7.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/CardLeOfSpan.lean:53:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -136,7 +142,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/EncardLatticesNearReferenceLatticeLe.lean:77:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/CardLeOfSpan.lean:92:8: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -144,7 +150,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/EncardLatticesNearReferenceLatticeLe.lean:88:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/CardLeOfSpan.lean:147:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -152,9 +158,3 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [107405/107435] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardSublatticesDefiniteQuotientNormalFormLe (6.4s)
-⚠ [107406/107435] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermFlagPairLatticeSumDiscriminantEqNormMinor (11s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermFlagPairLatticeSumDiscriminantEqNormMinor.lean:139:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermFlagPairLatticeSumDiscriminantEqNormMinor.lean:169:17: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermFlagPairLatticeSumDiscriminantEqNormMinor.lean:256:8: `Matrix.det_of_lowerTriangular` has been deprecated: Use `Matrix.det_of_isLowerTriangular` instead
-✔ [107407/107435] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.SumPairBdMulDatBdLe (38s)
