@@ -1,27 +1,42 @@
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SideRationalEigenDataStatement.lean:9:56: Unused tactic linter: `exact GlobalTheory.HeckeLocN.ndSpec_exists` does nothing
-
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SideRationalEigenDataStatement.lean:9:101: Unused tactic linter: `(intros; apply GlobalTheory.HeckeLocN.ndSpec_exists <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [127719/127741] Built Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsSameData (44s)
-warning: src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/ExistsSameData.lean:577:21: Variable name `ψ` is not explicitly referenced.
+✔ [127748/127767] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReadingInjective (34s)
+✔ [127749/127769] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LinkedStatesCoefficientFieldFiniteGroupEq (25s)
+⚠ [127750/127769] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SetupRelIffSameData (52s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SetupRelIffSameData.lean:195:99: Variable name `h` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _ψ
+  [apply] _h
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [127720/127741] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BareStatementOfDiscreteSeries (58s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/BareStatementOfDiscreteSeries.lean:134:2: Try this: 
-  haveI̵
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SetupRelIffSameData.lean:195:157: Variable name `m` is not explicitly referenced.
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _m
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/BareStatementOfDiscreteSeries.lean:203:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [127751/127769] Built Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonzeroPlacesOverPrimesOfLifts (35s)
+warning: src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NonzeroPlacesOverPrimesOfLifts.lean:19:40: Variable name `K` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _K
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [127752/127771] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LiftSetupOverExtendedDataIntegralFormsEq (166s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LiftSetupOverExtendedDataIntegralFormsEq.lean:86:13: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [127753/127771] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EnlargedBaseLb2Rows (51s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/EnlargedBaseLb2Rows.lean:84:15: This simp argument is unused:
+  hxi
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/EnlargedBaseLb2Rows.lean:180:4: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -29,132 +44,117 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [127721/127741] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GoodTwistOfSeedCharacterPowersStatement (51s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/GoodTwistOfSeedCharacterPowersStatement.lean:9:83: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/GoodTwistOfSeedCharacterPowersStatement.lean:9:155: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/GoodTwistOfSeedCharacterPowersStatement.lean:9:83: Unused tactic linter: `exact GlobalTheory.HeightCounting.Up.GoodPrimeSelection.goodO_of_seed` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/GoodTwistOfSeedCharacterPowersStatement.lean:9:155: Unused tactic linter: `(intros;
-  apply GlobalTheory.HeightCounting.Up.GoodPrimeSelection.goodO_of_seed <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [127722/127755] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StatementAOfPhotonCompatStatement (50s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/StatementAOfPhotonCompatStatement.lean:9:61: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/StatementAOfPhotonCompatStatement.lean:9:111: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/StatementAOfPhotonCompatStatement.lean:9:61: Unused tactic linter: `exact GlobalTheory.HeightCounting.Up.sak_of_prN` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/StatementAOfPhotonCompatStatement.lean:9:111: Unused tactic linter: `(intros; apply GlobalTheory.HeightCounting.Up.sak_of_prN <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [127723/127757] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EnlargedBaseLb2Descent (38s)
-✔ [127724/127758] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SameSetup (6.3s)
-⚠ [127725/127759] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsBasisAtTransport (8.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsBasisAtTransport.lean:45:0: automatically included section variable(s) unused in theorem `GlobalTheory.CoefLatIso.vmE_apply`:
-  [NumberField K]
-  [NumberField K']
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField K] [NumberField K'] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsBasisAtTransport.lean:74:0: automatically included section variable(s) unused in theorem `GlobalTheory.CoefLatIso.map_mem_one_iff`:
-  [NumberField K]
-  [NumberField K']
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField K] [NumberField K'] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsBasisAtTransport.lean:127:0: automatically included section variable(s) unused in theorem `GlobalTheory.CoefLatIso.map_smul_int'`:
-  [NumberField K]
-  [NumberField K']
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField K] [NumberField K'] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsBasisAtTransport.lean:131:0: automatically included section variable(s) unused in theorem `GlobalTheory.CoefLatIso.map_symm_map`:
-  [NumberField K]
-  [NumberField K']
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField K] [NumberField K'] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [127726/127759] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsExtremalVectorOfRealSideBaseChange (6.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsExtremalVectorOfRealSideBaseChange.lean:14:122: Variable name `h` is not explicitly referenced.
+⚠ [127754/127771] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SetupMove (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SetupMove.lean:15:94: Variable name `h` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _h
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsExtremalVectorOfRealSideBaseChange.lean:14:180: Variable name `m` is not explicitly referenced.
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SetupMove.lean:15:152: Variable name `m` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _m
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [127727/127759] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RingRelationTransferIdentity (5.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RingRelationTransferIdentity.lean:29:99: Variable name `h` is not explicitly referenced.
+✔ [127755/127771] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SeriesAtOfExpRelation (481s)
+⚠ [127756/127773] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExtremalVectorMemLowestKType (37s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExtremalVectorMemLowestKType.lean:251:153: Variable name `m` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _h
+  [apply] _m
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [127728/127759] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EnlargedBaseLb2DescentStatement (21s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/EnlargedBaseLb2DescentStatement.lean:13:65: this tactic is never executed
+✔ [127757/127773] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TieMove (8.6s)
+✔ [127758/127775] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KeepsMatHeqRefl (42s)
+⚠ [127759/127778] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LinkedStatesCoefficientFieldFiniteGroupEqStatement (47s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LinkedStatesCoefficientFieldFiniteGroupEqStatement.lean:12:79: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/EnlargedBaseLb2DescentStatement.lean:13:119: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LinkedStatesCoefficientFieldFiniteGroupEqStatement.lean:12:147: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/EnlargedBaseLb2DescentStatement.lean:13:65: Unused tactic linter: `exact GlobalTheory.HeightCounting.Up.hkCopyRestaged` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LinkedStatesCoefficientFieldFiniteGroupEqStatement.lean:12:79: Unused tactic linter: `exact GlobalTheory.HeightCounting.SerMove.Ids.field_group_of_link` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/EnlargedBaseLb2DescentStatement.lean:13:119: Unused tactic linter: `(intros; apply GlobalTheory.HeightCounting.Up.hkCopyRestaged <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LinkedStatesCoefficientFieldFiniteGroupEqStatement.lean:12:147: Unused tactic linter: `(intros;
+  apply GlobalTheory.HeightCounting.SerMove.Ids.field_group_of_link <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [127729/127759] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EnlargedBaseLb2Transport (63s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/EnlargedBaseLb2Transport.lean:15:5: Ambiguous namespace `Formalism`: it is interpreted as `_root_.GlobalTheory.Formalism` because this `open` occurs inside `namespace GlobalTheory.HeightCounting.Up.CopyEx`, while `_root_.Formalism` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.GlobalTheory.Formalism`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+✔ [127760/127778] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LinkedStatesFramesLatticesModelsAgree (59s)
+⚠ [127761/127778] Built Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonzeroIndexPlacesAdelicDataResizedEq (21s)
+warning: src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NonzeroIndexPlacesAdelicDataResizedEq.lean:107:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [127762/127780] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LamCopy (190s)
+✔ [127763/127780] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LinkedConstructionStatesCharactersAgree (79s)
+✔ [127764/127780] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LinkedStatesFiniteGroupsLevelsCorrespond (77s)
+✔ [127765/127782] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGeoExtN (87s)
+✔ [127766/127782] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LinkedStatesTuplePlacesOverFixedCharacterPrime (68s)
+⚠ [127767/127782] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LinkedStatesFramesLatticesModelsAgreeStatement (47s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LinkedStatesFramesLatticesModelsAgreeStatement.lean:12:70: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LinkedStatesFramesLatticesModelsAgreeStatement.lean:12:129: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LinkedStatesFramesLatticesModelsAgreeStatement.lean:12:70: Unused tactic linter: `exact GlobalTheory.HeightCounting.SerMove.frames_of_link` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LinkedStatesFramesLatticesModelsAgreeStatement.lean:12:129: Unused tactic linter: `(intros; apply GlobalTheory.HeightCounting.SerMove.frames_of_link <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [127768/127784] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinitenessOfHyp (121s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FinitenessOfHyp.lean:34:74: Ambiguous namespace `Formalism.L2`: it is interpreted as `_root_.GlobalTheory.Formalism.L2` because this `open` occurs inside `namespace GlobalTheory.HeightCounting.Fin3`, while `_root_.Formalism.L2` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.GlobalTheory.Formalism.L2`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
 
 Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/EnlargedBaseLb2Transport.lean:304:74: Ambiguous namespace `Formalism.L2`: it is interpreted as `_root_.GlobalTheory.Formalism.L2` because this `open` occurs inside `namespace GlobalTheory.HeightCounting.Up.CopyEx`, while `_root_.Formalism.L2` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.GlobalTheory.Formalism.L2`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
-
-Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/EnlargedBaseLb2Transport.lean:389:427: Variable name `lb` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _lb
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/EnlargedBaseLb2Transport.lean:389:510: Variable name `l'` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _l'
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [127730/127761] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SideRationalHeckeData (51s)
-⚠ [127731/127761] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BareStatementOfDiscreteSeriesStatement (34s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/BareStatementOfDiscreteSeriesStatement.lean:9:82: this tactic is never executed
+✔ [127769/127784] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExportTieMove (64s)
+⚠ [127770/127787] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LinkedConstructionStatesCharactersAgreeStatement (56s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LinkedConstructionStatesCharactersAgreeStatement.lean:12:69: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/BareStatementOfDiscreteSeriesStatement.lean:9:153: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LinkedConstructionStatesCharactersAgreeStatement.lean:12:127: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/BareStatementOfDiscreteSeriesStatement.lean:9:82: Unused tactic linter: `exact GlobalTheory.HeightCounting.Up.bareStatement_of_known_theorems` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LinkedConstructionStatesCharactersAgreeStatement.lean:12:69: Unused tactic linter: `exact GlobalTheory.HeightCounting.SerMove.chars_of_link` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/BareStatementOfDiscreteSeriesStatement.lean:9:153: Unused tactic linter: `(intros;
-  apply GlobalTheory.HeightCounting.Up.bareStatement_of_known_theorems <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LinkedConstructionStatesCharactersAgreeStatement.lean:12:127: Unused tactic linter: `(intros; apply GlobalTheory.HeightCounting.SerMove.chars_of_link <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [127732/127761] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsScalarScale (12s)
-✔ [127733/127761] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExtOfIsKsForm (24s)
-✔ [127734/127762] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HeckeTieMoveOfPin (64s)
-✔ [127735/127762] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RingSpecNormalisedCharacterEq (150s)
+⚠ [127771/127797] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LinkedStatesFiniteGroupsLevelsCorrespondStatement (55s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LinkedStatesFiniteGroupsLevelsCorrespondStatement.lean:12:75: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LinkedStatesFiniteGroupsLevelsCorrespondStatement.lean:12:139: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LinkedStatesFiniteGroupsLevelsCorrespondStatement.lean:12:75: Unused tactic linter: `exact GlobalTheory.HeightCounting.SerMove.GrpsPf.grps_of_link` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LinkedStatesFiniteGroupsLevelsCorrespondStatement.lean:12:139: Unused tactic linter: `(intros;
+  apply GlobalTheory.HeightCounting.SerMove.GrpsPf.grps_of_link <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [127772/127801] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelActionsOnLiftRulesExtendedData (9.2s)
+✔ [127773/127801] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LinkedStatesFockPolynomialsAgree (112s)
+⚠ [127774/127801] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LinkedStatesTuplePlacesOverFixedCharacterPrimeStatement (70s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LinkedStatesTuplePlacesOverFixedCharacterPrimeStatement.lean:12:75: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LinkedStatesTuplePlacesOverFixedCharacterPrimeStatement.lean:12:139: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LinkedStatesTuplePlacesOverFixedCharacterPrimeStatement.lean:12:75: Unused tactic linter: `exact GlobalTheory.HeightCounting.SerMove.Places.plCl_of_link` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LinkedStatesTuplePlacesOverFixedCharacterPrimeStatement.lean:12:139: Unused tactic linter: `(intros;
+  apply GlobalTheory.HeightCounting.SerMove.Places.plCl_of_link <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [127775/127809] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LinkedStatesRationalFormsCorrespondCoordinatewis (83s)
