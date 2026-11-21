@@ -1,115 +1,19 @@
-Hint: Omit it from the simp argument list.
-  [apply] simp only [twYS, Equiv.trans_apply, hY, Equiv.refl_symm, eYS]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [125615/125660] Built Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.LocalProductMeasures.TwistValueAtUniformizer (14s)
-⚠ [125616/125661] Built Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.LocalProductMeasures.MlZFacSupport (7.4s)
-warning: src/Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/LocalProductMeasures/MlZFacSupport.lean:18:0: automatically included section variable(s) unused in theorem `Formalism.L2.Ker.ml_ne_zero`:
-  [StarRing E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [StarRing E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/LocalProductMeasures/MlZFacSupport.lean:28:0: automatically included section variable(s) unused in theorem `Formalism.L2.Ker.ml_unit_mul`:
-  [StarRing E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [StarRing E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/LocalProductMeasures/MlZFacSupport.lean:52:0: automatically included section variable(s) unused in theorem `Formalism.L2.Ker.isUnit_div_pow_valuation`:
-  [StarRing E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [StarRing E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/LocalProductMeasures/MlZFacSupport.lean:113:0: automatically included section variable(s) unused in theorem `Formalism.L2.Ker.ml_ordE_finite`:
-  [StarRing E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [StarRing E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [125617/125665] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GeometricExistenceCoreFormsAnalyticPhaseOneStatement (11s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/GeometricExistenceCoreFormsAnalyticPhaseOneStatement.lean:20:64: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/GeometricExistenceCoreFormsAnalyticPhaseOneStatement.lean:20:117: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/GeometricExistenceCoreFormsAnalyticPhaseOneStatement.lean:20:64: Unused tactic linter: `exact GlobalTheory.Mem.R3.GeoExProof.geoExV_of_top` does nothing
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ResidueCharacterTwistUniversalCharAtChosenPlaceStatement.lean:23:101: Unused tactic linter: `(intros; apply GlobalTheory.ResTwist.res_twist_spec <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/GeometricExistenceCoreFormsAnalyticPhaseOneStatement.lean:20:117: Unused tactic linter: `(intros; apply GlobalTheory.Mem.R3.GeoExProof.geoExV_of_top <;> assumption)` does nothing
+✔ [125706/125758] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealDataWeightVectorFamily (38s)
+✔ [125707/125758] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SelectedSideRealizationHolds (35s)
+⚠ [125708/125758] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUnitCardResidueFieldOffExceptionalPlaces (6.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsUnitCardResidueFieldOffExceptionalPlaces.lean:12:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [125618/125665] Built Formalism.LocalToGlobal.Columns.MuDetOfLoc (6.4s)
-✔ [125619/125666] Built Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.HermitianHalfLattice.ConjHSymmApply (5.8s)
-⚠ [125620/125666] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.EvGSDOkOfEqOne (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/EvGSDOkOfEqOne.lean:14:68: Variable name `hX` is not explicitly referenced.
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hX
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [125621/125667] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjugateDatumLiftScalarOfInnerProductFormula (29s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ConjugateDatumLiftScalarOfInnerProductFormula.lean:75:2: Try this: intro D G _ _ Pl0 T0 A Ks _ _ _ R F hCore hX hSL hIPF hFC hFZ hRC gramR c0R c0L hT i σ hσ μ' η' c c₁ H j th hD
-  ev
-✔ [125622/125669] Built Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.HermitianHalfLattice.MLConjTranspose (8.4s)
-✔ [125623/125669] Built Formalism.LocalToGlobal.Columns.HeckeExHost (10s)
-⚠ [125624/125669] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TwistedNormalForms (6.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TwistedNormalForms.lean:18:0: automatically included section variable(s) unused in theorem `GlobalTheory.Proof.TwistedNormalForms.sum_ite_zero_eq_atN`:
-  [NumberField E]
-  [StarRing E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [StarRing E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TwistedNormalForms.lean:30:0: automatically included section variable(s) unused in theorem `GlobalTheory.Proof.TwistedNormalForms.comb_natAdd`:
-  [NumberField E]
-  [StarRing E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [StarRing E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TwistedNormalForms.lean:49:0: automatically included section variable(s) unused in theorem `GlobalTheory.Proof.TwistedNormalForms.comb_castAdd`:
-  [NumberField E]
-  [StarRing E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [StarRing E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [125625/125670] Built Formalism.LocalToGlobal.Columns.DetChrLeaves (5.0s)
-⚠ [125626/125672] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjugateDatumLiftScalarOfInnerProductFormulaStatement (5.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ConjugateDatumLiftScalarOfInnerProductFormulaStatement.lean:11:89: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ConjugateDatumLiftScalarOfInnerProductFormulaStatement.lean:11:167: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ConjugateDatumLiftScalarOfInnerProductFormulaStatement.lean:11:89: Unused tactic linter: `exact GlobalTheory.ConjScalarProof.conjScalarAt_of_sourceLevelLaw_fock_zeta` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ConjugateDatumLiftScalarOfInnerProductFormulaStatement.lean:11:167: Unused tactic linter: `(intros;
-  apply GlobalTheory.ConjScalarProof.conjScalarAt_of_sourceLevelLaw_fock_zeta <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [125627/125674] Built Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.HermitianHalfLattice.MemHalfBOEquiv (7.9s)
-warning: src/Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/HermitianHalfLattice/MemHalfBOEquiv.lean:19:0: automatically included section variable(s) unused in theorem `Formalism.L2.Ker.TI.equiv_osmulW`:
-  [NumberField E]
-  [StarRing E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [StarRing E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [125628/125675] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ColMatchAll (7.5s)
-⚠ [125629/125675] Built Formalism.LocalToGlobal.Columns.DetChrJoint (8.2s)
-warning: src/Formalism/LocalToGlobal/Columns/DetChrJoint.lean:36:19: Variable name `hX` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hX
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [125630/125675] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.NrmStepZeroEq (9.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/NrmStepZeroEq.lean:57:2: Try this: 
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsUnitCardResidueFieldOffExceptionalPlaces.lean:13:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -117,44 +21,140 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/NrmStepZeroEq.lean:54:89: Variable name `h` is not explicitly referenced.
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsUnitCardResidueFieldOffExceptionalPlaces.lean:14:2: Try this: 
+  haveI̵
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _h
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [125631/125677] Built Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.RkThindEq (8.3s)
-⚠ [125632/125678] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IotaStarProjectionQsp (8.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IotaStarProjectionQsp.lean:59:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IotaStarProjectionQsp.lean:35:565: Variable name `Z` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsUnitCardResidueFieldOffExceptionalPlaces.lean:15:2: Try this: 
+  letI̵
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _Z
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IotaStarProjectionQsp.lean:35:586: Variable name `C` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsUnitCardResidueFieldOffExceptionalPlaces.lean:29:2: Try this: 
+  haveI̵
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _C
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [125633/125679] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHostDatumOfPlaceDataStatement (5.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsHostDatumOfPlaceDataStatement.lean:9:65: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsUnitCardResidueFieldOffExceptionalPlaces.lean:60:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [125709/125758] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ScalarsZeroPartConventionFixedPlace (9.6s)
+⚠ [125710/125758] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuotientRowsExteriorDetEqConstMulTopBlockDetStatement (4.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/QuotientRowsExteriorDetEqConstMulTopBlockDetStatement.lean:10:67: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsHostDatumOfPlaceDataStatement.lean:9:119: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/QuotientRowsExteriorDetEqConstMulTopBlockDetStatement.lean:10:123: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsHostDatumOfPlaceDataStatement.lean:9:65: Unused tactic linter: `exact GlobalTheory.HostDatumExists.exists_hostDatum` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/QuotientRowsExteriorDetEqConstMulTopBlockDetStatement.lean:10:67: Unused tactic linter: `exact GlobalTheory.dU_eq_const_mul_det_topL_translate` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsHostDatumOfPlaceDataStatement.lean:9:119: Unused tactic linter: `(intros; apply GlobalTheory.HostDatumExists.exists_hostDatum <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/QuotientRowsExteriorDetEqConstMulTopBlockDetStatement.lean:10:123: Unused tactic linter: `(intros; apply GlobalTheory.dU_eq_const_mul_det_topL_translate <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [125634/125679] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLevelDataRayField (31s)
+⚠ [125711/125758] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistedThetaGeneratorEqClassSumIntegralFormStatement (8.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TwistedThetaGeneratorEqClassSumIntegralFormStatement.lean:10:51: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TwistedThetaGeneratorEqClassSumIntegralFormStatement.lean:10:91: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TwistedThetaGeneratorEqClassSumIntegralFormStatement.lean:10:51: Unused tactic linter: `exact GlobalTheory.TwTraceCx.trace_cx` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TwistedThetaGeneratorEqClassSumIntegralFormStatement.lean:10:91: Unused tactic linter: `(intros; apply GlobalTheory.TwTraceCx.trace_cx <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [125712/125758] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUnitCardResidueFieldOffExceptionalPlacesStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsUnitCardResidueFieldOffExceptionalPlacesStatement.lean:12:72: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsUnitCardResidueFieldOffExceptionalPlacesStatement.lean:12:133: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsUnitCardResidueFieldOffExceptionalPlacesStatement.lean:12:72: Unused tactic linter: `exact GlobalTheory.ResidueUnit.isUnit_card_residueField_Ok` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsUnitCardResidueFieldOffExceptionalPlacesStatement.lean:12:133: Unused tactic linter: `(intros; apply GlobalTheory.ResidueUnit.isUnit_card_residueField_Ok <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [125713/125758] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReFaceScalarsErrorsReadings (51s)
+⚠ [125714/125758] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SelectedSideRealizationHoldsStatement (47s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SelectedSideRealizationHoldsStatement.lean:40:74: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SelectedSideRealizationHoldsStatement.lean:40:137: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SelectedSideRealizationHoldsStatement.lean:40:74: Unused tactic linter: `exact GlobalTheory.Mem.R3.SelSideW.selected_side_realization` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SelectedSideRealizationHoldsStatement.lean:40:137: Unused tactic linter: `(intros;
+  apply GlobalTheory.Mem.R3.SelSideW.selected_side_realization <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [125715/125758] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealDataWeightVectorFamilyStatement (47s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RealDataWeightVectorFamilyStatement.lean:12:46: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RealDataWeightVectorFamilyStatement.lean:12:81: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RealDataWeightVectorFamilyStatement.lean:12:46: Unused tactic linter: `exact GlobalTheory.Stage4.stage4` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RealDataWeightVectorFamilyStatement.lean:12:81: Unused tactic linter: `(intros; apply GlobalTheory.Stage4.stage4 <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [125716/125758] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistedSeriesSpecialisedUniversalDatumMemSpan (9.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TwistedSeriesSpecialisedUniversalDatumMemSpan.lean:159:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [125717/125759] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmT4OfRootsInField (12s)
+⚠ [125718/125762] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistedSeriesSpecialisedUniversalDatumMemSpanStatement (6.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TwistedSeriesSpecialisedUniversalDatumMemSpanStatement.lean:19:58: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TwistedSeriesSpecialisedUniversalDatumMemSpanStatement.lean:19:105: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TwistedSeriesSpecialisedUniversalDatumMemSpanStatement.lean:19:58: Unused tactic linter: `exact GlobalTheory.SpecSpan.specSer_mem_span` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TwistedSeriesSpecialisedUniversalDatumMemSpanStatement.lean:19:105: Unused tactic linter: `(intros; apply GlobalTheory.SpecSpan.specSer_mem_span <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [125719/125762] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmT4OfRootsInFieldStatement (5.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/AdmT4OfRootsInFieldStatement.lean:10:69: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/AdmT4OfRootsInFieldStatement.lean:10:127: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/AdmT4OfRootsInFieldStatement.lean:10:69: Unused tactic linter: `exact GlobalTheory.TwInputs.admT4_of_full_compatibility` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/AdmT4OfRootsInFieldStatement.lean:10:127: Unused tactic linter: `(intros; apply GlobalTheory.TwInputs.admT4_of_full_compatibility <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [125720/125762] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SumCardSubspaces (5.1s)
