@@ -1,115 +1,49 @@
-  [Fintype n']
-  [DecidableEq n']
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/AbelianSchemeSurjectiveOfOntoComplexPointsStatement.lean:10:139: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/AbelianSchemeSurjectiveOfOntoComplexPointsStatement.lean:10:75: Unused tactic linter: `exact GlobalTheory.OntoSurj.surjective_of_onto_complex_points` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/AbelianSchemeSurjectiveOfOntoComplexPointsStatement.lean:10:139: Unused tactic linter: `(intros;
+  apply GlobalTheory.OntoSurj.surjective_of_onto_complex_points <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [91786/91805] Built Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.TensorPairingIdentityOfPureTensorsStatement (5.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/TensorPairingIdentityOfPureTensorsStatement.lean:11:54: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/TensorPairingIdentityOfPureTensorsStatement.lean:11:97: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/TensorPairingIdentityOfPureTensorsStatement.lean:11:54: Unused tactic linter: `exact GlobalTheory.LamCalc.lamEq_of_tmul` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/TensorPairingIdentityOfPureTensorsStatement.lean:11:97: Unused tactic linter: `(intros; apply GlobalTheory.LamCalc.lamEq_of_tmul <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [91787/91805] Built Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CmFamilyDescendsToNumberFieldStatement (5.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/CmFamilyDescendsToNumberFieldStatement.lean:13:65: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/CmFamilyDescendsToNumberFieldStatement.lean:13:119: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/CmFamilyDescendsToNumberFieldStatement.lean:13:65: Unused tactic linter: `exact GlobalTheory.CM.isFam_descends_to_numberField` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/CmFamilyDescendsToNumberFieldStatement.lean:13:119: Unused tactic linter: `(intros; apply GlobalTheory.CM.isFam_descends_to_numberField <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [91788/91806] Built Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.DegreeLieLatticesCmTripleBaseChange (12s)
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/DegreeLieLatticesCmTripleBaseChange.lean:37:0: automatically included section variable(s) unused in theorem `GlobalTheory.CM.LieBaseChange.algebraMap_comp_mapRingHom`:
+  [NumberField K]
+  [NumberField K']
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Field
-  k] [ValuativeRel
-  k] [IsNonarchimedeanLocalField k] [Fintype n] [DecidableEq n] [Fintype n'] [DecidableEq n'] in theorem ...
+  omit [NumberField K] [NumberField K'] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/FlatMapsPreserveSchwartzBruhatAndSurjective.lean:332:0: automatically included section variable(s) unused in theorem `GlobalTheory.LocFlat.continuous_extRow`:
-  [ValuativeRel k]
-  [IsNonarchimedeanLocalField k]
-  [Fintype n]
-  [DecidableEq n]
-  [Fintype n']
-  [DecidableEq n']
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [ValuativeRel
-  k] [IsNonarchimedeanLocalField k] [Fintype n] [DecidableEq n] [Fintype n'] [DecidableEq n'] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/FlatMapsPreserveSchwartzBruhatAndSurjective.lean:340:0: automatically included section variable(s) unused in theorem `GlobalTheory.LocFlat.extRow_readRow`:
-  [ValuativeRel k]
-  [TopologicalSpace k]
-  [IsNonarchimedeanLocalField k]
-  [Fintype n]
-  [DecidableEq n]
-  [Fintype n']
-  [DecidableEq n']
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [ValuativeRel
-  k] [TopologicalSpace
-  k] [IsNonarchimedeanLocalField k] [Fintype n] [DecidableEq n] [Fintype n'] [DecidableEq n'] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/FlatMapsPreserveSchwartzBruhatAndSurjective.lean:354:0: automatically included section variable(s) unused in theorem `GlobalTheory.LocFlat.readRow_ptRow`:
-  [ValuativeRel k]
-  [TopologicalSpace k]
-  [IsNonarchimedeanLocalField k]
-  [Fintype n]
-  [DecidableEq n]
-  [Fintype n']
-  [DecidableEq n']
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [ValuativeRel
-  k] [TopologicalSpace
-  k] [IsNonarchimedeanLocalField k] [Fintype n] [DecidableEq n] [Fintype n'] [DecidableEq n'] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/FlatMapsPreserveSchwartzBruhatAndSurjective.lean:361:54: This simp argument is unused:
-  h1
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [readRow, ptRow, affPt, basePt, rowAt, Free, h2]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/FlatMapsPreserveSchwartzBruhatAndSurjective.lean:363:0: automatically included section variable(s) unused in theorem `GlobalTheory.LocFlat.restOf_ptRow`:
-  [ValuativeRel k]
-  [TopologicalSpace k]
-  [IsNonarchimedeanLocalField k]
-  [Fintype n]
-  [DecidableEq n]
-  [Fintype n']
-  [DecidableEq n']
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [ValuativeRel
-  k] [TopologicalSpace
-  k] [IsNonarchimedeanLocalField k] [Fintype n] [DecidableEq n] [Fintype n'] [DecidableEq n'] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/FlatMapsPreserveSchwartzBruhatAndSurjective.lean:382:0: automatically included section variable(s) unused in theorem `GlobalTheory.LocFlat.continuous_ptCol`:
-  [Fintype n]
-  [DecidableEq n]
-  [Fintype n']
-  [DecidableEq n']
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype n] [DecidableEq n] [Fintype n'] [DecidableEq n'] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/FlatMapsPreserveSchwartzBruhatAndSurjective.lean:397:0: automatically included section variable(s) unused in theorem `GlobalTheory.LocFlat.continuous_ptRow`:
-  [Fintype n]
-  [DecidableEq n]
-  [Fintype n']
-  [DecidableEq n']
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype n] [DecidableEq n] [Fintype n'] [DecidableEq n'] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/FlatMapsPreserveSchwartzBruhatAndSurjective.lean:415:0: automatically included section variable(s) unused in theorem `GlobalTheory.LocFlat.flCol_eq_integral`:
-  [ValuativeRel k]
-  [TopologicalSpace k]
-  [IsNonarchimedeanLocalField k]
-  [DecidableEq n]
-  [DecidableEq n']
-  [BorelSpace k]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [ValuativeRel
-  k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] [DecidableEq n] [DecidableEq n'] [BorelSpace k] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/FlatMapsPreserveSchwartzBruhatAndSurjective.lean:421:0: automatically included section variable(s) unused in theorem `GlobalTheory.LocFlat.flRow_eq_integral`:
-  [ValuativeRel k]
-  [TopologicalSpace k]
-  [IsNonarchimedeanLocalField k]
-  [DecidableEq n]
-  [DecidableEq n']
-  [BorelSpace k]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [ValuativeRel
-  k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] [DecidableEq n] [DecidableEq n'] [BorelSpace k] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/FlatMapsPreserveSchwartzBruhatAndSurjective.lean:430:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/DegreeLieLatticesCmTripleBaseChange.lean:134:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -117,44 +51,110 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [91542/91565] Built Development.AbelianVarietyTheory.Definitions.ThetaValues.ExistsRootNotMem (9.1s)
-warning: src/Development/AbelianVarietyTheory/Definitions/ThetaValues/ExistsRootNotMem.lean:57:6: Variable name `p` is not explicitly referenced.
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/DegreeLieLatticesCmTripleBaseChange.lean:135:2: Try this: 
+  haveI̵
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _p
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [91543/91569] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.QEqColPer (12s)
-✔ [91544/91571] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.DownEqLiftP (19s)
-✔ [91545/91571] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsLeviPreimageOfFixIsotropicFrames (8.4s)
-✔ [91546/91573] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsOrthogonalComplementPreimageOfFixLine (9.1s)
-⚠ [91547/91573] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.RuleBaseChangeSectionValuesSemilinearStatement (5.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/RuleBaseChangeSectionValuesSemilinearStatement.lean:8:61: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/DegreeLieLatticesCmTripleBaseChange.lean:136:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/DegreeLieLatticesCmTripleBaseChange.lean:185:32: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/DegreeLieLatticesCmTripleBaseChange.lean:192:0: automatically included section variable(s) unused in theorem `GlobalTheory.CM.LieBaseChange.form_single_eq`:
+  [NumberField K]
+  [NumberField K']
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField K] [NumberField K'] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/DegreeLieLatticesCmTripleBaseChange.lean:211:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/DegreeLieLatticesCmTripleBaseChange.lean:212:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/DegreeLieLatticesCmTripleBaseChange.lean:213:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [91789/91806] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsRootOfUnityCoverFunctionReferenceTupleStatement (6.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsRootOfUnityCoverFunctionReferenceTupleStatement.lean:16:64: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/RuleBaseChangeSectionValuesSemilinearStatement.lean:8:111: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsRootOfUnityCoverFunctionReferenceTupleStatement.lean:16:117: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/RuleBaseChangeSectionValuesSemilinearStatement.lean:8:61: Unused tactic linter: `exact GlobalTheory.FieldBC.rulBC_sec_val_linear` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsRootOfUnityCoverFunctionReferenceTupleStatement.lean:16:64: Unused tactic linter: `exact GlobalTheory.GalRef.exists_root_galRul_isSum` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/RuleBaseChangeSectionValuesSemilinearStatement.lean:8:111: Unused tactic linter: `(intros; apply GlobalTheory.FieldBC.rulBC_sec_val_linear <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsRootOfUnityCoverFunctionReferenceTupleStatement.lean:16:117: Unused tactic linter: `(intros; apply GlobalTheory.GalRef.exists_root_galRul_isSum <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [91548/91573] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ConnectionPolynomialExpressionCoeffFieldExtensio (5.6s)
-✔ [91549/91573] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FrameLetterGLActionRepresentationKeepsHarmonic (6.0s)
-✔ [91550/91573] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.InPsiOrInPsiConjugate (5.6s)
-⚠ [91551/91573] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsLeviPreimageOfFixIsotropicFramesStatement (6.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ExistsLeviPreimageOfFixIsotropicFramesStatement.lean:21:76: this tactic is never executed
+⚠ [91790/91806] Built Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CmFamilyExtendsOverDedekindDomainStatement (5.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/CmFamilyExtendsOverDedekindDomainStatement.lean:11:55: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ExistsLeviPreimageOfFixIsotropicFramesStatement.lean:21:141: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/CmFamilyExtendsOverDedekindDomainStatement.lean:11:99: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ExistsLeviPreimageOfFixIsotropicFramesStatement.lean:21:76: Unused tactic linter: `exact GlobalTheory.MixModel.HypDec.exists_emb0_eq_of_fix_jX_jY` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/CmFamilyExtendsOverDedekindDomainStatement.lean:11:55: Unused tactic linter: `exact GlobalTheory.isFam_extends_dedekind` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ExistsLeviPreimageOfFixIsotropicFramesStatement.lean:21:141: Unused tactic linter: `(intros;
-  apply GlobalTheory.MixModel.HypDec.exists_emb0_eq_of_fix_jX_jY <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/CmFamilyExtendsOverDedekindDomainStatement.lean:11:99: Unused tactic linter: `(intros; apply GlobalTheory.isFam_extends_dedekind <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [91791/91806] Built Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsUniqueCmHermitianLatticeFormStatement (5.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/ExistsUniqueCmHermitianLatticeFormStatement.lean:11:48: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/ExistsUniqueCmHermitianLatticeFormStatement.lean:11:85: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/ExistsUniqueCmHermitianLatticeFormStatement.lean:11:48: Unused tactic linter: `exact GlobalTheory.CM.exists_kForm` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/ExistsUniqueCmHermitianLatticeFormStatement.lean:11:85: Unused tactic linter: `(intros; apply GlobalTheory.CM.exists_kForm <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [91792/91815] Built Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.DegreeLieLatticesCmTripleBaseChangeStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/DegreeLieLatticesCmTripleBaseChangeStatement.lean:11:78: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/DegreeLieLatticesCmTripleBaseChangeStatement.lean:11:145: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/DegreeLieLatticesCmTripleBaseChangeStatement.lean:11:78: Unused tactic linter: `exact GlobalTheory.CM.LieBaseChange.deg_lieLat_eigLat_baseChange` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/DegreeLieLatticesCmTripleBaseChangeStatement.lean:11:145: Unused tactic linter: `(intros;
+  apply GlobalTheory.CM.LieBaseChange.deg_lieLat_eigLat_baseChange <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [91793/91815] Built Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsTensorProductHomOfCmCurveHomFamily (6.9s)
+✔ [91794/91815] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesFirst (10s)
+⚠ [91795/91815] Built Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsTensorBundle (8.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/ExistsTensorBundle.lean:57:32: `AddMonoidHom.finset_sum_apply` has been deprecated: Use `AddMonoidHom.finsetSum_apply` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/ExistsTensorBundle.lean:65:17: `AddMonoidHom.finset_sum_apply` has been deprecated: Use `AddMonoidHom.finsetSum_apply` instead
+✔ [91796/91816] Built Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.KTrivOfPerfect (5.7s)
