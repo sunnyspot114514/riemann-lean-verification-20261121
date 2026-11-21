@@ -1,55 +1,10 @@
-  [apply] _h1
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CoinvariantUnipotentActionTrivialStatement.lean:7:299: Variable name `h2` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _h2
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CoinvariantUnipotentActionTrivialStatement.lean:8:69: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CoinvariantUnipotentActionTrivialStatement.lean:8:127: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CoinvariantUnipotentActionTrivialStatement.lean:8:69: Unused tactic linter: `exact GlobalTheory.CompanionTheory.BZPhiPG.qC_sigX_unip` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CoinvariantUnipotentActionTrivialStatement.lean:8:127: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.BZPhiPG.qC_sigX_unip <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [74387/74455] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoinvariantLeviActionModulus (10s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CoinvariantLeviActionModulus.lean:20:228: Variable name `hη` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hη
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [74388/74455] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteFibreFunctionsCompactStatement (7.0s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FiniteFibreFunctionsCompactStatement.lean:22:81: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FiniteFibreFunctionsCompactStatement.lean:22:151: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FiniteFibreFunctionsCompactStatement.lean:22:81: Unused tactic linter: `exact GlobalTheory.CompanionTheory.BZPsiPG.FibFin.finite_fibV_image` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FiniteFibreFunctionsCompactStatement.lean:22:151: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.BZPsiPG.FibFin.finite_fibV_image <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [74389/74455] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothFibreAction (7.2s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SmoothFibreAction.lean:39:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SmoothFibreAction.lean:40:2: Try this: 
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CellFunctorNonscalarOffdiag.lean:202:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -57,15 +12,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SmoothFibreAction.lean:41:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SmoothFibreAction.lean:42:2: Try this: 
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CellFunctorNonscalarOffdiag.lean:222:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -73,39 +20,84 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [74390/74455] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CellFunctorScalarUniformizer (111s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CellFunctorScalarUniformizer.lean:45:0: automatically included section variable(s) unused in theorem `GlobalTheory.CellScalarTwo.scalar_comm`:
-  [LinearOrder β]
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CellFunctorNonscalarOffdiag.lean:221:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.CellOff.exists_det_eq`:
+  [ValuativeRel k]
+  [TopologicalSpace k]
+  [IsNonarchimedeanLocalField k]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [LinearOrder β] in theorem ...
+  omit [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CellFunctorScalarUniformizer.lean:50:77: This simp argument is unused:
-  MonoidHom.coe_coe
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CellFunctorNonscalarOffdiag.lean:307:46: This simp argument is unused:
+  one_pow
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [Units.val_mul, Matrix.GeneralLinearGroup.scalar, Units.coe_map]
+  [apply] simp only [Fintype.prod_bool, hsvT, hsvF, map_one, _root_.one_zpow, one_mul, mul_one, absPow_half,
+    modExp_false, modExp_true, Fintype.card_fin]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CellFunctorScalarUniformizer.lean:55:0: automatically included section variable(s) unused in theorem `GlobalTheory.CellScalarTwo.scalar_mem`:
-  [Fintype α]
-  [(i : α) → (j : β) → Fintype (c i j)]
-  [(i : α) → (j : β) → DecidableEq (c i j)]
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CellFunctorNonscalarOffdiag.lean:317:46: This simp argument is unused:
+  one_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Fintype.prod_bool, hsvT, hsvF, map_one, _root_.one_zpow, one_mul, mul_one, absPow_half,
+    modExp_false, modExp_true, Fintype.card_fin]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CellFunctorNonscalarOffdiag.lean:317:90: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Fintype.prod_bool, hsvT, hsvF, one_pow, map_one, _root_.one_zpow, one_mul, absPow_half,
+    modExp_false, modExp_true, Fintype.card_fin]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CellFunctorNonscalarOffdiag.lean:321:14: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CellFunctorNonscalarOffdiag.lean:311:4: Unused tactic linter: `push_cast` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CellFunctorNonscalarOffdiag.lean:321:4: Unused tactic linter: `all_goals (push_cast; ring)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [74915/74970] Built Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.PullPowAddInv (15s)
+warning: src/Development/WeilBound/CoreStatements/AbelianHeightsDuality/ZarhinTrick/PullPowAddInv.lean:81:8: automatically included section variable(s) unused in theorem `_private.Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.PullPowAddInv.0.PositivityTheory.PrwZar.Z2.lam_eq_evc_toBase_of_isDual`:
+  [IsMonHom l]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype α] [(i : α) → (j : β) → Fintype (c i j)] [(i : α) → (j : β) → DecidableEq (c i j)] in theorem ...
+  omit [IsMonHom l] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [74391/74455] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothTopRepresentation (7.2s)
-⚠ [74392/74455] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsLatticePeriodicity (7.0s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsLatticePeriodicity.lean:57:2: Try this: 
-  letI̵
+warning: src/Development/WeilBound/CoreStatements/AbelianHeightsDuality/ZarhinTrick/PullPowAddInv.lean:167:8: automatically included section variable(s) unused in theorem `_private.Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.PullPowAddInv.0.PositivityTheory.PrwZar.Z2.pull_add_pull_inv_eq_sq_smul_of_comp_eq_pow`:
+  [IsCommMonObj B]
+  [IsAlgClosed Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsCommMonObj B] [IsAlgClosed Ω] in theorem ...
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/WeilBound/CoreStatements/AbelianHeightsDuality/ZarhinTrick/PullPowAddInv.lean:179:8: automatically included section variable(s) unused in theorem `_private.Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.PullPowAddInv.0.PositivityTheory.PrwZar.Z2.pull_pow_lift_cls_eq_sq_smul`:
+  [IsCommMonObj A]
+  [IsCommMonObj B]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsCommMonObj A] [IsCommMonObj B] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsLatticePeriodicity.lean:58:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/WeilBound/CoreStatements/AbelianHeightsDuality/ZarhinTrick/PullPowAddInv.lean:187:21: Variable name `hA` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hA
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/WeilBound/CoreStatements/AbelianHeightsDuality/ZarhinTrick/PullPowAddInv.lean:187:46: Variable name `hB` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hB
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [74916/74970] Built GroundTheory.ProfiniteCohomology.MackeyFormula.ConjHomotopy (15s)
+✔ [74917/74970] Built GroundTheory.ProfiniteCohomology.GlobalClassFormation.SymbolBridgeCyclotomic (9.3s)
+⚠ [74918/74970] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Purity (6.2s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/Purity.lean:22:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -113,48 +105,56 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsLatticePeriodicity.lean:59:2: Try this: 
-  letI̵
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/Purity.lean:23:2: Try this: 
+  haveI̵
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [74393/74455] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocallyConstantCosetIndicatorSum (7.3s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LocallyConstantCosetIndicatorSum.lean:24:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.BZPsiPG.FibKer.self_mem_cosetSet_decomp`:
-  [TopologicalSpace k]
-  [IsNonarchimedeanLocalField k]
+✔ [74919/74972] Built GroundTheory.ProfiniteCohomology.MackeyFormula (12s)
+✔ [74920/74974] Built GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalDegrees.Layers (7.4s)
+✔ [74921/74976] Built Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.CwOf (7.2s)
+✔ [74922/74976] Built Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.MatrixActionSingle (34s)
+⚠ [74923/74988] Built Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.KLiftSqToBase (13s)
+warning: src/Development/WeilBound/CoreStatements/AbelianHeightsDuality/ZarhinTrick/KLiftSqToBase.lean:93:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/AbelianHeightsDuality/ZarhinTrick/KLiftSqToBase.lean:94:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/AbelianHeightsDuality/ZarhinTrick/KLiftSqToBase.lean:88:0: automatically included section variable(s) unused in theorem `PositivityTheory.PrwZar.kEvc_sym`:
+  [GrpObj B]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [TopologicalSpace k] [IsNonarchimedeanLocalField k] in theorem ...
+  omit [GrpObj B] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LocallyConstantCosetIndicatorSum.lean:29:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.BZPsiPG.FibKer.cosetSet_symm_decomp`:
-  [TopologicalSpace k]
-  [IsNonarchimedeanLocalField k]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [TopologicalSpace k] [IsNonarchimedeanLocalField k] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LocallyConstantCosetIndicatorSum.lean:36:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.BZPsiPG.FibKer.cosetSet_trans_decomp`:
-  [TopologicalSpace k]
-  [IsNonarchimedeanLocalField k]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [TopologicalSpace k] [IsNonarchimedeanLocalField k] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LocallyConstantCosetIndicatorSum.lean:59:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+✔ [74924/74988] Built GroundTheory.ProfiniteCohomology.MackeyFormula.ConeHomotopy (8.1s)
+✔ [74925/74993] Built Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ClozelPurity.ClozelPurityOfBounded (5.8s)
+✔ [74926/74993] Built GroundTheory.ProfiniteCohomology.RestrictedRamification.SUnits (12s)
+✔ [74927/74993] Built GroundTheory.ProfiniteCohomology.GlobalClassFormation.SignsCup (11s)
+✔ [74928/74993] Built Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.EtaleCohomologyNegativeVanishingDegreeZero (5.2s)
+✔ [74929/74993] Built GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalDegrees.Decomposition (6.9s)
+✔ [74930/74995] Built GroundTheory.ProfiniteCohomology.RestrictedRamification.DivisorModule (11s)
+✔ [74931/74995] Built GroundTheory.ProfiniteCohomology.MackeyFormula.Cohomology (8.6s)
+⚠ [74932/74995] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CyclicTrivialInductionRing (5.8s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CyclicTrivialInductionRing.lean:57:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
 If you'd rather continue using `push_neg` in your project, you can implement it as follows:
 ```
 open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LocallyConstantCosetIndicatorSum.lean:110:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-✔ [74394/74455] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralCosetIndicatorSum (6.8s)
+✔ [74933/74995] Built Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.CentralProducts.UnitarisableHypotheses.NormEqOneOfUnitarisable (13s)
+✔ [74934/74997] Built GroundTheory.ProfiniteCohomology.CompactSupportCohomology (14s)
