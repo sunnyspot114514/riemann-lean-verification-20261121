@@ -1,142 +1,104 @@
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/UnramifiedLocalPairActsOnVacuaByHeisenbergComb.lean:199:25: This simp argument is unused:
-  Finset.smul_sum
+  Matrix.sub_mul
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [Finsupp.sum, smul_smul]
+  [apply] simp only [Matrix.mul_sub, Matrix.mul_one, Matrix.one_mul, Matrix.mul_smul, Matrix.smul_mul, Matrix.neg_mul]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [110547/110588] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LocalFockIntertwinerAdjointExchangedPairStatement (5.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/LocalFockIntertwinerAdjointExchangedPairStatement.lean:14:51: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/CenterMtEqSmulOne.lean:72:63: This simp argument is unused:
+  Matrix.one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.mul_sub, Matrix.sub_mul, Matrix.mul_one, Matrix.mul_smul, Matrix.smul_mul, Matrix.neg_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/CenterMtEqSmulOne.lean:72:96: This simp argument is unused:
+  Matrix.smul_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.mul_sub, Matrix.sub_mul, Matrix.mul_one, Matrix.one_mul, Matrix.mul_smul, Matrix.neg_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/CenterMtEqSmulOne.lean:91:0: automatically included section variable(s) unused in theorem `GlobalTheory.CenterScalar.map_smulE`:
+  [Fintype n]
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/CenterMtEqSmulOne.lean:94:0: automatically included section variable(s) unused in theorem `GlobalTheory.CenterScalar.map_subE`:
+  [Fintype n]
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/CenterMtEqSmulOne.lean:97:0: automatically included section variable(s) unused in theorem `GlobalTheory.CenterScalar.map_addE`:
+  [Fintype n]
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/CenterMtEqSmulOne.lean:100:0: automatically included section variable(s) unused in theorem `GlobalTheory.CenterScalar.map_oneE`:
+  [Fintype n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/CenterMtEqSmulOne.lean:102:0: automatically included section variable(s) unused in theorem `GlobalTheory.CenterScalar.map_mulE`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/CenterMtEqSmulOne.lean:194:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [110823/110851] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IndexZeroLevelCharacterEqBesselCharacterStatement (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/IndexZeroLevelCharacterEqBesselCharacterStatement.lean:11:61: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/LocalFockIntertwinerAdjointExchangedPairStatement.lean:14:91: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/IndexZeroLevelCharacterEqBesselCharacterStatement.lean:11:111: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/LocalFockIntertwinerAdjointExchangedPairStatement.lean:14:51: Unused tactic linter: `exact GlobalTheory.AdjLocIt.adj_locIt` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/IndexZeroLevelCharacterEqBesselCharacterStatement.lean:11:61: Unused tactic linter: `exact GlobalTheory.LevZeroChar.levChi_eq_psiBes` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/LocalFockIntertwinerAdjointExchangedPairStatement.lean:14:91: Unused tactic linter: `(intros; apply GlobalTheory.AdjLocIt.adj_locIt <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/IndexZeroLevelCharacterEqBesselCharacterStatement.lean:11:111: Unused tactic linter: `(intros; apply GlobalTheory.LevZeroChar.levChi_eq_psiBes <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [110548/110588] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.BorelMultiplicativeEqProdDiagonalValuationsStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/BorelMultiplicativeEqProdDiagonalValuationsStatement.lean:13:53: this tactic is never executed
+⚠ [110824/110851] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalLatticeSpanAtPlace (7.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LocalLatticeSpanAtPlace.lean:19:4: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/BorelMultiplicativeEqProdDiagonalValuationsStatement.lean:13:95: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LocalLatticeSpanAtPlace.lean:20:4: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/BorelMultiplicativeEqProdDiagonalValuationsStatement.lean:13:53: Unused tactic linter: `exact GlobalTheory.BorelChar.borel_char` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/BorelMultiplicativeEqProdDiagonalValuationsStatement.lean:13:95: Unused tactic linter: `(intros; apply GlobalTheory.BorelChar.borel_char <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [110549/110588] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsTopReadingBundleStatement (23s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ExistsTopReadingBundleStatement.lean:11:57: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LocalLatticeSpanAtPlace.lean:21:4: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ExistsTopReadingBundleStatement.lean:11:103: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LocalLatticeSpanAtPlace.lean:18:70: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ExistsTopReadingBundleStatement.lean:11:57: Unused tactic linter: `exact GlobalTheory.TopVal.topReadAt_of_bWit` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ExistsTopReadingBundleStatement.lean:11:103: Unused tactic linter: `(intros; apply GlobalTheory.TopVal.topReadAt_of_bWit <;> assumption)` does nothing
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LocalLatticeSpanAtPlace.lean:19:4: Unused tactic linter: `(intros;
+  apply _root_.GlobalTheory.NonzeroSmulMem.exists_ne_zero_smul_mem <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [110550/110588] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsHeisenbergInvariantLinearFormIsotropicVacu (6.0s)
-✔ [110551/110588] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ValuedTwoEqOneInertPlaceCmField (6.0s)
-⚠ [110552/110588] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumDiagOrderEqOfIntegralTranslateIndicatorRelatiStatement (5.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SumDiagOrderEqOfIntegralTranslateIndicatorRelatiStatement.lean:13:71: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SumDiagOrderEqOfIntegralTranslateIndicatorRelatiStatement.lean:13:131: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SumDiagOrderEqOfIntegralTranslateIndicatorRelatiStatement.lean:13:71: Unused tactic linter: `exact GlobalTheory.SphTheta.sum_ordL_diag_eq_of_indicator` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LocalLatticeSpanAtPlace.lean:20:4: Unused tactic linter: `(intros;
+  apply @_root_.GlobalTheory.NonzeroSmulMem.exists_ne_zero_smul_mem <;>
+    first
+    | assumption
+    | infer_instance)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SumDiagOrderEqOfIntegralTranslateIndicatorRelatiStatement.lean:13:131: Unused tactic linter: `(intros; apply GlobalTheory.SphTheta.sum_ordL_diag_eq_of_indicator <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LocalLatticeSpanAtPlace.lean:21:4: Unused tactic linter: `(intros; exact _root_.GlobalTheory.NonzeroSmulMem.exists_ne_zero_smul_mem ..)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [110553/110588] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.InertPlaceLocalCharacterConjugationInverse (8.2s)
-✔ [110554/110588] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LocalGroupActionInertSupportedPointsFrames (11s)
-⚠ [110555/110588] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryBorelPreservesMixedModelLatticeLowerBlockStatement (5.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/UnitaryBorelPreservesMixedModelLatticeLowerBlockStatement.lean:13:63: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/UnitaryBorelPreservesMixedModelLatticeLowerBlockStatement.lean:13:115: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/UnitaryBorelPreservesMixedModelLatticeLowerBlockStatement.lean:13:63: Unused tactic linter: `exact GlobalTheory.SphTheta.borel_mixLat_lowBlock` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/UnitaryBorelPreservesMixedModelLatticeLowerBlockStatement.lean:13:115: Unused tactic linter: `(intros; apply GlobalTheory.SphTheta.borel_mixLat_lowBlock <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [110556/110588] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SymplecticFormInertSupportedPointsAntidiagonal (12s)
-✔ [110557/110594] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.InertSupportedPointIntegralFramesMemLattice (14s)
-✔ [110558/110594] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsIntegralFramePointOfInertHalfLatticePoint (14s)
-⚠ [110559/110594] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.InertPlaceLocalTraceCharacterConductorIntegers (13s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/InertPlaceLocalTraceCharacterConductorIntegers.lean:45:31: `zero_le'` has been deprecated: Use `zero_le` instead
-✔ [110560/110594] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsRealThetaIntertwinerExchangedPair (6.2s)
-⚠ [110561/110594] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsHeisenbergInvariantLinearFormIsotropicVacuStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsHeisenbergInvariantLinearFormIsotropicVacuStatement.lean:13:86: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsHeisenbergInvariantLinearFormIsotropicVacuStatement.lean:13:161: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsHeisenbergInvariantLinearFormIsotropicVacuStatement.lean:13:86: Unused tactic linter: `exact GlobalTheory.SphTheta.exists_linearForm_invariant_isotropic_vacuum` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsHeisenbergInvariantLinearFormIsotropicVacuStatement.lean:13:161: Unused tactic linter: `(intros;
-  apply GlobalTheory.SphTheta.exists_linearForm_invariant_isotropic_vacuum <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [110562/110594] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.InertPlaceLocalCharacterConjugationInverseStatement (5.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/InertPlaceLocalCharacterConjugationInverseStatement.lean:20:55: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/InertPlaceLocalCharacterConjugationInverseStatement.lean:20:99: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/InertPlaceLocalCharacterConjugationInverseStatement.lean:20:55: Unused tactic linter: `exact GlobalTheory.InertFrameLoc.thW_conj` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/InertPlaceLocalCharacterConjugationInverseStatement.lean:20:99: Unused tactic linter: `(intros; apply GlobalTheory.InertFrameLoc.thW_conj <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [110563/110594] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LocalGroupActionInertSupportedPointsFramesStatement (6.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/LocalGroupActionInertSupportedPointsFramesStatement.lean:20:55: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/LocalGroupActionInertSupportedPointsFramesStatement.lean:20:99: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/LocalGroupActionInertSupportedPointsFramesStatement.lean:20:55: Unused tactic linter: `exact GlobalTheory.InertFrameAct.actO_uPt` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/LocalGroupActionInertSupportedPointsFramesStatement.lean:20:99: Unused tactic linter: `(intros; apply GlobalTheory.InertFrameAct.actO_uPt <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [110564/110594] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ValuedTwoEqOneInertPlaceCmFieldStatement (6.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ValuedTwoEqOneInertPlaceCmFieldStatement.lean:20:59: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ValuedTwoEqOneInertPlaceCmFieldStatement.lean:20:107: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ValuedTwoEqOneInertPlaceCmFieldStatement.lean:20:59: Unused tactic linter: `exact GlobalTheory.InertTwo.valued_two_eq_one` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ValuedTwoEqOneInertPlaceCmFieldStatement.lean:20:107: Unused tactic linter: `(intros; apply GlobalTheory.InertTwo.valued_two_eq_one <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [110565/110594] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilRepLatticeVacuumMemSpanInertTranslates (12s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/WeilRepLatticeVacuumMemSpanInertTranslates.lean:137:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LocalLatticeSpanAtPlace.lean:52:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -144,17 +106,55 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [110566/110594] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SymplecticFormInertSupportedPointsAntidiagonalStatement (6.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/SymplecticFormInertSupportedPointsAntidiagonalStatement.lean:20:60: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LocalLatticeSpanAtPlace.lean:62:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/SymplecticFormInertSupportedPointsAntidiagonalStatement.lean:20:109: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/SymplecticFormInertSupportedPointsAntidiagonalStatement.lean:20:60: Unused tactic linter: `exact GlobalTheory.InertFrameSympl.symplOH_uPt` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LocalLatticeSpanAtPlace.lean:60:250: Variable name `hI` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/SymplecticFormInertSupportedPointsAntidiagonalStatement.lean:20:109: Unused tactic linter: `(intros; apply GlobalTheory.InertFrameSympl.symplOH_uPt <;> assumption)` does nothing
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hI
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [110567/110594] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.MixedModelInvariantFormUpperTriangularPairAction (6.5s)
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [110825/110852] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelPrimeDiamondRepresentation (6.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LevelPrimeDiamondRepresentation.lean:98:98: Variable name `hc` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hc
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LevelPrimeDiamondRepresentation.lean:99:19: Variable name `hI` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hI
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [110826/110852] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.OffTypePinnedLocalGroups (22s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/OffTypePinnedLocalGroups.lean:271:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [110827/110853] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelPrimeDiamondPreservesIntegralForms (6.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LevelPrimeDiamondPreservesIntegralForms.lean:14:0: automatically included section variable(s) unused in theorem `GlobalTheory.Mem.Col2.DiaLat.evV_rho_tr`:
+  [StarRing E]
+  [NumberField K]
+  [StarRing K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [StarRing E] [NumberField K] [StarRing K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LevelPrimeDiamondPreservesIntegralForms.lean:47:243: Variable name `hI` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hI
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [110828/110853] Built Development.AbelianVarietyTheory.Definitions.LatticeFrames.BuiltGIntro (5.4s)
