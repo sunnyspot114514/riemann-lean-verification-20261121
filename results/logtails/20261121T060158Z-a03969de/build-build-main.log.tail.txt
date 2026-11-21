@@ -1,160 +1,160 @@
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: Omit it from the simp argument list.
+  [apply] simp only [conjTranspose_add, conjTranspose_sub, conjTranspose_mul, conjTranspose_one,
+    conjTranspose_conjTranspose, hJ, Matrix.mul_add, Matrix.add_mul, Matrix.mul_sub, Matrix.sub_mul, Matrix.mul_assoc,
+    Matrix.one_mul, Matrix.mul_one, tXX, tXD, tDX, hXD', hDX', Matrix.mul_zero, Matrix.zero_mul, add_zero, zero_add,
+    sub_zero, zero_sub]
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/PairingConvolutionSwap.lean:27:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RadicalEltMovingDualToMajorant.lean:76:14: This simp argument is unused:
+  hXD'
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: Omit it from the simp argument list.
+  [apply] simp only [conjTranspose_add, conjTranspose_sub, conjTranspose_mul, conjTranspose_one,
+    conjTranspose_conjTranspose, hJ, Matrix.mul_add, Matrix.add_mul, Matrix.mul_sub, Matrix.sub_mul, Matrix.mul_assoc,
+    Matrix.one_mul, Matrix.mul_one, tXX, tXD, tDX, hXX', hDX', Matrix.mul_zero, Matrix.zero_mul, add_zero, zero_add,
+    sub_zero, zero_sub]
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/PairingConvolutionSwap.lean:28:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RadicalEltMovingDualToMajorant.lean:76:20: This simp argument is unused:
+  hDX'
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: Omit it from the simp argument list.
+  [apply] simp only [conjTranspose_add, conjTranspose_sub, conjTranspose_mul, conjTranspose_one,
+    conjTranspose_conjTranspose, hJ, Matrix.mul_add, Matrix.add_mul, Matrix.mul_sub, Matrix.sub_mul, Matrix.mul_assoc,
+    Matrix.one_mul, Matrix.mul_one, tXX, tXD, tDX, hXX', hXD', Matrix.mul_zero, Matrix.zero_mul, add_zero, zero_add,
+    sub_zero, zero_sub]
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [85617/85640] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.EqZeroOfOrthogonalCompactUnitaryPolyFunStatement (5.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/EqZeroOfOrthogonalCompactUnitaryPolyFunStatement.lean:23:62: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RadicalEltMovingDualToMajorant.lean:76:43: This simp argument is unused:
+  Matrix.zero_mul
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/EqZeroOfOrthogonalCompactUnitaryPolyFunStatement.lean:23:113: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp only [conjTranspose_add, conjTranspose_sub, conjTranspose_mul, conjTranspose_one,
+    conjTranspose_conjTranspose, hJ, Matrix.mul_add, Matrix.add_mul, Matrix.mul_sub, Matrix.sub_mul, Matrix.mul_assoc,
+    Matrix.one_mul, Matrix.mul_one, tXX, tXD, tDX, hXX', hXD', hDX', Matrix.mul_zero, add_zero, zero_add, sub_zero,
+    zero_sub]
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/EqZeroOfOrthogonalCompactUnitaryPolyFunStatement.lean:23:62: Unused tactic linter: `exact GlobalTheory.KFourier.eq_zero_of_orth_poly` does nothing
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RadicalEltMovingDualToMajorant.lean:76:70: This simp argument is unused:
+  zero_add
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/EqZeroOfOrthogonalCompactUnitaryPolyFunStatement.lean:23:113: Unused tactic linter: `(intros; apply GlobalTheory.KFourier.eq_zero_of_orth_poly <;> assumption)` does nothing
+Hint: Omit it from the simp argument list.
+  [apply] simp only [conjTranspose_add, conjTranspose_sub, conjTranspose_mul, conjTranspose_one,
+    conjTranspose_conjTranspose, hJ, Matrix.mul_add, Matrix.add_mul, Matrix.mul_sub, Matrix.sub_mul, Matrix.mul_assoc,
+    Matrix.one_mul, Matrix.mul_one, tXX, tXD, tDX, hXX', hXD', hDX', Matrix.mul_zero, Matrix.zero_mul, add_zero,
+    sub_zero, zero_sub]
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [85618/85673] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.CompactUnitaryCasimirInverseTopDegreeBoundStatement (5.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/CompactUnitaryCasimirInverseTopDegreeBoundStatement.lean:23:63: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RadicalEltMovingDualToMajorant.lean:76:90: This simp argument is unused:
+  zero_sub
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/CompactUnitaryCasimirInverseTopDegreeBoundStatement.lean:23:115: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp only [conjTranspose_add, conjTranspose_sub, conjTranspose_mul, conjTranspose_one,
+    conjTranspose_conjTranspose, hJ, Matrix.mul_add, Matrix.add_mul, Matrix.mul_sub, Matrix.sub_mul, Matrix.mul_assoc,
+    Matrix.one_mul, Matrix.mul_one, tXX, tXD, tDX, hXX', hXD', hDX', Matrix.mul_zero, Matrix.zero_mul, add_zero,
+    zero_add, sub_zero]
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/CompactUnitaryCasimirInverseTopDegreeBoundStatement.lean:23:63: Unused tactic linter: `exact GlobalTheory.KFourier.casimir_inverse_bound` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/CompactUnitaryCasimirInverseTopDegreeBoundStatement.lean:23:115: Unused tactic linter: `(intros; apply GlobalTheory.KFourier.casimir_inverse_bound <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [85619/85678] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.L2normLeIntegralKernelMulTranslateDiff (22s)
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/L2normLeIntegralKernelMulTranslateDiff.lean:31:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/L2normLeIntegralKernelMulTranslateDiff.lean:32:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/L2normLeIntegralKernelMulTranslateDiff.lean:39:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/L2normLeIntegralKernelMulTranslateDiff.lean:40:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/L2normLeIntegralKernelMulTranslateDiff.lean:68:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [85620/85678] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.IterateOnePlusCasOfEq (5.6s)
-✔ [85621/85680] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoefBoundTwo (5.9s)
-⚠ [85622/85680] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsOrthogonalProjectionPolynomialCompactUnita (5.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/ExistsOrthogonalProjectionPolynomialCompactUnita.lean:33:4: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [85919/85946] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulVecInv (9.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MulVecInv.lean:141:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [85920/85946] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianPosDefSimultaneousNormalFormStatement (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianPosDefSimultaneousNormalFormStatement.lean:11:67: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/ExistsOrthogonalProjectionPolynomialCompactUnita.lean:34:4: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianPosDefSimultaneousNormalFormStatement.lean:11:123: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/ExistsOrthogonalProjectionPolynomialCompactUnita.lean:35:4: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianPosDefSimultaneousNormalFormStatement.lean:11:67: Unused tactic linter: `exact GlobalTheory.SimNormal.simultaneous_normal_form` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianPosDefSimultaneousNormalFormStatement.lean:11:123: Unused tactic linter: `(intros; apply GlobalTheory.SimNormal.simultaneous_normal_form <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [85921/85946] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.EmbRelAtRealPlaceOfUnitaryEmbedding (10s)
+⚠ [85922/85953] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RightLieDerivativeRealEntryPolynomialFunctionStatement (5.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RightLieDerivativeRealEntryPolynomialFunctionStatement.lean:10:62: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/ExistsOrthogonalProjectionPolynomialCompactUnita.lean:32:74: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/ExistsOrthogonalProjectionPolynomialCompactUnita.lean:33:4: Unused tactic linter: `(intros;
-  apply _root_.GlobalTheory.OrthogonalProjectionPoly.exists_proj_polyV <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/ExistsOrthogonalProjectionPolynomialCompactUnita.lean:34:4: Unused tactic linter: `(intros;
-  apply @_root_.GlobalTheory.OrthogonalProjectionPoly.exists_proj_polyV <;>
-    first
-    | assumption
-    | infer_instance)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/ExistsOrthogonalProjectionPolynomialCompactUnita.lean:35:4: Unused tactic linter: `(intros; exact _root_.GlobalTheory.OrthogonalProjectionPoly.exists_proj_polyV ..)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [85623/85683] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.CompactUnitaryCasimirPowPairingModerateGrowthBouStatement (5.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/CompactUnitaryCasimirPowPairingModerateGrowthBouStatement.lean:23:71: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RightLieDerivativeRealEntryPolynomialFunctionStatement.lean:10:113: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/CompactUnitaryCasimirPowPairingModerateGrowthBouStatement.lean:23:131: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RightLieDerivativeRealEntryPolynomialFunctionStatement.lean:10:62: Unused tactic linter: `exact GlobalTheory.PolyRightDeriv.lieDer_polyFun` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RightLieDerivativeRealEntryPolynomialFunctionStatement.lean:10:113: Unused tactic linter: `(intros; apply GlobalTheory.PolyRightDeriv.lieDer_polyFun <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [85923/85953] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolyFunMemSmoothVectorsStatement (5.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PolyFunMemSmoothVectorsStatement.lean:10:59: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/CompactUnitaryCasimirPowPairingModerateGrowthBouStatement.lean:23:71: Unused tactic linter: `exact GlobalTheory.KFourier.CasimirMove.casimir_pow_bound` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/CompactUnitaryCasimirPowPairingModerateGrowthBouStatement.lean:23:131: Unused tactic linter: `(intros; apply GlobalTheory.KFourier.CasimirMove.casimir_pow_bound <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [85624/85683] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.PairingConvolutionSwapStatement (5.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/PairingConvolutionSwapStatement.lean:23:66: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PolyFunMemSmoothVectorsStatement.lean:10:107: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/PairingConvolutionSwapStatement.lean:23:121: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PolyFunMemSmoothVectorsStatement.lean:10:59: Unused tactic linter: `exact GlobalTheory.CentralOps.polyFun_mem_smF` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PolyFunMemSmoothVectorsStatement.lean:10:107: Unused tactic linter: `(intros; apply GlobalTheory.CentralOps.polyFun_mem_smF <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [85924/85953] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.EnvelopingActionCommutesTranslationStatement (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EnvelopingActionCommutesTranslationStatement.lean:10:62: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/PairingConvolutionSwapStatement.lean:23:66: Unused tactic linter: `exact GlobalTheory.KFourier.pairing_convolution_swap` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/PairingConvolutionSwapStatement.lean:23:121: Unused tactic linter: `(intros; apply GlobalTheory.KFourier.pairing_convolution_swap <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [85625/85683] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.L2normLeIntegralKernelMulTranslateDiffStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/L2normLeIntegralKernelMulTranslateDiffStatement.lean:24:95: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EnvelopingActionCommutesTranslationStatement.lean:10:113: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/L2normLeIntegralKernelMulTranslateDiffStatement.lean:24:179: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EnvelopingActionCommutesTranslationStatement.lean:10:62: Unused tactic linter: `exact GlobalTheory.EnvCommLie.envRepAll_comm_lie` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EnvelopingActionCommutesTranslationStatement.lean:10:113: Unused tactic linter: `(intros; apply GlobalTheory.EnvCommLie.envRepAll_comm_lie <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [85925/85953] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PosDefExistsConjTransposeMulMulEqOneStatement (4.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PosDefExistsConjTransposeMulMulEqOneStatement.lean:7:75: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/L2normLeIntegralKernelMulTranslateDiffStatement.lean:24:95: Unused tactic linter: `exact GlobalTheory.KFourier.sqrt_integral_normSq_le_integral_kernel_mul_translate` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PosDefExistsConjTransposeMulMulEqOneStatement.lean:7:139: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PosDefExistsConjTransposeMulMulEqOneStatement.lean:7:75: Unused tactic linter: `exact GlobalTheory.posDef_exists_conjTranspose_mul_mul_eq_one` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/L2normLeIntegralKernelMulTranslateDiffStatement.lean:24:179: Unused tactic linter: `(intros;
-  apply GlobalTheory.KFourier.sqrt_integral_normSq_le_integral_kernel_mul_translate <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PosDefExistsConjTransposeMulMulEqOneStatement.lean:7:139: Unused tactic linter: `(intros;
+  apply GlobalTheory.posDef_exists_conjTranspose_mul_mul_eq_one <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [85626/85683] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.GoodParOfSigOK (5.6s)
-✔ [85627/85685] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.InvSqrtTwo (4.9s)
+⚠ [85926/85953] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RadicalEltMovingDualToMajorantStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RadicalEltMovingDualToMajorantStatement.lean:12:68: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RadicalEltMovingDualToMajorantStatement.lean:12:125: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RadicalEltMovingDualToMajorantStatement.lean:12:68: Unused tactic linter: `exact GlobalTheory.radical_elt_moving_dual_to_majorant` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RadicalEltMovingDualToMajorantStatement.lean:12:125: Unused tactic linter: `(intros; apply GlobalTheory.radical_elt_moving_dual_to_majorant <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [85927/85955] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FaithfulOfDerivationsDualFamilyStatement (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FaithfulOfDerivationsDualFamilyStatement.lean:10:68: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FaithfulOfDerivationsDualFamilyStatement.lean:10:125: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FaithfulOfDerivationsDualFamilyStatement.lean:10:68: Unused tactic linter: `exact GlobalTheory.faithful_of_derivations_dual_family` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FaithfulOfDerivationsDualFamilyStatement.lean:10:125: Unused tactic linter: `(intros; apply GlobalTheory.faithful_of_derivations_dual_family <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [85928/85955] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLeviElementIsotropicOrthogonalComplex (6.8s)
