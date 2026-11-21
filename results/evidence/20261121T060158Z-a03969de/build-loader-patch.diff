@@ -1,0 +1,370 @@
+--- a/src/library/module.cpp
++++ b/src/library/module.cpp
+@@ -16,6 +16,14 @@
+ #include <sys/stat.h>
+ #include <cerrno>
+ #include <cstring>
++#include <atomic>
++#include <cstdlib>
++#include <limits>
++#include <memory>
++#include <mutex>
++#include <cstddef>
++#include <cstdint>
++#include <new>
+ #include "runtime/thread.h"
+ #include "runtime/interrupt.h"
+ #include "runtime/sstream.h"
+@@ -103,6 +111,253 @@
+     operator bool() const { return m_fd != -1; }
+ };
+ 
++namespace {
++/* Linux limits the number of VMAs per process. Keep the common, early imports
++   file-backed, but leave room for allocator segments, stacks, and other mappings.
++   This is a lifetime budget of file-mapping attempts, not a live-mapping count:
++   spending a slot on a failed or subsequently freed mapping is intentional.
++   The monotone counter needs no bookkeeping in serialized CompactedRegion data.
++   Setting LEAN_MAX_MMAP_REGIONS=0 exercises the existing relocation path. */
++bool take_compacted_region_mmap_slot() {
++#if defined(__linux__)
++    static std::atomic<size_t> remaining{[]() -> size_t {
++        char const * value = std::getenv("LEAN_MAX_MMAP_REGIONS");
++        if (!value) return 50000;
++        if (!*value) throw exception("LEAN_MAX_MMAP_REGIONS must be a non-negative integer");
++        size_t result = 0;
++        for (char const * p = value; *p; ++p) {
++            if (*p < '0' || *p > '9' ||
++                result > (std::numeric_limits<size_t>::max() - (*p - '0')) / 10) {
++                throw exception("LEAN_MAX_MMAP_REGIONS must be a non-negative integer");
++            }
++            result = result * 10 + (*p - '0');
++        }
++        return result;
++    }()};
++    size_t available = remaining.load(std::memory_order_relaxed);
++    while (available != 0) {
++        if (remaining.compare_exchange_weak(available, available - 1,
++                                            std::memory_order_relaxed)) {
++            return true;
++        }
++    }
++    return false;
++#else
++    return true;
++#endif
++}
++
++#if defined(__linux__)
++struct compacted_region_arena_segment {
++    char * data;
++    size_t size;
++    size_t used;
++    size_t live;
++};
++
++/* This prefix is private allocator metadata, outside the bytes read from the
++   .olean. Neither the file format nor CompactedRegion's layout is changed. */
++struct alignas(std::max_align_t) compacted_region_buffer_header {
++    compacted_region_arena_segment * arena;
++};
++
++struct compacted_region_arena_state {
++    std::mutex mutex;
++    compacted_region_arena_segment * current = nullptr;
++    pid_t pid = getpid();
++};
++
++compacted_region_arena_state & get_compacted_region_arena_state() {
++    // Deliberately process-lifetime storage: regions can outlive static objects.
++    // A child of fork must not reuse the parent's current bump offset or mutex.
++    // This does not promise arbitrary fork/COW semantics for shared old regions;
++    // the opt-in backend is intended for standalone compiler and spawn/exec use.
++    static std::atomic<compacted_region_arena_state *> state{nullptr};
++    auto * current = state.load(std::memory_order_acquire);
++    pid_t pid = getpid();
++    while (!current || current->pid != pid) {
++        auto * fresh = new (std::nothrow) compacted_region_arena_state;
++        if (!fresh) throw exception("could not allocate .olean arena state");
++        if (state.compare_exchange_strong(current, fresh,
++                                           std::memory_order_acq_rel)) {
++            return *fresh;
++        }
++        delete fresh;
++    }
++    return *current;
++}
++
++size_t checked_region_round_up(size_t size, size_t alignment) {
++    size_t remainder = size % alignment;
++    size_t padding = remainder == 0 ? 0 : alignment - remainder;
++    if (size > std::numeric_limits<size_t>::max() - padding)
++        throw exception(".olean arena allocation size overflow");
++    return size + padding;
++}
++
++compacted_region_arena_segment * make_compacted_region_arena_segment(
++        char const * directory, size_t required) {
++    constexpr size_t default_size = size_t{256} * 1024 * 1024;
++    long page_size = sysconf(_SC_PAGESIZE);
++    if (page_size <= 0) throw exception("could not determine .olean arena page size");
++    size_t size = checked_region_round_up(std::max(default_size, required),
++                                         static_cast<size_t>(page_size));
++    if (size > static_cast<uintmax_t>(std::numeric_limits<off_t>::max()))
++        throw exception(".olean arena allocation exceeds file offset range");
++
++    std::unique_ptr<compacted_region_arena_segment> segment(
++        new (std::nothrow) compacted_region_arena_segment{nullptr, size, 0, 0});
++    if (!segment) throw exception("could not allocate .olean arena segment metadata");
++    std::string pattern = std::string(directory) + "/lean-olean-arena-XXXXXX";
++    std::vector<char> path(pattern.begin(), pattern.end());
++    path.push_back('\0');
++    file_descriptor fd(mkostemp(path.data(), O_CLOEXEC));
++    if (!fd) {
++        int err = errno;
++        throw exception((sstream() << "could not create .olean arena in '" << directory
++            << "': " << strerror(err)).str());
++    }
++    int unlink_result;
++    do { unlink_result = unlink(path.data()); } while (unlink_result < 0 && errno == EINTR);
++    if (unlink_result < 0) {
++        int err = errno;
++        throw exception((sstream() << "could not unlink .olean arena temporary file '"
++            << path.data() << "': " << strerror(err)).str());
++    }
++    if (fchmod(fd.get(), S_IRUSR | S_IWUSR) < 0) {
++        int err = errno;
++        throw exception((sstream() << "could not secure .olean arena file: "
++            << strerror(err)).str());
++    }
++    // Reserve actual disk blocks before exposing writable mapped pages. Sparse
++    // ftruncate alone could turn an ordinary ENOSPC into SIGBUS during fixup.
++    int allocation_error;
++    do {
++        allocation_error = posix_fallocate(fd.get(), 0, static_cast<off_t>(size));
++    } while (allocation_error == EINTR);
++    if (allocation_error != 0) {
++        throw exception((sstream() << "could not reserve " << size
++            << " bytes for .olean arena in '" << directory << "': "
++            << strerror(allocation_error)).str());
++    }
++    void * data = mmap(nullptr, size, PROT_READ | PROT_WRITE, MAP_SHARED, fd.get(), 0);
++    if (data == MAP_FAILED) {
++        int err = errno;
++        throw exception((sstream() << "could not map " << size
++            << " bytes for .olean arena: " << strerror(err)).str());
++    }
++    segment->data = static_cast<char *>(data);
++#if defined(__has_feature)
++#if __has_feature(address_sanitizer)
++    __lsan_register_root_region(segment->data, segment->size);
++#endif
++#endif
++    return segment.release();
++}
++
++void * alloc_compacted_region_arena_buffer(size_t total_size, char const * directory) {
++    size_t required = checked_region_round_up(total_size,
++        alignof(compacted_region_buffer_header));
++    auto & state = get_compacted_region_arena_state();
++    std::lock_guard<std::mutex> lock(state.mutex);
++    auto * segment = state.current;
++    if (!segment || required > segment->size - segment->used) {
++        // Keep the old current valid if any creation/preallocation step fails.
++        segment = make_compacted_region_arena_segment(directory, required);
++        state.current = segment;
++    }
++    auto * header = new (segment->data + segment->used)
++        compacted_region_buffer_header{segment};
++    segment->used += required;
++    ++segment->live;
++    return header + 1;
++}
++
++void free_compacted_region_arena_buffer(compacted_region_arena_segment * segment) {
++    auto & state = get_compacted_region_arena_state();
++    std::lock_guard<std::mutex> lock(state.mutex);
++    lean_always_assert(segment->live != 0);
++    if (--segment->live == 0) {
++        if (state.current == segment) state.current = nullptr;
++#if defined(__has_feature)
++#if __has_feature(address_sanitizer)
++        __lsan_unregister_root_region(segment->data, segment->size);
++#endif
++#endif
++        lean_always_assert(munmap(segment->data, segment->size) == 0);
++        delete segment;
++    }
++}
++#endif
++
++/* Ordinary buffers use Lean's existing allocator. With an explicitly selected
++   disk directory, v2 file copies instead share large reclaimable file mappings.
++   v3 snapshots can contain mutable refs/closures, so retain their heap fallback.
++   The mmap budget is not a total VMA quota: other runtime mappings still count. */
++void * alloc_compacted_region_buffer(size_t size, bool allow_file_arena) {
++#if defined(__linux__)
++    if (size > std::numeric_limits<size_t>::max() - sizeof(compacted_region_buffer_header))
++        throw exception("compacted region allocation size overflow");
++    size_t total_size = sizeof(compacted_region_buffer_header) + size;
++    char const * directory = std::getenv("LEAN_OLEAN_ARENA_DIR");
++    if (allow_file_arena && directory && *directory)
++        return alloc_compacted_region_arena_buffer(total_size, directory);
++#ifdef LEAN_MIMALLOC
++    void * memory = mi_malloc(total_size);
++#else
++    void * memory = malloc(total_size);
++#endif
++    if (!memory) return nullptr;
++    auto * header = new (memory) compacted_region_buffer_header{nullptr};
++    return header + 1;
++#else
++    (void)allow_file_arena;
++    return malloc(size);
++#endif
++}
++
++void free_compacted_region_buffer(char * buffer, size_t size, bool is_mmap) {
++    if (!buffer) return;
++    if (is_mmap) {
++#if defined(__has_feature)
++#if __has_feature(address_sanitizer)
++        __lsan_unregister_root_region(buffer, size);
++#endif
++#endif
++#ifdef LEAN_WINDOWS
++        lean_always_assert(UnmapViewOfFile(buffer));
++#else
++        lean_always_assert(munmap(buffer, size) == 0);
++#endif
++    } else {
++#if defined(__linux__)
++        auto * header = reinterpret_cast<compacted_region_buffer_header *>(buffer) - 1;
++        // Copy the owner before a last-region free can unmap the header itself.
++        auto * arena = header->arena;
++        if (arena) {
++            free_compacted_region_arena_buffer(arena);
++        } else {
++#ifdef LEAN_MIMALLOC
++            mi_free(header);
++#else
++            free_sized(header, sizeof(compacted_region_buffer_header) + size);
++#endif
++        }
++#else
++        free_sized(buffer, size);
++#endif
++    }
++}
++
++struct compacted_region_buffer_deleter {
++    size_t size;
++    bool is_mmap;
++    void operator()(char * buffer) const {
++        free_compacted_region_buffer(buffer, size, is_mmap);
++    }
++};
++}
++
+ /** On-disk format of a .olean file. */
+ struct olean_header {
+     // 5 bytes: magic number
+@@ -507,6 +762,7 @@
+         // closure fn pointers in place. Unwritten pages remain shared with the page cache under
+         // `MAP_PRIVATE` regardless of protection, so `PROT_WRITE` is free when no fixup happens.
+ #ifdef LEAN_MMAP
++        if (take_compacted_region_mmap_slot()) {
+ #ifdef LEAN_WINDOWS
+         HANDLE h_map = CreateFileMapping(h_file, NULL, PAGE_WRITECOPY, 0, 0, NULL);
+         if (h_map != NULL) {
+@@ -541,6 +797,7 @@
+             buffer = nullptr;
+         }
+ #endif
++        }
+ #endif
+ 
+         // A `--incr-load` snapshot bakes the whole environment into the region, including mutable
+@@ -557,23 +814,47 @@
+ #endif
+ 
+         if (!buffer) {
+-            buffer = static_cast<char *>(malloc(size));
+-            lseek(fd.get(), 0, SEEK_SET);
++            buffer = static_cast<char *>(alloc_compacted_region_buffer(size, header.version == 2));
++            if (!buffer) {
++                return io_result_mk_error((sstream() << "failed to read file '" << olean_fn
++                    << "': could not allocate " << size << " bytes for compacted region").str());
++            }
++        }
++        // Transfer ownership to the Lean region only after every read and fixup succeeds.
++        std::unique_ptr<char, compacted_region_buffer_deleter> buffer_owner(
++            buffer, compacted_region_buffer_deleter{size, is_mmap});
++        if (!is_mmap) {
++            if (lseek(fd.get(), 0, SEEK_SET) == -1) {
++                int err = errno;
++                return io_result_mk_error((sstream() << "failed to seek file '" << olean_fn
++                    << "': " << strerror(err)).str());
++            }
+             ssize_t r = readn(fd.get(), buffer, size);
+-            if (r < 0 || r != static_cast<ssize_t>(size)) {
+-                free(buffer);
+-                return io_result_mk_error((sstream() << "failed to read file '" << olean_fn << "'").str());
++            if (r < 0) {
++                int err = errno;
++                return io_result_mk_error((sstream() << "failed to read file '" << olean_fn
++                    << "': " << strerror(err)).str());
++            }
++            if (r != static_cast<ssize_t>(size)) {
++                return io_result_mk_error((sstream() << "failed to read file '" << olean_fn
++                    << "': short read (" << r << " of " << size << " bytes)").str());
+             }
+             // The buffer outlives this call (its lifetime is the Lean `CompactedRegion`'s, freed by
+             // `lean_compacted_region_free`). It is only reached through interior pointers (the
+             // region's `root` and the objects read out of it), and a persistent/`leakEnv` region is
+             // never freed at all, so tell LeakSanitizer not to report it. Under `mmap` (the common
+             // path) the buffer is not a heap allocation and needs no such treatment.
++            // Arena segments are registered as whole root regions at creation.
+ #if defined(__has_feature)
+ #if __has_feature(address_sanitizer)
++#if defined(__linux__)
++            auto * allocation = reinterpret_cast<compacted_region_buffer_header *>(buffer) - 1;
++            if (!allocation->arena) __lsan_ignore_object(allocation);
++#else
+             __lsan_ignore_object(buffer);
+ #endif
+ #endif
++#endif
+         }
+ 
+         // v3 format, default data otherwise
+@@ -614,6 +895,7 @@
+         // logical address, `size` = the file size), not the inner data section.
+         cnstr_set(pair, 1, mk_compacted_region(ofname, mod,
+             buffer, reinterpret_cast<size_t>(base_addr), size, is_mmap));
++        buffer_owner.release();
+         return io_result_mk_ok(pair);
+     } catch (exception & ex) {
+         return io_result_mk_error((sstream() << "failed to read '" << olean_fn << "': " << ex.what()).str());
+@@ -630,20 +912,7 @@
+     // refcount-free buffer object, so it needs no decrement.
+     lean_ctor_set(region, 1, lean_box(0));
+     lean_dec_ref(region);
+-    if (is_mmap) {
+-#if defined(__has_feature)
+-#if __has_feature(address_sanitizer)
+-        __lsan_unregister_root_region(buffer, full_sz);
+-#endif
+-#endif
+-#ifdef LEAN_WINDOWS
+-        lean_always_assert(UnmapViewOfFile(buffer));
+-#else
+-        lean_always_assert(munmap(buffer, full_sz) == 0);
+-#endif
+-    } else {
+-        free_sized(buffer, full_sz);
+-    }
++    free_compacted_region_buffer(buffer, full_sz, is_mmap);
+     return lean_io_result_mk_ok(lean_box(0));
+ }
+ 
