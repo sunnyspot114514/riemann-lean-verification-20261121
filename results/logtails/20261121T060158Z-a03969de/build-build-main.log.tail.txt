@@ -1,160 +1,160 @@
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [104176/104206] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGammaLayerPadicCoordinates (37s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsGammaLayerPadicCoordinates.lean:80:64: This simp argument is unused:
-  Polynomial.derivative_sub
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [map_sub, map_pow, Polynomial.aeval_X, map_one, Polynomial.derivative_X_pow,
-    Polynomial.derivative_one, sub_zero, map_mul, Polynomial.aeval_C, Algebra.algebraMap_self, RingHom.id_apply,
-    norm_mul, norm_pow, PadicInt.norm_units, hd]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [104177/104206] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.InclWFrobIter (67s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/InclWFrobIter.lean:212:2: Try this: 
-  haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
 The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/InclWFrobIter.lean:213:2: Try this: 
-  haveI̵
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RankReducedLetterMatrixEqRankModMaximal.lean:298:45: Variable name `F` is not explicitly referenced.
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _F
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [104178/104208] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MaxUnramifiedActsOnLetterIdempotentImage (18s)
-⚠ [104179/104208] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FixedByCyclotomicKernelEtalePhiSolutionMemWach (101s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FixedByCyclotomicKernelEtalePhiSolutionMemWach.lean:51:18: This simp argument is unused:
-  PowerSeries.algebraMap_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [letE]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [104180/104208] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SeriesTransport (7.3s)
-✔ [104181/104208] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocAinfUntiltEpsOneEqZeta (7.1s)
-⚠ [104182/104210] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicPowerSeriesDataLevIsExpansionAtZetaStatement (5.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CyclotomicPowerSeriesDataLevIsExpansionAtZetaStatement.lean:10:53: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [104319/104354] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsHwOfFonOfCmpOfStatement (4.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsHwOfFonOfCmpOfStatement.lean:8:60: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CyclotomicPowerSeriesDataLevIsExpansionAtZetaStatement.lean:10:95: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsHwOfFonOfCmpOfStatement.lean:8:109: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CyclotomicPowerSeriesDataLevIsExpansionAtZetaStatement.lean:10:53: Unused tactic linter: `exact GlobalTheory.HWL.LevExp.lev_isExp` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsHwOfFonOfCmpOfStatement.lean:8:60: Unused tactic linter: `exact GlobalTheory.HWL.exists_hwOf_fonOf_cmpOf` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CyclotomicPowerSeriesDataLevIsExpansionAtZetaStatement.lean:10:95: Unused tactic linter: `(intros; apply GlobalTheory.HWL.LevExp.lev_isExp <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsHwOfFonOfCmpOfStatement.lean:8:109: Unused tactic linter: `(intros; apply GlobalTheory.HWL.exists_hwOf_fonOf_cmpOf <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [104183/104210] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGammaLayerPadicCoordinatesStatement (6.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsGammaLayerPadicCoordinatesStatement.lean:8:67: this tactic is never executed
+⚠ [104320/104354] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsContinuousCrystallineMatrixRepOfIntertwinesDetStatement (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsContinuousCrystallineMatrixRepOfIntertwinesDetStatement.lean:7:56: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsGammaLayerPadicCoordinatesStatement.lean:8:123: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsContinuousCrystallineMatrixRepOfIntertwinesDetStatement.lean:7:101: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsGammaLayerPadicCoordinatesStatement.lean:8:67: Unused tactic linter: `exact GlobalTheory.HWL.Coord.exists_gamma_coordinates` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsContinuousCrystallineMatrixRepOfIntertwinesDetStatement.lean:7:56: Unused tactic linter: `exact GlobalTheory.WachPlace.matGood_of_tw` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsGammaLayerPadicCoordinatesStatement.lean:8:123: Unused tactic linter: `(intros; apply GlobalTheory.HWL.Coord.exists_gamma_coordinates <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsContinuousCrystallineMatrixRepOfIntertwinesDetStatement.lean:7:101: Unused tactic linter: `(intros; apply GlobalTheory.WachPlace.matGood_of_tw <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [104184/104210] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsWachLatticeMatricesGammaPhi (8.8s)
-⚠ [104185/104210] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MaxUnramifiedActsOnLetterIdempotentImageStatement (9.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MaxUnramifiedActsOnLetterIdempotentImageStatement.lean:10:50: this tactic is never executed
+⚠ [104321/104354] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeRhamComponentWachLetterBasisFiltrationStatement (14s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DeRhamComponentWachLetterBasisFiltrationStatement.lean:8:51: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MaxUnramifiedActsOnLetterIdempotentImageStatement.lean:10:89: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DeRhamComponentWachLetterBasisFiltrationStatement.lean:8:91: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MaxUnramifiedActsOnLetterIdempotentImageStatement.lean:10:50: Unused tactic linter: `exact GlobalTheory.HWL.Letter.letter` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DeRhamComponentWachLetterBasisFiltrationStatement.lean:8:51: Unused tactic linter: `exact GlobalTheory.NL.CompD.component` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MaxUnramifiedActsOnLetterIdempotentImageStatement.lean:10:89: Unused tactic linter: `(intros; apply GlobalTheory.HWL.Letter.letter <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DeRhamComponentWachLetterBasisFiltrationStatement.lean:8:91: Unused tactic linter: `(intros; apply GlobalTheory.NL.CompD.component <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [104186/104212] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsWeakTopologyWittTiltTensorStatement (17s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsWeakTopologyWittTiltTensorStatement.lean:8:55: this tactic is never executed
+⚠ [104322/104354] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.WachModuleMapMatrixCompMulStatement (13s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/WachModuleMapMatrixCompMulStatement.lean:7:60: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsWeakTopologyWittTiltTensorStatement.lean:8:99: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/WachModuleMapMatrixCompMulStatement.lean:7:109: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsWeakTopologyWittTiltTensorStatement.lean:8:55: Unused tactic linter: `exact GlobalTheory.WeakTop.exists_weakTop` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/WachModuleMapMatrixCompMulStatement.lean:7:60: Unused tactic linter: `exact GlobalTheory.WachPlace.isMapMat_comp_mul` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsWeakTopologyWittTiltTensorStatement.lean:8:99: Unused tactic linter: `(intros; apply GlobalTheory.WeakTop.exists_weakTop <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/WachModuleMapMatrixCompMulStatement.lean:7:109: Unused tactic linter: `(intros; apply GlobalTheory.WachPlace.isMapMat_comp_mul <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [104187/104212] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FixedByCyclotomicKernelEtalePhiSolutionMemWachStatement (12s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FixedByCyclotomicKernelEtalePhiSolutionMemWachStatement.lean:8:50: this tactic is never executed
+⚠ [104323/104362] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWachModuleMapMatrixReductionCommStatement (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsWachModuleMapMatrixReductionCommStatement.lean:7:61: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FixedByCyclotomicKernelEtalePhiSolutionMemWachStatement.lean:8:89: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsWachModuleMapMatrixReductionCommStatement.lean:7:111: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FixedByCyclotomicKernelEtalePhiSolutionMemWachStatement.lean:8:50: Unused tactic linter: `exact GlobalTheory.HWL.Rational.main` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsWachModuleMapMatrixReductionCommStatement.lean:7:61: Unused tactic linter: `exact GlobalTheory.WachMap.exists_mapMat_redHom` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FixedByCyclotomicKernelEtalePhiSolutionMemWachStatement.lean:8:89: Unused tactic linter: `(intros; apply GlobalTheory.HWL.Rational.main <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsWachModuleMapMatrixReductionCommStatement.lean:7:111: Unused tactic linter: `(intros; apply GlobalTheory.WachMap.exists_mapMat_redHom <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [104188/104212] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowerSeriesEqCOfSubstFixedNotRootOfUnity (5.2s)
-⚠ [104189/104212] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsWachLatticeMatricesGammaPhiStatement (5.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsWachLatticeMatricesGammaPhiStatement.lean:10:54: this tactic is never executed
+✔ [104324/104363] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsHwFonCmpTies (5.1s)
+⚠ [104325/104365] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFrameOkEig (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsFrameOkEig.lean:62:30: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+✔ [104326/104365] Built Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.LocalInvariantsOfColumns (6.3s)
+⚠ [104327/104365] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankReducedLetterMatrixEqRankModMaximalStatement (12s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RankReducedLetterMatrixEqRankModMaximalStatement.lean:6:109: Variable name `F` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _F
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RankReducedLetterMatrixEqRankModMaximalStatement.lean:7:46: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsWachLatticeMatricesGammaPhiStatement.lean:10:97: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RankReducedLetterMatrixEqRankModMaximalStatement.lean:7:81: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsWachLatticeMatricesGammaPhiStatement.lean:10:54: Unused tactic linter: `exact GlobalTheory.HWL.Mat.wach_matrices` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RankReducedLetterMatrixEqRankModMaximalStatement.lean:7:46: Unused tactic linter: `exact GlobalTheory.WachRank.main` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsWachLatticeMatricesGammaPhiStatement.lean:10:97: Unused tactic linter: `(intros; apply GlobalTheory.HWL.Mat.wach_matrices <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RankReducedLetterMatrixEqRankModMaximalStatement.lean:7:81: Unused tactic linter: `(intros; apply GlobalTheory.WachRank.main <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [104190/104212] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsWachPrismOverIntegers (108s)
-⚠ [104191/104212] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiltrationEstimateExpansionTensorBdRComponent (11s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FiltrationEstimateExpansionTensorBdRComponent.lean:49:23: `Int.le_induction` has been deprecated: Use `Int.leInduction` instead
-⚠ [104192/104213] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowerSeriesEqCOfSubstFixedNotRootOfUnityStatement (4.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PowerSeriesEqCOfSubstFixedNotRootOfUnityStatement.lean:10:66: this tactic is never executed
+⚠ [104328/104365] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatGoodOfBlockExtensionTwist (15s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:20:4: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PowerSeriesEqCOfSubstFixedNotRootOfUnityStatement.lean:10:121: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:21:4: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PowerSeriesEqCOfSubstFixedNotRootOfUnityStatement.lean:10:66: Unused tactic linter: `exact GlobalTheory.powerSeries_eq_C_of_subst_eq_self` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PowerSeriesEqCOfSubstFixedNotRootOfUnityStatement.lean:10:121: Unused tactic linter: `(intros; apply GlobalTheory.powerSeries_eq_C_of_subst_eq_self <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [104193/104213] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUniqueFits (26s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsUniqueFits.lean:132:71: This simp argument is unused:
-  smul_neg
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Prod.smul_snd, Prod.smul_fst, map_smul, smul_sub]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [104194/104213] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsWachPrismOverIntegersStatement (12s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsWachPrismOverIntegersStatement.lean:9:52: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:22:4: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsWachPrismOverIntegersStatement.lean:9:93: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:23:4: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsWachPrismOverIntegersStatement.lean:9:52: Unused tactic linter: `exact GlobalTheory.PrismS.exists_prism` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:24:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:25:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:20:4: Unused tactic linter: `exact @_root_.GlobalTheory.MulVecZeroDenominator.target` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsWachPrismOverIntegersStatement.lean:9:93: Unused tactic linter: `(intros; apply GlobalTheory.PrismS.exists_prism <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:21:4: Unused tactic linter: `exact _root_.GlobalTheory.MulVecZeroDenominator.target` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:22:4: Unused tactic linter: `(apply _root_.GlobalTheory.MulVecZeroDenominator.target <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:23:4: Unused tactic linter: `(intros; apply _root_.GlobalTheory.MulVecZeroDenominator.target <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:24:4: Unused tactic linter: `(intros;
+  apply @_root_.GlobalTheory.MulVecZeroDenominator.target <;>
+    first
+    | assumption
+    | infer_instance)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwist.lean:25:4: Unused tactic linter: `(intros; exact _root_.GlobalTheory.MulVecZeroDenominator.target ..)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [104329/104368] Built Development.AbelianVarietyTheory.Definitions.Divisors.BlockPairCycPow (10s)
+⚠ [104330/104370] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.CharpolyEqRankPartMul (5.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/CharpolyEqRankPartMul.lean:19:8: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+✔ [104331/104370] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulVecEqPow (11s)
+⚠ [104332/104376] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatGoodOfBlockExtensionTwistStatement (5.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwistStatement.lean:7:66: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwistStatement.lean:7:121: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwistStatement.lean:7:66: Unused tactic linter: `exact GlobalTheory.WachPlace.FullRankSum.matGood_sum` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatGoodOfBlockExtensionTwistStatement.lean:7:121: Unused tactic linter: `(intros; apply GlobalTheory.WachPlace.FullRankSum.matGood_sum <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [104333/104376] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMatrixRangeEq (6.2s)
+✔ [104334/104376] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitRootCyclotomicExpExpansions (11s)
