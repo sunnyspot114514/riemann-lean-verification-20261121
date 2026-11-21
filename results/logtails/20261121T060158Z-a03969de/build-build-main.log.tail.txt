@@ -1,30 +1,95 @@
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [96041/96067] Built Formalism.LocalToGlobal.Columns.TiedXpV (9.0s)
-✔ [96042/96067] Built Formalism.LocalToGlobal.Columns.RecordInst (5.5s)
-✔ [96043/96067] Built Formalism.LocalToGlobal.Columns.TiedValAll (5.4s)
-✔ [96044/96070] Built Formalism.LocalToGlobal.Columns.TiedUpDn (16s)
-✔ [96045/96070] Built Formalism.LocalToGlobal.Columns.TiedGl (5.6s)
-⚠ [96046/96070] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsHalfCosetRepresentativesCardDvdStatement (5.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsHalfCosetRepresentativesCardDvdStatement.lean:21:67: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/FourthTensorThetaEqKernel.lean:278:0: automatically included section variable(s) unused in theorem `Formalism.L2.KerInert.AlgP.cnt_toList`:
+  [Fintype ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/FourthTensorThetaEqKernel.lean:296:0: automatically included section variable(s) unused in theorem `Formalism.L2.KerInert.AlgP.card_toMultiset_eq_degree`:
+  [Fintype ι]
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/FourthTensorThetaEqKernel.lean:396:0: automatically included section variable(s) unused in theorem `Formalism.L2.KerInert.AlgP.analyticOnNhd_sel`:
+  [DecidableEq τ]
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq τ] [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/FourthTensorThetaEqKernel.lean:405:0: automatically included section variable(s) unused in theorem `Formalism.L2.KerInert.AlgP.selM_mulVec`:
+  [Fintype τ]
+  [DecidableEq τ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype τ] [DecidableEq τ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/FourthTensorThetaEqKernel.lean:441:0: automatically included section variable(s) unused in theorem `Formalism.L2.KerInert.AlgP.iteratedFDeriv_const_mem`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/FourthTensorThetaEqKernel.lean:748:18: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [96304/96333] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.NatCastMemPrimeOf (7.3s)
+✔ [96305/96333] Built Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.StatementH (4.9s)
+✔ [96306/96335] Built Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.CurveEndoAll (5.1s)
+⚠ [96307/96337] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsUnitaryCoordinateOfRationalPointDefiniteVeStatement (6.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsUnitaryCoordinateOfRationalPointDefiniteVeStatement.lean:26:68: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsHalfCosetRepresentativesCardDvdStatement.lean:21:123: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsUnitaryCoordinateOfRationalPointDefiniteVeStatement.lean:26:125: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsHalfCosetRepresentativesCardDvdStatement.lean:21:67: Unused tactic linter: `exact GlobalTheory.HalfCosetCount.halfCoset_reps_card` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsUnitaryCoordinateOfRationalPointDefiniteVeStatement.lean:26:68: Unused tactic linter: `exact GlobalTheory.RatMoveJets.exists_unitary_ratCoord` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsHalfCosetRepresentativesCardDvdStatement.lean:21:123: Unused tactic linter: `(intros; apply GlobalTheory.HalfCosetCount.halfCoset_reps_card <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsUnitaryCoordinateOfRationalPointDefiniteVeStatement.lean:26:125: Unused tactic linter: `(intros; apply GlobalTheory.RatMoveJets.exists_unitary_ratCoord <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [96047/96070] Built Formalism.LocalToGlobal.Columns.TiedPtSurj (5.0s)
-✔ [96048/96072] Built Formalism.LocalToGlobal.Columns.TiedXpT (9.8s)
-⚠ [96049/96072] Built Formalism.LocalToGlobal.Columns.TiedGlChi (5.9s)
-warning: src/Formalism/LocalToGlobal/Columns/TiedGlChi.lean:63:2: Try this: 
+⚠ [96308/96337] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.VertexLatticeCoordsRationalPointMulEqCoordMatrix (14s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/VertexLatticeCoordsRationalPointMulEqCoordMatrix.lean:39:76: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/VertexLatticeCoordsRationalPointMulEqCoordMatrix.lean:58:67: This simp argument is unused:
+  MonoidHom.coe_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Formalism.UG.bc, MonoidHom.comp_apply, Units.coe_map, RingHom.mapMatrix_apply, hm, Matrix.map_map]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/VertexLatticeCoordsRationalPointMulEqCoordMatrix.lean:58:86: This simp argument is unused:
+  RingHom.mapMatrix_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Formalism.UG.bc, MonoidHom.comp_apply, Units.coe_map, MonoidHom.coe_coe, hm, Matrix.map_map]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/VertexLatticeCoordsRationalPointMulEqCoordMatrix.lean:59:4: This simp argument is unused:
+  Matrix.map_map
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Formalism.UG.bc, MonoidHom.comp_apply, Units.coe_map, MonoidHom.coe_coe, RingHom.mapMatrix_apply,
+    hm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [96309/96337] Built Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.SigmaConstantAgrees (5.1s)
+✔ [96310/96338] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.KappaProductPowAlgebraicModulusOneAll (7.9s)
+✔ [96311/96338] Built Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.GramFormula (4.0s)
+✔ [96312/96344] Built Formalism.GaussJetBounds.StatementY (5.1s)
+⚠ [96313/96344] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PinnedLocalGroupsHaveLevel (41s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/PinnedLocalGroupsHaveLevel.lean:220:0: automatically included section variable(s) unused in theorem `GlobalTheory.LocMod.LevBack.conj_frame`:
+  [ValuativeRel k]
+  [TopologicalSpace k]
+  [IsNonarchimedeanLocalField k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/PinnedLocalGroupsHaveLevel.lean:334:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -32,129 +97,64 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/LocalToGlobal/Columns/TiedGlChi.lean:67:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [96050/96072] Built Formalism.LocalToGlobal.Columns.TiedUpDnRec (12s)
-✔ [96051/96072] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.BottomConstantOfBaseStage (34s)
-⚠ [96052/96072] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareTowerStageRankFactorizationStatement (40s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SquareTowerStageRankFactorizationStatement.lean:37:51: this tactic is never executed
+✔ [96314/96344] Built Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.ThirdJetIntegral (5.1s)
+⚠ [96315/96344] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.KappaProductPowAlgebraicModulusOneAllStatement (5.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KappaProductPowAlgebraicModulusOneAllStatement.lean:10:62: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SquareTowerStageRankFactorizationStatement.lean:37:91: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KappaProductPowAlgebraicModulusOneAllStatement.lean:10:113: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SquareTowerStageRankFactorizationStatement.lean:37:51: Unused tactic linter: `exact GlobalTheory.SqStepK.step_first` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KappaProductPowAlgebraicModulusOneAllStatement.lean:10:62: Unused tactic linter: `exact GlobalTheory.KappaPowMod.kappa_pow_mod1All` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SquareTowerStageRankFactorizationStatement.lean:37:91: Unused tactic linter: `(intros; apply GlobalTheory.SqStepK.step_first <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KappaProductPowAlgebraicModulusOneAllStatement.lean:10:113: Unused tactic linter: `(intros; apply GlobalTheory.KappaPowMod.kappa_pow_mod1All <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [96053/96072] Built Formalism.LocalToGlobal.Columns.TiedTilA (12s)
-warning: src/Formalism/LocalToGlobal/Columns/TiedTilA.lean:112:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.til_tmv_pullV`:
-  [StarRing E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [StarRing E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/Columns/TiedTilA.lean:132:8: automatically included section variable(s) unused in theorem `_private.Formalism.LocalToGlobal.Columns.TiedTilA.0.Formalism.L2.Col.latS_std_lemma_3`:
-  [StarRing E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [StarRing E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/Columns/TiedTilA.lean:177:8: automatically included section variable(s) unused in theorem `_private.Formalism.LocalToGlobal.Columns.TiedTilA.0.Formalism.L2.Col.mem_tilN_lemma_4`:
-  [NumberField E]
-  [StarRing E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [StarRing E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/Columns/TiedTilA.lean:223:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/LocalToGlobal/Columns/TiedTilA.lean:224:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/LocalToGlobal/Columns/TiedTilA.lean:219:8: automatically included section variable(s) unused in theorem `_private.Formalism.LocalToGlobal.Columns.TiedTilA.0.Formalism.L2.Col.mk_mul_reduction_eq_mk`:
-  [StarRing E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [StarRing E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/Columns/TiedTilA.lean:243:8: automatically included section variable(s) unused in theorem `_private.Formalism.LocalToGlobal.Columns.TiedTilA.0.Formalism.L2.Col.resS_alg_lemma_2`:
-  [StarRing E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [StarRing E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/Columns/TiedTilA.lean:251:6: this tactic is never executed
+⚠ [96316/96348] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.VertexLatticeCoordsRationalPointMulEqCoordMatrixStatement (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/VertexLatticeCoordsRationalPointMulEqCoordMatrixStatement.lean:27:53: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/LocalToGlobal/Columns/TiedTilA.lean:258:4: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/VertexLatticeCoordsRationalPointMulEqCoordMatrixStatement.lean:27:95: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/LocalToGlobal/Columns/TiedTilA.lean:251:6: Unused tactic linter: `simp [cmpS, idS, Ideal.quotientMap_mk]` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/VertexLatticeCoordsRationalPointMulEqCoordMatrixStatement.lean:27:53: Unused tactic linter: `exact GlobalTheory.RatMoveLat.latAt_rat` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/LocalToGlobal/Columns/TiedTilA.lean:258:4: Unused tactic linter: `simp` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/VertexLatticeCoordsRationalPointMulEqCoordMatrixStatement.lean:27:95: Unused tactic linter: `(intros; apply GlobalTheory.RatMoveLat.latAt_rat <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/LocalToGlobal/Columns/TiedTilA.lean:263:2: Try this: 
-  haveI̵
+✔ [96317/96348] Built Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.UniformGaussModelConditionEquivalent (5.9s)
+✔ [96318/96365] Built Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.HomotheticLatticeIntegralS2 (5.4s)
+✔ [96319/96365] Built Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.StatementR (5.1s)
+✔ [96320/96365] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseThetaVectorIsVacuumEvenRanks (5.8s)
+✔ [96321/96365] Built Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.StatementS (4.0s)
+⚠ [96322/96369] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsOrthonormalBasisFamily (25s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsOrthonormalBasisFamily.lean:73:49: try 'simp' instead of 'simpa'
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/LocalToGlobal/Columns/TiedTilA.lean:288:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/LocalToGlobal/Columns/TiedTilA.lean:333:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/LocalToGlobal/Columns/TiedTilA.lean:341:8: automatically included section variable(s) unused in theorem `_private.Formalism.LocalToGlobal.Columns.TiedTilA.0.Formalism.L2.Col.hermStd_lastVector_apply_lemma_7`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/Columns/TiedTilA.lean:358:6: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [96323/96371] Built Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.StatementW (5.2s)
+✔ [96324/96371] Built Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.DivByXSq (4.0s)
+✔ [96325/96371] Built Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.StatementS (5.2s)
+⚠ [96326/96371] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceProjectionEqOfPrimeComponentEq (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/SplitPlaceProjectionEqOfPrimeComponentEq.lean:38:15: `Set.preimage_setOf_eq` has been deprecated: Use `Set.preimage_ofPred_eq` instead
+✔ [96327/96372] Built Formalism.LocalToGlobal.TorsionIntegrality.GaussianEigenFrames.StatementE (5.1s)
+✔ [96328/96372] Built Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.StatementW (5.3s)
+⚠ [96329/96372] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseThetaVectorIsVacuumEvenRanksStatement (5.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BaseThetaVectorIsVacuumEvenRanksStatement.lean:8:79: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/LocalToGlobal/Columns/TiedTilA.lean:358:6: Unused tactic linter: `simp [cO]` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BaseThetaVectorIsVacuumEvenRanksStatement.lean:8:147: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BaseThetaVectorIsVacuumEvenRanksStatement.lean:8:79: Unused tactic linter: `exact GlobalTheory.BaseVacuum.thetaVectorUpToUnits_thZero_of_even` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [96054/96072] Built Formalism.LocalToGlobal.Columns.TiedGlev (14s)
-warning: src/Formalism/LocalToGlobal/Columns/TiedGlev.lean:129:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.glv_chr`:
-  [NeZero n]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NeZero n] in theorem ...
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BaseThetaVectorIsVacuumEvenRanksStatement.lean:8:147: Unused tactic linter: `(intros;
+  apply GlobalTheory.BaseVacuum.thetaVectorUpToUnits_thZero_of_even <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [96330/96373] Built Formalism.LocalToGlobal.TorsionIntegrality.GaussianEigenFrames.StatementG (4.9s)
+✔ [96331/96373] Built Formalism.LocalToGlobal.InertKernelTheory.StatementIota (5.4s)
+✔ [96332/96374] Built Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.IsFibreCurve (4.0s)
+✔ [96333/96377] Built Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.StatementT (5.4s)
