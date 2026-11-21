@@ -1,160 +1,160 @@
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/GroundTheory/HeightsAndTheta/Heights/HeightComparison/GeoNum.lean:43:0: automatically included section variable(s) unused in theorem `GroundTheory.Heights₂.Heights.Bridge.GeoNum.isRelevant_comap_iff`:
-  [Fintype K]
-  [DecidableEq K]
-  [(k : K) → Fintype (ι k)]
-  [Fact (Nat.Prime p)]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype K] [DecidableEq K] [(k : K) → Fintype (ι k)] [Fact (Nat.Prime p)] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [78893/78975] Built GroundTheory.HeightsAndTheta.Heights.ChowForms.PAffineChartTrdeg (22s)
-✔ [78894/78975] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PResidueAlgIndep (6.4s)
-✔ [78895/78975] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PSpecMax (8.6s)
-✔ [78896/78975] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PSectionSmall (8.9s)
-✔ [78897/78975] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PParFracIsFractionRing (6.2s)
-✔ [78898/78975] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.ChartPowNeZero (6.0s)
-✔ [78899/78975] Built GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjectiveCohomology.TwistingSheaf (5.0s)
-✔ [78900/78975] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PSpecResidue (10s)
-✔ [78901/78975] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.ChartMonomialMemOfNotIsLive (6.5s)
-✔ [78902/78975] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PSpecFirstNeField (6.4s)
-✔ [78903/78975] Built GroundTheory.HeightsAndTheta.Heights.ChowForms.Assembly (5.3s)
-⚠ [78904/78975] Built GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PIncidenceZeroLocus (8.3s)
-warning: src/GroundTheory/HeightsAndTheta/Heights/ArithmeticBezout/PIncidenceZeroLocus.lean:87:17: This simp argument is unused:
-  coe_aeval_eq_eval
+✔ [79479/79524] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PFormIntLelong (5.4s)
+✔ [79480/79527] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PGenericPrimitive (6.3s)
+✔ [79481/79527] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PGraphJacContinuous (9.7s)
+✔ [79482/79527] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StImplicitCurve (5.1s)
+⚠ [79483/79529] Built ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.AMassStA (11s)
+warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovGeometry/AMassStA.lean:241:24: This simp argument is unused:
+  Pi.single_apply
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [G, φv] at h
+  [apply] simp [hk]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/GroundTheory/HeightsAndTheta/Heights/ArithmeticBezout/PIncidenceZeroLocus.lean:118:65: This simp argument is unused:
-  Nat.lt_succ_iff
+warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovGeometry/AMassStA.lean:247:13: This simp argument is unused:
+  Pi.single_apply
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [Mf, Finset.mem_finsuppAntidiag, Finsupp.degree_eq_sum]
+  [apply] simp [h]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/GroundTheory/HeightsAndTheta/Heights/ArithmeticBezout/PIncidenceZeroLocus.lean:227:57: This simp argument is unused:
-  Finsupp.single_apply
+warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovGeometry/AMassStA.lean:251:29: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovGeometry/AMassStA.lean:297:22: This simp argument is unused:
+  one_div_pow
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [Ne.symm hi]
+  [apply] simp only [inv_pow, one_div]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [78905/78975] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PNormIdentity (12s)
-✔ [78906/78975] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.StatementsSecPointSeparable (5.2s)
-✔ [78907/78975] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.StatementsChartPointTrdeg (5.1s)
-✔ [78908/78975] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.POneBlockModel (10s)
-✔ [78909/78975] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PSecAlgField (6.6s)
-✔ [78910/78975] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.StatementsGenSecKer (5.2s)
-✔ [78911/78975] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PGenChowIrreducible (7.3s)
-✔ [78912/78977] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PChartDomain (22s)
-✔ [78913/78978] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PNormFormDvd (8.5s)
-✔ [78914/78978] Built GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.MirabolicInduction.MemRangeIffIsIntegral (19s)
-✔ [78915/78978] Built GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PBirationalModelExists (21s)
-✔ [78916/78978] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PChowNormForm (6.5s)
-✔ [78917/78978] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.MemPointsOfGeneratorsVanish (5.8s)
-⚠ [78918/78978] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PSecAlgFieldChange (13s)
-warning: src/GroundTheory/HeightsAndTheta/Heights/VerticalDivisors/PSecAlgFieldChange.lean:17:2: Try this: 
-  letI̵
+✔ [79484/79533] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PGradDensSheetBound (13s)
+✔ [79485/79535] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PGreenFromLelong (5.5s)
+✔ [79486/79536] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StPosPartIndependent (5.2s)
+✔ [79487/79539] Built GroundTheory.HeightsAndTheta.Heights.LocalDensities.PFubiniStudyChartDensity (5.7s)
+✔ [79488/79539] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PFrameJacobianSum (9.9s)
+✔ [79489/79539] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PLeadIdealDim (7.3s)
+⚠ [79490/79542] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PHessCCompPluri (6.8s)
+warning: src/GroundTheory/HeightsAndTheta/Heights/ComplexAnalyticSets/PHessCCompPluri.lean:37:13: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+warning: src/GroundTheory/HeightsAndTheta/Heights/ComplexAnalyticSets/PHessCCompPluri.lean:37:44: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/GroundTheory/HeightsAndTheta/Heights/VerticalDivisors/PSecAlgFieldChange.lean:70:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/GroundTheory/HeightsAndTheta/Heights/VerticalDivisors/PSecAlgFieldChange.lean:124:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [78919/78979] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PChowNormFormGeneric (7.0s)
-✔ [78920/78979] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PSecAlgFinite (9.9s)
-✔ [78921/78980] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Imports (5.6s)
-✔ [78922/78980] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PNormFormIrreducible (13s)
-✔ [78923/78981] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PChowSecDvd (14s)
-✔ [78924/78982] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PGenSecSeparable (8.3s)
-✔ [78925/78983] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.AssemblyPartial (4.0s)
-⚠ [78926/78984] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PGenSecKer (10s)
-warning: src/GroundTheory/HeightsAndTheta/Heights/VerticalDivisors/PGenSecKer.lean:50:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [78927/78985] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.ExistsFormOfMemChartRing (8.9s)
-✔ [78928/78986] Built GroundTheory.HeightsAndTheta.Theta.UnitaryReduction.UnipotentRadical (9.1s)
-✔ [78929/78986] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.NormSqEvalConeScale (7.2s)
-✔ [78930/78987] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.IsAlgebraicAdjoinRangeIff (11s)
-✔ [78931/78987] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PSecIdealOfPrime (14s)
-✔ [78932/78987] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.ExtVal (5.0s)
-✔ [78933/78990] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.AnalyticAtEvalConeComp (5.4s)
-✔ [78934/78991] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.WeightEqMapDomain (7.8s)
-✔ [78935/78992] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.ExtMapLiftOldOfIsWeightedHomogeneous (10s)
-✔ [78936/78993] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.EvalConeChartMonomial (6.2s)
-✔ [78937/78993] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PGenSecDomain (25s)
-✔ [78938/78993] Built GroundTheory.HeightsAndTheta.Theta.UnitaryReduction.UnipotentRadicalPlaces (7.7s)
-✔ [78939/78993] Built GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjectiveCohomology.TwistingSheafCore (21s)
-✔ [78940/78996] Built GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ProjHom (22s)
-✔ [78941/78997] Built GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.ContractRelevant (5.4s)
-✔ [78942/78997] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.VarsSubsetRangeBlockIncl (5.4s)
-✔ [78943/78997] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Assembly (5.0s)
-✔ [78944/78998] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.IsAlgebraicNew (10s)
-✔ [78945/78998] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.EvalConeChartMonomialNeZeroMore (7.6s)
-✔ [78946/78999] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.CardLeOfSeparated (6.8s)
-✔ [78947/79001] Built GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ChowProduct (6.2s)
-✔ [78948/79001] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.EvalConeChartMonomialNeZeroTer (13s)
-✔ [78949/79002] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.LiftOldChartMonomialMemPrimeCompl (16s)
-⚠ [78950/79003] Built GroundTheory.ProfiniteCohomology.PoitouTate.RealEvenLevel (314s)
-warning: src/GroundTheory/ProfiniteCohomology/PoitouTate/RealEvenLevel.lean:74:0: automatically included section variable(s) unused in theorem `GroundTheory.ProfCoh.bijective_compactZmodDualityMap_of_compactDualityMap`:
-  [NeZero n]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NeZero n] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [78951/79003] Built GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals (7.7s)
-warning: src/GroundTheory/HeightsAndTheta/Heights/HodgeLowerBound/CoordinateIdeals.lean:141:0: automatically included section variable(s) unused in theorem `GroundTheory.Heights₂.Heights.LowerBoundFree.IsVerticalDivisorAt.ofPrime`:
-  [Fintype K]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype K] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [78952/79004] Built GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.OfChartPointSecPointSpecChart (5.1s)
-✔ [78953/79004] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PYPlusArithVar (5.1s)
-✔ [78954/79005] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.BirationalOfBlock (6.5s)
-✔ [78955/79005] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.IsWeightedHomogeneousSepBlock (15s)
-✔ [78956/79006] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PYPlusMetric (6.5s)
-✔ [78957/79007] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PYPlusSec (5.4s)
-✔ [78958/79008] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.IsWeightedHomogeneousAeval (20s)
-✔ [78959/79009] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.ImportsAlt (4.0s)
-✔ [78960/79010] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PYPlusSupSmall (7.1s)
-✔ [78961/79010] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.ChartFormEvalAgree (5.3s)
-⚠ [78962/79014] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PYPlusSmall (8.9s)
-warning: src/GroundTheory/HeightsAndTheta/Heights/WeightedHomogeneous/PYPlusSmall.lean:38:0: automatically included section variable(s) unused in theorem `GroundTheory.Heights₂.Heights.YPlusSmall.mConeMap_of_homog`:
-  [DecidableEq ι]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [DecidableEq ι] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [78963/79024] Built GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals.MemMCoordIdealOfAevalEqZero (6.8s)
-warning: src/GroundTheory/HeightsAndTheta/Heights/HodgeLowerBound/CoordinateIdeals/MemMCoordIdealOfAevalEqZero.lean:38:0: automatically included section variable(s) unused in theorem `GroundTheory.Heights₂.Heights.LowerBoundFree.isMultiHomog_one`:
-  [Fintype K]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype K] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [78964/79024] Built GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.LinearIndependentOfMemSpan (5.5s)
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+✔ [79491/79542] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StVarIntAdd (5.1s)
+✔ [79492/79543] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StLelongRegularise (5.8s)
+✔ [79493/79543] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.LocalLimitGlue (6.0s)
+✔ [79494/79543] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StLocalGraphMass (5.2s)
+✔ [79495/79543] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PFunctionFieldDegree (8.7s)
+✔ [79496/79543] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StVarietyProjectionMass (5.2s)
+✔ [79497/79543] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PLinearFormCut (6.4s)
+✔ [79498/79543] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StVarSlabMeasure (5.0s)
+✔ [79499/79543] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PImplicitCurve (7.1s)
+✔ [79500/79543] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PIntegralIndependent (5.0s)
+✔ [79501/79543] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PGraphAreaHolomorphic (13s)
+✔ [79502/79548] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PLogLogCutHessConst (6.5s)
+✔ [79503/79549] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSectionDegreeSum (5.3s)
+✔ [79504/79549] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StPointSliceMass (5.3s)
+✔ [79505/79550] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PLogLogCutHessDeriv (7.8s)
+✔ [79506/79552] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PMaDensLeibniz (6.4s)
+✔ [79507/79552] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StLelongLimitOnZero (5.3s)
+✔ [79508/79554] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StLelongLimitOffZero (5.3s)
+✔ [79509/79554] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StLelongLimit (5.4s)
+✔ [79510/79555] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PPlaneSliceMass (8.0s)
+✔ [79511/79555] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PNullSmaller (6.1s)
+✔ [79512/79556] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StLocalGraphProjectionMass (5.2s)
+✔ [79513/79556] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PLelongRegularise (8.4s)
+✔ [79514/79558] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StatementsLocalBranches (5.2s)
+✔ [79515/79558] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StVanishNearPoint (5.1s)
+✔ [79516/79562] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PLocalGraphMass (8.1s)
+✔ [79517/79562] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PLogIntegrable (6.5s)
+✔ [79518/79565] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PMassFromLelong (5.6s)
+✔ [79519/79566] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PMassFinite (10s)
+✔ [79520/79566] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PLogLogCutHess (6.3s)
+✔ [79521/79567] Built GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PPointChowForm (6.2s)
+✔ [79522/79568] Built GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PPointIntegral (6.2s)
+✔ [79523/79568] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PPoincareLelong (5.3s)
+✔ [79524/79568] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceFormMass (5.2s)
+✔ [79525/79568] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PLelongLimit (6.1s)
+✔ [79526/79570] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PLelongLimitOffZero (7.6s)
+✔ [79527/79573] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSheetOnlyNull (5.1s)
+✔ [79528/79573] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.IsAddHaarMeasureHausdorffMeasureEuclideanSpaceCo (8.2s)
+✔ [79529/79573] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StPosPartLocal (5.1s)
+✔ [79530/79574] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StPosPartSplit (5.1s)
+✔ [79531/79576] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StatementsBranchesGoodPoint (5.3s)
+✔ [79532/79576] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StatementsPowerUnitCount (5.2s)
+✔ [79533/79576] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PPuncturedCoverCycles (5.0s)
+✔ [79534/79576] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StRemovableHyperplane (5.0s)
+✔ [79535/79576] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PPointSliceMass (6.5s)
+✔ [79536/79576] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PProjectionCoordinateEquation (7.8s)
+✔ [79537/79578] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PLocalGraphProjectionMass (7.7s)
+✔ [79538/79578] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSectionDegreeSum (5.4s)
+✔ [79539/79578] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PolynomialFrame (6.2s)
+✔ [79540/79582] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PFormIntPos (7.1s)
+✔ [79541/79582] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PRegConeLimit (7.5s)
+✔ [79542/79585] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PPosPartSplit (5.9s)
+✔ [79543/79585] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PPosPartIndependent (6.1s)
+✔ [79544/79588] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PPosPartLocal (6.9s)
+✔ [79545/79590] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PrimitiveLinearForm (12s)
+✔ [79546/79593] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PProjectionFormula (11s)
+✔ [79547/79594] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSheetImageArea (5.1s)
+✔ [79548/79595] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StOneComponentGeneralPoint (4.0s)
+✔ [79549/79595] Built GroundTheory.ProfiniteCohomology.PoitouTate.RealEvenTau (265s)
+✔ [79550/79595] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSheetImageAreaSet (5.2s)
+✔ [79551/79596] Built GroundTheory.HeightsAndTheta.Heights.Intersections.StTorusInvLevi (5.1s)
+✔ [79552/79599] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PRemovableHyperplane (6.4s)
+✔ [79553/79599] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PPolySublevel (11s)
+✔ [79554/79599] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSheetComass (7.6s)
+✔ [79555/79602] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PRiemannExtensionPolynomial (6.5s)
+✔ [79556/79604] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PPowerUnitCount (7.5s)
+✔ [79557/79604] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.SliceCut (6.2s)
+✔ [79558/79607] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.AffineOfCone (7.4s)
+✔ [79559/79608] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSheetOnlyNull (8.0s)
+✔ [79560/79608] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceMassFinite (5.2s)
+✔ [79561/79610] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.POneComponentGeneralPoint (5.5s)
+✔ [79562/79612] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSliceComponents (10s)
+✔ [79563/79612] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceImmersiveGeneral (5.2s)
+✔ [79564/79613] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StZeroSetOpenMass (5.2s)
+✔ [79565/79613] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSheetFormCompare (5.3s)
+✔ [79566/79614] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceMatricesOpen (5.2s)
+✔ [79567/79616] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSheetAreaCompare (9.1s)
+✔ [79568/79616] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.MeasurableOfContinuousOnNeZero (9.4s)
+✔ [79569/79616] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSheetImageArea (7.3s)
+✔ [79570/79616] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceLelongError (5.2s)
+✔ [79571/79616] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PPrimitiveElementFibres (10s)
+✔ [79572/79616] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceCutBoundary (5.1s)
+✔ [79573/79618] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSlabBound (5.3s)
+✔ [79574/79618] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StStokesOffDiscriminant (5.2s)
+✔ [79575/79618] Built GroundTheory.HeightsAndTheta.Heights.Intersections.PTorusInvLevi (10s)
+✔ [79576/79618] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PUnitaryZariskiDense (7.0s)
+✔ [79577/79620] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PVarSlabMeasure (5.6s)
+✔ [79578/79620] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PVanishNearPoint (6.2s)
+✔ [79579/79620] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PVarIntAdd (6.2s)
+✔ [79580/79620] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PVarietyProjectionMass (6.3s)
+✔ [79581/79622] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSliceFormMass (6.4s)
+✔ [79582/79624] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSliceImmersiveGeneral (7.3s)
+✔ [79583/79624] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSliceDim (5.9s)
+✔ [79584/79626] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceCutDecay (5.3s)
+✔ [79585/79630] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSliceIdeal (6.0s)
+✔ [79586/79633] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PVarietySlabMeasure (7.3s)
+✔ [79587/79633] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PZeroSetOpenMass (6.5s)
+✔ [79588/79645] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSliceCutOffLimit (6.2s)
+✔ [79589/79645] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSliceMatricesOpen (7.7s)
+✔ [79590/79646] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceBoundaryBound (5.2s)
+✔ [79591/79648] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PStokesOnVariety (5.6s)
+✔ [79592/79648] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSheetLogNormDens (5.8s)
+✔ [79593/79648] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StTubeCollarCompare (5.1s)
+✔ [79594/79648] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StTubeCollarMass (5.1s)
+✔ [79595/79651] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StTubeDeepWeightMass (5.3s)
+✔ [79596/79651] Built GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.StatementsLocalizedQuotientLength (5.3s)
+✔ [79597/79651] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSliceExhaustion (5.6s)
+✔ [79598/79652] Built GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBlockImage (5.5s)
+✔ [79599/79652] Built GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsNonvanishingDense (5.2s)
+✔ [79600/79653] Built GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBirationalCoordinates (5.4s)
+⚠ [79601/79656] Built GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.BergmanProjectiveVolume (6.3s)
+warning: src/GroundTheory/HeightsAndTheta/Heights/HilbertSamuel/BergmanProjectiveVolume.lean:53:33: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+✔ [79602/79656] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSliceCutBoundary (5.5s)
+✔ [79603/79657] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StokesOffDiscriminantWindow (9.7s)
+✔ [79604/79660] Built GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsHeightsirationalHilb (5.1s)
+✔ [79605/79660] Built GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSheetImageAreaSetFrame (11s)
+✔ [79606/79660] Built GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsLattice (8.4s)
+✔ [79607/79660] Built GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsHilbFnValueSpan (5.2s)
