@@ -132,6 +132,12 @@ def main():
         env.pop(key, None)
     env["LEAN_SYSROOT"] = str(official)
     env["LC_ALL"] = "C"
+    # The standalone LLVM archive keeps target C++ runtimes in a target-specific
+    # directory. Use the identical copies already bundled with the official
+    # release for CXX tools only. Never add lib/lean: that would make capsule
+    # validation accidentally load the original Lean shared library.
+    cxx_env = env.copy()
+    cxx_env["LD_LIBRARY_PATH"] = os.pathsep.join((str(official / "lib"), str(llvm / "lib")))
     status = {"schema": 1, "state": "building", "started_utc": utc(), "build_kind": "release-relink"}
 
     def write_status():
@@ -140,7 +146,10 @@ def main():
     def run(name, argv, *, cwd=None, run_env=None, accepted=(0,)):
         argv = [str(x) for x in argv]
         (work / "logs" / (name + ".command.json")).write_text(
-            json.dumps({"argv": argv, "cwd": str(cwd or work)}, indent=2) + "\n")
+            json.dumps({"argv": argv, "cwd": str(cwd or work),
+                        "selected_environment": {key: (run_env or env)[key]
+                                                 for key in ("LD_LIBRARY_PATH", "LEAN_SYSROOT", "LEAN_MAX_MMAP_REGIONS", "LC_ALL")
+                                                 if key in (run_env or env)}}, indent=2) + "\n")
         with (work / "logs" / (name + ".log")).open("wb") as log:
             proc = subprocess.run(argv, cwd=cwd or work, env=run_env or env,
                                   stdout=log, stderr=subprocess.STDOUT, check=False)
@@ -168,7 +177,7 @@ def main():
         for path in (llvm / "bin/clang++", official / "bin/clang", official / "bin/llvm-ar"):
             if not path.is_file():
                 raise RuntimeError(f"Missing compiler/archive tool: {path}")
-        capture("cxx-version", [llvm / "bin/clang++", "--version"])
+        capture("cxx-version", [llvm / "bin/clang++", "--version"], run_env=cxx_env)
         original_version = capture("original-version", [official / "bin/lean", "--version"]).strip()
         if "version 4.33.1," not in original_version:
             raise RuntimeError("Original Lean is not release 4.33.1")
@@ -242,7 +251,7 @@ def main():
 
         def compile_one(item):
             member, path, extra = item
-            run("compile-" + member, common + extra + ["-c", path, "-o", obj_dir / member])
+            run("compile-" + member, common + extra + ["-c", path, "-o", obj_dir / member], run_env=cxx_env)
             return {"member": member, "source_sha256": sha256(path), "object_sha256": sha256(obj_dir / member)}
 
         with concurrent.futures.ThreadPoolExecutor(max_workers=args.jobs) as pool:
@@ -323,6 +332,7 @@ def main():
             "binaries": {name: sha256(output / name) for name in EVIDENCE_BINARIES},
             "original_binaries": originals, "original_archives": archive_hashes,
             "llvm_archive_sha256": LLVM_SHA256, "mimalloc_commit": MIMALLOC_COMMIT,
+            "cxx_tool_environment": {"LD_LIBRARY_PATH": cxx_env["LD_LIBRARY_PATH"]},
             "rebuilt_objects": rebuilt_objects, "runtime_tls_members_recompiled": rt_members,
             "archive_object_comparison": archive_comparison,
             "kernel_objects": "unchanged official archive members; only module.cpp.o replaced in libleancpp.a",
