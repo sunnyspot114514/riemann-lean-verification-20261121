@@ -1,30 +1,55 @@
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KaehlerFibreEquivPushoutFormallyEtaleStatement.lean:6:74: Unused tactic linter: `exact GlobalTheory.kaehler_fibre_equiv_pushout_formallyEtale` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KaehlerFibreEquivPushoutFormallyEtaleStatement.lean:6:137: Unused tactic linter: `(intros;
-  apply GlobalTheory.kaehler_fibre_equiv_pushout_formallyEtale <;> assumption)` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkDictfwdB.lean:313:0: automatically included section variable(s) unused in theorem `PositivityTheory.Lit1.GEN.W_dictfwd_b.exists_transport_elem`:
+  [NumberField F]
+  [IsAlgClosure F Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] [IsAlgClosure F Ω] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [75887/76122] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothOfRelativeDimensionOfRelSncDivisor (5.4s)
-✔ [75888/76128] Built Development.WeilBound.CoreStatements.PublishedTheorems.NadelVanishingPairs.NadelVanishingLemmas.LogCartierRoundingFamily (5.9s)
-✔ [75889/76128] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniversallyClosedOpenContainingFibreContainsNear (5.4s)
-✔ [75890/76128] Built Development.WeilBound.CoreStatements.PublishedTheorems.NadelVanishingPairs.NadelVanishingLemmas.CartierMapEqExtDImpEqZero (5.6s)
-⚠ [75891/76128] Built Development.WeilBound.CoreStatements.PublishedTheorems.NadelVanishingPairs.NadelVanishingLemmas.CechLogFormsFrobeniusLiftStatement (5.3s)
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/NadelVanishingPairs/NadelVanishingLemmas/CechLogFormsFrobeniusLiftStatement.lean:7:61: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/NadelVanishingPairs/NadelVanishingLemmas/CechLogFormsFrobeniusLiftStatement.lean:7:111: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/NadelVanishingPairs/NadelVanishingLemmas/CechLogFormsFrobeniusLiftStatement.lean:7:61: Unused tactic linter: `exact _root_.GlobalTheory.DI.decomp_of_isLifted` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/NadelVanishingPairs/NadelVanishingLemmas/CechLogFormsFrobeniusLiftStatement.lean:7:111: Unused tactic linter: `(intros; apply _root_.GlobalTheory.DI.decomp_of_isLifted <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [75892/76137] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCoordinatesKaehlerBasis (11s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleCoordinatesKaehlerBasis.lean:22:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [76344/76516] Built GroundTheory.ProfiniteCohomology.RestrictedRamification.IsDiscreteRepResIntRepTrivGs (13s)
+✔ [76345/76516] Built GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseInputs (10s)
+✔ [76346/76516] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.DivisorReduction.LogDerivIdealEstimate (6.8s)
+✔ [76347/76516] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.DivisorReduction.GoingUpInvariant (7.3s)
+✔ [76348/76516] Built Development.AutomorphicSpectrum.Proofs.GlobalProofs.NSEqFixingSubgroup (7.1s)
+✔ [76349/76516] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.MarkedOrderReduction.RecursivePrincipalizationPullback (8.8s)
+✔ [76350/76517] Built Development.ResolutionOfSingularities.EmbeddedResolution.MaximalContactHypersurfaces.MaxContactHypersurface (5.4s)
+✔ [76351/76520] Built GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseClass (48s)
+✔ [76352/76520] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.DivisorReduction.PrependedAmbientSequence (7.5s)
+✔ [76353/76520] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.DivisorReduction.RestrictedBaseChangeComparison (5.9s)
+✔ [76354/76520] Built GroundTheory.ProfiniteCohomology.PoitouTate.RealLocal (17s)
+✔ [76355/76520] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.DivisorReduction.GoingUpInvariantSucc (7.1s)
+✔ [76356/76520] Built GroundTheory.ProfiniteCohomology.PoitouTate.PoitouTateInfinite.LevelModulesDefs (9.4s)
+✔ [76357/76521] Built GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseLocalDual (23s)
+✔ [76358/76521] Built Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.TaylorExpansion (8.3s)
+✔ [76359/76522] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.DivisorReduction.GoingUpInvariantOnOpens (7.5s)
+✔ [76360/76522] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.MarkedOrderReduction.OrderReductionBaseChange (6.7s)
+✔ [76361/76522] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.DivisorReduction.AmbientBlowupMarked (5.7s)
+✔ [76362/76522] Built Development.ResolutionOfSingularities.EmbeddedResolution.MaximalContactHypersurfaces.EtaleMaxContactComparison (7.2s)
+✔ [76363/76523] Built GroundTheory.ProfiniteCohomology.RealPlaces.VanishingPrimes (49s)
+✔ [76364/76528] Built Development.ResolutionOfSingularities.EmbeddedResolution.MaximalContactHypersurfaces.MaxContactCommonCharts (7.3s)
+✔ [76365/76528] Built Development.ResolutionOfSingularities.EmbeddedResolution.MaximalContactHypersurfaces.TunedSheafMultiplicativity (5.5s)
+✔ [76366/76528] Built GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseInv (36s)
+✔ [76367/76528] Built Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.TaylorExpansionComparison (8.9s)
+✔ [76368/76528] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.MarkedOrderReduction.MaxOrderReduction (5.6s)
+✔ [76369/76529] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.DivisorReduction.GoingUpInvariantInduction (6.7s)
+✔ [76370/76531] Built Development.ResolutionOfSingularities.EmbeddedResolution.MaximalContactHypersurfaces.TunedSheafPullback (5.8s)
+✔ [76371/76533] Built Development.ResolutionOfSingularities.EmbeddedResolution.MaximalContactHypersurfaces.TunedIdeal (8.8s)
+✔ [76372/76534] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.KrullDimEtaleBaseChange (7.7s)
+✔ [76373/76534] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.MarkedOrderReduction.OrderReductionHypotheses (5.9s)
+✔ [76374/76534] Built Development.ResolutionOfSingularities.EmbeddedResolution.MaximalContactHypersurfaces.StalkIdealSpreadOut (6.7s)
+✔ [76375/76536] Built Development.ResolutionOfSingularities.EmbeddedResolution.MaximalContactHypersurfaces.TunedSheafBasic (6.2s)
+✔ [76376/76536] Built Development.ResolutionOfSingularities.EmbeddedResolution.MaximalContactHypersurfaces.TunedIdealPowers (6.1s)
+✔ [76377/76536] Built Development.ResolutionOfSingularities.EmbeddedResolution.MaximalContactHypersurfaces.TunedIdealSheaf (7.4s)
+✔ [76378/76538] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.OrderReduction.CoverMapSurjective (5.1s)
+✔ [76379/76539] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.MarkedOrderReduction.ControlledTransformOrderBound (5.4s)
+✔ [76380/76539] Built GroundTheory.ProfiniteCohomology.RestrictedRamification.BijectiveGsCompactZmodDualityMap (12s)
+✔ [76381/76539] Built GroundTheory.ProfiniteCohomology.PoitouTate.ZmodToQZCompactCohomologyResMapOfLocalInv (45s)
+⚠ [76382/76539] Built Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.WorkDictfwdA (34s)
+warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkDictfwdA.lean:52:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -32,7 +57,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleCoordinatesKaehlerBasis.lean:23:2: Try this: 
+warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkDictfwdA.lean:53:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -40,7 +65,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleCoordinatesKaehlerBasis.lean:36:4: Try this: 
+warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkDictfwdA.lean:55:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -48,7 +73,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleCoordinatesKaehlerBasis.lean:54:2: Try this: 
+warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkDictfwdA.lean:56:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -56,7 +81,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleCoordinatesKaehlerBasis.lean:55:2: Try this: 
+warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkDictfwdA.lean:158:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -64,7 +89,14 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleCoordinatesKaehlerBasis.lean:57:2: Try this: 
+warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkDictfwdA.lean:190:0: automatically included section variable(s) unused in theorem `PositivityTheory.Lit1.GEN.W_dictfwd_a.exists_transport_elem`:
+  [NumberField F]
+  [IsAlgClosure F Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] [IsAlgClosure F Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkDictfwdA.lean:267:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -72,15 +104,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleCoordinatesKaehlerBasis.lean:113:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleCoordinatesKaehlerBasis.lean:115:2: Try this: 
+warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkDictfwdA.lean:268:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -88,73 +112,49 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [75893/76137] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtendLinearIndependentDifferentialsStatement (5.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtendLinearIndependentDifferentialsStatement.lean:6:70: this tactic is never executed
+✔ [76383/76541] Built GroundTheory.ProfiniteCohomology.RealPlaces.VanishingMackeyPlaces (40s)
+✔ [76384/76543] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.DivisorReduction.LowerIdealAfterBlowup (14s)
+✔ [76385/76543] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.OrderReduction.MaxContactCoverProperties (5.6s)
+✔ [76386/76543] Built Development.ResolutionOfSingularities.EmbeddedResolution.MaximalContactHypersurfaces.TunedSheafLcm (5.6s)
+⚠ [76387/76543] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.MonomialCase.OrderOffExceptionalDivisor (5.2s)
+warning: src/Development/ResolutionOfSingularities/EmbeddedResolution/IdealPrincipalization/MonomialCase/OrderOffExceptionalDivisor.lean:33:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtendLinearIndependentDifferentialsStatement.lean:6:129: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtendLinearIndependentDifferentialsStatement.lean:6:70: Unused tactic linter: `exact GlobalTheory.kaehler_baseChange_independent_extend` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [76388/76543] Built GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseClassIdele (29s)
+✔ [76389/76543] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.OrderReduction.BlowupSeqComparison (6.9s)
+✔ [76390/76543] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.OrderReduction.MaxContactResolution (5.0s)
+✔ [76391/76543] Built Development.ResolutionOfSingularities.EmbeddedResolution.MaximalContactHypersurfaces.MaxContactChartUniqueness (12s)
+✔ [76392/76544] Built Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.GlobalEulerCharAtOfRatioOne (5.6s)
+⚠ [76393/76547] Built GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseCupKummer (61s)
+warning: src/GroundTheory/ProfiniteCohomology/RestrictedRamification/BaseCupKummer.lean:164:0: automatically included section variable(s) unused in theorem `GroundTheory.ProfCoh.gsPairingμᵥ_tmul`:
+  [NeZero n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero n] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtendLinearIndependentDifferentialsStatement.lean:6:129: Unused tactic linter: `(intros; apply GlobalTheory.kaehler_baseChange_independent_extend <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [75894/76137] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SepIntPolyRootModPrimeSqStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SepIntPolyRootModPrimeSqStatement.lean:6:63: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SepIntPolyRootModPrimeSqStatement.lean:6:115: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SepIntPolyRootModPrimeSqStatement.lean:6:63: Unused tactic linter: `exact GlobalTheory.sep_int_poly_root_mod_prime_sq` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SepIntPolyRootModPrimeSqStatement.lean:6:115: Unused tactic linter: `(intros; apply GlobalTheory.sep_int_poly_root_mod_prime_sq <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [75895/76138] Built Development.WeilBound.CoreStatements.PublishedTheorems.NadelVanishingPairs.NadelVanishingLemmas.EtaleCoordinatesDifferentials (5.4s)
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/NadelVanishingPairs/NadelVanishingLemmas/EtaleCoordinatesDifferentials.lean:5:95: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/NadelVanishingPairs/NadelVanishingLemmas/EtaleCoordinatesDifferentials.lean:5:179: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/NadelVanishingPairs/NadelVanishingLemmas/EtaleCoordinatesDifferentials.lean:5:95: Unused tactic linter: `exact _root_.GlobalTheory.EtaleCoordRank.finrank_and_linearIndependent_D_unit_mul` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/NadelVanishingPairs/NadelVanishingLemmas/EtaleCoordinatesDifferentials.lean:5:179: Unused tactic linter: `(intros;
-  apply _root_.GlobalTheory.EtaleCoordRank.finrank_and_linearIndependent_D_unit_mul <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [75896/76140] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegularLocalDifferentialsBasis (5.7s)
-⚠ [75897/76140] Built Development.WeilBound.CoreStatements.PublishedTheorems.NadelVanishingPairs.NadelVanishingLemmas.ExistsLogResolutionBigBundleStatement (7.1s)
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/NadelVanishingPairs/NadelVanishingLemmas/ExistsLogResolutionBigBundleStatement.lean:12:85: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/NadelVanishingPairs/NadelVanishingLemmas/ExistsLogResolutionBigBundleStatement.lean:12:159: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/NadelVanishingPairs/NadelVanishingLemmas/ExistsLogResolutionBigBundleStatement.lean:12:85: Unused tactic linter: `exact _root_.GlobalTheory.LogResBig.exists_logRes_smul_eq_ample_add_eff` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/NadelVanishingPairs/NadelVanishingLemmas/ExistsLogResolutionBigBundleStatement.lean:12:159: Unused tactic linter: `(intros;
-  apply _root_.GlobalTheory.LogResBig.exists_logRes_smul_eq_ample_add_eff <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [75898/76140] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelativeSncSameDivisor (6.6s)
-✔ [75899/76140] Built Development.WeilBound.CoreStatements.PublishedTheorems.NadelVanishingPairs.NadelVanishingLemmas.SpreadOutLineBundle (8.3s)
-⚠ [75900/76144] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothOfRelativeDimensionOfRelSncDivisorStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmoothOfRelativeDimensionOfRelSncDivisorStatement.lean:14:57: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmoothOfRelativeDimensionOfRelSncDivisorStatement.lean:14:103: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmoothOfRelativeDimensionOfRelSncDivisorStatement.lean:14:57: Unused tactic linter: `exact GlobalTheory.LogPair.smooth_of_relSnc` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmoothOfRelativeDimensionOfRelSncDivisorStatement.lean:14:103: Unused tactic linter: `(intros; apply GlobalTheory.LogPair.smooth_of_relSnc <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [76394/76547] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.DivisorReduction.BalancedDivisorReduction (5.5s)
+✔ [76395/76547] Built GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.StabilizersFinite (8.4s)
+✔ [76396/76547] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.OrderReduction.MaxContactHypersurfaceTransform (6.2s)
+✔ [76397/76559] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.MarkedOrderReduction.MonomialCenterHypotheses (5.6s)
+✔ [76398/76559] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.DivisorReduction.AmbientEmbeddingCompatibility (7.2s)
+✔ [76399/76559] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.OrderReduction.TunedMarkedBlowupSeq (6.6s)
+✔ [76400/76561] Built Development.ResolutionOfSingularities.EmbeddedResolution.MaximalContactHypersurfaces.TunedSheafBlowupSequence (6.6s)
+✔ [76401/76563] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.OrderReduction.MaxContactGeometryHypotheses (5.5s)
+✔ [76402/76563] Built Development.ResolutionOfSingularities.EmbeddedResolution.MaximalContactHypersurfaces.MaxContactEtaleUniqueness (6.7s)
+✔ [76403/76563] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.MarkedOrderReduction.AppendIsomorphism (6.1s)
+✔ [76404/76564] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.MarkedOrderReduction.TransformedComponentHypotheses (5.6s)
+✔ [76405/76564] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.OrderReduction.CoverTriple (6.0s)
+✔ [76406/76564] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.OrderReduction.LowerDimReductionSmoothPullback (6.9s)
+✔ [76407/76565] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.OrderReduction.CoverDescent (8.8s)
+✔ [76408/76565] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.OrderReduction.MaxContactCover (6.5s)
+✔ [76409/76565] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.OrderReduction.IndependenceOfHypersurface (6.0s)
+✔ [76410/76567] Built GroundTheory.ProfiniteCohomology.PoitouTate.Deduction (20s)
+✔ [76411/76567] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.OrderReduction.WeakTransform (6.9s)
+✔ [76412/76568] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.OrderReduction.LevelwiseIso (5.3s)
+✔ [76413/76568] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.MarkedOrderReduction.GeometricPrincipalization (5.3s)
+✔ [76414/76569] Built Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.OrderReduction.OrderCertificateDescent (5.4s)
