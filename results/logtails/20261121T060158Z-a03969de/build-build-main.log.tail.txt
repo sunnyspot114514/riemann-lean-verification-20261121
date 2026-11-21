@@ -1,107 +1,15 @@
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CrystallinePeriodBoundAllConstantGeFortyStatement.lean:12:133: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CrystallinePeriodBoundAllConstantGeFortyStatement.lean:12:72: Unused tactic linter: `exact GlobalTheory.InertiaEigenvalues.theoremT_all_records` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CrystallinePeriodBoundAllConstantGeFortyStatement.lean:12:133: Unused tactic linter: `(intros; apply GlobalTheory.InertiaEigenvalues.theoremT_all_records <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [121263/121286] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsStandardTypeVectorOfParabolicTypeVector (6.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsStandardTypeVectorOfParabolicTypeVector.lean:42:8: Unused tactic linter: `congr 2` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [121264/121286] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivariantMapOfLevelTypeVectorStatement (6.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsEquivariantMapOfLevelTypeVectorStatement.lean:10:64: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsEquivariantMapOfLevelTypeVectorStatement.lean:10:117: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsEquivariantMapOfLevelTypeVectorStatement.lean:10:64: Unused tactic linter: `exact GlobalTheory.LevelType.exists_map_of_typeVec` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsEquivariantMapOfLevelTypeVectorStatement.lean:10:117: Unused tactic linter: `(intros; apply GlobalTheory.LevelType.exists_map_of_typeVec <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [121265/121286] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsBlockVectorNotKilledStatement (18s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsBlockVectorNotKilledStatement.lean:11:46: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsBlockVectorNotKilledStatement.lean:11:81: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsBlockVectorNotKilledStatement.lean:11:46: Unused tactic linter: `exact GlobalTheory.DzVecLoc.main` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsBlockVectorNotKilledStatement.lean:11:81: Unused tactic linter: `(intros; apply GlobalTheory.DzVecLoc.main <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [121266/121288] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameCharacterLabelStatement (6.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TameCharacterLabelStatement.lean:10:51: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TameCharacterLabelStatement.lean:10:91: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TameCharacterLabelStatement.lean:10:51: Unused tactic linter: `exact GlobalTheory.PendOf.tame_lab_mu` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TameCharacterLabelStatement.lean:10:91: Unused tactic linter: `(intros; apply GlobalTheory.PendOf.tame_lab_mu <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [121267/121288] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StdParabolicTwistedTraceSumNeZeroOfVector (8.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/StdParabolicTwistedTraceSumNeZeroOfVector.lean:34:23: This simp argument is unused:
-  mul_inv
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/WachLatticeTwists/CoprimeLiftBounds/CoprimeLiftProofs/KeyMul.lean:16:76: This simp argument is unused:
+  one_smul
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [hc, map_mul, Units.val_mul, mul_comm]
+  [apply] simp only [uElt, smul_mul_assoc, mul_smul_comm, smul_smul, Units.mul_inv]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [121268/121293] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ParabolicInductionEmptySecondIsSubquotientFirstStatement (6.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ParabolicInductionEmptySecondIsSubquotientFirstStatement.lean:10:77: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ParabolicInductionEmptySecondIsSubquotientFirstStatement.lean:10:143: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ParabolicInductionEmptySecondIsSubquotientFirstStatement.lean:10:77: Unused tactic linter: `exact GlobalTheory.EmptySecondBlockProd.isSubquotient_multiProd` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ParabolicInductionEmptySecondIsSubquotientFirstStatement.lean:10:143: Unused tactic linter: `(intros;
-  apply GlobalTheory.EmptySecondBlockProd.isSubquotient_multiProd <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [121269/121293] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistedTorsionClassTheoremGoodCase (5.4s)
-⚠ [121270/121299] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsParabolicTypeVectorOfEquivariantMapStatement (6.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsParabolicTypeVectorOfEquivariantMapStatement.lean:10:63: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsParabolicTypeVectorOfEquivariantMapStatement.lean:10:115: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsParabolicTypeVectorOfEquivariantMapStatement.lean:10:63: Unused tactic linter: `exact GlobalTheory.LevelType.exists_parVec_of_map` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsParabolicTypeVectorOfEquivariantMapStatement.lean:10:115: Unused tactic linter: `(intros; apply GlobalTheory.LevelType.exists_parVec_of_map <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [121271/121301] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsStandardTypeVectorOfParabolicTypeVectorStatement (5.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsStandardTypeVectorOfParabolicTypeVectorStatement.lean:10:66: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsStandardTypeVectorOfParabolicTypeVectorStatement.lean:10:121: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsStandardTypeVectorOfParabolicTypeVectorStatement.lean:10:66: Unused tactic linter: `exact GlobalTheory.LevelType.exists_stdVec_of_parVec` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsStandardTypeVectorOfParabolicTypeVectorStatement.lean:10:121: Unused tactic linter: `(intros; apply GlobalTheory.LevelType.exists_stdVec_of_parVec <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [121272/121301] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIrreducibleHarishChandraOfStdTraceNeZero (9.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsIrreducibleHarishChandraOfStdTraceNeZero.lean:172:2: Try this: 
+✔ [121532/121567] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedHomsBoundedByClassNumberOfArtin (6.6s)
+✔ [121533/121567] Built Formalism.WachLatticeTwists.SplitLocalLifts.Statement (6.1s)
+⚠ [121534/121567] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegralTateH2Top (55s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IntegralTateH2Top.lean:154:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -109,7 +17,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsIrreducibleHarishChandraOfStdTraceNeZero.lean:173:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IntegralTateH2Top.lean:155:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -117,44 +25,136 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsIrreducibleHarishChandraOfStdTraceNeZero.lean:200:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-✔ [121273/121301] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaLabelRootOfHarishChandraConstituent (6.4s)
-⚠ [121274/121301] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StdParabolicTwistedTraceSumNeZeroOfVectorStatement (5.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/StdParabolicTwistedTraceSumNeZeroOfVectorStatement.lean:10:59: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IntegralTateH2Top.lean:156:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IntegralTateH2Top.lean:159:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IntegralTateH2Top.lean:160:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IntegralTateH2Top.lean:161:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IntegralTateH2Top.lean:197:10: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+⚠ [121535/121567] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedHomsBoundedByClassNumberOfArtinStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/UnramifiedHomsBoundedByClassNumberOfArtinStatement.lean:9:100: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/StdParabolicTwistedTraceSumNeZeroOfVectorStatement.lean:10:107: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/UnramifiedHomsBoundedByClassNumberOfArtinStatement.lean:9:189: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/StdParabolicTwistedTraceSumNeZeroOfVectorStatement.lean:10:59: Unused tactic linter: `exact GlobalTheory.LevelType.stdTrace_ne_zero` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/UnramifiedHomsBoundedByClassNumberOfArtinStatement.lean:9:100: Unused tactic linter: `exact
+  GlobalTheory.UnramifiedHomBound.unramified_homs_bounded_by_class_number_of_artin` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/StdParabolicTwistedTraceSumNeZeroOfVectorStatement.lean:10:107: Unused tactic linter: `(intros; apply GlobalTheory.LevelType.stdTrace_ne_zero <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/UnramifiedHomsBoundedByClassNumberOfArtinStatement.lean:9:189: Unused tactic linter: `(intros;
+  apply GlobalTheory.UnramifiedHomBound.unramified_homs_bounded_by_class_number_of_artin <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [121275/121301] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIrreducibleDetTwistOfStdTraceTwoBlock (8.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsIrreducibleDetTwistOfStdTraceTwoBlock.lean:31:59: this tactic is never executed
+✔ [121536/121574] Built Formalism.SharpRestriction.LevelLetterCocycles.ReducibleThreeDim (14s)
+✔ [121537/121574] Built Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.SplitExt (9.9s)
+✔ [121538/121575] Built Formalism.WachLatticeTwists.RamifiedBlockRings.LemmaFiveThreeAnyResidueField (7.4s)
+✔ [121539/121575] Built Formalism.WachLatticeTwists.CoprimeLiftBounds.CoprimeLiftProofs.Bridge (8.6s)
+✔ [121540/121575] Built Formalism.WachLatticeTwists.StatementSplit (14s)
+⚠ [121541/121575] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegralTateH2TopStatement (5.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IntegralTateH2TopStatement.lean:10:60: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsIrreducibleDetTwistOfStdTraceTwoBlock.lean:31:59: Unused tactic linter: `(simp; omega)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [121276/121301] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistedTorsionClassTheoremGoodCaseStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TwistedTorsionClassTheoremGoodCaseStatement.lean:10:55: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IntegralTateH2TopStatement.lean:10:109: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TwistedTorsionClassTheoremGoodCaseStatement.lean:10:99: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IntegralTateH2TopStatement.lean:10:60: Unused tactic linter: `exact GlobalTheory.IntTateTop.admH2_of_duality` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IntegralTateH2TopStatement.lean:10:109: Unused tactic linter: `(intros; apply GlobalTheory.IntTateTop.admH2_of_duality <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [121542/121575] Built Formalism.SharpRestriction.LevelLetterCocycles.IdempotentChoiceDepthZero (5.4s)
+⚠ [121543/121575] Built Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.BigRes (7.2s)
+warning: src/Formalism/WachLatticeTwists/RamifiedBlockRings/RamifiedBlockProofs/BigRes.lean:15:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/WachLatticeTwists/RamifiedBlockRings/RamifiedBlockProofs/BigRes.lean:20:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/WachLatticeTwists/RamifiedBlockRings/RamifiedBlockProofs/BigRes.lean:22:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/WachLatticeTwists/RamifiedBlockRings/RamifiedBlockProofs/BigRes.lean:18:6: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TwistedTorsionClassTheoremGoodCaseStatement.lean:10:55: Unused tactic linter: `exact GlobalTheory.TheoremTB.tb_assembled` does nothing
+warning: src/Formalism/WachLatticeTwists/RamifiedBlockRings/RamifiedBlockProofs/BigRes.lean:28:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/WachLatticeTwists/RamifiedBlockRings/RamifiedBlockProofs/BigRes.lean:18:6: Unused tactic linter: `exact IsAlgClosed.instInfinite` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TwistedTorsionClassTheoremGoodCaseStatement.lean:10:99: Unused tactic linter: `(intros; apply GlobalTheory.TheoremTB.tb_assembled <;> assumption)` does nothing
+warning: src/Formalism/WachLatticeTwists/RamifiedBlockRings/RamifiedBlockProofs/BigRes.lean:28:6: Unused tactic linter: `exact Field.exists_primitive_element k _` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/WachLatticeTwists/RamifiedBlockRings/RamifiedBlockProofs/BigRes.lean:154:26: `Cardinal.nat_lt_aleph0` has been deprecated: Use `Cardinal.natCast_lt_aleph0` instead
+⚠ [121544/121580] Built Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.KerEqOfFactor (6.4s)
+warning: src/Formalism/WachLatticeTwists/RamifiedBlockRings/RamifiedBlockProofs/KerEqOfFactor.lean:36:15: This simp argument is unused:
+  Function.Embedding.coeFn_mk
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [f.injective.extend_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [121545/121583] Built Formalism.WachLatticeTwists.ShapeRowIsomorphisms.Statement (6.3s)
+✔ [121546/121585] Built Formalism.WachLatticeTwists.TorsionKernelSplitting.Statement (11s)
+✔ [121547/121585] Built Formalism.WachLatticeTwists.CharacterSplitJumps.WachTwistTheoremFromTorsionBound (14s)
+✔ [121548/121585] Built Formalism.WachLatticeTwists.SplitLocalLifts.Cocycles1MapOfEquivariant (7.8s)
+⚠ [121549/121585] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SetPointGood (6.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SetPointGood.lean:44:59: Variable name `P` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _P
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SetPointGood.lean:44:150: Variable name `Cm` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _Cm
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [121550/121585] Built Formalism.WachLatticeTwists.CharacterSplitJumps.StatPropLocContBK (6.5s)
+✔ [121551/121591] Built Formalism.WachLatticeTwists.CupProductVanishing.StatVhEInChi (5.9s)
+✔ [121552/121602] Built Formalism.WachLatticeTwists.CupProductVanishing.H2MapInjective (5.7s)
