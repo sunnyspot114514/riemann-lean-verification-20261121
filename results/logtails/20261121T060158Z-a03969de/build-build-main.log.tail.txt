@@ -1,160 +1,160 @@
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/SharpSpanCounting/GraphTransport.lean:119:10: This simp argument is unused:
+  Fin.castLE_refl
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LatticeStabilizerDoubleCosetsClassRestMassStatement.lean:8:105: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LatticeStabilizerDoubleCosetsClassRestMassStatement.lean:8:58: Unused tactic linter: `exact GlobalTheory.ClassRestObj.defClassRest` does nothing
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [117469/117567] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.PartnerCountOfIso (5.9s)
+✔ [117470/117567] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.HermitianW0SpanZero (7.4s)
+⚠ [117471/117567] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.LocCnt0G (4.5s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/LocCnt0G.lean:5:4: The namespace `LocCnt0G` is duplicated in the declaration `Formalism.L2.SG.LocalCountModules.LocCnt0G.LocCnt0G`.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LatticeStabilizerDoubleCosetsClassRestMassStatement.lean:8:105: Unused tactic linter: `(intros; apply GlobalTheory.ClassRestObj.defClassRest <;> assumption)` does nothing
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+✔ [117472/117567] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalGluing.ExistsIntegralMultiple (5.7s)
+✔ [117473/117567] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalGluing.RieszRepresentationHolds (5.4s)
+✔ [117474/117567] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalOrderProjection.IsFieldOfNonsq (7.5s)
+✔ [117475/117567] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalOrderProjection.ProjOfFreeIdem (7.6s)
+✔ [117476/117567] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalGluing.MemOfProjEqZero (6.4s)
+⚠ [117477/117567] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.SharpSpanCounting.AdjLast (5.7s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/SharpSpanCounting/AdjLast.lean:21:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [117478/117577] Built Formalism.PeriodIntegrals.OrbitalBoundsConclusion.LocOProj (4.8s)
+✔ [117479/117587] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.ThetaLocalCount.LocCnt0GOfTheta (5.4s)
+⚠ [117480/117594] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.CornerDeterminantCounts.MulVecMemHeadColsU (24s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/CornerDeterminantCounts/MulVecMemHeadColsU.lean:161:8: This simp argument is unused:
+  Matrix.mulVecLin_apply
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [117215/117286] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.WorkingFamClassCopiesEqFrozen (8.5s)
-✔ [117216/117286] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FormsMapOfSymmetricComparisonLowerMapFiniteChar (6.4s)
-⚠ [117217/117286] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TwistedPointRowAdmissibleTrueColumnsStatement (5.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TwistedPointRowAdmissibleTrueColumnsStatement.lean:9:67: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.mulVec, dotProduct, Pi.single_apply, hY]
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TwistedPointRowAdmissibleTrueColumnsStatement.lean:9:123: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/CornerDeterminantCounts/MulVecMemHeadColsU.lean:197:10: This simp argument is unused:
+  Pi.single_apply
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TwistedPointRowAdmissibleTrueColumnsStatement.lean:9:67: Unused tactic linter: `exact GlobalTheory.PerQ.twistedPointIntegral_of_TC_ok` does nothing
+Hint: Omit it from the simp argument list.
+  [apply] simp [(Fin.castSucc_lt_last i).ne]
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TwistedPointRowAdmissibleTrueColumnsStatement.lean:9:123: Unused tactic linter: `(intros; apply GlobalTheory.PerQ.twistedPointIntegral_of_TC_ok <;> assumption)` does nothing
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/CornerDeterminantCounts/MulVecMemHeadColsU.lean:205:10: This simp argument is unused:
+  Pi.single_apply
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [117218/117286] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CongAtOfNearSame (10s)
-✔ [117219/117286] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMidLevOfMem (9.2s)
-⚠ [117220/117286] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RedMLevJ (8.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RedMLevJ.lean:19:0: automatically included section variable(s) unused in theorem `GlobalTheory.Mem.Col2.TC.LevJRed.mat_one`:
-  [NumberField E]
+Hint: Omit it from the simp argument list.
+  [apply] simp [(Fin.castSucc_lt_last i).ne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/CornerDeterminantCounts/MulVecMemHeadColsU.lean:346:0: automatically included section variable(s) unused in theorem `Formalism.L2.SG.LocalCountModules.UnitaryGroupMassFormula.LocCntUL.mk_sub_extL`:
+  hY₁
+  hal₁
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
+  omit hY₁ hal₁ in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RedMLevJ.lean:24:0: automatically included section variable(s) unused in theorem `GlobalTheory.Mem.Col2.TC.LevJRed.mat_mul`:
-  [NumberField E]
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/CornerDeterminantCounts/MulVecMemHeadColsU.lean:376:2: `LinearEquiv.ofLinear` has been deprecated: Use `LinearEquiv.ofLinearMap` instead
+✔ [117481/117594] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalGluing.LocGlueOf (4.7s)
+✔ [117482/117594] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.GlueFwdOf (8.1s)
+✔ [117483/117594] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.SharpSpanCounting.OmPMemSpan (6.1s)
+✔ [117484/117594] Built Formalism.PeriodIntegrals.OrbitalBoundsConclusion.LocGlue (4.7s)
+✔ [117485/117594] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.DeterminantUnitTheta.Development (5.5s)
+⚠ [117486/117594] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.LocCntUG (4.6s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/LocCntUG.lean:5:4: The namespace `LocCntUG` is duplicated in the declaration `Formalism.L2.SG.LocalCountModules.LocCntUG.LocCntUG`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+⚠ [117487/117594] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.UnitShiftSplitting.DetUpdateRowLastSingle (6.7s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/UnitShiftSplitting/DetUpdateRowLastSingle.lean:42:10: This simp argument is unused:
+  Matrix.updateRow_ne (Fin.castSucc_lt_last a).ne
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/UnitShiftSplitting/DetUpdateRowLastSingle.lean:61:27: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [cornerM, hj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/UnitShiftSplitting/DetUpdateRowLastSingle.lean:62:25: This simp argument is unused:
+  Matrix.updateRow_ne hi
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [cornerM, hi]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/UnitShiftSplitting/DetUpdateRowLastSingle.lean:89:23: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [cornerM, hi]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [117488/117594] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.CornerDeterminantCounts.DetEqEllUB (5.3s)
+✔ [117489/117594] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.UnitShiftSplitting.ThetaMbeG (4.0s)
+⚠ [117490/117633] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.PcBridgeB (16s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PcBridgeB.lean:47:23: Variable name `hZ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hZ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PcBridgeB.lean:110:0: automatically included section variable(s) unused in theorem `Formalism.L2.SG.Pf.PCount.BI.schur_M`:
+  hbe
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
+  omit hbe in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [117221/117286] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StepBeforeClNonempty (9.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/StepBeforeClNonempty.lean:32:2: Try this: 
-  haveI̵
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PcBridgeB.lean:276:19: This simp argument is unused:
+  Subring.smul_def
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: Omit it from the simp argument list.
+  [apply] simp [toE]
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [117222/117288] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReGLMemLevelVL (9.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ReGLMemLevelVL.lean:30:0: automatically included section variable(s) unused in theorem `GlobalTheory.Mem.Col2.TwistLevel.reGL_mem_UPts`:
-  [NumberField F]
-  [NumberField E]
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PcBridgeB.lean:314:19: This simp argument is unused:
+  Subring.smul_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [toE]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PcBridgeB.lean:406:8: `Matrix.det_of_lowerTriangular` has been deprecated: Use `Matrix.det_of_isLowerTriangular` instead
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PcBridgeB.lean:409:8: `Matrix.det_of_upperTriangular` has been deprecated: Use `Matrix.det_of_isUpperTriangular` instead
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PcBridgeB.lean:412:8: `Matrix.det_of_lowerTriangular` has been deprecated: Use `Matrix.det_of_isLowerTriangular` instead
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PcBridgeB.lean:416:8: `Matrix.det_of_upperTriangular` has been deprecated: Use `Matrix.det_of_isUpperTriangular` instead
+⚠ [117491/117633] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.SharpSpanCounting.DlRSwapZero (6.0s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/SharpSpanCounting/DlRSwapZero.lean:61:0: automatically included section variable(s) unused in theorem `Formalism.L2.SG.LocalCountModules.LocCntCommon.span_swap`:
+  [TopologicalSpace E]
+  [MeasurableSpace E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] [NumberField E] in theorem ...
+  omit [TopologicalSpace E] [MeasurableSpace E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ReGLMemLevelVL.lean:147:0: Definition `GlobalTheory.Mem.Col2.TwistLevel.actOfRed` of class type is semireducible. Most type class instances should be instance-reducible, so consider marking this
-definition with `@[instance_reducible]`. If it is intentionally semireducible, this warning can be disabled with `set_option warn.classDefReducibility false`.
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ReGLMemLevelVL.lean:169:4: Try this: 
-  haveI̵
+⚠ [117492/117652] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.ThetaModuleTransport.HeadColumnCoordinates.DeterminantUnitTheta.DetAddCor (6.4s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/DeterminantUnitTheta/DetAddCor.lean:19:23: This simp argument is unused:
+  Pi.single_apply
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: Omit it from the simp argument list.
+  [apply] simp [cor, hb]
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [117223/117288] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeanCountPrimitiveSublatticesOverGenusStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/MeanCountPrimitiveSublatticesOverGenusStatement.lean:11:54: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/DeterminantUnitTheta/DetAddCor.lean:20:21: This simp argument is unused:
+  Matrix.updateRow_ne ha
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/MeanCountPrimitiveSublatticesOverGenusStatement.lean:11:97: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp [cor, ha]
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/MeanCountPrimitiveSublatticesOverGenusStatement.lean:11:54: Unused tactic linter: `exact GlobalTheory.Mass.PrimMeanRow.main` does nothing
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/ThetaModuleTransport/HeadColumnCoordinates/DeterminantUnitTheta/DetAddCor.lean:27:32: This simp argument is unused:
+  Matrix.updateRow_ne (Fin.castSucc_lt_last a).ne
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/MeanCountPrimitiveSublatticesOverGenusStatement.lean:11:97: Unused tactic linter: `(intros; apply GlobalTheory.Mass.PrimMeanRow.main <;> assumption)` does nothing
+Hint: Omit it from the simp argument list.
+  [apply] simp [Fin.succAbove_last]
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [117224/117288] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeanPrimitiveCorankOneSublatticesBoundStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/MeanPrimitiveCorankOneSublatticesBoundStatement.lean:11:60: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/MeanPrimitiveCorankOneSublatticesBoundStatement.lean:11:109: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/MeanPrimitiveCorankOneSublatticesBoundStatement.lean:11:60: Unused tactic linter: `exact GlobalTheory.Mass.PrimMeanCorankOne.main` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/MeanPrimitiveCorankOneSublatticesBoundStatement.lean:11:109: Unused tactic linter: `(intros; apply GlobalTheory.Mass.PrimMeanCorankOne.main <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [117225/117288] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.VolEqMassSelfDualRankGeTwo (6.3s)
-✔ [117226/117288] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChartLocalGroupContainsPrincipalCongruence (15s)
-✔ [117227/117288] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RetieVolTieGAndCdScaleTie (5.0s)
-⚠ [117228/117288] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.VolumeNegativeDefiniteEqOpposite (7.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/VolumeNegativeDefiniteEqOpposite.lean:21:21: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/VolumeNegativeDefiniteEqOpposite.lean:23:43: try 'simp' instead of 'simpa'
-
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/VolumeNegativeDefiniteEqOpposite.lean:25:21: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/VolumeNegativeDefiniteEqOpposite.lean:42:41: try 'simp' instead of 'simpa'
-
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/VolumeNegativeDefiniteEqOpposite.lean:42:86: try 'simp' instead of 'simpa'
-
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/VolumeNegativeDefiniteEqOpposite.lean:92:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/VolumeNegativeDefiniteEqOpposite.lean:93:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/VolumeNegativeDefiniteEqOpposite.lean:94:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/VolumeNegativeDefiniteEqOpposite.lean:95:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/VolumeNegativeDefiniteEqOpposite.lean:96:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/VolumeNegativeDefiniteEqOpposite.lean:97:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [117229/117288] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ClassNumberFiniteAndGenusMass (5.1s)
-✔ [117230/117288] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FormsMapAtEveryTrueColumnMember (6.4s)
-✔ [117231/117288] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TwistedChainEvaluationRationalIntegralBundlePoin (6.0s)
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
