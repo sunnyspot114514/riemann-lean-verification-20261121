@@ -1,17 +1,10 @@
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaConstantsPrimitiveAtUniformisedTraitStatement.lean:13:93: Unused tactic linter: `(intros; apply GlobalTheory.UMin.PrimTrait.main <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsAffineOpenFiniteTypeIntOfModelStatement.lean:18:137: Unused tactic linter: `(intros;
+  apply GlobalTheory.RatModel.exists_affineOpen_finiteType_int <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [52262/52359] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaSymmetricFunctionsMemNormalDomain (7.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaSymmetricFunctionsMemNormalDomain.lean:20:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaSymmetricFunctionsMemNormalDomain.lean:21:2: Try this: 
+⚠ [52823/52895] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.TauCoordMulSq (8.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TauCoordMulSq.lean:73:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -19,31 +12,16 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaSymmetricFunctionsMemNormalDomain.lean:23:2: Try this: 
-  letI̵
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TauCoordMulSq.lean:44:8: Overlapping instance parameters in `main`:
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+⚠️ `[IsDomain R]` and `[IsLocalRing R]` each imply `[Nontrivial R]`.
+💡️ Of these, `[IsDomain R]` and `[IsLocalRing R]` may be removed.
+⚠️ `[IsDomain V]` and `[IsLocalRing V]` each imply `[Nontrivial V]`.
+💡️ Of these, `[IsDomain V]` and `[IsLocalRing V]` may be removed.
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [52263/52359] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuad (8.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsQuad.lean:44:17: This simp argument is unused:
-  Finsupp.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [co, h, Ne.symm h]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsQuad.lean:44:39: This simp argument is unused:
-  Ne.symm h
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [co, h, Finsupp.single_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [52264/52360] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaConstantsListedFiniteGaloisExtension (8.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaConstantsListedFiniteGaloisExtension.lean:32:2: Try this: 
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+⚠ [52824/52896] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IInfIzumiSmallValueIdealMapLeSpan (17s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IInfIzumiSmallValueIdealMapLeSpan.lean:36:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -51,7 +29,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaConstantsListedFiniteGaloisExtension.lean:61:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IInfIzumiSmallValueIdealMapLeSpan.lean:43:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -59,8 +37,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [52265/52360] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsIntegralAppOfUniversallyClosed (9.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsIntegralAppOfUniversallyClosed.lean:77:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IInfIzumiSmallValueIdealMapLeSpan.lean:44:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -68,7 +45,14 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsIntegralAppOfUniversallyClosed.lean:78:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IInfIzumiSmallValueIdealMapLeSpan.lean:103:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IInfIzumiSmallValueIdealMapLeSpan.lean:115:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -76,7 +60,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsIntegralAppOfUniversallyClosed.lean:83:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IInfIzumiSmallValueIdealMapLeSpan.lean:116:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -84,7 +68,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsIntegralAppOfUniversallyClosed.lean:84:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IInfIzumiSmallValueIdealMapLeSpan.lean:117:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -92,7 +76,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsIntegralAppOfUniversallyClosed.lean:90:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IInfIzumiSmallValueIdealMapLeSpan.lean:118:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -100,7 +84,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsIntegralAppOfUniversallyClosed.lean:91:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IInfIzumiSmallValueIdealMapLeSpan.lean:119:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -108,7 +92,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsIntegralAppOfUniversallyClosed.lean:97:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IInfIzumiSmallValueIdealMapLeSpan.lean:122:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -116,7 +100,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsIntegralAppOfUniversallyClosed.lean:98:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IInfIzumiSmallValueIdealMapLeSpan.lean:123:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -124,7 +108,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsIntegralAppOfUniversallyClosed.lean:99:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IInfIzumiSmallValueIdealMapLeSpan.lean:128:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -132,7 +116,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsIntegralAppOfUniversallyClosed.lean:100:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IInfIzumiSmallValueIdealMapLeSpan.lean:137:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -140,7 +124,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsIntegralAppOfUniversallyClosed.lean:101:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IInfIzumiSmallValueIdealMapLeSpan.lean:141:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -148,13 +132,29 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsIntegralAppOfUniversallyClosed.lean:102:2: Try this: 
-  haveI̵
+⚠ [52825/52896] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.StalkNoetherianPadicImageFiniteExtensionStatement (7.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/StalkNoetherianPadicImageFiniteExtensionStatement.lean:18:66: this tactic is never executed
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/StalkNoetherianPadicImageFiniteExtensionStatement.lean:18:121: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [52266/52360] Built Development.AbelianVarietyTheory.BlockTheory.CMModuli.CubicWedgeNormPeriods (6.1s)
-✔ [52267/52360] Built Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsBaseChangeIffKeyPB (6.1s)
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/StalkNoetherianPadicImageFiniteExtensionStatement.lean:18:66: Unused tactic linter: `exact GlobalTheory.stalk_noetherian_and_finite_image` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/StalkNoetherianPadicImageFiniteExtensionStatement.lean:18:121: Unused tactic linter: `(intros; apply GlobalTheory.stalk_noetherian_and_finite_image <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [52826/52896] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueStalkHomPadicAlgClosureValuationStatement (7.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsUniqueStalkHomPadicAlgClosureValuationStatement.lean:18:62: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsUniqueStalkHomPadicAlgClosureValuationStatement.lean:18:113: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsUniqueStalkHomPadicAlgClosureValuationStatement.lean:18:62: Unused tactic linter: `exact GlobalTheory.ValPt.exists_unique_stalk_hom` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsUniqueStalkHomPadicAlgClosureValuationStatement.lean:18:113: Unused tactic linter: `(intros; apply GlobalTheory.ValPt.exists_unique_stalk_hom <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
