@@ -1,160 +1,160 @@
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WachModuleInverseQuotientFreeFiniteCrystallineStatement.lean:8:136: Variable name `F` is not explicitly referenced.
+  omit [IsDomain O] [IsDiscreteValuationRing O] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/UnivPart.lean:84:0: automatically included section variable(s) unused in theorem `Formalism.ExponentWindows.le_saturation`:
+  [IsDomain O]
+  [IsDiscreteValuationRing O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDomain O] [IsDiscreteValuationRing O] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/UnivPart.lean:86:0: automatically included section variable(s) unused in theorem `Formalism.ExponentWindows.saturation_saturated`:
+  [IsDomain O]
+  [IsDiscreteValuationRing O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDomain O] [IsDiscreteValuationRing O] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/UnivPart.lean:106:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/UnivPart.lean:107:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/UnivPart.lean:106:8: Unused tactic linter: `exact Submodule.rank_quotient_add_rank _` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/UnivPart.lean:107:8: Unused tactic linter: `exact rank_quotient_add_rank_of_divisionRing _` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/UnivPart.lean:129:54: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/UnivPart.lean:141:20: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/UnivPart.lean:129:54: Unused tactic linter: `exact le_rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/UnivPart.lean:141:20: Unused tactic linter: `linarith` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/UnivPart.lean:152:29: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/UnivPart.lean:163:20: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/UnivPart.lean:152:29: Unused tactic linter: `exact le_rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/UnivPart.lean:163:20: Unused tactic linter: `linarith` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [122331/122373] Built Formalism.DistinguishedUnitIdeals.ExistsConstOfInvariantMod (8.6s)
+⚠ [122332/122373] Built Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.Descent (8.1s)
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/Descent.lean:28:11: `ENat.toNat_coe` has been deprecated: Use `ENat.toNat_natCast` instead
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/Descent.lean:58:8: `Polynomial.finset_sum_coeff` has been deprecated: Use `Polynomial.finsetSum_coeff` instead
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/Descent.lean:58:8: This simp argument is unused:
+  Polynomial.finset_sum_coeff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Polynomial.coeff_C_mul_X_pow, Fin.val_inj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/Descent.lean:58:37: This simp argument is unused:
+  Polynomial.coeff_C_mul_X_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Polynomial.finset_sum_coeff, Fin.val_inj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/Descent.lean:64:8: `Polynomial.finset_sum_coeff` has been deprecated: Use `Polynomial.finsetSum_coeff` instead
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/Descent.lean:172:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/Descent.lean:239:16: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [h, if_true] at h0
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [122333/122373] Built Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.AprimeCuts (4.8s)
+⚠ [122334/122373] Built Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.DUConst (6.5s)
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/DUConst.lean:15:0: automatically included section variable(s) unused in theorem `Formalism.ExponentWindows.map_distinguished_eq_X_pow`:
+  [IsDomain O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDomain O] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [122335/122373] Built Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.DescentEstimateDownUp (9.7s)
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/DescentEstimateDownUp.lean:143:0: automatically included section variable(s) unused in theorem `Formalism.ExponentWindows.extF_apply`:
+  [IsDomain O]
+  [IsDiscreteValuationRing O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDomain O] [IsDiscreteValuationRing O] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/DescentEstimateDownUp.lean:171:0: automatically included section variable(s) unused in theorem `Formalism.ExponentWindows.levelCond_of_C_smul`:
+  [IsDomain O]
+  [IsDiscreteValuationRing O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDomain O] [IsDiscreteValuationRing O] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/DescentEstimateDownUp.lean:185:0: automatically included section variable(s) unused in theorem `Formalism.ExponentWindows.levelCond_add_const`:
+  [IsDomain O]
+  [IsDiscreteValuationRing O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDomain O] [IsDiscreteValuationRing O] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/DescentEstimateDownUp.lean:365:0: automatically included section variable(s) unused in theorem `Formalism.ExponentWindows.II_of_decomp`:
+  [IsDomain O]
+  [IsDiscreteValuationRing O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDomain O] [IsDiscreteValuationRing O] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/DescentEstimateDownUp.lean:379:0: automatically included section variable(s) unused in theorem `Formalism.ExponentWindows.sub_unit_X_pow_mem`:
+  [IsDiscreteValuationRing O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDiscreteValuationRing O] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [122336/122373] Built Formalism.SharpRestriction.LevelLetterCocycles.LatticeFiniteCohomologyGeneratorBound (13s)
+warning: src/Formalism/SharpRestriction/LevelLetterCocycles/LatticeFiniteCohomologyGeneratorBound.lean:82:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.RamifiedCoefficientChains.len_step_of_ker`:
+  [IsDomain O]
+  [IsPrincipalIdealRing O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDomain O] [IsPrincipalIdealRing O] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/SharpRestriction/LevelLetterCocycles/LatticeFiniteCohomologyGeneratorBound.lean:301:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/SharpRestriction/LevelLetterCocycles/LatticeFiniteCohomologyGeneratorBound.lean:302:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/SharpRestriction/LevelLetterCocycles/LatticeFiniteCohomologyGeneratorBound.lean:310:61: Variable name `F` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _F
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WachModuleInverseQuotientFreeFiniteCrystallineStatement.lean:9:59: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WachModuleInverseQuotientFreeFiniteCrystallineStatement.lean:9:107: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WachModuleInverseQuotientFreeFiniteCrystallineStatement.lean:9:59: Unused tactic linter: `exact GlobalTheory.NL.QuoFree.quo_free_finite` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WachModuleInverseQuotientFreeFiniteCrystallineStatement.lean:9:107: Unused tactic linter: `(intros; apply GlobalTheory.NL.QuoFree.quo_free_finite <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [122184/122235] Built Formalism.AdmissibleDesigns.TheoremFromNormalizedOpenThree (30s)
-warning: src/Formalism/AdmissibleDesigns/TheoremFromNormalizedOpenThree.lean:105:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/AdmissibleDesigns/TheoremFromNormalizedOpenThree.lean:106:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/AdmissibleDesigns/TheoremFromNormalizedOpenThree.lean:107:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/AdmissibleDesigns/TheoremFromNormalizedOpenThree.lean:108:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/AdmissibleDesigns/TheoremFromNormalizedOpenThree.lean:109:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/AdmissibleDesigns/TheoremFromNormalizedOpenThree.lean:110:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/AdmissibleDesigns/TheoremFromNormalizedOpenThree.lean:111:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/AdmissibleDesigns/TheoremFromNormalizedOpenThree.lean:112:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/AdmissibleDesigns/TheoremFromNormalizedOpenThree.lean:113:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [122185/122235] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemWachNIffExpansion (33s)
-⚠ [122186/122239] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CrystallineLatticeHodgeTateJumpsFinite (31s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CrystallineLatticeHodgeTateJumpsFinite.lean:23:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CrystallineLatticeHodgeTateJumpsFinite.lean:66:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CrystallineLatticeHodgeTateJumpsFinite.lean:15:58: Variable name `HW` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _HW
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CrystallineLatticeHodgeTateJumpsFinite.lean:16:21: Variable name `h` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _h
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [122187/122239] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsWeakTopologyWachImageIsClosedStatement (22s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsWeakTopologyWachImageIsClosedStatement.lean:8:57: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsWeakTopologyWachImageIsClosedStatement.lean:8:103: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsWeakTopologyWachImageIsClosedStatement.lean:8:57: Unused tactic linter: `exact GlobalTheory.WeakClosedX.jD_XN_closed` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsWeakTopologyWachImageIsClosedStatement.lean:8:103: Unused tactic linter: `(intros; apply GlobalTheory.WeakClosedX.jD_XN_closed <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [122188/122239] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.H1fClassFromWachPairStatement (64s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/H1fClassFromWachPairStatement.lean:7:279: Variable name `E` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _E
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/H1fClassFromWachPairStatement.lean:7:312: Variable name `C` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _C
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/H1fClassFromWachPairStatement.lean:8:51: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/H1fClassFromWachPairStatement.lean:8:91: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/H1fClassFromWachPairStatement.lean:8:51: Unused tactic linter: `exact GlobalTheory.NL.ExtClassKs.main` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/H1fClassFromWachPairStatement.lean:8:91: Unused tactic linter: `(intros; apply GlobalTheory.NL.ExtClassKs.main <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [122189/122239] Built Formalism.AdmissibleDesigns.FirstBlockColumnCondition (35s)
