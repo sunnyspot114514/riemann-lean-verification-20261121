@@ -1,160 +1,160 @@
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex E] in theorem ...
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/PoissonCutoffAlgebra.lean:63:59: This simp argument is unused:
-  Pi.single_apply
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [hj]
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [68825/68888] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalEqTwistNormalisedStatement (5.5s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CuspidalEqTwistNormalisedStatement.lean:7:82: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/PoissonCutoffAlgebra.lean:85:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CuspidalEqTwistNormalisedStatement.lean:7:153: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CuspidalEqTwistNormalisedStatement.lean:7:82: Unused tactic linter: `exact GlobalTheory.CompanionTheory.TwistNorm.exists_twist_normalised` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CuspidalEqTwistNormalisedStatement.lean:7:153: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.TwistNorm.exists_twist_normalised <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [68826/68890] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothConjugateInverseMem (6.6s)
+✔ [68827/68890] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.FactTypePrime (10s)
+⚠ [68828/68892] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.WeierstrassPMulCongrFrobeniusOfPrimeNormStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/WeierstrassPMulCongrFrobeniusOfPrimeNormStatement.lean:9:87: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/WeierstrassPMulCongrFrobeniusOfPrimeNormStatement.lean:9:163: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/WeierstrassPMulCongrFrobeniusOfPrimeNormStatement.lean:9:87: Unused tactic linter: `exact GlobalTheory.EisensteinCongruence.weierstrassP_mul_congr_pow_of_pos` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/WeierstrassPMulCongrFrobeniusOfPrimeNormStatement.lean:9:163: Unused tactic linter: `(intros;
+  apply GlobalTheory.EisensteinCongruence.weierstrassP_mul_congr_pow_of_pos <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [68829/68895] Built Development.AbelianVarietyTheory.Proofs.UnitaryExistence.PeriodSpacesFixedByCmCurveTorsionFixingAutomorphStatement (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/PeriodSpacesFixedByCmCurveTorsionFixingAutomorphStatement.lean:10:75: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/PeriodSpacesFixedByCmCurveTorsionFixingAutomorphStatement.lean:10:139: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/PeriodSpacesFixedByCmCurveTorsionFixingAutomorphStatement.lean:10:75: Unused tactic linter: `exact GlobalTheory.CompRat.AnyLevel.permutes_id_of_fixesCurve` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/PeriodSpacesFixedByCmCurveTorsionFixingAutomorphStatement.lean:10:139: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompRat.AnyLevel.permutes_id_of_fixesCurve <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [68830/68897] Built Development.AbelianVarietyTheory.Proofs.HeightProofs.WeberInvariantCongruencesImaginaryQuadratic (16s)
+⚠ [68831/68897] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsRestTail (5.3s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ImportsRestTail.lean:4:20: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ImportsRestTail.lean:4:37: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ImportsRestTail.lean:5:7: Variable name `inst_4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ImportsRestTail.lean:5:33: Variable name `inst_5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [68832/68897] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelProductIndex.Development (8.0s)
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LevelProductIndex/Development.lean:69:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LevelProductIndex/Development.lean:88:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LevelProductIndex/Development.lean:117:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LevelProductIndex/Development.lean:139:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LevelProductIndex/Development.lean:140:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [68833/68897] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.LeafTW1OfAllConjugatesGood (25s)
+✔ [68834/68897] Built Development.AbelianVarietyTheory.Definitions.GaloisGeometry.PolarizedPairLineIff (10s)
+✔ [68835/68898] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DefiniteUnitaryAdmissibleFiniteMultiplicity (35s)
+⚠ [68836/68898] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PairVrGramPRatPosDef (5.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/PairVrGramPRatPosDef.lean:54:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [68837/68898] Built Formalism.PadicSubsetSums.StableGradedCounts.DegreeOneSplit (5.5s)
+⚠ [68838/68898] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinitePartAtOwnWeightNeBot (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FinitePartAtOwnWeightNeBot.lean:70:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FinitePartAtOwnWeightNeBot.lean:109:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
 If you'd rather continue using `push_neg` in your project, you can implement it as follows:
 ```
 open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/PoissonCutoffAlgebra.lean:132:0: automatically included section variable(s) unused in theorem `PositivityTheory.AdelicQuotientData.PoissonCutoffAlgebra.alg_zero`:
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex E] in theorem ...
+⚠ [68839/68898] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothConjugateInverseMemStatement (5.2s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SmoothConjugateInverseMemStatement.lean:7:72: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/PoissonCutoffAlgebra.lean:198:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SmoothConjugateInverseMemStatement.lean:7:133: this tactic is never executed
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SmoothConjugateInverseMemStatement.lean:7:72: Unused tactic linter: `exact GlobalTheory.CompanionTheory.DualSm.conj_invA_mem_Sm` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/PoissonCutoffAlgebra.lean:213:17: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-✔ [68201/68312] Built Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.HeightDropSingle (7.8s)
-✔ [68202/68312] Built Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.KsecOf (6.1s)
-✔ [68203/68312] Built Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.NormAverageBound (7.0s)
-✔ [68204/68312] Built Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.LastRowIntegral (8.9s)
-✔ [68205/68312] Built Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.LevelScalarAction (6.4s)
-✔ [68206/68312] Built Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.TransformEmbeddingBlocks (9.8s)
-⚠ [68207/68312] Built Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.DminNonneg (7.9s)
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/DminNonneg.lean:52:12: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SmoothConjugateInverseMemStatement.lean:7:133: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.DualSm.conj_invA_mem_Sm <;> assumption)` does nothing
 
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/DminNonneg.lean:52:76: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/DminNonneg.lean:54:40: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-✔ [68208/68312] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StandardModuleProperties (282s)
-✔ [68209/68312] Built Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.BlockMirrorMap (7.2s)
-⚠ [68210/68312] Built Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.KernelEqualityFirstOf (16s)
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/KernelEqualityFirstOf.lean:35:26: Variable name `hP2` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hP2
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/KernelEqualityFirstOf.lean:37:30: Variable name `hinv` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hinv
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/KernelEqualityFirstOf.lean:150:0: automatically included section variable(s) unused in theorem `PositivityTheory.AdelicQuotientData.PKEq1.pos_one_map`:
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/KernelEqualityFirstOf.lean:177:16: Variable name `hG0` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hG0
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/KernelEqualityFirstOf.lean:238:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/KernelEqualityFirstOf.lean:233:0: automatically included section variable(s) unused in theorem `PositivityTheory.AdelicQuotientData.PKEq1.law_memO`:
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/KernelEqualityFirstOf.lean:253:0: automatically included section variable(s) unused in theorem `PositivityTheory.AdelicQuotientData.PKEq1.law_row`:
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/KernelEqualityFirstOf.lean:272:0: automatically included section variable(s) unused in theorem `PositivityTheory.AdelicQuotientData.PKEq1.law_int`:
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/KernelEqualityFirstOf.lean:281:0: automatically included section variable(s) unused in theorem `PositivityTheory.AdelicQuotientData.PKEq1.law_nonneg`:
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/KernelEqualityFirstOf.lean:320:0: automatically included section variable(s) unused in theorem `PositivityTheory.AdelicQuotientData.PKEq1.law_sph`:
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/KernelEqualityFirstOf.lean:344:0: automatically included section variable(s) unused in theorem `PositivityTheory.AdelicQuotientData.PKEq1.law_loc`:
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/KernelEqualityFirstOf.lean:348:39: Variable name `hG5` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hG5
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/KernelEqualityFirstOf.lean:348:84: Variable name `hC0` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hC0
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/KernelEqualityFirstOf.lean:430:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/KernelEqualityFirstOf.lean:425:0: automatically included section variable(s) unused in theorem `PositivityTheory.AdelicQuotientData.PKEq1.sph_memO`:
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/KernelEqualityFirstOf.lean:434:0: automatically included section variable(s) unused in theorem `PositivityTheory.AdelicQuotientData.PKEq1.sph_lr`:
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/KernelEqualityFirstOf.lean:442:0: automatically included section variable(s) unused in theorem `PositivityTheory.AdelicQuotientData.PKEq1.sph_rowint`:
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/KernelEqualityFirstOf.lean:558:2: Try this: intro hG0 hG5 hD0 hN0 hP2 hP3 hC0 hG5t hK1 hK7 hK8 hK8a hKU E _ _ _ k hk ψ hψ S hS α α' u φ' hsec
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
