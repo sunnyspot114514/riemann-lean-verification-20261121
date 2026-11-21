@@ -3,23 +3,23 @@
   "source_commit_requested": "7cbf7a0c32fca1badf05931879a37c3f8a2b03b4",
   "started_utc": "2026-11-21T06:01:58+00:00",
   "state": "running",
-  "runner_stage": "bootstrap",
-  "bootstrap_exit_code": null,
+  "runner_stage": "driver",
+  "bootstrap_exit_code": 0,
   "driver_exit_code": null,
   "verification_passed": false,
   "verification_runtime": "loader-patched",
   "resumed_from_run_id": "20261120T184814Z-ebb611be",
   "resume_mode": "incremental",
-  "updated_utc": "2026-11-21T06:02:11+00:00",
+  "updated_utc": "2026-11-21T06:02:29+00:00",
   "resources": {
-    "sampled_utc": "2026-11-21T06:02:11+00:00",
-    "cgroup_memory_current_bytes": 40407420928,
+    "sampled_utc": "2026-11-21T06:02:29+00:00",
+    "cgroup_memory_current_bytes": 41150353408,
     "cgroup_memory_peak_since_creation_bytes": 64424509440,
     "cgroup_memory_stat_bytes": {
-      "total_rss": 323321856,
-      "total_cache": 39379009536,
-      "total_mapped_file": 35278848,
-      "total_inactive_file": 9167929344
+      "total_rss": 297160704,
+      "total_cache": 40004026368,
+      "total_mapped_file": 10002432,
+      "total_inactive_file": 9575866368
     },
     "cgroup_memory_failcnt": 0,
     "cgroup_memory_oom_control": {
@@ -27,12 +27,12 @@
       "under_oom": 0,
       "oom_kill": 0
     },
-    "cgroup_cpu_usage_seconds": 643237.496242752,
-    "sampled_memory_peak_this_runner_bytes": 40407420928,
-    "cgroup_cpu_seconds_since_runner_start": 14.191232207929716,
-    "disk_free_bytes": 468310487040,
+    "cgroup_cpu_usage_seconds": 643257.370781222,
+    "sampled_memory_peak_this_runner_bytes": 41150353408,
+    "cgroup_cpu_seconds_since_runner_start": 34.06577067798935,
+    "disk_free_bytes": 468310315008,
     "disk_total_bytes": 536870912000,
-    "disk_free_inodes": 729384370
+    "disk_free_inodes": 729384330
   },
   "phases": {
     "source-prefetch": {
@@ -93,12 +93,42 @@
     },
     "bootstrap": {
       "run_directory_name": "20261121T060158Z-475652",
-      "status": "running:source-fetch",
+      "status": "complete:toolchain,source,dependencies,mathlib-cache,statements,source-unchanged",
       "stages": {
+        "bootstrap": {
+          "exit_code": 0,
+          "start_utc": null,
+          "end_utc": "2026-11-21T06:02:26Z"
+        },
+        "dependency-fetch": {
+          "exit_code": 0,
+          "start_utc": "2026-11-21T06:02:12Z",
+          "end_utc": "2026-11-21T06:02:13Z"
+        },
+        "mathlib-cache": {
+          "exit_code": 0,
+          "start_utc": "2026-11-21T06:02:13Z",
+          "end_utc": "2026-11-21T06:02:22Z"
+        },
         "preflight": {
           "exit_code": 0,
           "start_utc": "2026-11-21T06:01:58Z",
           "end_utc": "2026-11-21T06:01:58Z"
+        },
+        "source-fetch": {
+          "exit_code": 0,
+          "start_utc": "2026-11-21T06:02:11Z",
+          "end_utc": "2026-11-21T06:02:12Z"
+        },
+        "source-integrity": {
+          "exit_code": 0,
+          "start_utc": "2026-11-21T06:02:26Z",
+          "end_utc": "2026-11-21T06:02:26Z"
+        },
+        "statements-sanity": {
+          "exit_code": 0,
+          "start_utc": "2026-11-21T06:02:22Z",
+          "end_utc": "2026-11-21T06:02:26Z"
         },
         "toolchain-download": {
           "exit_code": 0,
