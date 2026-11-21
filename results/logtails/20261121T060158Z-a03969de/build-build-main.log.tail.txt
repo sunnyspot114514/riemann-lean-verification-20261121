@@ -1,30 +1,22 @@
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsFineSubgroupMovesAtLattice.lean:283:13: This simp argument is unused:
-  map_mul
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/UnitaryImageStandardLatticeEqSelfDualLatticeStatement.lean:8:101: Unused tactic linter: `(intros; apply GlobalTheory.StdLatImg.eq_img_lamStd <;> assumption)` does nothing
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [map_add, map_one, ← ht, ← hn] at hv'
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsFineSubgroupMovesAtLattice.lean:283:22: This simp argument is unused:
-  map_add
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [map_mul, map_one, ← ht, ← hn] at hv'
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsFineSubgroupMovesAtLattice.lean:283:31: This simp argument is unused:
-  map_one
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [map_mul, map_add, ← ht, ← hn] at hv'
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsFineSubgroupMovesAtLattice.lean:316:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [109055/109088] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDatumOfTermReadOnLattice (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermitianDatumOfTermReadOnLattice.lean:42:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermitianDatumOfTermReadOnLattice.lean:47:8: `Matrix.det_of_lowerTriangular` has been deprecated: Use `Matrix.det_of_isLowerTriangular` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermitianDatumOfTermReadOnLattice.lean:51:8: `Matrix.det_of_upperTriangular` has been deprecated: Use `Matrix.det_of_isUpperTriangular` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermitianDatumOfTermReadOnLattice.lean:55:22: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermitianDatumOfTermReadOnLattice.lean:57:22: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermitianDatumOfTermReadOnLattice.lean:169:26: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermitianDatumOfTermReadOnLattice.lean:272:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -32,57 +24,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsFineSubgroupMovesAtLattice.lean:369:0: automatically included section variable(s) unused in theorem `GlobalTheory.MoveFine.sOf_tr`:
-  [IsNonarchimedeanLocalField F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsNonarchimedeanLocalField F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsFineSubgroupMovesAtLattice.lean:392:0: automatically included section variable(s) unused in theorem `GlobalTheory.MoveFine.p_unit`:
-  [IsNonarchimedeanLocalField F]
-  [CharZero F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsNonarchimedeanLocalField F] [CharZero F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [108690/108738] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.IndexMeasureIntegralEqMeanOverRepresentatives (5.4s)
-⚠ [108691/108742] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianMovePreservesFrameLatticeLevels (8.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermitianMovePreservesFrameLatticeLevels.lean:20:0: automatically included section variable(s) unused in theorem `GlobalTheory.HL.MoveSame.transfer`:
-  [TopologicalSpace E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [TopologicalSpace E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [108692/108742] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDefectClassMemTraceFirstFrameSpan (8.5s)
-✔ [108693/108742] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianTermCountFrameClassLe (5.9s)
-⚠ [108694/108742] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.SelfDualHermitianLatticeMassBoundsStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/SelfDualHermitianLatticeMassBoundsStatement.lean:11:54: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/SelfDualHermitianLatticeMassBoundsStatement.lean:11:97: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/SelfDualHermitianLatticeMassBoundsStatement.lean:11:54: Unused tactic linter: `exact GlobalTheory.HL.Unfold.mass_bounds` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/SelfDualHermitianLatticeMassBoundsStatement.lean:11:97: Unused tactic linter: `(intros; apply GlobalTheory.HL.Unfold.mass_bounds <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [108695/108742] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.IndexMeasureIntegralLinearPositiveNormBoundStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexMeasureIntegralLinearPositiveNormBoundStatement.lean:8:48: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexMeasureIntegralLinearPositiveNormBoundStatement.lean:8:85: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexMeasureIntegralLinearPositiveNormBoundStatement.lean:8:48: Unused tactic linter: `exact GlobalTheory.IdxInt.Lin.main` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexMeasureIntegralLinearPositiveNormBoundStatement.lean:8:85: Unused tactic linter: `(intros; apply GlobalTheory.IdxInt.Lin.main <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [108696/108742] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsPowSmulMemOfIsLat (6.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsPowSmulMemOfIsLat.lean:18:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermitianDatumOfTermReadOnLattice.lean:273:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -90,7 +32,41 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsPowSmulMemOfIsLat.lean:19:2: Try this: 
+✔ [109056/109088] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.PartnerCountP (5.4s)
+⚠ [109057/109103] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalClassLatticesIffRationalClassLocalFramePStatement (5.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/RationalClassLatticesIffRationalClassLocalFramePStatement.lean:10:121: Variable name `Y` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _Y
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/RationalClassLatticesIffRationalClassLocalFramePStatement.lean:11:52: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/RationalClassLatticesIffRationalClassLocalFramePStatement.lean:11:93: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/RationalClassLatticesIffRationalClassLocalFramePStatement.lean:11:52: Unused tactic linter: `exact GlobalTheory.Unfold.ratCls_agree` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/RationalClassLatticesIffRationalClassLocalFramePStatement.lean:11:93: Unused tactic linter: `(intros; apply GlobalTheory.Unfold.ratCls_agree <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [109058/109103] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.FrameGlobalPatching (7.4s)
+⚠ [109059/109103] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.EmbeddingIntegerAlgebraMap (9.9s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/EmbeddingIntegerAlgebraMap.lean:89:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/EmbeddingIntegerAlgebraMap.lean:90:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/EmbeddingIntegerAlgebraMap.lean:89:4: Unused tactic linter: `simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/EmbeddingIntegerAlgebraMap.lean:90:4: Unused tactic linter: `exact (IsScalarTower.algebraMap_apply (𝓞 D.host.F) D.host.F D.host.E t).symm` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/EmbeddingIntegerAlgebraMap.lean:121:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -98,7 +74,8 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsPowSmulMemOfIsLat.lean:20:2: Try this: 
+⚠ [109060/109103] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.IotaFIntMem (7.0s)
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/IotaFIntMem.lean:18:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -106,55 +83,78 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [108697/108744] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.IndexIntegrableShareTopLevelVectorsStatement (4.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexIntegrableShareTopLevelVectorsStatement.lean:12:51: this tactic is never executed
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/IotaFIntMem.lean:26:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/IotaFIntMem.lean:62:41: `continuous_mul_right` has been deprecated: Use `continuous_mul_const` instead
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/IotaFIntMem.lean:35:6: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexIntegrableShareTopLevelVectorsStatement.lean:12:91: this tactic is never executed
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/IotaFIntMem.lean:56:8: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexIntegrableShareTopLevelVectorsStatement.lean:12:51: Unused tactic linter: `exact GlobalTheory.TopLevelShare.main` does nothing
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/IotaFIntMem.lean:57:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/IotaFIntMem.lean:35:6: Unused tactic linter: `exact (p.valuation_lt_one_iff_mem (K := F) π).2 hπp` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexIntegrableShareTopLevelVectorsStatement.lean:12:91: Unused tactic linter: `(intros; apply GlobalTheory.TopLevelShare.main <;> assumption)` does nothing
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/IotaFIntMem.lean:56:8: Unused tactic linter: `exact mul_le_mul_right' h1 _` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [108698/108744] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFineSubgroupMovesAtLatticeStatement (4.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsFineSubgroupMovesAtLatticeStatement.lean:12:46: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsFineSubgroupMovesAtLatticeStatement.lean:12:81: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsFineSubgroupMovesAtLatticeStatement.lean:12:46: Unused tactic linter: `exact GlobalTheory.MoveFine.main` does nothing
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/IotaFIntMem.lean:57:8: Unused tactic linter: `exact mul_le_mul_of_nonneg_left h1 (zero_le _)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsFineSubgroupMovesAtLatticeStatement.lean:12:81: Unused tactic linter: `(intros; apply GlobalTheory.MoveFine.main <;> assumption)` does nothing
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/IotaFIntMem.lean:95:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [108699/108747] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.IndexMeasureIntegralEqMeanOverRepresentativesStatement (4.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexMeasureIntegralEqMeanOverRepresentativesStatement.lean:8:57: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/IotaFIntMem.lean:103:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/IotaFIntMem.lean:113:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/IotaFIntMem.lean:126:9: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexMeasureIntegralEqMeanOverRepresentativesStatement.lean:8:103: this tactic is never executed
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/IotaFIntMem.lean:127:9: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexMeasureIntegralEqMeanOverRepresentativesStatement.lean:8:57: Unused tactic linter: `exact GlobalTheory.IdxInt.cint_eq_mean_reps` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexMeasureIntegralEqMeanOverRepresentativesStatement.lean:8:103: Unused tactic linter: `(intros; apply GlobalTheory.IdxInt.cint_eq_mean_reps <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [108700/108761] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianMovePreservesFrameLatticeLevelsStatement (4.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermitianMovePreservesFrameLatticeLevelsStatement.lean:10:54: this tactic is never executed
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/IotaFIntMem.lean:128:9: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermitianMovePreservesFrameLatticeLevelsStatement.lean:10:97: this tactic is never executed
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/IotaFIntMem.lean:129:9: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermitianMovePreservesFrameLatticeLevelsStatement.lean:10:54: Unused tactic linter: `exact GlobalTheory.HL.MoveSame.move_same` does nothing
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/IotaFIntMem.lean:126:9: Unused tactic linter: `refine ⟨y, hy0, ?_⟩` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermitianMovePreservesFrameLatticeLevelsStatement.lean:10:97: Unused tactic linter: `(intros; apply GlobalTheory.HL.MoveSame.move_same <;> assumption)` does nothing
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/IotaFIntMem.lean:127:9: Unused tactic linter: `rw [mul_comm]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/IotaFIntMem.lean:128:9: Unused tactic linter: `have hw' : IsIntegral ℤ w := hw` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/IotaFIntMem.lean:129:9: Unused tactic linter: `simpa [hyw] using hw'` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
