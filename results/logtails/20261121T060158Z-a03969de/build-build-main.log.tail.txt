@@ -1,48 +1,30 @@
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutJAPRCPDecompLie.lean:70:85: This simp argument is unused:
-  Matrix.diagonal_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Formalism.QuantumDeterminants.Hb, Ne.symm hj]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutJAPRCPDecompLie.lean:120:34: This simp argument is unused:
-  Fin.val_mk
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsFineSubgroupMovesAtLattice.lean:283:13: This simp argument is unused:
+  map_mul
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [wI, eI, Fin.ext_iff] at h
+  [apply] simp only [map_add, map_one, ← ht, ← hn] at hv'
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutJAPRCPDecompLie.lean:130:35: This simp argument is unused:
-  Fin.val_mk
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsFineSubgroupMovesAtLattice.lean:283:22: This simp argument is unused:
+  map_add
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [wI, esI, Fin.ext_iff] at h
+  [apply] simp only [map_mul, map_one, ← ht, ← hn] at hv'
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [108309/108419] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPRCPDecompPS (5.4s)
-warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutJAPRCPDecompPS.lean:20:47: This simp argument is unused:
-  Matrix.head_cons
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsFineSubgroupMovesAtLattice.lean:283:31: This simp argument is unused:
+  map_one
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [MvPolynomial.eval_sub, MvPolynomial.eval_mul, MvPolynomial.eval_X, MvPolynomial.eval_C,
-    Matrix.cons_val_zero, Matrix.cons_val_one, Complex.mul_conj]
+  [apply] simp only [map_mul, map_add, ← ht, ← hn] at hv'
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [108310/108419] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GramSchmidtFrames.GsFramesOfLoc (5.4s)
-✔ [108311/108419] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJfSSymbolW (5.4s)
-✔ [108312/108419] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPRCPPSCalc (10s)
-✔ [108313/108419] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPRAsm (11s)
-✔ [108314/108419] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPRCPDecompDer (8.6s)
-✔ [108315/108422] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJASSEntry (6.5s)
-⚠ [108316/108427] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPRTWNe (8.7s)
-warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutJAPRTWNe.lean:180:45: `ContinuousLinearMap.zero_apply` has been deprecated: Use `_root_.zero_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.zero_apply` to `_root_.zero_apply x`).
-✔ [108317/108437] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAGQQSSFBridge (5.0s)
-⚠ [108318/108439] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAGQQSSFKap (7.0s)
-warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutJAGQQSSFKap.lean:95:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsFineSubgroupMovesAtLattice.lean:316:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -50,111 +32,129 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [108319/108439] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GramSchmidtFrames.XiHermitianCofactorDet (7.4s)
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/GramSchmidtFrames/XiHermitianCofactorDet.lean:87:69: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/GramSchmidtFrames/XiHermitianCofactorDet.lean:87:69: Unused tactic linter: `(exfalso; apply hl; rw [← h3.2.2]; exact hj)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [108320/108439] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPRCPDecompNu (8.0s)
-✔ [108321/108441] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.HermSumRight (5.0s)
-✔ [108322/108446] Built CompanionTheory.AutomorphicTheory.ZuckermanCommutation.ZuckermanFunctors.ZuckDualTThrS (5.0s)
-✔ [108323/108446] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGradedRegFFM (11s)
-⚠ [108324/108446] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LineScalingNorm.ConstantOneMemNonvanishing (7.8s)
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LineScalingNorm/ConstantOneMemNonvanishing.lean:56:45: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LineScalingNorm/ConstantOneMemNonvanishing.lean:44:0: automatically included section variable(s) unused in theorem `Formalism.FourierDecayAlt.P.CutMP.JA.SSn.Rep.Core.TC.MC.SR.conj_back`:
-  [FiniteDimensional ℂ Wp]
-  [FiniteDimensional ℂ Wq]
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsFineSubgroupMovesAtLattice.lean:369:0: automatically included section variable(s) unused in theorem `GlobalTheory.MoveFine.sOf_tr`:
+  [IsNonarchimedeanLocalField F]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [FiniteDimensional ℂ Wp] [FiniteDimensional ℂ Wq] in theorem ...
+  omit [IsNonarchimedeanLocalField F] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LineScalingNorm/ConstantOneMemNonvanishing.lean:71:45: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LineScalingNorm/ConstantOneMemNonvanishing.lean:59:0: automatically included section variable(s) unused in theorem `Formalism.FourierDecayAlt.P.CutMP.JA.SSn.Rep.Core.TC.MC.SR.conj_fwd`:
-  [FiniteDimensional ℂ Wp]
-  [FiniteDimensional ℂ Wq]
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsFineSubgroupMovesAtLattice.lean:392:0: automatically included section variable(s) unused in theorem `GlobalTheory.MoveFine.p_unit`:
+  [IsNonarchimedeanLocalField F]
+  [CharZero F]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [FiniteDimensional ℂ Wp] [FiniteDimensional ℂ Wq] in theorem ...
+  omit [IsNonarchimedeanLocalField F] [CharZero F] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [108325/108446] Built CompanionTheory.AutomorphicTheory.RankOneTori.BeRankScale (6.3s)
-✔ [108326/108446] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GramSchmidtFrames.SMulVec (6.5s)
-⚠ [108327/108446] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAGQQSSFSS (16s)
-warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutJAGQQSSFSS.lean:307:6: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutJAGQQSSFSS.lean:307:6: Unused tactic linter: `(ext i j; simp [MA.kap, Matrix.diagonal_apply])` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutJAGQQSSFSS.lean:322:6: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutJAGQQSSFSS.lean:322:6: Unused tactic linter: `(ext i j; simp [MA.kap, Matrix.diagonal_apply])` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutJAGQQSSFSS.lean:396:10: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutJAGQQSSFSS.lean:397:10: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutJAGQQSSFSS.lean:396:10: Unused tactic linter: `simp [Algebra.algebraMap_eq_smul_one, star_smul]` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutJAGQQSSFSS.lean:397:10: Unused tactic linter: `(simp only [Algebra.algebraMap_eq_smul_one, star_smul, star_one]; rfl)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [108328/108449] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPRCPDecompDec (7.2s)
-warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutJAPRCPDecompDec.lean:137:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutJAPRCPDecompDec.lean:147:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutJAPRCPDecompDec.lean:154:0: automatically included section variable(s) unused in theorem `Formalism.FourierDecayAlt.P.CutMP.JA.SSn.Rep.Core.TC.PR.CP.Dc.plane_facts`:
-  h0
+✔ [108690/108738] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.IndexMeasureIntegralEqMeanOverRepresentatives (5.4s)
+⚠ [108691/108742] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianMovePreservesFrameLatticeLevels (8.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermitianMovePreservesFrameLatticeLevels.lean:20:0: automatically included section variable(s) unused in theorem `GlobalTheory.HL.MoveSame.transfer`:
+  [TopologicalSpace E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit h0 in theorem ...
+  omit [TopologicalSpace E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [108329/108449] Built CompanionTheory.AutomorphicTheory.RankOneTori.Factor (10s)
-warning: src/CompanionTheory/AutomorphicTheory/RankOneTori/Factor.lean:22:45: `ContinuousLinearMap.sum_apply` has been deprecated: Use `_root_.sum_apply` instead
+✔ [108692/108742] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDefectClassMemTraceFirstFrameSpan (8.5s)
+✔ [108693/108742] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianTermCountFrameClassLe (5.9s)
+⚠ [108694/108742] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.SelfDualHermitianLatticeMassBoundsStatement (5.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/SelfDualHermitianLatticeMassBoundsStatement.lean:11:54: this tactic is never executed
 
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `_root_.sum_apply x`).
-warning: src/CompanionTheory/AutomorphicTheory/RankOneTori/Factor.lean:57:10: `ofReal_norm_eq_enorm` has been deprecated: Use `ofReal_norm` instead
-warning: src/CompanionTheory/AutomorphicTheory/RankOneTori/Factor.lean:104:15: `ContinuousLinearMap.finset_sum_comp` has been deprecated: Use `ContinuousLinearMap.finsetSum_comp` instead
-warning: src/CompanionTheory/AutomorphicTheory/RankOneTori/Factor.lean:104:52: `ContinuousLinearMap.comp_finset_sum` has been deprecated: Use `ContinuousLinearMap.comp_finsetSum` instead
-✔ [108330/108449] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.FltZeroEq (6.6s)
-✔ [108331/108449] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.MultiplicityDescent.JScaleMoveB (6.4s)
-✔ [108332/108449] Built Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.OneBesselTor (6.9s)
-✔ [108333/108449] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.TransferSmoothOfRegularity (6.0s)
-⚠ [108334/108450] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LineScalingNorm.LineMove (6.4s)
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LineScalingNorm/LineMove.lean:66:49: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/SelfDualHermitianLatticeMassBoundsStatement.lean:11:97: this tactic is never executed
 
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
-✔ [108335/108450] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAGQQSSF (5.1s)
-⚠ [108336/108450] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LineScalingNorm.UpRelationSourceUnique (6.6s)
-warning: src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LineScalingNorm/UpRelationSourceUnique.lean:31:0: automatically included section variable(s) unused in theorem `Formalism.FourierDecayAlt.P.CutMP.JA.SSn.Rep.Core.TC.MC.SR.line_smul`:
-  [FiniteDimensional ℂ Wp]
-  [FiniteDimensional ℂ Wq]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [FiniteDimensional ℂ Wp] [FiniteDimensional ℂ Wq] in theorem ...
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/SelfDualHermitianLatticeMassBoundsStatement.lean:11:54: Unused tactic linter: `exact GlobalTheory.HL.Unfold.mass_bounds` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [108337/108450] Built Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GramSchmidtFrames.LocBCore (6.7s)
-✔ [108338/108450] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.SiegelWeilVolumes (6.7s)
-✔ [108339/108451] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJfSSymbolLevi (7.4s)
-✔ [108340/108452] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.StepPinExistsAndFormNGC (5.4s)
-✔ [108341/108452] Built Formalism.HermitianCurvature.HermitianCurvatureProofs.CutEllRegBridge (6.1s)
-⚠ [108342/108452] Built CompanionTheory.AutomorphicTheory.RankOneTori.NzTranslate (7.2s)
-warning: src/CompanionTheory/AutomorphicTheory/RankOneTori/NzTranslate.lean:19:0: automatically included section variable(s) unused in theorem `Formalism.MainStatements.RankOne.dsigW_conj`:
-  [CompleteSpace H]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [CompleteSpace H] in theorem ...
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/SelfDualHermitianLatticeMassBoundsStatement.lean:11:97: Unused tactic linter: `(intros; apply GlobalTheory.HL.Unfold.mass_bounds <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [108695/108742] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.IndexMeasureIntegralLinearPositiveNormBoundStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexMeasureIntegralLinearPositiveNormBoundStatement.lean:8:48: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexMeasureIntegralLinearPositiveNormBoundStatement.lean:8:85: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexMeasureIntegralLinearPositiveNormBoundStatement.lean:8:48: Unused tactic linter: `exact GlobalTheory.IdxInt.Lin.main` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexMeasureIntegralLinearPositiveNormBoundStatement.lean:8:85: Unused tactic linter: `(intros; apply GlobalTheory.IdxInt.Lin.main <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [108696/108742] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsPowSmulMemOfIsLat (6.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsPowSmulMemOfIsLat.lean:18:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsPowSmulMemOfIsLat.lean:19:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsPowSmulMemOfIsLat.lean:20:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [108697/108744] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.IndexIntegrableShareTopLevelVectorsStatement (4.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexIntegrableShareTopLevelVectorsStatement.lean:12:51: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexIntegrableShareTopLevelVectorsStatement.lean:12:91: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexIntegrableShareTopLevelVectorsStatement.lean:12:51: Unused tactic linter: `exact GlobalTheory.TopLevelShare.main` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexIntegrableShareTopLevelVectorsStatement.lean:12:91: Unused tactic linter: `(intros; apply GlobalTheory.TopLevelShare.main <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [108698/108744] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFineSubgroupMovesAtLatticeStatement (4.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsFineSubgroupMovesAtLatticeStatement.lean:12:46: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsFineSubgroupMovesAtLatticeStatement.lean:12:81: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsFineSubgroupMovesAtLatticeStatement.lean:12:46: Unused tactic linter: `exact GlobalTheory.MoveFine.main` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsFineSubgroupMovesAtLatticeStatement.lean:12:81: Unused tactic linter: `(intros; apply GlobalTheory.MoveFine.main <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [108699/108747] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.IndexMeasureIntegralEqMeanOverRepresentativesStatement (4.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexMeasureIntegralEqMeanOverRepresentativesStatement.lean:8:57: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexMeasureIntegralEqMeanOverRepresentativesStatement.lean:8:103: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexMeasureIntegralEqMeanOverRepresentativesStatement.lean:8:57: Unused tactic linter: `exact GlobalTheory.IdxInt.cint_eq_mean_reps` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IndexMeasureIntegralEqMeanOverRepresentativesStatement.lean:8:103: Unused tactic linter: `(intros; apply GlobalTheory.IdxInt.cint_eq_mean_reps <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [108700/108761] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianMovePreservesFrameLatticeLevelsStatement (4.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermitianMovePreservesFrameLatticeLevelsStatement.lean:10:54: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermitianMovePreservesFrameLatticeLevelsStatement.lean:10:97: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermitianMovePreservesFrameLatticeLevelsStatement.lean:10:54: Unused tactic linter: `exact GlobalTheory.HL.MoveSame.move_same` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermitianMovePreservesFrameLatticeLevelsStatement.lean:10:97: Unused tactic linter: `(intros; apply GlobalTheory.HL.MoveSame.move_same <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
