@@ -1,84 +1,51 @@
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FiltrationUniqueSubquotient.lean:127:14: this tactic is never executed
+warning: src/Development/WeilBound/ThetaLifts/SmallCones/ColsOfMul.lean:83:109: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FiltrationUniqueSubquotient.lean:72:10: Unused tactic linter: `exact Fin.ext (by simp)` does nothing
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Development/WeilBound/ThetaLifts/SmallCones/ColsOfMul.lean:87:109: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FiltrationUniqueSubquotient.lean:77:10: Unused tactic linter: `exact hv` does nothing
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Development/WeilBound/ThetaLifts/SmallCones/ColsOfMul.lean:112:87: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FiltrationUniqueSubquotient.lean:78:10: Unused tactic linter: `simpa using hv` does nothing
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Development/WeilBound/ThetaLifts/SmallCones/ColsOfMul.lean:144:79: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FiltrationUniqueSubquotient.lean:79:10: Unused tactic linter: `exact
-  (Submodule.mem_bot ℂ).1
-    ((bot_le :
-        (⊥ : Subrepresentation π) ≤
-          ⟨⊥, fun g w hw => by rw [(Submodule.mem_bot ℂ).1 hw, map_zero]; exact Submodule.zero_mem _⟩)
-      hv)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FiltrationUniqueSubquotient.lean:88:8: Unused tactic linter: `trivial` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FiltrationUniqueSubquotient.lean:89:8: Unused tactic linter: `exact
-  (le_top : (⟨⊤, fun _ _ _ => Submodule.mem_top⟩ : Subrepresentation π) ≤ ⊤) (Submodule.mem_top (x := v))` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FiltrationUniqueSubquotient.lean:91:8: Unused tactic linter: `simp` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FiltrationUniqueSubquotient.lean:109:8: Unused tactic linter: `simp [GlobalTheory.CompanionTheory.Filtration.descend, Submodule.liftQ_apply]` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FiltrationUniqueSubquotient.lean:127:14: Unused tactic linter: `(
-  ext v
-  have h1 := LinearMap.congr_fun (ψ.isIntertwining' g) v
-  have h2 := LinearMap.congr_fun (φ.isIntertwining' g) v
-  simp only [LinearMap.comp_apply] at h1 h2
-  simp only [LinearMap.comp_apply, LinearMap.sub_apply, LinearMap.smul_apply, h1, h2, map_sub, map_smul])` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [86196/86239] Built ReciprocityTheory.Chebotarev.RpowNegFinrankSubOne (7.8s)
-⚠ [86197/86240] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiltrationUniqueSubquotientStatement (5.3s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FiltrationUniqueSubquotientStatement.lean:9:85: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FiltrationUniqueSubquotientStatement.lean:9:159: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FiltrationUniqueSubquotientStatement.lean:9:85: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Filtration.intertwining_proportional` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FiltrationUniqueSubquotientStatement.lean:9:159: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Filtration.intertwining_proportional <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [86198/86240] Built Development.WeilBound.ThetaLifts.ConeHypotheses.KeyAOf (7.4s)
-⚠ [86199/86243] Built Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.PfDict (25s)
-warning: src/Development/WeilBound/CoreStatements/CompactAveragingSplitting/EigenvectorLifting/PfDict.lean:477:15: This simp argument is unused:
-  inB
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Development/WeilBound/ThetaLifts/SmallCones/ColsOfMul.lean:188:30: This simp argument is unused:
+  Matrix.zero_mul
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [map_mul, map_inv]
+  [apply] simp only [Matrix.mul_zero, add_zero, zero_add] at e11 e12
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [86200/86245] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InducedTwoCharactersNotScalar (13s)
-✔ [86201/86245] Built ReciprocityTheory.Chebotarev.KHoldA (6.5s)
-✔ [86202/86245] Built Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.SplitTop (6.0s)
-⚠ [86203/86245] Built Development.WeilBound.ThetaLifts.LeviDeterminants.EvalZeroMemAdelicSchwartzAdmittedForms (11s)
-warning: src/Development/WeilBound/ThetaLifts/LeviDeterminants/EvalZeroMemAdelicSchwartzAdmittedForms.lean:24:42: `ContinuousLinearMap.coe_smul'` has been deprecated: Use `FunLike.coe_smul` instead
+warning: src/Development/WeilBound/ThetaLifts/SmallCones/ColsOfMul.lean:202:58: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul'` to `FunLike.coe_smul x`).
-warning: src/Development/WeilBound/ThetaLifts/LeviDeterminants/EvalZeroMemAdelicSchwartzAdmittedForms.lean:24:73: `ContinuousLinearMap.coe_comp'` has been deprecated: Use `ContinuousLinearMap.coe_comp` instead
-warning: src/Development/WeilBound/ThetaLifts/LeviDeterminants/EvalZeroMemAdelicSchwartzAdmittedForms.lean:44:0: automatically included section variable(s) unused in theorem `PositivityTheory.ThKF0.dd_rho_diag`:
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Development/WeilBound/ThetaLifts/SmallCones/ColsOfMul.lean:223:79: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Development/WeilBound/ThetaLifts/SmallCones/ColsOfMul.lean:260:30: This simp argument is unused:
+  Matrix.zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.mul_zero, add_zero, zero_add] at e22
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [86430/86452] Built Development.WeilBound.ThetaLifts.LatticeBasics.BadFactor (15s)
+warning: src/Development/WeilBound/ThetaLifts/LatticeBasics/BadFactor.lean:66:0: automatically included section variable(s) unused in theorem `GlobalTheory.ThK.Dbl.Bad.par_one`:
   [NumberField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [NumberField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [86204/86245] Built Development.AutomorphicSpectrum.Proofs.MembershipProofs.LocallyCompactOfGoodChar (7.2s)
-warning: src/Development/AutomorphicSpectrum/Proofs/MembershipProofs/LocallyCompactOfGoodChar.lean:22:2: Try this: 
+warning: src/Development/WeilBound/ThetaLifts/LatticeBasics/BadFactor.lean:170:15: `Set.setOf_forall` has been deprecated: Use `Set.ofPred_forall` instead
+⚠ [86431/86452] Built Development.WeilBound.ThetaLifts.SmallCones.RightOfCompact (6.3s)
+warning: src/Development/WeilBound/ThetaLifts/SmallCones/RightOfCompact.lean:11:0: automatically included section variable(s) unused in theorem `PositivityTheory.ThKCT.Unf.right_of_compact`:
+  [T2Space G]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [T2Space G] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/WeilBound/ThetaLifts/SmallCones/RightOfCompact.lean:48:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -86,7 +53,26 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MembershipProofs/LocallyCompactOfGoodChar.lean:30:2: Try this: 
+warning: src/Development/WeilBound/ThetaLifts/SmallCones/RightOfCompact.lean:46:0: automatically included section variable(s) unused in theorem `PositivityTheory.ThKCT.Unf.cont_M`:
+  [T2Space G]
+  [SecondCountableTopology G]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [T2Space G] [SecondCountableTopology G] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/WeilBound/ThetaLifts/SmallCones/RightOfCompact.lean:79:22: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+✔ [86432/86457] Built Development.WeilBound.ThetaLifts.LatticeBasics.NearUnits (14s)
+⚠ [86433/86457] Built Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.StarMemSchA (15s)
+warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/StarMemSchA.lean:108:12: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/StarMemSchA.lean:108:2: Unused tactic linter: `all_goals
+  first
+  | rfl
+  | congr 2` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/StarMemSchA.lean:139:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -94,7 +80,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MembershipProofs/LocallyCompactOfGoodChar.lean:31:2: Try this: 
+warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/StarMemSchA.lean:140:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -102,7 +88,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MembershipProofs/LocallyCompactOfGoodChar.lean:79:2: Try this: 
+warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/StarMemSchA.lean:141:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -110,51 +96,65 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [86205/86250] Built Development.WeilBound.ThetaLifts.LocalTheory.DixmierCommutants.AtSingle (19s)
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/DixmierCommutants/AtSingle.lean:97:0: automatically included section variable(s) unused in theorem `PositivityTheory.ThKG.LocalRamifiedLeviRestriction.gm_det`:
-  [Algebra F E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Algebra F E] in theorem ...
+warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/StarMemSchA.lean:142:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/DixmierCommutants/AtSingle.lean:164:0: automatically included section variable(s) unused in theorem `PositivityTheory.ThKG.LocalRamifiedLeviRestriction.fr_mulVec`:
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/StarMemSchA.lean:143:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/StarMemSchA.lean:169:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/StarMemSchA.lean:176:0: automatically included section variable(s) unused in theorem `PositivityTheory.ThKG.Loc.Cone.Vf.mul_latAtV`:
   [NumberField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [NumberField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/DixmierCommutants/AtSingle.lean:171:0: automatically included section variable(s) unused in theorem `PositivityTheory.ThKG.LocalRamifiedLeviRestriction.fr_col`:
+warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/StarMemSchA.lean:207:0: automatically included section variable(s) unused in theorem `PositivityTheory.ThKG.Loc.Cone.Vf.PresD.mul`:
   [NumberField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [NumberField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/ThetaLifts/LocalTheory/DixmierCommutants/AtSingle.lean:176:0: automatically included section variable(s) unused in theorem `PositivityTheory.ThKG.LocalRamifiedLeviRestriction.at_single`:
+warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ConeShifts/StarMemSchA.lean:273:0: automatically included section variable(s) unused in theorem `PositivityTheory.ThKG.Loc.Cone.Vf.rule_diag`:
   [NumberField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [NumberField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [86206/86251] Built Development.WeilBound.ThetaLifts.ConeHypotheses.CtSmallCone (12s)
-warning: src/Development/WeilBound/ThetaLifts/ConeHypotheses/CtSmallCone.lean:59:54: Variable name `t₂` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _t₂
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/WeilBound/ThetaLifts/ConeHypotheses/CtSmallCone.lean:187:10: `tendsto_finset_sum` has been deprecated: Use `tendsto_finsetSum` instead
-⚠ [86207/86251] Built Development.WeilBound.ThetaLifts.SphericalLattices.SplitLoc (10s)
-warning: src/Development/WeilBound/ThetaLifts/SphericalLattices/SplitLoc.lean:99:0: automatically included section variable(s) unused in theorem `PositivityTheory.Sph.SplitPl.ind_tr`:
-  [TopologicalSpace k]
-  [IsNonarchimedeanLocalField k]
+⚠ [86434/86457] Built Development.WeilBound.ThetaLifts.LocalTheory.ISmulEqZero (25s)
+warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ISmulEqZero.lean:22:0: automatically included section variable(s) unused in theorem `PositivityTheory.ThKG.Loc.admitted.upd`:
+  [NumberField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [TopologicalSpace k] [IsNonarchimedeanLocalField k] in theorem ...
+  omit [NumberField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/ThetaLifts/SphericalLattices/SplitLoc.lean:108:0: automatically included section variable(s) unused in theorem `PositivityTheory.Sph.SplitPl.int_mul`:
-  [TopologicalSpace k]
-  [IsNonarchimedeanLocalField k]
+warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ISmulEqZero.lean:69:0: automatically included section variable(s) unused in theorem `PositivityTheory.ThKG.Loc.I_right'`:
+  [NumberField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [TopologicalSpace k] [IsNonarchimedeanLocalField k] in theorem ...
+  omit [NumberField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/WeilBound/ThetaLifts/LocalTheory/ISmulEqZero.lean:83:0: automatically included section variable(s) unused in theorem `PositivityTheory.ThKG.Loc.Side.std`:
+  [NumberField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [86435/86457] Built Development.WeilBound.CoreStatements.ThetaDilations.Nuabs (6.3s)
