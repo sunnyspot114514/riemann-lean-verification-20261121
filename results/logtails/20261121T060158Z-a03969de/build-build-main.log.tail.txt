@@ -1,160 +1,160 @@
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [95262/95295] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.StageTriangleKernelIntegrable (12s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/StageTriangleKernelIntegrable.lean:30:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/StageTriangleKernelIntegrable.lean:39:5: Variable name `hp` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/StabIntPfG.lean:124:0: automatically included section variable(s) unused in theorem `Formalism.L2.SG.Pf.StabIntSh.e_ρG_up`:
-  hs
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit hs in theorem ...
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hp
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/StabIntPfG.lean:183:0: automatically included section variable(s) unused in theorem `Formalism.L2.SG.Pf.StabIntSh.e_cc_mul`:
-  hA
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit hA in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/StabIntPfG.lean:186:16: This simp argument is unused:
-  Prod.pow_fst
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Prod.pow_snd]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/StabIntPfG.lean:186:30: This simp argument is unused:
-  Prod.pow_snd
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Prod.pow_fst]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [95051/95093] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LargePlaceRatioRamifiedStatement (8.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LargePlaceRatioRamifiedStatement.lean:11:66: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [95263/95295] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdealMapSmulIsLatticeOfNeBotStatement (6.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IdealMapSmulIsLatticeOfNeBotStatement.lean:16:57: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LargePlaceRatioRamifiedStatement.lean:11:121: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IdealMapSmulIsLatticeOfNeBotStatement.lean:16:103: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LargePlaceRatioRamifiedStatement.lean:11:66: Unused tactic linter: `exact GlobalTheory.RamifiedOnLargePlaces.not_unramAt` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IdealMapSmulIsLatticeOfNeBotStatement.lean:16:57: Unused tactic linter: `exact GlobalTheory.ideal_map_smul_isLattice` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LargePlaceRatioRamifiedStatement.lean:11:121: Unused tactic linter: `(intros; apply GlobalTheory.RamifiedOnLargePlaces.not_unramAt <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IdealMapSmulIsLatticeOfNeBotStatement.lean:16:103: Unused tactic linter: `(intros; apply GlobalTheory.ideal_map_smul_isLattice <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [95052/95093] Built Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.CmpJInPosEqGat (5.7s)
-✔ [95053/95093] Built Formalism.SharpRestriction.GrowthBounds.ChartedClasses.LocalClassDataOfTrivialStabilizers (13s)
-⚠ [95054/95094] Built Formalism.LocalToGlobal.PairingIndexBounds.PendingAdmissibility.LocalFDerivAdmissibility.RepRed (5.6s)
-warning: src/Formalism/LocalToGlobal/PairingIndexBounds/PendingAdmissibility/LocalFDerivAdmissibility/RepRed.lean:24:2: Try this: 
-  letI̵
+✔ [95264/95295] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrableOnThetaKernelDefiniteSeesawStage (6.4s)
+⚠ [95265/95296] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.BottomTrianglePolynomialFactor (34s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomTrianglePolynomialFactor.lean:37:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomTrianglePolynomialFactor.lean:193:2: Try this: 
+  haveI̵
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Formalism/LocalToGlobal/PairingIndexBounds/PendingAdmissibility/LocalFDerivAdmissibility/RepRed.lean:25:2: Try this: 
-  letI̵
+⚠ [95266/95296] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrableOnThetaKernelDefiniteSeesawStageStatement (5.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegrableOnThetaKernelDefiniteSeesawStageStatement.lean:25:72: this tactic is never executed
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegrableOnThetaKernelDefiniteSeesawStageStatement.lean:25:133: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegrableOnThetaKernelDefiniteSeesawStageStatement.lean:25:72: Unused tactic linter: `exact GlobalTheory.SqTower.integrableOn_ker'_of_stage_zero` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegrableOnThetaKernelDefiniteSeesawStageStatement.lean:25:133: Unused tactic linter: `(intros; apply GlobalTheory.SqTower.integrableOn_ker'_of_stage_zero <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [95267/95296] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.BottomTrianglePolynomialSurjection (39s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomTrianglePolynomialSurjection.lean:38:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [95268/95297] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.StageTriangleKernelIntegrableStatement (8.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/StageTriangleKernelIntegrableStatement.lean:26:47: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/StageTriangleKernelIntegrableStatement.lean:26:83: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/StageTriangleKernelIntegrableStatement.lean:26:47: Unused tactic linter: `exact GlobalTheory.StageConv.conv` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/StageTriangleKernelIntegrableStatement.lean:26:83: Unused tactic linter: `(intros; apply GlobalTheory.StageConv.conv <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [95269/95301] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewHermitianLatticeSplitPlaceComponentsDual (8.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SkewHermitianLatticeSplitPlaceComponentsDual.lean:23:0: automatically included section variable(s) unused in theorem `GlobalTheory.SkewSplitDual.hE_transpose`:
+  [NumberField F]
+  [NumberField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] [NumberField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SkewHermitianLatticeSplitPlaceComponentsDual.lean:31:0: automatically included section variable(s) unused in theorem `GlobalTheory.SkewSplitDual.form_add_right`:
+  [NumberField F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SkewHermitianLatticeSplitPlaceComponentsDual.lean:36:0: automatically included section variable(s) unused in theorem `GlobalTheory.SkewSplitDual.form_smul_right`:
+  [NumberField F]
+  [NumberField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] [NumberField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SkewHermitianLatticeSplitPlaceComponentsDual.lean:41:0: automatically included section variable(s) unused in theorem `GlobalTheory.SkewSplitDual.isIntegral_iff_mem_range`:
+  [NumberField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SkewHermitianLatticeSplitPlaceComponentsDual.lean:44:0: automatically included section variable(s) unused in theorem `GlobalTheory.SkewSplitDual.coe_algebraMap_int`:
+  [NumberField F]
+  [NumberField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] [NumberField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SkewHermitianLatticeSplitPlaceComponentsDual.lean:67:19: This simp argument is unused:
+  Subalgebra.coe_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_add, add_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SkewHermitianLatticeSplitPlaceComponentsDual.lean:121:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [95055/95094] Built Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.PartnerCountLoc (20s)
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PartnerCountLoc.lean:25:0: automatically included section variable(s) unused in theorem `Formalism.L2.SG.Pf.PCount.zz1'`:
-  hR
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit hR in theorem ...
+✔ [95270/95301] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilRepCommuteAtGoodPlacesAlgebraicVectors (18s)
+✔ [95271/95301] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.TracePairingNondegenerate (6.4s)
+⚠ [95272/95306] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceSympNegOne (6.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TraceSympNegOne.lean:21:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PartnerCountLoc.lean:38:81: This simp argument is unused:
-  ← adele_ext_components
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Matrix.map_apply, CntLocal.ZZP, Loc.HermSp.ZZplusOf, hM, CntLocal.ZhatLoc, LsDatumB.sgnP,
-    Matrix.mul_diagonal, Matrix.diagonal_mul, Matrix.of_apply, hge, hgq, map_mul, map_sub, fst_proj_symm,
-    apply_ite (p1 sg.e), map_zero, Prod.fst_mul, ← adeleInfiniteComponent_apply, hcj1, hf1, hf2, hm1, Zd.hcj p,
-    Matrix.sub_apply, Matrix.smul_apply, smul_eq_mul, Ecorner, Sg, RingHom.comp_apply, map_pow, map_neg, map_one]
-
-Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PartnerCountLoc.lean:46:0: automatically included section variable(s) unused in theorem `Formalism.L2.SG.Pf.PCount.zz2'`:
-  hR
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit hR in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PartnerCountLoc.lean:59:49: This simp argument is unused:
-  ← adeleInfiniteComponent_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Matrix.map_apply, CntLocal.ZZP, Loc.HermSp.ZZplusOf, hM, CntLocal.ZhatLoc, LsDatumB.sgnP,
-    Matrix.mul_diagonal, Matrix.diagonal_mul, Matrix.of_apply, hge, hgq, map_mul, map_sub, snd_proj_symm,
-    apply_ite (p2 sg.e), map_zero, Prod.snd_mul, ← adele_ext_components, hcj2, hf1, hf2, hm2, Zd.hcj p,
-    Matrix.sub_apply, Matrix.smul_apply, smul_eq_mul, Ecorner, Sg, RingHom.comp_apply, map_pow, map_neg, map_one,
-    Matrix.transpose_apply]
-
-Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PartnerCountLoc.lean:60:87: This simp argument is unused:
-  map_pow
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Matrix.map_apply, CntLocal.ZZP, Loc.HermSp.ZZplusOf, hM, CntLocal.ZhatLoc, LsDatumB.sgnP,
-    Matrix.mul_diagonal, Matrix.diagonal_mul, Matrix.of_apply, hge, hgq, map_mul, map_sub, snd_proj_symm,
-    apply_ite (p2 sg.e), map_zero, Prod.snd_mul, ← adeleInfiniteComponent_apply, ← adele_ext_components, hcj2, hf1, hf2,
-    hm2, Zd.hcj p, Matrix.sub_apply, Matrix.smul_apply, smul_eq_mul, Ecorner, Sg, RingHom.comp_apply, map_neg, map_one,
-    Matrix.transpose_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PartnerCountLoc.lean:60:96: This simp argument is unused:
-  map_neg
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Matrix.map_apply, CntLocal.ZZP, Loc.HermSp.ZZplusOf, hM, CntLocal.ZhatLoc, LsDatumB.sgnP,
-    Matrix.mul_diagonal, Matrix.diagonal_mul, Matrix.of_apply, hge, hgq, map_mul, map_sub, snd_proj_symm,
-    apply_ite (p2 sg.e), map_zero, Prod.snd_mul, ← adeleInfiniteComponent_apply, ← adele_ext_components, hcj2, hf1, hf2,
-    hm2, Zd.hcj p, Matrix.sub_apply, Matrix.smul_apply, smul_eq_mul, Ecorner, Sg, RingHom.comp_apply, map_pow, map_one,
-    Matrix.transpose_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PartnerCountLoc.lean:60:105: This simp argument is unused:
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TraceSympNegOne.lean:25:31: This simp argument is unused:
   map_one
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [Matrix.map_apply, CntLocal.ZZP, Loc.HermSp.ZZplusOf, hM, CntLocal.ZhatLoc, LsDatumB.sgnP,
-    Matrix.mul_diagonal, Matrix.diagonal_mul, Matrix.of_apply, hge, hgq, map_mul, map_sub, snd_proj_symm,
-    apply_ite (p2 sg.e), map_zero, Prod.snd_mul, ← adeleInfiniteComponent_apply, ← adele_ext_components, hcj2, hf1, hf2,
-    hm2, Zd.hcj p, Matrix.sub_apply, Matrix.smul_apply, smul_eq_mul, Ecorner, Sg, RingHom.comp_apply, map_pow, map_neg,
-    Matrix.transpose_apply]
+  [apply] simp only [map_mul, map_neg, hTens, map_sum, incM, Matrix.map_apply, piInf_inclR,
+    GlobalTheory.WrongSignPair.piInf_cA hCM, neg_one_mul, Complex.neg_re]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PartnerCountLoc.lean:68:0: automatically included section variable(s) unused in theorem `Formalism.L2.SG.Pf.PCount.mm1'`:
-  hM
-  hge
-  hgq
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit hM hge hgq in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PartnerCountLoc.lean:94:89: this tactic is never executed
+⚠ [95273/95306] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewHermitianLatticeSplitPlaceComponentsDualStatement (6.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SkewHermitianLatticeSplitPlaceComponentsDualStatement.lean:15:60: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PartnerCountLoc.lean:94:89: Unused tactic linter: `(exfalso; rename_i h1 h2; exact h1 h2.2)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PartnerCountLoc.lean:103:0: automatically included section variable(s) unused in theorem `Formalism.L2.SG.Pf.PCount.mm2'`:
-  hM
-  hge
-  hgq
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit hM hge hgq in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PartnerCountLoc.lean:130:89: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SkewHermitianLatticeSplitPlaceComponentsDualStatement.lean:15:109: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Formalism/LocalToGlobal/SiegelLatticeTheory/CokernelGLCounts/RankPointCounts/PartnerCountLoc.lean:130:89: Unused tactic linter: `(exfalso; rename_i h1 h2; exact h1 h2.2)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SkewHermitianLatticeSplitPlaceComponentsDualStatement.lean:15:60: Unused tactic linter: `exact GlobalTheory.SkewSplitDual.skewSplitDual` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [95056/95095] Built Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.IsHypPair (4.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SkewHermitianLatticeSplitPlaceComponentsDualStatement.lean:15:109: Unused tactic linter: `(intros; apply GlobalTheory.SkewSplitDual.skewSplitDual <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
