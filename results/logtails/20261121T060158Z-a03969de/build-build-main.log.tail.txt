@@ -1,66 +1,5 @@
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TorusSplitting/CardMulPhiLeValuationProductForm.lean:98:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TorusSplitting/CardMulPhiLeValuationProductForm.lean:47:8: Overlapping instance parameters in `card_mul_phiC_le_valuation`:
-
-⚠️ `[IsDomain V]` and `[IsDiscreteValuationRing V]` each imply `[Nontrivial V]`.
-💡️ Of these, `[IsDomain V]` and `[IsDiscreteValuationRing V]` may be removed.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-⚠ [101700/101740] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.CardNonisometricCmTorusDataLeStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/CardNonisometricCmTorusDataLeStatement.lean:14:58: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/CardNonisometricCmTorusDataLeStatement.lean:14:105: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/CardNonisometricCmTorusDataLeStatement.lean:14:58: Unused tactic linter: `exact GlobalTheory.card_nonisometric_data_le` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/CardNonisometricCmTorusDataLeStatement.lean:14:105: Unused tactic linter: `(intros; apply GlobalTheory.card_nonisometric_data_le <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [101701/101741] Built Development.AbelianVarietyTheory.Proofs.TorusSplitting.ArchimedeanBoundTotalConstantSize (13s)
-⚠ [101702/101741] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.PageTwoLeLAndSigns (6.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/PageTwoLeLAndSigns.lean:26:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-✔ [101703/101741] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.PageRowsOfLe (5.3s)
-⚠ [101704/101744] Built Development.AbelianVarietyTheory.Proofs.TorusSplitting.CardMulPhiLeValuationProductFormStatement (5.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TorusSplitting/CardMulPhiLeValuationProductFormStatement.lean:15:66: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TorusSplitting/CardMulPhiLeValuationProductFormStatement.lean:15:121: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TorusSplitting/CardMulPhiLeValuationProductFormStatement.lean:14:8: Overlapping instance parameters in `GlobalTheory.T.card_mul_phi_le_valuation_productForm`:
-
-⚠️ `[IsDomain V]` and `[IsDiscreteValuationRing V]` each imply `[Nontrivial V]`.
-💡️ Of these, `[IsDomain V]` and `[IsDiscreteValuationRing V]` may be removed.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TorusSplitting/CardMulPhiLeValuationProductFormStatement.lean:15:66: Unused tactic linter: `exact GlobalTheory.EtaVal.card_mul_phiC_le_valuation` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TorusSplitting/CardMulPhiLeValuationProductFormStatement.lean:15:121: Unused tactic linter: `(intros; apply GlobalTheory.EtaVal.card_mul_phiC_le_valuation <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [101705/101745] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsUnitIffNotIsUnitOfCoprime (23s)
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IsUnitIffNotIsUnitOfCoprime.lean:53:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/JacobianNonzeroSplittingOfProduct.lean:50:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -68,7 +7,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IsUnitIffNotIsUnitOfCoprime.lean:56:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/JacobianNonzeroSplittingOfProduct.lean:51:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -76,7 +15,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IsUnitIffNotIsUnitOfCoprime.lean:58:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/JacobianNonzeroSplittingOfProduct.lean:52:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -84,77 +23,138 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [101706/101745] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.LeExpOfLogLe (5.6s)
-⚠ [101707/101746] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.LogNormNormaliserEqHalfDegreeLogStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/LogNormNormaliserEqHalfDegreeLogStatement.lean:12:52: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/JacobianNonzeroSplittingOfProduct.lean:56:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/JacobianNonzeroSplittingOfProduct.lean:57:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/JacobianNonzeroSplittingOfProduct.lean:58:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/JacobianNonzeroSplittingOfProduct.lean:59:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/JacobianNonzeroSplittingOfProduct.lean:60:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/JacobianNonzeroSplittingOfProduct.lean:61:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/JacobianNonzeroSplittingOfProduct.lean:132:5: Variable name `h2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/JacobianNonzeroSplittingOfProduct.lean:219:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/JacobianNonzeroSplittingOfProduct.lean:198:8: Overlapping instance parameters in `sum_shift_kerM_mul`:
+
+⚠️ `[IsDomain V]` and `[IsDiscreteValuationRing V]` each imply `[Nontrivial V]`.
+💡️ Of these, `[IsDomain V]` and `[IsDiscreteValuationRing V]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+✔ [102020/102052] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ThetaIndexBoundHypothesesAtInstance (8.8s)
+⚠ [102021/102052] Built Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.IsMetricConjugateFramedPointStatement (5.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/IsMetricConjugateFramedPointStatement.lean:19:51: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/LogNormNormaliserEqHalfDegreeLogStatement.lean:12:93: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/IsMetricConjugateFramedPointStatement.lean:19:91: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/LogNormNormaliserEqHalfDegreeLogStatement.lean:12:52: Unused tactic linter: `exact GlobalTheory.log_norm_normaliser` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/IsMetricConjugateFramedPointStatement.lean:19:51: Unused tactic linter: `exact GlobalTheory.LamT.isMetric_conj` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/LogNormNormaliserEqHalfDegreeLogStatement.lean:12:93: Unused tactic linter: `(intros; apply GlobalTheory.log_norm_normaliser <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/IsMetricConjugateFramedPointStatement.lean:19:91: Unused tactic linter: `(intros; apply GlobalTheory.LamT.isMetric_conj <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [101708/101747] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.LogLeOfLePowMulPow (6.7s)
-⚠ [101709/101748] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.RamifiedPrimePowersSizeBoundsStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/RamifiedPrimePowersSizeBoundsStatement.lean:12:48: this tactic is never executed
+⚠ [102022/102052] Built Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CuspFormValueLeSupNormAtOrthonormalFrameStatement (5.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/CuspFormValueLeSupNormAtOrthonormalFrameStatement.lean:19:65: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/RamifiedPrimePowersSizeBoundsStatement.lean:12:85: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/CuspFormValueLeSupNormAtOrthonormalFrameStatement.lean:19:119: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/RamifiedPrimePowersSizeBoundsStatement.lean:12:48: Unused tactic linter: `exact GlobalTheory.RunIn.pPow_size` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/CuspFormValueLeSupNormAtOrthonormalFrameStatement.lean:19:65: Unused tactic linter: `exact GlobalTheory.LamT.OrthoBound.cabs_evR_le_supC` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/RamifiedPrimePowersSizeBoundsStatement.lean:12:85: Unused tactic linter: `(intros; apply GlobalTheory.RunIn.pPow_size <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/CuspFormValueLeSupNormAtOrthonormalFrameStatement.lean:19:119: Unused tactic linter: `(intros; apply GlobalTheory.LamT.OrthoBound.cabs_evR_le_supC <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [101710/101748] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.CardPeriodSpacesFamilyUniformisationLe (8.1s)
-✔ [101711/101749] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.DepthBelowOneOfHodgeTateChartForm (5.2s)
-⚠ [101712/101749] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ScaledFamily (5.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/ScaledFamily.lean:26:8: this tactic is never executed
+✔ [102023/102052] Built Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ScaledShortLatticeLeOfShortGeneratorBound (10s)
+⚠ [102024/102052] Built ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.DiscriminantEstimates.DiscriminantLemmas.UniformDiscreteness.FgOfUnifDiscrete (7.0s)
+warning: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/TaylorDiscriminants/DiscriminantEstimates/DiscriminantLemmas/UniformDiscreteness/FgOfUnifDiscrete.lean:30:0: automatically included section variable(s) unused in theorem `PI.UnitaryGroupMassFormula.TBDisc.normFam_zero`:
+  [NumberField K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [102025/102054] Built Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.JacobianNonzeroSplittingOfProductStatement (5.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/JacobianNonzeroSplittingOfProductStatement.lean:12:69: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/ScaledFamily.lean:26:8: Unused tactic linter: `simp` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [101713/101749] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.RealBounds (21s)
-✔ [101714/101749] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.GamAtOfLawsCore (5.2s)
-✔ [101715/101749] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.LogTwoMulCountLeMulSize (7.2s)
-✔ [101716/101750] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ThetaLatticeWeightScalarNeZeroAndLogBounds (8.1s)
-✔ [101717/101754] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.SupBoundsLeGeneratorConstantMulSize (10s)
-⚠ [101718/101754] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.CardPeriodSpacesFamilyUniformisationLeStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/CardPeriodSpacesFamilyUniformisationLeStatement.lean:14:51: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/JacobianNonzeroSplittingOfProductStatement.lean:12:127: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/CardPeriodSpacesFamilyUniformisationLeStatement.lean:14:91: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/JacobianNonzeroSplittingOfProductStatement.lean:11:8: Overlapping instance parameters in `GlobalTheory.T.jacobian_nonzero_splitting_of_product`:
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/CardPeriodSpacesFamilyUniformisationLeStatement.lean:14:51: Unused tactic linter: `exact GlobalTheory.familyUnif_card_le` does nothing
+⚠️ `[IsDomain V]` and `[IsDiscreteValuationRing V]` each imply `[Nontrivial V]`.
+💡️ Of these, `[IsDomain V]` and `[IsDiscreteValuationRing V]` may be removed.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/CardPeriodSpacesFamilyUniformisationLeStatement.lean:14:91: Unused tactic linter: `(intros; apply GlobalTheory.familyUnif_card_le <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [101719/101754] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.WeightsBelow (22s)
-⚠ [101720/101754] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.DepthBelowOneOfHodgeTateChartFormStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/DepthBelowOneOfHodgeTateChartFormStatement.lean:20:67: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/DepthBelowOneOfHodgeTateChartFormStatement.lean:20:123: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/DepthBelowOneOfHodgeTateChartFormStatement.lean:20:67: Unused tactic linter: `exact GlobalTheory.PowGerm.lemmaBT_of_hodgeTate_chart` does nothing
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/JacobianNonzeroSplittingOfProductStatement.lean:12:69: Unused tactic linter: `exact GlobalTheory.PlaceInt.KerTrace.sum_shift_kerM_mul` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/DepthBelowOneOfHodgeTateChartFormStatement.lean:20:123: Unused tactic linter: `(intros; apply GlobalTheory.PowGerm.lemmaBT_of_hodgeTate_chart <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/JacobianNonzeroSplittingOfProductStatement.lean:12:127: Unused tactic linter: `(intros; apply GlobalTheory.PlaceInt.KerTrace.sum_shift_kerM_mul <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [101721/101755] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsOrthoFrame (5.4s)
-✔ [101722/101755] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.NotIsBlockProdZero (5.2s)
-✔ [101723/101755] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.LogCardCompUnfLe (5.6s)
-✔ [101724/101757] Built Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.NegLogSqrtLeOfJbound (6.9s)
-✔ [101725/101760] Built ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.SupGenTies (5.5s)
+⚠ [102026/102054] Built Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ShortBoundOfTrivAt (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/ShortBoundOfTrivAt.lean:166:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/ShortBoundOfTrivAt.lean:234:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [102027/102058] Built Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.GramStdBasisPosDefAndHq (5.3s)
