@@ -1,30 +1,3 @@
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MaximalMinorsMatrixMemUnitaryGroupStatement.lean:10:113: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MaximalMinorsMatrixMemUnitaryGroupStatement.lean:10:62: Unused tactic linter: `exact GlobalTheory.minorsMatrix_mem_unitaryGroup` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MaximalMinorsMatrixMemUnitaryGroupStatement.lean:10:113: Unused tactic linter: `(intros; apply GlobalTheory.minorsMatrix_mem_unitaryGroup <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [98059/98090] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteRationalConjMemBoundedCompact (10s)
-✔ [98060/98092] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsStandardPositiveDefiniteHermitianSpaceRank (5.8s)
-⚠ [98061/98092] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemL2OfContinuousAutomorphicStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MemL2OfContinuousAutomorphicStatement.lean:18:75: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MemL2OfContinuousAutomorphicStatement.lean:18:139: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MemL2OfContinuousAutomorphicStatement.lean:18:75: Unused tactic linter: `exact GlobalTheory.DefiniteSqInt.memL2_of_continuous_definite` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MemL2OfContinuousAutomorphicStatement.lean:18:139: Unused tactic linter: `(intros;
-  apply GlobalTheory.DefiniteSqInt.memL2_of_continuous_definite <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [98062/98092] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelIndicatorReadsNormPowerUnitVector (36s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LevelIndicatorReadsNormPowerUnitVector.lean:114:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -32,7 +5,29 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LevelIndicatorReadsNormPowerUnitVector.lean:115:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HeckeLFunctionBottomPair.lean:355:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [98240/98268] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcRigidityTwoModelsOfMono (5.3s)
+⚠ [98241/98268] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsIsSplit (9.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ExistsIsSplit.lean:108:77: This simp argument is unused:
+  ofMul_zpow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Fintype.prod_sum_type, Fin.prod_univ_succ, ofMul_mul, ofMul_inv, ofMul_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [98242/98268] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsKeyIntegral (13s)
+✔ [98243/98272] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.SplitBaseChange (10s)
+✔ [98244/98272] Built Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MemLieVectorLineIdealIffMemLieLattice (5.1s)
+✔ [98245/98272] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.DiscrMulXiIntegral (11s)
+⚠ [98246/98272] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcFramedPointIntegralOpenDisc (42s)
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ArcFramedPointIntegralOpenDisc.lean:110:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -40,117 +35,122 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LevelIndicatorReadsNormPowerUnitVector.lean:157:10: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-⚠ [98063/98094] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsConstantTripleCoefficient (33s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsConstantTripleCoefficient.lean:62:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-⚠ [98064/98094] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.BottomTriangleNonzeroPeriodStatement (28s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomTriangleNonzeroPeriodStatement.lean:26:53: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ArcFramedPointIntegralOpenDisc.lean:108:8: Overlapping instance parameters in `integral_of_isArcFr`:
+
+⚠️ `[IsDomain A]` and `[IsLocalRing A]` each imply `[Nontrivial A]`.
+💡️ Of these, `[IsDomain A]` and `[IsLocalRing A]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+⚠ [98247/98272] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsArcInOverValuationRing (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ExistsArcInOverValuationRing.lean:25:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [98248/98275] Built Development.AbelianVarietyTheory.Counterexamples.UniformisationSurvey.EquivIffOfIsEmpty (6.2s)
+warning: src/Development/AbelianVarietyTheory/Counterexamples/UniformisationSurvey/EquivIffOfIsEmpty.lean:71:0: automatically included section variable(s) unused in theorem `GlobalTheory.TorsionPairTest.hom_eq`:
+  [IsDomain R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDomain R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [98249/98277] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcFramedPointEqOfModelsOverBase (14s)
+✔ [98250/98278] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefiniteThetaPairNormNeZeroOfCoordNeZero (14s)
+✔ [98251/98278] Built Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LieLetterIntegralOfLocalGenerator (14s)
+⚠ [98252/98279] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcFramedPointIntegralOpenDiscStatement (13s)
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ArcFramedPointIntegralOpenDiscStatement.lean:10:57: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomTriangleNonzeroPeriodStatement.lean:26:95: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ArcFramedPointIntegralOpenDiscStatement.lean:10:103: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomTriangleNonzeroPeriodStatement.lean:26:53: Unused tactic linter: `exact GlobalTheory.KerFin.bottom_kernel` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ArcFramedPointIntegralOpenDiscStatement.lean:9:8: Overlapping instance parameters in `GlobalTheory.T.arc_framedPoint_integral_open_disc`:
+
+⚠️ `[IsDomain A]` and `[IsLocalRing A]` each imply `[Nontrivial A]`.
+💡️ Of these, `[IsDomain A]` and `[IsLocalRing A]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ArcFramedPointIntegralOpenDiscStatement.lean:10:57: Unused tactic linter: `exact GlobalTheory.ArcQ.integral_of_isArcFr` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomTriangleNonzeroPeriodStatement.lean:26:95: Unused tactic linter: `(intros; apply GlobalTheory.KerFin.bottom_kernel <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ArcFramedPointIntegralOpenDiscStatement.lean:10:103: Unused tactic linter: `(intros; apply GlobalTheory.ArcQ.integral_of_isArcFr <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [98065/98094] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealPointsMixMaximalMinorFockVectorsUnitary (8.6s)
-⚠ [98066/98096] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsStandardPositiveDefiniteHermitianSpaceRankStatement (5.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsStandardPositiveDefiniteHermitianSpaceRankStatement.lean:20:64: this tactic is never executed
+⚠ [98253/98279] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcFramedPointEqOfModelsOverBaseStatement (5.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ArcFramedPointEqOfModelsOverBaseStatement.lean:10:60: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsStandardPositiveDefiniteHermitianSpaceRankStatement.lean:20:117: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ArcFramedPointEqOfModelsOverBaseStatement.lean:10:109: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsStandardPositiveDefiniteHermitianSpaceRankStatement.lean:20:64: Unused tactic linter: `exact GlobalTheory.StdDefSpace.exists_std_definite` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ArcFramedPointEqOfModelsOverBaseStatement.lean:10:60: Unused tactic linter: `exact GlobalTheory.ArcQ.isArcFr_eq_of_overBase` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsStandardPositiveDefiniteHermitianSpaceRankStatement.lean:20:117: Unused tactic linter: `(intros; apply GlobalTheory.StdDefSpace.exists_std_definite <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/ArcFramedPointEqOfModelsOverBaseStatement.lean:10:109: Unused tactic linter: `(intros; apply GlobalTheory.ArcQ.isArcFr_eq_of_overBase <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [98067/98096] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsVolumeOneMeasureDefiniteOpenCompact (5.0s)
-⚠ [98068/98096] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RelIndexNeZeroOfReps (12s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RelIndexNeZeroOfReps.lean:42:6: Try this: 
-  haveI̵
+✔ [98254/98280] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeanValuationNormOverDegreeSmulEqAddValuation (17s)
+✔ [98255/98280] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PartialZetaValuesAtNegIntUnique (6.1s)
+⚠ [98256/98280] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareNuTwistedTupleIsCMValueHeckeCharacterStatement (5.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SquareNuTwistedTupleIsCMValueHeckeCharacterStatement.lean:15:63: this tactic is never executed
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SquareNuTwistedTupleIsCMValueHeckeCharacterStatement.lean:15:115: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [98069/98096] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteAdelicEmbeddingStandardUnitaryGroup (18s)
-⚠ [98070/98096] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelMeasureEqRelIndexSmul (7.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LevelMeasureEqRelIndexSmul.lean:28:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SquareNuTwistedTupleIsCMValueHeckeCharacterStatement.lean:15:63: Unused tactic linter: `exact GlobalTheory.SqTop.TwVal.isValChar_nu_twist` does nothing
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SquareNuTwistedTupleIsCMValueHeckeCharacterStatement.lean:15:115: Unused tactic linter: `(intros; apply GlobalTheory.SqTop.TwVal.isValChar_nu_twist <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LevelMeasureEqRelIndexSmul.lean:28:16: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [98257/98280] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefiniteThetaPairNormNeZeroOfCoordNeZeroStatement (6.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DefiniteThetaPairNormNeZeroOfCoordNeZeroStatement.lean:14:62: this tactic is never executed
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DefiniteThetaPairNormNeZeroOfCoordNeZeroStatement.lean:14:113: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LevelMeasureEqRelIndexSmul.lean:28:30: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DefiniteThetaPairNormNeZeroOfCoordNeZeroStatement.lean:14:62: Unused tactic linter: `exact GlobalTheory.NormPos.norm_ne_zero_of_coord` does nothing
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DefiniteThetaPairNormNeZeroOfCoordNeZeroStatement.lean:14:113: Unused tactic linter: `(intros; apply GlobalTheory.NormPos.norm_ne_zero_of_coord <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LevelMeasureEqRelIndexSmul.lean:28:44: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [98258/98280] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.BottomConstantOfTheta (39s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomConstantOfTheta.lean:38:77: this tactic is never executed
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomConstantOfTheta.lean:39:4: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LevelMeasureEqRelIndexSmul.lean:28:57: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomConstantOfTheta.lean:40:4: this tactic is never executed
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomConstantOfTheta.lean:41:4: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LevelMeasureEqRelIndexSmul.lean:29:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomConstantOfTheta.lean:38:77: Unused tactic linter: `assumption` does nothing
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomConstantOfTheta.lean:39:4: Unused tactic linter: `(intros;
+  apply _root_.GlobalTheory.PrimeMembershipExistence.exists_prime_mem <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LevelMeasureEqRelIndexSmul.lean:30:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomConstantOfTheta.lean:40:4: Unused tactic linter: `(intros;
+  apply @_root_.GlobalTheory.PrimeMembershipExistence.exists_prime_mem <;>
+    first
+    | assumption
+    | infer_instance)` does nothing
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomConstantOfTheta.lean:41:4: Unused tactic linter: `(intros; exact _root_.GlobalTheory.PrimeMembershipExistence.exists_prime_mem ..)` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LevelMeasureEqRelIndexSmul.lean:64:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BottomConstantOfTheta.lean:80:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
