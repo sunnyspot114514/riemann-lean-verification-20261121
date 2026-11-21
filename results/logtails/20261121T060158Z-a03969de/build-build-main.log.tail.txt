@@ -1,160 +1,160 @@
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SchwartzFunctionalIntegralComm.lean:44:74: This simp argument is unused:
-  Pi.smul_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [weightedDeriv_apply, BoundedContinuousFunction.coe_smul, RingHom.id_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SchwartzFunctionalIntegralComm.lean:58:0: automatically included section variable(s) unused in theorem `GlobalTheory.SchwartzIntegral.continuous_iteratedFDeriv_param`:
-  [NormedSpace ℝ W]
-  [FiniteDimensional ℝ W]
-  [MeasurableSpace W]
-  [BorelSpace W]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NormedSpace ℝ W] [FiniteDimensional ℝ W] [MeasurableSpace W] [BorelSpace W] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SchwartzFunctionalIntegralComm.lean:87:72: `ENat.coe_lt_top` has been deprecated: Use `ENat.natCast_lt_top` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SchwartzFunctionalIntegralComm.lean:117:51: Variable name `i` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _i
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SchwartzFunctionalIntegralComm.lean:120:13: Variable name `j` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _j
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SchwartzFunctionalIntegralComm.lean:165:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SchwartzFunctionalIntegralComm.lean:166:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SchwartzFunctionalIntegralComm.lean:168:5: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
-⚠ [94360/94398] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianFormConstMulInnerStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianFormConstMulInnerStatement.lean:12:58: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianFormConstMulInnerStatement.lean:12:105: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianFormConstMulInnerStatement.lean:12:58: Unused tactic linter: `exact GlobalTheory.hermitian_form_eq_smul_l2` does nothing
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaTrivialAtFiniteSetStatement.lean:17:105: Unused tactic linter: `(intros; apply GlobalTheory.PureStabFin.pure_stab_fin <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianFormConstMulInnerStatement.lean:12:105: Unused tactic linter: `(intros; apply GlobalTheory.hermitian_form_eq_smul_l2 <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [94361/94400] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittFrameDarbouxCoordinates (16s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/WittFrameDarbouxCoordinates.lean:125:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [94362/94400] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerRepUnitaryStatement (5.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SchrodingerRepUnitaryStatement.lean:10:66: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SchrodingerRepUnitaryStatement.lean:10:121: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SchrodingerRepUnitaryStatement.lean:10:66: Unused tactic linter: `exact GlobalTheory.RealWeil.integral_rhoFun_mul_conj` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SchrodingerRepUnitaryStatement.lean:10:121: Unused tactic linter: `(intros; apply GlobalTheory.RealWeil.integral_rhoFun_mul_conj <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [94363/94400] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvaluationGoodModelsIntertwineStatement (6.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EvaluationGoodModelsIntertwineStatement.lean:18:54: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EvaluationGoodModelsIntertwineStatement.lean:18:97: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EvaluationGoodModelsIntertwineStatement.lean:18:54: Unused tactic linter: `exact GlobalTheory.EvTame.isTame_of_isEv` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EvaluationGoodModelsIntertwineStatement.lean:18:97: Unused tactic linter: `(intros; apply GlobalTheory.EvTame.isTame_of_isEv <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [94364/94402] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.TameConjMapStatement (5.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TameConjMapStatement.lean:15:58: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TameConjMapStatement.lean:15:105: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TameConjMapStatement.lean:15:58: Unused tactic linter: `exact GlobalTheory.DoublingEv.isTame_conjMap` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TameConjMapStatement.lean:15:105: Unused tactic linter: `(intros; apply GlobalTheory.DoublingEv.isTame_conjMap <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [94365/94406] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatrixCoeffContinuousRapidDecay (5.5s)
-⚠ [94366/94406] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzFunctionalIntegralCommStatement (5.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SchwartzFunctionalIntegralCommStatement.lean:13:74: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SchwartzFunctionalIntegralCommStatement.lean:13:137: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SchwartzFunctionalIntegralCommStatement.lean:13:74: Unused tactic linter: `exact GlobalTheory.SchwartzIntegral.clm_integral_interchange` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SchwartzFunctionalIntegralCommStatement.lean:13:137: Unused tactic linter: `(intros;
-  apply GlobalTheory.SchwartzIntegral.clm_integral_interchange <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [94367/94410] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlanePairRestrictionFirst (11s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdaptedPlanePairRestrictionFirst.lean:82:0: automatically included section variable(s) unused in theorem `GlobalTheory.DblEval.conj_psi`:
-  [Invertible 2]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Invertible 2] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdaptedPlanePairRestrictionFirst.lean:94:62: This simp argument is unused:
-  inv_inv
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [schr, map_mul, AddChar.inv_apply, conj_psi ψ hψ, neg_neg]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdaptedPlanePairRestrictionFirst.lean:129:0: automatically included section variable(s) unused in theorem `GlobalTheory.DblEval.partL_partR_rho`:
-  [Fintype κ]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype κ] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdaptedPlanePairRestrictionFirst.lean:133:0: automatically included section variable(s) unused in theorem `GlobalTheory.DblEval.partR_partL_rho`:
-  [Fintype κ']
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype κ'] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdaptedPlanePairRestrictionFirst.lean:137:0: automatically included section variable(s) unused in theorem `GlobalTheory.DblEval.sliceL_partR_rho`:
-  [Fintype κ]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype κ] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdaptedPlanePairRestrictionFirst.lean:211:0: automatically included section variable(s) unused in theorem `GlobalTheory.DblEval.isLocOp_of_isEv`:
+⚠ [94715/94744] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaKernelArchimedeanUnipotentSupport (9.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaKernelArchimedeanUnipotentSupport.lean:28:42: `ofReal_norm_eq_enorm` has been deprecated: Use `ofReal_norm` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaKernelArchimedeanUnipotentSupport.lean:78:0: automatically included section variable(s) unused in theorem `GlobalTheory.CptCoeff.mul_eq_zero_of_supp`:
   [NumberField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [NumberField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaKernelArchimedeanUnipotentSupport.lean:126:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [94716/94745] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinearBarLocalThetaFactor (13s)
+⚠ [94717/94748] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.TripleLatticeInvariantSchwartzLocalStatement (6.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TripleLatticeInvariantSchwartzLocalStatement.lean:17:51: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TripleLatticeInvariantSchwartzLocalStatement.lean:17:91: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TripleLatticeInvariantSchwartzLocalStatement.lean:17:51: Unused tactic linter: `exact GlobalTheory.VacLine.eigen_line` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TripleLatticeInvariantSchwartzLocalStatement.lean:17:91: Unused tactic linter: `(intros; apply GlobalTheory.VacLine.eigen_line <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [94718/94748] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.TripleLatticeInvariantSchwartzGlobalStatement (6.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TripleLatticeInvariantSchwartzGlobalStatement.lean:24:49: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TripleLatticeInvariantSchwartzGlobalStatement.lean:24:87: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TripleLatticeInvariantSchwartzGlobalStatement.lean:24:49: Unused tactic linter: `exact GlobalTheory.VacAvg.avg_eigen` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TripleLatticeInvariantSchwartzGlobalStatement.lean:24:87: Unused tactic linter: `(intros; apply GlobalTheory.VacAvg.avg_eigen <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [94719/94748] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeStableAlmostAllPlacesLeftStatement (5.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeStableAlmostAllPlacesLeftStatement.lean:11:61: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeStableAlmostAllPlacesLeftStatement.lean:11:111: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeStableAlmostAllPlacesLeftStatement.lean:11:61: Unused tactic linter: `exact GlobalTheory.AdelMatLat.almost_all_stable` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeStableAlmostAllPlacesLeftStatement.lean:11:111: Unused tactic linter: `(intros; apply GlobalTheory.AdelMatLat.almost_all_stable <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [94720/94748] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeStableAlmostAllPlacesRightStatement (5.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeStableAlmostAllPlacesRightStatement.lean:11:72: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeStableAlmostAllPlacesRightStatement.lean:11:133: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeStableAlmostAllPlacesRightStatement.lean:11:72: Unused tactic linter: `exact GlobalTheory.AdelMatLatRight.almost_all_stable_right` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeStableAlmostAllPlacesRightStatement.lean:11:133: Unused tactic linter: `(intros; apply GlobalTheory.AdelMatLatRight.almost_all_stable_right <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [94721/94748] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanThetaLocalAction (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanThetaLocalAction.lean:46:58: `SchwartzMap.add_apply` has been deprecated: Use `_root_.add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `_root_.add_apply x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanThetaLocalAction.lean:49:54: `SchwartzMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanThetaLocalAction.lean:180:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanThetaLocalAction.lean:234:31: `SchwartzMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
+⚠ [94722/94750] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaKernelArchimedeanUnipotentSupportStatement (6.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaKernelArchimedeanUnipotentSupportStatement.lean:21:54: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaKernelArchimedeanUnipotentSupportStatement.lean:21:97: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaKernelArchimedeanUnipotentSupportStatement.lean:21:54: Unused tactic linter: `exact GlobalTheory.CptCoeff.matrix_coeff` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaKernelArchimedeanUnipotentSupportStatement.lean:21:97: Unused tactic linter: `(intros; apply GlobalTheory.CptCoeff.matrix_coeff <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [94723/94751] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinearBarLocalThetaFactorStatement (6.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LinearBarLocalThetaFactorStatement.lean:15:58: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LinearBarLocalThetaFactorStatement.lean:15:105: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LinearBarLocalThetaFactorStatement.lean:15:58: Unused tactic linter: `exact GlobalTheory.OppLinOp.local_op_eq_smul` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LinearBarLocalThetaFactorStatement.lean:15:105: Unused tactic linter: `(intros; apply GlobalTheory.OppLinOp.local_op_eq_smul <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [94724/94754] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaSubmoduleSupNeTopStatement (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ThetaSubmoduleSupNeTopStatement.lean:13:58: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ThetaSubmoduleSupNeTopStatement.lean:13:105: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ThetaSubmoduleSupNeTopStatement.lean:13:58: Unused tactic linter: `exact GlobalTheory.ThetaGLSub.SumProper.main` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ThetaSubmoduleSupNeTopStatement.lean:13:105: Unused tactic linter: `(intros; apply GlobalTheory.ThetaGLSub.SumProper.main <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [94725/94756] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEmbeddingAtEveryPlaceStatement (6.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsEmbeddingAtEveryPlaceStatement.lean:30:57: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsEmbeddingAtEveryPlaceStatement.lean:30:103: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsEmbeddingAtEveryPlaceStatement.lean:30:57: Unused tactic linter: `exact GlobalTheory.SplitTransport.transport` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsEmbeddingAtEveryPlaceStatement.lean:30:103: Unused tactic linter: `(intros; apply GlobalTheory.SplitTransport.transport <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [94726/94756] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.AugmentationSubmoduleSecondFactor (8.4s)
+⚠ [94727/94756] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaSeriesFactorizableRestriction (6.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaSeriesFactorizableRestriction.lean:22:13: `SchwartzMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+⚠ [94728/94758] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanThetaLocalActionStatement (6.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanThetaLocalActionStatement.lean:14:51: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanThetaLocalActionStatement.lean:14:91: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanThetaLocalActionStatement.lean:14:51: Unused tactic linter: `exact GlobalTheory.ArchPure.arch_pure` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArchimedeanThetaLocalActionStatement.lean:14:91: Unused tactic linter: `(intros; apply GlobalTheory.ArchPure.arch_pure <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
