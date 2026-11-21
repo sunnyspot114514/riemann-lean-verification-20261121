@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-21T06:00:24.212045+00:00",
+  "scope": "Loader repair build and regression evidence; the full RH verification gates are separate.",
+  "build_attempts": [
+    {
+      "name": "loader-build-v1",
+      "directory_present": true,
+      "state": "failed",
+      "started_utc": "2026-11-21T05:32:10Z",
+      "completed_utc": "2026-11-21T05:32:11Z",
+      "error": "cxx-version exited 127; see /root/autodl-tmp/rh-check/audit/loader-build-v1/logs/cxx-version.log"
+    },
+    {
+      "name": "loader-build-v1a",
+      "directory_present": true,
+      "state": "failed",
+      "started_utc": "2026-11-21T05:34:32Z",
+      "completed_utc": "2026-11-21T05:34:33Z",
+      "error": "Cannot uniquely identify the root Lean object: ['Lean.c.o.export', 'Lean.c.o.export']"
+    },
+    {
+      "name": "loader-build-v1b",
+      "directory_present": true,
+      "state": "complete",
+      "started_utc": "2026-11-21T05:37:36Z",
+      "completed_utc": "2026-11-21T05:37:47Z"
+    },
+    {
+      "name": "loader-build-v2",
+      "directory_present": true,
+      "state": "complete",
+      "started_utc": "2026-11-21T05:44:06Z",
+      "completed_utc": "2026-11-21T05:44:18Z"
+    }
+  ],
+  "test_run": "audit/loader-tests/20261121T054621Z-d3b1dbe9",
+  "toolchain": "tools/lean-4.33.1-loader-v2",
+  "tests": {
+    "state": "completed",
+    "passed": true,
+    "started_utc": "2026-11-21T05:46:21.013+00:00",
+    "finished_utc": "2026-11-21T05:52:07.577+00:00"
+  },
+  "case_count": 29,
+  "failed_cases": [],
+  "excluded": "Binaries, .olean/.o files, static archives, arena files, whole source/toolchain trees, control files and credentials.",
+  "source_file_count": 438,
+  "source_bytes": 133039717,
+  "compressed_bytes": 10275372,
+  "archive_parts": 1,
+  "input_setup_count": 1
+}

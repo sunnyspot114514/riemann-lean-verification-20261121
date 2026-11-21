@@ -1,0 +1,1933 @@
+{
+  "schema": 1,
+  "started_utc": "2026-11-21T05:46:21.013+00:00",
+  "state": "completed",
+  "passed": true,
+  "run_directory": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9",
+  "base_lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+  "official_toolchain": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux",
+  "patched_toolchain": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2",
+  "arena_directory": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/arena",
+  "arena_filesystem": "xfs",
+  "mmap_budget": 50000,
+  "sampler": {
+    "requested_interval_seconds": 0.02,
+    "scope": "Direct Lean process PID, not a strace/time wrapper; sampled peaks are lower bounds."
+  },
+  "vm_max_map_count": "65530",
+  "harness_sha256": "f30b3e99fc2f20f7e35ea0a2313b22fa148d842962fdfa7ddf1d198267f830ba",
+  "fixture_sha256": {
+    "LoaderArtifact.lean": "82609ebe50e82957b2b4d782577eb44881eb659b99849068b7647c9134d69d35",
+    "LoaderBad.lean": "b5e91f5bb94c40484d60b2836bb79dd0632fffc2e06c5132ec6b3dd1bc28ad11",
+    "LoaderFree.lean": "e53787fec9122ff85f91c3b00aefd83ed4dfc8f2cf46163efa3cf607b4ea2734",
+    "LoaderGood.lean": "b38a3b6c4629340e12adcec4375b9ee270f373fdbbccca5ef7c0074ea3aaaa1d",
+    "LoaderImportArtifact.lean": "7b5181ab4cf295f9f06d813ce441e299e800a565f8b934b8d6ff8cc839edd852",
+    "LoaderKernelReject.lean": "a75351f7d184dd5b2dfdd461313a770c91f19c66c65a19671d7c4543618413d1"
+  },
+  "baseline_evidence": [
+    {
+      "original_path": "/root/autodl-tmp/rh-check/verification/results/diagnostics/20261121-map-limit/evidence.json",
+      "copied_path": "baseline-evidence/000-evidence.json",
+      "bytes": 12174,
+      "sha256": "4d796d8229770a6f2d7cb0e2e1049c8f355bda9f667bdc03fb63cecfa2012c27"
+    },
+    {
+      "original_path": "/root/autodl-tmp/rh-check/verification/results/diagnostics/20261121-map-limit/strace.log",
+      "copied_path": "baseline-evidence/001-strace.log",
+      "bytes": 37996,
+      "sha256": "693ae3b90b778aba1b35d20aedf0305fe5b9e63775ed083e7b466e0915796eae"
+    }
+  ],
+  "cases": [
+    {
+      "name": "official-version",
+      "started_utc": "2026-11-21T05:46:21.016+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux/bin/lean",
+        "--version"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": null,
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": null,
+        "LEAN_OLEAN_ARENA_DIR": null,
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "success",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "official-version/stdout.log",
+      "resources": "official-version/resources.jsonl",
+      "timeout_seconds": 300,
+      "pid": 468706,
+      "timed_out": false,
+      "exit_code": 0,
+      "finished_utc": "2026-11-21T05:46:21.082+00:00",
+      "elapsed_seconds": 0.06547070294618607,
+      "sampled_peaks": {
+        "VmRSS_bytes": 40194048,
+        "VmHWM_bytes": 40194048,
+        "RssAnon_bytes": 6574080,
+        "RssFile_bytes": 33619968,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 2381684736,
+        "map_count": 65,
+        "arena_map_count": 0
+      },
+      "sample_count": 4,
+      "stdout_sha256": "63f3e16bf0258e2cc0ab3010eb1830723df9bb85097b7b72b0137b9be25a78e9",
+      "pattern_matches": {
+        "version 4\\.33\\.1,": true,
+        "819816b2e0a3bf405af45ae5c7af2491d8f5bee6": true
+      },
+      "passed": true
+    },
+    {
+      "name": "patched-version",
+      "started_utc": "2026-11-21T05:46:21.084+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2/bin/lean",
+        "--version"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": null,
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": null,
+        "LEAN_OLEAN_ARENA_DIR": null,
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "success",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "patched-version/stdout.log",
+      "resources": "patched-version/resources.jsonl",
+      "timeout_seconds": 300,
+      "pid": 468709,
+      "timed_out": false,
+      "exit_code": 0,
+      "finished_utc": "2026-11-21T05:46:21.149+00:00",
+      "elapsed_seconds": 0.06495816260576248,
+      "sampled_peaks": {
+        "VmRSS_bytes": 39686144,
+        "VmHWM_bytes": 39686144,
+        "RssAnon_bytes": 6279168,
+        "RssFile_bytes": 33406976,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 2381692928,
+        "map_count": 65,
+        "arena_map_count": 0
+      },
+      "sample_count": 4,
+      "stdout_sha256": "63f3e16bf0258e2cc0ab3010eb1830723df9bb85097b7b72b0137b9be25a78e9",
+      "pattern_matches": {
+        "version 4\\.33\\.1,": true,
+        "819816b2e0a3bf405af45ae5c7af2491d8f5bee6": true
+      },
+      "passed": true
+    },
+    {
+      "name": "official-build-seed",
+      "started_utc": "2026-11-21T05:46:21.151+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux/bin/lean",
+        "-o",
+        "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-valid/LoaderArtifact.olean",
+        "-j1",
+        "--tstack=400000",
+        "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+        "--stats",
+        "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderArtifact.lean"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": null,
+        "LEAN_OLEAN_ARENA_DIR": null,
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "success",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "official-build-seed/stdout.log",
+      "resources": "official-build-seed/resources.jsonl",
+      "timeout_seconds": 300,
+      "pid": 468713,
+      "timed_out": false,
+      "exit_code": 0,
+      "finished_utc": "2026-11-21T05:46:21.467+00:00",
+      "elapsed_seconds": 0.31559310108423233,
+      "sampled_peaks": {
+        "VmRSS_bytes": 484253696,
+        "VmHWM_bytes": 484253696,
+        "RssAnon_bytes": 44544000,
+        "RssFile_bytes": 439709696,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 3736440832,
+        "map_count": 3230,
+        "arena_map_count": 0
+      },
+      "sample_count": 15,
+      "stdout_sha256": "6fa1f8cd9ce884049c3ebe8246b1527db2cc42d364c6df9a4ed15c647817df56",
+      "pattern_matches": {},
+      "passed": true
+    },
+    {
+      "name": "official-good",
+      "started_utc": "2026-11-21T05:46:21.469+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux/bin/lean",
+        "-j1",
+        "--tstack=400000",
+        "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+        "--stats",
+        "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderGood.lean"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-valid",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": null,
+        "LEAN_OLEAN_ARENA_DIR": null,
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "success",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "official-good/stdout.log",
+      "resources": "official-good/resources.jsonl",
+      "timeout_seconds": 300,
+      "pid": 468720,
+      "timed_out": false,
+      "exit_code": 0,
+      "finished_utc": "2026-11-21T05:46:24.007+00:00",
+      "elapsed_seconds": 2.5373751893639565,
+      "sampled_peaks": {
+        "VmRSS_bytes": 1608704000,
+        "VmHWM_bytes": 1608704000,
+        "RssAnon_bytes": 100929536,
+        "RssFile_bytes": 1507774464,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 5836722176,
+        "map_count": 11688,
+        "arena_map_count": 0
+      },
+      "sample_count": 122,
+      "stdout_sha256": "ce20d36b682e2ccbfeac0fe4566823740b80fe8687a697cc69ce0648db20e45e",
+      "pattern_matches": {
+        "GOOD_PROOF_OK": true
+      },
+      "passed": true
+    },
+    {
+      "name": "official-bad-elaboration",
+      "started_utc": "2026-11-21T05:46:24.009+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux/bin/lean",
+        "-j1",
+        "--tstack=400000",
+        "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+        "--stats",
+        "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderBad.lean"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-valid",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": null,
+        "LEAN_OLEAN_ARENA_DIR": null,
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "rejection",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "official-bad-elaboration/stdout.log",
+      "resources": "official-bad-elaboration/resources.jsonl",
+      "timeout_seconds": 300,
+      "pid": 468764,
+      "timed_out": false,
+      "exit_code": 1,
+      "finished_utc": "2026-11-21T05:46:25.052+00:00",
+      "elapsed_seconds": 1.0429095402359962,
+      "sampled_peaks": {
+        "VmRSS_bytes": 1606008832,
+        "VmHWM_bytes": 1606008832,
+        "RssAnon_bytes": 100265984,
+        "RssFile_bytes": 1505742848,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 5376647168,
+        "map_count": 11685,
+        "arena_map_count": 0
+      },
+      "sample_count": 47,
+      "stdout_sha256": "5091437836305ec419c6acaf24d4af836ca5197ab548ef5869f5dc9a86927ce0",
+      "pattern_matches": {
+        "type mismatch": true,
+        "False": true,
+        "True": true
+      },
+      "passed": true
+    },
+    {
+      "name": "official-kernel-rejection",
+      "started_utc": "2026-11-21T05:46:25.055+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux/bin/lean",
+        "-j1",
+        "--tstack=400000",
+        "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+        "--stats",
+        "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderKernelReject.lean"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-valid",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": null,
+        "LEAN_OLEAN_ARENA_DIR": null,
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "success",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "official-kernel-rejection/stdout.log",
+      "resources": "official-kernel-rejection/resources.jsonl",
+      "timeout_seconds": 300,
+      "pid": 468778,
+      "timed_out": false,
+      "exit_code": 0,
+      "finished_utc": "2026-11-21T05:46:26.129+00:00",
+      "elapsed_seconds": 1.0735396966338158,
+      "sampled_peaks": {
+        "VmRSS_bytes": 1613578240,
+        "VmHWM_bytes": 1613578240,
+        "RssAnon_bytes": 101163008,
+        "RssFile_bytes": 1512415232,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 5836722176,
+        "map_count": 11688,
+        "arena_map_count": 0
+      },
+      "sample_count": 49,
+      "stdout_sha256": "3c404085930110417c2bb950489a80c05f11a10afa2062aa25cda60d85a15250",
+      "pattern_matches": {
+        "KERNEL_REJECTED_INVALID_DECL": true
+      },
+      "passed": true
+    },
+    {
+      "name": "official-import-seed",
+      "started_utc": "2026-11-21T05:46:26.132+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux/bin/lean",
+        "-j1",
+        "--tstack=400000",
+        "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+        "--stats",
+        "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderImportArtifact.lean"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-valid",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": null,
+        "LEAN_OLEAN_ARENA_DIR": null,
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "success",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "official-import-seed/stdout.log",
+      "resources": "official-import-seed/resources.jsonl",
+      "timeout_seconds": 300,
+      "pid": 468795,
+      "timed_out": false,
+      "exit_code": 0,
+      "finished_utc": "2026-11-21T05:46:26.448+00:00",
+      "elapsed_seconds": 0.31568802893161774,
+      "sampled_peaks": {
+        "VmRSS_bytes": 479244288,
+        "VmHWM_bytes": 479244288,
+        "RssAnon_bytes": 41418752,
+        "RssFile_bytes": 437825536,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 3736449024,
+        "map_count": 3234,
+        "arena_map_count": 0
+      },
+      "sample_count": 16,
+      "stdout_sha256": "8a9be183010a73b835a1b5d987967c5a86ec946115eb043057674cf984704a6a",
+      "pattern_matches": {
+        "ARTIFACT_IMPORT_OK": true
+      },
+      "passed": true
+    },
+    {
+      "name": "official-free-regions",
+      "started_utc": "2026-11-21T05:46:26.450+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux/bin/lean",
+        "-j1",
+        "--tstack=400000",
+        "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+        "--stats",
+        "--run",
+        "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderFree.lean"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-valid",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": null,
+        "LEAN_OLEAN_ARENA_DIR": null,
+        "LEAN_LOADER_TEST_PHASE_FILE": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/official-free-regions/free-phase.txt"
+      },
+      "expected": "success",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "official-free-regions/stdout.log",
+      "resources": "official-free-regions/resources.jsonl",
+      "timeout_seconds": 300,
+      "pid": 468805,
+      "timed_out": false,
+      "exit_code": 0,
+      "finished_utc": "2026-11-21T05:46:35.795+00:00",
+      "elapsed_seconds": 9.344419918954372,
+      "sampled_peaks": {
+        "VmRSS_bytes": 3661672448,
+        "VmHWM_bytes": 3661672448,
+        "RssAnon_bytes": 2150182912,
+        "RssFile_bytes": 1516593152,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 7306022912,
+        "map_count": 11742,
+        "arena_map_count": 0
+      },
+      "sample_count": 461,
+      "stdout_sha256": "2685f577b2e93a87be3d7c13ec64ea6f457aa51e765723899d423b24e4e8f513",
+      "free_cycles": [
+        [
+          "0",
+          "11610",
+          "0"
+        ],
+        [
+          "1",
+          "11610",
+          "0"
+        ],
+        [
+          "2",
+          "11610",
+          "0"
+        ]
+      ],
+      "free_phase_samples": {
+        "before:0": {
+          "samples": 149,
+          "arena_min": 0,
+          "arena_max": 0
+        },
+        "loaded:0": {
+          "samples": 11,
+          "arena_min": 0,
+          "arena_max": 0
+        },
+        "after:0": {
+          "samples": 6,
+          "arena_min": 0,
+          "arena_max": 0
+        },
+        "before:1": {
+          "samples": 101,
+          "arena_min": 0,
+          "arena_max": 0
+        },
+        "loaded:1": {
+          "samples": 12,
+          "arena_min": 0,
+          "arena_max": 0
+        },
+        "after:1": {
+          "samples": 6,
+          "arena_min": 0,
+          "arena_max": 0
+        },
+        "before:2": {
+          "samples": 100,
+          "arena_min": 0,
+          "arena_max": 0
+        },
+        "loaded:2": {
+          "samples": 11,
+          "arena_min": 0,
+          "arena_max": 0
+        },
+        "after:2": {
+          "samples": 15,
+          "arena_min": 0,
+          "arena_max": 0
+        }
+      },
+      "arena_last_reference_release_observed": false,
+      "pattern_matches": {
+        "FREE_REGIONS_OK": true
+      },
+      "passed": true
+    },
+    {
+      "name": "official-checker",
+      "started_utc": "2026-11-21T05:46:35.796+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux/bin/leanchecker",
+        "--fresh",
+        "-v",
+        "LoaderArtifact"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "84bc3e7cd6efa5bfecd1e7c37571fed9428fb2b3e16da0ddf62f2163573486d0",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-valid",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": null,
+        "LEAN_OLEAN_ARENA_DIR": null,
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "success",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "official-checker/stdout.log",
+      "resources": "official-checker/resources.jsonl",
+      "timeout_seconds": 300,
+      "pid": 468906,
+      "timed_out": false,
+      "exit_code": 0,
+      "finished_utc": "2026-11-21T05:47:36.527+00:00",
+      "elapsed_seconds": 60.7305046543479,
+      "sampled_peaks": {
+        "VmRSS_bytes": 532447232,
+        "VmHWM_bytes": 532447232,
+        "RssAnon_bytes": 67547136,
+        "RssFile_bytes": 465227776,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 3928911872,
+        "map_count": 3227,
+        "arena_map_count": 0
+      },
+      "sample_count": 3022,
+      "stdout_sha256": "26467a832d80009a0e8946c5ad76be816fe23b44b6a0daae8d2b04dec4f75148",
+      "pattern_matches": {},
+      "passed": true
+    },
+    {
+      "name": "patched-default-good",
+      "started_utc": "2026-11-21T05:47:36.530+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2/bin/lean",
+        "-j1",
+        "--tstack=400000",
+        "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+        "--stats",
+        "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderGood.lean"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-valid",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": "50000",
+        "LEAN_OLEAN_ARENA_DIR": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/arena",
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "success",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "patched-default-good/stdout.log",
+      "resources": "patched-default-good/resources.jsonl",
+      "timeout_seconds": 300,
+      "pid": 469565,
+      "timed_out": false,
+      "exit_code": 0,
+      "finished_utc": "2026-11-21T05:47:43.729+00:00",
+      "elapsed_seconds": 7.198676913976669,
+      "sampled_peaks": {
+        "VmRSS_bytes": 1563369472,
+        "VmHWM_bytes": 1563369472,
+        "RssAnon_bytes": 100782080,
+        "RssFile_bytes": 1462587392,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 5836730368,
+        "map_count": 11688,
+        "arena_map_count": 0
+      },
+      "sample_count": 359,
+      "stdout_sha256": "ce20d36b682e2ccbfeac0fe4566823740b80fe8687a697cc69ce0648db20e45e",
+      "pattern_matches": {
+        "GOOD_PROOF_OK": true
+      },
+      "passed": true
+    },
+    {
+      "name": "patched-default-bad-elaboration",
+      "started_utc": "2026-11-21T05:47:43.732+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2/bin/lean",
+        "-j1",
+        "--tstack=400000",
+        "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+        "--stats",
+        "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderBad.lean"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-valid",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": "50000",
+        "LEAN_OLEAN_ARENA_DIR": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/arena",
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "rejection",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "patched-default-bad-elaboration/stdout.log",
+      "resources": "patched-default-bad-elaboration/resources.jsonl",
+      "timeout_seconds": 300,
+      "pid": 469632,
+      "timed_out": false,
+      "exit_code": 1,
+      "finished_utc": "2026-11-21T05:47:44.802+00:00",
+      "elapsed_seconds": 1.07017432898283,
+      "sampled_peaks": {
+        "VmRSS_bytes": 1570803712,
+        "VmHWM_bytes": 1570803712,
+        "RssAnon_bytes": 99557376,
+        "RssFile_bytes": 1471246336,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 5376655360,
+        "map_count": 11685,
+        "arena_map_count": 0
+      },
+      "sample_count": 54,
+      "stdout_sha256": "5091437836305ec419c6acaf24d4af836ca5197ab548ef5869f5dc9a86927ce0",
+      "pattern_matches": {
+        "type mismatch": true,
+        "False": true,
+        "True": true
+      },
+      "passed": true
+    },
+    {
+      "name": "patched-default-kernel-rejection",
+      "started_utc": "2026-11-21T05:47:44.805+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2/bin/lean",
+        "-j1",
+        "--tstack=400000",
+        "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+        "--stats",
+        "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderKernelReject.lean"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-valid",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": "50000",
+        "LEAN_OLEAN_ARENA_DIR": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/arena",
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "success",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "patched-default-kernel-rejection/stdout.log",
+      "resources": "patched-default-kernel-rejection/resources.jsonl",
+      "timeout_seconds": 300,
+      "pid": 469647,
+      "timed_out": false,
+      "exit_code": 0,
+      "finished_utc": "2026-11-21T05:47:45.923+00:00",
+      "elapsed_seconds": 1.1176776960492134,
+      "sampled_peaks": {
+        "VmRSS_bytes": 1587503104,
+        "VmHWM_bytes": 1587503104,
+        "RssAnon_bytes": 101335040,
+        "RssFile_bytes": 1486168064,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 5836730368,
+        "map_count": 11688,
+        "arena_map_count": 0
+      },
+      "sample_count": 56,
+      "stdout_sha256": "3c404085930110417c2bb950489a80c05f11a10afa2062aa25cda60d85a15250",
+      "pattern_matches": {
+        "KERNEL_REJECTED_INVALID_DECL": true
+      },
+      "passed": true
+    },
+    {
+      "name": "patched-default-import-seed",
+      "started_utc": "2026-11-21T05:47:45.926+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2/bin/lean",
+        "-j1",
+        "--tstack=400000",
+        "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+        "--stats",
+        "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderImportArtifact.lean"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-valid",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": "50000",
+        "LEAN_OLEAN_ARENA_DIR": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/arena",
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "success",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "patched-default-import-seed/stdout.log",
+      "resources": "patched-default-import-seed/resources.jsonl",
+      "timeout_seconds": 300,
+      "pid": 469660,
+      "timed_out": false,
+      "exit_code": 0,
+      "finished_utc": "2026-11-21T05:47:46.242+00:00",
+      "elapsed_seconds": 0.3152916207909584,
+      "sampled_peaks": {
+        "VmRSS_bytes": 469901312,
+        "VmHWM_bytes": 469901312,
+        "RssAnon_bytes": 41410560,
+        "RssFile_bytes": 428490752,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 3736457216,
+        "map_count": 3234,
+        "arena_map_count": 0
+      },
+      "sample_count": 16,
+      "stdout_sha256": "8a9be183010a73b835a1b5d987967c5a86ec946115eb043057674cf984704a6a",
+      "pattern_matches": {
+        "ARTIFACT_IMPORT_OK": true
+      },
+      "passed": true
+    },
+    {
+      "name": "patched-default-free-regions",
+      "started_utc": "2026-11-21T05:47:46.245+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2/bin/lean",
+        "-j1",
+        "--tstack=400000",
+        "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+        "--stats",
+        "--run",
+        "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderFree.lean"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-valid",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": "50000",
+        "LEAN_OLEAN_ARENA_DIR": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/arena",
+        "LEAN_LOADER_TEST_PHASE_FILE": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/patched-default-free-regions/free-phase.txt"
+      },
+      "expected": "success",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "patched-default-free-regions/stdout.log",
+      "resources": "patched-default-free-regions/resources.jsonl",
+      "timeout_seconds": 300,
+      "pid": 469673,
+      "timed_out": false,
+      "exit_code": 0,
+      "finished_utc": "2026-11-21T05:47:58.948+00:00",
+      "elapsed_seconds": 12.701934084296227,
+      "sampled_peaks": {
+        "VmRSS_bytes": 3640737792,
+        "VmHWM_bytes": 3640741888,
+        "RssAnon_bytes": 160002048,
+        "RssFile_bytes": 3480735744,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 7507357696,
+        "map_count": 11692,
+        "arena_map_count": 8
+      },
+      "sample_count": 627,
+      "stdout_sha256": "2685f577b2e93a87be3d7c13ec64ea6f457aa51e765723899d423b24e4e8f513",
+      "free_cycles": [
+        [
+          "0",
+          "11610",
+          "0"
+        ],
+        [
+          "1",
+          "11610",
+          "0"
+        ],
+        [
+          "2",
+          "11610",
+          "0"
+        ]
+      ],
+      "free_phase_samples": {
+        "before:0": {
+          "samples": 185,
+          "arena_min": 0,
+          "arena_max": 8
+        },
+        "loaded:0": {
+          "samples": 25,
+          "arena_min": 0,
+          "arena_max": 8
+        },
+        "after:0": {
+          "samples": 6,
+          "arena_min": 0,
+          "arena_max": 0
+        },
+        "before:1": {
+          "samples": 151,
+          "arena_min": 0,
+          "arena_max": 8
+        },
+        "loaded:1": {
+          "samples": 25,
+          "arena_min": 0,
+          "arena_max": 8
+        },
+        "after:1": {
+          "samples": 6,
+          "arena_min": 0,
+          "arena_max": 0
+        },
+        "before:2": {
+          "samples": 148,
+          "arena_min": 0,
+          "arena_max": 8
+        },
+        "loaded:2": {
+          "samples": 24,
+          "arena_min": 0,
+          "arena_max": 8
+        },
+        "after:2": {
+          "samples": 7,
+          "arena_min": 0,
+          "arena_max": 0
+        }
+      },
+      "arena_last_reference_release_observed": true,
+      "pattern_matches": {
+        "FREE_REGIONS_OK": true
+      },
+      "passed": true
+    },
+    {
+      "name": "patched-default-checker",
+      "started_utc": "2026-11-21T05:47:58.952+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2/bin/leanchecker",
+        "--fresh",
+        "-v",
+        "LoaderArtifact"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "84bc3e7cd6efa5bfecd1e7c37571fed9428fb2b3e16da0ddf62f2163573486d0",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-valid",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": "50000",
+        "LEAN_OLEAN_ARENA_DIR": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/arena",
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "success",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "patched-default-checker/stdout.log",
+      "resources": "patched-default-checker/resources.jsonl",
+      "timeout_seconds": 300,
+      "pid": 469838,
+      "timed_out": false,
+      "exit_code": 0,
+      "finished_utc": "2026-11-21T05:49:00.070+00:00",
+      "elapsed_seconds": 61.117930971086025,
+      "sampled_peaks": {
+        "VmRSS_bytes": 532828160,
+        "VmHWM_bytes": 532828160,
+        "RssAnon_bytes": 67223552,
+        "RssFile_bytes": 465735680,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 3928932352,
+        "map_count": 3229,
+        "arena_map_count": 0
+      },
+      "sample_count": 3041,
+      "stdout_sha256": "26467a832d80009a0e8946c5ad76be816fe23b44b6a0daae8d2b04dec4f75148",
+      "pattern_matches": {},
+      "passed": true
+    },
+    {
+      "name": "patched-arena-zero-good",
+      "started_utc": "2026-11-21T05:49:00.074+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2/bin/lean",
+        "-j1",
+        "--tstack=400000",
+        "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+        "--stats",
+        "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderGood.lean"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-valid",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": "0",
+        "LEAN_OLEAN_ARENA_DIR": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/arena",
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "success",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "patched-arena-zero-good/stdout.log",
+      "resources": "patched-arena-zero-good/resources.jsonl",
+      "timeout_seconds": 300,
+      "pid": 470476,
+      "timed_out": false,
+      "exit_code": 0,
+      "finished_utc": "2026-11-21T05:49:03.506+00:00",
+      "elapsed_seconds": 3.432064138352871,
+      "sampled_peaks": {
+        "VmRSS_bytes": 2206498816,
+        "VmHWM_bytes": 2206498816,
+        "RssAnon_bytes": 100691968,
+        "RssFile_bytes": 2105806848,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 5959745536,
+        "map_count": 86,
+        "arena_map_count": 8
+      },
+      "sample_count": 171,
+      "stdout_sha256": "68adea70cb98572efd428b0c9f3784665ab27ad389fbba920ee717f09055f88d",
+      "arena_use_observed": true,
+      "memory_mapped_modules": [
+        0
+      ],
+      "pattern_matches": {
+        "GOOD_PROOF_OK": true
+      },
+      "passed": true
+    },
+    {
+      "name": "patched-arena-zero-bad-elaboration",
+      "started_utc": "2026-11-21T05:49:03.511+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2/bin/lean",
+        "-j1",
+        "--tstack=400000",
+        "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+        "--stats",
+        "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderBad.lean"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-valid",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": "0",
+        "LEAN_OLEAN_ARENA_DIR": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/arena",
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "rejection",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "patched-arena-zero-bad-elaboration/stdout.log",
+      "resources": "patched-arena-zero-bad-elaboration/resources.jsonl",
+      "timeout_seconds": 300,
+      "pid": 470521,
+      "timed_out": false,
+      "exit_code": 1,
+      "finished_utc": "2026-11-21T05:49:06.885+00:00",
+      "elapsed_seconds": 3.373559907078743,
+      "sampled_peaks": {
+        "VmRSS_bytes": 2197852160,
+        "VmHWM_bytes": 2197852160,
+        "RssAnon_bytes": 99520512,
+        "RssFile_bytes": 2098331648,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 5508063232,
+        "map_count": 83,
+        "arena_map_count": 8
+      },
+      "sample_count": 168,
+      "stdout_sha256": "458a6016146339334f4ed1fae457c96b6af4cfc315f5c53e1d7d0d87fc7c02c1",
+      "pattern_matches": {
+        "type mismatch": true,
+        "False": true,
+        "True": true
+      },
+      "passed": true
+    },
+    {
+      "name": "patched-arena-zero-kernel-rejection",
+      "started_utc": "2026-11-21T05:49:06.887+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2/bin/lean",
+        "-j1",
+        "--tstack=400000",
+        "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+        "--stats",
+        "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderKernelReject.lean"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-valid",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": "0",
+        "LEAN_OLEAN_ARENA_DIR": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/arena",
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "success",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "patched-arena-zero-kernel-rejection/stdout.log",
+      "resources": "patched-arena-zero-kernel-rejection/resources.jsonl",
+      "timeout_seconds": 300,
+      "pid": 470550,
+      "timed_out": false,
+      "exit_code": 0,
+      "finished_utc": "2026-11-21T05:49:10.310+00:00",
+      "elapsed_seconds": 3.422623500227928,
+      "sampled_peaks": {
+        "VmRSS_bytes": 2211237888,
+        "VmHWM_bytes": 2211237888,
+        "RssAnon_bytes": 101548032,
+        "RssFile_bytes": 2109689856,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 5959745536,
+        "map_count": 86,
+        "arena_map_count": 8
+      },
+      "sample_count": 171,
+      "stdout_sha256": "41bbcdaec2c736ad8e1063dbdc894f31ef984692e614e077b6d54ad0a5ad252d",
+      "arena_use_observed": true,
+      "memory_mapped_modules": [
+        0
+      ],
+      "pattern_matches": {
+        "KERNEL_REJECTED_INVALID_DECL": true
+      },
+      "passed": true
+    },
+    {
+      "name": "patched-arena-zero-import-seed",
+      "started_utc": "2026-11-21T05:49:10.314+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2/bin/lean",
+        "-j1",
+        "--tstack=400000",
+        "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+        "--stats",
+        "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderImportArtifact.lean"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-valid",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": "0",
+        "LEAN_OLEAN_ARENA_DIR": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/arena",
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "success",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "patched-arena-zero-import-seed/stdout.log",
+      "resources": "patched-arena-zero-import-seed/resources.jsonl",
+      "timeout_seconds": 300,
+      "pid": 470602,
+      "timed_out": false,
+      "exit_code": 0,
+      "finished_utc": "2026-11-21T05:49:11.081+00:00",
+      "elapsed_seconds": 0.7671551629900932,
+      "sampled_peaks": {
+        "VmRSS_bytes": 516239360,
+        "VmHWM_bytes": 516239360,
+        "RssAnon_bytes": 41246720,
+        "RssFile_bytes": 474992640,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 3876474880,
+        "map_count": 77,
+        "arena_map_count": 2
+      },
+      "sample_count": 39,
+      "stdout_sha256": "dc59482a1ee8a0ac83f4ec0b4e0366a2548b84bd0d5165b4df9609f726be7980",
+      "arena_use_observed": true,
+      "memory_mapped_modules": [
+        0
+      ],
+      "pattern_matches": {
+        "ARTIFACT_IMPORT_OK": true
+      },
+      "passed": true
+    },
+    {
+      "name": "patched-arena-zero-free-regions",
+      "started_utc": "2026-11-21T05:49:11.086+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2/bin/lean",
+        "-j1",
+        "--tstack=400000",
+        "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+        "--stats",
+        "--run",
+        "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderFree.lean"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-valid",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": "0",
+        "LEAN_OLEAN_ARENA_DIR": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/arena",
+        "LEAN_LOADER_TEST_PHASE_FILE": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/patched-arena-zero-free-regions/free-phase.txt"
+      },
+      "expected": "success",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "patched-arena-zero-free-regions/stdout.log",
+      "resources": "patched-arena-zero-free-regions/resources.jsonl",
+      "timeout_seconds": 300,
+      "pid": 470617,
+      "timed_out": false,
+      "exit_code": 0,
+      "finished_utc": "2026-11-21T05:49:27.391+00:00",
+      "elapsed_seconds": 16.304561085999012,
+      "sampled_peaks": {
+        "VmRSS_bytes": 4404322304,
+        "VmHWM_bytes": 4404387840,
+        "RssAnon_bytes": 154476544,
+        "RssFile_bytes": 4249845760,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 7630372864,
+        "map_count": 90,
+        "arena_map_count": 16
+      },
+      "sample_count": 807,
+      "stdout_sha256": "4c309089a84a88f4ef42ac2b5659e84045eb11a1e265d69afbf284e3b2560c74",
+      "arena_use_observed": true,
+      "free_cycles": [
+        [
+          "0",
+          "11610",
+          "0"
+        ],
+        [
+          "1",
+          "11610",
+          "0"
+        ],
+        [
+          "2",
+          "11610",
+          "0"
+        ]
+      ],
+      "free_phase_samples": {
+        "before:0": {
+          "samples": 179,
+          "arena_min": 8,
+          "arena_max": 15
+        },
+        "loaded:0": {
+          "samples": 113,
+          "arena_min": 8,
+          "arena_max": 15
+        },
+        "after:0": {
+          "samples": 6,
+          "arena_min": 8,
+          "arena_max": 8
+        },
+        "before:1": {
+          "samples": 138,
+          "arena_min": 8,
+          "arena_max": 16
+        },
+        "loaded:1": {
+          "samples": 26,
+          "arena_min": 8,
+          "arena_max": 16
+        },
+        "after:1": {
+          "samples": 5,
+          "arena_min": 8,
+          "arena_max": 8
+        },
+        "before:2": {
+          "samples": 138,
+          "arena_min": 8,
+          "arena_max": 16
+        },
+        "loaded:2": {
+          "samples": 25,
+          "arena_min": 8,
+          "arena_max": 16
+        },
+        "after:2": {
+          "samples": 21,
+          "arena_min": 0,
+          "arena_max": 8
+        }
+      },
+      "arena_last_reference_release_observed": true,
+      "pattern_matches": {
+        "FREE_REGIONS_OK": true
+      },
+      "passed": true
+    },
+    {
+      "name": "patched-arena-zero-checker",
+      "started_utc": "2026-11-21T05:49:27.396+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2/bin/leanchecker",
+        "--fresh",
+        "-v",
+        "LoaderArtifact"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "84bc3e7cd6efa5bfecd1e7c37571fed9428fb2b3e16da0ddf62f2163573486d0",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-valid",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": "0",
+        "LEAN_OLEAN_ARENA_DIR": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/arena",
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "success",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "patched-arena-zero-checker/stdout.log",
+      "resources": "patched-arena-zero-checker/resources.jsonl",
+      "timeout_seconds": 300,
+      "pid": 470795,
+      "timed_out": false,
+      "exit_code": 0,
+      "finished_utc": "2026-11-21T05:50:28.215+00:00",
+      "elapsed_seconds": 60.81869858503342,
+      "sampled_peaks": {
+        "VmRSS_bytes": 544194560,
+        "VmHWM_bytes": 544194560,
+        "RssAnon_bytes": 66564096,
+        "RssFile_bytes": 477630464,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 4068950016,
+        "map_count": 75,
+        "arena_map_count": 2
+      },
+      "sample_count": 3025,
+      "stdout_sha256": "26467a832d80009a0e8946c5ad76be816fe23b44b6a0daae8d2b04dec4f75148",
+      "arena_use_observed": true,
+      "pattern_matches": {},
+      "passed": true
+    },
+    {
+      "name": "patched-anonymous-zero-good",
+      "started_utc": "2026-11-21T05:50:28.217+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2/bin/lean",
+        "-j1",
+        "--tstack=400000",
+        "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+        "--stats",
+        "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderGood.lean"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-valid",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": "0",
+        "LEAN_OLEAN_ARENA_DIR": null,
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "success",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "patched-anonymous-zero-good/stdout.log",
+      "resources": "patched-anonymous-zero-good/resources.jsonl",
+      "timeout_seconds": 300,
+      "pid": 471402,
+      "timed_out": false,
+      "exit_code": 0,
+      "finished_utc": "2026-11-21T05:50:31.544+00:00",
+      "elapsed_seconds": 3.3268149718642235,
+      "sampled_peaks": {
+        "VmRSS_bytes": 2222534656,
+        "VmHWM_bytes": 2222534656,
+        "RssAnon_bytes": 2113269760,
+        "RssFile_bytes": 109264896,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 5959745536,
+        "map_count": 78,
+        "arena_map_count": 0
+      },
+      "sample_count": 166,
+      "stdout_sha256": "68adea70cb98572efd428b0c9f3784665ab27ad389fbba920ee717f09055f88d",
+      "memory_mapped_modules": [
+        0
+      ],
+      "pattern_matches": {
+        "GOOD_PROOF_OK": true
+      },
+      "passed": true
+    },
+    {
+      "name": "patched-anonymous-zero-free",
+      "started_utc": "2026-11-21T05:50:31.547+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2/bin/lean",
+        "-j1",
+        "--tstack=400000",
+        "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+        "--stats",
+        "--run",
+        "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderFree.lean"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-valid",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": "0",
+        "LEAN_OLEAN_ARENA_DIR": null,
+        "LEAN_LOADER_TEST_PHASE_FILE": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/patched-anonymous-zero-free/free-phase.txt"
+      },
+      "expected": "success",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "patched-anonymous-zero-free/stdout.log",
+      "resources": "patched-anonymous-zero-free/resources.jsonl",
+      "timeout_seconds": 300,
+      "pid": 471437,
+      "timed_out": false,
+      "exit_code": 0,
+      "finished_utc": "2026-11-21T05:50:43.240+00:00",
+      "elapsed_seconds": 11.69290915876627,
+      "sampled_peaks": {
+        "VmRSS_bytes": 4676927488,
+        "VmHWM_bytes": 4676927488,
+        "RssAnon_bytes": 4562731008,
+        "RssFile_bytes": 114196480,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 7630372864,
+        "map_count": 75,
+        "arena_map_count": 0
+      },
+      "sample_count": 581,
+      "stdout_sha256": "4c309089a84a88f4ef42ac2b5659e84045eb11a1e265d69afbf284e3b2560c74",
+      "free_cycles": [
+        [
+          "0",
+          "11610",
+          "0"
+        ],
+        [
+          "1",
+          "11610",
+          "0"
+        ],
+        [
+          "2",
+          "11610",
+          "0"
+        ]
+      ],
+      "free_phase_samples": {
+        "before:0": {
+          "samples": 140,
+          "arena_min": 0,
+          "arena_max": 0
+        },
+        "loaded:0": {
+          "samples": 13,
+          "arena_min": 0,
+          "arena_max": 0
+        },
+        "after:0": {
+          "samples": 6,
+          "arena_min": 0,
+          "arena_max": 0
+        },
+        "before:1": {
+          "samples": 109,
+          "arena_min": 0,
+          "arena_max": 0
+        },
+        "loaded:1": {
+          "samples": 12,
+          "arena_min": 0,
+          "arena_max": 0
+        },
+        "after:1": {
+          "samples": 6,
+          "arena_min": 0,
+          "arena_max": 0
+        },
+        "before:2": {
+          "samples": 104,
+          "arena_min": 0,
+          "arena_max": 0
+        },
+        "loaded:2": {
+          "samples": 12,
+          "arena_min": 0,
+          "arena_max": 0
+        },
+        "after:2": {
+          "samples": 25,
+          "arena_min": 0,
+          "arena_max": 0
+        }
+      },
+      "arena_last_reference_release_observed": false,
+      "pattern_matches": {
+        "FREE_REGIONS_OK": true
+      },
+      "passed": true
+    },
+    {
+      "name": "official-bad-magic",
+      "started_utc": "2026-11-21T05:50:43.243+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux/bin/lean",
+        "-j1",
+        "--tstack=400000",
+        "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+        "--stats",
+        "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderImportArtifact.lean"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-bad-magic",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": null,
+        "LEAN_OLEAN_ARENA_DIR": null,
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "rejection",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "official-bad-magic/stdout.log",
+      "resources": "official-bad-magic/resources.jsonl",
+      "timeout_seconds": 300,
+      "mutated_artifacts": [
+        {
+          "file": "LoaderArtifact.olean",
+          "offset": 0,
+          "before": 111,
+          "after": 0,
+          "sha256": "f1ea67ffb5d2472ee6b7a4be20eb000a37e6eca0342d115768a0ec37cc3bc99d"
+        }
+      ],
+      "pid": 471565,
+      "timed_out": false,
+      "exit_code": 1,
+      "finished_utc": "2026-11-21T05:50:43.408+00:00",
+      "elapsed_seconds": 0.16480126231908798,
+      "sampled_peaks": {
+        "VmRSS_bytes": 173412352,
+        "VmHWM_bytes": 173412352,
+        "RssAnon_bytes": 9793536,
+        "RssFile_bytes": 163618816,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 3681439744,
+        "map_count": 2513,
+        "arena_map_count": 0
+      },
+      "sample_count": 9,
+      "stdout_sha256": "c002541a69b98bb7bb7636e2856df4aefe886819a7082add4ed876a7ccae951f",
+      "pattern_matches": {
+        "invalid header": true
+      },
+      "passed": true
+    },
+    {
+      "name": "patched-arena-zero-bad-magic",
+      "started_utc": "2026-11-21T05:50:43.411+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2/bin/lean",
+        "-j1",
+        "--tstack=400000",
+        "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+        "--stats",
+        "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderImportArtifact.lean"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-bad-magic",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": "0",
+        "LEAN_OLEAN_ARENA_DIR": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/arena",
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "rejection",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "patched-arena-zero-bad-magic/stdout.log",
+      "resources": "patched-arena-zero-bad-magic/resources.jsonl",
+      "timeout_seconds": 300,
+      "mutated_artifacts": [
+        {
+          "file": "LoaderArtifact.olean",
+          "offset": 0,
+          "before": 111,
+          "after": 0,
+          "sha256": "f1ea67ffb5d2472ee6b7a4be20eb000a37e6eca0342d115768a0ec37cc3bc99d"
+        }
+      ],
+      "pid": 471573,
+      "timed_out": false,
+      "exit_code": 1,
+      "finished_utc": "2026-11-21T05:50:44.077+00:00",
+      "elapsed_seconds": 0.6659205257892609,
+      "sampled_peaks": {
+        "VmRSS_bytes": 470667264,
+        "VmHWM_bytes": 470667264,
+        "RssAnon_bytes": 10027008,
+        "RssFile_bytes": 460640256,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 3872276480,
+        "map_count": 76,
+        "arena_map_count": 2
+      },
+      "sample_count": 33,
+      "stdout_sha256": "c002541a69b98bb7bb7636e2856df4aefe886819a7082add4ed876a7ccae951f",
+      "pattern_matches": {
+        "invalid header": true
+      },
+      "passed": true
+    },
+    {
+      "name": "official-bad-version",
+      "started_utc": "2026-11-21T05:50:44.084+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux/bin/lean",
+        "-j1",
+        "--tstack=400000",
+        "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+        "--stats",
+        "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderImportArtifact.lean"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-bad-version",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": null,
+        "LEAN_OLEAN_ARENA_DIR": null,
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "rejection",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "official-bad-version/stdout.log",
+      "resources": "official-bad-version/resources.jsonl",
+      "timeout_seconds": 300,
+      "mutated_artifacts": [
+        {
+          "file": "LoaderArtifact.olean",
+          "offset": 5,
+          "before": 2,
+          "after": 255,
+          "sha256": "96c6835e0776793399e16ac7e8a966a95dc39d5f32d068fdb0c7a737a7d52e62"
+        }
+      ],
+      "pid": 471580,
+      "timed_out": false,
+      "exit_code": 1,
+      "finished_utc": "2026-11-21T05:50:44.199+00:00",
+      "elapsed_seconds": 0.11474911123514175,
+      "sampled_peaks": {
+        "VmRSS_bytes": 184586240,
+        "VmHWM_bytes": 184586240,
+        "RssAnon_bytes": 9936896,
+        "RssFile_bytes": 174649344,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 3709284352,
+        "map_count": 2959,
+        "arena_map_count": 0
+      },
+      "sample_count": 6,
+      "stdout_sha256": "460cd249a482a4c65840b65784bafaa310cc789b1e5f7b3777ca8a297ed0f729",
+      "pattern_matches": {
+        "incompatible header": true
+      },
+      "passed": true
+    },
+    {
+      "name": "patched-arena-zero-bad-version",
+      "started_utc": "2026-11-21T05:50:44.205+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2/bin/lean",
+        "-j1",
+        "--tstack=400000",
+        "--root=/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+        "--stats",
+        "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures/LoaderImportArtifact.lean"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/fixtures",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/artifact-bad-version",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": "0",
+        "LEAN_OLEAN_ARENA_DIR": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/arena",
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "rejection",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "patched-arena-zero-bad-version/stdout.log",
+      "resources": "patched-arena-zero-bad-version/resources.jsonl",
+      "timeout_seconds": 300,
+      "mutated_artifacts": [
+        {
+          "file": "LoaderArtifact.olean",
+          "offset": 5,
+          "before": 2,
+          "after": 255,
+          "sha256": "96c6835e0776793399e16ac7e8a966a95dc39d5f32d068fdb0c7a737a7d52e62"
+        }
+      ],
+      "pid": 471589,
+      "timed_out": false,
+      "exit_code": 1,
+      "finished_utc": "2026-11-21T05:50:44.821+00:00",
+      "elapsed_seconds": 0.6160143688321114,
+      "sampled_peaks": {
+        "VmRSS_bytes": 473567232,
+        "VmHWM_bytes": 473567232,
+        "RssAnon_bytes": 10080256,
+        "RssFile_bytes": 463486976,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 3872276480,
+        "map_count": 76,
+        "arena_map_count": 2
+      },
+      "sample_count": 31,
+      "stdout_sha256": "460cd249a482a4c65840b65784bafaa310cc789b1e5f7b3777ca8a297ed0f729",
+      "pattern_matches": {
+        "incompatible header": true
+      },
+      "passed": true
+    },
+    {
+      "name": "patched-shape-budget-0",
+      "started_utc": "2026-11-21T05:50:44.877+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2/bin/lean",
+        "-j1",
+        "--tstack=400000",
+        "/root/autodl-tmp/rh-check/source/src/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.lean",
+        "--setup",
+        "/root/autodl-tmp/rh-check/source/.lake/build/ir/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.setup.json",
+        "--json"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/source",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/source/.lake/packages/Cli/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/batteries/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/Qq/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/aesop/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/proofwidgets/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/importGraph/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/plausible/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/mathlib/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/build/lib/lean",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": "0",
+        "LEAN_OLEAN_ARENA_DIR": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/arena",
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "success",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "patched-shape-budget-0/stdout.log",
+      "resources": "patched-shape-budget-0/resources.jsonl",
+      "timeout_seconds": 300,
+      "original_command": {
+        "argv": [
+          "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux/bin/lean",
+          "-j1",
+          "--tstack=400000",
+          "/root/autodl-tmp/rh-check/source/src/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.lean",
+          "-o",
+          "/root/autodl-tmp/rh-check/source/.lake/build/lib/lean/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.olean",
+          "-i",
+          "/root/autodl-tmp/rh-check/source/.lake/build/lib/lean/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.ilean",
+          "-c",
+          "/root/autodl-tmp/rh-check/source/.lake/build/ir/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.c",
+          "--setup",
+          "/root/autodl-tmp/rh-check/source/.lake/build/ir/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.setup.json",
+          "--json"
+        ],
+        "cwd": "/root/autodl-tmp/rh-check/source",
+        "env": {
+          "LEAN_PATH": "/root/autodl-tmp/rh-check/source/.lake/packages/Cli/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/batteries/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/Qq/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/aesop/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/proofwidgets/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/importGraph/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/plausible/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/mathlib/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/build/lib/lean"
+        }
+      },
+      "removed_output_arguments": [
+        [
+          "-o",
+          "/root/autodl-tmp/rh-check/source/.lake/build/lib/lean/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.olean"
+        ],
+        [
+          "-i",
+          "/root/autodl-tmp/rh-check/source/.lake/build/lib/lean/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.ilean"
+        ],
+        [
+          "-c",
+          "/root/autodl-tmp/rh-check/source/.lake/build/ir/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.c"
+        ]
+      ],
+      "input_json_sha256": "65ff2dbae1801f7907c7caaf9b90d9ec032ea79e3ce9184bcc06caa049bd44c0",
+      "artifact_outputs_removed": true,
+      "pid": 471605,
+      "timed_out": false,
+      "exit_code": 0,
+      "finished_utc": "2026-11-21T05:51:27.319+00:00",
+      "elapsed_seconds": 42.44142221659422,
+      "sampled_peaks": {
+        "VmRSS_bytes": 18498969600,
+        "VmHWM_bytes": 18498969600,
+        "RssAnon_bytes": 620548096,
+        "RssFile_bytes": 17878421504,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 21421252608,
+        "map_count": 142,
+        "arena_map_count": 67
+      },
+      "sample_count": 2112,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "arena_use_observed": true,
+      "pattern_matches": {},
+      "passed": true
+    },
+    {
+      "name": "patched-shape-budget-50000",
+      "started_utc": "2026-11-21T05:51:27.325+00:00",
+      "argv": [
+        "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2/bin/lean",
+        "-j1",
+        "--tstack=400000",
+        "/root/autodl-tmp/rh-check/source/src/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.lean",
+        "--setup",
+        "/root/autodl-tmp/rh-check/source/.lake/build/ir/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.setup.json",
+        "--json"
+      ],
+      "cwd": "/root/autodl-tmp/rh-check/source",
+      "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "controlled_environment": {
+        "LEAN_PATH": "/root/autodl-tmp/rh-check/source/.lake/packages/Cli/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/batteries/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/Qq/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/aesop/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/proofwidgets/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/importGraph/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/plausible/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/mathlib/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/build/lib/lean",
+        "LEAN_SYSROOT": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "LEAN_MAX_MMAP_REGIONS": "50000",
+        "LEAN_OLEAN_ARENA_DIR": "/root/autodl-tmp/rh-check/audit/loader-tests/20261121T054621Z-d3b1dbe9/arena",
+        "LEAN_LOADER_TEST_PHASE_FILE": null
+      },
+      "expected": "success",
+      "cleared_environment": [
+        "LD_LIBRARY_PATH",
+        "LD_PRELOAD"
+      ],
+      "stdout": "patched-shape-budget-50000/stdout.log",
+      "resources": "patched-shape-budget-50000/resources.jsonl",
+      "timeout_seconds": 300,
+      "original_command": {
+        "argv": [
+          "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux/bin/lean",
+          "-j1",
+          "--tstack=400000",
+          "/root/autodl-tmp/rh-check/source/src/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.lean",
+          "-o",
+          "/root/autodl-tmp/rh-check/source/.lake/build/lib/lean/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.olean",
+          "-i",
+          "/root/autodl-tmp/rh-check/source/.lake/build/lib/lean/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.ilean",
+          "-c",
+          "/root/autodl-tmp/rh-check/source/.lake/build/ir/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.c",
+          "--setup",
+          "/root/autodl-tmp/rh-check/source/.lake/build/ir/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.setup.json",
+          "--json"
+        ],
+        "cwd": "/root/autodl-tmp/rh-check/source",
+        "env": {
+          "LEAN_PATH": "/root/autodl-tmp/rh-check/source/.lake/packages/Cli/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/batteries/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/Qq/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/aesop/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/proofwidgets/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/importGraph/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/plausible/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/packages/mathlib/.lake/build/lib/lean:/root/autodl-tmp/rh-check/source/.lake/build/lib/lean"
+        }
+      },
+      "removed_output_arguments": [
+        [
+          "-o",
+          "/root/autodl-tmp/rh-check/source/.lake/build/lib/lean/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.olean"
+        ],
+        [
+          "-i",
+          "/root/autodl-tmp/rh-check/source/.lake/build/lib/lean/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.ilean"
+        ],
+        [
+          "-c",
+          "/root/autodl-tmp/rh-check/source/.lake/build/ir/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.c"
+        ]
+      ],
+      "input_json_sha256": "65ff2dbae1801f7907c7caaf9b90d9ec032ea79e3ce9184bcc06caa049bd44c0",
+      "artifact_outputs_removed": true,
+      "pid": 472139,
+      "timed_out": false,
+      "exit_code": 0,
+      "finished_utc": "2026-11-21T05:52:07.571+00:00",
+      "elapsed_seconds": 40.24595760554075,
+      "sampled_peaks": {
+        "VmRSS_bytes": 17410039808,
+        "VmHWM_bytes": 17410039808,
+        "RssAnon_bytes": 620486656,
+        "RssFile_bytes": 16789553152,
+        "RssShmem_bytes": 0,
+        "VmSize_bytes": 21457604608,
+        "map_count": 50116,
+        "arena_map_count": 40
+      },
+      "sample_count": 380,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "pattern_matches": {},
+      "passed": true
+    }
+  ],
+  "original_heavy_baseline": "Not repeated; inspect copied baseline evidence.",
+  "scope": "Loader compatibility, rejection, freeing, and recorded-module replay. Full RH checks are separate.",
+  "loader_manifest_sha256": "dd41883cfe5640b6362a7244d5f156e60f0a33f9e9b27b1565ad9a9deb80e298",
+  "finished_utc": "2026-11-21T05:52:07.577+00:00"
+}

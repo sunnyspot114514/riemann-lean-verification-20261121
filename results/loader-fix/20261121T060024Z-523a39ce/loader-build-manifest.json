@@ -1,0 +1,188 @@
+{
+  "schema": 1,
+  "kind": "loader-patched",
+  "build_kind": "release-relink",
+  "base_lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+  "lean_version": "4.33.1",
+  "original_toolchain_dir": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux",
+  "patch_sha256": "b478352b82fa6f095ff1a9f5362f060780ee155eb95ddee5ae4a4932d2a8a450",
+  "patch_path": "loader-patch.diff",
+  "build_script_sha256": "f1efb4a0d4563d8daf9a9f29b2e88e71433b1f2571b5941bb8d7419ef38da050",
+  "binaries": {
+    "bin/lean": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+    "bin/lake": "60330ab6f07dce20f3fa9ebb08e8b984ea9549eac172afeb15d9d2227060e2b3",
+    "bin/leanchecker": "84bc3e7cd6efa5bfecd1e7c37571fed9428fb2b3e16da0ddf62f2163573486d0",
+    "lib/lean/libleanshared.so": "9fe79c1e3e544ac750a1076b189a3bdd74d3769bbfc783c76281d7da926d6e8d",
+    "lib/lean/libleancpp.a": "8946153bf9f2ad41b33c0a223469355f3cf72ab4f265c746e5719a6faedd8749"
+  },
+  "original_binaries": {
+    "bin/lean": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+    "bin/lake": "60330ab6f07dce20f3fa9ebb08e8b984ea9549eac172afeb15d9d2227060e2b3",
+    "bin/leanchecker": "84bc3e7cd6efa5bfecd1e7c37571fed9428fb2b3e16da0ddf62f2163573486d0",
+    "lib/lean/libleanshared.so": "23d636cac1cadcba37beac30eff9b9b20d66cee726cf5defb4ae39f1284a3e5a",
+    "lib/lean/libleancpp.a": "71c73a927e93d1d7884622f44696a3b897867e6da4279448f18b2f0d2d5d6857"
+  },
+  "original_archives": {
+    "libLean.a": "341abb242489224c46197e4ba7b6b7660ec0764a53aaf6fc8234368c8436c625",
+    "libInit.a": "b77dbf30e0fcade67388aea9c7bae141b72361023150c77cb725871a898df4b3",
+    "libStd.a": "88649724a6f6c321bf28dc1773ec54595f1077948fde4212519ec7889c5967db",
+    "libleancpp.a": "71c73a927e93d1d7884622f44696a3b897867e6da4279448f18b2f0d2d5d6857",
+    "libleanrt.a": "5ba1e096483bd26685eb5c774fa4775ff5d67db522520621b46186c29ddd8f37"
+  },
+  "llvm_archive_sha256": "e6fd0de8f5dfe0845ca92ce93f3dbe2a8b45eb14565c0646da4b671f1572ff6c",
+  "mimalloc_commit": "94036de6fe20bfd8a73d4a6d142fcf532ea604d9",
+  "cxx_tool_environment": {
+    "LD_LIBRARY_PATH": "/root/autodl-tmp/rh-check/tools/lean-4.33.1-linux/lib:/root/autodl-tmp/rh-check/tools/lean-llvm-22/lib"
+  },
+  "rebuilt_objects": [
+    {
+      "member": "module.cpp.o",
+      "source_sha256": "f132bed13a5d461174a95cc91c24575c4ceec2978274c9883e763939e63cb2d2",
+      "object_sha256": "573d627c470573c5084e5b6c26761b414b6aad4d1aebc9daae871e21b09920ed"
+    },
+    {
+      "member": "shell.cpp.o",
+      "source_sha256": "502eaa752396cdff5bb448833a63be54cbbcbb3d36881eb10e235c04c64c0832",
+      "object_sha256": "80aae9c64fd278b2fd4c083f0b3e13c20097c3dc293edadc988696324bc36392"
+    },
+    {
+      "member": "alloc.cpp.o",
+      "source_sha256": "5e5b442b04380781fbb8cc696fc0fcedc352a47c8fca43bddc2ccfcfea54cf32",
+      "object_sha256": "354fc179f89a5ec6c8f867bfeaf6ee620fcf94d988cbd042f473198ea68685b0"
+    },
+    {
+      "member": "interrupt.cpp.o",
+      "source_sha256": "dd98430d4a0c2923399314139c0f34c3b5494c7a7f73b1dd54778e5abbf5799b",
+      "object_sha256": "c2489a93b880f186e81756cd35102f886c600028442eaa0867a8e034565b1563"
+    },
+    {
+      "member": "io.cpp.o",
+      "source_sha256": "7dd91cc0c7ebd7a1ed69ac9b870634b6ae251f28e96ba54384b5ba6e8ce20efd",
+      "object_sha256": "607e066bdfe4724bd805004605d09816878e55b536535123176a9c016eca107b"
+    },
+    {
+      "member": "memory.cpp.o",
+      "source_sha256": "37ec24e69c8d01944e5138fa6189195185802f8e3d5ee88f3e412c964465b36f",
+      "object_sha256": "528f5e6565dd37546510f56c480f265130a48186ed8a992efcace8d0578261e2"
+    },
+    {
+      "member": "object.cpp.o",
+      "source_sha256": "e03ea4317ad44fb91a4cc9097abe1601b1e1cf8fb77f5ab7b0620fdfcf348430",
+      "object_sha256": "ccd876b954796ff83ab4040af0556d7c4878e390e158ee72acfaf02ef756aa13"
+    },
+    {
+      "member": "stackinfo.cpp.o",
+      "source_sha256": "f0c91e21bbe9276ce1334a136f0dc857dabd70ae5242652e96e34443a918f226",
+      "object_sha256": "fc172062d9ea8d67065892ae512dc82af644eb3bf23b08d1fbe562c93018a130"
+    },
+    {
+      "member": "static.c.o",
+      "source_sha256": "81e27487e494d2b32cb16a2605d61ee64fe3a71c409d5be3a673950ff769bd73",
+      "object_sha256": "02cf2a61a68c959ec13ddce8d437bfd427de539dc7ee8fa245d987bae26106e0"
+    },
+    {
+      "member": "thread.cpp.o",
+      "source_sha256": "64c2d8cf7488e0054848a2599e61eaa6deb97007859feea3b43f55f3561d8173",
+      "object_sha256": "4eaea17769ee5ccfc18261ffa1bed6f4708f6524976c49cdd4b80a5b1059fb63"
+    }
+  ],
+  "runtime_tls_members_recompiled": [
+    "alloc.cpp.o",
+    "interrupt.cpp.o",
+    "io.cpp.o",
+    "memory.cpp.o",
+    "object.cpp.o",
+    "stackinfo.cpp.o",
+    "static.c.o",
+    "thread.cpp.o"
+  ],
+  "archive_object_comparison": {
+    "libleancpp.a": {
+      "member_count": 52,
+      "changed_members": [
+        {
+          "name": "module.cpp.o",
+          "original_sha256": "ea5d2a116b9cdfb413484401d43f5a122a79bfb180ef22fc0d21f27ac56459ec",
+          "rebuilt_sha256": "573d627c470573c5084e5b6c26761b414b6aad4d1aebc9daae871e21b09920ed"
+        }
+      ],
+      "unchanged_members_verified": 51
+    },
+    "libleanrt_initial-exec.a": {
+      "member_count": 35,
+      "changed_members": [
+        {
+          "name": "thread.cpp.o",
+          "original_sha256": "b03f6d6a4e50773cee10ff59a8f183eacf9f4a1918bf61889de63b6a0513be2c",
+          "rebuilt_sha256": "4eaea17769ee5ccfc18261ffa1bed6f4708f6524976c49cdd4b80a5b1059fb63"
+        },
+        {
+          "name": "object.cpp.o",
+          "original_sha256": "52e5cc7b0a569422304f8afeb822f603e4b06eef0fd717b1f3f284f6b097415d",
+          "rebuilt_sha256": "ccd876b954796ff83ab4040af0556d7c4878e390e158ee72acfaf02ef756aa13"
+        },
+        {
+          "name": "interrupt.cpp.o",
+          "original_sha256": "351daa44873a99527aea925357d539d99095a1fd8b86909cad14cee711268fa3",
+          "rebuilt_sha256": "c2489a93b880f186e81756cd35102f886c600028442eaa0867a8e034565b1563"
+        },
+        {
+          "name": "memory.cpp.o",
+          "original_sha256": "c8a18e213b09c6d1098d3a91d56e9ed5bcb8e3127912ebb3a1f6dc79f05a3f0b",
+          "rebuilt_sha256": "528f5e6565dd37546510f56c480f265130a48186ed8a992efcace8d0578261e2"
+        },
+        {
+          "name": "stackinfo.cpp.o",
+          "original_sha256": "c00ede6b7ccdbfd460250d6623d6a850eec10e4f191370876ca330896e2c9afd",
+          "rebuilt_sha256": "fc172062d9ea8d67065892ae512dc82af644eb3bf23b08d1fbe562c93018a130"
+        },
+        {
+          "name": "io.cpp.o",
+          "original_sha256": "c169e3c97cc2a19577f90b5e4ed0cccec015a07fc12ce8f580ee75c8811b1354",
+          "rebuilt_sha256": "607e066bdfe4724bd805004605d09816878e55b536535123176a9c016eca107b"
+        },
+        {
+          "name": "alloc.cpp.o",
+          "original_sha256": "e2f419b60232f956f7c7cd4df7086c6ec2574872825631c4cf3eff7836fc65b2",
+          "rebuilt_sha256": "354fc179f89a5ec6c8f867bfeaf6ee620fcf94d988cbd042f473198ea68685b0"
+        },
+        {
+          "name": "static.c.o",
+          "original_sha256": "b026343ef9617909d2bf6a1738e9cf817813fd5d73703be7387a5e91457c0b32",
+          "rebuilt_sha256": "02cf2a61a68c959ec13ddce8d437bfd427de539dc7ee8fa245d987bae26106e0"
+        }
+      ],
+      "unchanged_members_verified": 27
+    }
+  },
+  "root_lean_object": {
+    "selected_sha256": "4766c790c58e154fa3305b212af877601b0039d53f16eafe915e44312aafac70",
+    "candidates": [
+      {
+        "archive_index": 577,
+        "member_name": "Lean.c.o.export",
+        "sha256": "9da633ae73a2695ee63f4df1f30954bdd743088294c8cc8413b1fc951a1ae9e7",
+        "defines_initialize_Lean": false
+      },
+      {
+        "archive_index": 1207,
+        "member_name": "Lean.c.o.export",
+        "sha256": "4766c790c58e154fa3305b212af877601b0039d53f16eafe915e44312aafac70",
+        "defines_initialize_Lean": true
+      }
+    ]
+  },
+  "kernel_objects": "unchanged official archive members; only module.cpp.o replaced in libleancpp.a",
+  "stdlib_objects": "unchanged official libLean.a/libInit.a/libStd.a",
+  "full_bootstrap_performed": false,
+  "upstream_full_test_suite_performed": false,
+  "validation": {
+    "exported_symbols_preserved": true,
+    "release_version_and_githash_preserved": true,
+    "kernel_negative_and_region_regressions": "required-separate-test_lean_loader.py",
+    "shape_win": "not-run-by-build-script",
+    "main_and_final_gates": "not-run-by-build-script"
+  },
+  "build_evidence_dir": "/root/autodl-tmp/rh-check/audit/loader-build-v2",
+  "completed_utc": "2026-11-21T05:44:18Z"
+}
