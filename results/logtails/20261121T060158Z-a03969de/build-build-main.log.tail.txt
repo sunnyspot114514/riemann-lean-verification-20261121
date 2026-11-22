@@ -1,8 +1,6 @@
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FundamentalDomainVolumeLower.lean:24:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralFunctionalExtension.lean:17:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -10,8 +8,30 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [138686/138724] Built Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.InjectiveOfSumEq (7.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/InjectiveOfSumEq.lean:74:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralFunctionalExtension.lean:39:64: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [138954/138992] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiDeterminantRankPropertyStatement (4.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantRankPropertyStatement.lean:8:61: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantRankPropertyStatement.lean:8:111: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantRankPropertyStatement.lean:7:8: Overlapping instance parameters in `GlobalTheory.T.psi_determinant_rank_property`:
+
+⚠️ `[IsDomain Λ]` and `[IsDiscreteValuationRing Λ]` each imply `[Nontrivial Λ]`.
+💡️ Of these, `[IsDomain Λ]` and `[IsDiscreteValuationRing Λ]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantRankPropertyStatement.lean:8:61: Unused tactic linter: `exact GlobalTheory.DetInv.detElt_transport_isom` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantRankPropertyStatement.lean:8:111: Unused tactic linter: `(intros; apply GlobalTheory.DetInv.detElt_transport_isom <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [138955/138995] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiDeterminantOrdersProperty (6.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantOrdersProperty.lean:50:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -19,7 +39,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/InjectiveOfSumEq.lean:75:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantOrdersProperty.lean:53:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -27,49 +47,20 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [138687/138724] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexISupMapEqPow (6.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RelIndexISupMapEqPow.lean:58:16: This simp argument is unused:
-  Pi.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [h]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RelIndexISupMapEqPow.lean:59:63: This simp argument is unused:
-  Pi.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [hb]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [138688/138724] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeanLogNormEmbeddingsRingHomStatement (5.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MeanLogNormEmbeddingsRingHomStatement.lean:9:65: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantOrdersProperty.lean:20:18: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MeanLogNormEmbeddingsRingHomStatement.lean:9:119: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantOrdersProperty.lean:14:8: Overlapping instance parameters in `dvd_of_detElt_orders_eq`:
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MeanLogNormEmbeddingsRingHomStatement.lean:9:65: Unused tactic linter: `exact GlobalTheory.mean_log_norm_embeddings_ringHom` does nothing
+⚠️ `[IsDomain Λ]` and `[IsDiscreteValuationRing Λ]` each imply `[Nontrivial Λ]`.
+💡️ Of these, `[IsDomain Λ]` and `[IsDiscreteValuationRing Λ]` may be removed.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MeanLogNormEmbeddingsRingHomStatement.lean:9:119: Unused tactic linter: `(intros; apply GlobalTheory.mean_log_norm_embeddings_ringHom <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [138689/138724] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameGramDetEqUniformizationHermFormStatement (7.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FrameGramDetEqUniformizationHermFormStatement.lean:12:55: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FrameGramDetEqUniformizationHermFormStatement.lean:12:99: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FrameGramDetEqUniformizationHermFormStatement.lean:12:55: Unused tactic linter: `exact GlobalTheory.LieGram.gram_det_re_eq` does nothing
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantOrdersProperty.lean:20:18: Unused tactic linter: `simp [inA, Algebra.TensorProduct.algebraMap_apply, Algebra.algebraMap_self]` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FrameGramDetEqUniformizationHermFormStatement.lean:12:99: Unused tactic linter: `(intros; apply GlobalTheory.LieGram.gram_det_re_eq <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [138690/138724] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilPairingEqCmIntegerOfPureType (7.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsWeilPairingEqCmIntegerOfPureType.lean:69:4: Try this: 
+⚠ [138956/138995] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeTateSandwichLatticeRep (16s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HodgeTateSandwichLatticeRep.lean:32:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -77,7 +68,15 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsWeilPairingEqCmIntegerOfPureType.lean:70:4: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HodgeTateSandwichLatticeRep.lean:83:0: automatically included section variable(s) unused in theorem `GlobalTheory.PointGroup.pairT_flip_bijective`:
+  [Algebra ℤ_[p] O]
+  [Algebra ℤ_[p] C]
+  [IsScalarTower ℤ_[p] O C]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Algebra ℤ_[p] O] [Algebra ℤ_[p] C] [IsScalarTower ℤ_[p] O C] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HodgeTateSandwichLatticeRep.lean:127:6: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -85,76 +84,77 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [138691/138725] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmPointIntegralFrameMemSpanEigenLatticeStatement (5.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CmPointIntegralFrameMemSpanEigenLatticeStatement.lean:9:63: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HodgeTateSandwichLatticeRep.lean:182:0: automatically included section variable(s) unused in theorem `GlobalTheory.PointGroup.exists_retraction_tateGt`:
+  [Algebra ℤ_[p] O]
+  [Algebra ℤ_[p] C]
+  [IsScalarTower ℤ_[p] O C]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Algebra ℤ_[p] O] [Algebra ℤ_[p] C] [IsScalarTower ℤ_[p] O C] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [138957/138995] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DvrAlphaDeterminantValuationStatement (4.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DvrAlphaDeterminantValuationStatement.lean:8:61: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CmPointIntegralFrameMemSpanEigenLatticeStatement.lean:9:115: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DvrAlphaDeterminantValuationStatement.lean:8:111: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CmPointIntegralFrameMemSpanEigenLatticeStatement.lean:9:63: Unused tactic linter: `exact GlobalTheory.PtDeg.intFrame_mem_span_eigLat` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DvrAlphaDeterminantValuationStatement.lean:7:8: Overlapping instance parameters in `GlobalTheory.T.dvr_alpha_determinant_valuation`:
+
+⚠️ `[IsDomain Λ]` and `[IsDiscreteValuationRing Λ]` each imply `[Nontrivial Λ]`.
+💡️ Of these, `[IsDomain Λ]` and `[IsDiscreteValuationRing Λ]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DvrAlphaDeterminantValuationStatement.lean:8:61: Unused tactic linter: `exact GlobalTheory.DetInv.isShift_of_iota_image` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CmPointIntegralFrameMemSpanEigenLatticeStatement.lean:9:115: Unused tactic linter: `(intros; apply GlobalTheory.PtDeg.intFrame_mem_span_eigLat <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DvrAlphaDeterminantValuationStatement.lean:8:111: Unused tactic linter: `(intros; apply GlobalTheory.DetInv.isShift_of_iota_image <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [138692/138725] Built Development.AbelianVarietyTheory.Definitions.Divisors.IsGramOneZero (8.3s)
-⚠ [138693/138725] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.BadAtFromInputsStatement (20s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BadAtFromInputsStatement.lean:31:56: this tactic is never executed
+⚠ [138958/138997] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralFunctionalExtensionStatement (4.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralFunctionalExtensionStatement.lean:8:66: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BadAtFromInputsStatement.lean:31:101: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralFunctionalExtensionStatement.lean:8:121: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BadAtFromInputsStatement.lean:31:56: Unused tactic linter: `exact GlobalTheory.BadIndef.bad_rows_indef` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralFunctionalExtensionStatement.lean:8:66: Unused tactic linter: `exact GlobalTheory.integral_form_extend_of_saturated` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BadAtFromInputsStatement.lean:31:101: Unused tactic linter: `(intros; apply GlobalTheory.BadIndef.bad_rows_indef <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralFunctionalExtensionStatement.lean:8:121: Unused tactic linter: `(intros; apply GlobalTheory.integral_form_extend_of_saturated <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [138694/138725] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsNormMapRingOfIntegersHom (5.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AbsNormMapRingOfIntegersHom.lean:24:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [138695/138725] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexISupMapEqPowStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RelIndexISupMapEqPowStatement.lean:13:66: this tactic is never executed
+⚠ [138959/138997] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiDeterminantOrdersPropertyStatement (4.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantOrdersPropertyStatement.lean:8:63: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RelIndexISupMapEqPowStatement.lean:13:121: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantOrdersPropertyStatement.lean:8:115: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RelIndexISupMapEqPowStatement.lean:13:66: Unused tactic linter: `exact GlobalTheory.SumIndex.relIndex_iSup_map_eq_pow` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantOrdersPropertyStatement.lean:7:8: Overlapping instance parameters in `GlobalTheory.T.psi_determinant_orders_property`:
+
+⚠️ `[IsDomain Λ]` and `[IsDiscreteValuationRing Λ]` each imply `[Nontrivial Λ]`.
+💡️ Of these, `[IsDomain Λ]` and `[IsDiscreteValuationRing Λ]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantOrdersPropertyStatement.lean:8:63: Unused tactic linter: `exact GlobalTheory.DetInv.dvd_of_detElt_orders_eq` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RelIndexISupMapEqPowStatement.lean:13:121: Unused tactic linter: `(intros; apply GlobalTheory.SumIndex.relIndex_iSup_map_eq_pow <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantOrdersPropertyStatement.lean:8:115: Unused tactic linter: `(intros; apply GlobalTheory.DetInv.dvd_of_detElt_orders_eq <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [138696/138725] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilPairingEqCmIntegerOfPureTypeStatement (5.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsWeilPairingEqCmIntegerOfPureTypeStatement.lean:9:70: this tactic is never executed
+⚠ [138960/138999] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeTateSandwichLatticeRepStatement (9.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HodgeTateSandwichLatticeRepStatement.lean:13:65: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsWeilPairingEqCmIntegerOfPureTypeStatement.lean:9:129: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HodgeTateSandwichLatticeRepStatement.lean:13:119: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsWeilPairingEqCmIntegerOfPureTypeStatement.lean:9:70: Unused tactic linter: `exact GlobalTheory.CM.PureHom.exists_weilEq_smul_of_pure` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HodgeTateSandwichLatticeRepStatement.lean:13:65: Unused tactic linter: `exact GlobalTheory.PointGroup.exists_selfDual_group` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsWeilPairingEqCmIntegerOfPureTypeStatement.lean:9:129: Unused tactic linter: `(intros; apply GlobalTheory.CM.PureHom.exists_weilEq_smul_of_pure <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HodgeTateSandwichLatticeRepStatement.lean:13:119: Unused tactic linter: `(intros; apply GlobalTheory.PointGroup.exists_selfDual_group <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [138697/138725] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralFrameSpanCompletedEigenLattice (6.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralFrameSpanCompletedEigenLattice.lean:9:2: Try this: intro E _ _ _ H Dw l Xo c K _ _ _ y B t₀ m1 m2 F ρ tt htt u hu 𝔓 T iK hiK ρV hρV yT hyT G t' n n' m1' m2' h1
-  h2 C a y' hC hL
-⚠ [138698/138725] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormFactorFlatLineEqGramOrthonormalFrame (8.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/NormFactorFlatLineEqGramOrthonormalFrame.lean:39:22: This simp argument is unused:
-  Matrix.smul_mulVec
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [hermForm, dotProduct, Pi.single_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [138961/138999] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLatticeIsometryConjPointSplitUpToIndex (9.0s)
+✔ [138962/139000] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsComplexLinearOfPureTypesFiniteIndex (6.5s)
