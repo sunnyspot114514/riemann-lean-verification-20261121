@@ -1,20 +1,44 @@
-  omit [IsAlgClosure E Ω] in theorem ...
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RealRtEqOfGoodInert.lean:13:524: Variable name `hμ` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/FieldCompatibleIffWdRel.lean:48:0: automatically included section variable(s) unused in theorem `GlobalTheory.LocLanglands.LitModel.placeIso_weil`:
-  [IsAlgClosure E Ω]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsAlgClosure E Ω] in theorem ...
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hμ
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/FieldCompatibleIffWdRel.lean:69:43: `LinearEquiv.ofLinear` has been deprecated: Use `LinearEquiv.ofLinearMap` instead
-⚠ [158936/158980] Built Development.AbelianVarietyTheory.Definitions.GaloisGeometry.PolarizedGaloisRepNarrowT (11s)
-warning: src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/PolarizedGaloisRepNarrowT.lean:134:2: try 'simp' instead of 'simpa'
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RealRtEqOfGoodInert.lean:13:591: Variable name `hj` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-✔ [158937/158980] Built Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsSmallStable (9.9s)
-⚠ [158938/158980] Built Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsRealisesNeOne (29s)
-warning: src/Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/ExistsRealisesNeOne.lean:123:2: Try this: 
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hj
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [159034/159072] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.GoodNotMemSQStatement (5.9s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/GoodNotMemSQStatement.lean:14:71: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/GoodNotMemSQStatement.lean:14:131: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/GoodNotMemSQStatement.lean:14:71: Unused tactic linter: `exact _root_.GlobalTheory.GoodOffLoc.good_not_mem_S_Q_alt` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/GoodNotMemSQStatement.lean:14:131: Unused tactic linter: `(intros; apply _root_.GlobalTheory.GoodOffLoc.good_not_mem_S_Q_alt <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [159035/159074] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ImportsTerExtraStatement (6.6s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ImportsTerExtraStatement.lean:15:64: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ImportsTerExtraStatement.lean:15:117: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ImportsTerExtraStatement.lean:15:64: Unused tactic linter: `exact _root_.GlobalTheory.LocEigAgree.main_alt_alt` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ImportsTerExtraStatement.lean:15:117: Unused tactic linter: `(intros; apply _root_.GlobalTheory.LocEigAgree.main_alt_alt <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [159036/159074] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ImportsTerFurther (17s)
+⚠ [159037/159074] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.AdmissibleRankThreeStrengthen (55s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AdmissibleResidues/AdmissibleRankThreeStrengthen.lean:57:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -22,139 +46,115 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/ExistsRealisesNeOne.lean:328:0: automatically included section variable(s) unused in theorem `GlobalTheory.DelGlob.Inh.gInd_self`:
-  [NumberField L]
-  [IsAlgClosure L Ω]
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AdmissibleResidues/AdmissibleRankThreeStrengthen.lean:62:0: automatically included section variable(s) unused in theorem `UpperTheory.GalN.V.autQN'`:
+  [IsAlgClosure ℚ Ω]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField L] [IsAlgClosure L Ω] in theorem ...
+  omit [IsAlgClosure ℚ Ω] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/ExistsRealisesNeOne.lean:344:0: automatically included section variable(s) unused in theorem `GlobalTheory.DelGlob.Inh.under_self`:
-  [NumberField L]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField L] in theorem ...
+✔ [159038/159074] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.OffBad (15s)
+✔ [159039/159074] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ImportsBisLast (39s)
+✔ [159040/159074] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.InertialTypeOfTameM (54s)
+⚠ [159041/159074] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.RealRtEqOfGoodInertStatement (9.1s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RealRtEqOfGoodInertStatement.lean:14:527: Variable name `hμ` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/ExistsRealisesNeOne.lean:346:46: This simp argument is unused:
-  Ideal.mem_comap
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hμ
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [HeightOneSpectrum.under, Ideal.under]
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RealRtEqOfGoodInertStatement.lean:14:594: Variable name `hj` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/ExistsRealisesNeOne.lean:437:0: automatically included section variable(s) unused in theorem `GlobalTheory.DelGlob.Inh.fcorr_locExt`:
-  [IsAlgClosure k Ω]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsAlgClosure k Ω] in theorem ...
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hj
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [158939/158980] Built Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ScholzeFunctorialExtension (27s)
-✔ [158940/158985] Built Development.AbelianVarietyTheory.Definitions.GaloisGeometry.PolarizedGaloisRepNarrow (13s)
-✔ [158941/158985] Built GroundTheory.AutomorphicForms.GL2.GJFELevi (17s)
-✔ [158942/158985] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContinuousMapGL (14s)
-✔ [158943/158987] Built GroundTheory.AutomorphicForms.GL2.GJStandardLDefs (9.4s)
-⚠ [158944/158992] Built Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsOrbitProd (34s)
-warning: src/Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/IsOrbitProd.lean:194:9: `IsSolvable` has been deprecated: Use `Group.IsSolvable` instead
-⚠ [158945/158992] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.RingEquivPlaceCorrespondencePlaceUnder (11s)
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/RingEquivPlaceCorrespondencePlaceUnder.lean:47:0: automatically included section variable(s) unused in theorem `GlobalTheory.IsoPull.coord_conj`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RealRtEqOfGoodInertStatement.lean:15:81: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/RingEquivPlaceCorrespondencePlaceUnder.lean:148:0: automatically included section variable(s) unused in theorem `GlobalTheory.IsoPull.ringEquivPlaceCorrespondence_placeUnder`:
-  [NumberField K]
-  [NumberField M]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField K] [NumberField M] in theorem ...
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RealRtEqOfGoodInertStatement.lean:15:151: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [158946/158992] Built GroundTheory.AutomorphicForms.GL2.GJStandardLTensor (9.0s)
-✔ [158947/158993] Built GroundTheory.AutomorphicForms.GL2.GJStandardLBump (23s)
-✔ [158948/158993] Built Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.HasPairGammaZeroIff (12s)
-✔ [158949/158994] Built Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Lbc (6.8s)
-✔ [158950/158994] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NcardPrimesOverThreeZ (8.6s)
-✔ [158951/158994] Built GroundTheory.AutomorphicForms.GL2.GJStandardLFourier (14s)
-✔ [158952/158994] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.BaseChangeIsomorphicFields (17s)
-✔ [158953/158994] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.CharpolyConjugation.Unlwd (129s)
-⚠ [158954/158994] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.CharpolyConjugation.Unliso (129s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AdmissibleResidues/CharpolyConjugation/Unliso.lean:25:56: This simp argument is unused:
-  Matrix.diagonal_apply
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RealRtEqOfGoodInertStatement.lean:15:81: Unused tactic linter: `exact _root_.GlobalTheory.InertFormFix.real_rt_eq_of_good_inert_alt` does nothing
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.scalar_apply, hij, mul_sub]
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RealRtEqOfGoodInertStatement.lean:15:151: Unused tactic linter: `(intros;
+  apply _root_.GlobalTheory.InertFormFix.real_rt_eq_of_good_inert_alt <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [158955/158994] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.CharpolyConjugation.Unlres (130s)
-⚠ [158956/158994] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.IsAutomorphicOverImagQuad (128s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AdmissibleResidues/IsAutomorphicOverImagQuad.lean:73:0: automatically included section variable(s) unused in theorem `UpperTheory.GalN.V.UnlinkAt.unlAt`:
-  [NumberField F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] in theorem ...
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [159042/159075] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.SysParamSplit (15s)
+⚠ [159043/159075] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.OffBadStatement (9.0s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OffBadStatement.lean:15:63: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [158957/158994] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.CharpolyConjugation.Unlfrob (130s)
-✔ [158958/158994] Built Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ArthurClozelStrongSupp (5.8s)
-✔ [158959/158994] Built Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CuspLawsOfLawsLit (9.5s)
-✔ [158960/158994] Built Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ArthurClozelLocalSC (5.8s)
-⚠ [158961/158994] Built Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LbcOfCharOne (7.0s)
-warning: src/Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/LbcOfCharOne.lean:26:2: Try this: 
-  letI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OffBadStatement.lean:15:115: this tactic is never executed
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OffBadStatement.lean:15:63: Unused tactic linter: `exact _root_.GlobalTheory.SummandEig.main_alt_alt` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/LbcOfCharOne.lean:34:2: Try this: 
-  letI̵
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OffBadStatement.lean:15:115: Unused tactic linter: `(intros; apply _root_.GlobalTheory.SummandEig.main_alt_alt <;> assumption)` does nothing
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [159044/159077] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.GoodOffGpStatement (6.2s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/GoodOffGpStatement.lean:15:57: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [158962/158994] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.SGalIso (5.9s)
-✔ [158963/158994] Built GroundTheory.AutomorphicForms.GL2.GJStandardLEuler (24s)
-✔ [158964/158994] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.LtOneOfContinuous (9.3s)
-✔ [158965/158998] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.LocDefs (140s)
-⚠ [158966/158998] Built Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.LocalCyclic (25s)
-warning: src/Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/LocalCyclic.lean:26:0: automatically included section variable(s) unused in theorem `GlobalTheory.Published.LocalSCModel.stab`:
-  [NumberField K]
-  [NumberField L]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField K] [NumberField L] in theorem ...
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/GoodOffGpStatement.lean:15:103: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/LocalCyclic.lean:39:2: Try this: 
-  letI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/GoodOffGpStatement.lean:15:57: Unused tactic linter: `exact _root_.GlobalTheory.OffBad.offbad_alt` does nothing
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/GoodOffGpStatement.lean:15:103: Unused tactic linter: `(intros; apply _root_.GlobalTheory.OffBad.offbad_alt <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/LocalCyclic.lean:56:2: Try this: 
-  letI̵
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [159045/159079] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.SysParamAtInert (22s)
+⚠ [159046/159079] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ImportsTerFurtherStatement (20s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ImportsTerFurtherStatement.lean:15:67: this tactic is never executed
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ImportsTerFurtherStatement.lean:15:123: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/LocalCyclic.lean:73:2: Try this: 
-  letI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ImportsTerFurtherStatement.lean:15:67: Unused tactic linter: `exact _root_.GlobalTheory.InertTransport.main_alt_alt` does nothing
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ImportsTerFurtherStatement.lean:15:123: Unused tactic linter: `(intros; apply _root_.GlobalTheory.InertTransport.main_alt_alt <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/LocalCyclic.lean:90:2: Try this: 
-  letI̵
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [159047/159079] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.SysParamSplitStatement (15s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SysParamSplitStatement.lean:15:65: this tactic is never executed
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SysParamSplitStatement.lean:15:119: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SysParamSplitStatement.lean:15:65: Unused tactic linter: `exact _root_.GlobalTheory.EigStr.sysParam_split_alt` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SysParamSplitStatement.lean:15:119: Unused tactic linter: `(intros; apply _root_.GlobalTheory.EigStr.sysParam_split_alt <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [159048/159081] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ArchimedeanSchwartz.HodgeTateFromSandwich (54s)
+⚠ [159049/159081] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ImportsTerMore (8.3s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ImportsTerMore.lean:43:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [159050/159081] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.SysParamAtInertStatement (15s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SysParamAtInertStatement.lean:15:67: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SysParamAtInertStatement.lean:15:123: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SysParamAtInertStatement.lean:15:67: Unused tactic linter: `exact _root_.GlobalTheory.NJoin.sysParam_at_inert_alt` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SysParamAtInertStatement.lean:15:123: Unused tactic linter: `(intros; apply _root_.GlobalTheory.NJoin.sysParam_at_inert_alt <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [159051/159085] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.TransportAlt (17s)
