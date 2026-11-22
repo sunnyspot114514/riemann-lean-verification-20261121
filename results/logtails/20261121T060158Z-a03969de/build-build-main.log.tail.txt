@@ -1,5 +1,8 @@
-⚠ [142631/142665] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaximalCompactInvariantFunction (15s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MaximalCompactInvariantFunction.lean:57:2: Try this: 
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UnipotentHaarLeviDecomposition.lean:21:31: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -7,7 +10,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MaximalCompactInvariantFunction.lean:58:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UnipotentHaarLeviDecomposition.lean:21:46: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -15,7 +18,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MaximalCompactInvariantFunction.lean:65:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UnipotentHaarLeviDecomposition.lean:22:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -23,49 +26,97 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [142632/142665] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsotropicPlaneConstantTermVanishingStatement (5.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsotropicPlaneConstantTermVanishingStatement.lean:25:55: this tactic is never executed
+⚠ [142890/142914] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoublingEigenIntertwinerTripleCompatible (8.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DoublingEigenIntertwinerTripleCompatible.lean:62:38: `ContinuousLinearMap.neg_apply` has been deprecated: Use `neg_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.neg_apply` to `neg_apply x`).
+⚠ [142891/142914] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianAdaptedPairOfPairStatement (6.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianAdaptedPairOfPairStatement.lean:23:56: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsotropicPlaneConstantTermVanishingStatement.lean:25:99: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianAdaptedPairOfPairStatement.lean:23:101: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsotropicPlaneConstantTermVanishingStatement.lean:25:55: Unused tactic linter: `exact GlobalTheory.ThK.DescB.GenCont.main` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianAdaptedPairOfPairStatement.lean:23:56: Unused tactic linter: `exact GlobalTheory.MixXUnip.twist_heis_inv` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsotropicPlaneConstantTermVanishingStatement.lean:25:99: Unused tactic linter: `(intros; apply GlobalTheory.ThK.DescB.GenCont.main <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianAdaptedPairOfPairStatement.lean:23:101: Unused tactic linter: `(intros; apply GlobalTheory.MixXUnip.twist_heis_inv <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [142633/142665] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentationRestrictionIntertwinerExists (8.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RepresentationRestrictionIntertwinerExists.lean:62:21: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RepresentationRestrictionIntertwinerExists.lean:67:21: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-⚠ [142634/142665] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftMatchedPlaneTowerDecomp (13s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaLiftMatchedPlaneTowerDecomp.lean:23:0: automatically included section variable(s) unused in theorem `GlobalTheory.ThK.DescB.LevRatInv.det_ne_zero_of_cartan`:
+⚠ [142892/142914] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianAdaptedPairConverseStatement (6.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianAdaptedPairConverseStatement.lean:19:45: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianAdaptedPairConverseStatement.lean:19:79: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianAdaptedPairConverseStatement.lean:19:45: Unused tactic linter: `exact GlobalTheory.EvPoint.main` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianAdaptedPairConverseStatement.lean:19:79: Unused tactic linter: `(intros; apply GlobalTheory.EvPoint.main <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [142893/142914] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawPairAdaptedPlanesStatement (6.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SeesawPairAdaptedPlanesStatement.lean:24:59: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SeesawPairAdaptedPlanesStatement.lean:24:107: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SeesawPairAdaptedPlanesStatement.lean:24:59: Unused tactic linter: `exact GlobalTheory.MixedLagrXW.exists_ratLagr` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SeesawPairAdaptedPlanesStatement.lean:24:107: Unused tactic linter: `(intros; apply GlobalTheory.MixedLagrXW.exists_ratLagr <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [142894/142916] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryScalingVectorStatement (5.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsUnitaryScalingVectorStatement.lean:18:60: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsUnitaryScalingVectorStatement.lean:18:109: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsUnitaryScalingVectorStatement.lean:18:60: Unused tactic linter: `exact GlobalTheory.PlaneLevi.exists_levi_scale` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsUnitaryScalingVectorStatement.lean:18:109: Unused tactic linter: `(intros; apply GlobalTheory.PlaneLevi.exists_levi_scale <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [142895/142916] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlaneRestrictionIsPairStatement (6.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdaptedPlaneRestrictionIsPairStatement.lean:23:68: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdaptedPlaneRestrictionIsPairStatement.lean:23:125: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdaptedPlaneRestrictionIsPairStatement.lean:23:68: Unused tactic linter: `exact GlobalTheory.MixedLagrX.mixed_lagrangian_plane_X` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AdaptedPlaneRestrictionIsPairStatement.lean:23:125: Unused tactic linter: `(intros; apply GlobalTheory.MixedLagrX.mixed_lagrangian_plane_X <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [142896/142916] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicPlaneFormHermitianStatement (9.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HyperbolicPlaneFormHermitianStatement.lean:30:76: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HyperbolicPlaneFormHermitianStatement.lean:30:141: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HyperbolicPlaneFormHermitianStatement.lean:30:76: Unused tactic linter: `exact GlobalTheory.ThK.DescStepCusp.cuspComp_alphaSpan_eq_zero` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HyperbolicPlaneFormHermitianStatement.lean:30:141: Unused tactic linter: `(intros;
+  apply GlobalTheory.ThK.DescStepCusp.cuspComp_alphaSpan_eq_zero <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [142897/142918] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawIdentityConfigBThird (15s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SeesawIdentityConfigBThird.lean:22:0: automatically included section variable(s) unused in theorem `GlobalTheory.XTermBoundQ.polData_le`:
   [NumberField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [NumberField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaLiftMatchedPlaneTowerDecomp.lean:33:0: automatically included section variable(s) unused in theorem `GlobalTheory.ThK.DescB.LevRatInv.isLevi_mul_one`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaLiftMatchedPlaneTowerDecomp.lean:132:0: automatically included section variable(s) unused in theorem `GlobalTheory.ThK.DescB.LevRatInv.inv_span`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaLiftMatchedPlaneTowerDecomp.lean:168:0: automatically included section variable(s) unused in theorem `GlobalTheory.ThK.DescB.LevRatInv.polData_of_polMatch`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [142635/142665] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsotropicPlaneConstantTermEquivariant (14s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsotropicPlaneConstantTermEquivariant.lean:23:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SeesawIdentityConfigBThird.lean:73:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -73,7 +124,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsotropicPlaneConstantTermEquivariant.lean:24:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SeesawIdentityConfigBThird.lean:168:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -81,80 +132,29 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsotropicPlaneConstantTermEquivariant.lean:32:10: This simp argument is unused:
-  smul_smul
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Prod.fst_mul, Prod.snd_mul, Matrix.add_mul, Matrix.mul_add, Matrix.smul_mul, Matrix.mul_smul,
-    Matrix.mul_sub, Matrix.sub_mul, Matrix.mul_assoc, h', Matrix.one_mul, Matrix.mul_one, sub_self, smul_zero, sub_zero,
-    add_zero, zero_add]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsotropicPlaneConstantTermEquivariant.lean:32:21: This simp argument is unused:
-  sub_zero
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Prod.fst_mul, Prod.snd_mul, Matrix.add_mul, Matrix.mul_add, Matrix.smul_mul, Matrix.mul_smul,
-    Matrix.mul_sub, Matrix.sub_mul, Matrix.mul_assoc, h', Matrix.one_mul, Matrix.mul_one, sub_self, smul_zero,
-    smul_smul, add_zero, zero_add]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsotropicPlaneConstantTermEquivariant.lean:32:41: This simp argument is unused:
-  zero_add
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Prod.fst_mul, Prod.snd_mul, Matrix.add_mul, Matrix.mul_add, Matrix.smul_mul, Matrix.mul_smul,
-    Matrix.mul_sub, Matrix.sub_mul, Matrix.mul_assoc, h', Matrix.one_mul, Matrix.mul_one, sub_self, smul_zero,
-    smul_smul, sub_zero, add_zero]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsotropicPlaneConstantTermEquivariant.lean:139:0: automatically included section variable(s) unused in theorem `GlobalTheory.ThK.DescB.GenSmooth.mat_levi`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsotropicPlaneConstantTermEquivariant.lean:225:0: automatically included section variable(s) unused in theorem `GlobalTheory.ThK.DescB.GenSmooth.isLevi_mul_one`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [142636/142667] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicPlaneGramRestrictionStatement (6.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HyperbolicPlaneGramRestrictionStatement.lean:29:66: this tactic is never executed
+⚠ [142898/142922] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentHaarLeviDecompositionStatement (5.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UnipotentHaarLeviDecompositionStatement.lean:13:67: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HyperbolicPlaneGramRestrictionStatement.lean:29:121: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UnipotentHaarLeviDecompositionStatement.lean:13:123: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HyperbolicPlaneGramRestrictionStatement.lean:29:66: Unused tactic linter: `exact GlobalTheory.SplitLiftCoord.exists_lift_coords` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UnipotentHaarLeviDecompositionStatement.lean:13:67: Unused tactic linter: `exact GlobalTheory.LeviConjOne.lintegral_mul_levi_one` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HyperbolicPlaneGramRestrictionStatement.lean:29:121: Unused tactic linter: `(intros; apply GlobalTheory.SplitLiftCoord.exists_lift_coords <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UnipotentHaarLeviDecompositionStatement.lean:13:123: Unused tactic linter: `(intros; apply GlobalTheory.LeviConjOne.lintegral_mul_levi_one <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [142637/142667] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CellFunctorTorusCharacter (43s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CellFunctorTorusCharacter.lean:16:0: automatically included section variable(s) unused in theorem `GlobalTheory.IndLineGL.CellTorus.scalar_apply`:
-  [ValuativeRel k]
-  [TopologicalSpace k]
-  [IsNonarchimedeanLocalField k]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] in theorem ...
+⚠ [142899/142925] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryFixingVectorPreservesStatement (5.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UnitaryFixingVectorPreservesStatement.lean:23:64: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CellFunctorTorusCharacter.lean:20:0: automatically included section variable(s) unused in theorem `GlobalTheory.IndLineGL.CellTorus.scalar_comm`:
-  [ValuativeRel k]
-  [TopologicalSpace k]
-  [IsNonarchimedeanLocalField k]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] in theorem ...
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UnitaryFixingVectorPreservesStatement.lean:23:117: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CellFunctorTorusCharacter.lean:33:0: automatically included section variable(s) unused in theorem `GlobalTheory.IndLineGL.CellTorus.extTensor_detRep_apply`:
-  [ValuativeRel k]
-  [TopologicalSpace k]
-  [IsNonarchimedeanLocalField k]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] in theorem ...
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UnitaryFixingVectorPreservesStatement.lean:23:64: Unused tactic linter: `exact GlobalTheory.UnipLine.conj_commutator_eq_pow` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UnitaryFixingVectorPreservesStatement.lean:23:117: Unused tactic linter: `(intros; apply GlobalTheory.UnipLine.conj_commutator_eq_pow <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
