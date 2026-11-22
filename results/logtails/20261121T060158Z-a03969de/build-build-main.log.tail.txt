@@ -1,23 +1,17 @@
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CoreAltAltTer.lean:92:41: Unused tactic linter: `push_cast` does nothing
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [158588/158615] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSphericalOfHypOutside (133s)
-⚠ [158589/158615] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.SplitReferencePairOfTrivialMu (229s)
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SplitReferencePairOfTrivialMu.lean:46:85: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [158618/158647] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsDegreeOnePrimeNotSplitsCompletely (5.5s)
+✔ [158619/158647] Built Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CuspReadGIffCuspReadT (10s)
+⚠ [158620/158653] Built Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.InertFrames.InertB (8.0s)
+warning: src/Development/WeilBound/RepresentationTheoryGL/ArchimedeanBaseChange/ArchimedeanBaseChangeProof/SatakeExponents/UniformizerValuations/InertFrames/InertB.lean:19:0: automatically included section variable(s) unused in theorem `PositivityTheory.Rg.BcB.F.Inert.ExistsNonSplitPlace.mem_of_not_isSplitAt`:
+  [IsCMField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsCMField E] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SplitReferencePairOfTrivialMu.lean:46:159: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SplitReferencePairOfTrivialMu.lean:46:85: Unused tactic linter: `exact _root_.GlobalTheory.RefPair.referencePair_split_of_mu_eq_zero_alt` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SplitReferencePairOfTrivialMu.lean:46:159: Unused tactic linter: `(intros;
-  apply _root_.GlobalTheory.RefPair.referencePair_split_of_mu_eq_zero_alt <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [158590/158615] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.LocGRankOne (307s)
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LocGRankOne.lean:25:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/WeilBound/RepresentationTheoryGL/ArchimedeanBaseChange/ArchimedeanBaseChangeProof/SatakeExponents/UniformizerValuations/InertFrames/InertB.lean:31:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -25,106 +19,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [158591/158618] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.RealDataWeightVectorFamilyCore (307s)
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RealDataWeightVectorFamilyCore.lean:46:72: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RealDataWeightVectorFamilyCore.lean:46:133: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RealDataWeightVectorFamilyCore.lean:46:72: Unused tactic linter: `exact _root_.GlobalTheory.Closing3.primRows3_typesSep3_alt` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RealDataWeightVectorFamilyCore.lean:46:133: Unused tactic linter: `(intros; apply _root_.GlobalTheory.Closing3.primRows3_typesSep3_alt <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [158592/158618] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.HoldsOfMultiplicityEqual (307s)
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/HoldsOfMultiplicityEqual.lean:66:75: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/HoldsOfMultiplicityEqual.lean:66:139: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/HoldsOfMultiplicityEqual.lean:66:75: Unused tactic linter: `exact _root_.GlobalTheory.Mem.R3.LiftsAt.lu_of_multEq_at_data` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/HoldsOfMultiplicityEqual.lean:66:139: Unused tactic linter: `(intros;
-  apply _root_.GlobalTheory.Mem.R3.LiftsAt.lu_of_multEq_at_data <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [158593/158620] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.StringRepresentations.RankOneOfLong (7.9s)
-✔ [158594/158621] Built Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.SplitLevelConjugates.FixSph (111s)
-✔ [158595/158623] Built Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.RecLawsH (351s)
-⚠ [158596/158623] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.SphericalLocalComponentAwayFromLevel (311s)
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SphericalLocalComponentAwayFromLevel.lean:21:153: Variable name `z` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _z
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SphericalLocalComponentAwayFromLevel.lean:61:177: Variable name `z` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _z
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SphericalLocalComponentAwayFromLevel.lean:62:94: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SphericalLocalComponentAwayFromLevel.lean:62:177: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SphericalLocalComponentAwayFromLevel.lean:62:94: Unused tactic linter: `exact _root_.GlobalTheory.RowSphOff.spherical_localComponent_away_from_level_alt` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SphericalLocalComponentAwayFromLevel.lean:62:177: Unused tactic linter: `(intros;
-  apply _root_.GlobalTheory.RowSphOff.spherical_localComponent_away_from_level_alt <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [158597/158623] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.RankOneUnitaryAltAlt (178s)
-⚠ [158598/158623] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.BaseChangeInfinitesimalCharacter (315s)
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/BaseChangeInfinitesimalCharacter.lean:52:88: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/BaseChangeInfinitesimalCharacter.lean:52:165: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/BaseChangeInfinitesimalCharacter.lean:52:88: Unused tactic linter: `exact _root_.GlobalTheory.LiftInfRef.baseChange_archimedean_compatible_alt` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/BaseChangeInfinitesimalCharacter.lean:52:165: Unused tactic linter: `(intros;
-  apply _root_.GlobalTheory.LiftInfRef.baseChange_archimedean_compatible_alt <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [158599/158628] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.RecT (6.2s)
-✔ [158600/158632] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.StringRepresentations.TemperedOfTrueCuspidal (183s)
-✔ [158601/158632] Built Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.SeparableConjugates.ExistsHasSatakeOfUnr (340s)
-⚠ [158602/158632] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.RationalDataSizedFamily (208s)
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RationalDataSizedFamily.lean:34:64: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RationalDataSizedFamily.lean:34:117: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RationalDataSizedFamily.lean:34:64: Unused tactic linter: `exact _root_.GlobalTheory.PrimIn.holds_of_ties_alt` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RationalDataSizedFamily.lean:34:117: Unused tactic linter: `(intros; apply _root_.GlobalTheory.PrimIn.holds_of_ties_alt <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [158603/158632] Built Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.GoodRef (209s)
-✔ [158604/158633] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.MainTyzBis (194s)
-⚠ [158605/158636] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.MRecLawsH (198s)
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MRecLawsH.lean:21:85: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MRecLawsH.lean:21:85: Unused tactic linter: `obtain ⟨a, ha, ε, -, H⟩ := H` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [158606/158636] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodToralOfIsSubquotientProdIrr (20s)
-✔ [158607/158638] Built Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CohomologicalCsdTemperedUnrOfFull (7.5s)
-⚠ [158608/158639] Built Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsTemperedGLOfHasSatGL (12s)
-warning: src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/IsTemperedGLOfHasSatGL.lean:14:2: Try this: 
+warning: src/Development/WeilBound/RepresentationTheoryGL/ArchimedeanBaseChange/ArchimedeanBaseChangeProof/SatakeExponents/UniformizerValuations/InertFrames/InertB.lean:40:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -132,10 +27,108 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [158609/158639] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RecTExistsIff (12s)
-✔ [158610/158639] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ToralOfIsSphericalLocProd (27s)
-⚠ [158611/158639] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.LpSumSegmentsNu (133s)
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LpSumSegmentsNu.lean:27:2: Try this: 
+warning: src/Development/WeilBound/RepresentationTheoryGL/ArchimedeanBaseChange/ArchimedeanBaseChangeProof/SatakeExponents/UniformizerValuations/InertFrames/InertB.lean:44:14: `Ideal.card_primesOverFinset_le_finrank` has been deprecated: Use results of RingTheory.RamificationInertia.Basic
+✔ [158621/158656] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LpDimLocParT (7.7s)
+✔ [158622/158657] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BaseChangeDefiniteGeneralOfOld (15s)
+⚠ [158623/158657] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyUnrT (7.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EventuallyUnrT.lean:14:29: Variable name `hF` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hF
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [158624/158660] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.LpSumSegmentsNuStatement (88s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LpSumSegmentsNuStatement.lean:20:61: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LpSumSegmentsNuStatement.lean:20:111: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LpSumSegmentsNuStatement.lean:20:61: Unused tactic linter: `exact _root_.GlobalTheory.lpSum_segments_nu_alt` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LpSumSegmentsNuStatement.lean:20:111: Unused tactic linter: `(intros; apply _root_.GlobalTheory.lpSum_segments_nu_alt <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [158625/158660] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ExistsHasSatakeOfUnr (205s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsHasSatakeOfUnr.lean:22:86: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsHasSatakeOfUnr.lean:22:86: Unused tactic linter: `obtain ⟨_, _, _, -, H'⟩ := H'` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [158626/158660] Built Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.SphRead (8.2s)
+✔ [158627/158660] Built Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.LocProdEqG (222s)
+⚠ [158628/158660] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LawsT (5.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LawsT.lean:18:58: Variable name `hF` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hF
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [158629/158660] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.WeightSetResidueCharacteristic (207s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/WeightSetResidueCharacteristic.lean:69:99: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/WeightSetResidueCharacteristic.lean:69:187: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/WeightSetResidueCharacteristic.lean:69:99: Unused tactic linter: `exact
+  _root_.GlobalTheory.Mem.R3.Rw.AtDatumEvaluation.w_of_multEq_and_test_at_weights` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/WeightSetResidueCharacteristic.lean:69:187: Unused tactic linter: `(intros;
+  apply _root_.GlobalTheory.Mem.R3.Rw.AtDatumEvaluation.w_of_multEq_and_test_at_weights <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [158630/158660] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.AlIsRecrecLaws (177s)
+⚠ [158631/158664] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.MGoodRef (193s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MGoodRef.lean:19:187: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [158632/158664] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsRecordCgTrueT (20s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsRecordCgTrueT.lean:40:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsRecordCgTrueT.lean:46:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsRecordCgTrueT.lean:167:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [158633/158664] Built Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.UnitaryReadS (47s)
+warning: src/Development/AutomorphicArithmetic/Foundations/UnitarySphericalFixing/SatakeParameters/UnitaryReadS.lean:29:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [158634/158669] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.StringRepresentations.PartNormO (130s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/StringRepresentations/PartNormO.lean:28:28: Unused tactic linter: `push_cast` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [158635/158669] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.RecSpehQuot (217s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RecSpehQuot.lean:29:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -143,7 +136,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LpSumSegmentsNu.lean:28:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RecSpehQuot.lean:30:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -151,10 +144,17 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LpSumSegmentsNu.lean:30:87: this tactic is never executed
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RecSpehQuot.lean:32:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RecSpehQuot.lean:37:89: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LpSumSegmentsNu.lean:30:87: Unused tactic linter: `obtain ⟨a, ha, ε, -, L⟩ := hrc` does nothing
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RecSpehQuot.lean:37:89: Unused tactic linter: `obtain ⟨a', ha', ε, -, L⟩ := hrc` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [158612/158639] Built Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.DivisibleGroupTowerCompatibility (6.6s)
