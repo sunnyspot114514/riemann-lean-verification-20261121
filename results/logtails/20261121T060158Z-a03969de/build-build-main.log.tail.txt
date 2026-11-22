@@ -1,160 +1,160 @@
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/JoinModelPointsProject.lean:138:33: `zero_le'` has been deprecated: Use `zero_le` instead
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/JoinModelPointsProject.lean:264:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.Ar.Ht.JoinFacts.joinInl_injective`:
-  [(k : K) → Fintype (ι k)]
-  [(k : K') → Fintype (ι' k)]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [(k : K) → Fintype (ι k)] [(k : K') → Fintype (ι' k)] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/JoinModelPointsProject.lean:286:6: `Finsupp.mapDomain_notin_range` has been deprecated: Use `Finsupp.mapDomain_of_notMem_range` instead
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/JoinModelPointsProject.lean:305:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [132866/132895] Built Development.WeilBound.CoreStatements.PluriharmonicCharts.XCSqsys (8.1s)
-warning: src/Development/WeilBound/CoreStatements/PluriharmonicCharts/XCSqsys.lean:29:0: automatically included section variable(s) unused in theorem `PositivityTheory.Xgp.c_sqsys.lift_inj`:
-  [Fintype Ψ]
-  [DecidableEq Ψ]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype Ψ] [DecidableEq Ψ] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [132867/132895] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.RootOriginWeightIdentity (7.8s)
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/RootOriginWeightIdentity.lean:83:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.Ar.Small.OriginEps.zpow_sum_of_ne`:
-  [CharZero Ω]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [CharZero Ω] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/RootOriginWeightIdentity.lean:125:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/RootOriginWeightIdentity.lean:126:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [132868/132895] Built Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.OnbMat (6.1s)
-✔ [132869/132895] Built Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BcMapBcVec (13s)
-✔ [132870/132895] Built Development.AutomorphicSpectrum.Definitions.GlobalGeometry.OverLaUnique (10s)
-✔ [132871/132895] Built Development.AutomorphicSpectrum.Definitions.MetricPeriods.RegularFormsIsBundleProjectiveCover (5.6s)
-⚠ [132872/132897] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagHeightStatement (5.3s)
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/FlagHeightStatement.lean:10:71: this tactic is never executed
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/RationalRelationInChartIdealStatement.lean:24:151: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/FlagHeightStatement.lean:10:131: this tactic is never executed
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/RationalRelationInChartIdealStatement.lean:24:81: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.ChartDehom.map_mem_chartIdeal` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/RationalRelationInChartIdealStatement.lean:24:151: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.Ar.ChartDehom.map_mem_chartIdeal <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [133210/133235] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.KaehlerDifferentialsSpanLocalStatement (5.1s)
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/KaehlerDifferentialsSpanLocalStatement.lean:13:87: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/FlagHeightStatement.lean:10:71: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.PB.flagHeight_holds` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/FlagHeightStatement.lean:10:131: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.Ar.PB.flagHeight_holds <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [132873/132897] Built Development.AutomorphicSpectrum.Definitions.GlobalGeometry.TwistedDualRegularFormsFiniteCover (5.1s)
-✔ [132874/132898] Built Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EvLApply (10s)
-✔ [132875/132899] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.Coefficients (6.0s)
-✔ [132876/132899] Built Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CuspOnto (5.0s)
-⚠ [132877/132901] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverRealisationPullback (5.7s)
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/FlagCoverRealisationPullback.lean:10:50: this tactic is never executed
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/KaehlerDifferentialsSpanLocalStatement.lean:13:163: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/FlagCoverRealisationPullback.lean:10:50: Unused tactic linter: `exact PositivityTheory.Xgp.t_c_sqsys` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/KaehlerDifferentialsSpanLocalStatement.lean:13:87: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Kaehler.maximalIdeal_eq_span_of_span_D` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [132878/132901] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.RootOriginWeightIdentityStatement (5.4s)
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/RootOriginWeightIdentityStatement.lean:12:84: this tactic is never executed
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/KaehlerDifferentialsSpanLocalStatement.lean:13:163: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.Kaehler.maximalIdeal_eq_span_of_span_D <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [133211/133235] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.FiniteTorusTranslatesCover (5.0s)
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FiniteTorusTranslatesCover.lean:48:5: Variable name `hP` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hP
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [133212/133235] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegularLocalChartCoords (8.3s)
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/RegularLocalChartCoords.lean:72:59: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/RegularLocalChartCoords.lean:174:8: `ContinuousLinearMap.zero_apply` has been deprecated: Use `zero_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.zero_apply` to `zero_apply x`).
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/RegularLocalChartCoords.lean:77:5: Variable name `hP` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hP
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [133213/133235] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsBis (5.2s)
+✔ [133214/133235] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.CubicalWeilPairingIsoInvariant (15s)
+✔ [133215/133235] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.BoundaryChartLieMetricBound (5.6s)
+⚠ [133216/133238] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolUnifPeriodMatrixRightStatement (6.7s)
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/HolUnifPeriodMatrixRightStatement.lean:19:84: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/RootOriginWeightIdentityStatement.lean:12:157: this tactic is never executed
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/HolUnifPeriodMatrixRightStatement.lean:19:157: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/RootOriginWeightIdentityStatement.lean:12:84: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Small.OriginEps.section_on_model` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/HolUnifPeriodMatrixRightStatement.lean:19:84: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.QuotLoc.periods_map_onto_lattice` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/RootOriginWeightIdentityStatement.lean:12:157: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.Small.OriginEps.section_on_model <;> assumption)` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/HolUnifPeriodMatrixRightStatement.lean:19:157: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.Ar.QuotLoc.periods_map_onto_lattice <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [132879/132902] Built Development.AutomorphicSpectrum.Definitions.MetricPeriods.EtaCut (5.1s)
-✔ [132880/132902] Built Development.AutomorphicSpectrum.Definitions.GlobalGeometry.TraceWedgePairingPerfectRationalForms (5.2s)
-⚠ [132881/132902] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatUnitOfSplitRootLines (12s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FlatUnitOfSplitRootLines.lean:207:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FlatUnitOfSplitRootLines.lean:209:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FlatUnitOfSplitRootLines.lean:216:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FlatUnitOfSplitRootLines.lean:237:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [132882/132902] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.CoefficientsStatement (5.1s)
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/CoefficientsStatement.lean:8:71: this tactic is never executed
+⚠ [133217/133241] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeComponentHolomorphicCoverStatement (6.0s)
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/HodgeComponentHolomorphicCoverStatement.lean:9:88: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/CoefficientsStatement.lean:8:131: this tactic is never executed
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/HodgeComponentHolomorphicCoverStatement.lean:9:165: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/CoefficientsStatement.lean:8:71: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.PB.Top.coefficients` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/HodgeComponentHolomorphicCoverStatement.lean:9:88: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.QuotUnif.exists_chart_at_of_polydisc` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/CoefficientsStatement.lean:8:131: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.Ar.PB.Top.coefficients <;> assumption)` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/HodgeComponentHolomorphicCoverStatement.lean:9:165: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.Ar.QuotUnif.exists_chart_at_of_polydisc <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [132883/132902] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverRealisationPullbackStatement (5.7s)
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/FlagCoverRealisationPullbackStatement.lean:9:86: this tactic is never executed
+⚠ [133218/133244] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartIdealLocalizationMapStatement (5.4s)
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ChartIdealLocalizationMapStatement.lean:29:77: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/FlagCoverRealisationPullbackStatement.lean:9:161: this tactic is never executed
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ChartIdealLocalizationMapStatement.lean:29:143: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/FlagCoverRealisationPullbackStatement.lean:9:86: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Relay.flag_cover_realisation_pullback` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ChartIdealLocalizationMapStatement.lean:29:77: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.ChartHom.exists_hom_chart` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/FlagCoverRealisationPullbackStatement.lean:9:161: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Relay.flag_cover_realisation_pullback <;> assumption)` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ChartIdealLocalizationMapStatement.lean:29:143: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.Ar.ChartHom.exists_hom_chart <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [132884/132902] Built Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.RealCubicMeans.LogMeanShares.LogMeanStatements.MeanLogS (5.1s)
-✔ [132885/132907] Built Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SlCTendsto (10s)
-✔ [132886/132908] Built Development.WeilBound.CoreStatements.FlagImmersions.GlobalModelTowerBounds (5.5s)
-✔ [132887/132909] Built Development.AutomorphicSpectrum.Definitions.MetricPeriods.AdelicGLLastRowAndDetModuleUnderLeftMultiplicati (5.5s)
-✔ [132888/132909] Built Development.AutomorphicSpectrum.Definitions.GlobalGeometry.AbsAZero (9.1s)
-✔ [132889/132909] Built Development.AutomorphicSpectrum.Statements.MetricStatements.SmallOnTower (4.9s)
+⚠ [133219/133247] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.ToXQFst (5.5s)
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ToXQFst.lean:27:0: Definition `GlobalTheory.CompanionTheory.Ar.TorusUnif.anTop` of class type is semireducible. Most type class instances should be instance-reducible, so consider marking this
+definition with `@[instance_reducible]`. If it is intentionally semireducible, this warning can be disabled with `set_option warn.classDefReducibility false`.
+⚠ [133220/133250] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.FiniteTorusTranslatesCoverStatement (5.2s)
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FiniteTorusTranslatesCoverStatement.lean:21:5: Variable name `hP` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hP
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FiniteTorusTranslatesCoverStatement.lean:25:93: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FiniteTorusTranslatesCoverStatement.lean:25:175: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FiniteTorusTranslatesCoverStatement.lean:25:93: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.ChartCover.mcPts_finite_cover_up_to_torus` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FiniteTorusTranslatesCoverStatement.lean:25:175: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.Ar.ChartCover.mcPts_finite_cover_up_to_torus <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [133221/133250] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegularLocalChartCoordsStatement (5.5s)
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/RegularLocalChartCoordsStatement.lean:21:5: Variable name `hP` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hP
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/RegularLocalChartCoordsStatement.lean:41:94: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/RegularLocalChartCoordsStatement.lean:41:177: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/RegularLocalChartCoordsStatement.lean:41:94: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.ChartParams.sncChart_of_regular_parameters` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/RegularLocalChartCoordsStatement.lean:41:177: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.Ar.ChartParams.sncChart_of_regular_parameters <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [133222/133253] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.CubicalWeilPairingIsoInvariantStatement (5.5s)
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CubicalWeilPairingIsoInvariantStatement.lean:25:75: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CubicalWeilPairingIsoInvariantStatement.lean:25:139: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CubicalWeilPairingIsoInvariantStatement.lean:25:75: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.CubIso.cubWeil_of_lbIso` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CubicalWeilPairingIsoInvariantStatement.lean:25:139: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.Ar.CubIso.cubWeil_of_lbIso <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [133223/133253] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.BoundaryChartLieMetricBoundStatement (5.6s)
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/BoundaryChartLieMetricBoundStatement.lean:9:83: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/BoundaryChartLieMetricBoundStatement.lean:9:155: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/BoundaryChartLieMetricBoundStatement.lean:9:83: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.QuotUnif.chart_coords_le_metric` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/BoundaryChartLieMetricBoundStatement.lean:9:155: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.Ar.QuotUnif.chart_coords_le_metric <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
