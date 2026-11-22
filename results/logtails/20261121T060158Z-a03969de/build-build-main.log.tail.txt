@@ -1,5 +1,24 @@
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LieLatticeFieldUniformBase.lean:409:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/PullbackCoverModelsScheme.lean:51:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/PullbackCoverModelsScheme.lean:56:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/PullbackCoverModelsScheme.lean:65:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -7,7 +26,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LieLatticeFieldUniformBase.lean:440:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/PullbackCoverModelsScheme.lean:66:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -15,146 +34,127 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [148414/148435] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SwapFlagDegreeIdentityStatement (8.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SwapFlagDegreeIdentityStatement.lean:12:59: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/PullbackCoverModelsScheme.lean:73:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/PullbackCoverModelsScheme.lean:74:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [148668/148701] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SysExOfPolEx (6.7s)
+⚠ [148669/148701] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPolTransferRingMapsStatement (6.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsPolTransferRingMapsStatement.lean:20:64: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SwapFlagDegreeIdentityStatement.lean:12:107: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsPolTransferRingMapsStatement.lean:20:117: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SwapFlagDegreeIdentityStatement.lean:12:59: Unused tactic linter: `exact GlobalTheory.CovTest.SwapZ.swapEq_flagZ` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsPolTransferRingMapsStatement.lean:20:64: Unused tactic linter: `exact GlobalTheory.PolModelIso.exists_iso_of_isPol` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SwapFlagDegreeIdentityStatement.lean:12:107: Unused tactic linter: `(intros; apply GlobalTheory.CovTest.SwapZ.swapEq_flagZ <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsPolTransferRingMapsStatement.lean:20:117: Unused tactic linter: `(intros; apply GlobalTheory.PolModelIso.exists_iso_of_isPol <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [148415/148436] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.InducedMetricOfIsometricStatement (8.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InducedMetricOfIsometricStatement.lean:17:49: this tactic is never executed
+⚠ [148670/148701] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCommonLocalizationModelStatement (6.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsCommonLocalizationModelStatement.lean:24:53: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InducedMetricOfIsometricStatement.lean:17:87: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsCommonLocalizationModelStatement.lean:24:95: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InducedMetricOfIsometricStatement.lean:17:49: Unused tactic linter: `exact GlobalTheory.InducesIsom.main` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsCommonLocalizationModelStatement.lean:24:53: Unused tactic linter: `exact GlobalTheory.Member.overlap_rings` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InducedMetricOfIsometricStatement.lean:17:87: Unused tactic linter: `(intros; apply GlobalTheory.InducesIsom.main <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsCommonLocalizationModelStatement.lean:24:95: Unused tactic linter: `(intros; apply GlobalTheory.Member.overlap_rings <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [148416/148437] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegularFunctionsBoundClosePointsStatement (6.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RegularFunctionsBoundClosePointsStatement.lean:19:49: this tactic is never executed
+⚠ [148671/148701] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeSectionsHeightBound (20s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeSectionsHeightBound.lean:94:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [148672/148704] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsIsoOfGluedPullbacksReducedStatement (6.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsIsoOfGluedPullbacksReducedStatement.lean:23:61: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RegularFunctionsBoundClosePointsStatement.lean:19:87: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsIsoOfGluedPullbacksReducedStatement.lean:23:111: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RegularFunctionsBoundClosePointsStatement.lean:19:49: Unused tactic linter: `exact GlobalTheory.HtLocBound.htLoc` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsIsoOfGluedPullbacksReducedStatement.lean:23:61: Unused tactic linter: `exact GlobalTheory.SchGlue.exists_glue_of_dense` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RegularFunctionsBoundClosePointsStatement.lean:19:87: Unused tactic linter: `(intros; apply GlobalTheory.HtLocBound.htLoc <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsIsoOfGluedPullbacksReducedStatement.lean:23:111: Unused tactic linter: `(intros; apply GlobalTheory.SchGlue.exists_glue_of_dense <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [148417/148437] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackIdFlagPieceIsoStatement (8.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PullbackIdFlagPieceIsoStatement.lean:19:59: this tactic is never executed
+✔ [148673/148706] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SiegelLocalOfToroidalIntegral (8.3s)
+✔ [148674/148706] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolarizationOpenImmersion (6.7s)
+⚠ [148675/148706] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PullbackCoverModelsSchemeStatement (6.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/PullbackCoverModelsSchemeStatement.lean:22:51: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PullbackIdFlagPieceIsoStatement.lean:19:107: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/PullbackCoverModelsSchemeStatement.lean:22:91: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PullbackIdFlagPieceIsoStatement.lean:19:59: Unused tactic linter: `exact GlobalTheory.pullback_id_lift_step_self` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/PullbackCoverModelsSchemeStatement.lean:22:51: Unused tactic linter: `exact GlobalTheory.GlueLoc.glue_local` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PullbackIdFlagPieceIsoStatement.lean:19:107: Unused tactic linter: `(intros; apply GlobalTheory.pullback_id_lift_step_self <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/PullbackCoverModelsSchemeStatement.lean:22:91: Unused tactic linter: `(intros; apply GlobalTheory.GlueLoc.glue_local <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [148418/148438] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagPiecePullbackCompIsoStatement (8.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FlagPiecePullbackCompIsoStatement.lean:27:54: this tactic is never executed
+⚠ [148676/148706] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SemiabelianGluesOverCover (7.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SemiabelianGluesOverCover.lean:56:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FlagPiecePullbackCompIsoStatement.lean:27:97: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FlagPiecePullbackCompIsoStatement.lean:27:54: Unused tactic linter: `exact GlobalTheory.FlagLiftComp.liftComp` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SemiabelianGluesOverCover.lean:82:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FlagPiecePullbackCompIsoStatement.lean:27:97: Unused tactic linter: `(intros; apply GlobalTheory.FlagLiftComp.liftComp <;> assumption)` does nothing
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [148419/148439] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagGenericFibreIntegralStatement (8.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FlagGenericFibreIntegralStatement.lean:20:57: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SemiabelianGluesOverCover.lean:83:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FlagGenericFibreIntegralStatement.lean:20:103: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FlagGenericFibreIntegralStatement.lean:20:57: Unused tactic linter: `exact GlobalTheory.FlagGenFib.isIntegral_Gf` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SemiabelianGluesOverCover.lean:85:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FlagGenericFibreIntegralStatement.lean:20:103: Unused tactic linter: `(intros; apply GlobalTheory.FlagGenFib.isIntegral_Gf <;> assumption)` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [148420/148444] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalArithModelGenericPointMapStatement (9.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/NormalArithModelGenericPointMapStatement.lean:27:66: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SemiabelianGluesOverCover.lean:44:19: Variable name `n` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/NormalArithModelGenericPointMapStatement.lean:27:121: this tactic is never executed
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/NormalArithModelGenericPointMapStatement.lean:27:66: Unused tactic linter: `exact GlobalTheory.Mean4O.Cover.induces_pull_of_comp` does nothing
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SemiabelianGluesOverCover.lean:44:53: Variable name `i₀` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/NormalArithModelGenericPointMapStatement.lean:27:121: Unused tactic linter: `(intros; apply GlobalTheory.Mean4O.Cover.induces_pull_of_comp <;> assumption)` does nothing
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i₀
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [148421/148444] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieLatticeFieldUniformBaseStatement (9.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LieLatticeFieldUniformBaseStatement.lean:17:57: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LieLatticeFieldUniformBaseStatement.lean:17:103: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LieLatticeFieldUniformBaseStatement.lean:17:57: Unused tactic linter: `exact GlobalTheory.BdFib.torusExt_structure` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LieLatticeFieldUniformBaseStatement.lean:17:103: Unused tactic linter: `(intros; apply GlobalTheory.BdFib.torusExt_structure <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [148422/148444] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieFramesPullbackGenericStatement (9.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LieFramesPullbackGenericStatement.lean:12:59: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LieFramesPullbackGenericStatement.lean:12:107: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LieFramesPullbackGenericStatement.lean:12:59: Unused tactic linter: `exact GlobalTheory.FlagCls.flagAgree_of_bears` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LieFramesPullbackGenericStatement.lean:12:107: Unused tactic linter: `(intros; apply GlobalTheory.FlagCls.flagAgree_of_bears <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [148423/148444] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.EmbBBijectiveStatement (8.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EmbBBijectiveStatement.lean:12:55: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EmbBBijectiveStatement.lean:12:99: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EmbBBijectiveStatement.lean:12:55: Unused tactic linter: `exact GlobalTheory.FlagCls.embB_bijective` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EmbBBijectiveStatement.lean:12:99: Unused tactic linter: `(intros; apply GlobalTheory.FlagCls.embB_bijective <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [148424/148452] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtensionOfStalkwiseLiftsStatement (8.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtensionOfStalkwiseLiftsStatement.lean:12:67: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtensionOfStalkwiseLiftsStatement.lean:12:123: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtensionOfStalkwiseLiftsStatement.lean:12:67: Unused tactic linter: `exact GlobalTheory.FlagCls.exists_hom_of_forall_stalk` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtensionOfStalkwiseLiftsStatement.lean:12:123: Unused tactic linter: `(intros; apply GlobalTheory.FlagCls.exists_hom_of_forall_stalk <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
