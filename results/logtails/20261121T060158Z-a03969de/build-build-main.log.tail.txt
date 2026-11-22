@@ -1,18 +1,50 @@
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GenericFrameComponentBound.lean:110:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.Ar.Plug.chartLat_le_chartLatNm`:
-  [(k : K) → Fintype (ι k)]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [(k : K) → Fintype (ι k)] in theorem ...
+warning: src/Development/AutomorphicSpectrum/Proofs/GlobalProofs/RegularFunctionPolynomialGrowthStatement.lean:11:131: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GenericFrameComponentBound.lean:134:2: Try this: 
-  letI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GlobalProofs/RegularFunctionPolynomialGrowthStatement.lean:11:71: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Gaga.exists_gens_bound` does nothing
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GlobalProofs/RegularFunctionPolynomialGrowthStatement.lean:11:131: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.Gaga.exists_gens_bound <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GenericFrameComponentBound.lean:135:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [136731/136771] Built Development.AutomorphicSpectrum.Proofs.GlobalProofs.CompactSpaceCxPtsOfIsProper (5.0s)
+✔ [136732/136771] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroSmulMem (5.8s)
+✔ [136733/136775] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.PtsIntegralConjLineEq (4.9s)
+✔ [136734/136775] Built Development.AbelianVarietyTheory.Definitions.Divisors.BudgetAt (16s)
+✔ [136735/136775] Built Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GeoSmallIn (5.9s)
+⚠ [136736/136775] Built Development.AutomorphicSpectrum.Proofs.GlobalProofs.HolomorphicSectionModerateGrowth (5.5s)
+warning: src/Development/AutomorphicSpectrum/Proofs/GlobalProofs/HolomorphicSectionModerateGrowth.lean:35:5: `tendsto_finset_sum` has been deprecated: Use `tendsto_finsetSum` instead
+⚠ [136737/136775] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.UniformNormAllTowerBoundStatement (10s)
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/UniformNormAllTowerBoundStatement.lean:18:70: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/UniformNormAllTowerBoundStatement.lean:18:129: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/UniformNormAllTowerBoundStatement.lean:18:70: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Plug.descent_small` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/UniformNormAllTowerBoundStatement.lean:18:129: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.Ar.Plug.descent_small <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [136738/136775] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.PtsIntegralConjLineEqStatement (4.8s)
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/PtsIntegralConjLineEqStatement.lean:8:75: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/PtsIntegralConjLineEqStatement.lean:8:139: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/PtsIntegralConjLineEqStatement.lean:8:75: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Tw.ptsIntegral_conjLine` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/PtsIntegralConjLineEqStatement.lean:8:139: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.Ar.Tw.ptsIntegral_conjLine <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [136739/136778] Built Development.AbelianVarietyTheory.Definitions.Divisors.QuoIff (9.1s)
+✔ [136740/136778] Built Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GeoTheta (5.7s)
+⚠ [136741/136778] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RowGoodLatticeNeBot (9.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RowGoodLatticeNeBot.lean:23:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -20,80 +52,97 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GenericFrameComponentBound.lean:141:13: try 'simp' instead of 'simpa'
+⚠ [136742/136782] Built Development.AutomorphicSpectrum.Proofs.GlobalProofs.HolomorphicSectionModerateGrowthStatement (4.9s)
+warning: src/Development/AutomorphicSpectrum/Proofs/GlobalProofs/HolomorphicSectionModerateGrowthStatement.lean:11:102: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GenericFrameComponentBound.lean:175:14: This simp argument is unused:
-  Pi.single_apply
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GlobalProofs/HolomorphicSectionModerateGrowthStatement.lean:11:193: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GlobalProofs/HolomorphicSectionModerateGrowthStatement.lean:11:102: Unused tactic linter: `exact
+  GlobalTheory.CompanionTheory.Gaga.continuous_section_polynomial_growth_of_isProper` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GlobalProofs/HolomorphicSectionModerateGrowthStatement.lean:11:193: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.Gaga.continuous_section_polynomial_growth_of_isProper <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [136743/136782] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CovolumeFromGramAndBounds (17s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CovolumeFromGramAndBounds.lean:44:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [136744/136782] Built Development.AbelianVarietyTheory.Counterexamples.RotationExamples.MeasureFailsForLargeConstant (5.5s)
+⚠ [136745/136782] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.PoincareLelongOfInv (8.8s)
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/PoincareLelongOfInv.lean:36:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/PoincareLelongOfInv.lean:37:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/PoincareLelongOfInv.lean:38:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/PoincareLelongOfInv.lean:49:26: `Nat.infinite_setOf_prime` has been deprecated: Use `Nat.infinite_setOfPred_prime` instead
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/PoincareLelongOfInv.lean:49:51: `Set.Infinite.diff` has been deprecated: Use `Set.Infinite.sdiff` instead
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/PoincareLelongOfInv.lean:64:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/PoincareLelongOfInv.lean:91:8: `Finsupp.mapDomain_notin_range` has been deprecated: Use `Finsupp.mapDomain_of_notMem_range` instead
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/PoincareLelongOfInv.lean:171:21: This simp argument is unused:
+  Real.sqrt_eq_zero'
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [hbp]
+  [apply] simp [cRoot, hp, Nat.pos_of_ne_zero hp]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GenericFrameComponentBound.lean:238:2: Try this: 
-  letI̵
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/PoincareLelongOfInv.lean:171:45: This simp argument is unused:
+  Nat.pos_of_ne_zero hp
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: Omit it from the simp argument list.
+  [apply] simp [cRoot, Real.sqrt_eq_zero', hp]
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GenericFrameComponentBound.lean:239:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GenericFrameComponentBound.lean:299:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GenericFrameComponentBound.lean:300:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [136519/136564] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsogenyProductDecompositionStatement (5.4s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/IsogenyProductDecompositionStatement.lean:10:84: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [136746/136782] Built Development.AutomorphicSpectrum.Proofs.GlobalProofs.AnalyticSectionIsAlgebraic (5.5s)
+⚠ [136747/136783] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RowGoodLatticeNeBotStatement (8.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RowGoodLatticeNeBotStatement.lean:11:57: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/IsogenyProductDecompositionStatement.lean:10:157: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RowGoodLatticeNeBotStatement.lean:11:103: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/IsogenyProductDecompositionStatement.lean:10:84: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Relay.isogeny_product_decomposition` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RowGoodLatticeNeBotStatement.lean:11:57: Unused tactic linter: `exact GlobalTheory.CovTop.latGood_ne_bot_at` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/IsogenyProductDecompositionStatement.lean:10:157: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Relay.isogeny_product_decomposition <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RowGoodLatticeNeBotStatement.lean:11:103: Unused tactic linter: `(intros; apply GlobalTheory.CovTop.latGood_ne_bot_at <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [136520/136567] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.TowerComponentsEquivOfGiven (6.7s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/TowerComponentsEquivOfGiven.lean:30:68: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/TowerComponentsEquivOfGiven.lean:30:68: Unused tactic linter: `exact PositivityTheory.UnitarySelfGeneration.y_comp_of` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [136521/136567] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.AllWeightSectionsCompat (27s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/AllWeightSectionsCompat.lean:234:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [136522/136567] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.FullIntersectionHeightBound (20s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FullIntersectionHeightBound.lean:400:2: Try this: 
+⚠ [136748/136783] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CovolumePerRankLeNegSlopeScaled (7.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CovolumePerRankLeNegSlopeScaled.lean:31:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -101,60 +150,11 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FullIntersectionHeightBound.lean:420:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CovolumePerRankLeNegSlopeScaled.lean:32:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
 The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [136523/136567] Built Development.WeilBound.CoreStatements.CommonZeroEvaluation.GenericFrameRootOrigin (23s)
-warning: src/Development/WeilBound/CoreStatements/CommonZeroEvaluation/GenericFrameRootOrigin.lean:117:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/CoreStatements/CommonZeroEvaluation/GenericFrameRootOrigin.lean:120:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/CoreStatements/CommonZeroEvaluation/GenericFrameRootOrigin.lean:126:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/CoreStatements/CommonZeroEvaluation/GenericFrameRootOrigin.lean:127:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/CoreStatements/CommonZeroEvaluation/GenericFrameRootOrigin.lean:134:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/CoreStatements/CommonZeroEvaluation/GenericFrameRootOrigin.lean:218:4: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
