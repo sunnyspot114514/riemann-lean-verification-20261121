@@ -1,3 +1,8 @@
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FundamentalDomainVolumeLower.lean:24:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -5,7 +10,8 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ValuationMultiplicityWeight.lean:325:2: Try this: 
+⚠ [138686/138724] Built Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.InjectiveOfSumEq (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/InjectiveOfSumEq.lean:74:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -13,13 +19,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ValuationMultiplicityWeight.lean:374:38: `zero_le'` has been deprecated: Use `zero_le` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ValuationMultiplicityWeight.lean:392:81: `zero_le'` has been deprecated: Use `zero_le` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ValuationMultiplicityWeight.lean:394:27: `zero_le'` has been deprecated: Use `zero_le` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ValuationMultiplicityWeight.lean:438:10: `zero_le'` has been deprecated: Use `zero_le` instead
-✔ [138487/138517] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.VolumeCoordinateBoxLeHadamard (6.5s)
-⚠ [138488/138517] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeMeasureUnitaryDetOneFactorNearIdentity (33s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LeMeasureUnitaryDetOneFactorNearIdentity.lean:88:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/CubicalLineBundles/InjectiveOfSumEq.lean:75:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -27,8 +27,49 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LeMeasureUnitaryDetOneFactorNearIdentity.lean:91:13: `Set.setOf_forall` has been deprecated: Use `Set.ofPred_forall` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LeMeasureUnitaryDetOneFactorNearIdentity.lean:99:2: Try this: 
+⚠ [138687/138724] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexISupMapEqPow (6.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RelIndexISupMapEqPow.lean:58:16: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RelIndexISupMapEqPow.lean:59:63: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [138688/138724] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeanLogNormEmbeddingsRingHomStatement (5.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MeanLogNormEmbeddingsRingHomStatement.lean:9:65: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MeanLogNormEmbeddingsRingHomStatement.lean:9:119: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MeanLogNormEmbeddingsRingHomStatement.lean:9:65: Unused tactic linter: `exact GlobalTheory.mean_log_norm_embeddings_ringHom` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MeanLogNormEmbeddingsRingHomStatement.lean:9:119: Unused tactic linter: `(intros; apply GlobalTheory.mean_log_norm_embeddings_ringHom <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [138689/138724] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameGramDetEqUniformizationHermFormStatement (7.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FrameGramDetEqUniformizationHermFormStatement.lean:12:55: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FrameGramDetEqUniformizationHermFormStatement.lean:12:99: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FrameGramDetEqUniformizationHermFormStatement.lean:12:55: Unused tactic linter: `exact GlobalTheory.LieGram.gram_det_re_eq` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FrameGramDetEqUniformizationHermFormStatement.lean:12:99: Unused tactic linter: `(intros; apply GlobalTheory.LieGram.gram_det_re_eq <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [138690/138724] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilPairingEqCmIntegerOfPureType (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsWeilPairingEqCmIntegerOfPureType.lean:69:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -36,7 +77,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LeMeasureUnitaryDetOneFactorNearIdentity.lean:100:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsWeilPairingEqCmIntegerOfPureType.lean:70:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -44,31 +85,35 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LeMeasureUnitaryDetOneFactorNearIdentity.lean:102:2: Try this: 
-  haveI̵
+⚠ [138691/138725] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmPointIntegralFrameMemSpanEigenLatticeStatement (5.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CmPointIntegralFrameMemSpanEigenLatticeStatement.lean:9:63: this tactic is never executed
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CmPointIntegralFrameMemSpanEigenLatticeStatement.lean:9:115: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LeMeasureUnitaryDetOneFactorNearIdentity.lean:104:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CmPointIntegralFrameMemSpanEigenLatticeStatement.lean:9:63: Unused tactic linter: `exact GlobalTheory.PtDeg.intFrame_mem_span_eigLat` does nothing
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CmPointIntegralFrameMemSpanEigenLatticeStatement.lean:9:115: Unused tactic linter: `(intros; apply GlobalTheory.PtDeg.intFrame_mem_span_eigLat <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LeMeasureUnitaryDetOneFactorNearIdentity.lean:106:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [138692/138725] Built Development.AbelianVarietyTheory.Definitions.Divisors.IsGramOneZero (8.3s)
+⚠ [138693/138725] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.BadAtFromInputsStatement (20s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BadAtFromInputsStatement.lean:31:56: this tactic is never executed
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BadAtFromInputsStatement.lean:31:101: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LeMeasureUnitaryDetOneFactorNearIdentity.lean:155:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BadAtFromInputsStatement.lean:31:56: Unused tactic linter: `exact GlobalTheory.BadIndef.bad_rows_indef` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BadAtFromInputsStatement.lean:31:101: Unused tactic linter: `(intros; apply GlobalTheory.BadIndef.bad_rows_indef <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [138694/138725] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsNormMapRingOfIntegersHom (5.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AbsNormMapRingOfIntegersHom.lean:24:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -76,85 +121,40 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LeMeasureUnitaryDetOneFactorNearIdentity.lean:156:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [138489/138519] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.VolumeCoordinateBoxLeHadamardStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/VolumeCoordinateBoxLeHadamardStatement.lean:9:60: this tactic is never executed
+⚠ [138695/138725] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexISupMapEqPowStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RelIndexISupMapEqPowStatement.lean:13:66: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/VolumeCoordinateBoxLeHadamardStatement.lean:9:109: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RelIndexISupMapEqPowStatement.lean:13:121: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/VolumeCoordinateBoxLeHadamardStatement.lean:9:60: Unused tactic linter: `exact GlobalTheory.CoordBox.volume_coordBox_le` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RelIndexISupMapEqPowStatement.lean:13:66: Unused tactic linter: `exact GlobalTheory.SumIndex.relIndex_iSup_map_eq_pow` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/VolumeCoordinateBoxLeHadamardStatement.lean:9:109: Unused tactic linter: `(intros; apply GlobalTheory.CoordBox.volume_coordBox_le <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RelIndexISupMapEqPowStatement.lean:13:121: Unused tactic linter: `(intros; apply GlobalTheory.SumIndex.relIndex_iSup_map_eq_pow <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [138490/138519] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetNeZeroOfIsIdent (15s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DetNeZeroOfIsIdent.lean:53:0: automatically included section variable(s) unused in theorem `GlobalTheory.CovTop.VolUp.FrameBox.entryL_apply`:
-  [NumberField E]
-  [IsCMField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [IsCMField E] in theorem ...
+⚠ [138696/138725] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilPairingEqCmIntegerOfPureTypeStatement (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsWeilPairingEqCmIntegerOfPureTypeStatement.lean:9:70: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [138491/138521] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RiemannianHaarLeOneOfDimZero (26s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RiemannianHaarLeOneOfDimZero.lean:77:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsWeilPairingEqCmIntegerOfPureTypeStatement.lean:9:129: this tactic is never executed
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsWeilPairingEqCmIntegerOfPureTypeStatement.lean:9:70: Unused tactic linter: `exact GlobalTheory.CM.PureHom.exists_weilEq_smul_of_pure` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RiemannianHaarLeOneOfDimZero.lean:78:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsWeilPairingEqCmIntegerOfPureTypeStatement.lean:9:129: Unused tactic linter: `(intros; apply GlobalTheory.CM.PureHom.exists_weilEq_smul_of_pure <;> assumption)` does nothing
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [138697/138725] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralFrameSpanCompletedEigenLattice (6.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralFrameSpanCompletedEigenLattice.lean:9:2: Try this: intro E _ _ _ H Dw l Xo c K _ _ _ y B t₀ m1 m2 F ρ tt htt u hu 𝔓 T iK hiK ρV hρV yT hyT G t' n n' m1' m2' h1
+  h2 C a y' hC hL
+⚠ [138698/138725] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormFactorFlatLineEqGramOrthonormalFrame (8.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/NormFactorFlatLineEqGramOrthonormalFrame.lean:39:22: This simp argument is unused:
+  Matrix.smul_mulVec
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RiemannianHaarLeOneOfDimZero.lean:80:2: Try this: 
-  haveI̵
+Hint: Omit it from the simp argument list.
+  [apply] simp [hermForm, dotProduct, Pi.single_apply]
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [138492/138521] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameBallSubsetExpChartImageFrameBox (19s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FrameBallSubsetExpChartImageFrameBox.lean:54:10: `Set.setOf_forall` has been deprecated: Use `Set.ofPred_forall` instead
-⚠ [138493/138521] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentNormalizedHaarLeTwoMulLieHaar (29s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TangentNormalizedHaarLeTwoMulLieHaar.lean:46:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TangentNormalizedHaarLeTwoMulLieHaar.lean:76:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [138494/138521] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LambdaBoundFromMeasure (32s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LambdaBoundFromMeasure.lean:45:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
