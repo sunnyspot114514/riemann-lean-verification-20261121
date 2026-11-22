@@ -1,4 +1,12 @@
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/CompactIntegralFields/NotOver.lean:57:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/AutomorphicCharacters/AuSign.lean:10:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/AutomorphicCharacters/AuSign.lean:11:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -6,155 +14,147 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/CompactIntegralFields/NotOver.lean:58:2: Try this: 
-  haveI̵
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/AutomorphicCharacters/AuSign.lean:16:45: This simp argument is unused:
+  Algebra.algebraMap_self
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: Omit it from the simp argument list.
+  [apply] simp only [RingHom.algebraMap_toAlgebra, RingHom.id_apply, RingHom.toRatAlgHom_apply] at h
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/CompactIntegralFields/NotOver.lean:118:33: This simp argument is unused:
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [152983/153051] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.UnipotentIdempotents.TCont (178s)
+✔ [152984/153051] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.CompactIntegralFields.Imports (200s)
+✔ [152985/153051] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.ProjectiveLineFlags.TrNe (172s)
+✔ [152986/153051] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.ProjectiveLineFlags.DetExt (165s)
+✔ [152987/153051] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.ProjectiveLineFlags.CpSmul (169s)
+⚠ [152988/153052] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.ProjectiveLineFlags.TraceSwap (170s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/TraceSwap.lean:18:20: `Submodule.linearProjOfIsCompl` has been deprecated: Use `Submodule.projectionOnto` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/TraceSwap.lean:19:28: `Submodule.linearProjOfIsCompl_apply_left` has been deprecated: Use `Submodule.projectionOnto_apply_left` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/TraceSwap.lean:21:28: `Submodule.linearProjOfIsCompl_apply_right` has been deprecated: Use `Submodule.projectionOnto_apply_right` instead
+⚠ [152989/153053] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.ProjectiveLineFlags.LevEps (165s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/LevEps.lean:57:34: This simp argument is unused:
+  MonoidHom.codRestrict_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [UpperTheory.V.W.pushCh]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [152990/153053] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.ProjectiveLineFlags.ContinuousLinearClosed (178s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:40:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:79:94: This simp argument is unused:
+  map_sub
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [W.GDet.map, W.GDet.ofRep, W.Resid.Dbar, MonoidHom.coe_comp, Function.comp_apply, W.GDet.repAlg,
+    MonoidAlgebra.lift_single] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:79:118: This simp argument is unused:
+  MonoidAlgebra.lift_single
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [W.GDet.map, W.GDet.ofRep, W.Resid.Dbar, MonoidHom.coe_comp, Function.comp_apply, map_sub,
+    W.GDet.repAlg] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:80:38: This simp argument is unused:
+  RingHom.coe_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [AlgHom.toRingHom_eq_coe, map_sub, MonoidAlgebra.lift_single, map_one, Matrix.coe_detMonoidHom,
+    MonoidHom.coe_comp, Function.comp_apply, one_smul] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:80:55: This simp argument is unused:
+  map_sub
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [AlgHom.toRingHom_eq_coe, RingHom.coe_coe, MonoidAlgebra.lift_single, map_one,
+    Matrix.coe_detMonoidHom, MonoidHom.coe_comp, Function.comp_apply, one_smul] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:80:64: This simp argument is unused:
+  MonoidAlgebra.lift_single
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [AlgHom.toRingHom_eq_coe, RingHom.coe_coe, map_sub, map_one, Matrix.coe_detMonoidHom,
+    MonoidHom.coe_comp, Function.comp_apply, one_smul] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:80:91: This simp argument is unused:
+  map_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [AlgHom.toRingHom_eq_coe, RingHom.coe_coe, map_sub, MonoidAlgebra.lift_single,
+    Matrix.coe_detMonoidHom, MonoidHom.coe_comp, Function.comp_apply, one_smul] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:80:125: This simp argument is unused:
+  MonoidHom.coe_comp
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [AlgHom.toRingHom_eq_coe, RingHom.coe_coe, map_sub, MonoidAlgebra.lift_single, map_one,
+    Matrix.coe_detMonoidHom, Function.comp_apply, one_smul] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:80:145: This simp argument is unused:
+  Function.comp_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [AlgHom.toRingHom_eq_coe, RingHom.coe_coe, map_sub, MonoidAlgebra.lift_single, map_one,
+    Matrix.coe_detMonoidHom, MonoidHom.coe_comp, one_smul] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:80:166: This simp argument is unused:
+  one_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [AlgHom.toRingHom_eq_coe, RingHom.coe_coe, map_sub, MonoidAlgebra.lift_single, map_one,
+    Matrix.coe_detMonoidHom, MonoidHom.coe_comp, Function.comp_apply] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:86:12: This simp argument is unused:
+  Matrix.charmatrix_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.one_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:86:37: This simp argument is unused:
   Matrix.one_apply
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [h]
+  [apply] simp [Matrix.charmatrix_apply]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [152939/153006] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.ProjectiveLineFlags.CoefRes (7.1s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/CoefRes.lean:10:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/CoefRes.lean:11:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/CoefRes.lean:16:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/CoefRes.lean:27:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [152940/153008] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ReducedCoefficients (5.7s)
-⚠ [152941/153027] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.MonomialRepresentations.CharpolyPowInt (5.6s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/MonomialRepresentations/CharpolyPowInt.lean:11:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/MonomialRepresentations/CharpolyPowInt.lean:25:14: This simp argument is unused:
-  Matrix.charmatrix_apply_ne _ _ _ hab
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:88:12: This simp argument is unused:
+  Matrix.charmatrix_apply
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [hab]
+  [apply] simp [Matrix.one_apply, hij]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [152942/153028] Built Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.SplAdjUnit (24s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/SplAdjUnit.lean:83:65: This simp argument is unused:
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:88:37: This simp argument is unused:
   Matrix.one_apply
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [adj_apply, sgn, Fin.rev]
+  [apply] simp [Matrix.charmatrix_apply, hij]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/SplAdjUnit.lean:149:8: `Matrix.det_of_upperTriangular` has been deprecated: Use `Matrix.det_of_isUpperTriangular` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/SplAdjUnit.lean:161:60: `Matrix.charpoly_of_upperTriangular` has been deprecated: Use `Matrix.charpoly_of_isUpperTriangular` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/SplAdjUnit.lean:239:26: Variable name `h0` is not explicitly referenced.
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:93:23: This simp argument is unused:
+  Matrix.one_apply
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _h0
+Hint: Omit it from the simp argument list.
+  [apply] simp [W.diagRep]
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/SplAdjUnit.lean:280:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:95:23: This simp argument is unused:
+  Matrix.one_apply
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: Omit it from the simp argument list.
+  [apply] simp [W.diagRep, hij]
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/SplAdjUnit.lean:301:6: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/SplAdjUnit.lean:302:6: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/SplAdjUnit.lean:303:6: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/SplAdjUnit.lean:265:110: Variable name `hD` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hD
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [152943/153032] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.FrobeniusDensity.MuChar (13s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/FrobeniusDensity/MuChar.lean:19:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/FrobeniusDensity/MuChar.lean:157:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/FrobeniusDensity/MuChar.lean:158:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/FrobeniusDensity/MuChar.lean:172:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [152991/153053] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.StabilizerIndexBounds.PowSep (5.7s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/StabilizerIndexBounds/PowSep.lean:35:42: `Polynomial.natDegree_finset_prod_X_sub_C_eq_card` has been deprecated: Use `Polynomial.natDegree_finsetProd_X_sub_C_eq_card` instead
