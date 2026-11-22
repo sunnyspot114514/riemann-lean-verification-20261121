@@ -1,19 +1,110 @@
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsThetaSupBoundLogMean.lean:69:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.Ar.Sl.Sup.ex_nsmul`:
-  [IsCommMonObj G]
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/BtOrderFlatBaseChange.lean:306:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/BtOrderFlatBaseChange.lean:307:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/BtOrderFlatBaseChange.lean:308:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [130401/130432] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.HomAddMulOfUnitSectionStatement (5.3s)
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/HomAddMulOfUnitSectionStatement.lean:8:83: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/HomAddMulOfUnitSectionStatement.lean:8:155: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/HomAddMulOfUnitSectionStatement.lean:8:83: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.LieEx.ModSrc.hom_add_mod_closed` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/HomAddMulOfUnitSectionStatement.lean:8:155: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.Ar.LieEx.ModSrc.hom_add_mod_closed <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [130402/130432] Built Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PolarisedDivisibleGroupExists (23s)
+warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/PolarisedDivisibleGroupExists.lean:44:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.Ar.HT.TowerPoint.tmul_one_injective`:
+  [IsDomain O]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsCommMonObj G] in theorem ...
+  omit [IsDomain O] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsThetaSupBoundLogMean.lean:84:4: try 'simp' instead of 'simpa'
+warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/PolarisedDivisibleGroupExists.lean:72:37: This simp argument is unused:
+  TensorProduct.tmul_add
 
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsThetaSupBoundLogMean.lean:81:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.Ar.Sl.Sup.exists_pt`:
-  [IsCommMonObj G]
+Hint: Omit it from the simp argument list.
+  [apply] simp [LinearMap.baseChange_tmul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/PolarisedDivisibleGroupExists.lean:75:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.Ar.HT.TowerPoint.omAct_tmul`:
+  [IsDomain O]
+  [IsFractionRing O C]
+  [NumberField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsCommMonObj G] in theorem ...
+  omit [IsDomain O] [IsFractionRing O C] [NumberField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsThetaSupBoundLogMean.lean:145:2: Try this: 
+warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/PolarisedDivisibleGroupExists.lean:312:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.Ar.HT.TowerPoint.tate_dual_ext`:
+  [Fact (Nat.Prime p)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (Nat.Prime p)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/PolarisedDivisibleGroupExists.lean:398:662: `DistribMulAction.toAddMonoidHom` has been deprecated: Use `DistribSMul.toAddMonoidHom` instead
+
+Note: The updated constant has a different type:
+  {M : Type u_1} → (A : Type u_7) → [inst : AddZeroClass A] → [DistribSMul M A] → M → A →+ A
+instead of
+  {M : Type u_1} → (A : Type u_7) → [inst : Monoid M] → [inst_1 : AddMonoid A] → [DistribMulAction M A] → M → A →+ A
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.toAddMonoidHom` to `DistribSMul.toAddMonoidHom x`).
+warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/PolarisedDivisibleGroupExists.lean:402:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/PolarisedDivisibleGroupExists.lean:403:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/PolarisedDivisibleGroupExists.lean:404:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/PolarisedDivisibleGroupExists.lean:405:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/PolarisedDivisibleGroupExists.lean:407:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -21,7 +112,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsThetaSupBoundLogMean.lean:146:2: Try this: 
+warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/PolarisedDivisibleGroupExists.lean:413:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -29,21 +120,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsThetaSupBoundLogMean.lean:178:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.Ar.Sl.Sup.nrm_pos_iff`:
-  [IsCommMonObj G]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsCommMonObj G] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsThetaSupBoundLogMean.lean:244:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsThetaSupBoundLogMean.lean:267:2: Try this: 
+warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/PolarisedDivisibleGroupExists.lean:414:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -51,110 +128,33 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsThetaSupBoundLogMean.lean:309:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsThetaSupBoundLogMean.lean:413:32: Variable name `ht` is not explicitly referenced.
+warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/PolarisedDivisibleGroupExists.lean:398:196: Variable name `hv` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _ht
+  [apply] _hv
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsThetaSupBoundLogMean.lean:521:4: Try this: 
-  haveI̵
+warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/PolarisedDivisibleGroupExists.lean:398:216: Variable name `hp` is not explicitly referenced.
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hp
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsThetaSupBoundLogMean.lean:522:4: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/PolarisedDivisibleGroupExists.lean:398:237: Variable name `hO` is not explicitly referenced.
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hO
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [130067/130099] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsThetaSectionsBoundedStatement (5.9s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ExistsThetaSectionsBoundedStatement.lean:13:65: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/PolarisedDivisibleGroupExists.lean:398:335: Variable name `hc` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ExistsThetaSectionsBoundedStatement.lean:13:119: this tactic is never executed
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hc
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ExistsThetaSectionsBoundedStatement.lean:13:65: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Sl.Basis.main` does nothing
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/PolarisedDivisibleGroupExists.lean:398:459: Variable name `hu` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ExistsThetaSectionsBoundedStatement.lean:13:119: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.Ar.Sl.Basis.main <;> assumption)` does nothing
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hu
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [130068/130101] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexUniformisationHolds (5.2s)
-⚠ [130069/130102] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.SemiAbelianStatementHoldsStatement (6.2s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/SemiAbelianStatementHoldsStatement.lean:20:74: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/SemiAbelianStatementHoldsStatement.lean:20:137: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/SemiAbelianStatementHoldsStatement.lean:20:74: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Link.saStatement_holds` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/SemiAbelianStatementHoldsStatement.lean:20:137: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.Link.saStatement_holds <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [130070/130103] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.LevelMapsHeckePointsOfPos (5.4s)
-⚠ [130071/130103] Built Development.WeilBound.CoreStatements.HodgeTatePoints.LieMultComp (15s)
-warning: src/Development/WeilBound/CoreStatements/HodgeTatePoints/LieMultComp.lean:139:8: Overlapping instance parameters in `key_integral`:
-
-⚠️ `[IsDomain R]` and `[IsDiscreteValuationRing R]` each imply `[Nontrivial R]`.
-💡️ Of these, `[IsDomain R]` and `[IsDiscreteValuationRing R]` may be removed.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-✔ [130072/130103] Built Development.AutomorphicSpectrum.Proofs.AlgebraProofs.NumericalSegreClosed (5.4s)
-⚠ [130073/130103] Built Development.AbelianVarietyTheory.Counterexamples.ModuliSurvey.ModuliNonemptyOfObj (6.5s)
-warning: src/Development/AbelianVarietyTheory/Counterexamples/ModuliSurvey/ModuliNonemptyOfObj.lean:42:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Counterexamples/ModuliSurvey/ModuliNonemptyOfObj.lean:57:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [130074/130103] Built GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.Avoid (5.3s)
-⚠ [130075/130104] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsThetaSupBoundLogMeanStatement (6.2s)
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsThetaSupBoundLogMeanStatement.lean:13:71: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsThetaSupBoundLogMeanStatement.lean:13:131: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsThetaSupBoundLogMeanStatement.lean:13:71: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Sl.Sup.mean_log_sup` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsThetaSupBoundLogMeanStatement.lean:13:131: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.Ar.Sl.Sup.mean_log_sup <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [130076/130104] Built Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeLatticeFlagBound (5.0s)
-✔ [130077/130104] Built Development.AutomorphicSpectrum.Statements.GeometryStatements.TrivFlagOnHodge (4.0s)
-✔ [130078/130104] Built Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeLatticeFlagBoundAllPlaces (5.1s)
-✔ [130079/130110] Built Development.AutomorphicSpectrum.Statements.AlgebraStatements.HodgeTateNormComparison (5.1s)
-✔ [130080/130111] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.ModelClauseOfRankZero (6.2s)
-✔ [130081/130117] Built Development.AutomorphicSpectrum.Proofs.AlgebraProofs.TopAvoid (5.2s)
-✔ [130082/130117] Built Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.NotIsGlobalPrimePow (6.8s)
-✔ [130083/130117] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.KeyBadReductionHolds (8.3s)
-✔ [130084/130118] Built Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HasValues (5.9s)
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
