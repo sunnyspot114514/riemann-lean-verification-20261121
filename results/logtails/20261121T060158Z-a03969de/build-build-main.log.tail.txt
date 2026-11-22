@@ -1,9 +1,28 @@
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+  mul_assoc
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisCochains/H2GaloisQuotientSurjective.lean:17:2: Try this: 
+Hint: Omit it from the simp argument list.
+  [apply] simp [mul_zpow, mul_comm, mul_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [151865/151886] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SemisimpleLevels.SsMoveP (5.9s)
+✔ [151866/151887] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.FrobeniusPowerCompatibility (6.8s)
+⚠ [151867/151887] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SemisimpleLevels.SsCalcP (7.0s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SemisimpleLevels/SsCalcP.lean:11:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SemisimpleLevels.SsCalcP.0.UpperTheory.V.Lev.char_comm`:
+  [IsAlgClosure K Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsAlgClosure K Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SemisimpleLevels/SsCalcP.lean:27:31: This simp argument is unused:
+  inv_mul_cancel₀ hc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [← scaleRoots_mul, mul_inv_cancel₀ hc, scaleRoots_one] at e'
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [151868/151889] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.BcStmt (153s)
+⚠ [151869/151889] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ExistsQuadraticSignCharacter (8.9s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/ExistsQuadraticSignCharacter.lean:19:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -11,9 +30,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [151850/151873] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RDual2 (22s)
-⚠ [151851/151873] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.CharacterH1GaloisQuotient (52s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisCochains/CharacterH1GaloisQuotient.lean:26:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/ExistsQuadraticSignCharacter.lean:48:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -21,7 +38,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisCochains/CharacterH1GaloisQuotient.lean:55:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/ExistsQuadraticSignCharacter.lean:49:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -29,7 +46,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisCochains/CharacterH1GaloisQuotient.lean:62:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/ExistsQuadraticSignCharacter.lean:50:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -37,7 +54,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisCochains/CharacterH1GaloisQuotient.lean:75:4: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/ExistsQuadraticSignCharacter.lean:51:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -45,7 +62,10 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisCochains/CharacterH1GaloisQuotient.lean:103:2: Try this: 
+✔ [151870/151890] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.AlgCyc (167s)
+✔ [151871/151891] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SemisimpleLevels.RecMove (164s)
+⚠ [151872/151891] Built Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.FrameEx (169s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/FrobeniusSmoothVectors/FrameEx.lean:60:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -53,39 +73,42 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisCochains/CharacterH1GaloisQuotient.lean:104:2: Try this: 
-  haveI̵
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/FrobeniusSmoothVectors/FrameEx.lean:80:45: This simp argument is unused:
+  MonoidHom.coe_coe
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Units.coe_map, Units.val_one, RingHom.coe_comp, Function.comp_apply] at h1
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisCochains/CharacterH1GaloisQuotient.lean:117:4: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/FrobeniusSmoothVectors/FrameEx.lean:80:64: This simp argument is unused:
+  RingHom.coe_comp
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Units.coe_map, Units.val_one, MonoidHom.coe_coe, Function.comp_apply] at h1
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisCochains/CharacterH1GaloisQuotient.lean:134:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/FrobeniusSmoothVectors/FrameEx.lean:81:6: This simp argument is unused:
+  Function.comp_apply
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Units.coe_map, Units.val_one, MonoidHom.coe_coe, RingHom.coe_comp] at h1
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisCochains/CharacterH1GaloisQuotient.lean:135:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/FrobeniusSmoothVectors/FrameEx.lean:83:60: This simp argument is unused:
+  MonoidHom.coe_coe
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: Omit it from the simp argument list.
+  [apply] simp only [cycMod, MonoidHom.comp_apply, Units.coe_map, Units.val_one]
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisCochains/CharacterH1GaloisQuotient.lean:136:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [151873/151891] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.AlgRes (163s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/AlgRes.lean:42:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.AlgRes.0.tendsto_under'`:
+  [NumberField K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/AlgRes.lean:117:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -93,7 +116,33 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisCochains/CharacterH1GaloisQuotient.lean:137:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/AlgRes.lean:118:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/AlgRes.lean:133:47: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/AlgRes.lean:145:90: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [151874/151891] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.SelfDualQ (179s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TemperedLocalComponents/SelfDualQ.lean:18:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.SelfDualQ.0.isOpen_ker_kills`:
+  [NumberField F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [151875/151892] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SstConj (180s)
+⚠ [151876/151892] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SignAgreement.ExistsCompositumWithPrimeDegreeGalois (181s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SignAgreement/ExistsCompositumWithPrimeDegreeGalois.lean:205:99: `IsSolvable` has been deprecated: Use `Group.IsSolvable` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SignAgreement/ExistsCompositumWithPrimeDegreeGalois.lean:227:4: `IsSolvable` has been deprecated: Use `Group.IsSolvable` instead
+⚠ [151877/151892] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.FrobeniusSignCompatibility (7.1s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/FrobeniusSignCompatibility.lean:37:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -101,60 +150,11 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisCochains/CharacterH1GaloisQuotient.lean:138:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisCochains/CharacterH1GaloisQuotient.lean:252:8: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [151852/151875] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.ResH1SurjectiveOfIsomorphism (15s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisCochains/ResH1SurjectiveOfIsomorphism.lean:88:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/FrobeniusSignCompatibility.lean:39:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
 The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisCochains/ResH1SurjectiveOfIsomorphism.lean:89:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisCochains/ResH1SurjectiveOfIsomorphism.lean:90:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisCochains/ResH1SurjectiveOfIsomorphism.lean:91:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisCochains/ResH1SurjectiveOfIsomorphism.lean:168:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
