@@ -1,9 +1,25 @@
-  apply GlobalTheory.CompanionTheory.Jp.B3.eigen_of_rightInvariant <;> assumption)` does nothing
+  omit [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [158457/158488] Built Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.SingularNullSets.LThBddD (7.9s)
-⚠ [158458/158488] Built Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.SingularNullSets.LCutId_B (10s)
-warning: src/Development/WeilBound/RepresentationTheoryGL/RegularisedSiegelWeil/SingularNullSets/LCutId_B.lean:87:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/GeneralLinearGroups/SumOfOfFn.lean:44:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.SumOfOfFn.0.EB.of_iso`:
+  [ValuativeRel k]
+  [TopologicalSpace k]
+  [IsNonarchimedeanLocalField k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [158562/158591] Built CompanionTheory.AutomorphicTheory.ProductFormulaTheory.CuspidalExhaustion.ExhaustionOfThree (12s)
+⚠ [158563/158591] Built Development.AutomorphicArithmetic.ThetaCorrespondence.FockModels.MingZel (9.2s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/MingZel.lean:29:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/MingZel.lean:30:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -11,7 +27,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/RepresentationTheoryGL/RegularisedSiegelWeil/SingularNullSets/LCutId_B.lean:88:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/MingZel.lean:40:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -19,59 +35,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [158459/158488] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.SpehInfinitesimalCharacterOfResidual (7.7s)
-✔ [158460/158488] Built Development.WeilBound.CoreStatements.AutomorphicKernels.UnitaryDualGL.GenericUnitaryDual.GenericUnitaryDualGL (5.6s)
-✔ [158461/158491] Built Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.SingularNullSets.LResCore (11s)
-⚠ [158462/158492] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SurjectiveReductionMaximalCompact (12s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SurjectiveReductionMaximalCompact.lean:128:112: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-⚠ [158463/158498] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.TwistedScalarConjugationInvariance (21s)
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistedScalarConjugationInvariance.lean:24:75: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistedScalarConjugationInvariance.lean:24:139: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistedScalarConjugationInvariance.lean:24:75: Unused tactic linter: `exact _root_.GlobalTheory.ScalConj.twisted_scalar_conjugation` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistedScalarConjugationInvariance.lean:24:139: Unused tactic linter: `(intros;
-  apply _root_.GlobalTheory.ScalConj.twisted_scalar_conjugation <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [158464/158504] Built Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.SingularNullSets.LThBdd (9.2s)
-✔ [158465/158506] Built Development.WeilBound.CoreStatements.TemperedRepresentationTheory.GermIntegrals.IsGerm (5.2s)
-✔ [158466/158506] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsTameGenAtOfIsPlaceOver (5.2s)
-⚠ [158467/158507] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SurjectiveReductionMaximalCompactStatement (6.4s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SurjectiveReductionMaximalCompactStatement.lean:15:71: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SurjectiveReductionMaximalCompactStatement.lean:15:131: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SurjectiveReductionMaximalCompactStatement.lean:15:71: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Jp.RhoSplit.exists_rho` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SurjectiveReductionMaximalCompactStatement.lean:15:131: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.Jp.RhoSplit.exists_rho <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [158468/158507] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsAlgebraicHeckeCharOfRegularAlgebraicPolarizedPStatement (5.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/IsAlgebraicHeckeCharOfRegularAlgebraicPolarizedPStatement.lean:16:72: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/IsAlgebraicHeckeCharOfRegularAlgebraicPolarizedPStatement.lean:16:133: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/IsAlgebraicHeckeCharOfRegularAlgebraicPolarizedPStatement.lean:16:72: Unused tactic linter: `exact GlobalTheory.RegAlgCharAlg.isAlgPos_of_polarizedPair` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/IsAlgebraicHeckeCharOfRegularAlgebraicPolarizedPStatement.lean:16:133: Unused tactic linter: `(intros; apply GlobalTheory.RegAlgCharAlg.isAlgPos_of_polarizedPair <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [158469/158510] Built Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.SingularNullSets.LCutId (10s)
-warning: src/Development/WeilBound/RepresentationTheoryGL/RegularisedSiegelWeil/SingularNullSets/LCutId.lean:20:2: Try this: intro hPolar hCfFJ hCoefId hThCoef hFP hWA1 hCfInv hThBdd hCutLow _ hIkEq hWMaj D n t B W d hn ψ χ θ μB μW ωB
-  ωW hS I H hH Φ U dd E σ hcont ε hrad nb hnb v C hK hKv 𝓕 h𝓕 Ψ Ψ' hΨ hΨ'
-⚠ [158470/158510] Built Development.AutomorphicArithmetic.NaturalDivisibility.ExistsContinuousRingEquivPadicOfTotallySplit (6.4s)
-warning: src/Development/AutomorphicArithmetic/NaturalDivisibility/ExistsContinuousRingEquivPadicOfTotallySplit.lean:51:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/MingZel.lean:41:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -79,11 +43,54 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [158471/158510] Built Development.WeilBound.CoreStatements.TemperedRepresentationTheory.GermIntegrals.StepSt (5.0s)
-✔ [158472/158510] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.CohomologicalCsdTemperedOfSegments (5.4s)
-✔ [158473/158512] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.PowEqOneOfRoots (8.1s)
-⚠ [158474/158512] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.GaloisRepOfPolarizedPairOfHyps (9.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/GaloisRepOfPolarizedPairOfHyps.lean:37:2: Try this: 
+✔ [158564/158593] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsUniqueSplitPlaceComponentDefiniteUnitary (9.1s)
+✔ [158565/158594] Built CompanionTheory.AutomorphicTheory.ProductFormulaTheory.CuspidalExhaustion.LanglandsMultisegmentsOfSeg (5.7s)
+⚠ [158566/158594] Built Development.AbelianVarietyTheory.Definitions.GaloisGeometry.MatchOfMatchOffTEmpty (10s)
+warning: src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/MatchOfMatchOffTEmpty.lean:82:0: automatically included section variable(s) unused in theorem `GlobalTheory.Cong.nonSplitSet_empty`:
+  [NumberField E]
+  [IsCMField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] [IsCMField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [158567/158595] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.IsUnitarizableOfFiniteTypeOfLocalComponents (90s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/IsUnitarizableOfFiniteTypeOfLocalComponents.lean:39:105: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/IsUnitarizableOfFiniteTypeOfLocalComponents.lean:39:199: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/IsUnitarizableOfFiniteTypeOfLocalComponents.lean:39:105: Unused tactic linter: `exact
+  _root_.GlobalTheory.RowSplitUnit.isUnitarizable_of_finiteType_of_local_components_alt` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/IsUnitarizableOfFiniteTypeOfLocalComponents.lean:39:199: Unused tactic linter: `(intros;
+  apply _root_.GlobalTheory.RowSplitUnit.isUnitarizable_of_finiteType_of_local_components_alt <;>
+    assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [158568/158595] Built Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.IsZSegDetRep (11s)
+⚠ [158569/158595] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ThetaLiftOfReference (91s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ThetaLiftOfReference.lean:38:81: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ThetaLiftOfReference.lean:38:151: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ThetaLiftOfReference.lean:38:81: Unused tactic linter: `exact _root_.GlobalTheory.RefTheta.locComp_of_isRc_classMapD_cenLoc` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ThetaLiftOfReference.lean:38:151: Unused tactic linter: `(intros;
+  apply _root_.GlobalTheory.RefTheta.locComp_of_isRc_classMapD_cenLoc <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [158570/158595] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StandardCosocleGLHolds (5.2s)
+✔ [158571/158598] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LanglandsMultisegmentsOutright (5.2s)
+✔ [158572/158598] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LanglandsExhaustionGLHolds (5.4s)
+✔ [158573/158598] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FixedNeBotOfMemSupport (5.7s)
+✔ [158574/158598] Built Development.AutomorphicArithmetic.ThetaCorrespondence.FockModels.GlnMixed (6.6s)
+⚠ [158575/158600] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocMemKOneOfSame (14s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LocMemKOneOfSame.lean:26:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -91,10 +98,8 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [158475/158512] Built Development.WeilBound.CoreStatements.TemperedRepresentationTheory.GermIntegrals.LFrob (10s)
-✔ [158476/158513] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitPlaceRankCutOfAlternative (16s)
-⚠ [158477/158513] Built Development.WeilBound.CoreStatements.TemperedRepresentationTheory.GermIntegrals.Imports (7.8s)
-warning: src/Development/WeilBound/CoreStatements/TemperedRepresentationTheory/GermIntegrals/Imports.lean:10:2: Try this: 
+⚠ [158576/158601] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPadicEquiv (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsPadicEquiv.lean:21:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -102,27 +107,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [158478/158513] Built Development.WeilBound.CoreStatements.TemperedRepresentationTheory.GermIntegrals.RealPowerProductEqOne (12s)
-✔ [158479/158514] Built Development.WeilBound.CoreStatements.TemperedRepresentationTheory.GermIntegrals.DetNeZeroOfNearOne (8.5s)
-✔ [158480/158514] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.CuspOfPair (9.1s)
-⚠ [158481/158514] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitPlaceRankCutOfAlternativeStatement (10s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SplitPlaceRankCutOfAlternativeStatement.lean:7:93: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SplitPlaceRankCutOfAlternativeStatement.lean:7:175: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SplitPlaceRankCutOfAlternativeStatement.lean:7:93: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Jp.split_place_rank_cut_of_local_computation` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SplitPlaceRankCutOfAlternativeStatement.lean:7:175: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Jp.split_place_rank_cut_of_local_computation <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [158482/158514] Built Development.WeilBound.RepresentationTheoryGL.PointAveraging.MinkowskiBalls.BridgeTrue (6.0s)
-✔ [158483/158516] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.PublishedInputsThirdLayer (56s)
-⚠ [158484/158516] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.OfStar (12s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/OfStar.lean:27:4: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsPadicEquiv.lean:22:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -130,31 +115,46 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [158485/158516] Built Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.ThetaIdempotents.ThetaCoefficients.JPosOfIdemEx (13s)
-✔ [158486/158516] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.HoweDualityGLOfMinguezThetaCorrespondence (23s)
-✔ [158487/158517] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ParLaws (62s)
-⚠ [158488/158517] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.LocalLanglandsOfHyp (154s)
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LocalLanglandsOfHyp.lean:13:57: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsPadicEquiv.lean:31:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [158577/158605] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GrothendieckRingPolynomialOutright (23s)
+⚠ [158578/158607] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.RealDataWeightVectorFamily (89s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RealDataWeightVectorFamily.lean:41:57: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LocalLanglandsOfHyp.lean:13:103: this tactic is never executed
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RealDataWeightVectorFamily.lean:41:103: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LocalLanglandsOfHyp.lean:13:57: Unused tactic linter: `exact _root_.UpperTheory.One.M.New.llOf_alt` does nothing
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RealDataWeightVectorFamily.lean:41:57: Unused tactic linter: `exact _root_.GlobalTheory.Stage4.stage4_alt` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LocalLanglandsOfHyp.lean:13:103: Unused tactic linter: `(intros; apply _root_.UpperTheory.One.M.New.llOf_alt <;> assumption)` does nothing
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RealDataWeightVectorFamily.lean:41:103: Unused tactic linter: `(intros; apply _root_.GlobalTheory.Stage4.stage4_alt <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [158489/158519] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.HeckeLAdicParameterAboveOfAlgebraicCharacterWDAl (139s)
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HeckeLAdicParameterAboveOfAlgebraicCharacterWDAl.lean:13:87: this tactic is never executed
+✔ [158579/158607] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.HoldsLOfTies (94s)
+✔ [158580/158607] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ThetaLiftGlOfZelevinskyClassification (28s)
+⚠ [158581/158607] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSphericalIffUnrOfLawsT (9.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsSphericalIffUnrOfLawsT.lean:75:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HeckeLAdicParameterAboveOfAlgebraicCharacterWDAl.lean:13:87: Unused tactic linter: `obtain ⟨a, ha, ε, -, L⟩ := hrc` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [158490/158519] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.MultQ (168s)
-✔ [158491/158519] Built Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.RecTExists (10s)
-✔ [158492/158521] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodToralTwistStable (6.4s)
-✔ [158493/158521] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ArchimedeanLocalLanglandsCompatibility (148s)
-✔ [158494/158522] Built Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.ThetaIdempotents.ThetaCoefficients.ResCore (81s)
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsSphericalIffUnrOfLawsT.lean:93:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [158582/158607] Built Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.SplitLevelConjugates.LevSplit (40s)
+✔ [158583/158610] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.GlThetaLiftIsClosed (15s)
