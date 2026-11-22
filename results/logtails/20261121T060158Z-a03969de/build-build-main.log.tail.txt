@@ -1,78 +1,3 @@
-✔ [160533/160578] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SmoothRepresentationsGL.PsiLoc (5.7s)
-⚠ [160534/160578] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SmoothRepresentationsGL.LocKir (6.2s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/LocKir.lean:78:61: This simp argument is unused:
-  one_mul
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Units.val_one, hh1, this, inv_one, mul_one, hH₀]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [160535/160578] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SmoothRepresentationsGL.LocStep (7.8s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/LocStep.lean:83:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/LocStep.lean:163:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [160536/160578] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SmoothRepresentationsGL.AvgChar (6.2s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/AvgChar.lean:16:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [160537/160578] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SmoothRepresentationsGL.LocDual (8.2s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/LocDual.lean:35:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/LocDual.lean:81:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/LocDual.lean:86:39: `zero_le'` has been deprecated: Use `zero_le` instead
-✔ [160538/160578] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SmoothRepresentationsGL.ArchKir (6.4s)
-⚠ [160539/160578] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SmoothRepresentationsGL.LinChange (6.4s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/LinChange.lean:32:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/LinChange.lean:33:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/LinChange.lean:34:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
 ⚠ [160540/160578] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SmoothRepresentationsGL.ArchStep (8.3s)
@@ -158,3 +83,78 @@ But this is not relevant for proofs because of proof irrelevance.
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
 ✔ [160550/160579] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RankEquivariantFunctionalsCongr (10s)
 ✔ [160551/160579] Built Development.AutomorphicArithmetic.Foundations.Convolution.TensFun (15s)
+✔ [160552/160579] Built PositivityTheory.AutomorphicForms.PublishedInputs.CyclicBaseChange.PSNormPow (336s)
+✔ [160553/160579] Built PositivityTheory.AutomorphicForms.PublishedInputs.CyclicBaseChange.PSGalAdEx (338s)
+✔ [160554/160579] Built PositivityTheory.AutomorphicForms.PublishedInputs.CyclicBaseChange.PSConjSatC (336s)
+✔ [160555/160579] Built PositivityTheory.AutomorphicForms.PublishedInputs.CyclicBaseChange.PSConjSatR (338s)
+⚠ [160556/160579] Built PositivityTheory.AutomorphicForms.PublishedInputs.CyclicBaseChange.PSConjSpaceR (331s)
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CyclicBaseChange/PSConjSpaceR.lean:345:34: `Equiv.apply_eq_iff_eq_symm_apply` has been deprecated: Use `Equiv.eq_symm_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ {α : Sort u_1} {β : Sort u_2} (e : α ≃ β) {x : β} {y : α}, y = e.symm x ↔ e y = x
+instead of
+  ∀ {α : Sort u} {β : Sort v} {x : α} {y : β} (f : α ≃ β), f x = y ↔ x = f.symm y
+⚠ [160557/160579] Built PositivityTheory.AutomorphicForms.PublishedInputs.CyclicBaseChange.PSConjSpaceC (329s)
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CyclicBaseChange/PSConjSpaceC.lean:20:0: automatically included section variable(s) unused in theorem `UpperTheory.CBC.SConjSpaceCAux.cc_of_eq`:
+  [NumberField E]
+  [IsTotallyComplex E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] [IsTotallyComplex E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CyclicBaseChange/PSConjSpaceC.lean:25:0: automatically included section variable(s) unused in theorem `UpperTheory.CBC.SConjSpaceCAux.cc_of_ne`:
+  [NumberField E]
+  [IsTotallyComplex E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] [IsTotallyComplex E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CyclicBaseChange/PSConjSpaceC.lean:37:0: automatically included section variable(s) unused in theorem `UpperTheory.CBC.SConjSpaceCAux.conj_ne`:
+  [NumberField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CyclicBaseChange/PSConjSpaceC.lean:102:0: automatically included section variable(s) unused in theorem `UpperTheory.CBC.SConjSpaceCAux.atEmb_apply_ne`:
+  [NumberField E]
+  [IsTotallyComplex E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] [IsTotallyComplex E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CyclicBaseChange/PSConjSpaceC.lean:155:20: Variable name `w` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _w
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CyclicBaseChange/PSConjSpaceC.lean:158:13: Variable name `w` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _w
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CyclicBaseChange/PSConjSpaceC.lean:161:13: Variable name `w` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _w
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CyclicBaseChange/PSConjSpaceC.lean:187:0: automatically included section variable(s) unused in theorem `UpperTheory.CBC.SConjSpaceCAux.conjFin_symm_conjFin`:
+  [IsTotallyComplex E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsTotallyComplex E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CyclicBaseChange/PSConjSpaceC.lean:249:0: automatically included section variable(s) unused in theorem `UpperTheory.CBC.SConjSpaceCAux.pFin_sFin`:
+  [IsTotallyComplex E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsTotallyComplex E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CyclicBaseChange/PSConjSpaceC.lean:487:0: automatically included section variable(s) unused in theorem `UpperTheory.CBC.SConjSpaceCAux.height_eq`:
+  [IsTotallyComplex E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsTotallyComplex E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
