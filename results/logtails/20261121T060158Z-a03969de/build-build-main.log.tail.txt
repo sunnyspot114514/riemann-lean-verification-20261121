@@ -1,42 +1,19 @@
-⚠ [152248/152285] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.HolMul (195s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/HolMul.lean:108:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.HolMul.0.UpperTheory.V.Sd.reAt_eq`:
-  [NumberField F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] in theorem ...
+  Matrix.single_apply
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/HolMul.lean:170:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.HolMul.0.UpperTheory.V.Sd.hasSum_cf`:
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
+Hint: Omit it from the simp argument list.
+  [apply] simp [E, this]
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/HolMul.lean:181:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.HolMul.0.UpperTheory.V.Sd.cf_ne`:
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [152260/152295] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.MapCenterEnvelopingProductGLMemCapelliAlgebra (10s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/MapCenterEnvelopingProductGLMemCapelliAlgebra.lean:12:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/HolMul.lean:191:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.HolMul.0.UpperTheory.V.Sd.cf_unit`:
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/HolMul.lean:204:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.HolMul.0.UpperTheory.V.Sd.ne_zero_of_pos`:
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [152249/152288] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.GaloisCharacterResidualDecomposition (196s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/GaloisCharacterResidualDecomposition.lean:42:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.GaloisCharacterResidualDecomposition.0.cyc_eq`:
-  [IsAlgClosure ℚ Ω]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsAlgClosure ℚ Ω] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/GaloisCharacterResidualDecomposition.lean:200:4: Try this: 
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/MapCenterEnvelopingProductGLMemCapelliAlgebra.lean:13:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -44,117 +21,140 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/GaloisCharacterResidualDecomposition.lean:212:43: This simp argument is unused:
-  ← cyc_eq
+⚠ [152261/152295] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.CuspidalFiniteness.ExistsZalgOfCenterU (16s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/CuspidalFiniteness/ExistsZalgOfCenterU.lean:59:10: This simp argument is unused:
+  Pi.single_apply
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [map_mul, map_inv, map_zpow, ← hup]
-
-Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+  [apply] simp [Matrix.single_apply, hi, hj, hv, eq_comm]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [152250/152289] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.CuspidalFiniteness.HasUnivOfStep (5.7s)
-✔ [152251/152290] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.KLevTop (7.7s)
-⚠ [152252/152290] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Qminor (8.5s)
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/Qminor.lean:40:26: Variable name `x` is not explicitly referenced.
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/CuspidalFiniteness/ExistsZalgOfCenterU.lean:59:27: This simp argument is unused:
+  Matrix.single_apply
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _x
+Hint: Omit it from the simp argument list.
+  [apply] simp [Pi.single_apply, hi, hj, hv, eq_comm]
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/Qminor.lean:67:43: Variable name `x` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [152262/152297] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.PCuspFin (9.7s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TemperedLocalComponents/PCuspFin.lean:58:56: This simp argument is unused:
+  Matrix.one_apply
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _x
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.single_apply, Pi.single_apply, hij, ite_and, ite_apply]
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/Qminor.lean:82:68: Variable name `x` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [152263/152298] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.ComplexMinusRealLineMeasureCoordinates (8.2s)
+✔ [152264/152300] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.HalfPlaneMeasureInvariantProof (7.0s)
+⚠ [152265/152300] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.ARpowHalfSq (6.7s)
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/ARpowHalfSq.lean:15:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _x
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/ARpowHalfSq.lean:64:18: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/Qminor.lean:113:24: Variable name `x` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [152266/152302] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.BNeg (12s)
+✔ [152267/152303] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.AutomorphyFactorKernelAlgebraProof (8.3s)
+✔ [152268/152304] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.MultivariableReproducingFormula (10s)
+⚠ [152269/152305] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.HeightsOnQuotientProof (11s)
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/HeightsOnQuotientProof.lean:14:0: automatically included section variable(s) unused in theorem `UpperTheory.Esk.HeightsOnQuotientLemmas.rep_mk`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _x
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/HeightsOnQuotientProof.lean:48:0: automatically included section variable(s) unused in theorem `UpperTheory.Esk.HeightsOnQuotientLemmas.r_apply`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/Qminor.lean:126:24: Variable name `x` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/HeightsOnQuotientProof.lean:50:0: automatically included section variable(s) unused in theorem `UpperTheory.Esk.HeightsOnQuotientLemmas.r_det`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _x
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/HeightsOnQuotientProof.lean:94:0: automatically included section variable(s) unused in theorem `UpperTheory.Esk.HeightsOnQuotientLemmas.lin_ne`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/Qminor.lean:148:28: Variable name `x` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [152270/152305] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.PerDeriv (138s)
+⚠ [152271/152306] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.KernelTermsInvariantBoundedProof (9.6s)
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/KernelTermsInvariantBoundedProof.lean:75:0: automatically included section variable(s) unused in theorem `UpperTheory.Esk.KernelTermsInvariantLemmas.r_apply`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _x
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/KernelTermsInvariantBoundedProof.lean:77:0: automatically included section variable(s) unused in theorem `UpperTheory.Esk.KernelTermsInvariantLemmas.act_apply`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/Qminor.lean:161:28: Variable name `x` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/KernelTermsInvariantBoundedProof.lean:79:0: automatically included section variable(s) unused in theorem `UpperTheory.Esk.KernelTermsInvariantLemmas.ee_mul_left`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _x
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/KernelTermsInvariantBoundedProof.lean:89:0: automatically included section variable(s) unused in theorem `UpperTheory.Esk.KernelTermsInvariantLemmas.ee_mul_right`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/Qminor.lean:193:28: Variable name `x` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/KernelTermsInvariantBoundedProof.lean:248:0: automatically included section variable(s) unused in theorem `UpperTheory.Esk.KernelTermsInvariantLemmas.smul_eq`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _x
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [152272/152306] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.SatR (120s)
+⚠ [152273/152307] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.StrongApp (135s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/StrongApp.lean:20:8: `Set.setOf_forall` has been deprecated: Use `Set.ofPred_forall` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/StrongApp.lean:43:8: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [152274/152307] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.HolCap (130s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/HolCap.lean:18:33: This simp argument is unused:
+  Matrix.diagonal_apply
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/Qminor.lean:207:28: Variable name `x` is not explicitly referenced.
+Hint: Omit it from the simp argument list.
+  [apply] simp [e, h1]
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _x
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/HolCap.lean:21:33: This simp argument is unused:
+  Matrix.diagonal_apply
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/Qminor.lean:242:30: Variable name `x` is not explicitly referenced.
+Hint: Omit it from the simp argument list.
+  [apply] simp [e, h2]
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _x
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [152275/152307] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.HyperbolicKappaPropertiesProof (9.0s)
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/HyperbolicKappaPropertiesProof.lean:115:17: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [152276/152307] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.LocEig (131s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/LocEig.lean:34:71: This simp argument is unused:
+  Fin.sum_univ_succ
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/Qminor.lean:256:30: Variable name `x` is not explicitly referenced.
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.GeneralLinearGroup.scalar, aff_val, Matrix.mul_apply, Matrix.diagonal_apply, mul_div_cancel₀]
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _x
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/LocEig.lean:46:60: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/Qminor.lean:272:28: Variable name `x` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/LocEig.lean:58:60: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _x
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [152277/152307] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.ExpUnique (141s)
+✔ [152278/152307] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.ActionsPreserveMeasuresProof (5.8s)
+⚠ [152279/152307] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.ExistsIdele (155s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/ExistsIdele.lean:30:28: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/ExistsIdele.lean:334:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.ExistsIdele.0.UpperTheory.V.Sd.reAt_neg`:
+  [IsTotallyReal F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsTotallyReal F] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [152253/152290] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.CuspidalFiniteness.TypePoly (11s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/CuspidalFiniteness/TypePoly.lean:54:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/CuspidalFiniteness/TypePoly.lean:55:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/CuspidalFiniteness/TypePoly.lean:56:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [152254/152292] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.SymmetricSubalgebraLeAdjoinRangeProdCAddXComplex (5.7s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/SymmetricSubalgebraLeAdjoinRangeProdCAddXComplex.lean:15:37: `Polynomial.eval_finset_sum` has been deprecated: Use `Polynomial.eval_finsetSum` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/SymmetricSubalgebraLeAdjoinRangeProdCAddXComplex.lean:30:17: `Polynomial.eval_finset_sum` has been deprecated: Use `Polynomial.eval_finsetSum` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/SymmetricSubalgebraLeAdjoinRangeProdCAddXComplex.lean:34:15: `Polynomial.finset_sum_coeff` has been deprecated: Use `Polynomial.finsetSum_coeff` instead
-✔ [152255/152292] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.HarishChandraProjQuantumDetEqProd (6.8s)
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
