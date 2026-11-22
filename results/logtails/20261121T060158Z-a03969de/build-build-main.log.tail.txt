@@ -1,99 +1,3 @@
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [161613/161641] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KatoEulerSystems.OneChar (39s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KatoEulerSystems/OneChar.lean:67:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [161614/161641] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.AbelianUnitPowers.Seed3L (183s)
-✔ [161615/161651] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.AbelianUnitPowers.IsOpenKerKills (183s)
-✔ [161616/161652] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.AbelianUnitPowers.Hypotheses4L (194s)
-⚠ [161617/161653] Built PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.SSmooth (184s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/SSmooth.lean:105:92: Variable name `c` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _c
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [161618/161654] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.MinimalHyp5 (179s)
-⚠ [161619/161654] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.CocycleCoefficients.EigSpan (165s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/CocycleCoefficients/EigSpan.lean:39:36: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/CocycleCoefficients/EigSpan.lean:42:36: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/CocycleCoefficients/EigSpan.lean:162:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/CocycleCoefficients/EigSpan.lean:163:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [161620/161654] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.MixedUnitCongruences.MixedUnitPublishedTheorems (172s)
-✔ [161621/161654] Built PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.HasFDerivAtIntegralSchwartzBilin (13s)
-✔ [161622/161654] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.CocycleCoefficients.NormEqOneOfKillsMu (130s)
-✔ [161623/161654] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.MixedUnitCongruences.SeedIII (275s)
-⚠ [161624/161654] Built PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.IdeleModuleSectionMul (291s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/IdeleModuleSectionMul.lean:76:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.EisensteinIntegrability.decay1D`:
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/IdeleModuleSectionMul.lean:105:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.EisensteinIntegrability.absD_scalar_mul`:
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/IdeleModuleSectionMul.lean:111:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.EisensteinIntegrability.ideleModule_section_mul`:
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [161625/161654] Built PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.PolyVHasTemperateGrowth (291s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/PolyVHasTemperateGrowth.lean:35:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.EisensteinSmoothness.gaussV_apply`:
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/PolyVHasTemperateGrowth.lean:49:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.EisensteinSmoothness.linV_apply`:
-  [NumberField F]
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] [IsTotallyReal F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/PolyVHasTemperateGrowth.lean:55:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.EisensteinSmoothness.polyV_hasTemperateGrowth`:
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [161626/161656] Built PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.SigmaFinitePosRealMeasure (295s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/SigmaFinitePosRealMeasure.lean:115:33: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-⚠ [161627/161656] Built PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.ContinuousPInfCoord (288s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/ContinuousPInfCoord.lean:19:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.EisensteinIntegrability.finite_c`:
   [IsTotallyReal F]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [IsTotallyReal F] in theorem ...
@@ -158,3 +62,99 @@ consider restructuring your `variable` declarations so that the variables are no
   omit [IsTotallyReal F] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [161631/161658] Built PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Imports (320s)
+✔ [161632/161658] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.MixedUnitCongruences.ClosedOneU (301s)
+✔ [161633/161658] Built PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.ImportsAlt (321s)
+✔ [161634/161658] Built PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.RightBilinearApply (321s)
+⚠ [161635/161658] Built PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.FiniteSupportOfHyp (318s)
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/FiniteSupportOfHyp.lean:18:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.EisensteinSmoothness.finite_support_of_hyp`:
+  [IsTotallyReal F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsTotallyReal F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/FiniteSupportOfHyp.lean:88:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.EisensteinSmoothness.exists_den_row`:
+  [IsTotallyReal F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsTotallyReal F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/FiniteSupportOfHyp.lean:180:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.EisensteinSmoothness.exists_den_col`:
+  [IsTotallyReal F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsTotallyReal F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [161636/161661] Built PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.InvMulVecScalarMul (319s)
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/InvMulVecScalarMul.lean:16:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.EisensteinIntegrability.vecMul_scalar_mul`:
+  [IsTotallyReal F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsTotallyReal F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/InvMulVecScalarMul.lean:25:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.EisensteinIntegrability.inv_mulVec_scalar_mul`:
+  [IsTotallyReal F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsTotallyReal F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/InvMulVecScalarMul.lean:187:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.EisensteinIntegrability.norm_omega_eq_one`:
+  [IsTotallyReal F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsTotallyReal F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/InvMulVecScalarMul.lean:194:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.EisensteinIntegrability.continuous_absD`:
+  [IsTotallyReal F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsTotallyReal F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/InvMulVecScalarMul.lean:206:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.EisensteinIntegrability.absD_pos`:
+  [IsTotallyReal F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsTotallyReal F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [161637/161661] Built Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Cbcc (317s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/TraceSplitting/Cbcc.lean:14:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/TraceSplitting/Cbcc.lean:15:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/TraceSplitting/Cbcc.lean:16:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/TraceSplitting/Cbcc.lean:17:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/TraceSplitting/Cbcc.lean:18:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [161638/161661] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KatoEulerSystems.VwinOfInputs (327s)
