@@ -1,20 +1,5 @@
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/MemPowsSUnitsChooseTStatement.lean:8:68: Unused tactic linter: `exact GlobalTheory.CNorm.exists_auxiliary_places_prime` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/MemPowsSUnitsChooseTStatement.lean:8:125: Unused tactic linter: `(intros; apply GlobalTheory.CNorm.exists_auxiliary_places_prime <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [161235/161255] Built Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.GaloisTwistPreservesSiegelBound (10s)
-⚠ [161236/161260] Built Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.FirstGeometricConditionOfProperties (8.2s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/LocalGroupAnalysis/FirstGeometricConditionOfProperties.lean:118:35: Variable name `hY` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hY
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [161237/161260] Built Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.QuotProd (6.1s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/LocalGroupAnalysis/QuotProd.lean:28:2: Try this: 
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/CharIndep.lean:94:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -22,7 +7,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/LocalGroupAnalysis/QuotProd.lean:29:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/CharIndep.lean:117:6: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -30,7 +15,26 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/LocalGroupAnalysis/QuotProd.lean:30:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/CharIndep.lean:160:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [161393/161408] Built Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.WordTens (15s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/IntegrableConvolution/WordTens.lean:124:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.WordTens.0.UpperTheory.ConvolutionTheory.L1.a_smooth`:
+  [νE.IsHaarMeasure]
+  [IsTotallyComplex E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [νE.IsHaarMeasure] [IsTotallyComplex E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [161394/161409] Built Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.AtInj (7.0s)
+⚠ [161395/161410] Built Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.LevelEx (74s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/TraceSplitting/LevelEx.lean:33:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/TraceSplitting/LevelEx.lean:34:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -38,7 +42,16 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/LocalGroupAnalysis/QuotProd.lean:31:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/TraceSplitting/LevelEx.lean:44:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [161396/161410] Built Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.GoodEx (92s)
+⚠ [161397/161410] Built Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.UnitTrace (69s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/TraceSplitting/UnitTrace.lean:109:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -46,8 +59,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [161238/161261] Built Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.QuotMap (5.3s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/LocalGroupAnalysis/QuotMap.lean:16:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/TraceSplitting/UnitTrace.lean:110:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -55,7 +67,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/LocalGroupAnalysis/QuotMap.lean:17:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/TraceSplitting/UnitTrace.lean:120:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -63,7 +75,8 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/LocalGroupAnalysis/QuotMap.lean:18:2: Try this: 
+⚠ [161398/161411] Built Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.PairPosition (8.5s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/IntegrableConvolution/PairPosition.lean:54:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -71,7 +84,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/LocalGroupAnalysis/QuotMap.lean:48:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/IntegrableConvolution/PairPosition.lean:56:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -79,9 +92,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [161239/161261] Built Development.AutomorphicArithmetic.AdelicQuotients.HaarUnimodularCriterion (5.2s)
-⚠ [161240/161261] Built Development.AutomorphicArithmetic.AdelicQuotients.ExistsHaarMeasureAdelicGL (5.8s)
-warning: src/Development/AutomorphicArithmetic/AdelicQuotients/ExistsHaarMeasureAdelicGL.lean:10:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/IntegrableConvolution/PairPosition.lean:58:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -89,7 +100,17 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AdelicQuotients/ExistsHaarMeasureAdelicGL.lean:32:2: Try this: 
+✔ [161399/161412] Built Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Places (67s)
+⚠ [161400/161412] Built Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.CoreDescOf (75s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/TraceSplitting/CoreDescOf.lean:38:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/TraceSplitting/CoreDescOf.lean:39:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -97,7 +118,15 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AdelicQuotients/ExistsHaarMeasureAdelicGL.lean:45:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/TraceSplitting/CoreDescOf.lean:40:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/TraceSplitting/CoreDescOf.lean:41:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -105,9 +134,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [161241/161264] Built Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.TwistedTraceFormulaEllipticExpansion (11s)
-⚠ [161242/161264] Built Development.AutomorphicArithmetic.AdelicQuotients.QuotientHaarMeasurePushforward (5.5s)
-warning: src/Development/AutomorphicArithmetic/AdelicQuotients/QuotientHaarMeasurePushforward.lean:15:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/TraceSplitting/CoreDescOf.lean:48:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -115,7 +142,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AdelicQuotients/QuotientHaarMeasurePushforward.lean:16:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/TraceSplitting/CoreDescOf.lean:87:6: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -123,7 +150,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AdelicQuotients/QuotientHaarMeasurePushforward.lean:17:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/TraceSplitting/CoreDescOf.lean:93:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -131,30 +158,3 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AdelicQuotients/QuotientHaarMeasurePushforward.lean:18:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AdelicQuotients/QuotientHaarMeasurePushforward.lean:20:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AdelicQuotients/QuotientHaarMeasurePushforward.lean:21:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [161243/161266] Built Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SUnitMemKummerNormsOfLocalNorms (5.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/SUnitMemKummerNormsOfLocalNorms.lean:79:36: `zero_le'` has been deprecated: Use `zero_le` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/SUnitMemKummerNormsOfLocalNorms.lean:99:33: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
