@@ -1,6 +1,10 @@
 
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralFunctionalExtension.lean:17:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ChoiceFreeSectionConstruction.lean:93:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -8,30 +12,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralFunctionalExtension.lean:39:64: try 'simp' instead of 'simpa'
-
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [138954/138992] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiDeterminantRankPropertyStatement (4.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantRankPropertyStatement.lean:8:61: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantRankPropertyStatement.lean:8:111: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantRankPropertyStatement.lean:7:8: Overlapping instance parameters in `GlobalTheory.T.psi_determinant_rank_property`:
-
-⚠️ `[IsDomain Λ]` and `[IsDiscreteValuationRing Λ]` each imply `[Nontrivial Λ]`.
-💡️ Of these, `[IsDomain Λ]` and `[IsDiscreteValuationRing Λ]` may be removed.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantRankPropertyStatement.lean:8:61: Unused tactic linter: `exact GlobalTheory.DetInv.detElt_transport_isom` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantRankPropertyStatement.lean:8:111: Unused tactic linter: `(intros; apply GlobalTheory.DetInv.detElt_transport_isom <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [138955/138995] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiDeterminantOrdersProperty (6.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantOrdersProperty.lean:50:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ChoiceFreeSectionConstruction.lean:97:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -39,7 +20,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantOrdersProperty.lean:53:4: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ChoiceFreeSectionConstruction.lean:95:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -47,20 +28,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantOrdersProperty.lean:20:18: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantOrdersProperty.lean:14:8: Overlapping instance parameters in `dvd_of_detElt_orders_eq`:
-
-⚠️ `[IsDomain Λ]` and `[IsDiscreteValuationRing Λ]` each imply `[Nontrivial Λ]`.
-💡️ Of these, `[IsDomain Λ]` and `[IsDiscreteValuationRing Λ]` may be removed.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantOrdersProperty.lean:20:18: Unused tactic linter: `simp [inA, Algebra.TensorProduct.algebraMap_apply, Algebra.algebraMap_self]` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [138956/138995] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeTateSandwichLatticeRep (16s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HodgeTateSandwichLatticeRep.lean:32:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ChoiceFreeSectionConstruction.lean:100:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -68,93 +36,125 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HodgeTateSandwichLatticeRep.lean:83:0: automatically included section variable(s) unused in theorem `GlobalTheory.PointGroup.pairT_flip_bijective`:
-  [Algebra ℤ_[p] O]
-  [Algebra ℤ_[p] C]
-  [IsScalarTower ℤ_[p] O C]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Algebra ℤ_[p] O] [Algebra ℤ_[p] C] [IsScalarTower ℤ_[p] O C] in theorem ...
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ChoiceFreeSectionConstruction.lean:113:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HodgeTateSandwichLatticeRep.lean:127:6: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HodgeTateSandwichLatticeRep.lean:182:0: automatically included section variable(s) unused in theorem `GlobalTheory.PointGroup.exists_retraction_tateGt`:
-  [Algebra ℤ_[p] O]
-  [Algebra ℤ_[p] C]
-  [IsScalarTower ℤ_[p] O C]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Algebra ℤ_[p] O] [Algebra ℤ_[p] C] [IsScalarTower ℤ_[p] O C] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [138957/138995] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DvrAlphaDeterminantValuationStatement (4.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DvrAlphaDeterminantValuationStatement.lean:8:61: this tactic is never executed
+⚠ [139100/139134] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertSamuelMapBirationalOfCuspFormsGenerateStatement (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HilbertSamuelMapBirationalOfCuspFormsGenerateStatement.lean:23:59: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DvrAlphaDeterminantValuationStatement.lean:8:111: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HilbertSamuelMapBirationalOfCuspFormsGenerateStatement.lean:23:107: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DvrAlphaDeterminantValuationStatement.lean:7:8: Overlapping instance parameters in `GlobalTheory.T.dvr_alpha_determinant_valuation`:
-
-⚠️ `[IsDomain Λ]` and `[IsDiscreteValuationRing Λ]` each imply `[Nontrivial Λ]`.
-💡️ Of these, `[IsDomain Λ]` and `[IsDiscreteValuationRing Λ]` may be removed.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DvrAlphaDeterminantValuationStatement.lean:8:61: Unused tactic linter: `exact GlobalTheory.DetInv.isShift_of_iota_image` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HilbertSamuelMapBirationalOfCuspFormsGenerateStatement.lean:23:59: Unused tactic linter: `exact GlobalTheory.HSApp.birational_of_ratGen` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DvrAlphaDeterminantValuationStatement.lean:8:111: Unused tactic linter: `(intros; apply GlobalTheory.DetInv.isShift_of_iota_image <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HilbertSamuelMapBirationalOfCuspFormsGenerateStatement.lean:23:107: Unused tactic linter: `(intros; apply GlobalTheory.HSApp.birational_of_ratGen <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [138958/138997] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralFunctionalExtensionStatement (4.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralFunctionalExtensionStatement.lean:8:66: this tactic is never executed
+⚠ [139101/139136] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeLevelCharacterBoundStatement (35s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeLevelCharacterBoundStatement.lean:26:74: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralFunctionalExtensionStatement.lean:8:121: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeLevelCharacterBoundStatement.lean:26:137: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralFunctionalExtensionStatement.lean:8:66: Unused tactic linter: `exact GlobalTheory.integral_form_extend_of_saturated` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeLevelCharacterBoundStatement.lean:26:74: Unused tactic linter: `exact GlobalTheory.CovTop.TypeLattice.latDeep_eq_latN_covers` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralFunctionalExtensionStatement.lean:8:121: Unused tactic linter: `(intros; apply GlobalTheory.integral_form_extend_of_saturated <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeLevelCharacterBoundStatement.lean:26:137: Unused tactic linter: `(intros;
+  apply GlobalTheory.CovTop.TypeLattice.latDeep_eq_latN_covers <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [138959/138997] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiDeterminantOrdersPropertyStatement (4.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantOrdersPropertyStatement.lean:8:63: this tactic is never executed
+⚠ [139102/139144] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeBoundOfDeepGoodStatement (59s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DegreeBoundOfDeepGoodStatement.lean:29:52: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantOrdersPropertyStatement.lean:8:115: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DegreeBoundOfDeepGoodStatement.lean:29:93: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantOrdersPropertyStatement.lean:7:8: Overlapping instance parameters in `GlobalTheory.T.psi_determinant_orders_property`:
-
-⚠️ `[IsDomain Λ]` and `[IsDiscreteValuationRing Λ]` each imply `[Nontrivial Λ]`.
-💡️ Of these, `[IsDomain Λ]` and `[IsDiscreteValuationRing Λ]` may be removed.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantOrdersPropertyStatement.lean:8:63: Unused tactic linter: `exact GlobalTheory.DetInv.dvd_of_detElt_orders_eq` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DegreeBoundOfDeepGoodStatement.lean:29:52: Unused tactic linter: `exact GlobalTheory.CovTop.DegProof.deg` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PsiDeterminantOrdersPropertyStatement.lean:8:115: Unused tactic linter: `(intros; apply GlobalTheory.DetInv.dvd_of_detElt_orders_eq <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DegreeBoundOfDeepGoodStatement.lean:29:93: Unused tactic linter: `(intros; apply GlobalTheory.CovTop.DegProof.deg <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [138960/138999] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeTateSandwichLatticeRepStatement (9.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HodgeTateSandwichLatticeRepStatement.lean:13:65: this tactic is never executed
+⚠ [139103/139150] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.KawamataViehwegVanishingNumberFieldTwistStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KawamataViehwegVanishingNumberFieldTwistStatement.lean:13:72: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HodgeTateSandwichLatticeRepStatement.lean:13:119: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KawamataViehwegVanishingNumberFieldTwistStatement.lean:13:133: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HodgeTateSandwichLatticeRepStatement.lean:13:65: Unused tactic linter: `exact GlobalTheory.PointGroup.exists_selfDual_group` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KawamataViehwegVanishingNumberFieldTwistStatement.lean:13:72: Unused tactic linter: `exact GlobalTheory.HSCore.VanishNumberField.vanishFrom_adj` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HodgeTateSandwichLatticeRepStatement.lean:13:119: Unused tactic linter: `(intros; apply GlobalTheory.PointGroup.exists_selfDual_group <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KawamataViehwegVanishingNumberFieldTwistStatement.lean:13:133: Unused tactic linter: `(intros; apply GlobalTheory.HSCore.VanishNumberField.vanishFrom_adj <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [138961/138999] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLatticeIsometryConjPointSplitUpToIndex (9.0s)
-✔ [138962/139000] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsComplexLinearOfPureTypesFiniteIndex (6.5s)
+✔ [139104/139150] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperplaneSectionVanishingShift (5.5s)
+⚠ [139105/139150] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankPosNegativeWeightBundleStatement (40s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RankPosNegativeWeightBundleStatement.lean:30:63: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RankPosNegativeWeightBundleStatement.lean:30:115: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RankPosNegativeWeightBundleStatement.lean:30:63: Unused tactic linter: `exact GlobalTheory.CovTop.LowPos.lowered_rank_pos` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RankPosNegativeWeightBundleStatement.lean:30:115: Unused tactic linter: `(intros; apply GlobalTheory.CovTop.LowPos.lowered_rank_pos <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [139106/139153] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChoiceFreeSectionConstructionStatement (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ChoiceFreeSectionConstructionStatement.lean:23:48: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ChoiceFreeSectionConstructionStatement.lean:23:85: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ChoiceFreeSectionConstructionStatement.lean:23:48: Unused tactic linter: `exact GlobalTheory.HSApp.nef_big_A` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ChoiceFreeSectionConstructionStatement.lean:23:85: Unused tactic linter: `(intros; apply GlobalTheory.HSApp.nef_big_A <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [139107/139153] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZeroDimSupportEulerChar (5.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZeroDimSupportEulerChar.lean:14:167: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [139108/139154] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeepModelWeightSection (16s)
+⚠ [139109/139154] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeImageBirationalLinearSystemEqSelfIntStatement (5.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DegreeImageBirationalLinearSystemEqSelfIntStatement.lean:11:68: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DegreeImageBirationalLinearSystemEqSelfIntStatement.lean:11:125: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DegreeImageBirationalLinearSystemEqSelfIntStatement.lean:11:68: Unused tactic linter: `exact GlobalTheory.ImageDegree.degree_image_eq_topSelf` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DegreeImageBirationalLinearSystemEqSelfIntStatement.lean:11:125: Unused tactic linter: `(intros; apply GlobalTheory.ImageDegree.degree_image_eq_topSelf <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [139110/139154] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperplaneSectionVanishingShiftStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HyperplaneSectionVanishingShiftStatement.lean:13:63: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HyperplaneSectionVanishingShiftStatement.lean:13:115: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HyperplaneSectionVanishingShiftStatement.lean:13:63: Unused tactic linter: `exact GlobalTheory.HSCore.vanishFrom_cut_and_hdim` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HyperplaneSectionVanishingShiftStatement.lean:13:115: Unused tactic linter: `(intros; apply GlobalTheory.HSCore.vanishFrom_cut_and_hdim <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
