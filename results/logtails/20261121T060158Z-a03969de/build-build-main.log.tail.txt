@@ -1,68 +1,14 @@
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ChevalleyUnitsStatement.lean:6:105: Unused tactic linter: `(intros; apply GlobalTheory.Published.chevalleyUnits' <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [157584/157614] Built Development.DiscreteGroups.GlobalIrreducibility.DzRedMat (5.5s)
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzRedMat.lean:18:49: This simp argument is unused:
-  Matrix.diagonal_apply
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/DepthZeroInertiaBigOfNarrowBig.lean:66:2: Try this: 
+  haveI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [Iwasawa.torusPow, (Fin.castSucc_lt_last _).ne']
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzRedMat.lean:19:49: This simp argument is unused:
-  Matrix.diagonal_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Iwasawa.torusPow, (Fin.castSucc_lt_last _).ne]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzRedMat.lean:43:0: automatically included section variable(s) unused in theorem `DiscreteGroups.sglob.DzRed.unipotent_le_unipB`:
-  [ValuativeRel K]
-  [TopologicalSpace K]
-  [IsNonarchimedeanLocalField K]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [ValuativeRel K] [TopologicalSpace K] [IsNonarchimedeanLocalField K] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [157585/157619] Built Development.DiscreteGroups.GlobalIrreducibility.ValUniformizerPowLt (6.2s)
-✔ [157586/157619] Built Development.DiscreteGroups.GlobalIrreducibility.CellVecFixed (6.3s)
-✔ [157587/157621] Built Development.DiscreteGroups.GlobalIrreducibility.LTw (6.1s)
-✔ [157588/157621] Built Development.DiscreteGroups.GlobalIrreducibility.DzFeCut (6.2s)
-✔ [157589/157625] Built Development.DiscreteGroups.GlobalIrreducibility.StepUp (6.1s)
-✔ [157590/157625] Built Development.DiscreteGroups.GlobalIrreducibility.DzFeOrth (5.4s)
-⚠ [157591/157625] Built Development.DiscreteGroups.GlobalIrreducibility.DzGenFun (6.5s)
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzGenFun.lean:37:0: automatically included section variable(s) unused in theorem `DiscreteGroups.sglob.DzType.thC_mul`:
-  [ValuativeRel k]
-  [TopologicalSpace k]
-  [IsNonarchimedeanLocalField k]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzGenFun.lean:43:8: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzGenFun.lean:43:43: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
-⚠ [157592/157625] Built Development.DiscreteGroups.GlobalIrreducibility.DzFeSv (9.9s)
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzFeSv.lean:134:6: `Matrix.det_of_lowerTriangular` has been deprecated: Use `Matrix.det_of_isLowerTriangular` instead
-⚠ [157593/157625] Built Development.DiscreteGroups.GlobalIrreducibility.DzFeCyc (6.8s)
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzFeCyc.lean:82:41: `finRotate_succ_apply` has been deprecated: Use `finRotate_apply` instead
-
-Note: The updated constant has a different type:
-  ∀ {n : ℕ} (i : Fin n), (finRotate n) i = i + 1
-instead of
-  ∀ {n : ℕ} (i : Fin (n + 1)), (finRotate (n + 1)) i = i + 1
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzFeCyc.lean:99:41: `finRotate_succ_apply` has been deprecated: Use `finRotate_apply` instead
-
-Note: The updated constant has a different type:
-  ∀ {n : ℕ} (i : Fin n), (finRotate n) i = i + 1
-instead of
-  ∀ {n : ℕ} (i : Fin (n + 1)), (finRotate (n + 1)) i = i + 1
-✔ [157594/157626] Built Development.DiscreteGroups.GlobalIrreducibility.StepDown (7.5s)
-⚠ [157595/157627] Built Development.DiscreteGroups.GlobalIrreducibility.DzFeMat (8.6s)
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzFeMat.lean:31:6: `Matrix.det_of_upperTriangular` has been deprecated: Use `Matrix.det_of_isUpperTriangular` instead
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzFeMat.lean:171:51: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead
-⚠ [157596/157627] Built Development.DiscreteGroups.GlobalIrreducibility.ExistsCellFunctional (9.4s)
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/ExistsCellFunctional.lean:25:2: Try this: 
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/DepthZeroInertiaBigOfNarrowBig.lean:67:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -70,7 +16,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/ExistsCellFunctional.lean:26:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/DepthZeroInertiaBigOfNarrowBig.lean:70:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -78,7 +24,15 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/ExistsCellFunctional.lean:27:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/DepthZeroInertiaBigOfNarrowBig.lean:71:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/DepthZeroInertiaBigOfNarrowBig.lean:74:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -86,75 +40,121 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [157597/157629] Built Development.DiscreteGroups.GlobalIrreducibility.SuppConst (5.0s)
-⚠ [157598/157629] Built Development.DiscreteGroups.GlobalIrreducibility.LongEltCornerEqCyc (7.3s)
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/LongEltCornerEqCyc.lean:22:52: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/LongEltCornerEqCyc.lean:27:12: `finRotate_succ_apply` has been deprecated: Use `finRotate_apply` instead
-
-Note: The updated constant has a different type:
-  ∀ {n : ℕ} (i : Fin n), (finRotate n) i = i + 1
-instead of
-  ∀ {n : ℕ} (i : Fin (n + 1)), (finRotate (n + 1)) i = i + 1
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/LongEltCornerEqCyc.lean:27:87: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/LongEltCornerEqCyc.lean:47:10: `finRotate_succ_apply` has been deprecated: Use `finRotate_apply` instead
-
-Note: The updated constant has a different type:
-  ∀ {n : ℕ} (i : Fin n), (finRotate n) i = i + 1
-instead of
-  ∀ {n : ℕ} (i : Fin (n + 1)), (finRotate (n + 1)) i = i + 1
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/LongEltCornerEqCyc.lean:58:10: `finRotate_succ_apply` has been deprecated: Use `finRotate_apply` instead
-
-Note: The updated constant has a different type:
-  ∀ {n : ℕ} (i : Fin n), (finRotate n) i = i + 1
-instead of
-  ∀ {n : ℕ} (i : Fin (n + 1)), (finRotate (n + 1)) i = i + 1
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/LongEltCornerEqCyc.lean:58:85: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/LongEltCornerEqCyc.lean:62:10: `finRotate_succ_apply` has been deprecated: Use `finRotate_apply` instead
-
-Note: The updated constant has a different type:
-  ∀ {n : ℕ} (i : Fin n), (finRotate n) i = i + 1
-instead of
-  ∀ {n : ℕ} (i : Fin (n + 1)), (finRotate (n + 1)) i = i + 1
-✔ [157599/157630] Built Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.DzGoodVec (67s)
-✔ [157600/157630] Built Development.AutomorphicArithmetic.ThetaCorrespondence.LocalLanglands.UnitaryThetaCorrespondenceOfHyp (35s)
-⚠ [157601/157631] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.MainTheoremPublishedInputsVariant (68s)
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsVariant.lean:32:64: this tactic is never executed
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/DepthZeroInertiaBigOfNarrowBig.lean:21:2: Try this: intro HT HG HL E Ω _ _ _ _ _ _ g _ A w h rc hrc i hi κ L t ht hTC n hbig σ _ τ P hP hinf
+⚠ [157625/157647] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.TwistedMultiplicityOne (12s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistedMultiplicityOne.lean:31:75: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsVariant.lean:32:117: this tactic is never executed
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistedMultiplicityOne.lean:31:139: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsVariant.lean:32:64: Unused tactic linter: `exact _root_.GlobalTheory.miStarRowClosing_alt_alt` does nothing
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistedMultiplicityOne.lean:31:75: Unused tactic linter: `exact _root_.GlobalTheory.MultEqFinal.twisted_multiplicity_eq` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsVariant.lean:32:117: Unused tactic linter: `(intros; apply _root_.GlobalTheory.miStarRowClosing_alt_alt <;> assumption)` does nothing
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistedMultiplicityOne.lean:31:139: Unused tactic linter: `(intros;
+  apply _root_.GlobalTheory.MultEqFinal.twisted_multiplicity_eq <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [157602/157631] Built Development.DiscreteGroups.GlobalIrreducibility.DzGalFin (5.3s)
-✔ [157603/157632] Built Development.DiscreteGroups.GlobalIrreducibility.DzGalTR (6.8s)
-⚠ [157604/157632] Built Development.DiscreteGroups.GlobalIrreducibility.DzFeDec (6.6s)
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzFeDec.lean:73:6: `Matrix.det_of_lowerTriangular` has been deprecated: Use `Matrix.det_of_isLowerTriangular` instead
-✔ [157605/157632] Built Development.DiscreteGroups.GlobalIrreducibility.DzGalW (5.9s)
-⚠ [157606/157632] Built Development.DiscreteGroups.GlobalIrreducibility.FixedNeBotOfEquiv (7.7s)
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/FixedNeBotOfEquiv.lean:89:6: `Matrix.det_of_lowerTriangular` has been deprecated: Use `Matrix.det_of_isLowerTriangular` instead
-⚠ [157607/157632] Built Development.DiscreteGroups.GlobalIrreducibility.RowFixConj (5.8s)
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/RowFixConj.lean:52:8: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/RowFixConj.lean:52:8: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/RowFixConj.lean:58:10: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/RowFixConj.lean:58:28: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/RowFixConj.lean:102:8: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/RowFixConj.lean:102:8: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/RowFixConj.lean:109:10: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/RowFixConj.lean:109:28: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
-⚠ [157608/157636] Built Development.DiscreteGroups.GlobalIrreducibility.DzRedLift (7.8s)
-warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzRedLift.lean:31:0: automatically included section variable(s) unused in theorem `DiscreteGroups.sglob.DzRed.exists_lift_unipB`:
-  hi
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit hi in theorem ...
+✔ [157626/157649] Built Development.DiscreteGroups.GlobalIrreducibility.DzRankBound (5.1s)
+⚠ [157627/157649] Built Development.DiscreteGroups.GlobalIrreducibility.DzGalChi (6.1s)
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzGalChi.lean:14:40: Variable name `hi` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [157609/157636] Built Development.DiscreteGroups.GlobalIrreducibility.DzGalInd (6.7s)
-✔ [157610/157637] Built Development.DiscreteGroups.GlobalIrreducibility.LpTwistLpTwist (7.1s)
-✔ [157611/157637] Built Development.DiscreteGroups.GlobalIrreducibility.DzFeCard (6.5s)
-✔ [157612/157637] Built Development.DiscreteGroups.GlobalIrreducibility.IsRowFixConj (6.5s)
-✔ [157613/157640] Built Development.DiscreteGroups.GlobalIrreducibility.DzGalEig (10s)
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hi
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [157628/157649] Built Development.DiscreteGroups.GlobalIrreducibility.DzGalKappa (7.0s)
+✔ [157629/157649] Built Development.DiscreteGroups.GlobalIrreducibility.FLRight (7.4s)
+✔ [157630/157652] Built Development.DiscreteGroups.GlobalIrreducibility.DzFeMain (6.6s)
+⚠ [157631/157652] Built Development.DiscreteGroups.GlobalIrreducibility.TameUniformizerPower (9.4s)
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/TameUniformizerPower.lean:23:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/TameUniformizerPower.lean:59:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/TameUniformizerPower.lean:60:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/TameUniformizerPower.lean:57:137: Variable name `Γ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _Γ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/TameUniformizerPower.lean:95:142: Variable name `Γ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _Γ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [157632/157652] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.SglobDzMatchCut (5.9s)
+✔ [157633/157652] Built Development.DiscreteGroups.GlobalIrreducibility.DzGalOne (7.9s)
+✔ [157634/157652] Built Development.DiscreteGroups.GlobalIrreducibility.PhiTilde (12s)
+⚠ [157635/157656] Built Development.DiscreteGroups.GlobalIrreducibility.RegularLocalOfDepthZero (29s)
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/RegularLocalOfDepthZero.lean:93:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/RegularLocalOfDepthZero.lean:94:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [157636/157656] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ThetaLocalInputs (15s)
+✔ [157637/157656] Built Development.DiscreteGroups.GlobalIrreducibility.OneRatio (49s)
+⚠ [157638/157657] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ExistsClassMapCorrespondence (135s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsClassMapCorrespondence.lean:15:72: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsClassMapCorrespondence.lean:15:133: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsClassMapCorrespondence.lean:15:72: Unused tactic linter: `exact _root_.UpperTheory.One.M.exists_isRc_isClassMapD_alt` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsClassMapCorrespondence.lean:15:133: Unused tactic linter: `(intros; apply _root_.UpperTheory.One.M.exists_isRc_isClassMapD_alt <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [157639/157657] Built Development.DiscreteGroups.GlobalIrreducibility.DzGalEps (7.4s)
+✔ [157640/157659] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.CompatibleSystemLocalProperty (90s)
+✔ [157641/157659] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ThetaLocalInputs (123s)
+✔ [157642/157659] Built Development.DiscreteGroups.GlobalIrreducibility.NarrowBigHolds (14s)
+✔ [157643/157659] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.RealGroupInputsCombined (201s)
+⚠ [157644/157659] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.HarishChandraInputsCombined (209s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HarishChandraInputsCombined.lean:57:79: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HarishChandraInputsCombined.lean:57:147: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HarishChandraInputsCombined.lean:57:79: Unused tactic linter: `exact _root_.GlobalTheory.Fc.KapLinked.row_kap_of_row_lam_alt_alt` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HarishChandraInputsCombined.lean:57:147: Unused tactic linter: `(intros;
+  apply _root_.GlobalTheory.Fc.KapLinked.row_kap_of_row_lam_alt_alt <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [157645/157661] Built Development.AutomorphicArithmetic.ThetaCorrespondence.FockModels.DzNarrow (15s)
