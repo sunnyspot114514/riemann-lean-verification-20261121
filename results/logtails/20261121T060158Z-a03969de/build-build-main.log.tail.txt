@@ -1,13 +1,18 @@
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CyclotomicBarContinuous.lean:34:7: Variable name `inst_4` is not explicitly referenced.
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/LocalRingsCompletion/MuDvd.lean:65:14: `ENat.toNat_coe` has been deprecated: Use `ENat.toNat_natCast` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/LocalRingsCompletion/MuDvd.lean:77:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/LocalRingsCompletion/MuDvd.lean:78:45: `ENat.coe_ne_top` has been deprecated: Use `ENat.natCast_ne_top` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/LocalRingsCompletion/MuDvd.lean:7:8: Overlapping instance parameters in `mu_dvd`:
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_4
+⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.
+💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [155166/155197] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoeDualRep (8.5s)
-⚠ [155167/155197] Built Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.OrdinaryHeckeCharacters.FuCmpMem (243s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/OrdinaryHeckeCharacters/FuCmpMem.lean:21:2: Try this: 
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+⚠ [155187/155204] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HidaCompleteRings.ExistsPt (22s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/HidaCompleteRings/ExistsPt.lean:56:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -15,27 +20,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/OrdinaryHeckeCharacters/FuCmpMem.lean:42:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.OrdinaryHeckeCharacters.FuCmpMem.0.fu_under`:
-  [Fact (Nat.Prime l)]
-  [IsCMField L]
-  [IsAlgClosure L Ω]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fact (Nat.Prime l)] [IsCMField L] [IsAlgClosure L Ω] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/OrdinaryHeckeCharacters/FuCmpMem.lean:48:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.OrdinaryHeckeCharacters.FuCmpMem.0.fu_l`:
-  [NumberField L]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField L] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/OrdinaryHeckeCharacters/FuCmpMem.lean:80:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.OrdinaryHeckeCharacters.FuCmpMem.0.fu_cmp`:
-  [Fact (Nat.Prime l)]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fact (Nat.Prime l)] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/OrdinaryHeckeCharacters/FuCmpMem.lean:101:4: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/HidaCompleteRings/ExistsPt.lean:67:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -43,33 +28,24 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/OrdinaryHeckeCharacters/FuCmpMem.lean:137:47: `Pi.monoidHom` has been deprecated: Use `MonoidHom.pi` instead
+⚠ [155188/155205] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.LocalRingsCompletion.Weier (5.2s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/LocalRingsCompletion/Weier.lean:15:63: `ENat.coe_toNat` has been deprecated: Use `ENat.natCast_toNat` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/LocalRingsCompletion/Weier.lean:22:36: `ENat.coe_ne_top` has been deprecated: Use `ENat.natCast_ne_top` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/LocalRingsCompletion/Weier.lean:8:8: Overlapping instance parameters in `weier`:
 
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.monoidHom` to `MonoidHom.pi x`).
-⚠ [155168/155197] Built Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.OrdinaryHeckeCharacters.PartAct0 (251s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/OrdinaryHeckeCharacters/PartAct0.lean:45:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.OrdinaryHeckeCharacters.PartAct0.0.pa_ext`:
-  [Algebra A K]
-  [IsScalarTower A K W]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Algebra A K] [IsScalarTower A K W] in theorem ...
+⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.
+💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/OrdinaryHeckeCharacters/PartAct0.lean:65:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.OrdinaryHeckeCharacters.PartAct0.0.pa_stab`:
-  [Module A W]
-  [IsScalarTower A K W]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Module A W] [IsScalarTower A K W] in theorem ...
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+⚠ [155189/155205] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HidaCompleteRings.OneVar (5.3s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/HidaCompleteRings/OneVar.lean:4:8: Overlapping instance parameters in `UpperTheory.V.AlgebraTools.AnnihilatorQuotientFinite.oneVar`:
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/OrdinaryHeckeCharacters/PartAct0.lean:171:4: Try this: 
-  haveI̵
+⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.
+💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/OrdinaryHeckeCharacters/PartAct0.lean:228:2: Try this: 
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+⚠ [155190/155205] Built Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.HeckePolynomialTorsion.EqOnTors (18s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/HeckePolynomialTorsion/EqOnTors.lean:26:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -77,15 +53,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/OrdinaryHeckeCharacters/PartAct0.lean:229:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/OrdinaryHeckeCharacters/PartAct0.lean:230:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/HeckePolynomialTorsion/EqOnTors.lean:27:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -93,7 +61,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/OrdinaryHeckeCharacters/PartAct0.lean:333:4: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/HeckePolynomialTorsion/EqOnTors.lean:112:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -101,7 +69,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/OrdinaryHeckeCharacters/PartAct0.lean:334:4: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/HeckePolynomialTorsion/EqOnTors.lean:117:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -109,7 +77,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/OrdinaryHeckeCharacters/PartAct0.lean:332:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/HeckePolynomialTorsion/EqOnTors.lean:124:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -117,7 +85,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/OrdinaryHeckeCharacters/PartAct0.lean:336:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/HeckePolynomialTorsion/EqOnTors.lean:180:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -125,7 +93,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/OrdinaryHeckeCharacters/PartAct0.lean:338:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/HeckePolynomialTorsion/EqOnTors.lean:184:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -133,22 +101,8 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [155169/155197] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.TotalFrobeniusCompatibility (220s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/TotalFrobeniusCompatibility.lean:59:43: This simp argument is unused:
-  mul_assoc
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [mul_zpow, mul_comm, mul_left_comm]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [155170/155197] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.SatakeParametersComplexConjugate (229s)
-✔ [155171/155197] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.IrreducibleCase (230s)
-✔ [155172/155197] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.IsUnramifiedAtTotallyRealOfInertiaLeRestrictionR (237s)
-✔ [155173/155197] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.SatakeGaloisCompatibilityOfHeckeEigensystem (229s)
-⚠ [155174/155197] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ExistsDescentToLevelGroupOfUnramified (237s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/ExistsDescentToLevelGroupOfUnramified.lean:74:9: `Set.setOf_forall` has been deprecated: Use `Set.ofPred_forall` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/ExistsDescentToLevelGroupOfUnramified.lean:76:6: `Set.setOf_forall` has been deprecated: Use `Set.ofPred_forall` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/ExistsDescentToLevelGroupOfUnramified.lean:92:4: Try this: 
+⚠ [155191/155206] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HidaCompleteRings.DenseBox (10s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/HidaCompleteRings/DenseBox.lean:23:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -156,5 +110,51 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [155175/155197] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.HodgeTateWeightsOfLocalGlobal (235s)
-✔ [155176/155197] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ExistsConjInertiaDiagonalOfIsTypeWD (236s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/HidaCompleteRings/DenseBox.lean:24:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/HidaCompleteRings/DenseBox.lean:26:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/HidaCompleteRings/DenseBox.lean:101:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/HidaCompleteRings/DenseBox.lean:102:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/HidaCompleteRings/DenseBox.lean:111:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/HidaCompleteRings/DenseBox.lean:112:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
