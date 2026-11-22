@@ -1,21 +1,3 @@
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsMuCStatement.lean:12:111: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsMuCStatement.lean:12:61: Unused tactic linter: `exact _root_.GlobalTheory.MuCLoc.exists_muC_alt` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsMuCStatement.lean:12:111: Unused tactic linter: `(intros; apply _root_.GlobalTheory.MuCLoc.exists_muC_alt <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [159205/159237] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ChiMuUnrFrobStatement (6.7s)
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ChiMuUnrFrobStatement.lean:11:70: Variable name `hArt` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hArt
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ChiMuUnrFrobStatement.lean:11:629: Variable name `hCS` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _hCS
@@ -156,5 +138,23 @@ warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLift
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
 warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ChiOneTameGenStatement.lean:12:123: Unused tactic linter: `(intros; apply _root_.GlobalTheory.ChiTame.chi_one_tameGen_alt <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [159212/159245] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.SeriesAtOfExpRelation (455s)
+✔ [159213/159246] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.SXdAll (130s)
+✔ [159214/159247] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.StepsPin (127s)
+✔ [159215/159248] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.SLarge (318s)
+✔ [159216/159249] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ExistsRep (249s)
+✔ [159217/159249] Built Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.PairLiftH (329s)
+⚠ [159218/159251] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.RowsAtStart (195s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RowsAtStart.lean:25:74: Ambiguous namespace `Formalism.L2`: it is interpreted as `_root_.GlobalTheory.Formalism.L2` because this `open` occurs inside `namespace GlobalTheory.HeightCounting.Fin3`, while `_root_.Formalism.L2` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.GlobalTheory.Formalism.L2`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+⚠ [159219/159251] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.MTwinA (400s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MTwinA.lean:32:161: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MTwinA.lean:32:161: Unused tactic linter: `obtain ⟨a, ha, ε, -, hlaws⟩ :=
+  _root_.GlobalTheory.CuspRep.ParLawsT.isRecT_locRecT hL (D.nd.plOm.2 sp.w)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
