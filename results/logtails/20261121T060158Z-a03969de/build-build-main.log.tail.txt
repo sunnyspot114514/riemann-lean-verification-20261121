@@ -1,4 +1,9 @@
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ExistsChartFamilyOf.lean:43:4: Try this: 
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/CuspSubmodulesLocallyFiniteStatement.lean:10:159: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.Relay.cusp_submodules_locally_finite <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [132114/132135] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsLatticeEmbedding (8.0s)
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsLatticeEmbedding.lean:47:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -6,155 +11,150 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ExistsChartFamilyOf.lean:98:19: try 'simp' instead of 'simpa'
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsLatticeEmbedding.lean:48:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-✔ [131755/131774] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsConjugateLogPeriods (7.4s)
-✔ [131756/131774] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.LatticeFamilyLocalSections (5.5s)
-⚠ [131757/131774] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeGeneratedSumSpecializationFrameStatement (5.6s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/HodgeGeneratedSumSpecializationFrameStatement.lean:10:76: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/HodgeGeneratedSumSpecializationFrameStatement.lean:10:141: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [132115/132135] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.AdaptedFrameOfEquivalent (7.1s)
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/AdaptedFrameOfEquivalent.lean:24:18: This simp argument is unused:
+  Module.Basis.constr_basis
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/HodgeGeneratedSumSpecializationFrameStatement.lean:10:76: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.PeriodIndep.values_indep` does nothing
+Hint: Omit it from the simp argument list.
+  [apply] simp [perExt, hk]
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/HodgeGeneratedSumSpecializationFrameStatement.lean:10:141: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.PeriodIndep.values_indep <;> assumption)` does nothing
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [132116/132137] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.AdaptedFrameDeterminesLattice (9.3s)
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/AdaptedFrameDeterminesLattice.lean:70:18: This simp argument is unused:
+  Module.Basis.constr_basis
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [131758/131774] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramMatrixChangeFrame (5.8s)
-⚠ [131759/131779] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.TBijectiveStatement (5.3s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/TBijectiveStatement.lean:10:81: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp [perExt]
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/TBijectiveStatement.lean:10:151: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/AdaptedFrameDeterminesLattice.lean:74:13: This simp argument is unused:
+  map_smul
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/TBijectiveStatement.lean:10:81: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Flat.MonodromyBij.T_bijective` does nothing
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hb, Int.cast_smul_eq_zsmul, map_zsmul]
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/TBijectiveStatement.lean:10:151: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.Flat.MonodromyBij.T_bijective <;> assumption)` does nothing
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [132117/132137] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.AdaptedFrameChangeUnitary (9.0s)
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/AdaptedFrameChangeUnitary.lean:169:28: This simp argument is unused:
+  Fintype.sum_sum_type
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [131760/131779] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelComplexLinearComparisonStatement (5.5s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/LieModelComplexLinearComparisonStatement.lean:10:82: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp [mulVec, dotProduct, Pi.single_apply]
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/LieModelComplexLinearComparisonStatement.lean:10:153: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/AdaptedFrameChangeUnitary.lean:173:28: This simp argument is unused:
+  Fintype.sum_sum_type
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/LieModelComplexLinearComparisonStatement.lean:10:82: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.FrameFibre.exists_linear_fibre` does nothing
+Hint: Omit it from the simp argument list.
+  [apply] simp [mulVec, dotProduct, Pi.single_apply]
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/LieModelComplexLinearComparisonStatement.lean:10:153: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.FrameFibre.exists_linear_fibre <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [131761/131781] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsConjugateLogPeriodsStatement (5.4s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ExistsConjugateLogPeriodsStatement.lean:10:91: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ExistsConjugateLogPeriodsStatement.lean:10:171: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ExistsConjugateLogPeriodsStatement.lean:10:91: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Flat.ConjPeriods.exists_conj_periodGram` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ExistsConjugateLogPeriodsStatement.lean:10:171: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.Flat.ConjPeriods.exists_conj_periodGram <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [131762/131783] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolomorphicCoordsOfGenericPoint (5.5s)
-⚠ [131763/131783] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLogPeriodFamily (11s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ExistsLogPeriodFamily.lean:67:75: Variable name `p` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [132118/132137] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsAdaptedAt (9.2s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ExistsAdaptedAt.lean:160:18: Variable name `inst` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _p
+  [apply] _inst
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ExistsLogPeriodFamily.lean:118:20: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-⚠ [131764/131783] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.LatticeFamilyLocalSectionsStatement (5.5s)
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/LatticeFamilyLocalSectionsStatement.lean:8:92: this tactic is never executed
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ExistsAdaptedAt.lean:160:35: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ExistsAdaptedAt.lean:160:60: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ExistsAdaptedAt.lean:161:7: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ExistsAdaptedAt.lean:161:54: Variable name `inst_4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ExistsAdaptedAt.lean:162:7: Variable name `inst_5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [132119/132137] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.LogDetEigenFramePlurisubharmonic (6.3s)
+⚠ [132120/132139] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsLatticeEmbeddingStatement (5.4s)
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsLatticeEmbeddingStatement.lean:15:84: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/LatticeFamilyLocalSectionsStatement.lean:8:173: this tactic is never executed
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsLatticeEmbeddingStatement.lean:15:157: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/LatticeFamilyLocalSectionsStatement.lean:8:92: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Flat.exists_logPeriods_of_local_markings` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsLatticeEmbeddingStatement.lean:15:84: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Cusp.Dict.LatEmbEx.exists_latEmb` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/LatticeFamilyLocalSectionsStatement.lean:8:173: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.Flat.exists_logPeriods_of_local_markings <;> assumption)` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsLatticeEmbeddingStatement.lean:15:157: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.Ar.Cusp.Dict.LatEmbEx.exists_latEmb <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [131765/131787] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramMatrixChangeFrameStatement (5.5s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GramMatrixChangeFrameStatement.lean:10:92: this tactic is never executed
+⚠ [132121/132139] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.AdaptedFrameOfEquivalentStatement (5.3s)
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/AdaptedFrameOfEquivalentStatement.lean:15:80: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GramMatrixChangeFrameStatement.lean:10:173: this tactic is never executed
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/AdaptedFrameOfEquivalentStatement.lean:15:149: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GramMatrixChangeFrameStatement.lean:10:92: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.HodgeMetric.gramAt_unique_of_polarisedAt` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/AdaptedFrameOfEquivalentStatement.lean:15:80: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Cusp.Dict.isAdapted_of_eqvBy` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GramMatrixChangeFrameStatement.lean:10:173: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.HodgeMetric.gramAt_unique_of_polarisedAt <;> assumption)` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/AdaptedFrameOfEquivalentStatement.lean:15:149: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.Ar.Cusp.Dict.isAdapted_of_eqvBy <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [131766/131791] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.HolomorphicConjugatePullback (5.6s)
-⚠ [131767/131791] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.HolomorphicDegreeOneBiholomorphismStatement (5.4s)
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/HolomorphicDegreeOneBiholomorphismStatement.lean:8:94: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/HolomorphicDegreeOneBiholomorphismStatement.lean:8:177: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/HolomorphicDegreeOneBiholomorphismStatement.lean:8:94: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.PB.Cj.exists_holoMap_inverse_of_degree_one` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/HolomorphicDegreeOneBiholomorphismStatement.lean:8:177: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.PB.Cj.exists_holoMap_inverse_of_degree_one <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [131768/131792] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolomorphicCoordsOfGenericPointStatement (5.6s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/HolomorphicCoordsOfGenericPointStatement.lean:10:89: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/HolomorphicCoordsOfGenericPointStatement.lean:10:167: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/HolomorphicCoordsOfGenericPointStatement.lean:10:89: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.PeriodsHol.isHolTo_of_coordsAt_family` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/HolomorphicCoordsOfGenericPointStatement.lean:10:167: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.PeriodsHol.isHolTo_of_coordsAt_family <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [131769/131792] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.LiftSystemComplexConjugation (5.5s)
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/LiftSystemComplexConjugation.lean:14:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.Ar.PB.Cj.sameOrbit_cross`:
-  [Fintype K]
-  [(k : K) → Fintype (ι k)]
+⚠ [132122/132139] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.NormSqEqAdaptedFrameSum (11s)
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/NormSqEqAdaptedFrameSum.lean:63:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.Ar.Cusp.Dict.AdaptedLen.emb_bij`:
+  [IsCMField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype K] [(k : K) → Fintype (ι k)] in theorem ...
+  omit [IsCMField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/LiftSystemComplexConjugation.lean:20:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.Ar.PB.Cj.sameOrbit_of_cross`:
-  [Fintype K]
-  [(k : K) → Fintype (ι k)]
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/NormSqEqAdaptedFrameSum.lean:177:43: This simp argument is unused:
+  Pi.star_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LatEmb.Fm, Pi.smul_apply, star_smul, star_trivial, smul_dotProduct, mul_smul_comm, Complex.smul_re,
+    smul_eq_mul, Finset.mul_sum]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [132123/132139] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsTranslatedRiemannLattice (9.6s)
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsTranslatedRiemannLattice.lean:18:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.Ar.Cusp.Dict.Rotate.embOf_coe`:
+  [IsCMField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype K] [(k : K) → Fintype (ι k)] in theorem ...
+  omit [IsCMField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [131770/131794] Built Development.WeilBound.CoreStatements.CentralCharts.ExistsPermFirst (9.8s)
-warning: src/Development/WeilBound/CoreStatements/CentralCharts/ExistsPermFirst.lean:173:0: automatically included section variable(s) unused in theorem `AnalyticReference.An.not_mem_top`:
-  [Fintype K]
-  [(k : K) → Fintype (J k)]
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsTranslatedRiemannLattice.lean:72:11: This simp argument is unused:
+  Fintype.sum_bool
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [m, add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/ExistsTranslatedRiemannLattice.lean:241:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.Ar.Cusp.Dict.Rotate.rotL_single`:
+  [Fintype Ψ]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype K] [(k : K) → Fintype (J k)] in theorem ...
+  omit [Fintype Ψ] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [131771/131799] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.BiholomorphicLiftSystem (7.4s)
