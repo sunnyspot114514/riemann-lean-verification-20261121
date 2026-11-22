@@ -1,123 +1,20 @@
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/CuspidalSupport/HkLocal.lean:78:72: This simp argument is unused:
-  Finset.sum_boole
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/MemPowsSUnitsChooseTStatement.lean:8:68: Unused tactic linter: `exact GlobalTheory.CNorm.exists_auxiliary_places_prime` does nothing
 
-Hint: Omit it from the simp argument list.
-  [apply] simp
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/MemPowsSUnitsChooseTStatement.lean:8:125: Unused tactic linter: `(intros; apply GlobalTheory.CNorm.exists_auxiliary_places_prime <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [160867/160896] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.CuspidalSupport.MatBlock (6.8s)
-⚠ [160868/160896] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.BorelHarmonicForms.DerivativeRightTranslateL2 (21s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/BorelHarmonicForms/DerivativeRightTranslateL2.lean:203:4: Overlapping instance parameters in `UnitsTriv`:
-
-⚠️ There are 2 `[IsTotallyComplex E]` instances; one is sufficient.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/BorelHarmonicForms/DerivativeRightTranslateL2.lean:210:40: `Pi.ringHom` has been deprecated: Use `RingHom.pi` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.ringHom` to `RingHom.pi x`).
-⚠ [160869/160896] Built Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.Reduce (7.8s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PolynomialCoefficientBounds/Reduce.lean:99:4: `Polynomial.eval_finset_sum` has been deprecated: Use `Polynomial.eval_finsetSum` instead
-✔ [160870/160896] Built Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.Taylor (6.1s)
-⚠ [160871/160898] Built Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.SliceShift (16s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/BlockHeckeSlices/CuspidalNormBounds/SliceShift.lean:20:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.SliceShift.0.UpperTheory.ConvolutionTheory.BW.zt_add`:
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/BlockHeckeSlices/CuspidalNormBounds/SliceShift.lean:25:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.SliceShift.0.UpperTheory.ConvolutionTheory.BW.zt_zero`:
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/BlockHeckeSlices/CuspidalNormBounds/SliceShift.lean:29:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.SliceShift.0.UpperTheory.ConvolutionTheory.BW.zt_comm`:
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/BlockHeckeSlices/CuspidalNormBounds/SliceShift.lean:88:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.SliceShift.0.UpperTheory.ConvolutionTheory.BW.posIdele_eq`:
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [160872/160898] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CoeffProdOneAdd (5.1s)
-✔ [160873/160899] Built Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.ParEx (53s)
-⚠ [160874/160900] Built Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.LiftSingle (8.5s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PolynomialCoefficientBounds/LiftSingle.lean:73:50: This simp argument is unused:
-  Finset.sum_smul
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [lin, map_sum, map_mul, aeval_C, aeval_X, hξ, hc, mul_add, Finset.sum_add_distrib, Matrix.vecMul,
-    dotProduct, Complex.ofReal_sum, Complex.ofReal_mul, Finset.mul_sum, Algebra.smul_def, mul_assoc]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PolynomialCoefficientBounds/LiftSingle.lean:73:101: This simp argument is unused:
-  mul_assoc
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [lin, map_sum, map_mul, aeval_C, aeval_X, hξ, hc, mul_add, Finset.sum_add_distrib, Matrix.vecMul,
-    dotProduct, Complex.ofReal_sum, Complex.ofReal_mul, Finset.sum_smul, Finset.mul_sum, Algebra.smul_def]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [160875/160901] Built Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.SSatIff (5.7s)
-✔ [160876/160902] Built Development.AutomorphicArithmetic.WhittakerHecke.ConstantTermHeckeOperatorEqSumSatake (6.6s)
-⚠ [160877/160902] Built Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.HsOfKer (5.5s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/ConvolutionKernels/HsOfKer.lean:34:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [160878/160902] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.BorelHarmonicForms.OneParam (6.9s)
-✔ [160879/160904] Built Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.AbsGrow (7.4s)
-✔ [160880/160904] Built Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.TraceKer (6.4s)
-✔ [160881/160905] Built Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.RopAdj (5.3s)
-✔ [160882/160905] Built Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.CompShift (8.3s)
-✔ [160883/160907] Built Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.RopAe (5.5s)
-⚠ [160884/160907] Built Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KvCont (6.0s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/ConvolutionKernels/KvCont.lean:106:6: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
-⚠ [160885/160908] Built Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.QmapPres (5.2s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/ConvolutionKernels/QmapPres.lean:28:52: try 'simp' instead of 'simpa'
-
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-✔ [160886/160908] Built Development.AutomorphicArithmetic.WhittakerHecke.OneParameterSubgroupNormOne (7.3s)
-✔ [160887/160908] Built Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.AbsFar (7.4s)
-✔ [160888/160912] Built Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.RopPc (7.5s)
-⚠ [160889/160912] Built Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.SliceHecke (11s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/BlockHeckeSlices/CuspidalNormBounds/SliceHecke.lean:118:8: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/BlockHeckeSlices/CuspidalNormBounds/SliceHecke.lean:149:8: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/BlockHeckeSlices/CuspidalNormBounds/SliceHecke.lean:181:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/BlockHeckeSlices/CuspidalNormBounds/SliceHecke.lean:217:8: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/BlockHeckeSlices/CuspidalNormBounds/SliceHecke.lean:217:41: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/BlockHeckeSlices/CuspidalNormBounds/SliceHecke.lean:218:24: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/BlockHeckeSlices/CuspidalNormBounds/SliceHecke.lean:231:6: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/BlockHeckeSlices/CuspidalNormBounds/SliceHecke.lean:231:40: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/BlockHeckeSlices/CuspidalNormBounds/SliceHecke.lean:231:75: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
-⚠ [160890/160912] Built Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.AbsTaylor (10s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PolynomialCoefficientBounds/AbsTaylor.lean:11:5: Variable name `hA0` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [161235/161255] Built Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.GaloisTwistPreservesSiegelBound (10s)
+⚠ [161236/161260] Built Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.FirstGeometricConditionOfProperties (8.2s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/LocalGroupAnalysis/FirstGeometricConditionOfProperties.lean:118:35: Variable name `hY` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hA0
+  [apply] _hY
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [160891/160913] Built Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.IntEst (5.2s)
-⚠ [160892/160914] Built Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.QhtBasic (6.6s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/ConvolutionKernels/QhtBasic.lean:61:8: `continuous_finset_prod` has been deprecated: Use `continuous_finsetProd` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/ConvolutionKernels/QhtBasic.lean:65:2: Try this: 
+⚠ [161237/161260] Built Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.QuotProd (6.1s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/LocalGroupAnalysis/QuotProd.lean:28:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -125,23 +22,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [160893/160914] Built Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.TwAdj (7.1s)
-✔ [160894/160915] Built Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.QhtTw (5.5s)
-⚠ [160895/160915] Built Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.RconvEqIntegralKernel (8.7s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/ConvolutionKernels/RconvEqIntegralKernel.lean:13:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.RconvEqIntegralKernel.0.hasCompactSupport_kernel`:
-  [SecondCountableTopology G]
-  [MeasurableSpace G]
-  [BorelSpace G]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [SecondCountableTopology G] [MeasurableSpace G] [BorelSpace G] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [160896/160915] Built Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.CompHecke (7.6s)
-✔ [160897/160918] Built Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.AbsKill (6.6s)
-✔ [160898/160918] Built Development.AutomorphicArithmetic.TwistedTraces.CuspDecayFinsetSum (6.4s)
-✔ [160899/160920] Built Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.NormLeOfSq (6.7s)
-⚠ [160900/160920] Built Development.AutomorphicArithmetic.TwistedTraces.CuspDecayOfRankZero (6.0s)
-warning: src/Development/AutomorphicArithmetic/TwistedTraces/CuspDecayOfRankZero.lean:15:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/LocalGroupAnalysis/QuotProd.lean:29:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -149,7 +30,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/TwistedTraces/CuspDecayOfRankZero.lean:17:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/LocalGroupAnalysis/QuotProd.lean:30:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -157,4 +38,123 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [160901/160920] Built Development.AutomorphicArithmetic.TwistedTraces.ExistsContDiffArchMatrixExtensionOfSmooth (6.4s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/LocalGroupAnalysis/QuotProd.lean:31:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [161238/161261] Built Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.QuotMap (5.3s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/LocalGroupAnalysis/QuotMap.lean:16:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/LocalGroupAnalysis/QuotMap.lean:17:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/LocalGroupAnalysis/QuotMap.lean:18:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/LocalGroupAnalysis/QuotMap.lean:48:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [161239/161261] Built Development.AutomorphicArithmetic.AdelicQuotients.HaarUnimodularCriterion (5.2s)
+⚠ [161240/161261] Built Development.AutomorphicArithmetic.AdelicQuotients.ExistsHaarMeasureAdelicGL (5.8s)
+warning: src/Development/AutomorphicArithmetic/AdelicQuotients/ExistsHaarMeasureAdelicGL.lean:10:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AdelicQuotients/ExistsHaarMeasureAdelicGL.lean:32:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AdelicQuotients/ExistsHaarMeasureAdelicGL.lean:45:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [161241/161264] Built Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.TwistedTraceFormulaEllipticExpansion (11s)
+⚠ [161242/161264] Built Development.AutomorphicArithmetic.AdelicQuotients.QuotientHaarMeasurePushforward (5.5s)
+warning: src/Development/AutomorphicArithmetic/AdelicQuotients/QuotientHaarMeasurePushforward.lean:15:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AdelicQuotients/QuotientHaarMeasurePushforward.lean:16:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AdelicQuotients/QuotientHaarMeasurePushforward.lean:17:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AdelicQuotients/QuotientHaarMeasurePushforward.lean:18:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AdelicQuotients/QuotientHaarMeasurePushforward.lean:20:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AdelicQuotients/QuotientHaarMeasurePushforward.lean:21:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [161243/161266] Built Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SUnitMemKummerNormsOfLocalNorms (5.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/SUnitMemKummerNormsOfLocalNorms.lean:79:36: `zero_le'` has been deprecated: Use `zero_le` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/SUnitMemKummerNormsOfLocalNorms.lean:99:33: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
