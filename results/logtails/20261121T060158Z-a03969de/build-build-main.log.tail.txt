@@ -1,35 +1,6 @@
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/RealArchimedeanBounds/DNormalP.lean:15:94: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/RealArchimedeanBounds/DNormalP.lean:15:109: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/RealArchimedeanBounds/DNormalP.lean:16:94: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/RealArchimedeanBounds/DNormalP.lean:16:109: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-✔ [152455/152480] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.RealArchimedeanBounds.DMinkP (236s)
-✔ [152456/152480] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.RealArchimedeanBounds.ABnfHP (232s)
-✔ [152457/152481] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.RealArchimedeanBounds.VOne (232s)
-✔ [152458/152481] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.RealArchimedeanBounds.AOrb (232s)
-⚠ [152459/152481] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.RealArchimedeanBounds.AMonoP (232s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/RealArchimedeanBounds/AMonoP.lean:23:28: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-✔ [152460/152481] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.RealArchimedeanBounds.RowMul (232s)
-✔ [152461/152481] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.RealArchimedeanBounds.AAdd (232s)
-✔ [152462/152481] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.RealArchimedeanBounds.JFSa (232s)
-⚠ [152463/152481] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.RealArchimedeanBounds.AMinkP (238s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/RealArchimedeanBounds/AMinkP.lean:260:68: This simp argument is unused:
-  mul_zero
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Complex.add_re, Complex.mul_re, Complex.ofReal_re, Complex.ofReal_im, Complex.add_im,
-    Complex.mul_im, zero_mul, sub_zero, add_zero]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [152464/152487] Built Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.CoefSup (19s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/CoefSup.lean:10:2: Try this: 
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CyclotomicInertiaSpan/DecComm.lean:51:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -37,7 +8,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/CoefSup.lean:72:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CyclotomicInertiaSpan/DecComm.lean:48:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -45,15 +16,24 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/CoefSup.lean:73:2: Try this: 
-  haveI̵
+⚠ [152484/152505] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IrreducibleIffStable (5.3s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/IrreducibleIffStable.lean:4:20: Variable name `inst` is not explicitly referenced.
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/CoefSup.lean:78:4: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/IrreducibleIffStable.lean:4:37: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [152485/152505] Built Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.LocDefs (17s)
+✔ [152486/152505] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.MixFlagExists (211s)
+✔ [152487/152505] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.QuadraticSplitting.Imports (5.2s)
+⚠ [152488/152506] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.RootsOfUnityShapes.PowIne (10s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/RootsOfUnityShapes/PowIne.lean:35:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -61,7 +41,15 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/CoefSup.lean:79:4: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/RootsOfUnityShapes/PowIne.lean:38:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/RootsOfUnityShapes/PowIne.lean:122:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -69,7 +57,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/CoefSup.lean:80:4: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/RootsOfUnityShapes/PowIne.lean:124:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -77,7 +65,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/CoefSup.lean:81:4: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/RootsOfUnityShapes/PowIne.lean:125:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -85,7 +73,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/CoefSup.lean:82:4: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/RootsOfUnityShapes/PowIne.lean:126:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -93,7 +81,9 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/CoefSup.lean:77:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/RootsOfUnityShapes/PowIne.lean:171:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/RootsOfUnityShapes/PowIne.lean:177:77: `Polynomial.finite_setOf_isRoot` has been deprecated: Use `Polynomial.finite_setOfPred_isRoot` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/RootsOfUnityShapes/PowIne.lean:188:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -101,7 +91,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/CoefSup.lean:89:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/RootsOfUnityShapes/PowIne.lean:189:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -109,7 +99,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/CoefSup.lean:90:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/RootsOfUnityShapes/PowIne.lean:190:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -117,7 +107,16 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/CoefSup.lean:96:2: Try this: 
+⚠ [152489/152507] Built Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.OrdFlagU (216s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/OrdFlagU.lean:31:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/OrdFlagU.lean:67:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -125,7 +124,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/CoefSup.lean:111:4: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/OrdFlagU.lean:111:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -133,7 +132,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/CoefSup.lean:114:4: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/OrdFlagU.lean:132:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -141,7 +140,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/CoefSup.lean:115:4: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/OrdFlagU.lean:133:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -149,12 +148,13 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [152465/152487] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsIntegralIffNormLeOne (5.0s)
-✔ [152466/152489] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsDiscreteValuationRingIntegralClosure (8.9s)
-⚠ [152467/152489] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CoefficientsOfField (6.6s)
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CoefficientsOfField.lean:7:15: Variable name `inst` is not explicitly referenced.
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/OrdFlagU.lean:198:2: Try this: 
+  haveI̵
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [152490/152507] Built Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.IrrIff (5.4s)
+✔ [152491/152508] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MemOfCoeff (5.2s)
