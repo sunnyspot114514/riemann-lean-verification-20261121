@@ -1,65 +1,15 @@
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/CycleNumberMulExpandStatement.lean:7:8: Overlapping instance parameters in `GlobalTheory.T.cycle_number_mul_expand`:
-
-⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.
-💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/CycleNumberMulExpandStatement.lean:8:66: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Num.cycNum_mul` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/CycleNumberMulExpandStatement.lean:8:121: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.Ar.Num.cycNum_mul <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [132476/132506] Built Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.LocalizationModelOverPlace (10s)
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/LocalizationModelOverPlace.lean:51:6: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/LocalizationModelOverPlace.lean:51:6: Unused tactic linter: `exact hu.mul_right_eq_zero.1 hs'` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/LocalizationModelOverPlace.lean:58:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/LocalizationModelOverPlace.lean:72:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/LocalizationModelOverPlace.lean:82:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/LocalizationModelOverPlace.lean:83:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/LocalizationModelOverPlace.lean:157:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.Ar.Num.PlaceModel.comap_C_pointIdeal`:
-  [Fintype K]
-  [DecidableEq K]
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/JoinModelPointsProject.lean:138:33: `zero_le'` has been deprecated: Use `zero_le` instead
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/JoinModelPointsProject.lean:264:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.Ar.Ht.JoinFacts.joinInl_injective`:
   [(k : K) → Fintype (ι k)]
-  [IsDomain O]
-  [IsDiscreteValuationRing O]
+  [(k : K') → Fintype (ι' k)]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype K] [DecidableEq K] [(k : K) → Fintype (ι k)] [IsDomain O] [IsDiscreteValuationRing O] in theorem ...
+  omit [(k : K) → Fintype (ι k)] [(k : K') → Fintype (ι' k)] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/LocalizationModelOverPlace.lean:251:2: Try this: 
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/JoinModelPointsProject.lean:286:6: `Finsupp.mapDomain_notin_range` has been deprecated: Use `Finsupp.mapDomain_of_notMem_range` instead
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/JoinModelPointsProject.lean:305:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -67,94 +17,144 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/LocalizationModelOverPlace.lean:249:8: Overlapping instance parameters in `pl_model`:
+⚠ [132866/132895] Built Development.WeilBound.CoreStatements.PluriharmonicCharts.XCSqsys (8.1s)
+warning: src/Development/WeilBound/CoreStatements/PluriharmonicCharts/XCSqsys.lean:29:0: automatically included section variable(s) unused in theorem `PositivityTheory.Xgp.c_sqsys.lift_inj`:
+  [Fintype Ψ]
+  [DecidableEq Ψ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Ψ] [DecidableEq Ψ] in theorem ...
 
-⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.
-💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [132867/132895] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.RootOriginWeightIdentity (7.8s)
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/RootOriginWeightIdentity.lean:83:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.Ar.Small.OriginEps.zpow_sum_of_ne`:
+  [CharZero Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero Ω] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-⚠ [132477/132508] Built Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CycleNumberLinearStatement (5.6s)
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/CycleNumberLinearStatement.lean:8:69: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/RootOriginWeightIdentity.lean:125:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/CycleNumberLinearStatement.lean:8:127: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/CycleNumberLinearStatement.lean:7:8: Overlapping instance parameters in `GlobalTheory.T.cycle_number_linear`:
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/RootOriginWeightIdentity.lean:126:2: Try this: 
+  haveI̵
 
-⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.
-💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/CycleNumberLinearStatement.lean:8:69: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Num.cycNum_linear` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/CycleNumberLinearStatement.lean:8:127: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.Ar.Num.cycNum_linear <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [132478/132508] Built Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RootModelGeometricGenericNumber (5.0s)
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/RootModelGeometricGenericNumber.lean:32:46: `Finsupp.mapDomain_notin_range` has been deprecated: Use `Finsupp.mapDomain_of_notMem_range` instead
-✔ [132479/132509] Built Development.AutomorphicSpectrum.Statements.GeometryStatements.PropFTop (4.9s)
-✔ [132480/132509] Built Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.IsometricVerticalIntersectionEq (6.7s)
-⚠ [132481/132512] Built Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.LimitHeightConstantShiftStatement (5.1s)
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/LimitHeightConstantShiftStatement.lean:9:81: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/LimitHeightConstantShiftStatement.lean:9:151: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/LimitHeightConstantShiftStatement.lean:9:81: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Num.PP_eq_add_of_arFun_eq_add` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/LimitHeightConstantShiftStatement.lean:9:151: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.Num.PP_eq_add_of_arFun_eq_add <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [132482/132512] Built Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.VerticalPairPowerSumVanish (5.5s)
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/VerticalPairPowerSumVanish.lean:27:8: Overlapping instance parameters in `val_psum_mul_eq_zero`:
-
-⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.
-💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-⚠ [132483/132512] Built Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.LocalizationModelOverPlaceStatement (5.2s)
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/LocalizationModelOverPlaceStatement.lean:9:64: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [132868/132895] Built Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.OnbMat (6.1s)
+✔ [132869/132895] Built Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BcMapBcVec (13s)
+✔ [132870/132895] Built Development.AutomorphicSpectrum.Definitions.GlobalGeometry.OverLaUnique (10s)
+✔ [132871/132895] Built Development.AutomorphicSpectrum.Definitions.MetricPeriods.RegularFormsIsBundleProjectiveCover (5.6s)
+⚠ [132872/132897] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagHeightStatement (5.3s)
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/FlagHeightStatement.lean:10:71: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/LocalizationModelOverPlaceStatement.lean:9:117: this tactic is never executed
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/FlagHeightStatement.lean:10:131: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/LocalizationModelOverPlaceStatement.lean:8:8: Overlapping instance parameters in `GlobalTheory.T.localization_model_over_place`:
-
-⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.
-💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/LocalizationModelOverPlaceStatement.lean:9:64: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Num.pl_model` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/FlagHeightStatement.lean:10:71: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.PB.flagHeight_holds` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/LocalizationModelOverPlaceStatement.lean:9:117: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.Ar.Num.pl_model <;> assumption)` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/FlagHeightStatement.lean:10:131: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.Ar.PB.flagHeight_holds <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [132484/132512] Built Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.LocalPairPowerSumValue (5.3s)
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/LocalPairPowerSumValue.lean:14:8: Overlapping instance parameters in `val_psumExpansion_mul`:
-
-⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.
-💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-✔ [132485/132512] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.HBBound (6.2s)
-⚠ [132486/132512] Built Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RootModelGeometricGenericNumberStatement (4.0s)
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/RootModelGeometricGenericNumberStatement.lean:9:78: this tactic is never executed
+✔ [132873/132897] Built Development.AutomorphicSpectrum.Definitions.GlobalGeometry.TwistedDualRegularFormsFiniteCover (5.1s)
+✔ [132874/132898] Built Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EvLApply (10s)
+✔ [132875/132899] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.Coefficients (6.0s)
+✔ [132876/132899] Built Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CuspOnto (5.0s)
+⚠ [132877/132901] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverRealisationPullback (5.7s)
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/FlagCoverRealisationPullback.lean:10:50: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/RootModelGeometricGenericNumberStatement.lean:9:145: this tactic is never executed
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/FlagCoverRealisationPullback.lean:10:50: Unused tactic linter: `exact PositivityTheory.Xgp.t_c_sqsys` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [132878/132901] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.RootOriginWeightIdentityStatement (5.4s)
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/RootOriginWeightIdentityStatement.lean:12:84: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/RootModelGeometricGenericNumberStatement.lean:9:78: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Num.GeoModel.geoFun_toA_eq` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/RootOriginWeightIdentityStatement.lean:12:157: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/RootOriginWeightIdentityStatement.lean:12:84: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Small.OriginEps.section_on_model` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/RootModelGeometricGenericNumberStatement.lean:9:145: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.Num.GeoModel.geoFun_toA_eq <;> assumption)` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/RootOriginWeightIdentityStatement.lean:12:157: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.Ar.Small.OriginEps.section_on_model <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [132879/132902] Built Development.AutomorphicSpectrum.Definitions.MetricPeriods.EtaCut (5.1s)
+✔ [132880/132902] Built Development.AutomorphicSpectrum.Definitions.GlobalGeometry.TraceWedgePairingPerfectRationalForms (5.2s)
+⚠ [132881/132902] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatUnitOfSplitRootLines (12s)
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FlatUnitOfSplitRootLines.lean:207:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FlatUnitOfSplitRootLines.lean:209:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FlatUnitOfSplitRootLines.lean:216:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FlatUnitOfSplitRootLines.lean:237:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [132882/132902] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.CoefficientsStatement (5.1s)
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/CoefficientsStatement.lean:8:71: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/CoefficientsStatement.lean:8:131: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/CoefficientsStatement.lean:8:71: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.PB.Top.coefficients` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/CoefficientsStatement.lean:8:131: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.Ar.PB.Top.coefficients <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [132883/132902] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverRealisationPullbackStatement (5.7s)
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/FlagCoverRealisationPullbackStatement.lean:9:86: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/FlagCoverRealisationPullbackStatement.lean:9:161: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/FlagCoverRealisationPullbackStatement.lean:9:86: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Relay.flag_cover_realisation_pullback` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/MetricProofs/FlagCoverRealisationPullbackStatement.lean:9:161: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.Relay.flag_cover_realisation_pullback <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [132884/132902] Built Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.RealCubicMeans.LogMeanShares.LogMeanStatements.MeanLogS (5.1s)
+✔ [132885/132907] Built Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SlCTendsto (10s)
+✔ [132886/132908] Built Development.WeilBound.CoreStatements.FlagImmersions.GlobalModelTowerBounds (5.5s)
+✔ [132887/132909] Built Development.AutomorphicSpectrum.Definitions.MetricPeriods.AdelicGLLastRowAndDetModuleUnderLeftMultiplicati (5.5s)
+✔ [132888/132909] Built Development.AutomorphicSpectrum.Definitions.GlobalGeometry.AbsAZero (9.1s)
+✔ [132889/132909] Built Development.AutomorphicSpectrum.Statements.MetricStatements.SmallOnTower (4.9s)
