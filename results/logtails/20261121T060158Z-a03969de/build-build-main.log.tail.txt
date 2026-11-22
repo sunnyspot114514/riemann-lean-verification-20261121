@@ -1,4 +1,12 @@
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/DegreeCountCohomology/LocBare.lean:195:4: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/AnnihilatorBaseChange/FoCong.lean:6:8: Overlapping instance parameters in `foCong`:
+
+⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.
+💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+⚠ [153600/153625] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.LocFactor (6.1s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/LocFactor.lean:28:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -6,78 +14,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/DegreeCountCohomology/LocBare.lean:196:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/DegreeCountCohomology/LocBare.lean:225:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [153282/153316] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CoboundaryCriterion (5.8s)
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CoboundaryCriterion.lean:20:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CoboundaryCriterion.lean:4:22: Variable name `inst` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CoboundaryCriterion.lean:5:5: Variable name `inst_1` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_1
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CoboundaryCriterion.lean:5:24: Variable name `inst_2` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_2
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CoboundaryCriterion.lean:5:50: Variable name `inst_3` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_3
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CoboundaryCriterion.lean:6:18: Variable name `inst_4` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_4
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CoboundaryCriterion.lean:6:37: Variable name `inst_5` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_5
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [153283/153316] Built Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.EpsilonEtaMatrices.GaloisLiftMemFirstOrderDeformations (5.2s)
-⚠ [153284/153318] Built Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.DegreeCountCohomology.GwBare (15s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/DegreeCountCohomology/GwBare.lean:260:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/DegreeCountCohomology/GwBare.lean:261:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/LocFactor.lean:60:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -85,7 +22,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/DegreeCountCohomology/GwBare.lean:263:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/LocFactor.lean:69:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -93,7 +30,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/DegreeCountCohomology/GwBare.lean:264:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/LocFactor.lean:70:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -101,15 +38,8 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/DegreeCountCohomology/GwBare.lean:306:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/DegreeCountCohomology/GwBare.lean:311:2: Try this: 
+⚠ [153601/153626] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.SpStep (7.1s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/SpStep.lean:20:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -117,7 +47,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/DegreeCountCohomology/GwBare.lean:312:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/SpStep.lean:23:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -125,7 +55,9 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/DegreeCountCohomology/GwBare.lean:341:2: Try this: 
+✔ [153602/153626] Built Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.AnnihilatorBaseChange.SpCong (9.1s)
+⚠ [153603/153630] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CaDetKerPrime (5.7s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/CaDetKerPrime.lean:13:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -133,7 +65,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/DegreeCountCohomology/GwBare.lean:342:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/CaDetKerPrime.lean:15:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -141,7 +73,8 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/DegreeCountCohomology/GwBare.lean:343:2: Try this: 
+⚠ [153604/153631] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CaDetKerLe (5.6s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/CaDetKerLe.lean:24:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -149,8 +82,24 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [153285/153318] Built Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.DegreeCountCohomology.AuxiliaryVectorCutByHermitianLinearForm (5.9s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/DegreeCountCohomology/AuxiliaryVectorCutByHermitianLinearForm.lean:32:4: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/CaDetKerLe.lean:26:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [153605/153631] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.OneAddPowSubOneMem (5.4s)
+⚠ [153606/153631] Built Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.AnnihilatorBaseChange.RrExt (5.3s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/AnnihilatorBaseChange/RrExt.lean:8:8: Overlapping instance parameters in `rrExt`:
+
+⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.
+💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+⚠ [153607/153634] Built Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.AnnihilatorBaseChange.PatchedModuleAnnihilatorLeComapIffIdealLe (5.6s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/AnnihilatorBaseChange/PatchedModuleAnnihilatorLeComapIffIdealLe.lean:17:4: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -158,3 +107,54 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/AnnihilatorBaseChange/PatchedModuleAnnihilatorLeComapIffIdealLe.lean:18:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/AnnihilatorBaseChange/PatchedModuleAnnihilatorLeComapIffIdealLe.lean:20:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/AnnihilatorBaseChange/PatchedModuleAnnihilatorLeComapIffIdealLe.lean:13:8: Overlapping instance parameters in `patchedModule_annihilator_le_comap_iff_ideal_le`:
+
+⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.
+💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+✔ [153608/153635] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.SpBasis (6.2s)
+✔ [153609/153635] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CaCotOfQuot (6.3s)
+⚠ [153610/153636] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CaCotLoc (5.6s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/CaCotLoc.lean:46:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/CaCotLoc.lean:47:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [153611/153636] Built Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.AnnihilatorBaseChange.CharpolyElementEqAevalGroupElement (16s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/AnnihilatorBaseChange/CharpolyElementEqAevalGroupElement.lean:33:14: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/AnnihilatorBaseChange/CharpolyElementEqAevalGroupElement.lean:94:8: Overlapping instance parameters in `piKer`:
+
+⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.
+💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
