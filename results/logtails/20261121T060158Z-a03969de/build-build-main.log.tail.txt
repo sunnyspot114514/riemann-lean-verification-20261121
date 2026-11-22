@@ -1,160 +1,160 @@
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AutomorphicFormGLUniformModerateGrowthStatement.lean:8:68: Unused tactic linter: `exact GlobalTheory.AutGrowth.uniform_growth_of_autForm` does nothing
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/SimultaneousEigenvectors.lean:6:5: Variable name `inst_3` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AutomorphicFormGLUniformModerateGrowthStatement.lean:8:125: Unused tactic linter: `(intros; apply GlobalTheory.AutGrowth.uniform_growth_of_autForm <;> assumption)` does nothing
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [152103/152138] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompactConeDiagonalConjUpperTriangular (8.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCompactConeDiagonalConjUpperTriangular.lean:69:19: This simp argument is unused:
-  Set.mem_pi
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [152166/152184] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.TorsionOrderFrobenius.ContinuousKap (126s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/TorsionOrderFrobenius/ContinuousKap.lean:72:6: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [152167/152185] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.TwoNeZeroNat (12s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/TwoNeZeroNat.lean:106:60: Variable name `hp` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hp
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/TwoNeZeroNat.lean:366:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/TwoNeZeroNat.lean:391:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [152168/152188] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.FinDim (7.8s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/FinDim.lean:36:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/FinDim.lean:67:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/FinDim.lean:81:17: This simp argument is unused:
+  Subgroup.coe_mk
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [hK]
+  [apply] simp only [e]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCompactConeDiagonalConjUpperTriangular.lean:83:15: This simp argument is unused:
-  Units.val_mul
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/FinDim.lean:118:21: `CuspForm.coe_add` has been deprecated: Use `FunLike.coe_add` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_add` to `FunLike.coe_add x`).
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/FinDim.lean:122:21: `CuspForm.coe_smul` has been deprecated: Use `FunLike.coe_smul` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul` to `FunLike.coe_smul x`).
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/FinDim.lean:128:10: `CuspForm.coe_sub` has been deprecated: Use `FunLike.coe_sub` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_sub` to `FunLike.coe_sub x`).
+✔ [152169/152188] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SimultaneousEigenvectors.SimEig (5.2s)
+⚠ [152170/152188] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.AutNewform (139s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TemperedLocalComponents/AutNewform.lean:63:58: This simp argument is unused:
+  Matrix.vecMul
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only
+  [apply] simp [Matrix.mul_apply, dotProduct, Fin.sum_univ_two, Matrix.det_fin_two]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [152104/152139] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormGLSiegelConeDecayOneStep (7.6s)
-⚠ [152105/152139] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompactConeDiagonalConjUpperTriangularStatement (6.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCompactConeDiagonalConjUpperTriangularStatement.lean:8:55: this tactic is never executed
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TemperedLocalComponents/AutNewform.lean:63:73: This simp argument is unused:
+  dotProduct
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCompactConeDiagonalConjUpperTriangularStatement.lean:8:99: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.mul_apply, Matrix.vecMul, Fin.sum_univ_two, Matrix.det_fin_two]
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCompactConeDiagonalConjUpperTriangularStatement.lean:8:55: Unused tactic linter: `exact GlobalTheory.upperCone_conj_compact` does nothing
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [152171/152188] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.HeckeEx (9.2s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/HeckeEx.lean:24:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCompactConeDiagonalConjUpperTriangularStatement.lean:8:99: Unused tactic linter: `(intros; apply GlobalTheory.upperCone_conj_compact <;> assumption)` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [152106/152142] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormGLSiegelConeDecayOneStepStatement (7.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspFormGLSiegelConeDecayOneStepStatement.lean:8:52: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/HeckeEx.lean:25:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspFormGLSiegelConeDecayOneStepStatement.lean:8:93: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspFormGLSiegelConeDecayOneStepStatement.lean:8:52: Unused tactic linter: `exact GlobalTheory.cuspForm_decay_step` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [152172/152190] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.DelSerre (9.4s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/DelSerre.lean:43:67: This simp argument is unused:
+  mul_add
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspFormGLSiegelConeDecayOneStepStatement.lean:8:93: Unused tactic linter: `(intros; apply GlobalTheory.cuspForm_decay_step <;> assumption)` does nothing
+Hint: Omit it from the simp argument list.
+  [apply] simp
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [152107/152142] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitCentreDerivativeCommuteCentralEigen (7.1s)
-⚠ [152108/152142] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelSetAdelicGLExistsCompactDecomposition (7.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SiegelSetAdelicGLExistsCompactDecomposition.lean:21:0: automatically included section variable(s) unused in theorem `GlobalTheory.SiegelSetGL.continuous_mapFin`:
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex E] in theorem ...
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/DelSerre.lean:47:67: This simp argument is unused:
+  mul_add
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [152109/152142] Built Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.Hilbert (142s)
-✔ [152110/152142] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormGLIteratedDecayModerateGrowth (6.7s)
-✔ [152111/152142] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIdelicAbsValueCpowCharacter (6.5s)
-⚠ [152112/152143] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelSetAdelicGLExistsCompactDecompositionStatement (5.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SiegelSetAdelicGLExistsCompactDecompositionStatement.lean:8:66: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SiegelSetAdelicGLExistsCompactDecompositionStatement.lean:8:121: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [152173/152192] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.BaseChangeUnits.CentralResidueGroups.GapTwo (102s)
+⚠ [152174/152193] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.EigLift (8.8s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/EigLift.lean:26:6: `CuspForm.coe_smul` has been deprecated: Use `FunLike.coe_smul` instead
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SiegelSetAdelicGLExistsCompactDecompositionStatement.lean:8:66: Unused tactic linter: `exact GlobalTheory.SiegelSetGL.exists_compact_decomp` does nothing
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul` to `FunLike.coe_smul x`).
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/EigLift.lean:31:6: `CuspForm.coe_add` has been deprecated: Use `FunLike.coe_add` instead
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SiegelSetAdelicGLExistsCompactDecompositionStatement.lean:8:121: Unused tactic linter: `(intros; apply GlobalTheory.SiegelSetGL.exists_compact_decomp <;> assumption)` does nothing
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_add` to `FunLike.coe_add x`).
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/EigLift.lean:51:36: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [152113/152143] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ComplexConjPlaceUnderEq (149s)
-✔ [152114/152143] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.DualBaseChangeOfFrobeniusDualityOfConjUnder (150s)
-✔ [152115/152151] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.CompatAtLQ (148s)
-✔ [152116/152151] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.UpQuad (149s)
-✔ [152117/152151] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.FrobeniusDualityComplexConj (149s)
-✔ [152118/152151] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.SelfDualC (151s)
-⚠ [152119/152152] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormGLIteratedDecayModerateGrowthStatement (6.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspFormGLIteratedDecayModerateGrowthStatement.lean:8:57: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/EigLift.lean:54:36: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspFormGLIteratedDecayModerateGrowthStatement.lean:8:103: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/EigLift.lean:162:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspFormGLIteratedDecayModerateGrowthStatement.lean:8:57: Unused tactic linter: `exact GlobalTheory.CuspRapid.iterated_decay` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspFormGLIteratedDecayModerateGrowthStatement.lean:8:103: Unused tactic linter: `(intros; apply GlobalTheory.CuspRapid.iterated_decay <;> assumption)` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [152175/152193] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.TraceZero (7.0s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/TraceZero.lean:4:22: Variable name `inst` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [152120/152152] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIdelicAbsValueCpowCharacterStatement (5.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIdelicAbsValueCpowCharacterStatement.lean:15:53: this tactic is never executed
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIdelicAbsValueCpowCharacterStatement.lean:15:95: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/TraceZero.lean:4:44: Variable name `inst_1` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIdelicAbsValueCpowCharacterStatement.lean:15:53: Unused tactic linter: `exact GlobalTheory.ResW.exists_abs_cpow` does nothing
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIdelicAbsValueCpowCharacterStatement.lean:15:95: Unused tactic linter: `(intros; apply GlobalTheory.ResW.exists_abs_cpow <;> assumption)` does nothing
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/TraceZero.lean:9:18: Variable name `inst` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [152121/152152] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalLetterRealExponentEqZeroIffIsUnitary (7.2s)
-⚠ [152122/152152] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitCentreDerivativeCommuteCentralEigenStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SplitCentreDerivativeCommuteCentralEigenStatement.lean:15:55: this tactic is never executed
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SplitCentreDerivativeCommuteCentralEigenStatement.lean:15:99: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SplitCentreDerivativeCommuteCentralEigenStatement.lean:15:55: Unused tactic linter: `exact GlobalTheory.ResW.zc_comm_mem_eigen` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SplitCentreDerivativeCommuteCentralEigenStatement.lean:15:99: Unused tactic linter: `(intros; apply GlobalTheory.ResW.zc_comm_mem_eigen <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [152123/152152] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalRepEndomorphismScalarSchur (10s)
-✔ [152124/152153] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormRapidDecaySiegelConeRealPoints (6.3s)
-⚠ [152125/152153] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalLetterRealExponentEqZeroIffIsUnitaryStatement (5.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspidalLetterRealExponentEqZeroIffIsUnitaryStatement.lean:15:64: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspidalLetterRealExponentEqZeroIffIsUnitaryStatement.lean:15:117: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspidalLetterRealExponentEqZeroIffIsUnitaryStatement.lean:15:64: Unused tactic linter: `exact GlobalTheory.ResW.rexp_eq_zero_iff_isUnitary` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspidalLetterRealExponentEqZeroIffIsUnitaryStatement.lean:15:117: Unused tactic linter: `(intros; apply GlobalTheory.ResW.rexp_eq_zero_iff_isUnitary <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [152126/152155] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalRepEndomorphismScalarSchurStatement (5.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspidalRepEndomorphismScalarSchurStatement.lean:15:48: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspidalRepEndomorphismScalarSchurStatement.lean:15:85: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspidalRepEndomorphismScalarSchurStatement.lean:15:48: Unused tactic linter: `exact GlobalTheory.CuspSchur.schur` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspidalRepEndomorphismScalarSchurStatement.lean:15:85: Unused tactic linter: `(intros; apply GlobalTheory.CuspSchur.schur <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [152127/152155] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormRapidDecaySiegelConeRealPointsStatement (5.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspFormRapidDecaySiegelConeRealPointsStatement.lean:8:59: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspFormRapidDecaySiegelConeRealPointsStatement.lean:8:107: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspFormRapidDecaySiegelConeRealPointsStatement.lean:8:59: Unused tactic linter: `exact GlobalTheory.cuspForm_rapidDecay_siegel` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspFormRapidDecaySiegelConeRealPointsStatement.lean:8:107: Unused tactic linter: `(intros; apply GlobalTheory.cuspForm_rapidDecay_siegel <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [152128/152156] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalLetterCentralExponentProperties (7.7s)
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
