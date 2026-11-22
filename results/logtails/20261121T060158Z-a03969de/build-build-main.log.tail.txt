@@ -1,17 +1,15 @@
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/PointRepUnramifiedAtAuxiliaryPlace.lean:207:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/PointRepUnramifiedAtAuxiliaryPlace.lean:219:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/PstExact.lean:303:0: automatically included section variable(s) unused in theorem `UpperTheory.V.Loc.PstExact.exists_diag`:
+  [NumberField E]
+  [IsAlgClosure E Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] [IsAlgClosure E Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [155225/155243] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.IsotypicOfJointlyInjectiveIntoIsotypic (25s)
+⚠ [155226/155247] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ExistsMultilinearIntertwinerOfCommutingSubgroups (12s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/ExistsMultilinearIntertwinerOfCommutingSubgroups.lean:51:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -19,7 +17,8 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/PointRepUnramifiedAtAuxiliaryPlace.lean:220:2: Try this: 
+⚠ [155227/155247] Built Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.UpOperatorEigenvalues.DiagOfCong (127s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/UpOperatorEigenvalues/DiagOfCong.lean:60:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -27,7 +26,20 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/PointRepUnramifiedAtAuxiliaryPlace.lean:253:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/UpOperatorEigenvalues/DiagOfCong.lean:93:61: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+✔ [155228/155247] Built Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.UpOperatorEigenvalues.PtSmall (130s)
+⚠ [155229/155250] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.EqOneOfTraceTranslationInvariantSemisimple (145s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/EqOneOfTraceTranslationInvariantSemisimple.lean:32:14: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/EqOneOfTraceTranslationInvariantSemisimple.lean:108:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/EqOneOfTraceTranslationInvariantSemisimple.lean:108:6: Unused tactic linter: `exact (IsIdempotentElem.trace_eq_zero_iff hI).mp htr_e` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [155230/155250] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ExistsTensorDualEmbeddingOfHasWeightAt (12s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/ExistsTensorDualEmbeddingOfHasWeightAt.lean:68:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -35,7 +47,10 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/PointRepUnramifiedAtAuxiliaryPlace.lean:301:2: Try this: 
+⚠ [155231/155250] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.CharpolyEqProd (147s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/CharpolyEqProd.lean:90:10: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+⚠ [155232/155256] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HidaCompleteRings.HeckeRestr (7.9s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/HidaCompleteRings/HeckeRestr.lean:72:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -43,7 +58,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/PointRepUnramifiedAtAuxiliaryPlace.lean:302:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/HidaCompleteRings/HeckeRestr.lean:73:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -51,7 +66,8 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/PointRepUnramifiedAtAuxiliaryPlace.lean:303:2: Try this: 
+⚠ [155233/155259] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.PlaceEmbeddingsBijectiveInfinitePlaces (121s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/PlaceEmbeddingsBijectiveInfinitePlaces.lean:52:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -59,31 +75,16 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/PointRepUnramifiedAtAuxiliaryPlace.lean:306:2: Try this: 
-  haveI̵
+✔ [155234/155259] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ExistsFixedVectorInLocallyStableSubspace (102s)
+✔ [155235/155261] Built Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.FlagWD (119s)
+⚠ [155236/155261] Built Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.UpOperatorEigenvalues.MemOrdC (9.2s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/UpOperatorEigenvalues/MemOrdC.lean:22:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.UpOperatorEigenvalues.MemOrdC.0.UpperTheory.V.Hi.Up.step`:
+  [IsTopologicalGroup H]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsTopologicalGroup H] in theorem ...
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/PointRepUnramifiedAtAuxiliaryPlace.lean:374:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/PointRepUnramifiedAtAuxiliaryPlace.lean:377:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/PointRepUnramifiedAtAuxiliaryPlace.lean:379:4: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/UpOperatorEigenvalues/MemOrdC.lean:103:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -91,7 +92,43 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/PointRepUnramifiedAtAuxiliaryPlace.lean:382:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/UpOperatorEigenvalues/MemOrdC.lean:235:16: `MonoidHom.finset_prod_apply` has been deprecated: Use `MonoidHom.finsetProd_apply` instead
+✔ [155237/155262] Built Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.OrdinaryHeckeCharacters.PartU (165s)
+⚠ [155238/155263] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsFun (6.8s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ExistsFun.lean:70:21: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ExistsFun.lean:75:21: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ExistsFun.lean:50:20: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ExistsFun.lean:50:37: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ExistsFun.lean:50:67: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ExistsFun.lean:50:99: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ExistsFun.lean:51:7: Variable name `inst_4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [155239/155263] Built Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.UpOperatorEigenvalues.EigChar (10s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/UpOperatorEigenvalues/EigChar.lean:20:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -99,7 +136,21 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/PointRepUnramifiedAtAuxiliaryPlace.lean:404:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/UpOperatorEigenvalues/EigChar.lean:63:17: This simp argument is unused:
+  Finsupp.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h, Ne.symm h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/UpOperatorEigenvalues/EigChar.lean:63:39: This simp argument is unused:
+  Ne.symm h
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h, Finsupp.single_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/UpOperatorEigenvalues/EigChar.lean:140:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -107,54 +158,3 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/PointRepUnramifiedAtAuxiliaryPlace.lean:434:23: This simp argument is unused:
-  MonoidHom.comp_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [pushCh, Units.coe_map, Subgroup.coe_subtype, hε1, MonoidHom.coe_coe, RingHom.comp_apply,
-    Units.val_one, IsLocalRing.ResidueField.algebraMap_eq]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/PointRepUnramifiedAtAuxiliaryPlace.lean:434:45: This simp argument is unused:
-  Units.coe_map
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [pushCh, MonoidHom.comp_apply, Subgroup.coe_subtype, hε1, MonoidHom.coe_coe, RingHom.comp_apply,
-    Units.val_one, IsLocalRing.ResidueField.algebraMap_eq]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/PointRepUnramifiedAtAuxiliaryPlace.lean:434:60: This simp argument is unused:
-  Subgroup.coe_subtype
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [pushCh, MonoidHom.comp_apply, Units.coe_map, hε1, MonoidHom.coe_coe, RingHom.comp_apply,
-    Units.val_one, IsLocalRing.ResidueField.algebraMap_eq]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/PointRepUnramifiedAtAuxiliaryPlace.lean:434:82: This simp argument is unused:
-  hε1
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [pushCh, MonoidHom.comp_apply, Units.coe_map, Subgroup.coe_subtype, MonoidHom.coe_coe,
-    RingHom.comp_apply, Units.val_one, IsLocalRing.ResidueField.algebraMap_eq]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/PointRepUnramifiedAtAuxiliaryPlace.lean:435:6: This simp argument is unused:
-  MonoidHom.coe_coe
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [pushCh, MonoidHom.comp_apply, Units.coe_map, Subgroup.coe_subtype, hε1, RingHom.comp_apply,
-    Units.val_one, IsLocalRing.ResidueField.algebraMap_eq]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeAlgebras/PointRepUnramifiedAtAuxiliaryPlace.lean:435:25: This simp argument is unused:
-  RingHom.comp_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [pushCh, MonoidHom.comp_apply, Units.coe_map, Subgroup.coe_subtype, hε1, MonoidHom.coe_coe,
-    Units.val_one, IsLocalRing.ResidueField.algebraMap_eq]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [155209/155222] Built Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.OrdinaryHeckeCharacters.HeckeDeterminantReductionEqResidual (162s)
-✔ [155210/155226] Built Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.OrdinaryHeckeCharacters.HeckeDeterminantSatisfiesDeformationRelations (165s)
-✔ [155211/155226] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.GalUnitary (187s)
