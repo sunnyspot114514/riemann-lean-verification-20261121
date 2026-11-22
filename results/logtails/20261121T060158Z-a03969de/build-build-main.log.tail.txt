@@ -1,19 +1,7 @@
-  Matrix.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [E, this]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [152260/152295] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.MapCenterEnvelopingProductGLMemCapelliAlgebra (10s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/MapCenterEnvelopingProductGLMemCapelliAlgebra.lean:12:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/MapCenterEnvelopingProductGLMemCapelliAlgebra.lean:13:2: Try this: 
+```
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/DiagonalTruncatedIntegral.lean:131:25: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/DiagonalTruncatedIntegral.lean:207:12: `continuous_finset_prod` has been deprecated: Use `continuous_finsetProd` instead
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/DiagonalTruncatedIntegral.lean:263:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -21,140 +9,152 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [152261/152295] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.CuspidalFiniteness.ExistsZalgOfCenterU (16s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/CuspidalFiniteness/ExistsZalgOfCenterU.lean:59:10: This simp argument is unused:
-  Pi.single_apply
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/DiagonalTruncatedIntegral.lean:90:21: This simp argument is unused:
+  Set.indicator_apply
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.single_apply, hi, hj, hv, eq_comm]
+  [apply] simp [hkk, hc]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/CuspidalFiniteness/ExistsZalgOfCenterU.lean:59:27: This simp argument is unused:
-  Matrix.single_apply
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/DiagonalTruncatedIntegral.lean:74:2: Try this: intro _ _ hB5b hC1 hE0a hE0c hE0d hEcut hFcen hF6c F I Gf ι _ _ _ _ D k a hH T hT γ ω h01 h10 β hβ hint
+⚠ [152338/152354] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.UnipotentIntegrandVanishesProof (7.4s)
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/UnipotentIntegrandVanishesProof.lean:165:52: `continuous_add_left` has been deprecated: Use `continuous_const_add` instead
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/UnipotentIntegrandVanishesProof.lean:68:56: This simp argument is unused:
+  mul_zero
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [Pi.single_apply, hi, hj, hv, eq_comm]
+  [apply] simp only [Complex.mul_re, Complex.ofReal_re, Complex.ofReal_im, Complex.add_re, Complex.add_im, Complex.I_re,
+    Complex.I_im, zero_mul, add_zero, sub_zero, zero_add, mul_one]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [152262/152297] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.PCuspFin (9.7s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TemperedLocalComponents/PCuspFin.lean:58:56: This simp argument is unused:
-  Matrix.one_apply
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/UnipotentIntegrandVanishesProof.lean:68:66: This simp argument is unused:
+  zero_mul
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.single_apply, Pi.single_apply, hij, ite_and, ite_apply]
+  [apply] simp only [Complex.mul_re, Complex.ofReal_re, Complex.ofReal_im, Complex.add_re, Complex.add_im, Complex.I_re,
+    Complex.I_im, mul_zero, add_zero, sub_zero, zero_add, mul_one]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [152263/152298] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.ComplexMinusRealLineMeasureCoordinates (8.2s)
-✔ [152264/152300] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.HalfPlaneMeasureInvariantProof (7.0s)
-⚠ [152265/152300] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.ARpowHalfSq (6.7s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/ARpowHalfSq.lean:15:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/ARpowHalfSq.lean:64:18: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-✔ [152266/152302] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.BNeg (12s)
-✔ [152267/152303] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.AutomorphyFactorKernelAlgebraProof (8.3s)
-✔ [152268/152304] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.MultivariableReproducingFormula (10s)
-⚠ [152269/152305] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.HeightsOnQuotientProof (11s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/HeightsOnQuotientProof.lean:14:0: automatically included section variable(s) unused in theorem `UpperTheory.Esk.HeightsOnQuotientLemmas.rep_mk`:
-  [Fintype I]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype I] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/HeightsOnQuotientProof.lean:48:0: automatically included section variable(s) unused in theorem `UpperTheory.Esk.HeightsOnQuotientLemmas.r_apply`:
-  [Fintype I]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype I] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/HeightsOnQuotientProof.lean:50:0: automatically included section variable(s) unused in theorem `UpperTheory.Esk.HeightsOnQuotientLemmas.r_det`:
-  [Fintype I]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype I] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/HeightsOnQuotientProof.lean:94:0: automatically included section variable(s) unused in theorem `UpperTheory.Esk.HeightsOnQuotientLemmas.lin_ne`:
-  [Fintype I]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype I] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [152270/152305] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.PerDeriv (138s)
-⚠ [152271/152306] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.KernelTermsInvariantBoundedProof (9.6s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/KernelTermsInvariantBoundedProof.lean:75:0: automatically included section variable(s) unused in theorem `UpperTheory.Esk.KernelTermsInvariantLemmas.r_apply`:
-  [Fintype I]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype I] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/KernelTermsInvariantBoundedProof.lean:77:0: automatically included section variable(s) unused in theorem `UpperTheory.Esk.KernelTermsInvariantLemmas.act_apply`:
-  [Fintype I]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype I] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/KernelTermsInvariantBoundedProof.lean:79:0: automatically included section variable(s) unused in theorem `UpperTheory.Esk.KernelTermsInvariantLemmas.ee_mul_left`:
-  [Fintype I]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype I] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/KernelTermsInvariantBoundedProof.lean:89:0: automatically included section variable(s) unused in theorem `UpperTheory.Esk.KernelTermsInvariantLemmas.ee_mul_right`:
-  [Fintype I]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype I] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/KernelTermsInvariantBoundedProof.lean:248:0: automatically included section variable(s) unused in theorem `UpperTheory.Esk.KernelTermsInvariantLemmas.smul_eq`:
-  [Fintype I]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype I] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [152272/152306] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.SatR (120s)
-⚠ [152273/152307] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.StrongApp (135s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/StrongApp.lean:20:8: `Set.setOf_forall` has been deprecated: Use `Set.ofPred_forall` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/StrongApp.lean:43:8: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-⚠ [152274/152307] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.HolCap (130s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/HolCap.lean:18:33: This simp argument is unused:
-  Matrix.diagonal_apply
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/UnipotentIntegrandVanishesProof.lean:71:56: This simp argument is unused:
+  mul_zero
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [e, h1]
+  [apply] simp only [Complex.mul_im, Complex.ofReal_re, Complex.ofReal_im, Complex.add_re, Complex.add_im, Complex.I_re,
+    Complex.I_im, zero_mul, add_zero, sub_zero, zero_add, mul_one]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/HolCap.lean:21:33: This simp argument is unused:
-  Matrix.diagonal_apply
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/UnipotentIntegrandVanishesProof.lean:71:86: This simp argument is unused:
+  sub_zero
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [e, h2]
+  [apply] simp only [Complex.mul_im, Complex.ofReal_re, Complex.ofReal_im, Complex.add_re, Complex.add_im, Complex.I_re,
+    Complex.I_im, mul_zero, zero_mul, add_zero, zero_add, mul_one]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [152275/152307] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.HyperbolicKappaPropertiesProof (9.0s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/HyperbolicKappaPropertiesProof.lean:115:17: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-⚠ [152276/152307] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.LocEig (131s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/LocEig.lean:34:71: This simp argument is unused:
+✔ [152339/152357] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.SplitTsum (5.2s)
+⚠ [152340/152366] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.RSubPowApply (6.9s)
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/RSubPowApply.lean:12:0: automatically included section variable(s) unused in theorem `UpperTheory.Esk.CommutingOperatorTraces.mapsTo_E`:
+  [FiniteDimensional ℂ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℂ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [152341/152372] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.ContinuousCompTorusMap (6.7s)
+⚠ [152342/152373] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.FiniteSystemProof (9.4s)
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/FiniteSystemProof.lean:129:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/FiniteSystemProof.lean:139:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/FiniteSystemProof.lean:196:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/FiniteSystemProof.lean:222:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/FiniteSystemProof.lean:276:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/FiniteSystemProof.lean:374:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [152343/152373] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.IwasawaA (75s)
+⚠ [152344/152374] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.CoRatAff (75s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/CoRatAff.lean:21:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [152345/152376] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.RotEig (75s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/RotEig.lean:19:45: This simp argument is unused:
+  Matrix.mul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [rot, Fin.sum_univ_succ, Real.cos_add, Real.sin_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/RotEig.lean:19:63: This simp argument is unused:
   Fin.sum_univ_succ
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.GeneralLinearGroup.scalar, aff_val, Matrix.mul_apply, Matrix.diagonal_apply, mul_div_cancel₀]
+  [apply] simp [rot, Matrix.mul_apply, Real.cos_add, Real.sin_add]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/LocEig.lean:46:60: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+⚠ [152346/152376] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.HolEis (81s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/HolEis.lean:140:39: This simp argument is unused:
+  mul_inv
 
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/LocEig.lean:58:60: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+Hint: Omit it from the simp argument list.
+  [apply] simp only [f, am, mul_assoc, hT, map_mul, map_inv, ν.2.2 a, inv_one, mul_one]
 
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-✔ [152277/152307] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.ExpUnique (141s)
-✔ [152278/152307] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.ActionsPreserveMeasuresProof (5.8s)
-⚠ [152279/152307] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.ExistsIdele (155s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/ExistsIdele.lean:30:28: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/ExistsIdele.lean:334:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.ExistsIdele.0.UpperTheory.V.Sd.reAt_neg`:
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/HolEis.lean:140:75: This simp argument is unused:
+  inv_one
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Hint: Omit it from the simp argument list.
+  [apply] simp only [f, am, mul_assoc, hT, mul_inv, map_mul, map_inv, ν.2.2 a, mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/HolEis.lean:163:37: This simp argument is unused:
+  mul_inv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [f, am, mul_assoc, hT, map_mul, map_inv, ν.2.2 a, inv_one, mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/HolEis.lean:163:73: This simp argument is unused:
+  inv_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [f, am, mul_assoc, hT, mul_inv, map_mul, map_inv, ν.2.2 a, mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [152347/152380] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.FinalTF (5.3s)
