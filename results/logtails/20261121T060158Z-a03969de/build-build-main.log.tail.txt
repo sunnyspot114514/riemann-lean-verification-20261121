@@ -1,54 +1,15 @@
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/WeilBound/CoreStatements/VolumeEquality/BallVolMoeb.lean:88:22: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/WeilBound/CoreStatements/VolumeEquality/BallVolMoeb.lean:110:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/BasisOfSubmoduleIffUniqueCoordsStatement.lean:17:175: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.Flat.CPoint.basis_iff_unique_combinations <;> assumption)` does nothing
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [134482/134523] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.NumberFieldEmbeddingsIntoCpIntegral (5.4s)
-⚠ [134483/134523] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.FibrePowerFreeConjInjective (5.5s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FibrePowerFreeConjInjective.lean:11:52: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FibrePowerFreeConjInjective.lean:11:52: Unused tactic linter: `exact PositivityTheory.HtPt.Cf.fib_inj` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [134484/134523] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.CurveFamilyFormalGerm (5.6s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CurveFamilyFormalGerm.lean:11:54: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CurveFamilyFormalGerm.lean:11:54: Unused tactic linter: `exact PositivityTheory.HtPt.Cf.family_ex` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [134485/134525] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.ResidueHodgeLatticeAdaptedBasisStatement (5.8s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ResidueHodgeLatticeAdaptedBasisStatement.lean:38:83: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ResidueHodgeLatticeAdaptedBasisStatement.lean:38:155: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ResidueHodgeLatticeAdaptedBasisStatement.lean:38:83: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Flat.CPoint.det_evaluated_frame` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ResidueHodgeLatticeAdaptedBasisStatement.lean:38:155: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.Flat.CPoint.det_evaluated_frame <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [134486/134525] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.CpIntegersValuationRingStatement (5.4s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CpIntegersValuationRingStatement.lean:17:76: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CpIntegersValuationRingStatement.lean:17:141: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CpIntegersValuationRingStatement.lean:17:76: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Flat.CPoint.ocp_integers` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CpIntegersValuationRingStatement.lean:17:141: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.Flat.CPoint.ocp_integers <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [134487/134527] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.CpEmbeddingFactorsThroughComplex (5.4s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CpEmbeddingFactorsThroughComplex.lean:18:2: Try this: 
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/VolumeEquality/BallVolMoeb.lean:119:28: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+warning: src/Development/WeilBound/CoreStatements/VolumeEquality/BallVolMoeb.lean:118:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -56,7 +17,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CpEmbeddingFactorsThroughComplex.lean:28:2: Try this: 
+warning: src/Development/WeilBound/CoreStatements/VolumeEquality/BallVolMoeb.lean:123:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -64,97 +25,136 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [134488/134528] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.NumberFieldEmbeddingsIntoCpIntegralStatement (5.2s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/NumberFieldEmbeddingsIntoCpIntegralStatement.lean:17:87: this tactic is never executed
+⚠ [134807/134835] Built Development.WeilBound.CoreStatements.VolumeEquality.DegPushNumEq (7.4s)
+warning: src/Development/WeilBound/CoreStatements/VolumeEquality/DegPushNumEq.lean:43:59: `zero_le'` has been deprecated: Use `zero_le` instead
+warning: src/Development/WeilBound/CoreStatements/VolumeEquality/DegPushNumEq.lean:83:0: automatically included section variable(s) unused in theorem `SheetDecomposition.fnField_le_join_inl`:
+  [Fintype K]
+  [(b : K) → Fintype (ι b)]
+  [Fintype K']
+  [(b : K') → Fintype (ι' b)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype K] [(b : K) → Fintype (ι b)] [Fintype K'] [(b : K') → Fintype (ι' b)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/WeilBound/CoreStatements/VolumeEquality/DegPushNumEq.lean:91:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/VolumeEquality/DegPushNumEq.lean:92:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/VolumeEquality/DegPushNumEq.lean:102:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/VolumeEquality/DegPushNumEq.lean:168:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [134808/134835] Built Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RealTowerProportional (7.7s)
+⚠ [134809/134835] Built Formalism.LocalToGlobal.LatticeGeometry.PluckerHadamard.BlockVandermondeForms (6.2s)
+warning: src/Formalism/LocalToGlobal/LatticeGeometry/PluckerHadamard/BlockVandermondeForms.lean:18:0: automatically included section variable(s) unused in theorem `Formalism.L2.Geo.BlockVandermondeForms.dS_apply`:
+  [Fintype Ψ]
+  [DecidableEq Ψ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Ψ] [DecidableEq Ψ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/LocalToGlobal/LatticeGeometry/PluckerHadamard/BlockVandermondeForms.lean:34:12: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Ne.symm hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Formalism/LocalToGlobal/LatticeGeometry/PluckerHadamard/BlockVandermondeForms.lean:44:0: automatically included section variable(s) unused in theorem `Formalism.L2.Geo.BlockVandermondeForms.d_prod_zero`:
+  [Fintype Ψ]
+  [DecidableEq Ψ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Ψ] [DecidableEq Ψ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Formalism/LocalToGlobal/LatticeGeometry/PluckerHadamard/BlockVandermondeForms.lean:134:0: automatically included section variable(s) unused in theorem `Formalism.L2.Geo.BlockVandermondeForms.vdm_homog`:
+  [Fintype Ψ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Ψ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [134810/134835] Built Development.WeilBound.CoreStatements.VolumeEquality.DegPushPFa (10s)
+warning: src/Development/WeilBound/CoreStatements/VolumeEquality/DegPushPFa.lean:75:0: automatically included section variable(s) unused in theorem `SheetDecomposition.PF.fnField_join`:
+  [Fintype K']
+  [(b : K') → Fintype (ι' b)]
+  [Algebra ℚ Ω₁]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype K'] [(b : K') → Fintype (ι' b)] [Algebra ℚ Ω₁] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [134811/134836] Built Development.WeilBound.CoreStatements.VolumeEquality.DegPushPFb (8.7s)
+✔ [134812/134836] Built Development.WeilBound.CoreStatements.VolumeEquality.BallVolModel (7.5s)
+⚠ [134813/134836] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.FullIntersectionGenericBoundStatement (12s)
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FullIntersectionGenericBoundStatement.lean:13:79: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/NumberFieldEmbeddingsIntoCpIntegralStatement.lean:17:163: this tactic is never executed
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FullIntersectionGenericBoundStatement.lean:13:147: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/NumberFieldEmbeddingsIntoCpIntegralStatement.lean:17:87: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Flat.CPoint.embeddings_padicComplex` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FullIntersectionGenericBoundStatement.lean:13:79: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.exists_componentData_origin` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/NumberFieldEmbeddingsIntoCpIntegralStatement.lean:17:163: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.Flat.CPoint.embeddings_padicComplex <;> assumption)` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FullIntersectionGenericBoundStatement.lean:13:147: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.Ar.exists_componentData_origin <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [134489/134528] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmConjugationCompatComplexConj (5.3s)
-⚠ [134490/134528] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.FibrePowerFreeConjInjectiveStatement (5.4s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FibrePowerFreeConjInjectiveStatement.lean:11:86: this tactic is never executed
+⚠ [134814/134836] Built Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.GoodTowerRealExtra (10s)
+warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/GoodTowerRealExtra.lean:17:72: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FibrePowerFreeConjInjectiveStatement.lean:11:161: this tactic is never executed
+warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/GoodTowerRealExtra.lean:17:72: Unused tactic linter: `exact RootFieldNumerics.global_model_tower_final_condition` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [134815/134836] Built Development.WeilBound.CoreStatements.VolumeEquality.BallVolLevel (8.0s)
+⚠ [134816/134836] Built Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RealTowerProportionalStatement (5.3s)
+warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/RealTowerProportionalStatement.lean:8:86: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FibrePowerFreeConjInjectiveStatement.lean:11:86: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Relay.fibre_power_free_conj_injective` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FibrePowerFreeConjInjectiveStatement.lean:11:161: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Relay.fibre_power_free_conj_injective <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [134491/134530] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.CurveFamilyFormalGermStatement (5.7s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CurveFamilyFormalGermStatement.lean:11:79: this tactic is never executed
+warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/RealTowerProportionalStatement.lean:8:161: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CurveFamilyFormalGermStatement.lean:11:147: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CurveFamilyFormalGermStatement.lean:11:79: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Relay.curve_family_formal_germ` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/RealTowerProportionalStatement.lean:8:86: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Top.rootTower_proportional_of_unif` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CurveFamilyFormalGermStatement.lean:11:147: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Relay.curve_family_formal_germ <;> assumption)` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/RealTowerProportionalStatement.lean:8:161: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.Ar.Top.rootTower_proportional_of_unif <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [134492/134531] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.DvrPointEigenFrameReduction (5.5s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/DvrPointEigenFrameReduction.lean:16:8: Overlapping instance parameters in `exists_modelPoint_extension`:
+⚠ [134817/134838] Built Development.WeilBound.CoreStatements.EqualVolumeCompactOpens.CptLact (5.8s)
+warning: src/Development/WeilBound/CoreStatements/EqualVolumeCompactOpens/CptLact.lean:20:22: Variable name `S` is not explicitly referenced.
 
-⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.
-💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.
-⚠️ `[IsDomain V]` and `[IsDiscreteValuationRing V]` each imply `[Nontrivial V]`.
-💡️ Of these, `[IsDomain V]` and `[IsDiscreteValuationRing V]` may be removed.
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _S
 
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-⚠ [134493/134531] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.CpEmbeddingFactorsThroughComplexStatement (5.4s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CpEmbeddingFactorsThroughComplexStatement.lean:16:88: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/WeilBound/CoreStatements/EqualVolumeCompactOpens/CptLact.lean:21:23: Variable name `f` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CpEmbeddingFactorsThroughComplexStatement.lean:16:165: this tactic is never executed
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _f
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CpEmbeddingFactorsThroughComplexStatement.lean:16:88: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Flat.CPoint.exists_emb_through_coeff` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CpEmbeddingFactorsThroughComplexStatement.lean:16:165: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.Flat.CPoint.exists_emb_through_coeff <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [134494/134531] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointComponentLocalRingStatement (5.3s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GenericPointComponentLocalRingStatement.lean:15:81: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GenericPointComponentLocalRingStatement.lean:15:151: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GenericPointComponentLocalRingStatement.lean:15:81: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Flat.CPoint.isLocalRing_regAt` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GenericPointComponentLocalRingStatement.lean:15:151: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.Flat.CPoint.isLocalRing_regAt <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [134495/134531] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmConjugationCompatComplexConjStatement (5.1s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CmConjugationCompatComplexConjStatement.lean:16:84: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CmConjugationCompatComplexConjStatement.lean:16:157: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CmConjugationCompatComplexConjStatement.lean:16:84: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Flat.CPoint.conjugate_coe_eq_bar` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/CmConjugationCompatComplexConjStatement.lean:16:157: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.Flat.CPoint.conjugate_coe_eq_bar <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [134818/134842] Built Development.WeilBound.CoreStatements.VolumeEquality.BallVolFam (8.4s)
