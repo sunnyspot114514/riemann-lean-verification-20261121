@@ -1,142 +1,3 @@
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/AutomorphicCharacters/AuSign.lean:10:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/AutomorphicCharacters/AuSign.lean:11:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/AutomorphicCharacters/AuSign.lean:16:45: This simp argument is unused:
-  Algebra.algebraMap_self
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [RingHom.algebraMap_toAlgebra, RingHom.id_apply, RingHom.toRatAlgHom_apply] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [152983/153051] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.UnipotentIdempotents.TCont (178s)
-✔ [152984/153051] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.CompactIntegralFields.Imports (200s)
-✔ [152985/153051] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.ProjectiveLineFlags.TrNe (172s)
-✔ [152986/153051] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.ProjectiveLineFlags.DetExt (165s)
-✔ [152987/153051] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.ProjectiveLineFlags.CpSmul (169s)
-⚠ [152988/153052] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.ProjectiveLineFlags.TraceSwap (170s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/TraceSwap.lean:18:20: `Submodule.linearProjOfIsCompl` has been deprecated: Use `Submodule.projectionOnto` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/TraceSwap.lean:19:28: `Submodule.linearProjOfIsCompl_apply_left` has been deprecated: Use `Submodule.projectionOnto_apply_left` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/TraceSwap.lean:21:28: `Submodule.linearProjOfIsCompl_apply_right` has been deprecated: Use `Submodule.projectionOnto_apply_right` instead
-⚠ [152989/153053] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.ProjectiveLineFlags.LevEps (165s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/LevEps.lean:57:34: This simp argument is unused:
-  MonoidHom.codRestrict_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [UpperTheory.V.W.pushCh]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [152990/153053] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.ProjectiveLineFlags.ContinuousLinearClosed (178s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:40:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:79:94: This simp argument is unused:
-  map_sub
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [W.GDet.map, W.GDet.ofRep, W.Resid.Dbar, MonoidHom.coe_comp, Function.comp_apply, W.GDet.repAlg,
-    MonoidAlgebra.lift_single] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:79:118: This simp argument is unused:
-  MonoidAlgebra.lift_single
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [W.GDet.map, W.GDet.ofRep, W.Resid.Dbar, MonoidHom.coe_comp, Function.comp_apply, map_sub,
-    W.GDet.repAlg] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:80:38: This simp argument is unused:
-  RingHom.coe_coe
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [AlgHom.toRingHom_eq_coe, map_sub, MonoidAlgebra.lift_single, map_one, Matrix.coe_detMonoidHom,
-    MonoidHom.coe_comp, Function.comp_apply, one_smul] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:80:55: This simp argument is unused:
-  map_sub
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [AlgHom.toRingHom_eq_coe, RingHom.coe_coe, MonoidAlgebra.lift_single, map_one,
-    Matrix.coe_detMonoidHom, MonoidHom.coe_comp, Function.comp_apply, one_smul] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:80:64: This simp argument is unused:
-  MonoidAlgebra.lift_single
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [AlgHom.toRingHom_eq_coe, RingHom.coe_coe, map_sub, map_one, Matrix.coe_detMonoidHom,
-    MonoidHom.coe_comp, Function.comp_apply, one_smul] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:80:91: This simp argument is unused:
-  map_one
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [AlgHom.toRingHom_eq_coe, RingHom.coe_coe, map_sub, MonoidAlgebra.lift_single,
-    Matrix.coe_detMonoidHom, MonoidHom.coe_comp, Function.comp_apply, one_smul] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:80:125: This simp argument is unused:
-  MonoidHom.coe_comp
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [AlgHom.toRingHom_eq_coe, RingHom.coe_coe, map_sub, MonoidAlgebra.lift_single, map_one,
-    Matrix.coe_detMonoidHom, Function.comp_apply, one_smul] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:80:145: This simp argument is unused:
-  Function.comp_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [AlgHom.toRingHom_eq_coe, RingHom.coe_coe, map_sub, MonoidAlgebra.lift_single, map_one,
-    Matrix.coe_detMonoidHom, MonoidHom.coe_comp, one_smul] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:80:166: This simp argument is unused:
-  one_smul
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [AlgHom.toRingHom_eq_coe, RingHom.coe_coe, map_sub, MonoidAlgebra.lift_single, map_one,
-    Matrix.coe_detMonoidHom, MonoidHom.coe_comp, Function.comp_apply] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:86:12: This simp argument is unused:
-  Matrix.charmatrix_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.one_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:86:37: This simp argument is unused:
-  Matrix.one_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.charmatrix_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:88:12: This simp argument is unused:
-  Matrix.charmatrix_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.one_apply, hij]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/ContinuousLinearClosed.lean:88:37: This simp argument is unused:
-  Matrix.one_apply
 
 Hint: Omit it from the simp argument list.
   [apply] simp [Matrix.charmatrix_apply, hij]
@@ -158,3 +19,142 @@ Hint: Omit it from the simp argument list.
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
 ⚠ [152991/153053] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.StabilizerIndexBounds.PowSep (5.7s)
 warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/StabilizerIndexBounds/PowSep.lean:35:42: `Polynomial.natDegree_finset_prod_X_sub_C_eq_card` has been deprecated: Use `Polynomial.natDegree_finsetProd_X_sub_C_eq_card` instead
+⚠ [152992/153053] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.ProjectiveLineFlags.CcEx (129s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/CcEx.lean:9:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/CcEx.lean:10:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/CcEx.lean:11:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/CcEx.lean:12:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/CcEx.lean:13:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [152993/153053] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.PhiCharacterResidues.PhiMu (179s)
+✔ [152994/153053] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.PhiCharacterResidues.AdjEqConj (174s)
+⚠ [152995/153053] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.ProjectiveLineFlags.TowerGal (181s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/TowerGal.lean:8:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/TowerGal.lean:9:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/TowerGal.lean:50:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/TowerGal.lean:51:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/TowerGal.lean:59:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/TowerGal.lean:60:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/TowerGal.lean:61:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/TowerGal.lean:69:82: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/TowerGal.lean:69:82: Unused tactic linter: `exact Subsingleton.elim _ _` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [152996/153053] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.PhiCharacterResidues.PhiConj (158s)
+✔ [152997/153053] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.ProjectiveLineFlags.PsPairAlt (181s)
+⚠ [152998/153053] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.PhiCharacterResidues.PhiFlag (181s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/PhiCharacterResidues/PhiFlag.lean:24:43: This simp argument is unused:
+  Matrix.mul_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [UpperTheory.V.Ws.Link.rho_apply, Matrix.smul_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/PhiCharacterResidues/PhiFlag.lean:24:60: This simp argument is unused:
+  Matrix.smul_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [UpperTheory.V.Ws.Link.rho_apply, Matrix.mul_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [152999/153053] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.PhiCharacterResidues.SpacePsiMul (180s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/PhiCharacterResidues/SpacePsiMul.lean:59:20: This simp argument is unused:
+  h0
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [res] at hu
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [153000/153053] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.ProjectiveLineFlags.GspForm (208s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/ProjectiveLineFlags/GspForm.lean:29:15: This simp argument is unused:
+  Units.val_mk
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
