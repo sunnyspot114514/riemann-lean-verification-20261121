@@ -1,25 +1,10 @@
 
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [160540/160578] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SmoothRepresentationsGL.ArchStep (8.3s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/ArchStep.lean:29:12: `ContinuousLinearMap.add_apply` has been deprecated: Use `_root_.add_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `_root_.add_apply x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/ArchStep.lean:32:12: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/ArchStep.lean:67:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SmoothRepresentationsGL.ArchStep.0.colL_sq`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/ArchStep.lean:79:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SmoothRepresentationsGL.ArchStep.0.rowM_eq`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/ArchStep.lean:115:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/IntegralUnipFundamentalDomainCompLatticePreservi.lean:12:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -27,134 +12,149 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/ArchStep.lean:116:2: Try this: 
-  haveI̵
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/IntegralUnipFundamentalDomainCompLatticePreservi.lean:24:74: try 'simp' instead of 'simpa'
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [160678/160721] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ConstantTermSpaceTypesOfBdd (6.6s)
+✔ [160679/160721] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.BaseChangeUnits.ComplexBaseChangeOfLiterature (75s)
+✔ [160680/160723] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.HasModerateGrowthConstantTerm (5.5s)
+✔ [160681/160723] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.FiniteDimensionalOfBddCuspidal (9.0s)
+✔ [160682/160723] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ExistsConstantTermLinearMapEquivariantUniversalE (6.6s)
+⚠ [160683/160723] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ConstantTermLeviRationalLeftInvariant (6.5s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/ConstantTermLeviRationalLeftInvariant.lean:55:10: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+✔ [160684/160723] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.UActionMemUnipotentInvariant (5.2s)
+✔ [160685/160726] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.AlgModQuantumDetLeviBlocksOfParabolic (7.4s)
+⚠ [160686/160728] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ArchExpSingleUnipotentEmbedding (5.7s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/ArchExpSingleUnipotentEmbedding.lean:23:24: This simp argument is unused:
+  if_false
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/ArchStep.lean:117:2: Try this: 
-  haveI̵
+Hint: Omit it from the simp argument list.
+  [apply] simp only [P, hp]
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/ArchExpSingleUnipotentEmbedding.lean:46:25: This simp argument is unused:
+  if_false
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [160541/160578] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SmoothRepresentationsGL.BetaInt (7.6s)
-✔ [160542/160578] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SmoothRepresentationsGL.BetaSch (7.6s)
-⚠ [160543/160578] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SmoothRepresentationsGL.PftMul (8.1s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/PftMul.lean:88:15: `SchwartzMap.add_apply` has been deprecated: Use `_root_.add_apply` instead
+Hint: Omit it from the simp argument list.
+  [apply] simp only [P, hne]
 
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `_root_.add_apply x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/PftMul.lean:88:38: `SchwartzMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/PftMul.lean:98:13: `SchwartzMap.add_apply` has been deprecated: Use `_root_.add_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `_root_.add_apply x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/PftMul.lean:98:36: `SchwartzMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
-⚠ [160544/160578] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SmoothRepresentationsGL.SchTensor (8.1s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/SchTensor.lean:44:19: `ContinuousLinearMap.add_apply` has been deprecated: Use `_root_.add_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `_root_.add_apply x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/SchTensor.lean:44:50: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
-✔ [160545/160578] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SmoothRepresentationsGL.RowStep (6.8s)
-✔ [160546/160579] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SmoothRepresentationsGL.PftDeriv (13s)
-⚠ [160547/160579] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SmoothRepresentationsGL.SchOfClosed (8.0s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/SchOfClosed.lean:79:12: `ContinuousLinearMap.sum_apply` has been deprecated: Use `_root_.sum_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `_root_.sum_apply x`).
-✔ [160548/160579] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SmoothRepresentationsGL.HalfBound (13s)
-⚠ [160549/160579] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SmoothRepresentationsGL.ColConj (7.4s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/SmoothRepresentationsGL/ColConj.lean:21:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [160550/160579] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RankEquivariantFunctionalsCongr (10s)
-✔ [160551/160579] Built Development.AutomorphicArithmetic.Foundations.Convolution.TensFun (15s)
-✔ [160552/160579] Built PositivityTheory.AutomorphicForms.PublishedInputs.CyclicBaseChange.PSNormPow (336s)
-✔ [160553/160579] Built PositivityTheory.AutomorphicForms.PublishedInputs.CyclicBaseChange.PSGalAdEx (338s)
-✔ [160554/160579] Built PositivityTheory.AutomorphicForms.PublishedInputs.CyclicBaseChange.PSConjSatC (336s)
-✔ [160555/160579] Built PositivityTheory.AutomorphicForms.PublishedInputs.CyclicBaseChange.PSConjSatR (338s)
-⚠ [160556/160579] Built PositivityTheory.AutomorphicForms.PublishedInputs.CyclicBaseChange.PSConjSpaceR (331s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CyclicBaseChange/PSConjSpaceR.lean:345:34: `Equiv.apply_eq_iff_eq_symm_apply` has been deprecated: Use `Equiv.eq_symm_apply` instead
-
-Note: The updated constant has a different type:
-  ∀ {α : Sort u_1} {β : Sort u_2} (e : α ≃ β) {x : β} {y : α}, y = e.symm x ↔ e y = x
-instead of
-  ∀ {α : Sort u} {β : Sort v} {x : α} {y : β} (f : α ≃ β), f x = y ↔ x = f.symm y
-⚠ [160557/160579] Built PositivityTheory.AutomorphicForms.PublishedInputs.CyclicBaseChange.PSConjSpaceC (329s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CyclicBaseChange/PSConjSpaceC.lean:20:0: automatically included section variable(s) unused in theorem `UpperTheory.CBC.SConjSpaceCAux.cc_of_eq`:
-  [NumberField E]
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [IsTotallyComplex E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CyclicBaseChange/PSConjSpaceC.lean:25:0: automatically included section variable(s) unused in theorem `UpperTheory.CBC.SConjSpaceCAux.cc_of_ne`:
-  [NumberField E]
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [IsTotallyComplex E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CyclicBaseChange/PSConjSpaceC.lean:37:0: automatically included section variable(s) unused in theorem `UpperTheory.CBC.SConjSpaceCAux.conj_ne`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CyclicBaseChange/PSConjSpaceC.lean:102:0: automatically included section variable(s) unused in theorem `UpperTheory.CBC.SConjSpaceCAux.atEmb_apply_ne`:
-  [NumberField E]
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [IsTotallyComplex E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CyclicBaseChange/PSConjSpaceC.lean:155:20: Variable name `w` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [160687/160728] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ConstantTermSpaceCentreOfBdd (6.3s)
+✔ [160688/160728] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ConstantTermSpaceAutomorphicProperties (5.3s)
+✔ [160689/160730] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.BlockEmbeddingCommInfEmbAndExp (6.6s)
+✔ [160690/160730] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.AlgModOfInjectiveIntertwining (5.9s)
+⚠ [160691/160732] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.AevalInter (5.5s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/AevalInter.lean:4:20: Variable name `inst` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _w
+  [apply] _inst
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CyclicBaseChange/PSConjSpaceC.lean:158:13: Variable name `w` is not explicitly referenced.
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/AevalInter.lean:4:44: Variable name `inst_1` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _w
+  [apply] _inst_1
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CyclicBaseChange/PSConjSpaceC.lean:161:13: Variable name `w` is not explicitly referenced.
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/AevalInter.lean:5:5: Variable name `inst_2` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _w
+  [apply] _inst_2
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CyclicBaseChange/PSConjSpaceC.lean:187:0: automatically included section variable(s) unused in theorem `UpperTheory.CBC.SConjSpaceCAux.conjFin_symm_conjFin`:
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex E] in theorem ...
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/AevalInter.lean:5:31: Variable name `inst_3` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CyclicBaseChange/PSConjSpaceC.lean:249:0: automatically included section variable(s) unused in theorem `UpperTheory.CBC.SConjSpaceCAux.pFin_sFin`:
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex E] in theorem ...
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CyclicBaseChange/PSConjSpaceC.lean:487:0: automatically included section variable(s) unused in theorem `UpperTheory.CBC.SConjSpaceCAux.height_eq`:
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex E] in theorem ...
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [160692/160737] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.AlgebraicModuleOfVanishingBlock (8.7s)
+⚠ [160693/160737] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.HeightBlockEmbeddingLe (5.9s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/HeightBlockEmbeddingLe.lean:21:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/HeightBlockEmbeddingLe.lean:24:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [160694/160737] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ExistsRestrictionBlockEmbeddingIntertwinesLie (7.1s)
+✔ [160695/160737] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.BlockEmbeddingAdelicNormCompat (6.4s)
+✔ [160696/160737] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.FiniteDimensionalMapOfSeparatelyFinite (5.9s)
+✔ [160697/160741] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.SlSpPreservesGrowthAndLevel (6.4s)
+⚠ [160698/160742] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.UpperTriangularEqUnipotentMulLevi (7.1s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/UpperTriangularEqUnipotentMulLevi.lean:30:40: This simp argument is unused:
+  Matrix.one_apply
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.reindex_apply, this, cn_ne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/UpperTriangularEqUnipotentMulLevi.lean:35:50: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.reindex_apply, this, (cn_ne c b).symm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/UpperTriangularEqUnipotentMulLevi.lean:56:40: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.reindex_apply, this, (cn_ne d a).symm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/UpperTriangularEqUnipotentMulLevi.lean:61:51: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.reindex_apply, this, cn_ne b c]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/UpperTriangularEqUnipotentMulLevi.lean:75:12: This simp argument is unused:
+  this
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.reindex_apply, Matrix.one_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/UpperTriangularEqUnipotentMulLevi.lean:80:34: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.reindex_apply, cn_ne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/UpperTriangularEqUnipotentMulLevi.lean:84:22: This simp argument is unused:
+  this
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.reindex_apply, Matrix.one_apply, (cn_ne c b).symm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/UpperTriangularEqUnipotentMulLevi.lean:84:50: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [this, Matrix.reindex_apply, (cn_ne c b).symm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/UpperTriangularEqUnipotentMulLevi.lean:85:23: This simp argument is unused:
+  this
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.reindex_apply, Matrix.one_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [160699/160775] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.SiegelLeviBlockAevalStable (8.4s)
+✔ [160700/160778] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.FiniteDimensionalSlSpReduction (6.7s)
+✔ [160701/160779] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.FiniteDimensionalOfFiniteDimensionalLeviSlices (7.4s)
+✔ [160702/160779] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.StrongMultiplicityOne.Imports (7.9s)
+✔ [160703/160779] Built Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.FormsClosure (9.9s)
+✔ [160704/160780] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.StrongMultiplicityOne.StrongMultOneC (8.9s)
