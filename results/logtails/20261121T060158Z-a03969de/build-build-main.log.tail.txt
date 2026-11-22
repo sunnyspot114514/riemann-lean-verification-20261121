@@ -1,5 +1,4 @@
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/DualInclUnit.lean:124:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/CotDer.lean:18:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -7,7 +6,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/DualInclUnit.lean:156:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/CotDer.lean:19:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -15,7 +14,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/DualInclUnit.lean:158:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/CotDer.lean:20:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -23,7 +22,48 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/DualInclUnit.lean:159:2: Try this: 
+⚠ [153101/153124] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.EigenbasisLifts.DerZero (243s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/DerZero.lean:18:10: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/DerZero.lean:18:10: Unused tactic linter: `simp [TrivSqZeroExt.algebraMap_eq_inl']` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [153102/153124] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.EigenbasisLifts.TrPlus (243s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/TrPlus.lean:49:23: `continuous_mul_left` has been deprecated: Use `continuous_const_mul` instead
+✔ [153103/153124] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.EigenbasisLifts.MatrixUnits2 (243s)
+✔ [153104/153124] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.EigenbasisLifts.EbSMul (243s)
+⚠ [153105/153124] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.EigenbasisLifts.CocRel (247s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/CocRel.lean:33:49: This simp argument is unused:
+  Matrix.mul_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.mul_assoc, Matrix.add_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [153106/153124] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.EigenbasisLifts.RelForm (244s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/RelForm.lean:21:4: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [MonoidHom.coe_mk, OneHom.coe_mk, MulOpposite.unop_smul, MulOpposite.unop_op,
+    MonoidAlgebra.smul_single']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [153107/153124] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.CompactIntegralFields.LinkEx (209s)
+✔ [153108/153124] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.EigenbasisLifts.LamIso (231s)
+✔ [153109/153124] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.EigenbasisLifts.LocLOpen (230s)
+⚠ [153110/153124] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.EigenbasisLifts.RootsNear (230s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/RootsNear.lean:12:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/RootsNear.lean:24:10: `Polynomial.eval_finset_sum` has been deprecated: Use `Polynomial.eval_finsetSum` instead
+⚠ [153111/153126] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.EigenbasisLifts.InertiaTrivialOfCharpolyRootsNearCharacter (230s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/InertiaTrivialOfCharpolyRootsNearCharacter.lean:58:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -31,7 +71,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/DualInclUnit.lean:188:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/InertiaTrivialOfCharpolyRootsNearCharacter.lean:61:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -39,7 +79,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/DualInclUnit.lean:189:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/InertiaTrivialOfCharpolyRootsNearCharacter.lean:62:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -47,7 +87,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/DualInclUnit.lean:213:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/InertiaTrivialOfCharpolyRootsNearCharacter.lean:67:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -55,16 +95,35 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [153091/153124] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.EigenbasisLifts.AwAvg (222s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/AwAvg.lean:13:2: Try this: 
-  letI̵
+⚠ [153112/153126] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.EigenbasisLifts.ConjOf (230s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/ConjOf.lean:50:91: This simp argument is unused:
+  sub_mul
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Loc.adGL, MonoidHom.coe_mk, OneHom.coe_mk, LinearMap.coe_mk, AddHom.coe_mk, mul_assoc,
+    ← Matrix.coe_units_inv, Units.inv_mul, mul_one, one_mul, mul_zero, zero_add, neg_mul, sub_eq_add_neg]
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/AwAvg.lean:73:4: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/ConjOf.lean:50:111: This simp argument is unused:
+  ← Matrix.coe_units_inv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Loc.adGL, MonoidHom.coe_mk, OneHom.coe_mk, LinearMap.coe_mk, AddHom.coe_mk, sub_mul, mul_assoc,
+    Units.inv_mul, mul_one, one_mul, mul_zero, zero_add, neg_mul, sub_eq_add_neg]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/ConjOf.lean:50:135: This simp argument is unused:
+  Units.inv_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Loc.adGL, MonoidHom.coe_mk, OneHom.coe_mk, LinearMap.coe_mk, AddHom.coe_mk, sub_mul, mul_assoc,
+    ← Matrix.coe_units_inv, mul_one, one_mul, mul_zero, zero_add, neg_mul, sub_eq_add_neg]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [153113/153126] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.EigenbasisLifts.DimLow (230s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/DimLow.lean:13:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -72,8 +131,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [153092/153124] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.EigenbasisLifts.BkAbEmb (225s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/BkAbEmb.lean:14:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/DimLow.lean:15:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -81,15 +139,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/BkAbEmb.lean:16:4: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/BkAbEmb.lean:34:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/DimLow.lean:38:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -97,8 +147,8 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [153093/153124] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.EigenbasisLifts.PsiInj (223s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/PsiInj.lean:12:2: Try this: 
+⚠ [153114/153130] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.CompactIntegralFields.H5 (235s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/CompactIntegralFields/H5.lean:19:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -106,55 +156,5 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [153094/153124] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.EigenbasisLifts.FlagDual (224s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/FlagDual.lean:56:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/FlagDual.lean:57:11: `Cardinal.nat_lt_aleph0` has been deprecated: Use `Cardinal.natCast_lt_aleph0` instead
-⚠ [153095/153124] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.EigenbasisLifts.DblRep (227s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/DblRep.lean:54:59: `Matrix.reindexAlgEquiv_apply` has been deprecated: Use `Matrix.coe_reindexAlgEquiv` instead
-
-Note: The updated constant has a different type:
-  ∀ {m : Type u_2} {n : Type u_3} (R : Type u_11) (A : Type u_12) [inst : CommSemiring R] [inst_1 : Fintype n]
-    [inst_2 : Fintype m] [inst_3 : DecidableEq m] [inst_4 : DecidableEq n] [inst_5 : Semiring A] [inst_6 : Algebra R A]
-    (e : m ≃ n), ⇑(reindexAlgEquiv R A e) = ⇑(reindex e e)
-instead of
-  ∀ {m : Type u_2} {n : Type u_3} (R : Type u_11) (A : Type u_12) [inst : CommSemiring R] [inst_1 : Fintype n]
-    [inst_2 : Fintype m] [inst_3 : DecidableEq m] [inst_4 : DecidableEq n] [inst_5 : Semiring A] [inst_6 : Algebra R A]
-    (e : m ≃ n) (M : Matrix m m A), (reindexAlgEquiv R A e) M = (reindex e e) M
-⚠ [153096/153124] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.EigenbasisLifts.CocExt (218s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/CocExt.lean:48:10: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/CocExt.lean:54:10: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
-✔ [153097/153124] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.EigenbasisLifts.AeComm (202s)
-⚠ [153098/153124] Built Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.EigenbasisLifts.IntModel (228s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/IntModel.lean:26:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/IntModel.lean:28:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/IntModel.lean:30:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/IntModel.lean:48:6: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/EigenbasisLifts/IntModel.lean:48:41: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+⚠ [153115/153132] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.FlagCharsUnique (7.1s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/FlagCharsUnique.lean:95:6: `Matrix.det_of_upperTriangular` has been deprecated: Use `Matrix.det_of_isUpperTriangular` instead
