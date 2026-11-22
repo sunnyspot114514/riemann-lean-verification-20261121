@@ -1,3 +1,25 @@
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [151112/151139] Built Development.AutomorphicArithmetic.AutomorphicVarieties.CurveDVRSpecialization.SeedPtOf (76s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/SeedPtOf.lean:77:8: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/SeedPtOf.lean:77:44: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/SeedPtOf.lean:141:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.CurveDVRSpecialization.SeedPtOf.0.val_iff`:
+  [Fact (Nat.Prime l)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (Nat.Prime l)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/SeedPtOf.lean:153:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.CurveDVRSpecialization.SeedPtOf.0.beta_ex`:
+  [IsAlgClosure ℚ Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsAlgClosure ℚ Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/SeedPtOf.lean:210:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -5,7 +27,9 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/NiceIrrE.lean:132:4: Try this: 
+✔ [151113/151139] Built Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.StrYMap (6.1s)
+⚠ [151114/151139] Built Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebraHeight.ClMvps (6.5s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebraHeight/ClMvps.lean:92:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -13,7 +37,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/NiceIrrE.lean:137:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebraHeight/ClMvps.lean:93:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -21,140 +45,116 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/NiceIrrE.lean:89:8: Overlapping instance parameters in `UpperTheory.V.Pr.niceIrrE`:
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebraHeight/ClMvps.lean:94:2: Try this: 
+  haveI̵
 
-⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.
-💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebraHeight/ClMvps.lean:99:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebraHeight/ClMvps.lean:101:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebraHeight/ClMvps.lean:102:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebraHeight/ClMvps.lean:103:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebraHeight/ClMvps.lean:104:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebraHeight/ClMvps.lean:133:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebraHeight/ClMvps.lean:137:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebraHeight/ClMvps.lean:138:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebraHeight/ClMvps.lean:140:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [151115/151139] Built Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebraHeight.CmOfRegular (6.3s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebraHeight/CmOfRegular.lean:17:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebraHeight/CmOfRegular.lean:24:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [151116/151139] Built Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebraHeight.GDimform (9.3s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebraHeight/GDimform.lean:31:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebraHeight/GDimform.lean:81:6: `IsLocalization.height_comap` has been deprecated: Use `IsLocalization.height_under` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebraHeight/GDimform.lean:84:8: Overlapping instance parameters in `UpperTheory.V.CA.g_dimform`:
+
+⚠️ `[IsDomain B]` and `[IsLocalRing B]` each imply `[Nontrivial B]`.
+💡️ Of these, `[IsDomain B]` and `[IsLocalRing B]` may be removed.
 
 Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-⚠ [151064/151103] Built Development.AutomorphicArithmetic.AutomorphicVarieties.CurveDVRSpecialization.ThickAlg (19s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/ThickAlg.lean:58:83: This simp argument is unused:
-  Algebra.smul_def
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [GDet.repAlg, MonoidAlgebra.lift_single, Matrix.diagonal, Matrix.one_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/ThickAlg.lean:63:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/ThickAlg.lean:145:69: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/ThickAlg.lean:192:8: This simp argument is unused:
-  Matrix.charmatrix_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [h0, h2]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/ThickAlg.lean:214:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/ThickAlg.lean:217:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/ThickAlg.lean:220:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/ThickAlg.lean:226:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/ThickAlg.lean:246:14: This simp argument is unused:
-  Module.End.smul_def
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Module.algebraMap_end_apply, Matrix.mulVec_smul]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/ThickAlg.lean:246:35: This simp argument is unused:
-  Module.algebraMap_end_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Module.End.smul_def, Matrix.mulVec_smul]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/ThickAlg.lean:284:42: This simp argument is unused:
-  Matrix.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.one_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/ThickAlg.lean:284:63: This simp argument is unused:
-  Matrix.one_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.single_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/ThickAlg.lean:317:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/ThickAlg.lean:332:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/ThickAlg.lean:322:16: This simp argument is unused:
-  RingCon.lift_mk'
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [ψ, τ]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/ThickAlg.lean:371:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/ThickAlg.lean:378:38: This simp argument is unused:
-  RingHom.coe_mk
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [AlgHom.coe_ringHom_mk, RingEquiv.toRingHom_eq_coe, RingHom.coe_comp, RingEquiv.coe_toRingHom,
-    Function.comp_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/ThickAlg.lean:409:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/ThickAlg.lean:478:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
