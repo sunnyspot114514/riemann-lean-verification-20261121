@@ -5,55 +5,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [161506/161527] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedDictionaryPartBStatement (5.1s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/UnramifiedDictionaryPartBStatement.lean:6:82: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/UnramifiedDictionaryPartBStatement.lean:6:153: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/UnramifiedDictionaryPartBStatement.lean:6:82: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Unram.unramifiedDictionary_part_b` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/UnramifiedDictionaryPartBStatement.lean:6:153: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Unram.unramifiedDictionary_part_b <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [161507/161529] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedDualFamilyHolds (10s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/UnramifiedDualFamilyHolds.lean:39:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/UnramifiedDualFamilyHolds.lean:191:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/UnramifiedDualFamilyHolds.lean:235:12: `AddSubmonoidClass.coe_finset_sum` has been deprecated: Use `AddSubmonoidClass.coe_finsetSum` instead
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/UnramifiedDualFamilyHolds.lean:244:15: `AddSubmonoidClass.coe_finset_sum` has been deprecated: Use `AddSubmonoidClass.coe_finsetSum` instead
-✔ [161508/161529] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.JacquetLanglandsLattices.DiscOfCusp (295s)
-⚠ [161509/161529] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedDualFamilyHoldsStatement (10s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/UnramifiedDualFamilyHoldsStatement.lean:6:91: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/UnramifiedDualFamilyHoldsStatement.lean:6:171: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/UnramifiedDualFamilyHoldsStatement.lean:6:91: Unused tactic linter: `exact GlobalTheory.CompanionTheory.UnramDual.unramified_trace_one_dual_family` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/UnramifiedDualFamilyHoldsStatement.lean:6:171: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.UnramDual.unramified_trace_one_dual_family <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [161510/161529] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormMapTorusSurjective (10s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/NormMapTorusSurjective.lean:15:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/MulMemDeRhamPeriodFiltrationOfMemZero.lean:535:4: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -61,7 +13,8 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/NormMapTorusSurjective.lean:18:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/MulMemDeRhamPeriodFiltrationOfMemZero.lean:590:10: `linearIndepOn_univ` has been deprecated: Use `linearIndepOn_univ_iff` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/MulMemDeRhamPeriodFiltrationOfMemZero.lean:756:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -69,20 +22,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/NormMapTorusSurjective.lean:53:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.LocTop.mem_unitGL_iff`:
-  [TopologicalSpace F]
-  [IsNonarchimedeanLocalField F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [TopologicalSpace F] [IsNonarchimedeanLocalField F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/NormMapTorusSurjective.lean:85:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.LocTop.unitGL_eq_preimage`:
-  [T2Space F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [T2Space F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/NormMapTorusSurjective.lean:104:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/MulMemDeRhamPeriodFiltrationOfMemZero.lean:904:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -90,7 +30,37 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/NormMapTorusSurjective.lean:106:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/MulMemDeRhamPeriodFiltrationOfMemZero.lean:846:156: Variable name `hφ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hφ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [161601/161637] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.HermitianTwists.RepNewformOf (39s)
+✔ [161602/161637] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.AbelianUnitPowers.Hypotheses2 (48s)
+⚠ [161603/161637] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KatoEulerSystems.ReducibleThreeDim (58s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KatoEulerSystems/ReducibleThreeDim.lean:150:60: This simp argument is unused:
+  Fin.sum_univ_two
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.mul_apply, Matrix.diagonal]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KatoEulerSystems/ReducibleThreeDim.lean:167:14: This simp argument is unused:
+  Matrix.mulVec
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [sB, dotProduct, Fin.sum_univ_two]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KatoEulerSystems/ReducibleThreeDim.lean:207:51: This simp argument is unused:
+  Fin.sum_univ_three
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [sA, pA, Jmat, Fin.rev, Matrix.mul_apply, Fin.sum_univ_two]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KatoEulerSystems/ReducibleThreeDim.lean:317:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -98,7 +68,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/NormMapTorusSurjective.lean:111:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KatoEulerSystems/ReducibleThreeDim.lean:318:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -106,7 +76,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/NormMapTorusSurjective.lean:112:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KatoEulerSystems/ReducibleThreeDim.lean:316:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -114,7 +84,14 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/NormMapTorusSurjective.lean:114:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KatoEulerSystems/ReducibleThreeDim.lean:267:199: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [161604/161639] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.CocycleCoefficients.PetHerm (193s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/CocycleCoefficients/PetHerm.lean:35:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -122,19 +99,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/NormMapTorusSurjective.lean:110:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.LocTop.secondCountable_GL`:
-  [T2Space F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [T2Space F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/NormMapTorusSurjective.lean:125:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.LocTop.continuous_sigmaGL`:
-  [T2Space E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [T2Space E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/NormMapTorusSurjective.lean:143:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/CocycleCoefficients/PetHerm.lean:40:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -142,7 +107,14 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/NormMapTorusSurjective.lean:154:4: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/CocycleCoefficients/PetHerm.lean:48:26: `CuspForm.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/CocycleCoefficients/PetHerm.lean:56:26: `CuspForm.IsGLPos.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+⚠ [161605/161639] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.ClozelCohC (186s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TemperedLocalComponents/ClozelCohC.lean:19:6: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -150,7 +122,35 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/NormMapTorusSurjective.lean:157:4: Try this: 
+✔ [161606/161639] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.SymmetricAdjointFrobenius.AdAutQ (176s)
+✔ [161607/161639] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.OneUseOf (207s)
+⚠ [161608/161639] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.CocycleCoefficients.PetAdj (192s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/CocycleCoefficients/PetAdj.lean:176:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/CocycleCoefficients/PetAdj.lean:191:50: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/CocycleCoefficients/PetAdj.lean:227:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/CocycleCoefficients/PetAdj.lean:231:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/CocycleCoefficients/PetAdj.lean:232:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
