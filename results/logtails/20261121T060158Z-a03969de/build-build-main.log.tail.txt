@@ -1,22 +1,4 @@
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/FrobeniusSignCompatibility.lean:39:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [151878/151893] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.SelfIso (224s)
-✔ [151879/151895] Built Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.HostEx (221s)
-✔ [151880/151895] Built Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.GdEx (222s)
-✔ [151881/151895] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.RealExistenceFromPublished (220s)
-✔ [151882/151895] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SemisimpleLevels.UntwistS (225s)
-⚠ [151883/151895] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.WeakEx (223s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/WeakEx.lean:11:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/TridiagonalWeilDeligne.lean:52:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -24,7 +6,37 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/WeakEx.lean:12:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/TridiagonalWeilDeligne.lean:83:13: This simp argument is unused:
+  Finsupp.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h, Ne.symm h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/TridiagonalWeilDeligne.lean:83:35: This simp argument is unused:
+  Ne.symm h
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h, Finsupp.single_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [151982/151995] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.AbelianFieldWindowTripleSnoc (8.6s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/AbelianFieldWindowTripleSnoc.lean:17:8: `linearIndependent_fin_snoc` has been deprecated: Use `linearIndependent_finSnoc` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/AbelianFieldWindowTripleSnoc.lean:50:19: This simp argument is unused:
+  Finsupp.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [map_sum]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [151983/151997] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.QuadraticTwists.PstRes (143s)
+✔ [151984/152000] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.QuadraticTwists.Untwist (150s)
+✔ [151985/152001] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.WeilDeligneTriangularInitialSegment (6.2s)
+✔ [151986/152001] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.WeilDeligneDpstLeftExact (6.0s)
+✔ [151987/152002] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.WeilDeligneFunctorExact (6.7s)
+✔ [151988/152008] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.QuadraticTwists.EmbPadic (132s)
+⚠ [151989/152008] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.QuadraticTwists.WdRelRes (140s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/QuadraticTwists/WdRelRes.lean:80:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -32,9 +44,9 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [151884/151895] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.BcAtt0 (218s)
-⚠ [151885/151896] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.AlgOfCyc (222s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TemperedLocalComponents/AlgOfCyc.lean:106:4: Try this: 
+✔ [151990/152011] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.WDAway (87s)
+⚠ [151991/152013] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.DpstRightExact (8.2s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/DpstRightExact.lean:14:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -42,7 +54,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TemperedLocalComponents/AlgOfCyc.lean:292:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/DpstRightExact.lean:15:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -50,8 +62,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [151886/151897] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.HeckeCharRealTransport (11s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/HeckeCharRealTransport.lean:42:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/DpstRightExact.lean:16:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -59,15 +70,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [151887/151898] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.PolOfSatOfThetaSat (5.6s)
-⚠ [151888/151900] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ThetaSatakeParametersInverse (9.2s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/ThetaSatakeParametersInverse.lean:78:4: `LinearEquiv.ofLinear` has been deprecated: Use `LinearEquiv.ofLinearMap` instead
-✔ [151889/151901] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.IdeleNormValuationOfLocalCompatibility (6.7s)
-✔ [151890/151902] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.IdeleNormLocalCompatibility (12s)
-✔ [151891/151902] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.SignAtInfinityOfParallelWeight (196s)
-✔ [151892/151904] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.ConjAlgebraMap (197s)
-⚠ [151893/151912] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.CyclotomicCharConjInvariant (197s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/CyclotomicCharConjInvariant.lean:10:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/DpstRightExact.lean:43:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -75,7 +78,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/CyclotomicCharConjInvariant.lean:11:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/DpstRightExact.lean:44:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -83,7 +86,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/CyclotomicCharConjInvariant.lean:12:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/DpstRightExact.lean:45:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -91,10 +94,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [151894/151912] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.AdelicSolutionParallel (197s)
-✔ [151895/151912] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.SatakePolarizationOfCuspidalTransfer (197s)
-⚠ [151896/151912] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.SatakeInvMulCharEqOfSimilitudePairing (197s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/SatakeInvMulCharEqOfSimilitudePairing.lean:52:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/DpstRightExact.lean:46:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -102,7 +102,10 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/SatakeInvMulCharEqOfSimilitudePairing.lean:55:4: Try this: 
+✔ [151992/152013] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.WeilDeligneRankOneLine (11s)
+✔ [151993/152014] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.WeilGroupDenseInGaloisGroup (5.6s)
+⚠ [151994/152014] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.CrystallinePeriodRingProperties (6.1s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/CrystallinePeriodRingProperties.lean:20:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -110,7 +113,9 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/SatakeInvMulCharEqOfSimilitudePairing.lean:59:2: Try this: 
+✔ [151995/152014] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.TiltFrobeniusTeichmullerAction (6.9s)
+⚠ [151996/152014] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.GaloisRepresentationIntegralLattice (9.3s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/GaloisRepresentationIntegralLattice.lean:91:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -118,8 +123,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [151897/151913] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.NormQuad (197s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/NormQuad.lean:39:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/GaloisRepresentationIntegralLattice.lean:101:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -127,7 +131,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/NormQuad.lean:42:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/GaloisRepresentationIntegralLattice.lean:102:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -135,11 +139,8 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/NormQuad.lean:96:2: Unused tactic linter: `change _ = ((if normV w = normV (w.under (𝓞 F)) then 1 else -1 : ℂˣ) : ℂ)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [151898/151914] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.MonomialRepresentations.Clifford (8.3s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/MonomialRepresentations/Clifford.lean:78:4: Try this: 
+⚠ [151997/152014] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.GaloisRepValuesInFiniteExtension (5.9s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/GaloisRepValuesInFiniteExtension.lean:12:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -147,7 +148,8 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AlgebraTools/MonomialRepresentations/Clifford.lean:79:4: Try this: 
+⚠ [151998/152018] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ContinuousCharacterCompactUnitValues (6.1s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/ContinuousCharacterCompactUnitValues.lean:26:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -155,6 +157,4 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [151899/151914] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.PlaceOf (163s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/PlaceOf.lean:14:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-✔ [151900/151914] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.FrobeniusEigenvaluesTwist (6.1s)
+✔ [151999/152019] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.CrystallineFrobeniusAlgebraicElements (6.5s)
