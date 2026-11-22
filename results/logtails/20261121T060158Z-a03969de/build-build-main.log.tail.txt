@@ -1,160 +1,160 @@
-  [apply] _inst_4
+  omit [IsTotallyReal F] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/FreeRatios.lean:133:26: Variable name `inst_5` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/CharacterProductHolds.lean:90:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.FourierExpansionEisenstein.LocalCharacterUnits.mul_apply'`:
+  [IsTotallyReal F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsTotallyReal F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/CharacterProductHolds.lean:132:53: `continuous_mul_left` has been deprecated: Use `continuous_const_mul` instead
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/CharacterProductHolds.lean:140:22: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/CharacterProductHolds.lean:149:29: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/CharacterProductHolds.lean:224:10: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [161717/161750] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.AutP (260s)
+⚠ [161718/161750] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.GaloisRepresentationTypes.NiceSmall (286s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/GaloisRepresentationTypes/NiceSmall.lean:14:13: `Matrix.charpoly_of_upperTriangular` has been deprecated: Use `Matrix.charpoly_of_isUpperTriangular` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/GaloisRepresentationTypes/NiceSmall.lean:32:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/GaloisRepresentationTypes/NiceSmall.lean:33:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [161719/161750] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.PurityTempered.Temper (275s)
+✔ [161720/161751] Built PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.InverseSubstitutionHolds (289s)
+⚠ [161721/161751] Built PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.LocalIntegralOfSubstitution (289s)
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/LocalIntegralOfSubstitution.lean:23:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.FourierExpansionEisenstein.LocalGaussSum.ordAt_eq`:
+  [IsTotallyReal F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsTotallyReal F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/LocalIntegralOfSubstitution.lean:29:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.FourierExpansionEisenstein.LocalGaussSum.valued_le_iff`:
+  [IsTotallyReal F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsTotallyReal F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/LocalIntegralOfSubstitution.lean:34:22: Variable name `c` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_5
+  [apply] _c
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/FreeRatios.lean:133:51: Variable name `inst_6` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_6
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [161707/161746] Built PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.EisensteinLowWeight (175s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:97:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:101:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:112:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.eisensteinLowWeight.kA_zero`:
-  [NumberField F]
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] [IsTotallyReal F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:117:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.eisensteinLowWeight.kB_zero`:
-  [NumberField F]
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] [IsTotallyReal F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:122:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.eisensteinLowWeight.kZ_zero`:
-  [NumberField F]
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] [IsTotallyReal F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:127:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.eisensteinLowWeight.kA_deriv`:
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/LocalIntegralOfSubstitution.lean:74:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.FourierExpansionEisenstein.LocalGaussSum.continuous_chiPsi`:
   [IsTotallyReal F]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [IsTotallyReal F] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:139:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.eisensteinLowWeight.kB_deriv`:
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/LocalIntegralOfSubstitution.lean:88:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.FourierExpansionEisenstein.LocalGaussSum.gI_eq_sum`:
   [IsTotallyReal F]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [IsTotallyReal F] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:151:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.eisensteinLowWeight.kZ_deriv`:
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/LocalIntegralOfSubstitution.lean:126:10: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/LocalIntegralOfSubstitution.lean:127:6: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/LocalIntegralOfSubstitution.lean:131:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.FourierExpansionEisenstein.LocalGaussSum.gI_empty`:
   [IsTotallyReal F]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [IsTotallyReal F] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:189:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.eisensteinLowWeight.arch_split`:
-  [IsTotallyReal F]
+⚠ [161722/161751] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.UsedOf (289s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/UsedOf.lean:14:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/UsedOf.lean:15:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [161723/161751] Built Development.AutomorphicArithmetic.ThetaCorrespondence.CuspidalSupport.CsdMonoOddLitN (293s)
+⚠ [161724/161751] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.PurityTempered.AlgPowConst (278s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/PurityTempered/AlgPowConst.lean:101:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.PurityTempered.AlgPowConst.0.cyc_cont`:
+  [IsAlgClosure F Ω]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
+  omit [IsAlgClosure F Ω] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:196:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.eisensteinLowWeight.vecMul_apply2`:
-  [NumberField F]
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] [IsTotallyReal F] in theorem ...
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/PurityTempered/AlgPowConst.lean:107:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:227:2: Unused tactic linter: `push_cast` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:230:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.eisensteinLowWeight.hyA`:
-  [NumberField F]
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] [IsTotallyReal F] in theorem ...
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/PurityTempered/AlgPowConst.lean:108:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:236:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.eisensteinLowWeight.hyB`:
-  [NumberField F]
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] [IsTotallyReal F] in theorem ...
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:242:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.eisensteinLowWeight.hyEZ`:
-  [NumberField F]
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] [IsTotallyReal F] in theorem ...
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/PurityTempered/AlgPowConst.lean:109:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:249:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.eisensteinLowWeight.hyE`:
-  [NumberField F]
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] [IsTotallyReal F] in theorem ...
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:298:12: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/PurityTempered/AlgPowConst.lean:110:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:298:2: Unused tactic linter: `all_goals (push_cast; ring)` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:334:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.eisensteinLowWeight.norm_infEq`:
-  [NumberField F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] in theorem ...
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/PurityTempered/AlgPowConst.lean:116:4: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:364:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.eisensteinLowWeight.det_kA`:
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:369:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.eisensteinLowWeight.det_kB`:
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/PurityTempered/AlgPowConst.lean:140:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:376:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.eisensteinLowWeight.det_eps`:
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:381:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.eisensteinLowWeight.det_kZ`:
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/PurityTempered/AlgPowConst.lean:141:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:420:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.eisensteinLowWeight.mul_scalar_comm`:
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:448:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.eisensteinLowWeight.absD_nonneg'`:
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/HilbertEisenstein/EisensteinLowWeight.lean:456:0: automatically included section variable(s) unused in theorem `UpperTheory.HilbertEisensteinWeightOne.eisensteinLowWeight.rowA_vecMul_mul`:
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [161708/161746] Built Development.AutomorphicArithmetic.ThetaCorrespondence.CuspidalSupport.DualRClosed (239s)
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
