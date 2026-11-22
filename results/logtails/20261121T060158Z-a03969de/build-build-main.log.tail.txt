@@ -1,4 +1,18 @@
-warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/GramDetNeZeroLocalBasisCofinite.lean:13:2: Try this: 
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GenericFrameComponentBound.lean:110:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.Ar.Plug.chartLat_le_chartLatNm`:
+  [(k : K) → Fintype (ι k)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [(k : K) → Fintype (ι k)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GenericFrameComponentBound.lean:134:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GenericFrameComponentBound.lean:135:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -6,155 +20,141 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/GramDetNeZeroLocalBasisCofinite.lean:32:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/GramDetNeZeroLocalBasisCofinite.lean:21:64: This simp argument is unused:
-  mul_one
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GenericFrameComponentBound.lean:141:13: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GenericFrameComponentBound.lean:175:14: This simp argument is unused:
+  Pi.single_apply
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [sesq, Finset.mul_sum, map_sum, hterm, mul_ite, mul_zero, Finset.sum_ite_eq, Finset.mem_univ,
-    if_true]
+  [apply] simp [hbp]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [136216/136312] Built Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FlagModelValueIndependentStatement (5.9s)
-warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/FlagModelValueIndependentStatement.lean:6:76: this tactic is never executed
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GenericFrameComponentBound.lean:238:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GenericFrameComponentBound.lean:239:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GenericFrameComponentBound.lean:299:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/GenericFrameComponentBound.lean:300:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [136519/136564] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsogenyProductDecompositionStatement (5.4s)
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/IsogenyProductDecompositionStatement.lean:10:84: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/FlagModelValueIndependentStatement.lean:6:141: this tactic is never executed
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/IsogenyProductDecompositionStatement.lean:10:157: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/FlagModelValueIndependentStatement.lean:6:76: Unused tactic linter: `exact GlobalTheory.CompanionTheory.CommAlg.FlagModelValue.main` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/IsogenyProductDecompositionStatement.lean:10:84: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Relay.isogeny_product_decomposition` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/FlagModelValueIndependentStatement.lean:6:141: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.CommAlg.FlagModelValue.main <;> assumption)` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/IsogenyProductDecompositionStatement.lean:10:157: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.Relay.isogeny_product_decomposition <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [136217/136312] Built Development.WeilBound.CoreStatements.SesquilinearFractions.EqZeroOfCoef (5.0s)
-warning: src/Development/WeilBound/CoreStatements/SesquilinearFractions/EqZeroOfCoef.lean:17:11: Variable name `y` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _y
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/WeilBound/CoreStatements/SesquilinearFractions/EqZeroOfCoef.lean:17:13: Variable name `y'` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _y'
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/WeilBound/CoreStatements/SesquilinearFractions/EqZeroOfCoef.lean:27:0: automatically included section variable(s) unused in theorem `PositivityTheory.Xgf.DPer.planeCoef_mulVec_smul_x_eq_zero_of_ne`:
-  [Fintype Ix]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype Ix] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [136218/136316] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChowlaSelbergPeriodStatement (5.5s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ChowlaSelbergPeriodStatement.lean:10:78: this tactic is never executed
+⚠ [136520/136567] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.TowerComponentsEquivOfGiven (6.7s)
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/TowerComponentsEquivOfGiven.lean:30:68: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ChowlaSelbergPeriodStatement.lean:10:145: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ChowlaSelbergPeriodStatement.lean:10:78: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Fl.exists_curve0_hasPeriod` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/TowerComponentsEquivOfGiven.lean:30:68: Unused tactic linter: `exact PositivityTheory.UnitarySelfGeneration.y_comp_of` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/ChowlaSelbergPeriodStatement.lean:10:145: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.Fl.exists_curve0_hasPeriod <;> assumption)` does nothing
+⚠ [136521/136567] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.AllWeightSectionsCompat (27s)
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/AllWeightSectionsCompat.lean:234:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [136219/136325] Built Development.WeilBound.CoreStatements.SesquilinearFractions.DLocBasis (5.1s)
-⚠ [136220/136325] Built Development.AutomorphicSpectrum.Proofs.AlgebraProofs.GramDetNeZeroLocalBasisCofiniteStatement (5.1s)
-warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/GramDetNeZeroLocalBasisCofiniteStatement.lean:10:92: this tactic is never executed
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/GramDetNeZeroLocalBasisCofiniteStatement.lean:10:173: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [136522/136567] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.FullIntersectionHeightBound (20s)
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FullIntersectionHeightBound.lean:400:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/GramDetNeZeroLocalBasisCofiniteStatement.lean:10:92: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Relay.gram_det_ne_zero_local_basis_cofinite` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/GramDetNeZeroLocalBasisCofiniteStatement.lean:10:173: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Relay.gram_det_ne_zero_local_basis_cofinite <;> assumption)` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/FullIntersectionHeightBound.lean:420:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [136221/136330] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.TrivFlagOnHodgeOfFarguesStatement (6.9s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/TrivFlagOnHodgeOfFarguesStatement.lean:19:82: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/TrivFlagOnHodgeOfFarguesStatement.lean:19:153: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [136523/136567] Built Development.WeilBound.CoreStatements.CommonZeroEvaluation.GenericFrameRootOrigin (23s)
+warning: src/Development/WeilBound/CoreStatements/CommonZeroEvaluation/GenericFrameRootOrigin.lean:117:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/TrivFlagOnHodgeOfFarguesStatement.lean:19:82: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.Num.trivFlagOnHodge_of_fargues` does nothing
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/TrivFlagOnHodgeOfFarguesStatement.lean:19:153: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.Num.trivFlagOnHodge_of_fargues <;> assumption)` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/CommonZeroEvaluation/GenericFrameRootOrigin.lean:120:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [136222/136330] Built Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PeriodGramHermitianSignature (8.6s)
-warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/PeriodGramHermitianSignature.lean:17:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.Ar.Fl.SignTau.sum_type`:
-  [NumberField E]
-  [IsCMField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [IsCMField E] in theorem ...
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/PeriodGramHermitianSignature.lean:93:4: This simp argument is unused:
-  Matrix.mul_smul
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/CommonZeroEvaluation/GenericFrameRootOrigin.lean:126:2: Try this: 
+  letI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Matrix.conjTranspose_add, Matrix.conjTranspose_mul, Matrix.add_mul, Matrix.mul_add,
-    Matrix.smul_mul, two_smul, Matrix.mul_assoc]
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/PeriodGramHermitianSignature.lean:93:21: This simp argument is unused:
-  Matrix.smul_mul
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/CommonZeroEvaluation/GenericFrameRootOrigin.lean:127:2: Try this: 
+  haveI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Matrix.conjTranspose_add, Matrix.conjTranspose_mul, Matrix.add_mul, Matrix.mul_add,
-    Matrix.mul_smul, two_smul, Matrix.mul_assoc]
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [136223/136330] Built Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelFunctorialMapStatement (5.3s)
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/LieModelFunctorialMapStatement.lean:8:79: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/CommonZeroEvaluation/GenericFrameRootOrigin.lean:134:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/LieModelFunctorialMapStatement.lean:8:147: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/LieModelFunctorialMapStatement.lean:8:79: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.lieModel_exists_unique_diff` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/CommonZeroEvaluation/GenericFrameRootOrigin.lean:218:4: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/LieModelFunctorialMapStatement.lean:8:147: Unused tactic linter: `(intros;
-  apply GlobalTheory.CompanionTheory.Ar.lieModel_exists_unique_diff <;> assumption)` does nothing
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [136224/136335] Built Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FlagModelRootIndependent (5.0s)
-✔ [136225/136335] Built Development.WeilBound.CoreStatements.SesquilinearFractions.CoefZeroOfPer (7.3s)
-⚠ [136226/136335] Built Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsLocalBasis (5.1s)
-warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/ExistsLocalBasis.lean:10:60: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/ExistsLocalBasis.lean:10:60: Unused tactic linter: `exact PositivityTheory.Xgf.exists_local_basis'` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [136227/136335] Built Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.PointShiftStOfPlaceShiftSt (19s)
-warning: src/Development/AbelianVarietyTheory/Statements/PlaceShiftStatements/PointShiftStOfPlaceShiftSt.lean:21:0: automatically included section variable(s) unused in theorem `GlobalTheory.FlatCM.PlaceShiftModel.norm_le_one`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [136228/136336] Built Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DualFamilyIsBasis (5.3s)
-warning: src/Development/AutomorphicSpectrum/Proofs/AlgebraProofs/DualFamilyIsBasis.lean:10:7: Variable name `b` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _b
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
