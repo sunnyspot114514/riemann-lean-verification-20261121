@@ -1,24 +1,76 @@
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EvConjTMul.lean:118:77: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-✔ [157408/157431] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsReproducingPolynomialValueAtOneMaxCompact (7.6s)
-⚠ [157409/157431] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PseudoCoeffShapeSmoothCompactSupportStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PseudoCoeffShapeSmoothCompactSupportStatement.lean:7:58: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PseudoCoeffShapeSmoothCompactSupportStatement.lean:7:105: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PseudoCoeffShapeSmoothCompactSupportStatement.lean:7:58: Unused tactic linter: `exact GlobalTheory.ShapeSmoothFinite.stShape` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ChevalleyUnitsStatement.lean:6:105: Unused tactic linter: `(intros; apply GlobalTheory.Published.chevalleyUnits' <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PseudoCoeffShapeSmoothCompactSupportStatement.lean:7:105: Unused tactic linter: `(intros; apply GlobalTheory.ShapeSmoothFinite.stShape <;> assumption)` does nothing
+⚠ [157584/157614] Built Development.DiscreteGroups.GlobalIrreducibility.DzRedMat (5.5s)
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzRedMat.lean:18:49: This simp argument is unused:
+  Matrix.diagonal_apply
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [157410/157431] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousExpGAndToMInv (4.9s)
-⚠ [157411/157431] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShapeIntegratedOperatorRangesPolynomial (8.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ShapeIntegratedOperatorRangesPolynomial.lean:153:2: Try this: 
+Hint: Omit it from the simp argument list.
+  [apply] simp [Iwasawa.torusPow, (Fin.castSucc_lt_last _).ne']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzRedMat.lean:19:49: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Iwasawa.torusPow, (Fin.castSucc_lt_last _).ne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzRedMat.lean:43:0: automatically included section variable(s) unused in theorem `DiscreteGroups.sglob.DzRed.unipotent_le_unipB`:
+  [ValuativeRel K]
+  [TopologicalSpace K]
+  [IsNonarchimedeanLocalField K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ValuativeRel K] [TopologicalSpace K] [IsNonarchimedeanLocalField K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [157585/157619] Built Development.DiscreteGroups.GlobalIrreducibility.ValUniformizerPowLt (6.2s)
+✔ [157586/157619] Built Development.DiscreteGroups.GlobalIrreducibility.CellVecFixed (6.3s)
+✔ [157587/157621] Built Development.DiscreteGroups.GlobalIrreducibility.LTw (6.1s)
+✔ [157588/157621] Built Development.DiscreteGroups.GlobalIrreducibility.DzFeCut (6.2s)
+✔ [157589/157625] Built Development.DiscreteGroups.GlobalIrreducibility.StepUp (6.1s)
+✔ [157590/157625] Built Development.DiscreteGroups.GlobalIrreducibility.DzFeOrth (5.4s)
+⚠ [157591/157625] Built Development.DiscreteGroups.GlobalIrreducibility.DzGenFun (6.5s)
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzGenFun.lean:37:0: automatically included section variable(s) unused in theorem `DiscreteGroups.sglob.DzType.thC_mul`:
+  [ValuativeRel k]
+  [TopologicalSpace k]
+  [IsNonarchimedeanLocalField k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzGenFun.lean:43:8: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzGenFun.lean:43:43: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+⚠ [157592/157625] Built Development.DiscreteGroups.GlobalIrreducibility.DzFeSv (9.9s)
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzFeSv.lean:134:6: `Matrix.det_of_lowerTriangular` has been deprecated: Use `Matrix.det_of_isLowerTriangular` instead
+⚠ [157593/157625] Built Development.DiscreteGroups.GlobalIrreducibility.DzFeCyc (6.8s)
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzFeCyc.lean:82:41: `finRotate_succ_apply` has been deprecated: Use `finRotate_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ {n : ℕ} (i : Fin n), (finRotate n) i = i + 1
+instead of
+  ∀ {n : ℕ} (i : Fin (n + 1)), (finRotate (n + 1)) i = i + 1
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzFeCyc.lean:99:41: `finRotate_succ_apply` has been deprecated: Use `finRotate_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ {n : ℕ} (i : Fin n), (finRotate n) i = i + 1
+instead of
+  ∀ {n : ℕ} (i : Fin (n + 1)), (finRotate (n + 1)) i = i + 1
+✔ [157594/157626] Built Development.DiscreteGroups.GlobalIrreducibility.StepDown (7.5s)
+⚠ [157595/157627] Built Development.DiscreteGroups.GlobalIrreducibility.DzFeMat (8.6s)
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzFeMat.lean:31:6: `Matrix.det_of_upperTriangular` has been deprecated: Use `Matrix.det_of_isUpperTriangular` instead
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzFeMat.lean:171:51: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead
+⚠ [157596/157627] Built Development.DiscreteGroups.GlobalIrreducibility.ExistsCellFunctional (9.4s)
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/ExistsCellFunctional.lean:25:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/ExistsCellFunctional.lean:26:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -26,29 +78,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ShapeIntegratedOperatorRangesPolynomial.lean:174:75: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ShapeIntegratedOperatorRangesPolynomial.lean:188:46: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-✔ [157412/157432] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteDimStablePolyAveragesWeights (8.2s)
-✔ [157413/157432] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HaarRinvUJ (4.8s)
-⚠ [157414/157432] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsReproducingPolynomialValueAtOneMaxCompactStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsReproducingPolynomialValueAtOneMaxCompactStatement.lean:6:66: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsReproducingPolynomialValueAtOneMaxCompactStatement.lean:6:121: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsReproducingPolynomialValueAtOneMaxCompactStatement.lean:6:66: Unused tactic linter: `exact GlobalTheory.PsCo.Pc3.fock_reproducing_formula` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsReproducingPolynomialValueAtOneMaxCompactStatement.lean:6:121: Unused tactic linter: `(intros; apply GlobalTheory.PsCo.Pc3.fock_reproducing_formula <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [157415/157440] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrbIntAdSpanEqZero (5.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/OrbIntAdSpanEqZero.lean:17:2: Try this: 
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/ExistsCellFunctional.lean:27:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -56,105 +86,75 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [157416/157441] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShapeIntegratedOperatorRangesPolynomialStatement (4.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ShapeIntegratedOperatorRangesPolynomialStatement.lean:6:52: this tactic is never executed
+✔ [157597/157629] Built Development.DiscreteGroups.GlobalIrreducibility.SuppConst (5.0s)
+⚠ [157598/157629] Built Development.DiscreteGroups.GlobalIrreducibility.LongEltCornerEqCyc (7.3s)
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/LongEltCornerEqCyc.lean:22:52: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/LongEltCornerEqCyc.lean:27:12: `finRotate_succ_apply` has been deprecated: Use `finRotate_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ {n : ℕ} (i : Fin n), (finRotate n) i = i + 1
+instead of
+  ∀ {n : ℕ} (i : Fin (n + 1)), (finRotate (n + 1)) i = i + 1
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/LongEltCornerEqCyc.lean:27:87: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/LongEltCornerEqCyc.lean:47:10: `finRotate_succ_apply` has been deprecated: Use `finRotate_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ {n : ℕ} (i : Fin n), (finRotate n) i = i + 1
+instead of
+  ∀ {n : ℕ} (i : Fin (n + 1)), (finRotate (n + 1)) i = i + 1
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/LongEltCornerEqCyc.lean:58:10: `finRotate_succ_apply` has been deprecated: Use `finRotate_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ {n : ℕ} (i : Fin n), (finRotate n) i = i + 1
+instead of
+  ∀ {n : ℕ} (i : Fin (n + 1)), (finRotate (n + 1)) i = i + 1
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/LongEltCornerEqCyc.lean:58:85: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/LongEltCornerEqCyc.lean:62:10: `finRotate_succ_apply` has been deprecated: Use `finRotate_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ {n : ℕ} (i : Fin n), (finRotate n) i = i + 1
+instead of
+  ∀ {n : ℕ} (i : Fin (n + 1)), (finRotate (n + 1)) i = i + 1
+✔ [157599/157630] Built Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.DzGoodVec (67s)
+✔ [157600/157630] Built Development.AutomorphicArithmetic.ThetaCorrespondence.LocalLanglands.UnitaryThetaCorrespondenceOfHyp (35s)
+⚠ [157601/157631] Built Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.MainTheoremPublishedInputsVariant (68s)
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsVariant.lean:32:64: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ShapeIntegratedOperatorRangesPolynomialStatement.lean:6:93: this tactic is never executed
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsVariant.lean:32:117: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ShapeIntegratedOperatorRangesPolynomialStatement.lean:6:52: Unused tactic linter: `exact GlobalTheory.PsCo.Pc3.rangeShape` does nothing
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsVariant.lean:32:64: Unused tactic linter: `exact _root_.GlobalTheory.miStarRowClosing_alt_alt` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ShapeIntegratedOperatorRangesPolynomialStatement.lean:6:93: Unused tactic linter: `(intros; apply GlobalTheory.PsCo.Pc3.rangeShape <;> assumption)` does nothing
+warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsVariant.lean:32:117: Unused tactic linter: `(intros; apply _root_.GlobalTheory.miStarRowClosing_alt_alt <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [157417/157449] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumInnerMulInnerProj (6.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SumInnerMulInnerProj.lean:85:13: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+✔ [157602/157631] Built Development.DiscreteGroups.GlobalIrreducibility.DzGalFin (5.3s)
+✔ [157603/157632] Built Development.DiscreteGroups.GlobalIrreducibility.DzGalTR (6.8s)
+⚠ [157604/157632] Built Development.DiscreteGroups.GlobalIrreducibility.DzFeDec (6.6s)
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzFeDec.lean:73:6: `Matrix.det_of_lowerTriangular` has been deprecated: Use `Matrix.det_of_isLowerTriangular` instead
+✔ [157605/157632] Built Development.DiscreteGroups.GlobalIrreducibility.DzGalW (5.9s)
+⚠ [157606/157632] Built Development.DiscreteGroups.GlobalIrreducibility.FixedNeBotOfEquiv (7.7s)
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/FixedNeBotOfEquiv.lean:89:6: `Matrix.det_of_lowerTriangular` has been deprecated: Use `Matrix.det_of_isLowerTriangular` instead
+⚠ [157607/157632] Built Development.DiscreteGroups.GlobalIrreducibility.RowFixConj (5.8s)
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/RowFixConj.lean:52:8: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/RowFixConj.lean:52:8: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/RowFixConj.lean:58:10: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/RowFixConj.lean:58:28: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/RowFixConj.lean:102:8: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/RowFixConj.lean:102:8: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/RowFixConj.lean:109:10: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/RowFixConj.lean:109:28: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
+⚠ [157608/157636] Built Development.DiscreteGroups.GlobalIrreducibility.DzRedLift (7.8s)
+warning: src/Development/DiscreteGroups/GlobalIrreducibility/DzRedLift.lean:31:0: automatically included section variable(s) unused in theorem `DiscreteGroups.sglob.DzRed.exists_lift_unipB`:
+  hi
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hi in theorem ...
 
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
-⚠ [157418/157455] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteDimStablePolyAveragesWeightsStatement (5.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsFiniteDimStablePolyAveragesWeightsStatement.lean:8:53: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsFiniteDimStablePolyAveragesWeightsStatement.lean:8:95: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsFiniteDimStablePolyAveragesWeightsStatement.lean:8:53: Unused tactic linter: `exact GlobalTheory.PsCo.PolyAvg.polyAvg` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsFiniteDimStablePolyAveragesWeightsStatement.lean:8:95: Unused tactic linter: `(intros; apply GlobalTheory.PsCo.PolyAvg.polyAvg <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [157419/157457] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformFinitenessOfReproducingPolynomialAveragin (8.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UniformFinitenessOfReproducingPolynomialAveragin.lean:207:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [157420/157457] Built Development.AbelianVarietyTheory.Definitions.Divisors.DatumEquiv (5.5s)
-✔ [157421/157459] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.FockWeights (4.6s)
-✔ [157422/157459] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.BlockAnti (4.5s)
-⚠ [157423/157459] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformFinitenessOfReproducingPolynomialAveraginStatement (5.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UniformFinitenessOfReproducingPolynomialAveraginStatement.lean:8:50: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UniformFinitenessOfReproducingPolynomialAveraginStatement.lean:8:89: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UniformFinitenessOfReproducingPolynomialAveraginStatement.lean:8:50: Unused tactic linter: `exact GlobalTheory.PsCo.Pc3.uFin_of'` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/UniformFinitenessOfReproducingPolynomialAveraginStatement.lean:8:89: Unused tactic linter: `(intros; apply GlobalTheory.PsCo.Pc3.uFin_of' <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [157424/157459] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.CompactLoweringSpanDiagStable (7.8s)
-⚠ [157425/157465] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasTraceSmul (9.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasTraceSmul.lean:105:33: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasTraceSmul.lean:106:8: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasTraceSmul.lean:174:58: `ContinuousLinearMap.zero_apply` has been deprecated: Use `zero_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.zero_apply` to `zero_apply x`).
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasTraceSmul.lean:189:12: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HasTraceSmul.lean:201:12: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
-✔ [157426/157468] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.DiracSquareMemLayer (6.0s)
-✔ [157427/157468] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.KTypeLemma.DatumLinkStd (8.6s)
-✔ [157428/157468] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.IsPhysSet (5.0s)
-✔ [157429/157468] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.GsBasisPhys (6.3s)
-✔ [157430/157470] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.TraceEqTraceRestrictOfRangeLe (3.4s)
-✔ [157431/157470] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.ExistsNonzeroPhysicalHighestWeightVectorTensFock (5.3s)
-✔ [157432/157470] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolyCoeffVectorsLieInFiniteDimensionalSmooth (5.4s)
-✔ [157433/157472] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.TotalDegreeBindLeOfLinear (6.4s)
-⚠ [157434/157472] Built ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.KernelLemma (5.8s)
-warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/TensorRepresentations/KernelLemma.lean:14:69: This simp argument is unused:
-  mul_boole
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [dot, root, mul_sub, Finset.sum_sub_distrib, Pi.single_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/TensorRepresentations/KernelLemma.lean:47:12: This simp argument is unused:
-  Pi.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [h, h']
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/TensorRepresentations/KernelLemma.lean:52:12: This simp argument is unused:
-  Pi.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [h, h']
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [157609/157636] Built Development.DiscreteGroups.GlobalIrreducibility.DzGalInd (6.7s)
+✔ [157610/157637] Built Development.DiscreteGroups.GlobalIrreducibility.LpTwistLpTwist (7.1s)
+✔ [157611/157637] Built Development.DiscreteGroups.GlobalIrreducibility.DzFeCard (6.5s)
+✔ [157612/157637] Built Development.DiscreteGroups.GlobalIrreducibility.IsRowFixConj (6.5s)
+✔ [157613/157640] Built Development.DiscreteGroups.GlobalIrreducibility.DzGalEig (10s)
