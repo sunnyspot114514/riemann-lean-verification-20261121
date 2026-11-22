@@ -1,116 +1,3 @@
-```
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/DiagonalTruncatedIntegral.lean:131:25: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/DiagonalTruncatedIntegral.lean:207:12: `continuous_finset_prod` has been deprecated: Use `continuous_finsetProd` instead
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/DiagonalTruncatedIntegral.lean:263:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/DiagonalTruncatedIntegral.lean:90:21: This simp argument is unused:
-  Set.indicator_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [hkk, hc]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/DiagonalTruncatedIntegral.lean:74:2: Try this: intro _ _ hB5b hC1 hE0a hE0c hE0d hEcut hFcen hF6c F I Gf ι _ _ _ _ D k a hH T hT γ ω h01 h10 β hβ hint
-⚠ [152338/152354] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.UnipotentIntegrandVanishesProof (7.4s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/UnipotentIntegrandVanishesProof.lean:165:52: `continuous_add_left` has been deprecated: Use `continuous_const_add` instead
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/UnipotentIntegrandVanishesProof.lean:68:56: This simp argument is unused:
-  mul_zero
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Complex.mul_re, Complex.ofReal_re, Complex.ofReal_im, Complex.add_re, Complex.add_im, Complex.I_re,
-    Complex.I_im, zero_mul, add_zero, sub_zero, zero_add, mul_one]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/UnipotentIntegrandVanishesProof.lean:68:66: This simp argument is unused:
-  zero_mul
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Complex.mul_re, Complex.ofReal_re, Complex.ofReal_im, Complex.add_re, Complex.add_im, Complex.I_re,
-    Complex.I_im, mul_zero, add_zero, sub_zero, zero_add, mul_one]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/UnipotentIntegrandVanishesProof.lean:71:56: This simp argument is unused:
-  mul_zero
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Complex.mul_im, Complex.ofReal_re, Complex.ofReal_im, Complex.add_re, Complex.add_im, Complex.I_re,
-    Complex.I_im, zero_mul, add_zero, sub_zero, zero_add, mul_one]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/UnipotentIntegrandVanishesProof.lean:71:86: This simp argument is unused:
-  sub_zero
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Complex.mul_im, Complex.ofReal_re, Complex.ofReal_im, Complex.add_re, Complex.add_im, Complex.I_re,
-    Complex.I_im, mul_zero, zero_mul, add_zero, zero_add, mul_one]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [152339/152357] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.SplitTsum (5.2s)
-⚠ [152340/152366] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.RSubPowApply (6.9s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/RSubPowApply.lean:12:0: automatically included section variable(s) unused in theorem `UpperTheory.Esk.CommutingOperatorTraces.mapsTo_E`:
-  [FiniteDimensional ℂ V]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [FiniteDimensional ℂ V] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [152341/152372] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.ContinuousCompTorusMap (6.7s)
-⚠ [152342/152373] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.FiniteSystemProof (9.4s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/FiniteSystemProof.lean:129:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/FiniteSystemProof.lean:139:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/FiniteSystemProof.lean:196:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/FiniteSystemProof.lean:222:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/FiniteSystemProof.lean:276:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/JacquetLanglands/TorusKernels/FiniteSystemProof.lean:374:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-✔ [152343/152373] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.IwasawaA (75s)
-⚠ [152344/152374] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.CoRatAff (75s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/CoRatAff.lean:21:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
 ⚠ [152345/152376] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.RotEig (75s)
@@ -158,3 +45,116 @@ Hint: Omit it from the simp argument list.
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
 ✔ [152347/152380] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.FinalTF (5.3s)
+✔ [152348/152381] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.CtMoves (181s)
+✔ [152349/152383] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.ShortLatticeUnitarize.CompactBoxLattices.ExChi (189s)
+✔ [152350/152387] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.ShortLatticeUnitarize.CompactBoxLattices.HkComm (178s)
+⚠ [152351/152389] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.ShortLatticeUnitarize.CompactBoxLattices.FixGlob (191s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/ShortLatticeUnitarize/CompactBoxLattices/FixGlob.lean:30:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [152352/152391] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.ShortLatticeUnitarize.CompactBoxLattices.MemParahoricTimesPrincipalCongruenceIff (194s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/ShortLatticeUnitarize/CompactBoxLattices/MemParahoricTimesPrincipalCongruenceIff.lean:81:93: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/ShortLatticeUnitarize/CompactBoxLattices/MemParahoricTimesPrincipalCongruenceIff.lean:96:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [152353/152391] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.CuspSet (184s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/CuspSet.lean:71:50: This simp argument is unused:
+  Matrix.mul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [rot, eps, Fin.sum_univ_succ, h1, h2, h3, h4]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/CuspSet.lean:71:68: This simp argument is unused:
+  Fin.sum_univ_succ
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [rot, eps, Matrix.mul_apply, h1, h2, h3, h4]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/CuspSet.lean:127:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/CuspSet.lean:128:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/CuspSet.lean:132:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [152354/152391] Built PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.IsHolVOf (196s)
+⚠ [152355/152391] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.HolCuspFin (186s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/HolCuspFin.lean:22:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/HolCuspFin.lean:147:50: This simp argument is unused:
+  Matrix.mul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [rot, eps, Fin.sum_univ_succ, h1, h2, h3, h4]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/HolCuspFin.lean:147:68: This simp argument is unused:
+  Fin.sum_univ_succ
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [rot, eps, Matrix.mul_apply, h1, h2, h3, h4]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/HolCuspFin.lean:168:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [152356/152391] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MemOfAdjoinTop (5.7s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/MemOfAdjoinTop.lean:5:5: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/MemOfAdjoinTop.lean:5:48: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/MemOfAdjoinTop.lean:5:67: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [152357/152391] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IntertwinerDiagonalization (6.4s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/IntertwinerDiagonalization.lean:14:18: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [152358/152391] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwJqRec (7.4s)
