@@ -1,4 +1,8 @@
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/TridiagonalWeilDeligne.lean:52:2: Try this: 
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [152023/152045] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.JacquetExistsLeviCongruenceFixedOfCharSupport (6.8s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/JacquetExistsLeviCongruenceFixedOfCharSupport.lean:31:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -6,37 +10,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/TridiagonalWeilDeligne.lean:83:13: This simp argument is unused:
-  Finsupp.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [h, Ne.symm h]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/TridiagonalWeilDeligne.lean:83:35: This simp argument is unused:
-  Ne.symm h
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [h, Finsupp.single_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [151982/151995] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.AbelianFieldWindowTripleSnoc (8.6s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/AbelianFieldWindowTripleSnoc.lean:17:8: `linearIndependent_fin_snoc` has been deprecated: Use `linearIndependent_finSnoc` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/AbelianFieldWindowTripleSnoc.lean:50:19: This simp argument is unused:
-  Finsupp.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [map_sum]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [151983/151997] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.QuadraticTwists.PstRes (143s)
-✔ [151984/152000] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.QuadraticTwists.Untwist (150s)
-✔ [151985/152001] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.WeilDeligneTriangularInitialSegment (6.2s)
-✔ [151986/152001] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.WeilDeligneDpstLeftExact (6.0s)
-✔ [151987/152002] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.WeilDeligneFunctorExact (6.7s)
-✔ [151988/152008] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.QuadraticTwists.EmbPadic (132s)
-⚠ [151989/152008] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.QuadraticTwists.WdRelRes (140s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/QuadraticTwists/WdRelRes.lean:80:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/JacquetExistsLeviCongruenceFixedOfCharSupport.lean:86:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -44,9 +18,103 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [151990/152011] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.WDAway (87s)
-⚠ [151991/152013] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.DpstRightExact (8.2s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/DpstRightExact.lean:14:2: Try this: 
+✔ [152024/152046] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.FixedCongruenceNeBotOfJacquetTorusFixed (6.1s)
+✔ [152025/152047] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.JumpsAbove (45s)
+✔ [152026/152047] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.WeilDeligneCharacterTwistPeriod (25s)
+✔ [152027/152048] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.JacquetBorelExistsTorusCongruenceFixed (6.1s)
+⚠ [152028/152048] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CyclotomicCharacterThird (5.8s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CyclotomicCharacterThird.lean:4:39: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CyclotomicCharacterThird.lean:4:58: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CyclotomicCharacterThird.lean:14:9: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CyclotomicCharacterThird.lean:15:11: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CyclotomicCharacterThird.lean:16:13: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CyclotomicCharacterThird.lean:16:48: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CyclotomicCharacterThird.lean:22:7: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CyclotomicCharacterThird.lean:23:9: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CyclotomicCharacterThird.lean:24:11: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CyclotomicCharacterThird.lean:25:23: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CyclotomicCharacterThird.lean:33:20: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CyclotomicCharacterThird.lean:33:53: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CyclotomicCharacterThird.lean:33:72: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CyclotomicCharacterThird.lean:34:7: Variable name `inst_4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [152029/152049] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.CyclotomicWeilCharProperties (16s)
+✔ [152030/152049] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.LocFixed (150s)
+✔ [152031/152050] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.JumpsOpen (169s)
+✔ [152032/152050] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.HeckeEigenvalueBasicProperties (168s)
+⚠ [152033/152050] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.GaloisCharacterFrobeniusCompatibility (174s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/GaloisCharacterFrobeniusCompatibility.lean:16:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [152034/152051] Built Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.SelfTwGal (181s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/SelfTwGal.lean:67:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -54,7 +122,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/DpstRightExact.lean:15:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/SelfTwGal.lean:68:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -62,7 +130,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/DpstRightExact.lean:16:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/SelfTwGal.lean:69:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -70,7 +138,11 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/DpstRightExact.lean:43:2: Try this: 
+✔ [152035/152055] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.AutBridge (184s)
+⚠ [152036/152056] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.DenseRangeUnitsR (191s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TemperedLocalComponents/DenseRangeUnitsR.lean:60:8: `Set.setOf_forall` has been deprecated: Use `Set.ofPred_forall` instead
+⚠ [152037/152057] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.QuadBC (191s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/QuadBC.lean:14:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -78,7 +150,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/DpstRightExact.lean:44:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/QuadBC.lean:15:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -86,75 +158,3 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/DpstRightExact.lean:45:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/DpstRightExact.lean:46:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [151992/152013] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.WeilDeligneRankOneLine (11s)
-✔ [151993/152014] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.WeilGroupDenseInGaloisGroup (5.6s)
-⚠ [151994/152014] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.CrystallinePeriodRingProperties (6.1s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/CrystallinePeriodRingProperties.lean:20:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [151995/152014] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.TiltFrobeniusTeichmullerAction (6.9s)
-⚠ [151996/152014] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.GaloisRepresentationIntegralLattice (9.3s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/GaloisRepresentationIntegralLattice.lean:91:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/GaloisRepresentationIntegralLattice.lean:101:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/GaloisRepresentationIntegralLattice.lean:102:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [151997/152014] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.GaloisRepValuesInFiniteExtension (5.9s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/GaloisRepValuesInFiniteExtension.lean:12:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [151998/152018] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ContinuousCharacterCompactUnitValues (6.1s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/ContinuousCharacterCompactUnitValues.lean:26:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [151999/152019] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.CrystallineFrobeniusAlgebraicElements (6.5s)
