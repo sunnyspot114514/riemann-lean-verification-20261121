@@ -1,160 +1,160 @@
-  [apply] _sc
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/GenericCharacterTrivialBesselStepUnitriangular.lean:59:34: Variable name `G` is not explicitly referenced.
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _G
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [128719/128742] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.BasePointCharacterTrivialOnDepthLattice (11s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/BasePointCharacterTrivialOnDepthLattice.lean:31:43: This simp argument is unused:
-  Matrix.zero_mul
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/RepresentationTheoryGL/HolomorphicDiscreteSeries/LowestKTypeModels/LowestQLeRank.lean:37:49: This simp argument is unused:
+  LinearIsometryEquiv.coe_coe''
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [pairS, hO_eq_trace, adj_zero, Matrix.mul_zero, trace_zero, add_zero, e1]
+  [apply] simp only [ContinuousLinearMap.comp_apply, ContinuousLinearEquiv.coe_coe]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/BasePointCharacterTrivialOnDepthLattice.lean:37:65: Variable name `sc` is not explicitly referenced.
+⚠ [128950/128975] Built Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.SchurEigenProjections.HolomorphicMoments.MomentHigherEstimateHolds (16s)
+warning: src/Development/WeilBound/RepresentationTheoryGL/HolomorphicDiscreteSeries/SchurEigenProjections/HolomorphicMoments/MomentHigherEstimateHolds.lean:67:2: Try this: 
+  haveI̵
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _sc
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [128720/128744] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.DepthLatticeRowMulVecMemModulusScaledCompletionStatement (6.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/DepthLatticeRowMulVecMemModulusScaledCompletionStatement.lean:15:58: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [128951/128977] Built Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.LowestKTypeModels.ApplyNeZero (6.9s)
+warning: src/Development/WeilBound/RepresentationTheoryGL/HolomorphicDiscreteSeries/LowestKTypeModels/ApplyNeZero.lean:43:17: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/DepthLatticeRowMulVecMemModulusScaledCompletionStatement.lean:15:105: this tactic is never executed
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/WeilBound/RepresentationTheoryGL/HolomorphicDiscreteSeries/LowestKTypeModels/ApplyNeZero.lean:48:87: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/DepthLatticeRowMulVecMemModulusScaledCompletionStatement.lean:15:58: Unused tactic linter: `exact GlobalTheory.DepthRowLem.latRow_mulVec` does nothing
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
+warning: src/Development/WeilBound/RepresentationTheoryGL/HolomorphicDiscreteSeries/LowestKTypeModels/ApplyNeZero.lean:49:4: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/DepthLatticeRowMulVecMemModulusScaledCompletionStatement.lean:15:105: Unused tactic linter: `(intros; apply GlobalTheory.DepthRowLem.latRow_mulVec <;> assumption)` does nothing
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+⚠ [128952/128977] Built Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.WordSpans.ExistsDs (6.6s)
+warning: src/Development/WeilBound/RepresentationTheoryGL/HolomorphicDiscreteSeries/WordSpans/ExistsDs.lean:29:142: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [128721/128744] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.MulMemIdVOfLines (11s)
-⚠ [128722/128744] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ScaledLatticeCompletionSupportedInvIdealSmul (9.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ScaledLatticeCompletionSupportedInvIdealSmul.lean:27:5: Variable name `hαv` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [128953/128977] Built GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.DenseIntegral (6.8s)
+✔ [128954/128977] Built GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.Imports (5.3s)
+✔ [128955/128977] Built GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.OfMoriwakiHS (5.2s)
+✔ [128956/128981] Built GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsPushDown (9.7s)
+⚠ [128957/128982] Built Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.LowestKTypeModels.LowestKTypeModel (9.5s)
+warning: src/Development/WeilBound/RepresentationTheoryGL/HolomorphicDiscreteSeries/LowestKTypeModels/LowestKTypeModel.lean:15:2: Try this: 
+  haveI̵
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hαv
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [128723/128744] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.DepthLatticeGridRowZeroLeSelfDualHomLatticeStatement (11s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/DepthLatticeGridRowZeroLeSelfDualHomLatticeStatement.lean:13:61: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/RepresentationTheoryGL/HolomorphicDiscreteSeries/LowestKTypeModels/LowestKTypeModel.lean:16:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/DepthLatticeGridRowZeroLeSelfDualHomLatticeStatement.lean:13:111: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/DepthLatticeGridRowZeroLeSelfDualHomLatticeStatement.lean:13:61: Unused tactic linter: `exact GlobalTheory.RowBig.latRow_zero_le_latBig` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/RepresentationTheoryGL/HolomorphicDiscreteSeries/LowestKTypeModels/LowestKTypeModel.lean:71:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/WeilBound/RepresentationTheoryGL/HolomorphicDiscreteSeries/LowestKTypeModels/LowestKTypeModel.lean:141:8: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/DepthLatticeGridRowZeroLeSelfDualHomLatticeStatement.lean:13:111: Unused tactic linter: `(intros; apply GlobalTheory.RowBig.latRow_zero_le_latBig <;> assumption)` does nothing
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
+warning: src/Development/WeilBound/RepresentationTheoryGL/HolomorphicDiscreteSeries/LowestKTypeModels/LowestKTypeModel.lean:143:15: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [128724/128746] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.JacobiDepthLatticeKeepsIsotropicHomPartStatement (10s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/JacobiDepthLatticeKeepsIsotropicHomPartStatement.lean:12:97: Variable name `sc` is not explicitly referenced.
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
+warning: src/Development/WeilBound/RepresentationTheoryGL/HolomorphicDiscreteSeries/LowestKTypeModels/LowestKTypeModel.lean:145:8: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _sc
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
+warning: src/Development/WeilBound/RepresentationTheoryGL/HolomorphicDiscreteSeries/LowestKTypeModels/LowestKTypeModel.lean:148:8: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/JacobiDepthLatticeKeepsIsotropicHomPartStatement.lean:13:58: this tactic is never executed
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
+warning: src/Development/WeilBound/RepresentationTheoryGL/HolomorphicDiscreteSeries/LowestKTypeModels/LowestKTypeModel.lean:115:24: This simp argument is unused:
+  hsym
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/JacobiDepthLatticeKeepsIsotropicHomPartStatement.lean:13:105: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_mul, inner_conj_symm, hρ.adj, hφd]
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/JacobiDepthLatticeKeepsIsotropicHomPartStatement.lean:13:58: Unused tactic linter: `exact GlobalTheory.AscFin.SplitX.latRow_extX` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/JacobiDepthLatticeKeepsIsotropicHomPartStatement.lean:13:105: Unused tactic linter: `(intros; apply GlobalTheory.AscFin.SplitX.latRow_extX <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [128725/128751] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ScaledLatticeCompletionSupportedInvIdealSmulStatement (6.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ScaledLatticeCompletionSupportedInvIdealSmulStatement.lean:15:57: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ScaledLatticeCompletionSupportedInvIdealSmulStatement.lean:15:103: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ScaledLatticeCompletionSupportedInvIdealSmulStatement.lean:15:57: Unused tactic linter: `exact GlobalTheory.LatMulAt.latMul_inv_smul` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ScaledLatticeCompletionSupportedInvIdealSmulStatement.lean:15:103: Unused tactic linter: `(intros; apply GlobalTheory.LatMulAt.latMul_inv_smul <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [128726/128751] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.BasePointCharacterTrivialOnDepthLatticeStatement (9.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/BasePointCharacterTrivialOnDepthLatticeStatement.lean:13:97: Variable name `sc` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _sc
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/BasePointCharacterTrivialOnDepthLatticeStatement.lean:14:55: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/BasePointCharacterTrivialOnDepthLatticeStatement.lean:14:99: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/BasePointCharacterTrivialOnDepthLatticeStatement.lean:14:55: Unused tactic linter: `exact GlobalTheory.AscFin.pcBF_xZero_char` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/BasePointCharacterTrivialOnDepthLatticeStatement.lean:14:99: Unused tactic linter: `(intros; apply GlobalTheory.AscFin.pcBF_xZero_char <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [128727/128751] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.JacobiToBesselPiecesMutualAnnihilators (25s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/JacobiToBesselPiecesMutualAnnihilators.lean:255:39: Variable name `sc` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _sc
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/JacobiToBesselPiecesMutualAnnihilators.lean:255:44: Variable name `G` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _G
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [128728/128751] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.GenericCharacterTrivialBesselStepUnitriangularStatement (11s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/GenericCharacterTrivialBesselStepUnitriangularStatement.lean:13:101: Variable name `sc` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _sc
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/GenericCharacterTrivialBesselStepUnitriangularStatement.lean:13:106: Variable name `G` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _G
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/GenericCharacterTrivialBesselStepUnitriangularStatement.lean:14:57: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [128958/128982] Built GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.DenseBoundedHeight (6.6s)
+✔ [128959/128985] Built GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.OfMoriwakiHS (5.1s)
+⚠ [128960/128985] Built Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.WordSpans.NonVanishing (8.4s)
+warning: src/Development/WeilBound/RepresentationTheoryGL/HolomorphicDiscreteSeries/WordSpans/NonVanishing.lean:69:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [128961/128985] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsGoodGridFramesOfDepthFixedStatement (25s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsGoodGridFramesOfDepthFixedStatement.lean:13:59: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/GenericCharacterTrivialBesselStepUnitriangularStatement.lean:14:103: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsGoodGridFramesOfDepthFixedStatement.lean:13:107: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/GenericCharacterTrivialBesselStepUnitriangularStatement.lean:14:57: Unused tactic linter: `exact GlobalTheory.AscFin.UniBF.psiUni_pcBF` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsGoodGridFramesOfDepthFixedStatement.lean:13:59: Unused tactic linter: `exact GlobalTheory.AscFin.towerEx_of_depFixed` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/GenericCharacterTrivialBesselStepUnitriangularStatement.lean:14:103: Unused tactic linter: `(intros; apply GlobalTheory.AscFin.UniBF.psiUni_pcBF <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsGoodGridFramesOfDepthFixedStatement.lean:13:107: Unused tactic linter: `(intros; apply GlobalTheory.AscFin.towerEx_of_depFixed <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [128729/128752] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdealMembershipOffModulus (13s)
-⚠ [128730/128752] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.JacobiToBesselCorePieceNonzeroVacuum (11s)
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/JacobiToBesselCorePieceNonzeroVacuum.lean:29:38: Variable name `sc` is not explicitly referenced.
+✔ [128962/128985] Built GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.PCurveIsOrbit (6.0s)
+✔ [128963/128986] Built GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.BigLineBundleMoriwaki (5.1s)
+✔ [128964/128986] Built GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.HeightsSetAll (5.3s)
+✔ [128965/128986] Built Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.LowestKTypeModels.Models (6.1s)
+✔ [128966/128986] Built Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsPeriodAtRestrict (18s)
+✔ [128967/128988] Built GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PZhangLowerX (8.2s)
+✔ [128968/128995] Built GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.RingKrullDimLocalizationInt (7.8s)
+⚠ [128969/128997] Built Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.WordSpans.ModelWalkOfInputs (8.1s)
+warning: src/Development/WeilBound/RepresentationTheoryGL/HolomorphicDiscreteSeries/WordSpans/ModelWalkOfInputs.lean:36:2: Try this: 
+  haveI̵
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _sc
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/JacobiToBesselCorePieceNonzeroVacuum.lean:29:43: Variable name `G` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/RepresentationTheoryGL/HolomorphicDiscreteSeries/WordSpans/ModelWalkOfInputs.lean:37:2: Try this: 
+  haveI̵
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _G
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/RepresentationTheoryGL/HolomorphicDiscreteSeries/WordSpans/ModelWalkOfInputs.lean:57:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [128970/128997] Built Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsOrthFull (5.5s)
+✔ [128971/128997] Built GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ExistsSmallOfArVolPPos (7.1s)
+✔ [128972/128997] Built GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PLineOfLargeDegreeX (8.1s)
+✔ [128973/128999] Built GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsIntCoordChange (5.8s)
+✔ [128974/128999] Built GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualTopSimpleSub (6.4s)
+✔ [128975/128999] Built GroundTheory.PowerSubgroups.CountableNeighbourhoods.ExistsCover (6.3s)
+✔ [128976/128999] Built Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.WordSpans.StepM (6.1s)
+✔ [128977/128999] Built GroundTheory.PowerSubgroups.CountableNeighbourhoods.ExistsSmulMemHermitianLattice (5.8s)
+✔ [128978/129000] Built GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.ImportsBis (6.1s)
+✔ [128979/129002] Built Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SlopeBoundSt (6.2s)
+✔ [128980/129003] Built GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsIntCoordArInt (5.6s)
+✔ [128981/129003] Built GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsIntCoordGeoNum (5.2s)
+✔ [128982/129004] Built GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualTopSimpleStacked (5.3s)
+✔ [128983/129004] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.BesselPeriodNonvanishingAscentOfDepthData (20s)
+✔ [128984/129004] Built GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualTopStacked (6.1s)
+✔ [128985/129004] Built Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.WeightOccurrence.Occ (6.3s)
+✔ [128986/129006] Built Development.AutomorphicSpectrum.Statements.GeometryStatements.ZhangDimensionPushDownGrassmannianHeightBounds (5.0s)
+✔ [128987/129006] Built GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsGrassFibreDegree (5.0s)
+✔ [128988/129028] Built GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualTopSimpleSub (5.5s)
+✔ [128989/129029] Built GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualTopBasisChange (14s)
+✔ [128990/129029] Built GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualStackedGraph (5.0s)
+✔ [128991/129030] Built Development.AutomorphicSpectrum.Proofs.MetricProofs.HsLinksOfMoriwaki (5.3s)
+✔ [128992/129030] Built GroundTheory.HeightsAndTheta.Heights.HeightKernels.PIntCoordGeoNum (9.4s)
