@@ -1,160 +1,160 @@
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/QRNonneg.lean:74:33: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/QRNonneg.lean:77:37: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/QRNonneg.lean:80:34: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-✔ [163223/163236] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.HeightContinuity.SHtOf (4.0s)
-⚠ [163224/163237] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.PartitionUnitySmooth.GRSmooth (16s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/GRSmooth.lean:15:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.PartitionUnitySmooth.GRSmooth.0.PositivityTheory.KB.SmoothPartitionUnityBasic.toR_zero`:
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/EmbTwo.lean:5:40: Variable name `inst_4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [163352/163390] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.OddSpanRank.SBStarOddOf (5.6s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/OddSpanRank/SBStarOddOf.lean:15:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [163353/163392] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.PermutationSigns.SInvOf (4.9s)
+✔ [163354/163396] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.SInv (6.2s)
+⚠ [163355/163396] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.IteratedHeckeBounds.Lemmas (24s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/IteratedHeckeBounds/Lemmas.lean:24:0: automatically included section variable(s) unused in theorem `PositivityTheory.KB.JoinReconstruction.ofS_cont`:
   [NumberField L]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [NumberField L] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [163225/163238] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.AffineSplittingSpan.SpanForSubsingleton (6.9s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/AffineSplittingSpan/SpanForSubsingleton.lean:14:15: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead
-✔ [163226/163238] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.HeckeDoubleCosets.SHeckeOf (4.8s)
-⚠ [163227/163240] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.PartitionUnitySmooth.DotVecMulVec (7.9s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/DotVecMulVec.lean:117:19: this tactic is never executed
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/IteratedHeckeBounds/Lemmas.lean:126:4: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/DotVecMulVec.lean:102:15: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/DotVecMulVec.lean:117:19: Unused tactic linter: `ring` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/IteratedHeckeBounds/Lemmas.lean:179:12: This simp argument is unused:
+  MulAut.conj_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/IteratedHeckeBounds/Lemmas.lean:224:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/IteratedHeckeBounds/Lemmas.lean:226:35: `continuousOn_finset_sum` has been deprecated: Use `continuousOn_finsetSum` instead
+✔ [163356/163397] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.OddWeightCycles.AevApply (20s)
+⚠ [163357/163399] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.UnipotentBlockMatrices.ClosedKernelMinors.BlkInvVal (10s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/UnipotentBlockMatrices/ClosedKernelMinors/BlkInvVal.lean:70:2: Unused tactic linter: `change (blk x y).val i j ∈ O` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [163228/163240] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.AffineSplittingSpan.Imports (4.8s)
-⚠ [163229/163240] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.PartitionUnitySmooth.GRDual (10s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/GRDual.lean:12:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.PartitionUnitySmooth.GRDual.0.PositivityTheory.KB.SmoothPartitionUnityBasic.re_nonneg`:
-  [NumberField L]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField L] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [163230/163242] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.PartitionUnitySmooth.GeomQuarter (7.5s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/GeomQuarter.lean:84:21: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/GeomQuarter.lean:78:15: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/GeomQuarter.lean:84:21: Unused tactic linter: `ring` does nothing
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/UnipotentBlockMatrices/ClosedKernelMinors/BlkInvVal.lean:75:2: Unused tactic linter: `change (wGL S).val i j ∈ O` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [163231/163244] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.PartitionUnitySmooth.GProper (6.9s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/GProper.lean:26:18: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/GProper.lean:38:9: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
-✔ [163232/163244] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.AffineSplittingSpan.SAffOf (4.8s)
-⚠ [163233/163244] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.PartitionUnitySmooth.DiagForm (7.3s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/DiagForm.lean:14:31: This simp argument is unused:
-  star_star
+✔ [163358/163404] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.OddWeightCycles.SWtOddOf (5.2s)
+⚠ [163359/163407] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.UnipotentBlockMatrices.ClosedKernelMinors.UnipBlocks (7.2s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/UnipotentBlockMatrices/ClosedKernelMinors/UnipBlocks.lean:16:90: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Unitary.coe_star, Matrix.star_eq_conjTranspose, conjTranspose_conjTranspose] at key
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/DiagForm.lean:43:5: Variable name `hc` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hc
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [163234/163246] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.PartitionUnitySmooth.QuadBd (5.4s)
-⚠ [163235/163247] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.PartitionUnitySmooth.GThick (13s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/GThick.lean:120:35: This simp argument is unused:
-  Matrix.mulVec
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Matrix.mul_apply, dotProduct, Finset.mul_sum, Finset.sum_mul, mul_assoc, conjTranspose_apply,
-    Matrix.zero_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/GThick.lean:120:50: This simp argument is unused:
-  dotProduct
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Matrix.mul_apply, Matrix.mulVec, Finset.mul_sum, Finset.sum_mul, mul_assoc, conjTranspose_apply,
-    Matrix.zero_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/GThick.lean:120:62: This simp argument is unused:
-  Finset.mul_sum
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Matrix.mul_apply, Matrix.mulVec, dotProduct, Finset.sum_mul, mul_assoc, conjTranspose_apply,
-    Matrix.zero_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/GThick.lean:193:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-✔ [163236/163253] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ClassCounting.LemmaKOfLitN (70s)
-⚠ [163237/163261] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.PartitionUnitySmooth.GbGSmooth (16s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/GbGSmooth.lean:19:93: This simp argument is unused:
-  Matrix.of_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [mat, Pi.mul_apply, _root_.mul_inv_rev, Units.val_mul, Matrix.conjTranspose_mul]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/GbGSmooth.lean:195:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/GbGSmooth.lean:199:10: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-⚠ [163238/163268] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.PartitionUnitySmooth.PfGFin (10s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/PfGFin.lean:78:41: `ContinuousOn.restrict` has been deprecated: Use `ContinuousOn.domRestrict` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/PfGFin.lean:83:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PartitionUnitySmooth/PfGFin.lean:12:2: Try this: intro hSHt hSm hRS hRE hRL hRD hRLip hTh hPr hBu hNr hDB L _ _ hTC
-✔ [163239/163268] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.MomentEntryBounds.UnitaryConeEstimates.OmG (4.9s)
-✔ [163240/163268] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.MomentEntryBounds.InstLCSL (5.7s)
-✔ [163241/163268] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.PartitionUnitySmooth.GProdScale (10s)
-✔ [163242/163268] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.PartitionUnitySmooth.PfDerB (11s)
-✔ [163243/163268] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.MomentEntryBounds.OneLeAbsNorm (5.0s)
-⚠ [163244/163268] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.MomentEntryBounds.SubLeSumAbsConsecutiveDiff (5.7s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/MomentEntryBounds/SubLeSumAbsConsecutiveDiff.lean:11:0: automatically included section variable(s) unused in theorem `PositivityTheory.KB.MomentRationality.Ht.re_star_dot_self`:
-  [DecidableEq n]
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [163360/163409] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.UnipotentBlockMatrices.ClosureOrbits.FinClosure (8.2s)
+✔ [163361/163409] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.IteratedHeckeBounds.LemBound (14s)
+✔ [163362/163410] Built GroundTheory.AutomorphicForms.MultiplicityOne.GL2ProductCompleteness.EqSmulOfMemWindowOrbitClosure (17s)
+⚠ [163363/163410] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.UnipotentBlockMatrices.ClosedKernelMinors.TypeFin (7.0s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/UnipotentBlockMatrices/ClosedKernelMinors/TypeFin.lean:16:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.UnipotentBlockMatrices.ClosedKernelMinors.TypeFin.0.integ`:
+  [Group G]
+  [IsTopologicalGroup G]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [DecidableEq n] in theorem ...
+  omit [Group G] [IsTopologicalGroup G] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/MomentEntryBounds/SubLeSumAbsConsecutiveDiff.lean:29:0: automatically included section variable(s) unused in theorem `PositivityTheory.KB.MomentRationality.Ht.single_le_sum_sq`:
-  [DecidableEq n]
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/UnipotentBlockMatrices/ClosedKernelMinors/TypeFin.lean:116:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/UnipotentBlockMatrices/ClosedKernelMinors/TypeFin.lean:129:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/UnipotentBlockMatrices/ClosedKernelMinors/TypeFin.lean:136:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [163364/163410] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.UnipotentBlockMatrices.ClosedKernelMinors.TensInterp (6.9s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/UnipotentBlockMatrices/ClosedKernelMinors/TensInterp.lean:24:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [163365/163411] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.BaseChangeUnits.IndCOfIndComplex (48s)
+✔ [163366/163413] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.UnipotentBlockMatrices.ClosedKernelMinors.AdMeas (8.1s)
+✔ [163367/163414] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IwahoriHeckeInjectivity.IdempotentTraces.SignMs (48s)
+⚠ [163368/163415] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IwahoriHeckeInjectivity.IdempotentTraces.GalLoc (46s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriHeckeInjectivity/IdempotentTraces/GalLoc.lean:34:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IwahoriHeckeInjectivity.IdempotentTraces.GalLoc.0.pE_ext`:
+  [NumberField F]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [DecidableEq n] in theorem ...
+  omit [NumberField F] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/MomentEntryBounds/SubLeSumAbsConsecutiveDiff.lean:30:54: Variable name `j` is not explicitly referenced.
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriHeckeInjectivity/IdempotentTraces/GalLoc.lean:54:45: Variable name `hn` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _j
+  [apply] _hn
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [163245/163268] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.MomentEntryBounds.UnitaryConeEstimates.DdMemUnitary (6.8s)
-⚠ [163246/163268] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.MomentEntryBounds.UnitaryConeEstimates.ConeStep (6.4s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/MomentEntryBounds/UnitaryConeEstimates/ConeStep.lean:54:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
+✔ [163369/163415] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.IteratedHeckeBounds.LemLz (9.8s)
+⚠ [163370/163415] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.IteratedHeckeBounds.LemForm (9.1s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/IteratedHeckeBounds/LemForm.lean:12:30: Variable name `hPU` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hPU
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/IteratedHeckeBounds/LemForm.lean:68:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [163371/163416] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.SurjectivityCase.SSurjOf (11s)
+⚠ [163372/163416] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.UnipotentBlockMatrices.ClosureOrbits.OrbitStable (33s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/UnipotentBlockMatrices/ClosureOrbits/OrbitStable.lean:139:44: `Submodule.orthogonalProjection` has been deprecated: Use `Submodule.orthogonalProjectionOnto` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/UnipotentBlockMatrices/ClosureOrbits/OrbitStable.lean:141:12: `Submodule.orthogonalProjection_eq_zero_iff` has been deprecated: Use `Submodule.orthogonalProjectionOnto_eq_zero_iff` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/UnipotentBlockMatrices/ClosureOrbits/OrbitStable.lean:141:12: This simp argument is unused:
+  Submodule.orthogonalProjection_eq_zero_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [163373/163416] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.FinalOdd (5.9s)
+✔ [163374/163420] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.UnipotentBlockMatrices.ClosedKernelMinors.PkLaws (8.5s)
+✔ [163375/163421] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.TorsionIntegers.Bridge (5.4s)
+✔ [163376/163421] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.UnipotentBlockMatrices.ClosedKernelMinors.AdmCusp (9.8s)
+✔ [163377/163421] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IntegralCompression.LAbove (76s)
+✔ [163378/163422] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ClassCounting.BOdd (6.8s)
+✔ [163379/163422] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.UnipotentBlockMatrices.ClosedKernelMinors.SubDet (8.6s)
+✔ [163380/163422] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.UnipotentBlockMatrices.ClosedKernelMinors.AdmissibleCuspFormsFinite (16s)
