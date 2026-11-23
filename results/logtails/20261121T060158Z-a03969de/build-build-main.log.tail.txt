@@ -1,17 +1,106 @@
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteDimensionalLev.lean:339:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [165234/165263] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPowerSeriesCompletionEmbedding (8.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbedding.lean:12:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbedding.lean:13:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbedding.lean:18:8: This simp argument is unused:
+  Ideal.Quotient.algebraMap_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbedding.lean:29:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbedding.lean:30:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbedding.lean:31:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbedding.lean:29:4: Unused tactic linter: `(intros;
+  apply _root_.GlobalTheory.SpanPowerSupremum.pow_le_span_pow_sup <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaloisRepresentationOfEigensystem.lean:124:4: Unused tactic linter: `(intros;
-  apply @_root_.GlobalTheory.AdjoinStableCommutes.adjoin_stable_and_commutes <;>
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbedding.lean:30:4: Unused tactic linter: `(intros;
+  apply @_root_.GlobalTheory.SpanPowerSupremum.pow_le_span_pow_sup <;>
     first
     | assumption
     | infer_instance)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaloisRepresentationOfEigensystem.lean:125:4: Unused tactic linter: `(intros;
-  exact _root_.GlobalTheory.AdjoinStableCommutes.adjoin_stable_and_commutes ..)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbedding.lean:31:4: Unused tactic linter: `(intros; exact _root_.GlobalTheory.SpanPowerSupremum.pow_le_span_pow_sup ..)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaloisRepresentationOfEigensystem.lean:167:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbedding.lean:39:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbedding.lean:40:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbedding.lean:41:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbedding.lean:39:4: Unused tactic linter: `(intros; apply _root_.GlobalTheory.AlgebraicIntegerNormBound.main <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbedding.lean:40:4: Unused tactic linter: `(intros;
+  apply @_root_.GlobalTheory.AlgebraicIntegerNormBound.main <;>
+    first
+    | assumption
+    | infer_instance)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbedding.lean:41:4: Unused tactic linter: `(intros; exact _root_.GlobalTheory.AlgebraicIntegerNormBound.main ..)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbedding.lean:213:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbedding.lean:214:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbedding.lean:215:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbedding.lean:213:4: Unused tactic linter: `(intros; apply _root_.GlobalTheory.IntegralNormBound.target <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbedding.lean:214:4: Unused tactic linter: `(intros;
+  apply @_root_.GlobalTheory.IntegralNormBound.target <;>
+    first
+    | assumption
+    | infer_instance)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbedding.lean:215:4: Unused tactic linter: `(intros; exact _root_.GlobalTheory.IntegralNormBound.target ..)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbedding.lean:227:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -19,9 +108,21 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [165201/165227] Built Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.NormGal (200s)
-warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormGal.lean:20:15: `AddSubmonoidClass.coe_finset_sum` has been deprecated: Use `AddSubmonoidClass.coe_finsetSum` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormGal.lean:33:2: Try this: 
+⚠ [165235/165263] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteDimensionalLevStatement (4.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteDimensionalLevStatement.lean:7:57: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteDimensionalLevStatement.lean:7:103: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteDimensionalLevStatement.lean:7:57: Unused tactic linter: `exact GlobalTheory.K4.finiteDimensional_lev` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteDimensionalLevStatement.lean:7:103: Unused tactic linter: `(intros; apply GlobalTheory.K4.finiteDimensional_lev <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [165236/165267] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.DegreeCountMaximalIdealGeneratesProduct (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/DegreeCountMaximalIdealGeneratesProduct.lean:33:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -29,132 +130,31 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormGal.lean:43:2: Try this: 
-  haveI̵
+⚠ [165237/165267] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPowerSeriesCompletionEmbeddingStatement (4.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbeddingStatement.lean:6:76: this tactic is never executed
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbeddingStatement.lean:6:141: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormGal.lean:61:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbeddingStatement.lean:6:76: Unused tactic linter: `exact GlobalTheory.CurveCompletion.exists_completion_embedding` does nothing
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowerSeriesCompletionEmbeddingStatement.lean:6:141: Unused tactic linter: `(intros;
+  apply GlobalTheory.CurveCompletion.exists_completion_embedding <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormGal.lean:93:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [165238/165271] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.DegreeCountMaximalIdealGeneratesProductStatement (5.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/DegreeCountMaximalIdealGeneratesProductStatement.lean:8:55: this tactic is never executed
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/DegreeCountMaximalIdealGeneratesProductStatement.lean:8:99: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormGal.lean:94:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/DegreeCountMaximalIdealGeneratesProductStatement.lean:8:55: Unused tactic linter: `exact GlobalTheory.degree_count_generates` does nothing
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/DegreeCountMaximalIdealGeneratesProductStatement.lean:8:99: Unused tactic linter: `(intros; apply GlobalTheory.degree_count_generates <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormGal.lean:95:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormGal.lean:121:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormGal.lean:122:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormGal.lean:123:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormGal.lean:124:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormGal.lean:151:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormGal.lean:152:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormGal.lean:153:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormGal.lean:231:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [165202/165227] Built Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.ExistsTau (198s)
-warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/ExistsTau.lean:95:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/ExistsTau.lean:94:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/ExistsTau.lean:97:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [165239/165271] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.NewtonPowerSeriesSurjectiveLinearizationSolution (6.2s)
