@@ -1,160 +1,160 @@
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/WhittakerAdditiveCharacterEquivariance.lean:15:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.WhittakerPsi.det_left_unipotent_mul`:
-  [ValuativeRel F]
-  [TopologicalSpace F]
-  [IsNonarchimedeanLocalField F]
-  [MeasurableSpace F]
-  [BorelSpace F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [ValuativeRel
-  F] [TopologicalSpace F] [IsNonarchimedeanLocalField F] [MeasurableSpace F] [BorelSpace F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/WhittakerAdditiveCharacterEquivariance.lean:23:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.WhittakerPsi.row_vector_mul_upper_unipotent`:
-  [ValuativeRel F]
-  [TopologicalSpace F]
-  [IsNonarchimedeanLocalField F]
-  [MeasurableSpace F]
-  [BorelSpace F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [ValuativeRel
-  F] [TopologicalSpace F] [IsNonarchimedeanLocalField F] [MeasurableSpace F] [BorelSpace F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [162535/162589] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerCentralCharacter (6.9s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/WhittakerCentralCharacter.lean:14:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.WhittakerCentral.mp_mul`:
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LocalFunctionalSectionTranslation.lean:25:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.LFTrans.mp_mul_one`:
   [MeasurableSpace F]
   [BorelSpace F]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [MeasurableSpace F] [BorelSpace F] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/WhittakerCentralCharacter.lean:18:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.WhittakerCentral.mp_one_left`:
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LocalFunctionalSectionTranslation.lean:28:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.LFTrans.rtr_mem_SB`:
   [MeasurableSpace F]
   [BorelSpace F]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [MeasurableSpace F] [BorelSpace F] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/WhittakerCentralCharacter.lean:21:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.WhittakerCentral.mp_half_mul_self`:
-  [MeasurableSpace F]
-  [BorelSpace F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [MeasurableSpace F] [BorelSpace F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/WhittakerCentralCharacter.lean:31:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.WhittakerCentral.det_scalar_diagonal_mul`:
+✔ [162611/162650] Built PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.VerticalStrips.GammaZeroLevelMembership (7.3s)
+✔ [162612/162650] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SigmaFinitePlaneMeasure (6.2s)
+⚠ [162613/162650] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwasawaCoordinatesBoundedRegion (7.5s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/IwasawaCoordinatesBoundedRegion.lean:64:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/IwasawaCoordinatesBoundedRegion.lean:87:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.LFCoords.val_inv_uni_dg`:
   [ValuativeRel F]
   [TopologicalSpace F]
   [IsNonarchimedeanLocalField F]
-  [MeasurableSpace F]
-  [BorelSpace F]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [ValuativeRel
-  F] [TopologicalSpace F] [IsNonarchimedeanLocalField F] [MeasurableSpace F] [BorelSpace F] in theorem ...
+  omit [ValuativeRel F] [TopologicalSpace F] [IsNonarchimedeanLocalField F] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/WhittakerCentralCharacter.lean:38:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.WhittakerCentral.row_vector_scalar_diagonal_mul`:
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/IwasawaCoordinatesBoundedRegion.lean:98:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.LFCoords.val_uni_dg_mul_last`:
   [ValuativeRel F]
   [TopologicalSpace F]
   [IsNonarchimedeanLocalField F]
-  [MeasurableSpace F]
-  [BorelSpace F]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [ValuativeRel
-  F] [TopologicalSpace F] [IsNonarchimedeanLocalField F] [MeasurableSpace F] [BorelSpace F] in theorem ...
+  omit [ValuativeRel F] [TopologicalSpace F] [IsNonarchimedeanLocalField F] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [162536/162589] Built PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.SquareIntegrable.Imports (5.9s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CuspidalContinuity/ArchimedeanCuspidal/SquareIntegrable/Imports.lean:46:72: This simp argument is unused:
-  smul_eq_mul
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [NNReal.coe_zpow, NNReal.coe_natCast, Complex.ofReal_one]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [162537/162591] Built PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.SquareIntegrable.SumIccTelescope (5.8s)
-⚠ [162538/162591] Built PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.SquareIntegrable.CharacterInverseIdentitySecond (7.5s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CuspidalContinuity/ArchimedeanCuspidal/SquareIntegrable/CharacterInverseIdentitySecond.lean:18:46: This simp argument is unused:
-  norm_mul
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [MonoidHom.mul_apply, Units.val_mul, hμ.2 x, hν.2 x]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CuspidalContinuity/ArchimedeanCuspidal/SquareIntegrable/CharacterInverseIdentitySecond.lean:85:2: Unused tactic linter: `beta_reduce  at hI hE` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CuspidalContinuity/ArchimedeanCuspidal/SquareIntegrable/CharacterInverseIdentitySecond.lean:112:2: Unused tactic linter: `beta_reduce  at hI hE` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CuspidalContinuity/ArchimedeanCuspidal/SquareIntegrable/CharacterInverseIdentitySecond.lean:167:15: try 'simp' instead of 'simpa'
-
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CuspidalContinuity/ArchimedeanCuspidal/SquareIntegrable/CharacterInverseIdentitySecond.lean:195:10: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CuspidalContinuity/ArchimedeanCuspidal/SquareIntegrable/CharacterInverseIdentitySecond.lean:195:55: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CuspidalContinuity/ArchimedeanCuspidal/SquareIntegrable/CharacterInverseIdentitySecond.lean:196:6: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CuspidalContinuity/ArchimedeanCuspidal/SquareIntegrable/CharacterInverseIdentitySecond.lean:196:49: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
-✔ [162539/162591] Built PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.SquareIntegrable.Top (6.2s)
-⚠ [162540/162591] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaussSumFiltrations.ThetaSlashEighthRootOfSquareDet (125s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/ThetaSlashEighthRootOfSquareDet.lean:22:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.ThetaLevel.pos_toInf`:
-  [NumberField F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/ThetaSlashEighthRootOfSquareDet.lean:36:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.ThetaLevel.natCast_int`:
-  [NumberField F]
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] [IsTotallyReal F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/ThetaSlashEighthRootOfSquareDet.lean:39:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.ThetaLevel.decomp`:
-  [NumberField F]
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] [IsTotallyReal F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/ThetaSlashEighthRootOfSquareDet.lean:43:101: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/ThetaSlashEighthRootOfSquareDet.lean:45:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.GaussSumFiltrations.ThetaSlashEighthRootOfSquareDet.0.GlobalTheory.HilbertThetaSeries.ThetaLevel.sl0_mul_of_pos`:
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/ThetaSlashEighthRootOfSquareDet.lean:68:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.GaussSumFiltrations.ThetaSlashEighthRootOfSquareDet.0.GlobalTheory.HilbertThetaSeries.ThetaLevel.sl0_smul`:
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/ThetaSlashEighthRootOfSquareDet.lean:167:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.ThetaLevel.low_inGam`:
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/ThetaSlashEighthRootOfSquareDet.lean:208:67: This simp argument is unused:
-  zero_mul
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [low, Matrix.of_apply, Matrix.cons_val', Matrix.cons_val_zero, Matrix.cons_val_one,
-    Matrix.empty_val', Matrix.cons_val_fin_one, mul_one, hc, zero_add]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/ThetaSlashEighthRootOfSquareDet.lean:235:75: this tactic is never executed
+✔ [162614/162651] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerIwasawaGrowthBound (6.3s)
+⚠ [162615/162652] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaussSumFiltrations.ExistsSeedThetaLatticeFixedPointFree (55s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/ExistsSeedThetaLatticeFixedPointFree.lean:35:63: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/ThetaSlashEighthRootOfSquareDet.lean:235:139: this tactic is never executed
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/ExistsSeedThetaLatticeFixedPointFree.lean:35:115: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/ThetaSlashEighthRootOfSquareDet.lean:235:75: Unused tactic linter: `exact GlobalTheory.HilbertThetaSeries.theta_level_eighth_root` does nothing
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/ExistsSeedThetaLatticeFixedPointFree.lean:35:63: Unused tactic linter: `exact GlobalTheory.HilbertThetaSeries.seed_exists` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/ThetaSlashEighthRootOfSquareDet.lean:235:139: Unused tactic linter: `(intros;
-  apply GlobalTheory.HilbertThetaSeries.theta_level_eighth_root <;> assumption)` does nothing
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/ExistsSeedThetaLatticeFixedPointFree.lean:35:115: Unused tactic linter: `(intros; apply GlobalTheory.HilbertThetaSeries.seed_exists <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [162616/162652] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GeometricSumBelowThreshold (5.2s)
+✔ [162617/162652] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CuspidalTwists.OverOf4 (53s)
+⚠ [162618/162652] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedDominantEvaluation (9.5s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/UnramifiedDominantEvaluation.lean:36:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.LFUDom.mp_mul'`:
+  [MeasurableSpace F]
+  [BorelSpace F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [MeasurableSpace F] [BorelSpace F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/UnramifiedDominantEvaluation.lean:39:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.LFUDom.standard_character_trivial_integers`:
+  [MeasurableSpace F]
+  [BorelSpace F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [MeasurableSpace F] [BorelSpace F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/UnramifiedDominantEvaluation.lean:71:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.LFUDom.unifUnit_zpow_val`:
+  [MeasurableSpace F]
+  [BorelSpace F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [MeasurableSpace F] [BorelSpace F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/UnramifiedDominantEvaluation.lean:74:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.LFUDom.det_kd`:
+  [MeasurableSpace F]
+  [BorelSpace F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [MeasurableSpace F] [BorelSpace F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/UnramifiedDominantEvaluation.lean:83:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.LFUDom.inv_kd`:
+  [MeasurableSpace F]
+  [BorelSpace F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [MeasurableSpace F] [BorelSpace F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/UnramifiedDominantEvaluation.lean:96:42: This simp argument is unused:
+  Fin.sum_univ_two
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.mul_apply, Matrix.diagonal]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [162619/162654] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwasawaCoordinatesBoundedRegionStatement (5.1s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/IwasawaCoordinatesBoundedRegionStatement.lean:9:64: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/IwasawaCoordinatesBoundedRegionStatement.lean:9:117: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/IwasawaCoordinatesBoundedRegionStatement.lean:9:64: Unused tactic linter: `exact GlobalTheory.CompanionTheory.LFCoords.coords` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/IwasawaCoordinatesBoundedRegionStatement.lean:9:117: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.LFCoords.coords <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [162620/162654] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwasawaSumMeasureEstimate (5.7s)
+⚠ [162621/162654] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerIwasawaGrowthBoundStatement (4.0s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/WhittakerIwasawaGrowthBoundStatement.lean:9:89: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/WhittakerIwasawaGrowthBoundStatement.lean:9:167: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/WhittakerIwasawaGrowthBoundStatement.lean:9:89: Unused tactic linter: `exact GlobalTheory.CompanionTheory.WhittakerIwasawa.whittaker_bound_iwasawa` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/WhittakerIwasawaGrowthBoundStatement.lean:9:167: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.WhittakerIwasawa.whittaker_bound_iwasawa <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [162622/162654] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalZetaOfAnnulusFunction (6.1s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LocalZetaOfAnnulusFunction.lean:70:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.LFDual.ZRho.continuous_Atau`:
+  [MeasurableSpace F]
+  [BorelSpace F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [MeasurableSpace F] [BorelSpace F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LocalZetaOfAnnulusFunction.lean:110:4: Unused tactic linter: `push_cast` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [162623/162654] Built PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.VerticalStrips.UnramifiedEulerProductIntegral (8.5s)
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/CuspidalContinuity/ArchimedeanCuspidal/VerticalStrips/UnramifiedEulerProductIntegral.lean:219:17: Variable name `k` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _k
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [162624/162654] Built GroundTheory.AutomorphicForms.GL2.InnerProductParamHolo (5.9s)
+⚠ [162625/162654] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GeometricSumBelowThresholdStatement (4.0s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/GeometricSumBelowThresholdStatement.lean:9:78: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/GeometricSumBelowThresholdStatement.lean:9:145: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/GeometricSumBelowThresholdStatement.lean:9:78: Unused tactic linter: `exact GlobalTheory.CompanionTheory.GeomSum.tsum_zpow_le_rpow_div` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/GeometricSumBelowThresholdStatement.lean:9:145: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.GeomSum.tsum_zpow_le_rpow_div <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
