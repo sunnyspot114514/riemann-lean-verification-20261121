@@ -1,18 +1,3 @@
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/ElemPairJ.lean:35:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.ElemPairJ.0.UpperTheory.Gal.InertialTypesAlt.L.iter_aut`:
-  [FiniteDimensional k k']
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [FiniteDimensional k k'] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/ElemPairJ.lean:91:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [170685/170706] Built Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.QuadLiftOf (270s)
 warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/SphericalIdeles/QuadLiftOf.lean:22:2: Try this: 
   haveI̵
 
@@ -158,3 +143,18 @@ Note: This linter can be disabled with `set_option linter.style.haveILetI false`
 warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/AutomorphicOfGsp4RigidSolvableGalois.lean:27:12: `IsSolvable` has been deprecated: Use `Group.IsSolvable` instead
 ✔ [170700/170723] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.VWPtAut (421s)
 ✔ [170701/170723] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.LevelAdmissibleRestrictionHolds (427s)
+✔ [170702/170725] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.Hypotheses4Z (298s)
+✔ [170703/170728] Built Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.QuadLift (344s)
+✔ [170704/170728] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.LevFixed (347s)
+✔ [170705/170728] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.Sp4In (345s)
+✔ [170706/170728] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.FinalS (247s)
+✔ [170707/170728] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.IndLoc0 (296s)
+⚠ [170708/170731] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.AutomorphyLifting.PrimeIndexConstruction.ConjEquivApply (298s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/PrimeIndexConstruction/ConjEquivApply.lean:15:2: `LinearEquiv.ofLinear` has been deprecated: Use `LinearEquiv.ofLinearMap` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/PrimeIndexConstruction/ConjEquivApply.lean:48:46: This simp argument is unused:
+  Submodule.mem_map
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Submodule.orderIsoMapComap_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
