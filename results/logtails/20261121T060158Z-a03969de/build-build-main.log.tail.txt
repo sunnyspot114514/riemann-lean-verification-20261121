@@ -1,29 +1,3 @@
-✔ [172196/172211] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LiftFactorization.RamLiftOf (111s)
-✔ [172197/172213] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.IdeleNormCharacters.ReadRes (7.7s)
-⚠ [172198/172213] Built Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.OffUnitsLeUnitIdl (13s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/HermitianDescent/OffUnitsLeUnitIdl.lean:49:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/HermitianDescent/OffUnitsLeUnitIdl.lean:87:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.OffUnitsLeUnitIdl.0.UpperTheory.ConvolutionTheory.D.MultiplierQuotient.offUnits_le_unitIdl`:
-  [IsCMField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsCMField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/HermitianDescent/OffUnitsLeUnitIdl.lean:119:11: `MonoidHom.finset_prod_apply` has been deprecated: Use `MonoidHom.finsetProd_apply` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/HermitianDescent/OffUnitsLeUnitIdl.lean:118:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.OffUnitsLeUnitIdl.0.UpperTheory.ConvolutionTheory.D.MultiplierQuotient.psi_apply`:
-  [IsCMField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsCMField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/HermitianDescent/OffUnitsLeUnitIdl.lean:122:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.OffUnitsLeUnitIdl.0.UpperTheory.ConvolutionTheory.D.MultiplierQuotient.continuous_dirAt`:
-  [IsCMField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [IsCMField E] in theorem ...
 
@@ -158,3 +132,29 @@ warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations
 Note: This linter can be disabled with `set_option linter.dupNamespace false`
 ✔ [172214/172230] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.IdeleNormCharacters.ChrPairsPf (7.7s)
 ✔ [172215/172230] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.IdeleNormCharacters.AbsFacts (28s)
+⚠ [172216/172230] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.HoldsCsdCrysOfHoldsS (270s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/HoldsCsdCrysOfHoldsS.lean:17:2: Try this: intro E Ω _ _ _ _ _ _ l _ ι a ha π χ hs r hr w hw P AI hT A hAw O _ _ _ Bw hj σ hσ hsph
+✔ [172217/172234] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.HoldsSGoodDROfCsd (273s)
+⚠ [172218/172236] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnramifiedGoodOfSelfDual (278s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/UnramifiedGoodOfSelfDual.lean:18:33: This simp argument is unused:
+  smul_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [UpperTheory.V.Af.tw_val]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [172219/172237] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LiftFactorization.BcTopLOf (300s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LiftFactorization/BcTopLOf.lean:58:74: `IsSolvable` has been deprecated: Use `Group.IsSolvable` instead
+✔ [172220/172238] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SatakeLifts.LiftSatUHolds (286s)
+✔ [172221/172240] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.IdeleNormCharacters.ChrPairsHolds (13s)
+⚠ [172222/172240] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIsLocGaloisFactorsThrough (12s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsIsLocGaloisFactorsThrough.lean:31:0: automatically included section variable(s) unused in theorem `GlobalTheory.DelEps.LocExt.mem_fixSub`:
+  [IsAlgClosure K Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsAlgClosure K Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [172223/172240] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.FrobeniusGoodOfSelfDual (261s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/FrobeniusGoodOfSelfDual.lean:72:2: Try this: intro hI Hc Hp E Ω _ _ _ _ _ _ l _ ι a ha π χ hS r hr w hw B hB P AI hT A h O _ _ _ Bw hj g
+✔ [172224/172242] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LiftFactorization.StrongOf (324s)
+✔ [172225/172242] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PlaceUnderIsPlaceOver (5.9s)
