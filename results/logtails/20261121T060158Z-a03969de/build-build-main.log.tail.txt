@@ -1,51 +1,99 @@
-  [IsAlgClosure L Ω]
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [169938/169967] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MeasurePreservingToMixedPiSymm (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MeasurePreservingToMixedPiSymm.lean:35:33: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MeasurePreservingToMixedPiSymm.lean:40:33: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MeasurePreservingToMixedPiSymm.lean:101:0: automatically included section variable(s) unused in theorem `GlobalTheory.ThetaPoisson.toMixedRing_snd`:
+  [NumberField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField L] [IsCMField L] [IsAlgClosure L Ω] in theorem ...
+  omit [NumberField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LeviSmoothLocalization/PrincipalSeriesMatching/PotOfPair.lean:127:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LeviSmoothLocalization.PrincipalSeriesMatching.PotOfPair.0.range_iff`:
-  [IsAlgClosure L Ω]
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MeasurePreservingToMixedPiSymm.lean:105:0: automatically included section variable(s) unused in theorem `GlobalTheory.ThetaPoisson.isEmpty_isReal`:
+  [NumberField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsAlgClosure L Ω] in theorem ...
+  omit [NumberField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LeviSmoothLocalization/PrincipalSeriesMatching/PotOfPair.lean:147:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LeviSmoothLocalization.PrincipalSeriesMatching.PotOfPair.0.conj_not_mem`:
-  [IsAlgClosure L Ω]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsAlgClosure L Ω] in theorem ...
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MeasurePreservingToMixedPiSymm.lean:159:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LeviSmoothLocalization/PrincipalSeriesMatching/PotOfPair.lean:177:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LeviSmoothLocalization.PrincipalSeriesMatching.PotOfPair.0.FlagAt.smul`:
-  [IsCMField L]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsCMField L] in theorem ...
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [169893/169918] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.ModNOf (652s)
-⚠ [169894/169920] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.TCoreO (406s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TCoreO.lean:29:66: This simp argument is unused:
-  Matrix.one_apply
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MeasurePreservingToMixedPiSymm.lean:247:21: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [169939/169967] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsFundamentalDomainIUnion (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsFundamentalDomainIUnion.lean:20:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsFundamentalDomainIUnion.lean:22:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsFundamentalDomainIUnion.lean:24:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsFundamentalDomainIUnion.lean:25:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsFundamentalDomainIUnion.lean:26:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsFundamentalDomainIUnion.lean:27:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsFundamentalDomainIUnion.lean:60:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsFundamentalDomainIUnion.lean:65:82: This simp argument is unused:
+  Subgroup.coe_inv
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [GDet.repAlg, Matrix.charmatrix, h, Matrix.diagonal_apply]
+  [apply] simp only [Set.mem_smul_set_iff_inv_smul_mem, Subgroup.smul_def, smul_eq_mul]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TCoreO.lean:29:84: This simp argument is unused:
-  Matrix.diagonal_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [GDet.repAlg, Matrix.charmatrix, h, Matrix.one_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TCoreO.lean:33:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TCoreO.lean:40:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsFundamentalDomainIUnion.lean:85:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -53,8 +101,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TCoreO.lean:82:57: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TCoreO.lean:87:4: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsFundamentalDomainIUnion.lean:87:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -62,7 +109,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TCoreO.lean:88:4: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsFundamentalDomainIUnion.lean:89:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -70,7 +117,8 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TCoreO.lean:134:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsFundamentalDomainIUnion.lean:100:32: `AEMeasurable.ennreal_tsum` has been deprecated: Use `AEMeasurable.tsum` from `Mathlib.MeasureTheory.Constructions.Polish.Basic` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsFundamentalDomainIUnion.lean:154:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -78,7 +126,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TCoreO.lean:135:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsFundamentalDomainIUnion.lean:155:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -86,7 +134,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TCoreO.lean:136:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsFundamentalDomainIUnion.lean:156:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -94,7 +142,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TCoreO.lean:137:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsFundamentalDomainIUnion.lean:200:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -102,16 +150,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [169895/169920] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.DnPmDown (416s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/DnPmDown.lean:63:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/DnPmDown.lean:64:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsFundamentalDomainIUnion.lean:215:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -119,42 +158,3 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/DnPmDown.lean:65:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/DnPmDown.lean:66:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/DnPmDown.lean:67:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [169896/169920] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.WinFreePU (205s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AdmissibleResidues/WinFreePU.lean:38:29: `zero_le'` has been deprecated: Use `zero_le` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AdmissibleResidues/WinFreePU.lean:56:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AdmissibleResidues/WinFreePU.lean:111:4: `Matrix.charpoly_of_upperTriangular` has been deprecated: Use `Matrix.charpoly_of_isUpperTriangular` instead
-✔ [169897/169920] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.RigEnd3 (211s)
-✔ [169898/169920] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.WinDefs (211s)
-✔ [169899/169920] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.TWeylC (206s)
-✔ [169900/169920] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.CountS (188s)
-✔ [169901/169920] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.SatK (182s)
