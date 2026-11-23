@@ -1,25 +1,78 @@
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FgInertiaCocyclesModCoboundariesCoefRingStatement.lean:10:101: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FgInertiaCocyclesModCoboundariesCoefRingStatement.lean:10:56: Unused tactic linter: `exact GlobalTheory.InertCoh.fg_coc_mod_cob` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FgInertiaCocyclesModCoboundariesCoefRingStatement.lean:10:101: Unused tactic linter: `(intros; apply GlobalTheory.InertCoh.fg_coc_mod_cob <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [165569/165589] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ShCocWsumProps (155s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ShCocWsumProps.lean:36:10: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+⚠ [165570/165590] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.InertiaCocycleEqZeroOfVanishWildTameGeneratorStatement (154s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/InertiaCocycleEqZeroOfVanishWildTameGeneratorStatement.lean:10:59: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/InertiaCocycleEqZeroOfVanishWildTameGeneratorStatement.lean:10:107: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/InertiaCocycleEqZeroOfVanishWildTameGeneratorStatement.lean:10:59: Unused tactic linter: `exact GlobalTheory.CocWildTame.eq_zero_on_Ine` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/InertiaCocycleEqZeroOfVanishWildTameGeneratorStatement.lean:10:107: Unused tactic linter: `(intros; apply GlobalTheory.CocWildTame.eq_zero_on_Ine <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [165571/165590] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ZetaSystemExponentRaiseOfPrimePowSmul (163s)
+⚠ [165572/165592] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIntegralCoboundaryWildInertiaAwayFromL (170s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIntegralCoboundaryWildInertiaAwayFromL.lean:20:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
 If you'd rather continue using `push_neg` in your project, you can implement it as follows:
 ```
 open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/RatUnramToIntUnram.lean:106:16: This simp argument is unused:
-  Pi.single_apply
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIntegralCoboundaryWildInertiaAwayFromL.lean:141:15: `Set.setOf_forall` has been deprecated: Use `Set.ofPred_forall` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIntegralCoboundaryWildInertiaAwayFromL.lean:155:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIntegralCoboundaryWildInertiaAwayFromL.lean:181:24: This simp argument is unused:
+  Finset.sum_singleton
 
 Hint: Omit it from the simp argument list.
-  [apply] simp
+  [apply] simp only [hMq, Matrix.mul_apply, Matrix.sum_apply, aff, Fintype.sum_sum_type, Matrix.fromBlocks_apply₁₁,
+    Matrix.fromBlocks_apply₁₂, Matrix.fromBlocks_apply₂₂, Matrix.of_apply, Matrix.one_apply_eq, Fin.sum_univ_two,
+    Finset.univ_unique, Finset.sum_const, Finset.card_univ, Finset.card_singleton, one_smul, nsmul_eq_mul, Nat.cast_one,
+    one_mul, mul_one] at h1
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/RatUnramToIntUnram.lean:109:16: This simp argument is unused:
-  Pi.single_apply
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIntegralCoboundaryWildInertiaAwayFromL.lean:181:129: This simp argument is unused:
+  Nat.cast_one
 
 Hint: Omit it from the simp argument list.
-  [apply] simp
+  [apply] simp only [hMq, Matrix.mul_apply, Matrix.sum_apply, aff, Fintype.sum_sum_type, Matrix.fromBlocks_apply₁₁,
+    Matrix.fromBlocks_apply₁₂, Matrix.fromBlocks_apply₂₂, Matrix.of_apply, Matrix.one_apply_eq, Fin.sum_univ_two,
+    Finset.univ_unique, Finset.sum_singleton, Finset.sum_const, Finset.card_univ, Finset.card_singleton, one_smul,
+    nsmul_eq_mul, one_mul, mul_one] at h1
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [165545/165559] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.TameOfShCoc (87s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TameOfShCoc.lean:14:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIntegralCoboundaryWildInertiaAwayFromL.lean:182:4: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hMq, Matrix.mul_apply, Matrix.sum_apply, aff, Fintype.sum_sum_type, Matrix.fromBlocks_apply₁₁,
+    Matrix.fromBlocks_apply₁₂, Matrix.fromBlocks_apply₂₂, Matrix.of_apply, Matrix.one_apply_eq, Fin.sum_univ_two,
+    Finset.univ_unique, Finset.sum_singleton, Finset.sum_const, Finset.card_univ, Finset.card_singleton, one_smul,
+    nsmul_eq_mul, Nat.cast_one, mul_one] at h1
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [165573/165593] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormEqOneOfIsUnitToZModPow (160s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/NormEqOneOfIsUnitToZModPow.lean:22:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -27,38 +80,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [165546/165561] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormCompatibleSystemFrobeniusEqZero (8.0s)
-⚠ [165547/165561] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormCompatibleSystemFrobeniusEqZeroStatement (6.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/NormCompatibleSystemFrobeniusEqZeroStatement.lean:7:75: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/NormCompatibleSystemFrobeniusEqZeroStatement.lean:7:139: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/NormCompatibleSystemFrobeniusEqZeroStatement.lean:7:75: Unused tactic linter: `exact GlobalTheory.NormSystemVanishing.normCompatible_eq_zero` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/NormCompatibleSystemFrobeniusEqZeroStatement.lean:7:139: Unused tactic linter: `(intros;
-  apply GlobalTheory.NormSystemVanishing.normCompatible_eq_zero <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [165548/165563] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoboundaryOfPadicAlgClUniformApprox (10s)
-⚠ [165549/165571] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoboundaryOfPadicAlgClUniformApproxStatement (12s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoboundaryOfPadicAlgClUniformApproxStatement.lean:7:77: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoboundaryOfPadicAlgClUniformApproxStatement.lean:7:143: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoboundaryOfPadicAlgClUniformApproxStatement.lean:7:77: Unused tactic linter: `exact GlobalTheory.UniformCoboundary.coboundary_of_padic_approx` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoboundaryOfPadicAlgClUniformApproxStatement.lean:7:143: Unused tactic linter: `(intros;
-  apply GlobalTheory.UniformCoboundary.coboundary_of_padic_approx <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [165550/165575] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormIntCastLeOfDvd (142s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/NormIntCastLeOfDvd.lean:66:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/NormEqOneOfIsUnitToZModPow.lean:69:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -66,26 +88,56 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [165551/165575] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsFurtherTail (5.6s)
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ImportsFurtherTail.lean:6:15: Variable name `inst` is not explicitly referenced.
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/NormEqOneOfIsUnitToZModPow.lean:77:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/NormEqOneOfIsUnitToZModPow.lean:166:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [165574/165596] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsPrimitiveRootEOmLevel (7.6s)
+✔ [165575/165596] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ZpowCongrOfModEq (4.8s)
+⚠ [165576/165596] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.EulerFactorBounds.FrobeniusConjugateInertia (170s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/FrobeniusConjugateInertia.lean:180:71: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [165577/165596] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.PsumGaloisUnitPiece (6.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/PsumGaloisUnitPiece.lean:52:21: This simp argument is unused:
+  Matrix.GeneralLinearGroup.coe_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [diagOneUnit, Matrix.mul_diagonal]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/PsumGaloisUnitPiece.lean:56:21: This simp argument is unused:
+  Matrix.GeneralLinearGroup.coe_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [diagOneUnit, Matrix.det_mul, Matrix.det_diagonal, Fin.prod_univ_two]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [165578/165597] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.MapOneDirichlet (18s)
+⚠ [165579/165601] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.GeNatCastIff (7.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GeNatCastIff.lean:17:8: `zero_le'` has been deprecated: Use `zero_le` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GeNatCastIff.lean:92:30: `zero_le'` has been deprecated: Use `zero_le` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GeNatCastIff.lean:92:39: `zero_le'` has been deprecated: Use `zero_le` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GeNatCastIff.lean:103:31: `zero_le'` has been deprecated: Use `zero_le` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GeNatCastIff.lean:103:40: `zero_le'` has been deprecated: Use `zero_le` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GeNatCastIff.lean:111:55: Variable name `h1` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst
+  [apply] _h1
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [165552/165581] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.SpecApproxCocycle (141s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SpecApproxCocycle.lean:12:5: Variable name `hη` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hη
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [165553/165583] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.SpecCauchy (147s)
-✔ [165554/165584] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsCocycleOfPadicLimitOfApproxCocycles (124s)
-✔ [165555/165585] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerScalarLayerLinkOfShapiroSpecializationAppr (120s)
-✔ [165556/165585] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemCoc (120s)
-⚠ [165557/165585] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.EulerFactorBounds.EsOf (152s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/EsOf.lean:49:4: Try this: 
+⚠ [165580/165601] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsChooseSmallPadicValAxInduction (6.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsChooseSmallPadicValAxInduction.lean:7:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -93,68 +145,16 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/EsOf.lean:102:68: This simp argument is unused:
-  Matrix.mulVec
+⚠ [165581/165601] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsChooseSmallPadicValAxInductionStatement (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsChooseSmallPadicValAxInductionStatement.lean:7:65: this tactic is never executed
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [mZl, en, dotProduct, Fin.sum_univ_two]
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsChooseSmallPadicValAxInductionStatement.lean:7:119: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/EsOf.lean:102:83: This simp argument is unused:
-  dotProduct
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsChooseSmallPadicValAxInductionStatement.lean:7:65: Unused tactic linter: `exact GlobalTheory.exists_choose_small_valuation_ax` does nothing
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [mZl, en, Matrix.mulVec, Fin.sum_univ_two]
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsChooseSmallPadicValAxInductionStatement.lean:7:119: Unused tactic linter: `(intros; apply GlobalTheory.exists_choose_small_valuation_ax; all_goals assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/EsOf.lean:102:95: This simp argument is unused:
-  Fin.sum_univ_two
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [mZl, en, Matrix.mulVec, dotProduct]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/EsOf.lean:104:21: This simp argument is unused:
-  Matrix.mulVec
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [mZl, en, dotProduct, Fin.sum_univ_two]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/EsOf.lean:104:36: This simp argument is unused:
-  dotProduct
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [mZl, en, Matrix.mulVec, Fin.sum_univ_two]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/EsOf.lean:104:48: This simp argument is unused:
-  Fin.sum_univ_two
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [mZl, en, Matrix.mulVec, dotProduct]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/EsOf.lean:120:13: This simp argument is unused:
-  Pi.sub_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Pi.add_apply, Pi.smul_apply, Finset.sum_apply, smul_sub, smul_add, Finset.smul_sum, map_smul]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [165558/165587] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.NatCastIsUnitPadicInt (89s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/NatCastIsUnitPadicInt.lean:12:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/NatCastIsUnitPadicInt.lean:21:6: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
