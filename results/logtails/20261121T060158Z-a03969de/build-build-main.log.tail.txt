@@ -1,68 +1,127 @@
-  [apply] simp [dualM, Matrix.one_apply, hij]
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/NormsAndPolarizations/SelfDual.lean:76:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [161828/161843] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.NormsAndPolarizations.PairDual (174s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/NormsAndPolarizations/PairDual.lean:9:16: Overlapping instance parameters in `auxiliaryVectors_pairing_eq_antiDiagonal_gram`:
+
+⚠️ `[IsLocalRing O]` and `[IsCO O O]` each imply `[Nontrivial O]`.
+💡️ Of these, `[IsLocalRing O]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+✔ [161829/161846] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.NormsAndPolarizations.ModelSmall (173s)
+⚠ [161830/161846] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsMoreFurther (6.6s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ImportsMoreFurther.lean:4:24: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ImportsMoreFurther.lean:4:44: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ImportsMoreFurther.lean:4:66: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ImportsMoreFurther.lean:5:5: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ImportsMoreFurther.lean:5:28: Variable name `inst_4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ImportsMoreFurther.lean:5:54: Variable name `inst_5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [161831/161846] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.SpectralEigenvalues.TrPoly (5.7s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/SpectralEigenvalues/TrPoly.lean:25:40: This simp argument is unused:
+  Multiset.map_map
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Finset.prod_eq_multiset_prod, Function.comp_def]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [161803/161833] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.DualModuleCocycles.DerPow (229s)
-✔ [161804/161833] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.DualModuleCocycles.TriAeval (229s)
-⚠ [161805/161833] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.DualModuleCocycles.IdemDiag (248s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/DualModuleCocycles/IdemDiag.lean:22:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/SpectralEigenvalues/TrPoly.lean:27:8: This simp argument is unused:
+  Multiset.map_map
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Finset.sum_eq_multiset_sum, Function.comp_def]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [161832/161850] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.SpectralEigenvalues.HensNewton (7.8s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/SpectralEigenvalues/HensNewton.lean:101:8: Overlapping instance parameters in `UpperTheory.V.Th.Sp.hens`:
+
+⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.
+💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+✔ [161833/161854] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.SpectralEigenvalues.ImportsBis (5.1s)
+⚠ [161834/161855] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Lam0 (6.3s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/Lam0.lean:13:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/Lam0.lean:5:22: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/Lam0.lean:5:55: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/Lam0.lean:5:77: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/Lam0.lean:6:5: Variable name `inst_4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/Lam0.lean:6:31: Variable name `inst_5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [161835/161855] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.NilpotentHeckeOperators.AbsNil (7.6s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/NilpotentHeckeOperators/AbsNil.lean:21:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
 If you'd rather continue using `push_neg` in your project, you can implement it as follows:
 ```
 open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-✔ [161806/161834] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.DualModuleCocycles.ChQuot (248s)
-✔ [161807/161834] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.DualModuleCocycles.LiftOfS (248s)
-✔ [161808/161834] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.DualModuleCocycles.LiftConj (248s)
-✔ [161809/161834] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.DualModuleCocycles.TrRep (249s)
-⚠ [161810/161835] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.DualModuleCocycles.TrSingle (249s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/DualModuleCocycles/TrSingle.lean:19:8: This simp argument is unused:
-  Matrix.trace_smul
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [pow_two, mul_assoc]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [161811/161835] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.DualModuleCocycles.Kill0 (249s)
-✔ [161812/161835] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.SpectralEigenvalues.ImportsTer (249s)
-✔ [161813/161835] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.SpectralEigenvalues.ImportsMore (10s)
-⚠ [161814/161835] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.DualModuleCocycles.Polar (279s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/DualModuleCocycles/Polar.lean:84:73: This simp argument is unused:
-  hPQ
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [AddMonoidHom.add_apply, heD, hss, Matrix.transpose_add, Matrix.transpose_mul,
-    Matrix.transpose_transpose, hPbt, hQt, Matrix.mul_add, Matrix.add_mul, Matrix.smul_mul, Matrix.mul_smul, smul_smul,
-    hee, one_smul, Matrix.mul_assoc, hPQ', hQP, hQP', Matrix.mul_one]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/DualModuleCocycles/Polar.lean:84:83: This simp argument is unused:
-  hQP'
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [AddMonoidHom.add_apply, heD, hss, Matrix.transpose_add, Matrix.transpose_mul,
-    Matrix.transpose_transpose, hPbt, hQt, Matrix.mul_add, Matrix.add_mul, Matrix.smul_mul, Matrix.mul_smul, smul_smul,
-    hee, one_smul, Matrix.mul_assoc, hPQ', hPQ, hQP, Matrix.mul_one]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [161815/161835] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.GaloisRepresentationTypes.DerAdjoin (292s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/GaloisRepresentationTypes/DerAdjoin.lean:94:35: This simp argument is unused:
-  map_sub
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [map_mul, map_pow, aeval_X, aeval_C, map_zero, sub_zero]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/GaloisRepresentationTypes/DerAdjoin.lean:94:53: This simp argument is unused:
-  aeval_C
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [map_mul, map_pow, map_sub, aeval_X, map_zero, sub_zero]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/GaloisRepresentationTypes/DerAdjoin.lean:142:33: `LinearMap.exists_monic_and_coeff_mem_pow_and_aeval_eq_zero_of_range_le_smul` has been deprecated: strengthened conclusion to
-`LinearMap.exists_monic_and_natDegree_eq_and_coeff_mem_pow_and_aeval_eq_zero`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/GaloisRepresentationTypes/DerAdjoin.lean:269:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/NilpotentHeckeOperators/AbsNil.lean:23:8: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -70,91 +129,32 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [161816/161835] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.VwinOfInputs (291s)
-⚠ [161817/161835] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.NormsAndPolarizations.Midpoint (292s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/NormsAndPolarizations/Midpoint.lean:47:26: Variable name `he` is not explicitly referenced.
+⚠ [161836/161858] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.HidaOrdinaryHecke.LevelX (500s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/HidaOrdinaryHecke/LevelX.lean:90:203: Variable name `dq` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _he
+  [apply] _dq
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [161818/161835] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.NormsAndPolarizations.LocalOfFinite (292s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/NormsAndPolarizations/LocalOfFinite.lean:20:4: Try this: 
-  haveI̵
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/HidaOrdinaryHecke/LevelX.lean:112:203: Variable name `dq` is not explicitly referenced.
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _dq
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/NormsAndPolarizations/LocalOfFinite.lean:21:4: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/HidaOrdinaryHecke/LevelX.lean:112:297: Variable name `B'` is not explicitly referenced.
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _B'
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/NormsAndPolarizations/LocalOfFinite.lean:35:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/NormsAndPolarizations/LocalOfFinite.lean:36:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/NormsAndPolarizations/LocalOfFinite.lean:44:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/NormsAndPolarizations/LocalOfFinite.lean:99:6: This simp argument is unused:
-  RingHom.coe_coe
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [161837/161858] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.SpectralEigenvalues.Lam0 (5.0s)
+⚠ [161838/161860] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.NilpotentHeckeOperators.PowRel (5.6s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/NilpotentHeckeOperators/PowRel.lean:20:35: This simp argument is unused:
+  Matrix.one_apply
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [MonoidHom.coe_comp, Function.comp_apply, diagRep, MonoidHom.coe_mk, OneHom.coe_mk,
-    RingHom.mapMatrix_apply, Matrix.map_apply, Matrix.diagonal_apply, hchi]
+  [apply] simp [hpq]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/NormsAndPolarizations/LocalOfFinite.lean:99:23: This simp argument is unused:
-  RingHom.mapMatrix_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [MonoidHom.coe_comp, Function.comp_apply, diagRep, MonoidHom.coe_mk, OneHom.coe_mk, RingHom.coe_coe,
-    Matrix.map_apply, Matrix.diagonal_apply, hchi]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/NormsAndPolarizations/LocalOfFinite.lean:99:48: This simp argument is unused:
-  Matrix.map_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [MonoidHom.coe_comp, Function.comp_apply, diagRep, MonoidHom.coe_mk, OneHom.coe_mk, RingHom.coe_coe,
-    RingHom.mapMatrix_apply, Matrix.diagonal_apply, hchi]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/NormsAndPolarizations/LocalOfFinite.lean:100:38: This simp argument is unused:
-  Matrix.diagonal_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [hij]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [161819/161835] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.NormsAndPolarizations.DualRep (297s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/NormsAndPolarizations/DualRep.lean:90:91: This simp argument is unused:
-  mul_comm
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.mul_apply, TrivSqZeroExt.snd_sum, du_fst, du_snd, Finset.sum_add_distrib]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [161839/161860] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.NilpotentHeckeOperators.FNil (6.4s)
