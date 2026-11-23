@@ -1,81 +1,10 @@
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/EventuallyUnr.lean:117:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-✔ [168298/168310] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ArchimedeanSchwartz.ArchimedeanDerivatives.ExistsPullback (147s)
-✔ [168299/168311] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.AutEnd3AltAlt (178s)
-✔ [168300/168311] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ArchimedeanSchwartz.ArchimedeanDerivatives.ArchOf (168s)
-⚠ [168301/168313] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ArchimedeanSchwartz.ArchimedeanDerivatives.BridgeOf (173s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/BridgeOf.lean:71:22: Variable name `x` is not explicitly referenced.
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _x
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/BridgeOf.lean:71:24: Variable name `y` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _y
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/BridgeOf.lean:71:40: Variable name `p` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _p
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/BridgeOf.lean:72:25: Variable name `x` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _x
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/BridgeOf.lean:72:41: Variable name `p` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _p
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/BridgeOf.lean:73:22: Variable name `x` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _x
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/BridgeOf.lean:73:38: Variable name `i` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _i
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/BridgeOf.lean:73:54: Variable name `j` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _j
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/BridgeOf.lean:74:23: Variable name `z` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _z
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/BridgeOf.lean:74:39: Variable name `p` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _p
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/BridgeOf.lean:78:25: Variable name `p` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _p
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/BridgeOf.lean:81:2: Try this: 
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [168303/168316] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.GammaLaurentFactors.LocalEmbeddingNorms.SideGOf (284s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/GammaLaurentFactors/LocalEmbeddingNorms/SideGOf.lean:56:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -83,7 +12,9 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/BridgeOf.lean:95:2: Try this: 
+✔ [168304/168317] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.GammaLaurentFactors.LocalEmbeddingNorms.NormLoc (208s)
+⚠ [168305/168319] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.GammaLaurentFactors.LocalEmbeddingNorms.NormCnt (209s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/GammaLaurentFactors/LocalEmbeddingNorms/NormCnt.lean:16:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -91,7 +22,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/BridgeOf.lean:96:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/GammaLaurentFactors/LocalEmbeddingNorms/NormCnt.lean:17:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -99,13 +30,53 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/BridgeOf.lean:94:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ArchimedeanSchwartz.ArchimedeanDerivatives.BridgeOf.0.UpperTheory.V.Z.Inf.Bridge.vol_haar`:
-  [IsTotallyComplex K]
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/GammaLaurentFactors/LocalEmbeddingNorms/NormCnt.lean:72:6: `Algebra.IsAlgebraic.finrank_of_isFractionRing` has been deprecated: Use `IsFractionRing.finrank_eq` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.finrank_of_isFractionRing` to `IsFractionRing.finrank_eq x`).
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/GammaLaurentFactors/LocalEmbeddingNorms/NormCnt.lean:114:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/GammaLaurentFactors/LocalEmbeddingNorms/NormCnt.lean:115:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/GammaLaurentFactors/LocalEmbeddingNorms/NormCnt.lean:117:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/GammaLaurentFactors/LocalEmbeddingNorms/NormCnt.lean:118:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [168306/168320] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Reps (9.1s)
+⚠ [168307/168321] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.SVPatch (382s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/SVPatch.lean:150:42: `Set.Infinite.diff` has been deprecated: Use `Set.Infinite.sdiff` instead
+⚠ [168308/168330] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.GammaLaurentFactors.LocalEmbeddingNorms.RegroupBC (170s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/GammaLaurentFactors/LocalEmbeddingNorms/RegroupBC.lean:52:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.GammaLaurentFactors.LocalEmbeddingNorms.RegroupBC.0.UpperTheory.V.Z.Gam.BaseChangeLocalFactorRegrouping.under_eq`:
+  [NumberField K]
+  [NumberField L]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex K] in theorem ...
+  omit [NumberField K] [NumberField L] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/BridgeOf.lean:101:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/GammaLaurentFactors/LocalEmbeddingNorms/RegroupBC.lean:58:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -113,36 +84,14 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/BridgeOf.lean:102:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/BridgeOf.lean:123:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ArchimedeanSchwartz.ArchimedeanDerivatives.BridgeOf.0.UpperTheory.V.Z.Inf.Bridge.nrm_pos`:
-  [IsTotallyComplex K]
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/GammaLaurentFactors/LocalEmbeddingNorms/RegroupBC.lean:57:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.GammaLaurentFactors.LocalEmbeddingNorms.RegroupBC.0.UpperTheory.V.Z.Gam.BaseChangeLocalFactorRegrouping.nonempty_over`:
+  [NumberField L]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex K] in theorem ...
+  omit [NumberField L] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/BridgeOf.lean:129:8: `continuous_finset_prod` has been deprecated: Use `continuous_finsetProd` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/BridgeOf.lean:127:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ArchimedeanSchwartz.ArchimedeanDerivatives.BridgeOf.0.UpperTheory.V.Z.Inf.Bridge.continuous_nrm`:
-  [IsTotallyComplex K]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex K] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/BridgeOf.lean:134:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/BridgeOf.lean:135:2: Try this: 
+⚠ [168309/168346] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.AutomorphyLifting.PolarizedLinkage.ThruAway (340s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/PolarizedLinkage/ThruAway.lean:26:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -150,7 +99,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ArchimedeanSchwartz/ArchimedeanDerivatives/BridgeOf.lean:137:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/PolarizedLinkage/ThruAway.lean:27:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -158,3 +107,54 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/PolarizedLinkage/ThruAway.lean:43:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/PolarizedLinkage/ThruAway.lean:44:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/PolarizedLinkage/ThruAway.lean:45:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/PolarizedLinkage/ThruAway.lean:46:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [168310/168347] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.GammaLaurentFactors.LocalEmbeddingNorms.SideGCenOf (196s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/GammaLaurentFactors/LocalEmbeddingNorms/SideGCenOf.lean:92:5: Variable name `hq` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hq
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/GammaLaurentFactors/LocalEmbeddingNorms/SideGCenOf.lean:184:136: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/GammaLaurentFactors/LocalEmbeddingNorms/SideGCenOf.lean:184:165: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/GammaLaurentFactors/LocalEmbeddingNorms/SideGCenOf.lean:184:136: Unused tactic linter: `exact (hm τ _ hmem u).symm` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/GammaLaurentFactors/LocalEmbeddingNorms/SideGCenOf.lean:184:165: Unused tactic linter: `exact ((hm τ).2 _ hmem u).symm` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
