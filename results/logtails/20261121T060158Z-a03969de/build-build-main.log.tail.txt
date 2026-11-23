@@ -1,89 +1,10 @@
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.smul_mulVec, Matrix.mulVec_diagonal, hp]
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/FreeEtaleSheafZmodExistsHomSendingGenerator.lean:54:31: This simp argument is unused:
-  Matrix.smul_mulVec
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.sub_mulVec, Matrix.mulVec_diagonal, hp]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/FreeEtaleSheafZmodExistsHomSendingGenerator.lean:54:51: This simp argument is unused:
-  Matrix.mulVec_diagonal
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.sub_mulVec, Matrix.smul_mulVec, hp]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/FreeEtaleSheafZmodExistsHomSendingGenerator.lean:64:10: This simp argument is unused:
-  Matrix.sub_mulVec
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.smul_mulVec, Matrix.mulVec_diagonal] at this
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/FreeEtaleSheafZmodExistsHomSendingGenerator.lean:64:29: This simp argument is unused:
-  Matrix.smul_mulVec
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.sub_mulVec, Matrix.mulVec_diagonal] at this
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/FreeEtaleSheafZmodExistsHomSendingGenerator.lean:64:49: This simp argument is unused:
-  Matrix.mulVec_diagonal
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.sub_mulVec, Matrix.smul_mulVec] at this
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/FreeEtaleSheafZmodExistsHomSendingGenerator.lean:84:52: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/FreeEtaleSheafZmodExistsHomSendingGenerator.lean:84:52: Unused tactic linter: `ring` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/FreeEtaleSheafZmodExistsHomSendingGenerator.lean:188:42: This simp argument is unused:
-  add_mul
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [mul_sub, sub_mul, mul_add, Matrix.mul_smul, Matrix.smul_mul, Matrix.mul_one, Matrix.one_mul,
-    ← mul_assoc]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/FreeEtaleSheafZmodExistsHomSendingGenerator.lean:383:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.ScalarIrreducibility.FreeEtaleSheafZmodExistsHomSendingGenerator.0.UpperTheory.V.J.TorusDerivation.ne_of_res`:
-  [Fr.IsCoef l ↥c.O]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fr.IsCoef l ↥c.O] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/FreeEtaleSheafZmodExistsHomSendingGenerator.lean:408:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.ScalarIrreducibility.FreeEtaleSheafZmodExistsHomSendingGenerator.0.UpperTheory.V.J.TorusDerivation.res_aB`:
-  [Fr.IsCoef l ↥c.O]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fr.IsCoef l ↥c.O] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/FreeEtaleSheafZmodExistsHomSendingGenerator.lean:412:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.ScalarIrreducibility.FreeEtaleSheafZmodExistsHomSendingGenerator.0.UpperTheory.V.J.TorusDerivation.res_ψB`:
-  [Fr.IsCoef l ↥c.O]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fr.IsCoef l ↥c.O] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/FreeEtaleSheafZmodExistsHomSendingGenerator.lean:416:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.ScalarIrreducibility.FreeEtaleSheafZmodExistsHomSendingGenerator.0.UpperTheory.V.J.TorusDerivation.inc_aB`:
-  [Fr.IsCoef l ↥c.O]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fr.IsCoef l ↥c.O] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/FreeEtaleSheafZmodExistsHomSendingGenerator.lean:419:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.ScalarIrreducibility.FreeEtaleSheafZmodExistsHomSendingGenerator.0.UpperTheory.V.J.TorusDerivation.inc_ψB`:
-  [Fr.IsCoef l ↥c.O]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fr.IsCoef l ↥c.O] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [169645/169667] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.TrSph (26s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/TraceAsymptotics/TrSph.lean:31:2: Try this: 
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/MultiplicityOne/CmbPiA.lean:78:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -91,65 +12,48 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [169646/169667] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.TrUnit (13s)
-⚠ [169647/169668] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.ScalarIrreducibility.FxTwflag (222s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/FxTwflag.lean:42:93: This simp argument is unused:
-  h1
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/MultiplicityOne/CmbPiA.lean:79:2: Try this: 
+  haveI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_neg, neg_mul, mul_assoc, h1', h2', h3', h2, h3, mul_one]
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/FxTwflag.lean:42:97: This simp argument is unused:
-  h2
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [169665/169693] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.ScalarIrreducibility.RedAbs (262s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/RedAbs.lean:17:2: Try this: 
+  haveI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_neg, neg_mul, mul_assoc, h1', h2', h3', h1, h3, mul_one]
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/FxTwflag.lean:42:101: This simp argument is unused:
-  h3
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/RedAbs.lean:18:2: Try this: 
+  haveI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_neg, neg_mul, mul_assoc, h1', h2', h3', h1, h2, mul_one]
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/FxTwflag.lean:42:105: This simp argument is unused:
-  mul_one
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/RedAbs.lean:35:4: Try this: 
+  haveI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_neg, neg_mul, mul_assoc, h1', h2', h3', h1, h2, h3]
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/FxTwflag.lean:106:4: Unused tactic linter: `change ((a * ρ g * a⁻¹ : GL (Fin n) K) : Matrix (Fin n) (Fin n) K) i j = 0` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/FxTwflag.lean:108:4: Unused tactic linter: `change ((a * ρ g * a⁻¹ : GL (Fin n) K) : Matrix (Fin n) (Fin n) K) i i = _` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/FxTwflag.lean:161:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.ScalarIrreducibility.FxTwflag.0.fx_rr`:
-  [Algebra ℤ_[l] O]
-  [Algebra O Q]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Algebra ℤ_[l] O] [Algebra O Q] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/FxTwflag.lean:164:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.ScalarIrreducibility.FxTwflag.0.fx_rr'`:
-  [Algebra ℤ_[l] O]
-  [Algebra O Q]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Algebra ℤ_[l] O] [Algebra O Q] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [169648/169668] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.ScalarIrreducibility.FixLe (186s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/FixLe.lean:25:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [169666/169693] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.UnrE (260s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/UnrE.lean:35:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
 If you'd rather continue using `push_neg` in your project, you can implement it as follows:
 ```
 open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/ScalarIrreducibility/FixLe.lean:31:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/UnrE.lean:40:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -157,4 +61,100 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [169649/169670] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.FinprodSplit (12s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/UnrE.lean:41:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/UnrE.lean:42:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/UnrE.lean:43:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/UnrE.lean:44:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/UnrE.lean:46:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/UnrE.lean:45:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [169667/169693] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.BFixOf (287s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/BFixOf.lean:34:93: This simp argument is unused:
+  h1
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_neg, neg_mul, mul_assoc, h1', h2', h3', h2, h3, mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/BFixOf.lean:34:97: This simp argument is unused:
+  h2
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_neg, neg_mul, mul_assoc, h1', h2', h3', h1, h3, mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/BFixOf.lean:34:101: This simp argument is unused:
+  h3
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_neg, neg_mul, mul_assoc, h1', h2', h3', h1, h2, mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/BFixOf.lean:34:105: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_neg, neg_mul, mul_assoc, h1', h2', h3', h1, h2, h3]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/BFixOf.lean:96:4: Unused tactic linter: `change ((a * ρ g * a⁻¹ : GL (Fin n) K) : Matrix (Fin n) (Fin n) K) i j = 0` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/BFixOf.lean:98:4: Unused tactic linter: `change ((a * ρ g * a⁻¹ : GL (Fin n) K) : Matrix (Fin n) (Fin n) K) i i = _` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/BFixOf.lean:141:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.BFixOf.0.fx_rr`:
+  [Algebra ℤ_[l] O]
+  [Algebra O Q]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Algebra ℤ_[l] O] [Algebra O Q] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/BFixOf.lean:143:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.BFixOf.0.fx_rr'`:
+  [Algebra ℤ_[l] O]
+  [Algebra O Q]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Algebra ℤ_[l] O] [Algebra O Q] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
