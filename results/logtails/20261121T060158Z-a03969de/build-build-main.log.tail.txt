@@ -1,11 +1,41 @@
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/BlockBoundAlt.lean:46:5: Variable name `w₀` is not explicitly referenced.
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _w₀
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDense.lean:82:4: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [172245/172271] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SeparatingAlgebras.CodimPf (5.5s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/CodimPf.lean:17:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDense.lean:83:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDense.lean:84:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDense.lean:85:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDense.lean:86:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDense.lean:82:4: Unused tactic linter: `exact _root_.GlobalTheory.CoordinateEmbeddingSplits.main` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDense.lean:83:4: Unused tactic linter: `(apply _root_.GlobalTheory.CoordinateEmbeddingSplits.main <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDense.lean:84:4: Unused tactic linter: `(intros; apply _root_.GlobalTheory.CoordinateEmbeddingSplits.main <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDense.lean:85:4: Unused tactic linter: `(intros;
+  apply @_root_.GlobalTheory.CoordinateEmbeddingSplits.main <;>
+    first
+    | assumption
+    | infer_instance)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDense.lean:86:4: Unused tactic linter: `(intros; exact _root_.GlobalTheory.CoordinateEmbeddingSplits.main ..)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [172402/172421] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CongruenceOddLevel.ExistsEllType (6.7s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CongruenceOddLevel/ExistsEllType.lean:46:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -13,21 +43,8 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [172246/172271] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SeparatingAlgebras.GroupDet (6.9s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/GroupDet.lean:69:8: `Matrix.det_of_upperTriangular` has been deprecated: Use `Matrix.det_of_isUpperTriangular` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/GroupDet.lean:63:80: This simp argument is unused:
-  Finset.sum_neg_distrib
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Matrix.add_apply, Matrix.smul_apply, smul_eq_mul, hA', hB, Matrix.of_apply, e, mul_add,
-    Finset.sum_add_distrib, Finset.sum_mul, Finset.mul_sum, mul_neg]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [172247/172271] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SeparatingAlgebras.TriMat (7.0s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/TriMat.lean:12:17: `Finsupp.finset_sum_apply` has been deprecated: Use `Finsupp.finsetSum_apply` instead
-✔ [172248/172271] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SeparatingAlgebras.AlgPf (12s)
-⚠ [172249/172271] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SeparatingAlgebras.ExistsInvariantFlagModL (6.0s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/ExistsInvariantFlagModL.lean:14:2: Try this: 
+⚠ [172403/172421] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteAutomorphismOrbitMemFiniteExtensionPadic (6.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/FiniteAutomorphismOrbitMemFiniteExtensionPadic.lean:15:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -35,8 +52,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/ExistsInvariantFlagModL.lean:41:13: `linearIndependent_fin_snoc` has been deprecated: Use `linearIndependent_finSnoc` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/ExistsInvariantFlagModL.lean:65:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/FiniteAutomorphismOrbitMemFiniteExtensionPadic.lean:20:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -44,16 +60,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [172250/172272] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SeparatingAlgebras.FixVec (7.0s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/FixVec.lean:12:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/FixVec.lean:27:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/FiniteAutomorphismOrbitMemFiniteExtensionPadic.lean:24:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -61,7 +68,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/FixVec.lean:28:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/FiniteAutomorphismOrbitMemFiniteExtensionPadic.lean:43:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -69,16 +76,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [172251/172272] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SeparatingAlgebras.DetLow (6.7s)
-⚠ [172252/172272] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SeparatingAlgebras.ExistsCloseVectorUltrametric (7.2s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/ExistsCloseVectorUltrametric.lean:32:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/ExistsCloseVectorUltrametric.lean:35:4: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/FiniteAutomorphismOrbitMemFiniteExtensionPadic.lean:47:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -86,75 +84,77 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/ExistsCloseVectorUltrametric.lean:25:14: This simp argument is unused:
-  Pi.single_apply
+⚠ [172404/172421] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.UnitaryCoordinateAlgebraDenseStatement (5.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDenseStatement.lean:7:52: this tactic is never executed
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [hj]
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDenseStatement.lean:7:93: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [172253/172272] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SeparatingAlgebras.DensCont (7.1s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/DensCont.lean:23:9: `continuous_finset_prod` has been deprecated: Use `continuous_finsetProd` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/DensCont.lean:51:11: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/DensCont.lean:52:33: `continuous_finset_prod` has been deprecated: Use `continuous_finsetProd` instead
-⚠ [172254/172272] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SeparatingAlgebras.MeanVal (7.3s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/MeanVal.lean:58:11: `DifferentiableAt.fun_finset_prod` has been deprecated: Use `DifferentiableAt.fun_finsetProd` instead
-⚠ [172255/172272] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SeparatingAlgebras.WtPosTermPos (6.8s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/WtPosTermPos.lean:60:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/WtPosTermPos.lean:64:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/WtPosTermPos.lean:80:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-✔ [172256/172272] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SeparatingAlgebras.PairTerm (6.6s)
-⚠ [172257/172273] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SeparatingAlgebras.HalfInt (7.1s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/HalfInt.lean:32:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDenseStatement.lean:7:52: Unused tactic linter: `exact GlobalTheory.PolyRealU.poly_infU` does nothing
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDenseStatement.lean:7:93: Unused tactic linter: `(intros; apply GlobalTheory.PolyRealU.poly_infU <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/HalfInt.lean:71:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [172405/172427] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsConjPolynomialDefiniteUnitaryRationalStatement (5.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsConjPolynomialDefiniteUnitaryRationalStatement.lean:7:62: this tactic is never executed
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsConjPolynomialDefiniteUnitaryRationalStatement.lean:7:113: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [172258/172274] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SeparatingAlgebras.RFormula (9.8s)
-✔ [172259/172275] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SeparatingAlgebras.InjAEPf (6.3s)
-⚠ [172260/172276] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SeparatingAlgebras.NullZero (7.1s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/NullZero.lean:30:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsConjPolynomialDefiniteUnitaryRationalStatement.lean:7:62: Unused tactic linter: `exact GlobalTheory.UnitaryBC.exists_conj_polyFun` does nothing
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsConjPolynomialDefiniteUnitaryRationalStatement.lean:7:113: Unused tactic linter: `(intros; apply GlobalTheory.UnitaryBC.exists_conj_polyFun <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/NullZero.lean:37:12: `Polynomial.finite_setOf_isRoot` has been deprecated: Use `Polynomial.finite_setOfPred_isRoot` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SeparatingAlgebras/NullZero.lean:70:48: This simp argument is unused:
-  Fin.insertNth_zero'
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [172406/172431] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CongruenceOddLevel.WtDefs (13s)
+⚠ [172407/172431] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemOfFiniteDimensionalSpanRightTranslates (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:14:75: this tactic is never executed
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [he, MeasurableEquiv.piFinSuccAbove]
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:15:4: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:16:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:17:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:14:75: Unused tactic linter: `assumption` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:15:4: Unused tactic linter: `(intros;
+  apply _root_.GlobalTheory.FinitePointsDetect.finite_points_detect <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:16:4: Unused tactic linter: `(intros;
+  apply @_root_.GlobalTheory.FinitePointsDetect.finite_points_detect <;>
+    first
+    | assumption
+    | infer_instance)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:17:4: Unused tactic linter: `(intros; exact _root_.GlobalTheory.FinitePointsDetect.finite_points_detect ..)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:104:10: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:134:9: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:143:10: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:166:8: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
+⚠ [172408/172431] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DefiniteUnitaryRealApproxAndFiniteInfiniteSplitStatement (5.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DefiniteUnitaryRealApproxAndFiniteInfiniteSplitStatement.lean:8:61: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DefiniteUnitaryRealApproxAndFiniteInfiniteSplitStatement.lean:8:111: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DefiniteUnitaryRealApproxAndFiniteInfiniteSplitStatement.lean:8:61: Unused tactic linter: `exact GlobalTheory.UnitarySplit.dense_and_split` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DefiniteUnitaryRealApproxAndFiniteInfiniteSplitStatement.lean:8:111: Unused tactic linter: `(intros; apply GlobalTheory.UnitarySplit.dense_and_split <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
