@@ -1,160 +1,160 @@
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/KummerCocycleValueExpansionEqLogDerivSmul.lean:59:2: Try this: 
+  haveI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [eq_ratCast, RingEquiv.coe_toEquiv, AlgEquiv.coe_ringEquiv]
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAlgClosureAutomorphismRestrictingLocal.lean:17:56: This simp argument is unused:
-  RingEquiv.coe_toEquiv
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [eq_ratCast, AlgEquiv.toRingEquiv_eq_coe, AlgEquiv.coe_ringEquiv]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [165753/165780] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsAlgebraicNumberCongrModPrimePowStatement (6.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAlgebraicNumberCongrModPrimePowStatement.lean:9:60: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAlgebraicNumberCongrModPrimePowStatement.lean:9:109: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/KummerCocycleValueExpansionEqLogDerivSmul.lean:143:8: `AddSubmonoidClass.coe_finset_sum` has been deprecated: Use `AddSubmonoidClass.coe_finsetSum` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/KummerCocycleValueExpansionEqLogDerivSmul.lean:147:8: `AddSubmonoidClass.coe_finset_sum` has been deprecated: Use `AddSubmonoidClass.coe_finsetSum` instead
+⚠ [165956/165985] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsCuspFunctionalValueGalBEquivariantStatement (4.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsCuspFunctionalValueGalBEquivariantStatement.lean:10:43: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAlgebraicNumberCongrModPrimePowStatement.lean:9:60: Unused tactic linter: `exact GlobalTheory.K5.DenseAlg.exists_mem_cong` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsCuspFunctionalValueGalBEquivariantStatement.lean:10:75: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsCuspFunctionalValueGalBEquivariantStatement.lean:10:43: Unused tactic linter: `exact GlobalTheory.isThB_galB` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAlgebraicNumberCongrModPrimePowStatement.lean:9:109: Unused tactic linter: `(intros; apply GlobalTheory.K5.DenseAlg.exists_mem_cong <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsCuspFunctionalValueGalBEquivariantStatement.lean:10:75: Unused tactic linter: `(intros; apply GlobalTheory.isThB_galB <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [165754/165782] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsAlgClosureAutomorphismRestrictingLocalStatement (6.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAlgClosureAutomorphismRestrictingLocalStatement.lean:9:57: this tactic is never executed
+⚠ [165957/165987] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelLogCoords (7.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SiegelLogCoords.lean:46:10: `Int.ofNat_eq_coe` has been deprecated: Use `Int.ofNat_eq_natCast` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SiegelLogCoords.lean:115:10: `Int.ofNat_eq_coe` has been deprecated: Use `Int.ofNat_eq_natCast` instead
+⚠ [165958/165987] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsLogDerivQExpansionModPrimePowSlashTPow (13s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsLogDerivQExpansionModPrimePowSlashTPow.lean:34:0: automatically included section variable(s) unused in theorem `GlobalTheory.Glue.NrmT.mem_of_pow_eq_one`:
+  [Algebra ℚ Ω]
+  [IsAlgClosure ℚ Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Algebra ℚ Ω] [IsAlgClosure ℚ Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsLogDerivQExpansionModPrimePowSlashTPow.lean:59:0: automatically included section variable(s) unused in theorem `GlobalTheory.Glue.NrmT.trT_coeff`:
+  [Algebra ℚ Ω]
+  [IsAlgClosure ℚ Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Algebra ℚ Ω] [IsAlgClosure ℚ Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsLogDerivQExpansionModPrimePowSlashTPow.lean:66:29: `Finset.addAntidiagonal` has been deprecated: Use `Finset.antidiagonal` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsLogDerivQExpansionModPrimePowSlashTPow.lean:70:8: `Finset.mem_addAntidiagonal` has been deprecated: Use `Finset.mem_antidiagonal` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsLogDerivQExpansionModPrimePowSlashTPow.lean:71:10: `Finset.mem_addAntidiagonal` has been deprecated: Use `Finset.mem_antidiagonal` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsLogDerivQExpansionModPrimePowSlashTPow.lean:77:22: `Finset.mem_addAntidiagonal` has been deprecated: Use `Finset.mem_antidiagonal` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsLogDerivQExpansionModPrimePowSlashTPow.lean:77:61: `Finset.mem_addAntidiagonal` has been deprecated: Use `Finset.mem_antidiagonal` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsLogDerivQExpansionModPrimePowSlashTPow.lean:64:0: automatically included section variable(s) unused in theorem `GlobalTheory.Glue.NrmT.coeff_mul_sup`:
+  [Algebra ℚ Ω]
+  [IsAlgClosure ℚ Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Algebra ℚ Ω] [IsAlgClosure ℚ Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsLogDerivQExpansionModPrimePowSlashTPow.lean:86:6: `Finset.mem_addAntidiagonal` has been deprecated: Use `Finset.mem_antidiagonal` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsLogDerivQExpansionModPrimePowSlashTPow.lean:90:0: automatically included section variable(s) unused in theorem `GlobalTheory.Glue.NrmT.trT_sub`:
+  [Algebra ℚ Ω]
+  [IsAlgClosure ℚ Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Algebra ℚ Ω] [IsAlgClosure ℚ Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsLogDerivQExpansionModPrimePowSlashTPow.lean:95:0: automatically included section variable(s) unused in theorem `GlobalTheory.Glue.NrmT.theta_trT`:
+  [IsAlgClosure ℚ Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsAlgClosure ℚ Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsLogDerivQExpansionModPrimePowSlashTPow.lean:108:0: automatically included section variable(s) unused in theorem `GlobalTheory.Glue.NrmT.cgA_mul`:
+  [Algebra ℚ Ω]
+  [IsAlgClosure ℚ Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Algebra ℚ Ω] [IsAlgClosure ℚ Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsLogDerivQExpansionModPrimePowSlashTPow.lean:153:0: automatically included section variable(s) unused in theorem `GlobalTheory.Glue.NrmT.theta_eq_C_mul`:
+  [IsAlgClosure ℚ Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsAlgClosure ℚ Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsLogDerivQExpansionModPrimePowSlashTPow.lean:159:0: automatically included section variable(s) unused in theorem `GlobalTheory.Glue.NrmT.coeff_mul_mem`:
+  [Algebra ℚ Ω]
+  [IsAlgClosure ℚ Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Algebra ℚ Ω] [IsAlgClosure ℚ Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsLogDerivQExpansionModPrimePowSlashTPow.lean:194:0: automatically included section variable(s) unused in theorem `GlobalTheory.Glue.NrmT.resZ_coeff`:
+  [Algebra ℚ Ω]
+  [IsAlgClosure ℚ Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Algebra ℚ Ω] [IsAlgClosure ℚ Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [165959/165987] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerCocycleTwistedCoboundary (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/KummerCocycleTwistedCoboundary.lean:121:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/KummerCocycleTwistedCoboundary.lean:129:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/KummerCocycleTwistedCoboundary.lean:139:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/KummerCocycleTwistedCoboundary.lean:182:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/KummerCocycleTwistedCoboundary.lean:343:13: Variable name `ho` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ho
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [165960/165987] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerCocycleValueExpansionEqLogDerivSmulStatement (4.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/KummerCocycleValueExpansionEqLogDerivSmulStatement.lean:11:53: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAlgClosureAutomorphismRestrictingLocalStatement.lean:9:103: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/KummerCocycleValueExpansionEqLogDerivSmulStatement.lean:11:95: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAlgClosureAutomorphismRestrictingLocalStatement.lean:9:57: Unused tactic linter: `exact GlobalTheory.CuspDown.exists_restrict` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/KummerCocycleValueExpansionEqLogDerivSmulStatement.lean:11:53: Unused tactic linter: `exact GlobalTheory.K5.GeoKummer.geo_cob` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAlgClosureAutomorphismRestrictingLocalStatement.lean:9:103: Unused tactic linter: `(intros; apply GlobalTheory.CuspDown.exists_restrict <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/KummerCocycleValueExpansionEqLogDerivSmulStatement.lean:11:95: Unused tactic linter: `(intros; apply GlobalTheory.K5.GeoKummer.geo_cob <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [165755/165783] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.AutomorphismOnExtensionPointwise (7.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/AutomorphismOnExtensionPointwise.lean:12:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/AutomorphismOnExtensionPointwise.lean:13:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/AutomorphismOnExtensionPointwise.lean:14:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [165756/165784] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.AutomorphismExtensionUniform (8.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/AutomorphismExtensionUniform.lean:33:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/AutomorphismExtensionUniform.lean:56:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/AutomorphismExtensionUniform.lean:57:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/AutomorphismExtensionUniform.lean:58:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [165757/165785] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.FrobeniusPowerBasisIndependent (11s)
-⚠ [165758/165789] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.FrobeniusPowerReductionCongruence (7.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FrobeniusPowerReductionCongruence.lean:39:17: `AddSubmonoidClass.coe_finset_sum` has been deprecated: Use `AddSubmonoidClass.coe_finsetSum` instead
-⚠ [165759/165789] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.LaurentSeriesAlgebraicConstant (6.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LaurentSeriesAlgebraicConstant.lean:11:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LaurentSeriesAlgebraicConstant.lean:14:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [165760/165789] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ContinuousOfCg (113s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ContinuousOfCg.lean:28:24: this tactic is never executed
+⚠ [165961/165987] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelLogCoordsStatement (5.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SiegelLogCoordsStatement.lean:14:57: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ContinuousOfCg.lean:28:24: Unused tactic linter: `exact Empty.elim ‹_›` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SiegelLogCoordsStatement.lean:14:103: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SiegelLogCoordsStatement.lean:14:57: Unused tactic linter: `exact GlobalTheory.SiegLog.siegel_logCoords` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [165761/165791] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ResidueAlgebraicPolynomialDivisible (7.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ResidueAlgebraicPolynomialDivisible.lean:11:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ResidueAlgebraicPolynomialDivisible.lean:55:48: `zero_le'` has been deprecated: Use `zero_le` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ResidueAlgebraicPolynomialDivisible.lean:65:44: `zero_le'` has been deprecated: Use `zero_le` instead
-⚠ [165762/165791] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.TateDiscreteInertiaKummerCoboundaryBoundStatement (131s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TateDiscreteInertiaKummerCoboundaryBoundStatement.lean:14:45: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TateDiscreteInertiaKummerCoboundaryBoundStatement.lean:14:79: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TateDiscreteInertiaKummerCoboundaryBoundStatement.lean:14:45: Unused tactic linter: `exact GlobalTheory.HTTrace.main` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TateDiscreteInertiaKummerCoboundaryBoundStatement.lean:14:79: Unused tactic linter: `(intros; apply GlobalTheory.HTTrace.main <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [165763/165791] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemInertiaInvariantsCyclotomicAlgebraIffStatement (126s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemInertiaInvariantsCyclotomicAlgebraIffStatement.lean:9:56: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemInertiaInvariantsCyclotomicAlgebraIffStatement.lean:9:101: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemInertiaInvariantsCyclotomicAlgebraIffStatement.lean:9:56: Unused tactic linter: `(exact GlobalTheory.RecOne.mem_cycAlg_iff)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemInertiaInvariantsCyclotomicAlgebraIffStatement.lean:9:101: Unused tactic linter: `(intros; apply GlobalTheory.RecOne.mem_cycAlg_iff <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SiegelLogCoordsStatement.lean:14:103: Unused tactic linter: `(intros; apply GlobalTheory.SiegLog.siegel_logCoords; all_goals assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
