@@ -1,10 +1,9 @@
-
-The goal is a proposition, so `have` is preferred over `haveI`.
 The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvOneSubBound.lean:54:2: Try this: 
+⚠ [168110/168129] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CommonEigenvectorExistence (5.3s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CommonEigenvectorExistence.lean:20:6: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -12,8 +11,30 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvOneSubBound.lean:55:6: `Ideal.sum_ramification_inertia` has been deprecated: Use results of RingTheory.RamificationInertia.Basic
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvOneSubBound.lean:63:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CommonEigenvectorExistence.lean:30:36: This simp argument is unused:
+  _root_.Module.End.mem_eigenspace_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [E, Submodule.mem_inf]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CommonEigenvectorExistence.lean:53:5: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CommonEigenvectorExistence.lean:53:29: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [168111/168129] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalDoubleCosets.Imports (5.3s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalDoubleCosets/Imports.lean:15:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalDoubleCosets/Imports.lean:20:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalDoubleCosets/Imports.lean:25:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalDoubleCosets/Imports.lean:34:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -21,14 +42,25 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvOneSubBound.lean:115:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+⚠ [168112/168129] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalDoubleCosets.ToBorel (7.7s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalDoubleCosets/ToBorel.lean:17:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalDoubleCosets.ToBorel.0.UpperTheory.Gal.LocD.dg_val`:
+  [ValuativeRel E]
+  [TopologicalSpace E]
+  [IsNonarchimedeanLocalField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ValuativeRel E] [TopologicalSpace E] [IsNonarchimedeanLocalField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [168113/168132] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.AutomorphyLifting.IsAutCsdA (148s)
+⚠ [168114/168132] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalDoubleCosets.EigZero (7.9s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalDoubleCosets/EigZero.lean:23:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
 If you'd rather continue using `push_neg` in your project, you can implement it as follows:
 ```
 open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvOneSubBound.lean:157:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalDoubleCosets/EigZero.lean:19:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -36,60 +68,22 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [168062/168078] Built Development.AutomorphicArithmetic.WhittakerHecke.IdeleOfNatMulAndPrimePow (147s)
-✔ [168063/168079] Built Development.AutomorphicArithmetic.WhittakerHecke.ExistsMultiplicativeOfPrimePowerValues (148s)
-✔ [168064/168079] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.PairCases (4.0s)
-⚠ [168065/168081] Built Development.AutomorphicArithmetic.WhittakerHecke.HasSumCoprimeIntegralEqIdeleIntegral (139s)
-warning: src/Development/AutomorphicArithmetic/WhittakerHecke/HasSumCoprimeIntegralEqIdeleIntegral.lean:33:2: try 'simp' instead of 'simpa'
-
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-warning: src/Development/AutomorphicArithmetic/WhittakerHecke/HasSumCoprimeIntegralEqIdeleIntegral.lean:114:58: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/WhittakerHecke/HasSumCoprimeIntegralEqIdeleIntegral.lean:126:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/WhittakerHecke/HasSumCoprimeIntegralEqIdeleIntegral.lean:183:14: This simp argument is unused:
-  Measure.real
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [TF]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [168066/168081] Built Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.InfinitePlaceGluing.ExtOf (6.4s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/SplitEigenfunctions/InfinitePlaceGluing/ExtOf.lean:58:2: Try this: intro hTr hPer hEnt hUnf hPhi hFac hSh hHol hNZ E _ _ _ D P ω χ hC hU hχ M U hNo L N φ hCh hG hW a ha hsum
-⚠ [168067/168081] Built Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.InfinitePlaceGluing.Landau (5.9s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/SplitEigenfunctions/InfinitePlaceGluing/Landau.lean:14:4: `Set.Infinite.diff` has been deprecated: Use `Set.Infinite.sdiff` instead
-⚠ [168068/168081] Built Development.AutomorphicArithmetic.WhittakerHecke.GoodPrimeSplitOrInertOfQuadratic (7.6s)
-warning: src/Development/AutomorphicArithmetic/WhittakerHecke/GoodPrimeSplitOrInertOfQuadratic.lean:21:12: `Algebra.IsAlgebraic.finrank_of_isFractionRing` has been deprecated: Use `IsFractionRing.finrank_eq` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.finrank_of_isFractionRing` to `IsFractionRing.finrank_eq x`).
-warning: src/Development/AutomorphicArithmetic/WhittakerHecke/GoodPrimeSplitOrInertOfQuadratic.lean:44:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/WhittakerHecke/GoodPrimeSplitOrInertOfQuadratic.lean:167:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalDoubleCosets/EigZero.lean:38:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
 If you'd rather continue using `push_neg` in your project, you can implement it as follows:
 ```
 open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-⚠ [168069/168081] Built Development.AutomorphicArithmetic.WhittakerHecke.SatakeParamMulEqCentralCharPowInertiaDeg (7.9s)
-warning: src/Development/AutomorphicArithmetic/WhittakerHecke/SatakeParamMulEqCentralCharPowInertiaDeg.lean:81:12: `zero_le'` has been deprecated: Use `zero_le` instead
-✔ [168070/168081] Built Development.AutomorphicArithmetic.WhittakerHecke.ExistsRatHeightOneSpectrumNormVEqPrimeBadIffDvd (5.7s)
-⚠ [168071/168085] Built Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.InfinitePlaceGluing.CardHeckeT1Cosets (13s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/SplitEigenfunctions/InfinitePlaceGluing/CardHeckeT1Cosets.lean:40:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalDoubleCosets/EigZero.lean:61:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
 If you'd rather continue using `push_neg` in your project, you can implement it as follows:
 ```
 open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-✔ [168072/168085] Built CompanionTheory.EightfoldTheory.VariationTheory.AutomorphicForms.RealStructures.Imports (4.0s)
-✔ [168073/168087] Built Development.AutomorphicArithmetic.WhittakerHecke.FalseOfLandauNonnegEulerFactorsEntire (6.0s)
-⚠ [168074/168087] Built Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.InfinitePlaceGluing.PairCases (10s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/SplitEigenfunctions/InfinitePlaceGluing/PairCases.lean:140:2: Try this: 
+⚠ [168115/168140] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.TPCohC (173s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TPCohC.lean:18:6: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -97,7 +91,44 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/SplitEigenfunctions/InfinitePlaceGluing/PairCases.lean:141:2: Try this: 
+✔ [168116/168140] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LeviSmoothLocalization.PrincipalSeriesMatching.WinUnl (157s)
+⚠ [168117/168140] Built Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.InfinitePlaceGluing.FacOf (165s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/SplitEigenfunctions/InfinitePlaceGluing/FacOf.lean:48:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/SplitEigenfunctions/InfinitePlaceGluing/FacOf.lean:115:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [168118/168140] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalDoubleCosets.JacSemi (5.7s)
+✔ [168119/168143] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.RealDefs (176s)
+⚠ [168120/168143] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalDoubleCosets.TracePowAlt (5.6s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalDoubleCosets/TracePowAlt.lean:9:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [168121/168145] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResidueCardEqAbsNorm (5.6s)
+✔ [168122/168148] Built Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.TwistFactor (7.8s)
+⚠ [168123/168148] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalFieldTwoVocabulariesDictionary (6.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LocalFieldTwoVocabulariesDictionary.lean:77:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [168124/168150] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalDoubleCosets.LocDescOf (13s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalDoubleCosets/LocDescOf.lean:88:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -105,56 +136,25 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/SplitEigenfunctions/InfinitePlaceGluing/PairCases.lean:219:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+⚠ [168125/168150] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.AutomorphyLifting.GalUnitaryT (150s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/GalUnitaryT.lean:62:0: automatically included section variable(s) unused in theorem `UpperTheory.V.Z.Win.hasHT_iff`:
+  [NumberField F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-✔ [168075/168088] Built CompanionTheory.EightfoldTheory.VariationTheory.AutomorphicForms.ImportsBis (4.9s)
-✔ [168076/168089] Built Development.AutomorphicArithmetic.WhittakerHecke.CentralCharGaloisInvariantOfConjInv (8.1s)
-⚠ [168077/168089] Built Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.InfinitePlaceGluing.OneAddXNe (10s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/SplitEigenfunctions/InfinitePlaceGluing/OneAddXNe.lean:53:18: This simp argument is unused:
-  coeff_mul_X_pow'
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [168126/168150] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.PlainTorExistsChars (5.8s)
+⚠ [168127/168150] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalFieldTwoVocabulariesDictionaryStatement (5.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LocalFieldTwoVocabulariesDictionaryStatement.lean:12:66: this tactic is never executed
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [Gs, Qs, gg, hh]
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LocalFieldTwoVocabulariesDictionaryStatement.lean:12:121: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/SplitEigenfunctions/InfinitePlaceGluing/OneAddXNe.lean:65:14: This simp argument is unused:
-  coeff_mul_X_pow'
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LocalFieldTwoVocabulariesDictionaryStatement.lean:12:66: Unused tactic linter: `exact GlobalTheory.DelGlob.localVocabularyDictionary` does nothing
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [Qs, hh, coeff_X, coeff_one]
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LocalFieldTwoVocabulariesDictionaryStatement.lean:12:121: Unused tactic linter: `(intros; apply GlobalTheory.DelGlob.localVocabularyDictionary <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/SplitEigenfunctions/InfinitePlaceGluing/OneAddXNe.lean:65:36: This simp argument is unused:
-  coeff_X
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Qs, coeff_mul_X_pow', hh, coeff_one]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/SplitEigenfunctions/InfinitePlaceGluing/OneAddXNe.lean:65:45: This simp argument is unused:
-  coeff_one
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Qs, coeff_mul_X_pow', hh, coeff_X]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [168078/168093] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.ReductionDomains.DiagInvVal (6.6s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/ReductionDomains/DiagInvVal.lean:36:44: This simp argument is unused:
-  diag_val
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [cD, cR, M.val_ratS, diag_inv_val, rt, map_mul]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/ReductionDomains/DiagInvVal.lean:46:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [168079/168093] Built Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.InfinitePlaceGluing.CenExOf (6.5s)
-✔ [168080/168096] Built Development.AutomorphicArithmetic.WhittakerHecke.RatIdeleEqDiagonalMulUnitOfAbsEqOne (8.7s)
-✔ [168081/168099] Built Development.AutomorphicArithmetic.WhittakerHecke.CuspSubspaceTranslateEqSmulSpecialTranslate (9.4s)
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [168128/168150] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalDoubleCosets.OfSupportHolds (5.7s)
