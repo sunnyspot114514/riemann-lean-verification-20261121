@@ -1,160 +1,160 @@
 
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [168813/168868] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaExtensionToComplete (9.5s)
-✔ [168814/168868] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUnramifiedWittElementEq (7.6s)
-✔ [168815/168868] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PeriodTensorMapInjective (11s)
-✔ [168816/168868] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSphericalOfHasSatGL (90s)
-✔ [168817/168868] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LubinTateEndomorphismUnique (11s)
-✔ [168818/168868] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LubinTatePeriodFiltrationExact (12s)
-✔ [168819/168868] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LubinTateLogNeZero (32s)
-✔ [168820/168870] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.TPsFull (102s)
-✔ [168821/168870] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjCongr (5.8s)
-⚠ [168822/168870] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFrobeniusLiftLubinTateStatement (5.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsFrobeniusLiftLubinTateStatement.lean:14:55: this tactic is never executed
+⚠ [168842/168873] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdDvdNorm (19s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ProdDvdNorm.lean:79:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ProdDvdNorm.lean:80:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ProdDvdNorm.lean:83:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ProdDvdNorm.lean:90:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ProdDvdNorm.lean:91:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [168843/168875] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormLeOneOfLt (15s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NormLeOneOfLt.lean:16:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NormLeOneOfLt.lean:17:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NormLeOneOfLt.lean:28:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [168844/168875] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LtSeriesCoeffEqZero (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LtSeriesCoeffEqZero.lean:51:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [168845/168875] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompatibleEmbeddingLevel (15s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCompatibleEmbeddingLevel.lean:20:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCompatibleEmbeddingLevel.lean:21:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [168846/168875] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsPstOfIsSst (70s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/IsPstOfIsSst.lean:68:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [168847/168875] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapAlgebraMap (14s)
+⚠ [168848/168876] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LubinTateTorsionSequence (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LubinTateTorsionSequence.lean:19:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [168849/168881] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LubinTateCrystallineOfLocal (12s)
+⚠ [168850/168881] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.LLocData (93s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AdmissibleResidues/LLocData.lean:23:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AdmissibleResidues/LLocData.lean:75:42: This simp argument is unused:
+  smul_mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Algebra.algebraMap_eq_smul_one, mul_assoc, hk, smul_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AdmissibleResidues/LLocData.lean:75:58: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Algebra.algebraMap_eq_smul_one, smul_mul_assoc, hk, smul_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AdmissibleResidues/LLocData.lean:282:44: This simp argument is unused:
+  smul_mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Algebra.algebraMap_eq_smul_one, Matrix.trace_smul, htr, Finset.mul_sum, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [168851/168881] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LubinTateTorsionSequenceStatement (6.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LubinTateTorsionSequenceStatement.lean:18:50: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsFrobeniusLiftLubinTateStatement.lean:14:99: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LubinTateTorsionSequenceStatement.lean:18:89: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsFrobeniusLiftLubinTateStatement.lean:14:55: Unused tactic linter: `exact GlobalTheory.ColmezLift.exists_lift` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LubinTateTorsionSequenceStatement.lean:18:50: Unused tactic linter: `exact GlobalTheory.PZ.ltData_read_OC` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsFrobeniusLiftLubinTateStatement.lean:14:99: Unused tactic linter: `(intros; apply GlobalTheory.ColmezLift.exists_lift <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [168823/168871] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LubinTatePeriodThetaKernel (17s)
-⚠ [168824/168871] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaOfTiltCompatibleSequenceStatement (5.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ThetaOfTiltCompatibleSequenceStatement.lean:16:52: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ThetaOfTiltCompatibleSequenceStatement.lean:16:93: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ThetaOfTiltCompatibleSequenceStatement.lean:16:52: Unused tactic linter: `exact GlobalTheory.FrobRoots.thetaK_eq` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ThetaOfTiltCompatibleSequenceStatement.lean:16:93: Unused tactic linter: `(intros; apply GlobalTheory.FrobRoots.thetaK_eq <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [168825/168871] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusCompatibleThetaZeroStatement (5.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FrobeniusCompatibleThetaZeroStatement.lean:14:47: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FrobeniusCompatibleThetaZeroStatement.lean:14:83: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FrobeniusCompatibleThetaZeroStatement.lean:14:47: Unused tactic linter: `exact GlobalTheory.AinfK.Sep.main` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FrobeniusCompatibleThetaZeroStatement.lean:14:83: Unused tactic linter: `(intros; apply GlobalTheory.AinfK.Sep.main <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [168826/168871] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LubinTatePeriodGaloisExpansion (38s)
-⚠ [168827/168871] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCompatiblePowerSeriesValueStatement (6.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsCompatiblePowerSeriesValueStatement.lean:17:53: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsCompatiblePowerSeriesValueStatement.lean:17:95: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsCompatiblePowerSeriesValueStatement.lean:17:53: Unused tactic linter: `exact GlobalTheory.FrobChainSeries.main` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsCompatiblePowerSeriesValueStatement.lean:17:95: Unused tactic linter: `(intros; apply GlobalTheory.FrobChainSeries.main <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [168828/168871] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EvaluationPowerSeriesShiftStatement (6.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/EvaluationPowerSeriesShiftStatement.lean:17:48: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/EvaluationPowerSeriesShiftStatement.lean:17:85: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/EvaluationPowerSeriesShiftStatement.lean:17:48: Unused tactic linter: `exact GlobalTheory.AcrisK.ev_shift` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/EvaluationPowerSeriesShiftStatement.lean:17:85: Unused tactic linter: `(intros; apply GlobalTheory.AcrisK.ev_shift <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [168829/168871] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.HeckePolyCoeffZero (147s)
-⚠ [168830/168871] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaExtensionToCompleteStatement (5.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ThetaExtensionToCompleteStatement.lean:14:53: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ThetaExtensionToCompleteStatement.lean:14:95: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ThetaExtensionToCompleteStatement.lean:14:53: Unused tactic linter: `exact GlobalTheory.AcrisK.exists_thetaB` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ThetaExtensionToCompleteStatement.lean:14:95: Unused tactic linter: `(intros; apply GlobalTheory.AcrisK.exists_thetaB <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [168831/168871] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PeriodRingNoZeroDivisorsStatement (5.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PeriodRingNoZeroDivisorsStatement.lean:14:46: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PeriodRingNoZeroDivisorsStatement.lean:14:81: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PeriodRingNoZeroDivisorsStatement.lean:14:46: Unused tactic linter: `exact GlobalTheory.AcrisNZD.main` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PeriodRingNoZeroDivisorsStatement.lean:14:81: Unused tactic linter: `(intros; apply GlobalTheory.AcrisNZD.main <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [168832/168871] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LubinTateEndomorphismUniqueStatement (5.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LubinTateEndomorphismUniqueStatement.lean:12:64: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LubinTateEndomorphismUniqueStatement.lean:12:117: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LubinTateEndomorphismUniqueStatement.lean:12:64: Unused tactic linter: `exact GlobalTheory.PZ.isLTEndo_iff_eq_lubinTateHom` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LubinTateEndomorphismUniqueStatement.lean:12:117: Unused tactic linter: `(intros; apply GlobalTheory.PZ.isLTEndo_iff_eq_lubinTateHom <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [168833/168871] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.PaLevel (125s)
-⚠ [168834/168871] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LubinTateLogNeZeroStatement (5.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LubinTateLogNeZeroStatement.lean:11:60: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LubinTateLogNeZeroStatement.lean:11:109: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LubinTateLogNeZeroStatement.lean:11:60: Unused tactic linter: `exact GlobalTheory.LogFirstOrder.ltLog_ne_zero` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LubinTateLogNeZeroStatement.lean:11:109: Unused tactic linter: `(intros; apply GlobalTheory.LogFirstOrder.ltLog_ne_zero <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [168835/168871] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LubinTatePeriodFiltrationExactStatement (6.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LubinTatePeriodFiltrationExactStatement.lean:16:67: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LubinTatePeriodFiltrationExactStatement.lean:16:123: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LubinTatePeriodFiltrationExactStatement.lean:16:67: Unused tactic linter: `exact GlobalTheory.PMC.PeriodVector.exists_degree_one` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LubinTatePeriodFiltrationExactStatement.lean:16:123: Unused tactic linter: `(intros; apply GlobalTheory.PMC.PeriodVector.exists_degree_one <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [168836/168871] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.JEndOf (138s)
-✔ [168837/168871] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugatePeriodMemFiltrationZero (6.9s)
-⚠ [168838/168872] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LubinTatePeriodThetaKernelStatement (5.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LubinTatePeriodThetaKernelStatement.lean:14:51: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LubinTatePeriodThetaKernelStatement.lean:14:91: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LubinTatePeriodThetaKernelStatement.lean:14:51: Unused tactic linter: `exact GlobalTheory.LTPeriodKerSq.main` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LubinTatePeriodThetaKernelStatement.lean:14:91: Unused tactic linter: `(intros; apply GlobalTheory.LTPeriodKerSq.main <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LubinTateTorsionSequenceStatement.lean:18:89: Unused tactic linter: `(intros; apply GlobalTheory.PZ.ltData_read_OC <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
