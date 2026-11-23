@@ -1,156 +1,110 @@
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [166748/166763] Built Development.AutomorphicArithmetic.Foundations.Convolution.EndomorphismSlices.FiniteAdelicEstimates.PowRep (30s)
-✔ [166749/166771] Built Development.AutomorphicArithmetic.Foundations.Convolution.EndomorphismSlices.FiniteAdelicEstimates.Imports (26s)
-✔ [166750/166771] Built Development.AutomorphicArithmetic.Foundations.Convolution.EndomorphismSlices.FiniteAdelicEstimates.SatRead (28s)
-✔ [166751/166798] Built Development.DiscreteGroups.PiInvariants.CompactSupportTwists.ThetaFixTop (56s)
-✔ [166752/166804] Built Development.DiscreteGroups.PiInvariants.CompactSupportTwists.DomOneMeasure (6.3s)
-✔ [166753/166805] Built Development.DiscreteGroups.PiInvariants.CompactSupportTwists.KerSplitLIntSub (9.3s)
-⚠ [166754/166810] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.AutomorphicRepresentations.PTailOf (10s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/AutomorphicRepresentations/PTailOf.lean:110:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [166755/166811] Built Development.DiscreteGroups.PiInvariants.CompactSupportTwists.TraceUniqueMatrix (6.0s)
-⚠ [166756/166811] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ListEig (4.9s)
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ListEig.lean:4:20: Variable name `inst` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ListEig.lean:5:5: Variable name `inst_1` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_1
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [166757/166812] Built Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.IsCoreMod (8.5s)
-warning: src/Development/WeilBound/RepresentationTheoryGL/ArchimedeanBaseChange/ArchimedeanBaseChangeProof/RealDescent/RealLeviDescent/IsCoreMod.lean:32:15: `ContinuousLinearMap.add_apply` has been deprecated: Use `_root_.add_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `_root_.add_apply x`).
-warning: src/Development/WeilBound/RepresentationTheoryGL/ArchimedeanBaseChange/ArchimedeanBaseChangeProof/RealDescent/RealLeviDescent/IsCoreMod.lean:36:15: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
-⚠ [166758/166813] Built Development.AutomorphicArithmetic.Foundations.Convolution.EndomorphismSlices.FiniteAdelicEstimates.HeckeFunctionOneMul (10s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/EndomorphismSlices/FiniteAdelicEstimates/HeckeFunctionOneMul.lean:31:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.EndomorphismSlices.FiniteAdelicEstimates.HeckeFunctionOneMul.0.UpperTheory.Zero.ConvolutionTheory.EB.heckeFunction_mul`:
-  [IsCMField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsCMField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/EndomorphismSlices/FiniteAdelicEstimates/HeckeFunctionOneMul.lean:36:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.EndomorphismSlices.FiniteAdelicEstimates.HeckeFunctionOneMul.0.UpperTheory.Zero.ConvolutionTheory.EB.heckeFunction_one`:
-  [IsCMField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsCMField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/EndomorphismSlices/FiniteAdelicEstimates/HeckeFunctionOneMul.lean:49:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.EndomorphismSlices.FiniteAdelicEstimates.HeckeFunctionOneMul.0.UpperTheory.Zero.ConvolutionTheory.EB.position_congr`:
-  [IsCMField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsCMField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [166759/166814] Built Development.DiscreteGroups.PiInvariants.CompactSupportTwists.RGrowthJ (5.5s)
-⚠ [166760/166815] Built Development.AutomorphicArithmetic.Foundations.Convolution.EndomorphismSlices.FiniteAdelicEstimates.PackStep (11s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/EndomorphismSlices/FiniteAdelicEstimates/PackStep.lean:110:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/EndomorphismSlices/FiniteAdelicEstimates/PackStep.lean:111:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/EndomorphismSlices/FiniteAdelicEstimates/PackStep.lean:112:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/EndomorphismSlices/FiniteAdelicEstimates/PackStep.lean:113:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/EndomorphismSlices/FiniteAdelicEstimates/PackStep.lean:114:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/EndomorphismSlices/FiniteAdelicEstimates/PackStep.lean:115:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [166761/166816] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.AutomorphicRepresentations.OrthZero (6.5s)
-⚠ [166762/166817] Built Development.DiscreteGroups.PiInvariants.CompactSupportTwists.TwtrContOfMem (6.1s)
-warning: src/Development/DiscreteGroups/PiInvariants/CompactSupportTwists/TwtrContOfMem.lean:92:18: This simp argument is unused:
-  LinearMap.codRestrict_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [j, LinearMap.comp_apply, Submodule.subtype_apply] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/DiscreteGroups/PiInvariants/CompactSupportTwists/TwtrContOfMem.lean:92:47: This simp argument is unused:
-  LinearMap.comp_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [j, LinearMap.codRestrict_apply, Submodule.subtype_apply] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/DiscreteGroups/PiInvariants/CompactSupportTwists/TwtrContOfMem.lean:92:69: This simp argument is unused:
-  Submodule.subtype_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [j, LinearMap.codRestrict_apply, LinearMap.comp_apply] at h
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [166763/166818] Built Development.DiscreteGroups.PiInvariants.CompactSupportTwists.TraceUnique (5.8s)
-✔ [166764/166818] Built Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.HighestVectorsRegularLine (6.6s)
-⚠ [166765/166818] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.AutomorphicRepresentations.GrowthPiJHolds (6.7s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/AutomorphicRepresentations/GrowthPiJHolds.lean:45:68: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/AutomorphicRepresentations/GrowthPiJHolds.lean:45:68: Unused tactic linter: `exact sizes_of_basic` does nothing
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LeviRelationsRealStatement.lean:7:123: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.LevChainRel.levRel <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [166766/166818] Built Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.ThetaFixedGlobalOfTraceInputs (7.9s)
-✔ [166767/166818] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.AutomorphicRepresentations.POrthZero (7.2s)
-✔ [166768/166818] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.AutomorphicRepresentations.PFormEx (7.0s)
-⚠ [166769/166819] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.AutomorphicRepresentations.PTensType (8.6s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/AutomorphicRepresentations/PTensType.lean:29:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.AutomorphicRepresentations.PTensType.0.UpperTheory.V.Z.Tf.GlobalTraceComparison.Pi.uAt_mul'`:
-  [NumberField E]
-  [IsCMField E]
+⚠ [167071/167091] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CommutantReductionRealStatement (6.6s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CommutantReductionRealStatement.lean:7:96: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CommutantReductionRealStatement.lean:7:181: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CommutantReductionRealStatement.lean:7:96: Unused tactic linter: `exact GlobalTheory.CompanionTheory.BlockCapelliWords.commutant_block_capelli_words` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CommutantReductionRealStatement.lean:7:181: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.BlockCapelliWords.commutant_block_capelli_words <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [167072/167091] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ScalarActionFifthRealStatement (6.3s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ScalarActionFifthRealStatement.lean:7:64: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ScalarActionFifthRealStatement.lean:7:117: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ScalarActionFifthRealStatement.lean:7:64: Unused tactic linter: `exact GlobalTheory.CompanionTheory.CapScal.capScal` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ScalarActionFifthRealStatement.lean:7:117: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.CapScal.capScal <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [167073/167095] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HarishChandraDecompositionLeviStatement (5.1s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/HarishChandraDecompositionLeviStatement.lean:7:65: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/HarishChandraDecompositionLeviStatement.lean:7:119: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/HarishChandraDecompositionLeviStatement.lean:7:65: Unused tactic linter: `exact GlobalTheory.CompanionTheory.RealHCLv.hcdecLv` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/HarishChandraDecompositionLeviStatement.lean:7:119: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.RealHCLv.hcdecLv <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [167074/167096] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CreAnnApply (17s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CreAnnApply.lean:46:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.PairMult.COU.supp_of`:
+  [Module ℂ V]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [IsCMField E] in theorem ...
+  omit [Module ℂ V] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [166770/166819] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.AutomorphicRepresentations.PDetZero (6.9s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/AutomorphicRepresentations/PDetZero.lean:47:4: Try this: 
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CreAnnApply.lean:49:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.PairMult.COU.deg_of`:
+  [Module ℂ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Module ℂ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CreAnnApply.lean:254:82: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CreAnnApply.lean:285:23: This simp argument is unused:
+  TensorProduct.add_tmul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [F1, F2, Module.End.mul_apply, LinearMap.add_apply, LinearMap.rTensor_tmul, LinearMap.lTensor_tmul,
+    map_add, e1, e2, TensorProduct.tmul_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CreAnnApply.lean:285:47: This simp argument is unused:
+  TensorProduct.tmul_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [F1, F2, Module.End.mul_apply, LinearMap.add_apply, LinearMap.rTensor_tmul, LinearMap.lTensor_tmul,
+    map_add, e1, e2, TensorProduct.add_tmul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [167075/167096] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SemisimpleClassificationReal (8.6s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SemisimpleClassificationReal.lean:168:59: This simp argument is unused:
+  Finset.sum_ite_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LinearMap.sum_apply, key, Finset.sum_ite_eq', Finset.mem_univ, if_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SemisimpleClassificationReal.lean:193:43: This simp argument is unused:
+  ite_false
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Bool.false_eq_true, if_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [167076/167100] Built Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.ThetaSelfH (4.0s)
+⚠ [167077/167100] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviStabilityRealStatement (4.0s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LeviStabilityRealStatement.lean:7:62: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LeviStabilityRealStatement.lean:7:113: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LeviStabilityRealStatement.lean:7:62: Unused tactic linter: `exact GlobalTheory.CompanionTheory.LevBd.levStab` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LeviStabilityRealStatement.lean:7:113: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.LevBd.levStab <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [167078/167101] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DiagonalMemUnitary (9.8s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/DiagonalMemUnitary.lean:140:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -158,3 +112,49 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/DiagonalMemUnitary.lean:176:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/DiagonalMemUnitary.lean:184:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [167079/167101] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsBisSide (4.8s)
+✔ [167080/167103] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CommuteLeviBoundaryAndLift (6.6s)
+✔ [167081/167103] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EpowRightEqPow (5.5s)
+⚠ [167082/167105] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SemisimpleClassificationRealStatement (5.1s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SemisimpleClassificationRealStatement.lean:7:66: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SemisimpleClassificationRealStatement.lean:7:121: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SemisimpleClassificationRealStatement.lean:7:66: Unused tactic linter: `exact GlobalTheory.CompanionTheory.SemiClass.semiCls` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SemisimpleClassificationRealStatement.lean:7:121: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.SemiClass.semiCls <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [167083/167105] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SuccAboveCastSuccCastSucc (6.8s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SuccAboveCastSuccCastSucc.lean:79:12: This simp argument is unused:
+  succAbove_castSucc_castSucc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [rc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SuccAboveCastSuccCastSucc.lean:81:12: This simp argument is unused:
+  succAbove_castSucc_last
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [rl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
