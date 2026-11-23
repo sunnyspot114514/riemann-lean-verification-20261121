@@ -1,36 +1,7 @@
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SplitLineSubtraction/PPeelAll.lean:15:24: This simp argument is unused:
-  Multiset.map_map
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Finset.map_val, add_comm, Function.comp_def]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [172127/172141] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SplitLineSubtraction.PCharFrob (6.4s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SplitLineSubtraction/PCharFrob.lean:22:32: This simp argument is unused:
-  Matrix.det_fin_one
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [rk1, Matrix.charpoly, h1, Polynomial.map_sub]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [172128/172142] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SplitLineSubtraction.PCharAbove (6.6s)
-✔ [172129/172143] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SplitLineSubtraction.PCharEx (5.7s)
-⚠ [172130/172144] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsLocalComponentEigenvectorSplitPlaceStatement (5.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalComponentEigenvectorSplitPlaceStatement.lean:13:66: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalComponentEigenvectorSplitPlaceStatement.lean:13:121: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalComponentEigenvectorSplitPlaceStatement.lean:13:66: Unused tactic linter: `(exact GlobalTheory.SplitEigen.exists_locComp_eigen)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalComponentEigenvectorSplitPlaceStatement.lean:13:121: Unused tactic linter: `(intros; apply GlobalTheory.SplitEigen.exists_locComp_eigen <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [172131/172144] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SplitLineSubtraction.PFrobSub (24s)
-⚠ [172132/172146] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.InertiaQuadraticRamification.NonsplitOfSqrtConductor (65s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/InertiaQuadraticRamification/NonsplitOfSqrtConductor.lean:45:2: Try this: 
+✔ [172196/172211] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LiftFactorization.RamLiftOf (111s)
+✔ [172197/172213] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.IdeleNormCharacters.ReadRes (7.7s)
+⚠ [172198/172213] Built Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.OffUnitsLeUnitIdl (13s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/HermitianDescent/OffUnitsLeUnitIdl.lean:49:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -38,119 +9,38 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/InertiaQuadraticRamification/NonsplitOfSqrtConductor.lean:46:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/InertiaQuadraticRamification/NonsplitOfSqrtConductor.lean:47:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/InertiaQuadraticRamification/NonsplitOfSqrtConductor.lean:168:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/InertiaQuadraticRamification/NonsplitOfSqrtConductor.lean:175:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.InertiaQuadraticRamification.NonsplitOfSqrtConductor.0.UpperTheory.Gal.UnramifiedFromSplittingCriterion.WeylLatticeInDetCoeffSpan.real_of_real`:
-  [IsCMField Y]
-  [IsAlgClosure Y Ω]
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/HermitianDescent/OffUnitsLeUnitIdl.lean:87:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.OffUnitsLeUnitIdl.0.UpperTheory.ConvolutionTheory.D.MultiplierQuotient.offUnits_le_unitIdl`:
+  [IsCMField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsCMField Y] [IsAlgClosure Y Ω] in theorem ...
+  omit [IsCMField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/InertiaQuadraticRamification/NonsplitOfSqrtConductor.lean:199:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-⚠ [172133/172146] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.InertiaQuadraticRamification.SplitIff (63s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/InertiaQuadraticRamification/SplitIff.lean:16:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [172134/172149] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SplitLineSubtraction.PSatAE (7.5s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SplitLineSubtraction/PSatAE.lean:25:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SplitLineSubtraction/PSatAE.lean:29:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-✔ [172135/172149] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SplitLineSubtraction.PSatPol (6.1s)
-⚠ [172136/172153] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SplitLineSubtraction.PAtPlace (6.8s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SplitLineSubtraction/PAtPlace.lean:69:12: This simp argument is unused:
-  Function.comp_def
-
-Hint: Omit it from the simp argument list.
-  [apply] simp
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [172137/172159] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RamificationTowerCompatible (7.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RamificationTowerCompatible.lean:33:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RamificationTowerCompatible.lean:36:57: This simp argument is unused:
-  MonoidHom.coe_coe
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [normU, MonoidHom.comp_apply, Units.coe_map]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [172138/172160] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SatakeLifts.SrcApply (8.7s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SatakeLifts/SrcApply.lean:26:0: automatically included section variable(s) unused in theorem `UpperTheory.Gal.TP.Loc.src_apply`:
-  [ValuativeRel k]
-  [TopologicalSpace k]
-  [IsNonarchimedeanLocalField k]
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/HermitianDescent/OffUnitsLeUnitIdl.lean:119:11: `MonoidHom.finset_prod_apply` has been deprecated: Use `MonoidHom.finsetProd_apply` instead
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/HermitianDescent/OffUnitsLeUnitIdl.lean:118:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.OffUnitsLeUnitIdl.0.UpperTheory.ConvolutionTheory.D.MultiplierQuotient.psi_apply`:
+  [IsCMField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] in theorem ...
+  omit [IsCMField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [172139/172160] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.CartanIdeles.SpacesExOf (10s)
-✔ [172140/172161] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SatakeLifts.PairOfLiftAlt (6.7s)
-✔ [172141/172162] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SatakeLifts.CompUnit (6.5s)
-✔ [172142/172163] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SplitLineSubtraction.TwoUpOKOf (21s)
-✔ [172143/172163] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SplitLineSubtraction.UpOfHolds (8.4s)
-✔ [172144/172163] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SplitLineSubtraction.PSatId (8.0s)
-⚠ [172145/172163] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SplitLineSubtraction.MapUnivAdd (7.3s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SplitLineSubtraction/MapUnivAdd.lean:30:17: `Fin.coe_castAdd` has been deprecated: Use `Fin.val_castAdd` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SplitLineSubtraction/MapUnivAdd.lean:31:38: `Fin.coe_castAdd` has been deprecated: Use `Fin.val_castAdd` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SplitLineSubtraction/MapUnivAdd.lean:38:17: `Fin.coe_natAdd` has been deprecated: Use `Fin.val_natAdd` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SplitLineSubtraction/MapUnivAdd.lean:52:17: `Fin.coe_castAdd` has been deprecated: Use `Fin.val_castAdd` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SplitLineSubtraction/MapUnivAdd.lean:53:38: `Fin.coe_castAdd` has been deprecated: Use `Fin.val_castAdd` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SplitLineSubtraction/MapUnivAdd.lean:60:17: `Fin.coe_natAdd` has been deprecated: Use `Fin.val_natAdd` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SplitLineSubtraction/MapUnivAdd.lean:41:6: Unused tactic linter: `push_cast at h1` does nothing
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/HermitianDescent/OffUnitsLeUnitIdl.lean:122:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.OffUnitsLeUnitIdl.0.UpperTheory.ConvolutionTheory.D.MultiplierQuotient.continuous_dirAt`:
+  [IsCMField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsCMField E] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SplitLineSubtraction/MapUnivAdd.lean:67:6: Unused tactic linter: `push_cast at h1` does nothing
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/HermitianDescent/OffUnitsLeUnitIdl.lean:130:8: `continuous_finset_prod` has been deprecated: Use `continuous_finsetProd` instead
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/HermitianDescent/OffUnitsLeUnitIdl.lean:153:26: `MonoidHom.finset_prod_apply` has been deprecated: Use `MonoidHom.finsetProd_apply` instead
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/HermitianDescent/OffUnitsLeUnitIdl.lean:180:12: `Algebra.isUnramifiedAt_iff_of_isDedekindDomain` has been deprecated: Use `Ideal.ramificationIdx'_eq_one_iff` instead.
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/HermitianDescent/OffUnitsLeUnitIdl.lean:205:15: `MonoidHom.finset_prod_apply` has been deprecated: Use `MonoidHom.finsetProd_apply` instead
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/HermitianDescent/OffUnitsLeUnitIdl.lean:203:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.OffUnitsLeUnitIdl.0.UpperTheory.ConvolutionTheory.D.MultiplierQuotient.infSign_finPart`:
+  [IsCMField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsCMField E] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [172146/172163] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SplitLineSubtraction.PEmbSplit (6.9s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SplitLineSubtraction/PEmbSplit.lean:35:12: This simp argument is unused:
-  ComplexEmbedding.conjugate_coe_eq
-
-Hint: Omit it from the simp argument list.
-  [apply] simp
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [172147/172165] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SplitLineSubtraction.PBaseNG (11s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SplitLineSubtraction/PBaseNG.lean:12:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [172199/172213] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CrystallineDescent.BadFinite (122s)
+⚠ [172200/172218] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CrystallineDescent.ExistsQuadraticCMExtSplitAt (124s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineDescent/ExistsQuadraticCMExtSplitAt.lean:22:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -158,3 +48,113 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineDescent/ExistsQuadraticCMExtSplitAt.lean:23:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineDescent/ExistsQuadraticCMExtSplitAt.lean:24:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineDescent/ExistsQuadraticCMExtSplitAt.lean:25:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineDescent/ExistsQuadraticCMExtSplitAt.lean:150:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [172201/172219] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SplitLineSubtraction.SubtractHolds (141s)
+✔ [172202/172220] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsOpenEmbeddingVal (5.1s)
+✔ [172203/172220] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.IdeleNormCharacters.ConjDivNorm (6.9s)
+✔ [172204/172221] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SatakeLifts.LiftSatUPf (96s)
+✔ [172205/172221] Built Development.DiscreteGroups.PiInvariants.CompactSupportTwists.NoPiHk (5.0s)
+✔ [172206/172225] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.IdeleNormCharacters.TypProd (5.8s)
+✔ [172207/172225] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.IdeleNormCharacters.TypVal (5.6s)
+⚠ [172208/172225] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.IdeleNormCharacters.ExpInj (6.9s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/IdeleNormCharacters/ExpInj.lean:71:18: `Set.setOf_forall` has been deprecated: Use `Set.ofPred_forall` instead
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/IdeleNormCharacters/ExpInj.lean:75:11: `continuousOn_finset_prod` has been deprecated: Use `continuousOn_finsetProd` instead
+✔ [172209/172225] Built Development.DiscreteGroups.PiInvariants.CompactSupportTwists.CTZeroCut (5.7s)
+⚠ [172210/172227] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.IdeleNormCharacters.ChrExPf (6.0s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/IdeleNormCharacters/ChrExPf.lean:14:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.IdeleNormCharacters.ChrExPf.0.UpperTheory.Gal.TP.Chr.hpow_apply`:
+  [IsCMField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsCMField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/IdeleNormCharacters/ChrExPf.lean:26:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.IdeleNormCharacters.ChrExPf.0.UpperTheory.Gal.TP.Chr.lc_pow`:
+  [IsCMField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsCMField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/IdeleNormCharacters/ChrExPf.lean:108:4: Unused tactic linter: `beta_reduce` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [172211/172228] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.IdeleNormCharacters.ReadExp (8.8s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/IdeleNormCharacters/ReadExp.lean:49:11: `continuous_finset_prod` has been deprecated: Use `continuous_finsetProd` instead
+⚠ [172212/172229] Built Development.DiscreteGroups.PiInvariants.CompactSupportTwists.TwistSatHolds (5.6s)
+warning: src/Development/DiscreteGroups/PiInvariants/CompactSupportTwists/TwistSatHolds.lean:14:0: automatically included section variable(s) unused in theorem `DiscreteGroups.T1.G.absC_loc`:
+  [IsCMField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsCMField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [172213/172229] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CrystallineInputs.OfInputs (5.8s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineInputs/OfInputs.lean:8:2: The namespace `Inp` is duplicated in the declaration `UpperTheory.Gal.Int.Inp.Inp.gk`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineInputs/OfInputs.lean:10:2: The namespace `Inp` is duplicated in the declaration `UpperTheory.Gal.Int.Inp.Inp.len`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineInputs/OfInputs.lean:6:10: The namespace `Inp` is duplicated in the declaration `UpperTheory.Gal.Int.Inp.Inp.mk`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineInputs/OfInputs.lean:12:2: The namespace `Inp` is duplicated in the declaration `UpperTheory.Gal.Int.Inp.Inp.zel`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineInputs/OfInputs.lean:6:10: The namespace `Inp` is duplicated in the declaration `UpperTheory.Gal.Int.Inp.Inp`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineInputs/OfInputs.lean:14:2: The namespace `Inp` is duplicated in the declaration `UpperTheory.Gal.Int.Inp.Inp.ac`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineInputs/OfInputs.lean:9:2: The namespace `Inp` is duplicated in the declaration `UpperTheory.Gal.Int.Inp.Inp.adm`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineInputs/OfInputs.lean:7:2: The namespace `Inp` is duplicated in the declaration `UpperTheory.Gal.Int.Inp.Inp.js`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineInputs/OfInputs.lean:17:2: The namespace `Inp` is duplicated in the declaration `UpperTheory.Gal.Int.Inp.Inp.pst`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineInputs/OfInputs.lean:16:2: The namespace `Inp` is duplicated in the declaration `UpperTheory.Gal.Int.Inp.Inp.alg`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineInputs/OfInputs.lean:13:2: The namespace `Inp` is duplicated in the declaration `UpperTheory.Gal.Int.Inp.Inp.gen`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineInputs/OfInputs.lean:15:2: The namespace `Inp` is duplicated in the declaration `UpperTheory.Gal.Int.Inp.Inp.hk`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineInputs/OfInputs.lean:11:2: The namespace `Inp` is duplicated in the declaration `UpperTheory.Gal.Int.Inp.Inp.exh`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+✔ [172214/172230] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.IdeleNormCharacters.ChrPairsPf (7.7s)
+✔ [172215/172230] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.IdeleNormCharacters.AbsFacts (28s)
