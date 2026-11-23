@@ -1,117 +1,46 @@
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoeffNormLeOne.lean:19:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoeffNormLeOne.lean:15:15: Variable name `inst` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [163739/163755] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.BlochKatoCocycleUnramifiedAndGreenbergOrdinary (224s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/BlochKatoCocycleUnramifiedAndGreenbergOrdinary.lean:37:30: This simp argument is unused:
-  Matrix.mulVec
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [f, Loc.chRep, hcol, dotProduct, Fin.sum_univ_two, hκ, mat, h]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/BlochKatoCocycleUnramifiedAndGreenbergOrdinary.lean:37:45: This simp argument is unused:
-  dotProduct
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [f, Loc.chRep, hcol, Matrix.mulVec, Fin.sum_univ_two, hκ, mat, h]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/BlochKatoCocycleUnramifiedAndGreenbergOrdinary.lean:37:57: This simp argument is unused:
-  Fin.sum_univ_two
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [f, Loc.chRep, hcol, Matrix.mulVec, dotProduct, hκ, mat, h]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/BlochKatoCocycleUnramifiedAndGreenbergOrdinary.lean:57:56: This simp argument is unused:
-  Units.val_zpow_eq_zpow_val
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Units.val_pow_eq_pow_val, Units.val_mul, zpow_natCast, Units.val_one, hκ, hcy]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [163740/163763] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.BlochKatoCocycleUnramifiedAndGreenbergOrdinaryStatement (184s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/BlochKatoCocycleUnramifiedAndGreenbergOrdinaryStatement.lean:8:47: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoboundaryInertiaIndependent.lean:22:4: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/BlochKatoCocycleUnramifiedAndGreenbergOrdinaryStatement.lean:8:83: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoboundaryInertiaIndependent.lean:23:4: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/BlochKatoCocycleUnramifiedAndGreenbergOrdinaryStatement.lean:8:47: Unused tactic linter: `exact GlobalTheory.Ord2.bk_unr_gr` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/BlochKatoCocycleUnramifiedAndGreenbergOrdinaryStatement.lean:8:83: Unused tactic linter: `(intros; apply GlobalTheory.Ord2.bk_unr_gr <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [163741/163763] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaloisCocycleIntegralAfterScalingStatement (192s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaloisCocycleIntegralAfterScalingStatement.lean:8:62: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaloisCocycleIntegralAfterScalingStatement.lean:8:113: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaloisCocycleIntegralAfterScalingStatement.lean:8:62: Unused tactic linter: `exact GlobalTheory.CocInt.integral_after_scaling` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaloisCocycleIntegralAfterScalingStatement.lean:8:113: Unused tactic linter: `(intros; apply GlobalTheory.CocInt.integral_after_scaling <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [163742/163763] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.NonzeroClassBoundedTorsionStatement (197s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/NonzeroClassBoundedTorsionStatement.lean:10:63: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/NonzeroClassBoundedTorsionStatement.lean:10:115: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/NonzeroClassBoundedTorsionStatement.lean:10:63: Unused tactic linter: `exact GlobalTheory.Ord2.GwCount.closed_multiplier` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/NonzeroClassBoundedTorsionStatement.lean:10:115: Unused tactic linter: `(intros; apply GlobalTheory.Ord2.GwCount.closed_multiplier <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [163743/163763] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormLeOneOfIsIntegralPadicInt (196s)
-✔ [163744/163765] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaloisRepRankTwoTateDualMatrixMemCoefRingOfNorma (198s)
-✔ [163745/163765] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.LocalConditionsIndependentOfPlaceOver (197s)
-⚠ [163746/163778] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemIntegersOfNormLeOne (185s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemIntegersOfNormLeOne.lean:18:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemIntegersOfNormLeOne.lean:19:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemIntegersOfNormLeOne.lean:20:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemIntegersOfNormLeOne.lean:17:86: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoboundaryInertiaIndependent.lean:20:80: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemIntegersOfNormLeOne.lean:18:4: Unused tactic linter: `(intros;
-  apply _root_.GlobalTheory.IntegralCoefficientNormBound.norm_le_one_of_isIntegral <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoboundaryInertiaIndependent.lean:21:4: Unused tactic linter: `(intros;
+  apply _root_.GlobalTheory.PadicIntegralNormLeOne.norm_le_one_of_isIntegral <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemIntegersOfNormLeOne.lean:19:4: Unused tactic linter: `(intros;
-  apply @_root_.GlobalTheory.IntegralCoefficientNormBound.norm_le_one_of_isIntegral <;>
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoboundaryInertiaIndependent.lean:22:4: Unused tactic linter: `(intros;
+  apply @_root_.GlobalTheory.PadicIntegralNormLeOne.norm_le_one_of_isIntegral <;>
     first
     | assumption
     | infer_instance)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemIntegersOfNormLeOne.lean:20:4: Unused tactic linter: `(intros;
-  exact _root_.GlobalTheory.IntegralCoefficientNormBound.norm_le_one_of_isIntegral ..)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoboundaryInertiaIndependent.lean:23:4: Unused tactic linter: `(intros;
+  exact _root_.GlobalTheory.PadicIntegralNormLeOne.norm_le_one_of_isIntegral ..)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [163747/163782] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.UnramifiedH1CardInvariants (194s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/UnramifiedH1CardInvariants.lean:29:2: Try this: 
+✔ [163765/163805] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsComm (185s)
+⚠ [163766/163805] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsUnitOfForallMaximal (185s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsUnitOfForallMaximal.lean:56:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsUnitOfForallMaximal.lean:116:53: This simp argument is unused:
+  Fin.sum_univ_two
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.mulVec, dotProduct, Matrix.one_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [163767/163808] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.CardPrimePowTorsionSelmerClassesModPrimePowBound (185s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CardPrimePowTorsionSelmerClassesModPrimePowBound.lean:53:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -119,42 +48,113 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/UnramifiedH1CardInvariants.lean:165:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/UnramifiedH1CardInvariants.lean:309:373: Variable name `hρ` is not explicitly referenced.
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CardPrimePowTorsionSelmerClassesModPrimePowBound.lean:139:21: Variable name `hVO` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hρ
+  [apply] _hVO
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [163748/163783] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsAlgClosureAlgebraicClosureRat (5.9s)
-✔ [163749/163784] Built Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.FrobeniusRankParts (6.8s)
-⚠ [163750/163784] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormAlgebraMapPadicIntLeOne (7.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/NormAlgebraMapPadicIntLeOne.lean:17:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CardPrimePowTorsionSelmerClassesModPrimePowBound.lean:202:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
 If you'd rather continue using `push_neg` in your project, you can implement it as follows:
 ```
 open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/NormAlgebraMapPadicIntLeOne.lean:45:21: Variable name `inst` is not explicitly referenced.
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CardPrimePowTorsionSelmerClassesModPrimePowBound.lean:207:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [163768/163808] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.LocalCharacterH1FiniteLevels (185s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LocalCharacterH1FiniteLevels.lean:45:2: Try this: 
+  haveI̵
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [163751/163787] Built Development.AbelianVarietyTheory.Definitions.GlobalTwisting.CocyclesCyclotomicFinrankThree (5.9s)
-⚠ [163752/163787] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.JointCondIffRhoOfGoodPoint (5.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/JointCondIffRhoOfGoodPoint.lean:32:8: automatically included section variable(s) unused in theorem `_private.Development.AbelianVarietyTheory.Proofs.SatakeParameters.JointCondIffRhoOfGoodPoint.0.GlobalTheory.ParamRepCompare.smul_mem_smul_valuationSubring_iff`:
-  [NumberField F]
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [163769/163808] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ContinuousMatQApply (190s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ContinuousMatQApply.lean:209:0: automatically included section variable(s) unused in theorem `GlobalTheory.Ord2.GwIneq.isPlaceOver_Av`:
+  [IsAlgClosure ℚ Ω]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] in theorem ...
+  omit [IsAlgClosure ℚ Ω] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [163753/163787] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsLocallyConstantRed (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ContinuousMatQApply.lean:229:0: automatically included section variable(s) unused in theorem `GlobalTheory.Ord2.GwIneq.mem_ordZ`:
+  [IsAlgClosure ℚ Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsAlgClosure ℚ Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [163770/163808] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.CupProductFixedSubmoduleRestrictDual (195s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CupProductFixedSubmoduleRestrictDual.lean:32:0: automatically included section variable(s) unused in theorem `GlobalTheory.InertiaFixed.fix_stable`:
+  [TopologicalSpace R]
+  [DiscreteTopology R]
+  [TopologicalSpace D]
+  [TopologicalSpace M]
+  [DiscreteTopology M]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [TopologicalSpace
+  R] [DiscreteTopology R] [TopologicalSpace D] [TopologicalSpace M] [DiscreteTopology M] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CupProductFixedSubmoduleRestrictDual.lean:65:0: automatically included section variable(s) unused in theorem `GlobalTheory.InertiaFixed.map_h1_mem_unramified`:
+  [TopologicalSpace R]
+  [DiscreteTopology R]
+  hJ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [TopologicalSpace R] [DiscreteTopology R] hJ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CupProductFixedSubmoduleRestrictDual.lean:214:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CupProductFixedSubmoduleRestrictDual.lean:234:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CupProductFixedSubmoduleRestrictDual.lean:235:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CupProductFixedSubmoduleRestrictDual.lean:254:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CupProductFixedSubmoduleRestrictDual.lean:255:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CupProductFixedSubmoduleRestrictDual.lean:256:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
