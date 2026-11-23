@@ -1,13 +1,6 @@
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/StrictVanishingDualOfLiteratureStatement.lean:8:53: Unused tactic linter: `exact GlobalTheory.Ord2.StrictKill.main` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/StrictVanishingDualOfLiteratureStatement.lean:8:95: Unused tactic linter: `(intros; apply GlobalTheory.Ord2.StrictKill.main <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [164180/164210] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExpTwoPiIRatInFieldRootsOfUnityProperties (6.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExpTwoPiIRatInFieldRootsOfUnityProperties.lean:14:2: Try this: 
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GammaOneGammaZeroHomogeneousCocyclesFinite.lean:14:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -15,21 +8,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [164181/164212] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ShimuraReciprocityConjugateFormLevelStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ShimuraReciprocityConjugateFormLevelStatement.lean:13:44: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ShimuraReciprocityConjugateFormLevelStatement.lean:13:77: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ShimuraReciprocityConjugateFormLevelStatement.lean:13:44: Unused tactic linter: `exact GlobalTheory.FNConj.main` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ShimuraReciprocityConjugateFormLevelStatement.lean:13:77: Unused tactic linter: `(intros; apply GlobalTheory.FNConj.main <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [164182/164212] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.FrobeniusHodgeTateLaws.ExistsFiniteExtEisensteinUnitFunctionalMem (138s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/ExistsFiniteExtEisensteinUnitFunctionalMem.lean:98:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GammaOneGammaZeroHomogeneousCocyclesFinite.lean:22:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -37,124 +16,145 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [164183/164212] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.GlTwoPosRatMobiusUpperHalfPlaneProperties (6.7s)
-✔ [164184/164212] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.GlTwoPosRatConjPrincipalCongruence (7.1s)
-⚠ [164185/164222] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.GlTwoPosRatHermiteNormalFormMobius (9.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GlTwoPosRatHermiteNormalFormMobius.lean:79:17: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GlTwoPosRatHermiteNormalFormMobius.lean:81:17: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GlTwoPosRatHermiteNormalFormMobius.lean:117:19: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-⚠ [164186/164222] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExpTwoPiIRatInFieldRootsOfUnityPropertiesStatement (5.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExpTwoPiIRatInFieldRootsOfUnityPropertiesStatement.lean:13:45: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GammaOneGammaZeroHomogeneousCocyclesFinite.lean:23:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [164342/164365] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.BettiKummerRelationPadicSmul (6.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/BettiKummerRelationPadicSmul.lean:31:6: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [164343/164365] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.BettiKummerRelationPadicAdd (6.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/BettiKummerRelationPadicAdd.lean:27:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/BettiKummerRelationPadicAdd.lean:52:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [164344/164365] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsModularFunctionTowerAlgebraicCoefficientsStatement (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsModularFunctionTowerAlgebraicCoefficientsStatement.lean:13:48: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExpTwoPiIRatInFieldRootsOfUnityPropertiesStatement.lean:13:79: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsModularFunctionTowerAlgebraicCoefficientsStatement.lean:13:85: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExpTwoPiIRatInFieldRootsOfUnityPropertiesStatement.lean:13:45: Unused tactic linter: `exact GlobalTheory.FNRoots.main` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsModularFunctionTowerAlgebraicCoefficientsStatement.lean:13:48: Unused tactic linter: `exact GlobalTheory.FN.tower_exists` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExpTwoPiIRatInFieldRootsOfUnityPropertiesStatement.lean:13:79: Unused tactic linter: `(intros; apply GlobalTheory.FNRoots.main <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsModularFunctionTowerAlgebraicCoefficientsStatement.lean:13:85: Unused tactic linter: `(intros; apply GlobalTheory.FN.tower_exists <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [164187/164222] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularDiscriminantDivQIntegerQExpansions (5.7s)
-✔ [164188/164222] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.LevelNFunctionGaloisConjQExpansion (6.3s)
-⚠ [164189/164222] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.GlTwoPosRatMobiusUpperHalfPlanePropertiesStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GlTwoPosRatMobiusUpperHalfPlanePropertiesStatement.lean:13:45: this tactic is never executed
+✔ [164345/164365] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerCompletionNoPrimeTorsion (6.9s)
+✔ [164346/164365] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularFunctionTowerIntegrality (6.7s)
+⚠ [164347/164365] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.TowerUnitClassModPrimePowPropertiesStatement (5.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TowerUnitClassModPrimePowPropertiesStatement.lean:9:48: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GlTwoPosRatMobiusUpperHalfPlanePropertiesStatement.lean:13:79: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TowerUnitClassModPrimePowPropertiesStatement.lean:9:85: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GlTwoPosRatMobiusUpperHalfPlanePropertiesStatement.lean:13:45: Unused tactic linter: `exact GlobalTheory.FN.mob_props` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TowerUnitClassModPrimePowPropertiesStatement.lean:9:48: Unused tactic linter: `exact GlobalTheory.KZ.H3.cls_props` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GlTwoPosRatMobiusUpperHalfPlanePropertiesStatement.lean:13:79: Unused tactic linter: `(intros; apply GlobalTheory.FN.mob_props <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TowerUnitClassModPrimePowPropertiesStatement.lean:9:85: Unused tactic linter: `(intros; apply GlobalTheory.KZ.H3.cls_props <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [164190/164222] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.GlTwoPosRatHermiteNormalFormMobiusStatement (5.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GlTwoPosRatHermiteNormalFormMobiusStatement.lean:13:47: this tactic is never executed
+✔ [164348/164365] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.EqZeroOfBettiKummerRelationPadicZero (6.6s)
+⚠ [164349/164368] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.GammaOneGammaZeroHomogeneousCocyclesFiniteStatement (5.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GammaOneGammaZeroHomogeneousCocyclesFiniteStatement.lean:9:68: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GlTwoPosRatHermiteNormalFormMobiusStatement.lean:13:83: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GammaOneGammaZeroHomogeneousCocyclesFiniteStatement.lean:9:125: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GlTwoPosRatHermiteNormalFormMobiusStatement.lean:13:47: Unused tactic linter: `exact GlobalTheory.HermFN.hermite` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GammaOneGammaZeroHomogeneousCocyclesFiniteStatement.lean:9:68: Unused tactic linter: `exact GlobalTheory.KZ.BettiB.module_finite_z1_padicInt` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GlTwoPosRatHermiteNormalFormMobiusStatement.lean:13:83: Unused tactic linter: `(intros; apply GlobalTheory.HermFN.hermite <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GammaOneGammaZeroHomogeneousCocyclesFiniteStatement.lean:9:125: Unused tactic linter: `(intros; apply GlobalTheory.KZ.BettiB.module_finite_z1_padicInt <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [164191/164224] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.GlTwoPosRatConjPrincipalCongruenceStatement (5.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GlTwoPosRatConjPrincipalCongruenceStatement.lean:13:68: this tactic is never executed
+✔ [164350/164368] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.HomogeneousPolyCoeffEqZero (5.6s)
+⚠ [164351/164368] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.BettiKummerRelationPadicSmulStatement (5.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/BettiKummerRelationPadicSmulStatement.lean:8:51: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GlTwoPosRatConjPrincipalCongruenceStatement.lean:13:125: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/BettiKummerRelationPadicSmulStatement.lean:8:91: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GlTwoPosRatConjPrincipalCongruenceStatement.lean:13:68: Unused tactic linter: `exact GlobalTheory.FN.exists_conj_principal_congruence` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/BettiKummerRelationPadicSmulStatement.lean:8:51: Unused tactic linter: `exact GlobalTheory.KZ.BettiB.btZ_smul` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GlTwoPosRatConjPrincipalCongruenceStatement.lean:13:125: Unused tactic linter: `(intros; apply GlobalTheory.FN.exists_conj_principal_congruence <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/BettiKummerRelationPadicSmulStatement.lean:8:91: Unused tactic linter: `(intros; apply GlobalTheory.KZ.BettiB.btZ_smul <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [164192/164224] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.QExpansionAllCoeffsCompUpperTriangular (5.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/QExpansionAllCoeffsCompUpperTriangular.lean:27:15: `UpperHalfPlane.coe_mk_subtype` has been deprecated: Use `UpperHalfPlane.coe_mk` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/QExpansionAllCoeffsCompUpperTriangular.lean:23:14: This simp argument is unused:
-  Complex.div_ofReal_im
-
-Hint: Omit it from the simp argument list.
-  [apply] simp
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/QExpansionAllCoeffsCompUpperTriangular.lean:27:15: This simp argument is unused:
-  UpperHalfPlane.coe_mk_subtype
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only at hτ
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [164193/164224] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularDiscriminantDivQIntegerQExpansionsStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ModularDiscriminantDivQIntegerQExpansionsStatement.lean:13:57: this tactic is never executed
+⚠ [164352/164368] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.BettiKummerRelationPadicAddStatement (5.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/BettiKummerRelationPadicAddStatement.lean:9:54: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ModularDiscriminantDivQIntegerQExpansionsStatement.lean:13:103: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/BettiKummerRelationPadicAddStatement.lean:9:97: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ModularDiscriminantDivQIntegerQExpansionsStatement.lean:13:57: Unused tactic linter: `exact GlobalTheory.FN.dd_div_q_and_q_div_dd` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/BettiKummerRelationPadicAddStatement.lean:9:54: Unused tactic linter: `exact GlobalTheory.KZ.BettiB.Add.btZ_add` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ModularDiscriminantDivQIntegerQExpansionsStatement.lean:13:103: Unused tactic linter: `(intros; apply GlobalTheory.FN.dd_div_q_and_q_div_dd <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/BettiKummerRelationPadicAddStatement.lean:9:97: Unused tactic linter: `(intros; apply GlobalTheory.KZ.BettiB.Add.btZ_add <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [164194/164224] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.LevelNFunctionGaloisConjQExpansionStatement (5.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LevelNFunctionGaloisConjQExpansionStatement.lean:13:50: this tactic is never executed
+⚠ [164353/164387] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerCompletionNoPrimeTorsionStatement (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/KummerCompletionNoPrimeTorsionStatement.lean:8:60: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LevelNFunctionGaloisConjQExpansionStatement.lean:13:89: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/KummerCompletionNoPrimeTorsionStatement.lean:8:109: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LevelNFunctionGaloisConjQExpansionStatement.lean:13:50: Unused tactic linter: `exact GlobalTheory.FN.lv_galois_conj` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/KummerCompletionNoPrimeTorsionStatement.lean:8:60: Unused tactic linter: `exact GlobalTheory.KZ.BettiB.khat_no_l_torsion` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LevelNFunctionGaloisConjQExpansionStatement.lean:13:89: Unused tactic linter: `(intros; apply GlobalTheory.FN.lv_galois_conj <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/KummerCompletionNoPrimeTorsionStatement.lean:8:109: Unused tactic linter: `(intros; apply GlobalTheory.KZ.BettiB.khat_no_l_torsion <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [164195/164224] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmpProps (5.3s)
+⚠ [164354/164389] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularFunctionTowerIntegralityStatement (5.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ModularFunctionTowerIntegralityStatement.lean:9:49: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ModularFunctionTowerIntegralityStatement.lean:9:87: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ModularFunctionTowerIntegralityStatement.lean:9:49: Unused tactic linter: `exact GlobalTheory.KZ.kmap_A_stable` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ModularFunctionTowerIntegralityStatement.lean:9:87: Unused tactic linter: `(intros; apply GlobalTheory.KZ.kmap_A_stable <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [164355/164391] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.EqZeroOfBettiKummerRelationPadicZeroStatement (5.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/EqZeroOfBettiKummerRelationPadicZeroStatement.lean:9:62: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/EqZeroOfBettiKummerRelationPadicZeroStatement.lean:9:113: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/EqZeroOfBettiKummerRelationPadicZeroStatement.lean:9:62: Unused tactic linter: `exact GlobalTheory.KZ.BettiB.eq_zero_of_btZ_zero` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/EqZeroOfBettiKummerRelationPadicZeroStatement.lean:9:113: Unused tactic linter: `(intros; apply GlobalTheory.KZ.BettiB.eq_zero_of_btZ_zero <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
