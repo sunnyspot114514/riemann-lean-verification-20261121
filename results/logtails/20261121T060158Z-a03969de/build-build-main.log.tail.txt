@@ -5,7 +5,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/ExistsEig.lean:289:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PrimeNotMemSectionBasePlace.lean:101:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -13,8 +13,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [169759/169773] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.TeichmullerParts.SubalgebraIntegrality.IndepFinset (135s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/IndepFinset.lean:13:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PrimeNotMemSectionBasePlace.lean:125:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -22,139 +21,140 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/IndepFinset.lean:84:80: This simp argument is unused:
-  LinearMap.sum_apply
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PrimeNotMemSectionBasePlace.lean:145:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PrimeNotMemSectionBasePlace.lean:148:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PrimeNotMemSectionBasePlace.lean:154:2: Try this: 
+  haveI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Fin.cons_zero, Fin.cons_succ, one_smul, LinearMap.add_apply, LinearMap.smul_apply,
-    LinearMap.zero_apply, neg_smul, Finset.sum_neg_distrib]
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/IndepFinset.lean:85:10: This simp argument is unused:
-  LinearMap.smul_apply
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PrimeNotMemSectionBasePlace.lean:217:4: Try this: 
+  haveI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Fin.cons_zero, Fin.cons_succ, one_smul, LinearMap.add_apply, LinearMap.sum_apply,
-    LinearMap.zero_apply, neg_smul, Finset.sum_neg_distrib]
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [169760/169774] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IrrIff (8.6s)
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/IrrIff.lean:4:20: Variable name `inst` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PrimeNotMemSectionBasePlace.lean:245:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.TeichmullerParts.SubalgebraIntegrality.PrimeNotMemSectionBasePlace.0.cmp_of`:
+  [Fact (Nat.Prime l)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (Nat.Prime l)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PrimeNotMemSectionBasePlace.lean:251:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.TeichmullerParts.SubalgebraIntegrality.PrimeNotMemSectionBasePlace.0.l_under`:
+  [Fact (Nat.Prime l)]
+  [NumberField L]
+  [IsCMField L]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (Nat.Prime l)] [NumberField L] [IsCMField L] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PrimeNotMemSectionBasePlace.lean:263:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.TeichmullerParts.SubalgebraIntegrality.PrimeNotMemSectionBasePlace.0.under_w`:
+  [Fact (Nat.Prime l)]
+  [IsCMField L]
+  [IsAlgClosure L Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (Nat.Prime l)] [IsCMField L] [IsAlgClosure L Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PrimeNotMemSectionBasePlace.lean:280:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PrimeNotMemSectionBasePlace.lean:267:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.TeichmullerParts.SubalgebraIntegrality.PrimeNotMemSectionBasePlace.0.SectionSplitPlaces`:
+  [IsCMField L]
+  [IsAlgClosure L Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsCMField L] [IsAlgClosure L Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PrimeNotMemSectionBasePlace.lean:293:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.TeichmullerParts.SubalgebraIntegrality.PrimeNotMemSectionBasePlace.0.cmp_off`:
+  [IsAlgClosure L Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsAlgClosure L Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PrimeNotMemSectionBasePlace.lean:296:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.TeichmullerParts.SubalgebraIntegrality.PrimeNotMemSectionBasePlace.0.mem_KS`:
+  [Fact (Nat.Prime l)]
+  [IsAlgClosure L Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (Nat.Prime l)] [IsAlgClosure L Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PrimeNotMemSectionBasePlace.lean:300:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.TeichmullerParts.SubalgebraIntegrality.PrimeNotMemSectionBasePlace.0.sec_spec`:
+  [Fact (Nat.Prime l)]
+  [IsAlgClosure L Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (Nat.Prime l)] [IsAlgClosure L Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PrimeNotMemSectionBasePlace.lean:392:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PrimeNotMemSectionBasePlace.lean:393:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PrimeNotMemSectionBasePlace.lean:442:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PrimeNotMemSectionBasePlace.lean:456:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PrimeNotMemSectionBasePlace.lean:470:7: `Pi.monoidHom` has been deprecated: Use `MonoidHom.pi` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.monoidHom` to `MonoidHom.pi x`).
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PrimeNotMemSectionBasePlace.lean:504:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [169774/169789] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.StabilizerSubgroup (7.7s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/StabilizerSubgroup.lean:5:7: Variable name `inst` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _inst
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/IrrIff.lean:4:37: Variable name `inst_1` is not explicitly referenced.
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/StabilizerSubgroup.lean:5:26: Variable name `inst_1` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _inst_1
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/IrrIff.lean:5:5: Variable name `inst_2` is not explicitly referenced.
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/StabilizerSubgroup.lean:5:54: Variable name `inst_2` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _inst_2
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [169761/169774] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.TeichmullerParts.SubalgebraIntegrality.RankLeOneOfSlices (203s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/RankLeOneOfSlices.lean:107:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.TeichmullerParts.SubalgebraIntegrality.RankLeOneOfSlices.0.UpperTheory.V.Z.J.D.EigenvaluesTensorProduct.piRep_tprod`:
-  [Fintype I]
-  dI
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype I] dI in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [169762/169775] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.TeichmullerParts.SubalgebraIntegrality.BoxIrr (181s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/BoxIrr.lean:16:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/BoxIrr.lean:28:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/BoxIrr.lean:186:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [169763/169776] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.TeichmullerParts.SubalgebraIntegrality.BoxIsot (163s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/BoxIsot.lean:22:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/BoxIsot.lean:102:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [169764/169777] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.TeichmullerParts.SubalgebraIntegrality.PiIsot (147s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PiIsot.lean:80:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.TeichmullerParts.SubalgebraIntegrality.PiIsot.0.UpperTheory.V.Z.J.D.res_update`:
-  [DecidableEq I]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [DecidableEq I] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PiIsot.lean:80:14: Overlapping instance parameters in `res_update`:
-
-⚠️ There are 2 `[DecidableEq I]` instances; one is sufficient.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PiIsot.lean:89:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.TeichmullerParts.SubalgebraIntegrality.PiIsot.0.UpperTheory.V.Z.J.D.res_update_self`:
-  [DecidableEq I]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [DecidableEq I] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PiIsot.lean:89:14: Overlapping instance parameters in `res_update_self`:
-
-⚠️ There are 2 `[DecidableEq I]` instances; one is sufficient.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PiIsot.lean:114:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.TeichmullerParts.SubalgebraIntegrality.PiIsot.0.UpperTheory.V.Z.J.D.split_tprod`:
-  [DecidableEq I]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [DecidableEq I] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PiIsot.lean:142:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.TeichmullerParts.SubalgebraIntegrality.PiIsot.0.UpperTheory.V.Z.J.D.piRep_tprod`:
-  [DecidableEq I]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [DecidableEq I] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PiIsot.lean:186:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/TeichmullerParts/SubalgebraIntegrality/PiIsot.lean:190:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [169765/169778] Built Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.FinalAllB (392s)
