@@ -1,136 +1,3 @@
-  [TopologicalSpace k']
-  [IsNonarchimedeanLocalField k']
-  [FiniteDimensional k k']
-  [IsModuleTopology k k']
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [ValuativeRel
-  k] [TopologicalSpace
-  k] [IsNonarchimedeanLocalField
-  k] [ValuativeRel
-  k'] [TopologicalSpace
-  k'] [IsNonarchimedeanLocalField k'] [FiniteDimensional k k'] [IsModuleTopology k k'] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/JacobianTraceQuotients/LocGal.lean:156:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/JacobianTraceQuotients/LocGal.lean:157:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [170565/170620] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetShalikaRigidityHolds (10s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/JacquetShalikaRigidityHolds.lean:138:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/JacquetShalikaRigidityHolds.lean:219:0: automatically included section variable(s) unused in theorem `GlobalTheory.JSW.Rigid.sum_map_pow_twist`:
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [170566/170620] Built Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.SameSat (92s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/SphericalIdeles/SameSat.lean:44:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.SameSat.0.same_sat`:
-  [IsTotallyComplex E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [170567/170620] Built Development.AutomorphicArithmetic.TwistedTraces.IsotypicIntersectionProductEq (8.6s)
-warning: src/Development/AutomorphicArithmetic/TwistedTraces/IsotypicIntersectionProductEq.lean:46:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/TwistedTraces/IsotypicIntersectionProductEq.lean:47:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/TwistedTraces/IsotypicIntersectionProductEq.lean:51:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [170568/170620] Built Development.AutomorphicArithmetic.TwistedTraces.EigenspaceFactorizationOverNonsplitPlacesCMDatum (15s)
-warning: src/Development/AutomorphicArithmetic/TwistedTraces/EigenspaceFactorizationOverNonsplitPlacesCMDatum.lean:94:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.TwistedTraces.EigenspaceFactorizationOverNonsplitPlacesCMDatum.0.under_over'`:
-  [NumberField F]
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/TwistedTraces/EigenspaceFactorizationOverNonsplitPlacesCMDatum.lean:97:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.TwistedTraces.EigenspaceFactorizationOverNonsplitPlacesCMDatum.0.cmp_atFin'`:
-  [NumberField F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/TwistedTraces/EigenspaceFactorizationOverNonsplitPlacesCMDatum.lean:109:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/TwistedTraces/EigenspaceFactorizationOverNonsplitPlacesCMDatum.lean:107:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.TwistedTraces.EigenspaceFactorizationOverNonsplitPlacesCMDatum.0.cmp_homeo`:
-  [NumberField F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [170569/170620] Built Development.AutomorphicArithmetic.TwistedTraces.ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC (26s)
-warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:149:39: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:168:10: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
-warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:218:25: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:237:12: `finprod_mem_inter_mul_diff'` has been deprecated: Use `finprod_mem_inter_mul_sdiff'` instead
-warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:242:8: `Set.mem_diff` has been deprecated: Use `Set.mem_sdiff` instead
-warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:242:8: This simp argument is unused:
-  Set.mem_diff
-
-Hint: Omit it from the simp argument list.
-  [apply] simp
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:264:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:265:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
 warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:276:2: Try this: 
   haveI̵
@@ -158,3 +25,136 @@ But this is not relevant for proofs because of proof irrelevance.
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
 warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:384:30: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
 warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:402:52: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+✔ [170570/170620] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.JacobianTraceQuotients.QuotEmb (168s)
+✔ [170571/170620] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.JacobianTraceQuotients.SubPerm (171s)
+✔ [170572/170620] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.JacobianTraceQuotients.SubQuot (170s)
+⚠ [170573/170620] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.JacobianTraceQuotients.ExistsCommonEigenvector (170s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/JacobianTraceQuotients/ExistsCommonEigenvector.lean:63:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [170574/170620] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.JacobianTraceQuotients.ExpLev (176s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/JacobianTraceQuotients/ExpLev.lean:17:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/JacobianTraceQuotients/ExpLev.lean:22:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [170575/170620] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.JacobianTraceQuotients.TraceExp (176s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/JacobianTraceQuotients/TraceExp.lean:25:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/JacobianTraceQuotients/TraceExp.lean:31:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [170576/170620] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.JacobianTraceQuotients.CharDom (174s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/JacobianTraceQuotients/CharDom.lean:126:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [170577/170620] Built Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.LocGalEx (205s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/LocGalEx.lean:33:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.LocGalEx.0.galOf_mul'`:
+  [NumberField F]
+  [NumberField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] [NumberField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/LocGalEx.lean:45:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.LocGalEx.0.galOf_one'`:
+  [NumberField F]
+  [NumberField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] [NumberField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/LocGalEx.lean:82:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.LocGalEx.0.ad_ext`:
+  [NumberField F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/LocGalEx.lean:95:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.LocGalEx.0.cmp_pE`:
+  [NumberField F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/LocGalEx.lean:99:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.LocGalEx.0.gl_ext`:
+  [NumberField F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/LocGalEx.lean:103:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.LocGalEx.0.over_unique`:
+  [NumberField F]
+  [NumberField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] [NumberField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/LocGalEx.lean:165:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.LocGalEx.0.eW_apply`:
+  [NumberField F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/LocGalEx.lean:168:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.LocGalEx.0.eW_cont`:
+  [NumberField F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/LocGalEx.lean:171:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.LocGalEx.0.eW_symm_cont`:
+  [NumberField F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/LocGalEx.lean:199:28: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/LocGalEx.lean:199:30: Variable name `b` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _b
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/LocGalEx.lean:244:6: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/LocGalEx.lean:271:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/LocGalEx.lean:272:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
