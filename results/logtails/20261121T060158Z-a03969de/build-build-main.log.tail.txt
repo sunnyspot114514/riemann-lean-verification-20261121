@@ -1,5 +1,11 @@
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SiegelUnitEdgeClassKummerDlogCongruence.lean:37:2: Try this: 
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [166035/166062] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaKillsFplusDiscreteForm (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ThetaKillsFplusDiscreteForm.lean:89:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -7,116 +13,35 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SiegelUnitEdgeClassKummerDlogCongruence.lean:38:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SiegelUnitEdgeClassKummerDlogCongruence.lean:39:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SiegelUnitEdgeClassKummerDlogCongruence.lean:40:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SiegelUnitEdgeClassKummerDlogCongruence.lean:41:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SiegelUnitEdgeClassKummerDlogCongruence.lean:54:18: `continuous_mul_left` has been deprecated: Use `continuous_const_mul` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SiegelUnitEdgeClassKummerDlogCongruence.lean:188:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SiegelUnitEdgeClassKummerDlogCongruence.lean:325:17: `Finset.addAntidiagonal` has been deprecated: Use `Finset.antidiagonal` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SiegelUnitEdgeClassKummerDlogCongruence.lean:353:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SiegelUnitEdgeClassKummerDlogCongruence.lean:388:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SiegelUnitEdgeClassKummerDlogCongruence.lean:484:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SiegelUnitEdgeClassKummerDlogCongruence.lean:485:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SiegelUnitEdgeClassKummerDlogCongruence.lean:551:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [165988/166004] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelUnitEdgeClassKummerDlogCongruenceStatement (5.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SiegelUnitEdgeClassKummerDlogCongruenceStatement.lean:26:47: this tactic is never executed
+⚠ [166036/166063] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.CorestrictionCyclotomicShapiroNormalisedTraceStatement (5.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CorestrictionCyclotomicShapiroNormalisedTraceStatement.lean:19:57: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SiegelUnitEdgeClassKummerDlogCongruenceStatement.lean:26:83: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CorestrictionCyclotomicShapiroNormalisedTraceStatement.lean:19:103: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SiegelUnitEdgeClassKummerDlogCongruenceStatement.lean:26:47: Unused tactic linter: `exact GlobalTheory.pair_edge_dlog` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CorestrictionCyclotomicShapiroNormalisedTraceStatement.lean:19:57: Unused tactic linter: `(exact GlobalTheory.Glue.CorShap.cores_law)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/SiegelUnitEdgeClassKummerDlogCongruenceStatement.lean:26:83: Unused tactic linter: `(intros; apply GlobalTheory.pair_edge_dlog <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CorestrictionCyclotomicShapiroNormalisedTraceStatement.lean:19:103: Unused tactic linter: `(intros; apply GlobalTheory.Glue.CorShap.cores_law <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [165989/166005] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerCochainEqDlogExplicitReciprocityStatement (75s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/KummerCochainEqDlogExplicitReciprocityStatement.lean:15:58: this tactic is never executed
+✔ [166037/166070] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.WeilRepresentation.DatEx (5.9s)
+⚠ [166038/166074] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaKillsFplusDiscreteFormStatement (5.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ThetaKillsFplusDiscreteFormStatement.lean:11:63: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/KummerCochainEqDlogExplicitReciprocityStatement.lean:15:105: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ThetaKillsFplusDiscreteFormStatement.lean:11:115: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/KummerCochainEqDlogExplicitReciprocityStatement.lean:15:58: Unused tactic linter: `exact GlobalTheory.RecOne.kummer_eq_dlog_one` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ThetaKillsFplusDiscreteFormStatement.lean:11:63: Unused tactic linter: `exact GlobalTheory.ThKill.th_kills_Fplus_discrete` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/KummerCochainEqDlogExplicitReciprocityStatement.lean:15:105: Unused tactic linter: `(intros; apply GlobalTheory.RecOne.kummer_eq_dlog_one <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ThetaKillsFplusDiscreteFormStatement.lean:11:115: Unused tactic linter: `(intros; apply GlobalTheory.ThKill.th_kills_Fplus_discrete <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [165990/166005] Built Development.AutomorphicArithmetic.AutomorphicVarieties.EisensteinModularTowers.CardFiberReductionEqTotient (83s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/EisensteinModularTowers/CardFiberReductionEqTotient.lean:23:2: Try this: 
+⚠ [166039/166074] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.ReductionDomains.ContinuousEntry (21s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/ReductionDomains/ContinuousEntry.lean:21:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -124,33 +49,14 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/EisensteinModularTowers/CardFiberReductionEqTotient.lean:24:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [165991/166005] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsAlgClosureOfTower (10s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsAlgClosureOfTower.lean:77:13: `Finset.mem_addAntidiagonal` has been deprecated: Use `Finset.mem_antidiagonal` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsAlgClosureOfTower.lean:80:15: `Finset.mem_addAntidiagonal` has been deprecated: Use `Finset.mem_antidiagonal` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsAlgClosureOfTower.lean:83:16: `Finset.mem_addAntidiagonal` has been deprecated: Use `Finset.mem_antidiagonal` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsAlgClosureOfTower.lean:306:30: This simp argument is unused:
-  HahnSeries.coeff_single
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/ReductionDomains/ContinuousEntry.lean:57:54: This simp argument is unused:
+  mul_assoc
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [HahnSeries.C_apply, Pi.single_apply]
+  [apply] simp [cD, dM, Matrix.mul_apply, Fin.sum_univ_two, mul_comm]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsAlgClosureOfTower.lean:306:55: This simp argument is unused:
-  Pi.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [HahnSeries.C_apply, HahnSeries.coeff_single]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsAlgClosureOfTower.lean:326:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/ReductionDomains/ContinuousEntry.lean:105:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -158,3 +64,97 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/ReductionDomains/ContinuousEntry.lean:106:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/ReductionDomains/ContinuousEntry.lean:111:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [166040/166074] Built GroundTheory.HeightsAndTheta.Theta.Weil.Birational (9.5s)
+⚠ [166041/166074] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.ReductionDomains.CptMeas (6.1s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/ReductionDomains/CptMeas.lean:13:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/ReductionDomains/CptMeas.lean:17:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/ReductionDomains/CptMeas.lean:22:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/ReductionDomains/CptMeas.lean:23:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [166042/166074] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.ReductionDomains.BorLeft (5.5s)
+✔ [166043/166074] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsInertiaFixedNearAlmostFixedCoefficients (79s)
+⚠ [166044/166074] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnitaryActions.ContinuousAdelicGL2OfContinuousEntries (37s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/UnitaryActions/ContinuousAdelicGL2OfContinuousEntries.lean:78:29: This simp argument is unused:
+  Matrix.det_fin_two
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [pow_two]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/UnitaryActions/ContinuousAdelicGL2OfContinuousEntries.lean:94:6: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/UnitaryActions/ContinuousAdelicGL2OfContinuousEntries.lean:195:41: This simp argument is unused:
+  coe_diagonal
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.det_fin_two, ratGL_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/UnitaryActions/ContinuousAdelicGL2OfContinuousEntries.lean:206:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/UnitaryActions/ContinuousAdelicGL2OfContinuousEntries.lean:224:87: This simp argument is unused:
+  coe_diagonal
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [ratGL_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/UnitaryActions/ContinuousAdelicGL2OfContinuousEntries.lean:228:87: This simp argument is unused:
+  coe_diagonal
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [ratGL_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [166045/166078] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumTranslate (96s)
+✔ [166046/166078] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.ReductionDomains.BorHomeo (6.7s)
