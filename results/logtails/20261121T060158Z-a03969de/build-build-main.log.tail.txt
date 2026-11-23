@@ -1,7 +1,57 @@
-  omit [IsTotallyReal F] [IsTotallyComplex E] in theorem ...
+  [apply] simp only [Valuation.restrict_lt_iff_lt_embedding]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/SpecialLinearCosets/TendstoPowZeroOfValuation.lean:23:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/SpecialLinearCosets/TendstoPowZeroOfValuation.lean:23:13: This simp argument is unused:
+  Set.mem_setOf_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Units.val_one, Valuation.restrict_lt_one_iff] at hn1
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [166387/166407] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.SpecialLinearCosets.MatLaws (8.6s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/SpecialLinearCosets/MatLaws.lean:93:39: This simp argument is unused:
+  map_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [BM, mat, B4, map_sub, map_mul, cp_rt, ← hθ, map_ofNat]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/SpecialLinearCosets/MatLaws.lean:90:39: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/SpecialLinearCosets/MatLaws.lean:90:39: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [166388/166407] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.SpecialLinearCosets.Decomp (8.6s)
+⚠ [166389/166407] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.SpecialLinearCosets.PsiLaws (8.3s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/SpecialLinearCosets/PsiLaws.lean:64:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [166390/166409] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.SpecialLinearCosets.Cols (7.0s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/SpecialLinearCosets/Cols.lean:14:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [166391/166412] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.SpecialLinearCosets.EqOfBelowSelf (8.8s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/SpecialLinearCosets/EqOfBelowSelf.lean:17:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.SpecialLinearCosets.EqOfBelowSelf.0.UpperTheory.ConvolutionTheory.R2.I.PlaceCoordinates.cont_symm`:
+  [Algebra F E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Algebra F E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/ThetaBounds/ContOne.lean:89:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/SpecialLinearCosets/EqOfBelowSelf.lean:39:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.SpecialLinearCosets.EqOfBelowSelf.0.UpperTheory.ConvolutionTheory.R2.I.PlaceCoordinates.coord`:
+  [NumberField F]
+  [NumberField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] [NumberField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/SpecialLinearCosets/EqOfBelowSelf.lean:92:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -9,8 +59,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [166343/166393] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.ThetaBounds.DerOm (161s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/ThetaBounds/DerOm.lean:19:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/SpecialLinearCosets/EqOfBelowSelf.lean:108:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -18,9 +67,8 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [166344/166393] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnramifiedSplitting.JExExists (7.8s)
-⚠ [166345/166393] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.ThetaBounds.CurveAt (162s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/ThetaBounds/CurveAt.lean:37:2: Try this: 
+⚠ [166392/166412] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.SpecialLinearCosets.CosetSum (9.5s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/SpecialLinearCosets/CosetSum.lean:12:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -28,29 +76,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [166346/166393] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.GaussianProducts.FockGauss (156s)
-⚠ [166347/166393] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.GaussianProducts.HatSurj (152s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/GaussianProducts/HatSurj.lean:51:4: Unused tactic linter: `change (finPartPi (rf v)) 1 = -(finPartPi v 1)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [166348/166393] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnramifiedSplitting.FixTr (5.8s)
-✔ [166349/166394] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.IsotypicQuotients.WfEig (6.5s)
-⚠ [166350/166394] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnramifiedSplitting.CosetShift (6.3s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/UnramifiedSplitting/CosetShift.lean:35:4: Unused tactic linter: `change Valued.v (0 : v'.adicCompletion K) ≤ _` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [166351/166394] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnramifiedSplitting.SpanCont (5.4s)
-⚠ [166352/166396] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnramifiedSplitting.IntegralThetaRowZeroEqZeroOfIwahoriInvariant (10s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/UnramifiedSplitting/IntegralThetaRowZeroEqZeroOfIwahoriInvariant.lean:159:8: `zero_le'` has been deprecated: Use `zero_le` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/UnramifiedSplitting/IntegralThetaRowZeroEqZeroOfIwahoriInvariant.lean:212:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/UnramifiedSplitting/IntegralThetaRowZeroEqZeroOfIwahoriInvariant.lean:268:8: This simp argument is unused:
-  Matrix.mul_fin_two
-
-Hint: Omit it from the simp argument list.
-  [apply] simp
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/UnramifiedSplitting/IntegralThetaRowZeroEqZeroOfIwahoriInvariant.lean:285:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/SpecialLinearCosets/CosetSum.lean:14:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -58,12 +84,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/UnramifiedSplitting/IntegralThetaRowZeroEqZeroOfIwahoriInvariant.lean:355:10: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
-✔ [166353/166396] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnramifiedSplitting.GenV (16s)
-⚠ [166354/166396] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.GaussianProducts.ExpInt (171s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/GaussianProducts/ExpInt.lean:84:9: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/GaussianProducts/ExpInt.lean:84:44: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/GaussianProducts/ExpInt.lean:106:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/SpecialLinearCosets/CosetSum.lean:15:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -71,19 +92,36 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/GaussianProducts/ExpInt.lean:113:11: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
-✔ [166355/166396] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.ThetaBounds.ImportsAlt (211s)
-✔ [166356/166396] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.ThetaBounds.LiftCont (209s)
-⚠ [166357/166396] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.FockOperators.LiftLin (212s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/FockOperators/LiftLin.lean:31:44: This simp argument is unused:
-  LinearMap.add_apply
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/SpecialLinearCosets/CosetSum.lean:17:2: Try this: 
+  letI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [lift, Pi.add_apply, map_add, th_add, mul_add]
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [166358/166396] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.ThetaBounds.DerL (215s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/ThetaBounds/DerL.lean:20:2: Try this: 
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [166393/166413] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.SpecialLinearCosets.CosetSpan (10s)
+✔ [166394/166413] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.SpecialLinearCosets.Splt (8.7s)
+✔ [166395/166416] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.SpecialLinearCosets.IsCompactBoxSet (8.7s)
+⚠ [166396/166416] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.SpecialLinearCosets.CompCoordMem (8.0s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/SpecialLinearCosets/CompCoordMem.lean:15:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.SpecialLinearCosets.CompCoordMem.0.ptMat_cont`:
+  [Field K]
+  [ValuativeRel K]
+  [IsNonarchimedeanLocalField K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Field K] [ValuativeRel K] [IsNonarchimedeanLocalField K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/SpecialLinearCosets/CompCoordMem.lean:35:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.SpecialLinearCosets.CompCoordMem.0.comp_coord_mem`:
+  [Field K]
+  [ValuativeRel K]
+  [IsNonarchimedeanLocalField K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Field K] [ValuativeRel K] [IsNonarchimedeanLocalField K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [166397/166419] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.SpecialLinearCosets.ColsHApply (8.4s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/SpecialLinearCosets/ColsHApply.lean:116:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -91,8 +129,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [166359/166396] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.GaussianProducts.Expand1 (216s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/GaussianProducts/Expand1.lean:18:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/SpecialLinearCosets/ColsHApply.lean:134:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -100,8 +137,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [166360/166396] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.GaussianProducts.ThetaFourierCoeffZeroAndEqShiftedWhittaker (214s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/GaussianProducts/ThetaFourierCoeffZeroAndEqShiftedWhittaker.lean:14:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/SpecialLinearCosets/ColsHApply.lean:170:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -109,21 +145,11 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [166361/166396] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.GaussianProducts.EqNUMul (215s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/GaussianProducts/EqNUMul.lean:75:58: `continuousOn_finset_sum` has been deprecated: Use `continuousOn_finsetSum` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/GaussianProducts/EqNUMul.lean:43:152: Variable name `M` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _M
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [166362/166396] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnramifiedSplitting.WfEig (6.8s)
-✔ [166363/166396] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnramifiedSplitting.WeLoc (7.4s)
-⚠ [166364/166396] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnramifiedSplitting.ContMkE (9.8s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/UnramifiedSplitting/ContMkE.lean:122:8: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
-✔ [166365/166396] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnramifiedSplitting.StdOm (10s)
-⚠ [166366/166396] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.ThetaBounds.NormDetKinf (233s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/ThetaBounds/NormDetKinf.lean:48:2: Try this: 
+✔ [166398/166419] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.SpecialLinearCosets.ContinuousQuaternaryFormLeft (8.2s)
+✔ [166399/166419] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.SpecialLinearCosets.JmMeasurable (10s)
+✔ [166400/166421] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.SpecialLinearCosets.GenSL (7.4s)
+⚠ [166401/166421] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.SpecialLinearCosets.ClosedEmbeddingVal (7.0s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/SpecialLinearCosets/ClosedEmbeddingVal.lean:49:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -131,30 +157,4 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/ThetaBounds/NormDetKinf.lean:57:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [166367/166396] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.ThetaBounds.LieL (232s)
-✔ [166368/166396] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.GaussianProducts.ExPhi (242s)
-⚠ [166369/166397] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.ThetaBounds.DerX (230s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/ThetaBounds/DerX.lean:61:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-✔ [166370/166397] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.ThetaBounds.Mov (235s)
-✔ [166371/166397] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.GaussianProducts.MomZero (243s)
-✔ [166372/166397] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.ThetaBounds.LieZ (242s)
-⚠ [166373/166397] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnramifiedSplitting.EigenvalueSumMulThetaConstantTermEqZeroOfAnisotr (242s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/UnramifiedSplitting/EigenvalueSumMulThetaConstantTermEqZeroOfAnisotr.lean:45:8: `zero_le'` has been deprecated: Use `zero_le` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/UnramifiedSplitting/EigenvalueSumMulThetaConstantTermEqZeroOfAnisotr.lean:191:22: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/UnramifiedSplitting/EigenvalueSumMulThetaConstantTermEqZeroOfAnisotr.lean:191:73: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
-✔ [166374/166400] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.SpecialLinearCosets.GoodU (9.2s)
-✔ [166375/166400] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnramifiedSplitting.CorePt (16s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/SpecialLinearCosets/ClosedEmbeddingVal.lean:50:39: `Set.restrict` has been deprecated: Use `Set.domRestrict` instead
