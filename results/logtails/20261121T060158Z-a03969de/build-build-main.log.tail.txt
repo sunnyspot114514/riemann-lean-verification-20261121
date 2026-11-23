@@ -1,42 +1,76 @@
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-⚠ [163865/163890] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicHomSmallOnDeepCongruenceSubgroups (208s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/PadicHomSmallOnDeepCongruenceSubgroups.lean:15:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-✔ [163866/163892] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.CupProductUnramifiedClassesVanishes (209s)
-⚠ [163867/163892] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.AugSpanOneMemOfOrthogonalThree (8.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/AugSpanOneMemOfOrthogonalThree.lean:52:23: Variable name `hP` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hP
+  [apply] _V
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/AugSpanOneMemOfOrthogonalThree.lean:150:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/AugSpanOneMemOfOrthogonalThree.lean:156:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-⚠ [163868/163892] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPrimePowMulDeepCongruenceLevel (217s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPrimePowMulDeepCongruenceLevel.lean:77:8: `ENat.coe_toNat` has been deprecated: Use `ENat.natCast_toNat` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPrimePowMulDeepCongruenceLevel.lean:77:30: `ENat.coe_toNat` has been deprecated: Use `ENat.natCast_toNat` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPrimePowMulDeepCongruenceLevel.lean:192:2: Try this: 
+⚠ [163890/163928] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.OrdinarySelmerVanishesOfDualVanishesStatement (190s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/OrdinarySelmerVanishesOfDualVanishesStatement.lean:7:60: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/OrdinarySelmerVanishesOfDualVanishesStatement.lean:7:109: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/OrdinarySelmerVanishesOfDualVanishesStatement.lean:7:60: Unused tactic linter: `exact GlobalTheory.Ord2.grZero_of_grZero_dual1` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/OrdinarySelmerVanishesOfDualVanishesStatement.lean:7:109: Unused tactic linter: `(intros; apply GlobalTheory.Ord2.grZero_of_grZero_dual1 <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [163891/163928] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntegralTwoCocycleReciprocityTrivialAtLastPlaceStatement (192s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IntegralTwoCocycleReciprocityTrivialAtLastPlaceStatement.lean:8:53: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IntegralTwoCocycleReciprocityTrivialAtLastPlaceStatement.lean:8:95: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IntegralTwoCocycleReciprocityTrivialAtLastPlaceStatement.lean:8:53: Unused tactic linter: `exact GlobalTheory.Ord2.Rec.reciprocity` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IntegralTwoCocycleReciprocityTrivialAtLastPlaceStatement.lean:8:95: Unused tactic linter: `(intros; apply GlobalTheory.Ord2.Rec.reciprocity <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [163892/163928] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCharacterPrimeConductorDegreePrimePowStatement (184s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsCharacterPrimeConductorDegreePrimePowStatement.lean:8:65: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsCharacterPrimeConductorDegreePrimePowStatement.lean:8:119: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsCharacterPrimeConductorDegreePrimePowStatement.lean:8:65: Unused tactic linter: `exact GlobalTheory.Ord2.PrimeChar.exists_prime_char` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsCharacterPrimeConductorDegreePrimePowStatement.lean:8:119: Unused tactic linter: `(intros; apply GlobalTheory.Ord2.PrimeChar.exists_prime_char <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [163893/163928] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.LocalConditionsIndependentOfPlaceOverStatement (181s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LocalConditionsIndependentOfPlaceOverStatement.lean:8:49: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LocalConditionsIndependentOfPlaceOverStatement.lean:8:87: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LocalConditionsIndependentOfPlaceOverStatement.lean:8:49: Unused tactic linter: `exact GlobalTheory.Ord2.place_indep` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LocalConditionsIndependentOfPlaceOverStatement.lean:8:87: Unused tactic linter: `(intros; apply GlobalTheory.Ord2.place_indep <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [163894/163929] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsAugmentationCombinationEqIdTracelessIrreduStatement (173s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAugmentationCombinationEqIdTracelessIrreduStatement.lean:8:64: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAugmentationCombinationEqIdTracelessIrreduStatement.lean:8:117: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAugmentationCombinationEqIdTracelessIrreduStatement.lean:8:64: Unused tactic linter: `exact GlobalTheory.Sl2Ad.augmentation_contains_one` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAugmentationCombinationEqIdTracelessIrreduStatement.lean:8:117: Unused tactic linter: `(intros; apply GlobalTheory.Sl2Ad.augmentation_contains_one <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [163895/163929] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaloisHomZlLipschitzOfKerLeLinearGroup (189s)
+⚠ [163896/163929] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.CyclotomicCharCongruentOneOnDecompositionGroup (183s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CyclotomicCharCongruentOneOnDecompositionGroup.lean:23:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -44,7 +78,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPrimePowMulDeepCongruenceLevel.lean:194:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CyclotomicCharCongruentOneOnDecompositionGroup.lean:40:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -52,109 +86,75 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [163869/163892] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.LipschitzPadicHomOfContractionPerLevelStatement (175s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LipschitzPadicHomOfContractionPerLevelStatement.lean:9:67: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CyclotomicCharCongruentOneOnDecompositionGroup.lean:41:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [163897/163930] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.CocyclePairingLocallyConstant (192s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CocyclePairingLocallyConstant.lean:17:4: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LipschitzPadicHomOfContractionPerLevelStatement.lean:9:123: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CocyclePairingLocallyConstant.lean:18:4: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LipschitzPadicHomOfContractionPerLevelStatement.lean:9:67: Unused tactic linter: `exact GlobalTheory.lipschitz_of_contraction_per_level` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LipschitzPadicHomOfContractionPerLevelStatement.lean:9:123: Unused tactic linter: `(intros; apply GlobalTheory.lipschitz_of_contraction_per_level <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [163870/163895] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.CupProductUnramifiedClassesVanishesStatement (168s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CupProductUnramifiedClassesVanishesStatement.lean:8:56: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CocyclePairingLocallyConstant.lean:19:4: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CupProductUnramifiedClassesVanishesStatement.lean:8:101: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CocyclePairingLocallyConstant.lean:16:84: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CupProductUnramifiedClassesVanishesStatement.lean:8:56: Unused tactic linter: `exact GlobalTheory.Ord2.UnrCup.cup_unr_cob` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CupProductUnramifiedClassesVanishesStatement.lean:8:101: Unused tactic linter: `(intros; apply GlobalTheory.Ord2.UnrCup.cup_unr_cob <;> assumption)` does nothing
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CocyclePairingLocallyConstant.lean:17:4: Unused tactic linter: `(intros;
+  apply _root_.GlobalTheory.PadicIntegralNorm.norm_le_one_of_isIntegral_padicInt <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [163871/163895] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicHomSmallOnDeepCongruenceSubgroupsStatement (172s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/PadicHomSmallOnDeepCongruenceSubgroupsStatement.lean:9:61: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/PadicHomSmallOnDeepCongruenceSubgroupsStatement.lean:9:111: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/PadicHomSmallOnDeepCongruenceSubgroupsStatement.lean:9:61: Unused tactic linter: `exact GlobalTheory.lam_small_of_deep_congruence` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CocyclePairingLocallyConstant.lean:18:4: Unused tactic linter: `(intros;
+  apply @_root_.GlobalTheory.PadicIntegralNorm.norm_le_one_of_isIntegral_padicInt <;>
+    first
+    | assumption
+    | infer_instance)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/PadicHomSmallOnDeepCongruenceSubgroupsStatement.lean:9:111: Unused tactic linter: `(intros; apply GlobalTheory.lam_small_of_deep_congruence <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CocyclePairingLocallyConstant.lean:19:4: Unused tactic linter: `(intros;
+  exact _root_.GlobalTheory.PadicIntegralNorm.norm_le_one_of_isIntegral_padicInt ..)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [163872/163909] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.GreenbergOrdinaryOfVanishingOnCycloKernelStatement (176s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GreenbergOrdinaryOfVanishingOnCycloKernelStatement.lean:8:70: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CocyclePairingLocallyConstant.lean:22:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GreenbergOrdinaryOfVanishingOnCycloKernelStatement.lean:8:129: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GreenbergOrdinaryOfVanishingOnCycloKernelStatement.lean:8:70: Unused tactic linter: `exact GlobalTheory.Ord2.GrOfKill.gr_of_vanish_on_trivial` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CocyclePairingLocallyConstant.lean:89:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GreenbergOrdinaryOfVanishingOnCycloKernelStatement.lean:8:129: Unused tactic linter: `(intros; apply GlobalTheory.Ord2.GrOfKill.gr_of_vanish_on_trivial <;> assumption)` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [163873/163913] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.DualSelmerUnboundedOrderNonzeroOrdinaryClassStatement (174s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/DualSelmerUnboundedOrderNonzeroOrdinaryClassStatement.lean:8:46: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [163898/163931] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.EqOfNatCastMem (6.7s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/EqOfNatCastMem.lean:8:22: Variable name `inst` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/DualSelmerUnboundedOrderNonzeroOrdinaryClassStatement.lean:8:81: this tactic is never executed
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/DualSelmerUnboundedOrderNonzeroOrdinaryClassStatement.lean:8:46: Unused tactic linter: `exact GlobalTheory.Ord2.gw_limit` does nothing
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [163899/163931] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CongruenceMulOfUnitFactor (6.2s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CongruenceMulOfUnitFactor.lean:8:15: Variable name `inst` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/DualSelmerUnboundedOrderNonzeroOrdinaryClassStatement.lean:8:81: Unused tactic linter: `(intros; apply GlobalTheory.Ord2.gw_limit <;> assumption)` does nothing
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [163874/163913] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeightCommutatorInvarianceStatement (176s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/HeightCommutatorInvarianceStatement.lean:8:51: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CongruenceMulOfUnitFactor.lean:13:15: Variable name `inst` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/HeightCommutatorInvarianceStatement.lean:8:91: this tactic is never executed
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/HeightCommutatorInvarianceStatement.lean:8:51: Unused tactic linter: `exact GlobalTheory.Ord2.ht_commutator` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/HeightCommutatorInvarianceStatement.lean:8:91: Unused tactic linter: `(intros; apply GlobalTheory.Ord2.ht_commutator <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [163875/163913] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDualSelmerClassesUnboundedOrderStatement (177s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsDualSelmerClassesUnboundedOrderStatement.lean:7:68: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsDualSelmerClassesUnboundedOrderStatement.lean:7:125: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsDualSelmerClassesUnboundedOrderStatement.lean:7:68: Unused tactic linter: `exact GlobalTheory.Ord2.GwCount.dual_classes_unbounded` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsDualSelmerClassesUnboundedOrderStatement.lean:7:125: Unused tactic linter: `(intros; apply GlobalTheory.Ord2.GwCount.dual_classes_unbounded <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [163876/163916] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.AugSpanOneMemOfOrthogonalThreeStatement (6.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/AugSpanOneMemOfOrthogonalThreeStatement.lean:8:68: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/AugSpanOneMemOfOrthogonalThreeStatement.lean:8:125: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/AugSpanOneMemOfOrthogonalThreeStatement.lean:8:68: Unused tactic linter: `exact GlobalTheory.augSpan_one_mem_of_orthogonal_three` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/AugSpanOneMemOfOrthogonalThreeStatement.lean:8:125: Unused tactic linter: `(intros; apply GlobalTheory.augSpan_one_mem_of_orthogonal_three <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [163877/163921] Built Formalism.SharpRestriction.ValuationFrobeniusEpsilon.ScaledValuations.ScaleEps (6.5s)
-✔ [163878/163921] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntegralTwoCocycleReciprocityTrivialAtLastPlace (169s)
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
