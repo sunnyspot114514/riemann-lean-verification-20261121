@@ -1,9 +1,3 @@
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [168110/168129] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CommonEigenvectorExistence (5.3s)
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CommonEigenvectorExistence.lean:20:6: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -11,30 +5,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CommonEigenvectorExistence.lean:30:36: This simp argument is unused:
-  _root_.Module.End.mem_eigenspace_iff
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [E, Submodule.mem_inf]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CommonEigenvectorExistence.lean:53:5: Variable name `inst` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/CommonEigenvectorExistence.lean:53:29: Variable name `inst_1` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_1
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [168111/168129] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalDoubleCosets.Imports (5.3s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalDoubleCosets/Imports.lean:15:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalDoubleCosets/Imports.lean:20:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalDoubleCosets/Imports.lean:25:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalDoubleCosets/Imports.lean:34:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/WhittakerHecke/LocalArtinInertiaValuationOfUniformizerPrime.lean:201:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -42,25 +13,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [168112/168129] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalDoubleCosets.ToBorel (7.7s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalDoubleCosets/ToBorel.lean:17:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalDoubleCosets.ToBorel.0.UpperTheory.Gal.LocD.dg_val`:
-  [ValuativeRel E]
-  [TopologicalSpace E]
-  [IsNonarchimedeanLocalField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [ValuativeRel E] [TopologicalSpace E] [IsNonarchimedeanLocalField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [168113/168132] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.AutomorphyLifting.IsAutCsdA (148s)
-⚠ [168114/168132] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalDoubleCosets.EigZero (7.9s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalDoubleCosets/EigZero.lean:23:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalDoubleCosets/EigZero.lean:19:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/WhittakerHecke/LocalArtinInertiaValuationOfUniformizerPrime.lean:203:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -68,22 +21,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalDoubleCosets/EigZero.lean:38:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalDoubleCosets/EigZero.lean:61:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-⚠ [168115/168140] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.TPCohC (173s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TPCohC.lean:18:6: Try this: 
+warning: src/Development/AutomorphicArithmetic/WhittakerHecke/LocalArtinInertiaValuationOfUniformizerPrime.lean:204:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -91,44 +29,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [168116/168140] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LeviSmoothLocalization.PrincipalSeriesMatching.WinUnl (157s)
-⚠ [168117/168140] Built Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.InfinitePlaceGluing.FacOf (165s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/SplitEigenfunctions/InfinitePlaceGluing/FacOf.lean:48:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/SplitEigenfunctions/InfinitePlaceGluing/FacOf.lean:115:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-✔ [168118/168140] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalDoubleCosets.JacSemi (5.7s)
-✔ [168119/168143] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.RealDefs (176s)
-⚠ [168120/168143] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalDoubleCosets.TracePowAlt (5.6s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalDoubleCosets/TracePowAlt.lean:9:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-✔ [168121/168145] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResidueCardEqAbsNorm (5.6s)
-✔ [168122/168148] Built Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.TwistFactor (7.8s)
-⚠ [168123/168148] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalFieldTwoVocabulariesDictionary (6.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LocalFieldTwoVocabulariesDictionary.lean:77:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-⚠ [168124/168150] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalDoubleCosets.LocDescOf (13s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalDoubleCosets/LocDescOf.lean:88:4: Try this: 
+warning: src/Development/AutomorphicArithmetic/WhittakerHecke/LocalArtinInertiaValuationOfUniformizerPrime.lean:233:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -136,25 +37,124 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [168125/168150] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.AutomorphyLifting.GalUnitaryT (150s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/GalUnitaryT.lean:62:0: automatically included section variable(s) unused in theorem `UpperTheory.V.Z.Win.hasHT_iff`:
-  [NumberField F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] in theorem ...
+warning: src/Development/AutomorphicArithmetic/WhittakerHecke/LocalArtinInertiaValuationOfUniformizerPrime.lean:354:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [168126/168150] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.PlainTorExistsChars (5.8s)
-⚠ [168127/168150] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalFieldTwoVocabulariesDictionaryStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LocalFieldTwoVocabulariesDictionaryStatement.lean:12:66: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LocalFieldTwoVocabulariesDictionaryStatement.lean:12:121: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/WhittakerHecke/LocalArtinInertiaValuationOfUniformizerPrime.lean:355:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LocalFieldTwoVocabulariesDictionaryStatement.lean:12:66: Unused tactic linter: `exact GlobalTheory.DelGlob.localVocabularyDictionary` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/WhittakerHecke/LocalArtinInertiaValuationOfUniformizerPrime.lean:356:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/WhittakerHecke/LocalArtinInertiaValuationOfUniformizerPrime.lean:357:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/WhittakerHecke/LocalArtinInertiaValuationOfUniformizerPrime.lean:371:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/WhittakerHecke/LocalArtinInertiaValuationOfUniformizerPrime.lean:372:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/WhittakerHecke/LocalArtinInertiaValuationOfUniformizerPrime.lean:397:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [168139/168159] Built Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.IsSemisimpleInducedParam (19s)
+warning: src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/IsSemisimpleInducedParam.lean:143:6: Unused tactic linter: `congr 1` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LocalFieldTwoVocabulariesDictionaryStatement.lean:12:121: Unused tactic linter: `(intros; apply GlobalTheory.DelGlob.localVocabularyDictionary <;> assumption)` does nothing
+warning: src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/IsSemisimpleInducedParam.lean:324:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [168128/168150] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalDoubleCosets.OfSupportHolds (5.7s)
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/IsSemisimpleInducedParam.lean:347:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/IsSemisimpleInducedParam.lean:360:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [168140/168159] Built Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.WDBasic (13s)
+✔ [168141/168161] Built Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.TameRecAll (7.7s)
+✔ [168142/168163] Built Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.IsoUniq (6.2s)
+✔ [168143/168163] Built Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.ResIndep (10s)
+⚠ [168144/168163] Built Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.ResBase (8.8s)
+warning: src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/ResBase.lean:40:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/ResBase.lean:107:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [168145/168164] Built Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.TwTame (12s)
+warning: src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/TwTame.lean:88:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.TwTame.0.UpperTheory.Zero.LLC.det_dOf`:
+  [ValuativeRel k]
+  [TopologicalSpace k]
+  [IsNonarchimedeanLocalField k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/TwTame.lean:171:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
