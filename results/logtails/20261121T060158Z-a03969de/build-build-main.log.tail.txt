@@ -1,58 +1,20 @@
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/CyclicReductionCohomology/DualNO.lean:50:8: Overlapping instance parameters in `dualNO`:
-
-⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.
-💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-⚠ [161937/161959] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FiniteQuadraticCharactersInAdjointStatement (5.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/FiniteQuadraticCharactersInAdjointStatement.lean:7:71: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/FiniteQuadraticCharactersInAdjointStatement.lean:7:131: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/FiniteQuadraticCharactersInAdjointStatement.lean:7:71: Unused tactic linter: `exact GlobalTheory.finite_quadratic_characters_in_adjoint` does nothing
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/NormVUnderPow.lean:43:4: Unused tactic linter: `(apply RingOfIntegers.ext; simp [IsScalarTower.algebraMap_apply F K M])` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/FiniteQuadraticCharactersInAdjointStatement.lean:7:131: Unused tactic linter: `(intros; apply GlobalTheory.finite_quadratic_characters_in_adjoint <;> assumption)` does nothing
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/NormVUnderPow.lean:65:8: This simp argument is unused:
+  Function.comp_def
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [161938/161961] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ConjOnInterQuadraticKernelsOfTraceEq (6.6s)
-⚠ [161939/161961] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsExtensionRepIndexTwoOfTraceInvariantStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsExtensionRepIndexTwoOfTraceInvariantStatement.lean:7:49: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp [pow_mul]
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsExtensionRepIndexTwoOfTraceInvariantStatement.lean:7:87: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsExtensionRepIndexTwoOfTraceInvariantStatement.lean:7:49: Unused tactic linter: `exact GlobalTheory.IndexTwoExt.main` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsExtensionRepIndexTwoOfTraceInvariantStatement.lean:7:87: Unused tactic linter: `(intros; apply GlobalTheory.IndexTwoExt.main <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [161940/161961] Built PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.InertiaMovesSquareRoot (148s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/InertiaMovesSquareRoot.lean:13:69: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/InertiaMovesSquareRoot.lean:13:127: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/InertiaMovesSquareRoot.lean:13:69: Unused tactic linter: `exact GlobalTheory.SqrtNegRam.sqrt_neg_moved_by_inertia` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/InertiaMovesSquareRoot.lean:13:127: Unused tactic linter: `(intros; apply GlobalTheory.SqrtNegRam.sqrt_neg_moved_by_inertia <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [161941/161961] Built PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.ImportsSide (154s)
-⚠ [161942/161965] Built PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.ComplexConjAlgebraMap (155s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/ComplexConjAlgebraMap.lean:60:4: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [161957/161981] Built PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.Imports (148s)
+✔ [161958/161981] Built PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.InertiaLeRangeOfUnramified (156s)
+✔ [161959/161981] Built PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.HasFixedOfHasSat (161s)
+⚠ [161960/161985] Built PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.ExistsInfiniteQcmSplitRam (153s)
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/ExistsInfiniteQcmSplitRam.lean:25:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -60,7 +22,25 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/ComplexConjAlgebraMap.lean:61:4: Try this: 
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/ExistsInfiniteQcmSplitRam.lean:32:0: automatically included section variable(s) unused in theorem `GlobalTheory.ExSplitCM.prime_eq_of_mem`:
+  [NumberField F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/ExistsInfiniteQcmSplitRam.lean:70:0: automatically included section variable(s) unused in theorem `GlobalTheory.ExSplitCM.mem_range_res_iff`:
+  [NumberField F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/ExistsInfiniteQcmSplitRam.lean:78:0: automatically included section variable(s) unused in theorem `GlobalTheory.ExSplitCM.fix_adjoin`:
+  [NumberField F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/ExistsInfiniteQcmSplitRam.lean:92:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -68,7 +48,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/ComplexConjAlgebraMap.lean:62:4: Try this: 
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/ExistsInfiniteQcmSplitRam.lean:93:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -76,85 +56,105 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [161943/161968] Built PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.LocalGlobalCompatibilityReal (146s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/LocalGlobalCompatibilityReal.lean:13:67: this tactic is never executed
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/ExistsInfiniteQcmSplitRam.lean:119:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/ExistsInfiniteQcmSplitRam.lean:126:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/ExistsInfiniteQcmSplitRam.lean:134:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/ExistsInfiniteQcmSplitRam.lean:137:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/ExistsInfiniteQcmSplitRam.lean:149:64: `Set.Infinite.diff` has been deprecated: Use `Set.Infinite.sdiff` instead
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/ExistsInfiniteQcmSplitRam.lean:151:53: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [161961/161985] Built PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.IntertwinerZeroOfCharacterTwist (5.6s)
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/IntertwinerZeroOfCharacterTwist.lean:6:71: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/LocalGlobalCompatibilityReal.lean:13:123: this tactic is never executed
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/IntertwinerZeroOfCharacterTwist.lean:6:131: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/LocalGlobalCompatibilityReal.lean:13:67: Unused tactic linter: `exact GlobalTheory.RealGal.locCompR_of_admissibleReal` does nothing
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/IntertwinerZeroOfCharacterTwist.lean:6:71: Unused tactic linter: `exact GlobalTheory.commute_on_ker_of_commute_on_ker_inter` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/LocalGlobalCompatibilityReal.lean:13:123: Unused tactic linter: `(intros; apply GlobalTheory.RealGal.locCompR_of_admissibleReal <;> assumption)` does nothing
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/IntertwinerZeroOfCharacterTwist.lean:6:131: Unused tactic linter: `(intros; apply GlobalTheory.commute_on_ker_of_commute_on_ker_inter <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [161944/161968] Built PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.HeckeCharacterEqOfCofinite (158s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/HeckeCharacterEqOfCofinite.lean:13:50: this tactic is never executed
+⚠ [161962/161985] Built PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.IntertwinerZeroOfQuadraticTwists (6.7s)
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/IntertwinerZeroOfQuadraticTwists.lean:6:89: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/HeckeCharacterEqOfCofinite.lean:13:89: this tactic is never executed
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/IntertwinerZeroOfQuadraticTwists.lean:6:167: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/HeckeCharacterEqOfCofinite.lean:13:50: Unused tactic linter: `exact GlobalTheory.HeckeMultOne.main` does nothing
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/IntertwinerZeroOfQuadraticTwists.lean:6:89: Unused tactic linter: `exact GlobalTheory.trace_eq_of_agree_on_index_two_of_no_twisted_intertwiner` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/HeckeCharacterEqOfCofinite.lean:13:89: Unused tactic linter: `(intros; apply GlobalTheory.HeckeMultOne.main <;> assumption)` does nothing
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/IntertwinerZeroOfQuadraticTwists.lean:6:167: Unused tactic linter: `(intros;
+  apply GlobalTheory.trace_eq_of_agree_on_index_two_of_no_twisted_intertwiner <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [161945/161968] Built PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.ImportsBis (146s)
-⚠ [161946/161970] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ConjOnInterQuadraticKernelsOfTraceEqStatement (6.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ConjOnInterQuadraticKernelsOfTraceEqStatement.lean:7:67: this tactic is never executed
+✔ [161963/161989] Built PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.AttachedRepConjugateInvariant (146s)
+⚠ [161964/161991] Built PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.EqOneOrEqOfKer (14s)
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/EqOneOrEqOfKer.lean:22:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/EqOneOrEqOfKer.lean:56:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/EqOneOrEqOfKer.lean:83:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/EqOneOrEqOfKer.lean:88:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/EqOneOrEqOfKer.lean:115:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/EqOneOrEqOfKer.lean:129:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [161965/161993] Built Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.GaloisRepresentationTypes.OrdinaryHeckeAlgebraIntegral (154s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/GaloisRepresentationTypes/OrdinaryHeckeAlgebraIntegral.lean:33:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ConjOnInterQuadraticKernelsOfTraceEqStatement.lean:7:123: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ConjOnInterQuadraticKernelsOfTraceEqStatement.lean:7:67: Unused tactic linter: `exact GlobalTheory.QuadKernelConj.conj_on_ker_inf_ker` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ConjOnInterQuadraticKernelsOfTraceEqStatement.lean:7:123: Unused tactic linter: `(intros; apply GlobalTheory.QuadKernelConj.conj_on_ker_inf_ker <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [161947/161970] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsRepPatchTwist (6.8s)
-✔ [161948/161970] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TwistedIntertwinerDecompOfQuadraticKernel (7.5s)
-⚠ [161949/161976] Built PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.DecompositionFixesSquareRoot (161s)
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/DecompositionFixesSquareRoot.lean:13:67: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/DecompositionFixesSquareRoot.lean:13:123: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/DecompositionFixesSquareRoot.lean:13:67: Unused tactic linter: `exact GlobalTheory.SqFix.sqrt_fixed_of_isSquare_padic` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/PositivityTheory/AutomorphicForms/PublishedInputs/RealGaloisRepresentations/IwahoriSphericalTransfer/DecompositionFixesSquareRoot.lean:13:123: Unused tactic linter: `(intros; apply GlobalTheory.SqFix.sqrt_fixed_of_isSquare_padic <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [161950/161976] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsRepPatchTwistStatement (4.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsRepPatchTwistStatement.lean:7:55: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsRepPatchTwistStatement.lean:7:99: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsRepPatchTwistStatement.lean:7:55: Unused tactic linter: `exact GlobalTheory.exists_rep_patch_twist` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsRepPatchTwistStatement.lean:7:99: Unused tactic linter: `(intros; apply GlobalTheory.exists_rep_patch_twist <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [161951/161976] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TwistedIntertwinerDecompOfQuadraticKernelStatement (5.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TwistedIntertwinerDecompOfQuadraticKernelStatement.lean:7:77: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TwistedIntertwinerDecompOfQuadraticKernelStatement.lean:7:143: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TwistedIntertwinerDecompOfQuadraticKernelStatement.lean:7:77: Unused tactic linter: `exact GlobalTheory.twistedIntertwiner_decomp_of_quadraticKernel` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TwistedIntertwinerDecompOfQuadraticKernelStatement.lean:7:143: Unused tactic linter: `(intros;
-  apply GlobalTheory.twistedIntertwiner_decomp_of_quadraticKernel <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
