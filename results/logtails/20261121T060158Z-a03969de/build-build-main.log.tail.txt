@@ -1,75 +1,17 @@
-  [IsTotallyComplex E]
+  [TopologicalSpace k']
+  [IsNonarchimedeanLocalField k']
+  [FiniteDimensional k k']
+  [IsModuleTopology k k']
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex E] in theorem ...
+  omit [ValuativeRel
+  k] [TopologicalSpace
+  k] [IsNonarchimedeanLocalField
+  k] [ValuativeRel
+  k'] [TopologicalSpace
+  k'] [IsNonarchimedeanLocalField k'] [FiniteDimensional k k'] [IsModuleTopology k k'] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [170501/170537] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ShintaniUnfoldedIntegrandEvalTorusCellStatement (16s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ShintaniUnfoldedIntegrandEvalTorusCellStatement.lean:49:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ShintaniUnfoldedIntegrandEvalTorusCellStatement.lean:50:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ShintaniUnfoldedIntegrandEvalTorusCellStatement.lean:49:4: Unused tactic linter: `exact GlobalTheory.ZEul.uInt_cell_eval` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ShintaniUnfoldedIntegrandEvalTorusCellStatement.lean:50:4: Unused tactic linter: `(intros; apply GlobalTheory.ZEul.uInt_cell_eval <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [170502/170539] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsShiftedVectorShintaniFormulaRamifiedStatement (6.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsShiftedVectorShintaniFormulaRamifiedStatement.lean:30:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsShiftedVectorShintaniFormulaRamifiedStatement.lean:31:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsShiftedVectorShintaniFormulaRamifiedStatement.lean:30:4: Unused tactic linter: `exact GlobalTheory.RamShift.exists_shifted_bump_shintani` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsShiftedVectorShintaniFormulaRamifiedStatement.lean:31:4: Unused tactic linter: `(intros; apply GlobalTheory.RamShift.exists_shifted_bump_shintani <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [170503/170539] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnfoldedPolarisedIntegralBumpedForms (13s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/UnfoldedPolarisedIntegralBumpedForms.lean:181:14: `ofReal_norm_eq_enorm` has been deprecated: Use `ofReal_norm` instead
-✔ [170504/170539] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnfoldedWhittakerIntegralEqEulerProductSchurSums (10s)
-⚠ [170505/170544] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.InertiaQuadraticRamification.NumberField (16s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/InertiaQuadraticRamification/NumberField.lean:81:0: automatically included section variable(s) unused in theorem `UpperTheory.Gal.UnramifiedFromSplittingCriterion.Layer.mono`:
-  [NumberField E]
-  [IsCMField E]
-  [IsAlgClosure E Ω]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [IsCMField E] [IsAlgClosure E Ω] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [170506/170544] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnfoldedPolarisedIntegralBumpedFormsStatement (14s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/UnfoldedPolarisedIntegralBumpedFormsStatement.lean:48:56: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/UnfoldedPolarisedIntegralBumpedFormsStatement.lean:48:101: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/UnfoldedPolarisedIntegralBumpedFormsStatement.lean:48:56: Unused tactic linter: `(exact GlobalTheory.ZEul.unfolded_bump_eq)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/UnfoldedPolarisedIntegralBumpedFormsStatement.lean:48:101: Unused tactic linter: `(intros; apply GlobalTheory.ZEul.unfolded_bump_eq <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [170507/170544] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnfoldedWhittakerIntegralEqEulerProductSchurSumsStatement (9.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/UnfoldedWhittakerIntegralEqEulerProductSchurSumsStatement.lean:27:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/UnfoldedWhittakerIntegralEqEulerProductSchurSumsStatement.lean:28:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/UnfoldedWhittakerIntegralEqEulerProductSchurSumsStatement.lean:27:4: Unused tactic linter: `exact GlobalTheory.RSCell.lintegral_unfolded_eq` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/UnfoldedWhittakerIntegralEqEulerProductSchurSumsStatement.lean:28:4: Unused tactic linter: `(intros; apply GlobalTheory.RSCell.lintegral_unfolded_eq <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [170508/170544] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.InertiaQuadraticRamification.InertiaGenAlt (9.9s)
-⚠ [170509/170544] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsQuadCharOfOfIsNormChar (6.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsQuadCharOfOfIsNormChar.lean:41:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/JacobianTraceQuotients/LocGal.lean:156:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -77,8 +19,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [170510/170544] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.QuadraticNormHeckeCharRamifiedBelowRamifiedPrime (8.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/QuadraticNormHeckeCharRamifiedBelowRamifiedPrime.lean:27:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/JacobianTraceQuotients/LocGal.lean:157:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -86,33 +27,29 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/QuadraticNormHeckeCharRamifiedBelowRamifiedPrime.lean:28:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/QuadraticNormHeckeCharRamifiedBelowRamifiedPrime.lean:29:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/QuadraticNormHeckeCharRamifiedBelowRamifiedPrime.lean:63:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+⚠ [170565/170620] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetShalikaRigidityHolds (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/JacquetShalikaRigidityHolds.lean:138:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
 If you'd rather continue using `push_neg` in your project, you can implement it as follows:
 ```
 open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-✔ [170511/170544] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnfoldedThetaIntegralEqMulSchurEulerProduct (14s)
-✔ [170512/170546] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsPlaceCompletionIsoImports (77s)
-⚠ [170513/170547] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.InertiaQuadraticRamification.NormRam (8.0s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/InertiaQuadraticRamification/NormRam.lean:13:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/JacquetShalikaRigidityHolds.lean:219:0: automatically included section variable(s) unused in theorem `GlobalTheory.JSW.Rigid.sum_map_pow_twist`:
+  [IsTotallyComplex E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsTotallyComplex E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [170566/170620] Built Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.SameSat (92s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/SphericalIdeles/SameSat.lean:44:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.SameSat.0.same_sat`:
+  [IsTotallyComplex E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsTotallyComplex E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [170567/170620] Built Development.AutomorphicArithmetic.TwistedTraces.IsotypicIntersectionProductEq (8.6s)
+warning: src/Development/AutomorphicArithmetic/TwistedTraces/IsotypicIntersectionProductEq.lean:46:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -120,7 +57,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/InertiaQuadraticRamification/NormRam.lean:21:6: Try this: 
+warning: src/Development/AutomorphicArithmetic/TwistedTraces/IsotypicIntersectionProductEq.lean:47:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -128,7 +65,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/InertiaQuadraticRamification/NormRam.lean:20:4: Try this: 
+warning: src/Development/AutomorphicArithmetic/TwistedTraces/IsotypicIntersectionProductEq.lean:51:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -136,8 +73,58 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/InertiaQuadraticRamification/NormRam.lean:39:17: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/InertiaQuadraticRamification/NormRam.lean:64:4: Try this: 
+⚠ [170568/170620] Built Development.AutomorphicArithmetic.TwistedTraces.EigenspaceFactorizationOverNonsplitPlacesCMDatum (15s)
+warning: src/Development/AutomorphicArithmetic/TwistedTraces/EigenspaceFactorizationOverNonsplitPlacesCMDatum.lean:94:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.TwistedTraces.EigenspaceFactorizationOverNonsplitPlacesCMDatum.0.under_over'`:
+  [NumberField F]
+  [NumberField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] [NumberField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/TwistedTraces/EigenspaceFactorizationOverNonsplitPlacesCMDatum.lean:97:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.TwistedTraces.EigenspaceFactorizationOverNonsplitPlacesCMDatum.0.cmp_atFin'`:
+  [NumberField F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/TwistedTraces/EigenspaceFactorizationOverNonsplitPlacesCMDatum.lean:109:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/TwistedTraces/EigenspaceFactorizationOverNonsplitPlacesCMDatum.lean:107:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.TwistedTraces.EigenspaceFactorizationOverNonsplitPlacesCMDatum.0.cmp_homeo`:
+  [NumberField F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [170569/170620] Built Development.AutomorphicArithmetic.TwistedTraces.ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC (26s)
+warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:149:39: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:168:10: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:218:25: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:237:12: `finprod_mem_inter_mul_diff'` has been deprecated: Use `finprod_mem_inter_mul_sdiff'` instead
+warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:242:8: `Set.mem_diff` has been deprecated: Use `Set.mem_sdiff` instead
+warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:242:8: This simp argument is unused:
+  Set.mem_diff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:264:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:265:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -145,16 +132,29 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [170514/170548] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnfoldedThetaIntegralEqMulSchurEulerProductStatement (6.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/UnfoldedThetaIntegralEqMulSchurEulerProductStatement.lean:25:63: this tactic is never executed
+warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:276:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/UnfoldedThetaIntegralEqMulSchurEulerProductStatement.lean:25:115: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/UnfoldedThetaIntegralEqMulSchurEulerProductStatement.lean:25:63: Unused tactic linter: `(exact GlobalTheory.RSEulerId.thetaZ_eq_mul_eulD)` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:277:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/UnfoldedThetaIntegralEqMulSchurEulerProductStatement.lean:25:115: Unused tactic linter: `(intros; apply GlobalTheory.RSEulerId.thetaZ_eq_mul_eulD <;> assumption)` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:296:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:384:30: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/TwistedTraces/ExistsBoundDimSimultaneousLocalEigenspaceOfOpenC.lean:402:52: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
