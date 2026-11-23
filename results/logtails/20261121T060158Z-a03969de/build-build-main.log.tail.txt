@@ -1,50 +1,30 @@
-  [apply] simp [hi]
+⚠ [171378/171468] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilKfpPsiPf (14s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/SiegelWeilKfpPsiPf.lean:78:106: This simp argument is unused:
+  real_inner_eq_re_inner
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [_root_.PositivityTheory.SiegelWeilFormula.KFP.arc_k, PiLp.inner_apply, EuclideanSpace.equiv,
+    RCLike.inner_apply, conj_trivial]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [171087/171459] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilKwhitLin (8.1s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/SiegelWeilKwhitLin.lean:88:32: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
-✔ [171088/171459] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilKwhitDict (7.4s)
-✔ [171089/171459] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilKwhitCut (5.9s)
-✔ [171090/171459] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.AdDecompK (6.3s)
-✔ [171091/171459] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilKawayDecG (7.1s)
-✔ [171092/171459] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilKrdRDSt (6.1s)
-✔ [171093/171459] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilKlocopRelA (6.7s)
-✔ [171094/171459] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilKlocopAway (5.5s)
-⚠ [171095/171459] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.FockDecK (6.0s)
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/FockDecK.lean:10:20: Variable name `inst` is not explicitly referenced.
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/SiegelWeilKfpPsiPf.lean:175:95: Variable name `hW` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst
+  [apply] _hW
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/FockDecK.lean:10:37: Variable name `inst_1` is not explicitly referenced.
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/SiegelWeilKfpPsiPf.lean:187:13: This simp argument is unused:
+  ← Finset.sum_neg_distrib
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_1
+Hint: Omit it from the simp argument list.
+  [apply] simp only [← Finset.mul_sum]
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/FockDecK.lean:10:62: Variable name `inst_2` is not explicitly referenced.
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_2
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/FockDecK.lean:10:81: Variable name `inst_3` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_3
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/FockDecK.lean:11:7: Variable name `inst_4` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_4
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [171096/171459] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilKfourW (5.8s)
-✔ [171097/171459] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilKfourNA (6.1s)
-⚠ [171098/171459] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilKfockArch (9.1s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/SiegelWeilKfockArch.lean:26:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [171379/171468] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.PhzEqFlatK (6.8s)
+⚠ [171380/171468] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SliceBoundsK (8.0s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/SliceBoundsK.lean:32:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -52,7 +32,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/SiegelWeilKfockArch.lean:27:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/SliceBoundsK.lean:33:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -60,101 +40,121 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/SiegelWeilKfockArch.lean:46:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/SliceBoundsK.lean:34:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [171381/171468] Built Development.AbelianVarietyTheory.Definitions.Divisors.WeilRangeOfAll (8.3s)
+⚠ [171382/171468] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.FirstOrbitParabolicLeft (13s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/FirstOrbitParabolicLeft.lean:75:10: This simp argument is unused:
+  Matrix.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.one_apply] at h1
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/FirstOrbitParabolicLeft.lean:75:31: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.single_apply] at h1
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/FirstOrbitParabolicLeft.lean:100:32: `push_neg` has been deprecated. Prefer using `push Not` instead.
 If you'd rather continue using `push_neg` in your project, you can implement it as follows:
 ```
 open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/SiegelWeilKfockArch.lean:124:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [171099/171459] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilKrdPlace (5.8s)
-✔ [171100/171459] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilKdilSteps (6.1s)
-⚠ [171101/171459] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.HeightFunctionContinuousPos (5.7s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/HeightFunctionContinuousPos.lean:15:87: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/HeightFunctionContinuousPos.lean:15:163: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/HeightFunctionContinuousPos.lean:15:87: Unused tactic linter: `exact _root_.GlobalTheory.CompanionTheory.Iwasawa.height_continuous_pos_k` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/HeightFunctionContinuousPos.lean:15:163: Unused tactic linter: `(intros;
-  apply _root_.GlobalTheory.CompanionTheory.Iwasawa.height_continuous_pos_k <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [171102/171459] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilTweylBase (6.7s)
-✔ [171103/171459] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.WindowBoundOfLiteratureLevel (80s)
-✔ [171104/171459] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilTwSt (6.2s)
-⚠ [171105/171459] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilTautoSInv (12s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/SiegelWeilTautoSInv.lean:29:18: try 'simp' instead of 'simpa'
-
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [171106/171459] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.ArchimedeanChartGaussianInvariant (6.1s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/ArchimedeanChartGaussianInvariant.lean:22:65: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/ArchimedeanChartGaussianInvariant.lean:22:119: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/ArchimedeanChartGaussianInvariant.lean:22:65: Unused tactic linter: `exact _root_.GlobalTheory.ThetaOfSmF.theta_of_smF_k` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/ArchimedeanChartGaussianInvariant.lean:22:119: Unused tactic linter: `(intros; apply _root_.GlobalTheory.ThetaOfSmF.theta_of_smF_k <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [171107/171461] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilTparMain (11s)
-⚠ [171108/171461] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.RedWpAutProd (6.5s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/RedWpAutProd.lean:28:82: Variable name `hG` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hG
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [171109/171461] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.LiftedSchrodingerDatum (9.1s)
-⚠ [171110/171461] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilTbijFrame (10s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/SiegelWeilTbijFrame.lean:42:67: This simp argument is unused:
-  Finset.mul_sum
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/FirstOrbitParabolicLeft.lean:100:32: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/FirstOrbitParabolicLeft.lean:101:12: This simp argument is unused:
+  Matrix.single_apply
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [_root_.PositivityTheory.SiegelWeilFormula.TBij_k.Adp.sy_eq, map_sum, map_smul, om, Prod.fst_sum,
-    Prod.snd_sum, Prod.smul_fst, Prod.smul_snd, sum_dotProduct, dotProduct_sum, smul_dotProduct, dotProduct_smul,
-    smul_eq_mul, ← Finset.sum_sub_distrib]
+  [apply] simp [Matrix.one_apply, hr.1, hr.2, Ne.symm hr.1, Ne.symm hr.2]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [171111/171461] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.ThkTowModel (5.0s)
-✔ [171112/171461] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.ThkBaseHgtInt (9.9s)
-⚠ [171113/171461] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.LintegralEnormSqLatRepApplyEq (5.8s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/LintegralEnormSqLatRepApplyEq.lean:23:69: this tactic is never executed
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/FirstOrbitParabolicLeft.lean:101:51: This simp argument is unused:
+  hr.1
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.single_apply, Matrix.one_apply, hr.2, Ne.symm hr.1, Ne.symm hr.2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/FirstOrbitParabolicLeft.lean:101:57: This simp argument is unused:
+  hr.2
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.single_apply, Matrix.one_apply, hr.1, Ne.symm hr.1, Ne.symm hr.2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/FirstOrbitParabolicLeft.lean:149:83: This simp argument is unused:
+  Matrix.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [_root_.PositivityTheory.SiegelWeilFormula.Act.C5.uA_k, Matrix.one_apply, Matrix.sum_apply,
+    _root_.PositivityTheory.SiegelWeilFormula.Act.C4.em_ne_k L]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/FirstOrbitParabolicLeft.lean:171:151: This simp argument is unused:
+  GlobalTheory.EisBL.DoubledUnipotentRadical.cA_inclR
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [incM, _root_.PositivityTheory.SiegelWeilFormula.Act.C5.uA_k, GlobalTheory.ThK.incV, Matrix.single_apply,
+    Matrix.one_apply, Matrix.sum_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/FirstOrbitParabolicLeft.lean:178:257: This simp argument is unused:
+  Matrix.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [_root_.PositivityTheory.SiegelWeilFormula.Act.C6.cM_frame_k h,
+    _root_.PositivityTheory.SiegelWeilFormula.Act.C4.emS_k, _root_.PositivityTheory.SiegelWeilFormula.Act.C5.uA_k,
+    _root_.PositivityTheory.SiegelWeilFormula.Act.C5.aB_k, Matrix.one_apply, Matrix.sum_apply,
+    _root_.PositivityTheory.SiegelWeilFormula.Act.C4.em_ne_k L, L.inj.eq_iff,
+    Ne.symm (_root_.PositivityTheory.SiegelWeilFormula.Act.C4.em_ne_k L _)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/FirstOrbitParabolicLeft.lean:178:296: This simp argument is unused:
+  _root_.PositivityTheory.SiegelWeilFormula.Act.C4.em_ne_k L
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [_root_.PositivityTheory.SiegelWeilFormula.Act.C6.cM_frame_k h,
+    _root_.PositivityTheory.SiegelWeilFormula.Act.C4.emS_k, _root_.PositivityTheory.SiegelWeilFormula.Act.C5.uA_k,
+    _root_.PositivityTheory.SiegelWeilFormula.Act.C5.aB_k, Matrix.one_apply, Matrix.single_apply, Matrix.sum_apply,
+    L.inj.eq_iff, Ne.symm (_root_.PositivityTheory.SiegelWeilFormula.Act.C4.em_ne_k L _)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/FirstOrbitParabolicLeft.lean:179:82: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/LintegralEnormSqLatRepApplyEq.lean:23:127: this tactic is never executed
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/FirstOrbitParabolicLeft.lean:179:96: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/LintegralEnormSqLatRepApplyEq.lean:23:69: Unused tactic linter: `exact _root_.GlobalTheory.FinLatUnitF.lintegral_sq_Om_k` does nothing
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/FirstOrbitParabolicLeft.lean:179:82: Unused tactic linter: `split_ifs` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/LintegralEnormSqLatRepApplyEq.lean:23:127: Unused tactic linter: `(intros; apply _root_.GlobalTheory.FinLatUnitF.lintegral_sq_Om_k <;> assumption)` does nothing
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/FirstOrbitParabolicLeft.lean:179:96: Unused tactic linter: `simp` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [171114/171461] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SchrodingerModelIntertwining (5.9s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/SchrodingerModelIntertwining.lean:23:67: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/SchrodingerModelIntertwining.lean:23:123: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/SchrodingerModelIntertwining.lean:23:67: Unused tactic linter: `exact _root_.GlobalTheory.ThetaOntoF.exists_thV_eqF_k` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/SchrodingerModelIntertwining.lean:23:123: Unused tactic linter: `(intros; apply _root_.GlobalTheory.ThetaOntoF.exists_thV_eqF_k <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [171383/171468] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.IndepDomK (6.5s)
+⚠ [171384/171468] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.RestrictCoreK (10s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/RestrictCoreK.lean:47:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [171385/171468] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilKlocopTop (5.9s)
