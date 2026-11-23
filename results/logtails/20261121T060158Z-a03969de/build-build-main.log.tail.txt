@@ -1,160 +1,160 @@
-    pow_zero, mul_one, mul_zero, sub_zero, zpow_add₀ ha, zpow_add₀ hb, zpow_sub₀ hb, zpow_natCast, mul_zpow, mul_pow,
-    inv_pow, pow_add]
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/CoefEx.lean:137:30: This simp argument is unused:
-  Pi.single_apply
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [wt]
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriHeckeInjectivity/IdempotentTraces/LiesOverUnder.lean:177:6: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/CoefEx.lean:141:45: This simp argument is unused:
-  s3
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [F, en_bd, det_bd, s0, s1, s2, fromBlocks_apply₁₁, fromBlocks_apply₁₂, fromBlocks_apply₂₁,
-    fromBlocks_apply₂₂, Matrix.zero_apply, unitary_two_conj_entry_eq, ← Matrix.det_fin_two, KT.psi, Nat.sub_self,
-    pow_zero, mul_one, mul_zero, sub_zero, zpow_add₀ ha, zpow_add₀ hb, zpow_sub₀ ha, zpow_sub₀ hb, zpow_natCast,
-    mul_zpow, mul_pow, inv_pow, pow_add]
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [163431/163448] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IwahoriBlocks.IwahoriCentralBorel.LevBlock (346s)
+⚠ [163432/163450] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IwahoriBlocks.IwahoriCentralBorel.ParLaw (347s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriBlocks/IwahoriCentralBorel/ParLaw.lean:30:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IwahoriBlocks.IwahoriCentralBorel.ParLaw.0.topR_surj`:
+  [CommRing R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CommRing R] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/CoefEx.lean:142:52: This simp argument is unused:
-  ← Matrix.det_fin_two
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [F, en_bd, det_bd, s0, s1, s2, s3, fromBlocks_apply₁₁, fromBlocks_apply₁₂, fromBlocks_apply₂₁,
-    fromBlocks_apply₂₂, Matrix.zero_apply, unitary_two_conj_entry_eq, KT.psi, Nat.sub_self, pow_zero, mul_one, mul_zero,
-    sub_zero, zpow_add₀ ha, zpow_add₀ hb, zpow_sub₀ ha, zpow_sub₀ hb, zpow_natCast, mul_zpow, mul_pow, inv_pow, pow_add]
-
-Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/CoefEx.lean:143:6: This simp argument is unused:
-  zpow_add₀ ha
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriBlocks/IwahoriCentralBorel/ParLaw.lean:141:12: This simp argument is unused:
+  Matrix.one_apply
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [F, en_bd, det_bd, s0, s1, s2, s3, fromBlocks_apply₁₁, fromBlocks_apply₁₂, fromBlocks_apply₂₁,
-    fromBlocks_apply₂₂, Matrix.zero_apply, unitary_two_conj_entry_eq, ← Matrix.det_fin_two, KT.psi, Nat.sub_self,
-    pow_zero, mul_one, mul_zero, sub_zero, zpow_add₀ hb, zpow_sub₀ ha, zpow_sub₀ hb, zpow_natCast, mul_zpow, mul_pow,
-    inv_pow, pow_add]
+  [apply] simp
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/CoefEx.lean:143:20: This simp argument is unused:
-  zpow_add₀ hb
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriBlocks/IwahoriCentralBorel/ParLaw.lean:148:14: This simp argument is unused:
+  Matrix.one_apply
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [F, en_bd, det_bd, s0, s1, s2, s3, fromBlocks_apply₁₁, fromBlocks_apply₁₂, fromBlocks_apply₂₁,
-    fromBlocks_apply₂₂, Matrix.zero_apply, unitary_two_conj_entry_eq, ← Matrix.det_fin_two, KT.psi, Nat.sub_self,
-    pow_zero, mul_one, mul_zero, sub_zero, zpow_add₀ ha, zpow_sub₀ ha, zpow_sub₀ hb, zpow_natCast, mul_zpow, mul_pow,
-    inv_pow, pow_add]
+  [apply] simp
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/CoefEx.lean:143:48: This simp argument is unused:
-  zpow_sub₀ hb
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriBlocks/IwahoriCentralBorel/ParLaw.lean:269:14: `MonoidHom.finset_prod_apply` has been deprecated: Use `MonoidHom.finsetProd_apply` instead
+⚠ [163433/163453] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IntegralCompression.ContinuousEntryCharacters.RankInf (346s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/RankInf.lean:20:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IntegralCompression.ContinuousEntryCharacters.RankInf.0.UpperTheory.V.Z.InvariantSubmoduleMonicPolynomial.EA.RI.int_left`:
+  [CompactSpace A]
+  [SecondCountableTopology A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace A] [SecondCountableTopology A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/RankInf.lean:112:6: `ContinuousLinearMap.sub_apply` has been deprecated: Use `_root_.sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `_root_.sub_apply x`).
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/RankInf.lean:112:37: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/RankInf.lean:148:15: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/RankInf.lean:229:17: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/RankInf.lean:230:17: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/RankInf.lean:264:19: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/RankInf.lean:320:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [163434/163455] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ExistsLevelAndKTypeVectorForLeviInduction (345s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/ExistsLevelAndKTypeVectorForLeviInduction.lean:145:2: `continuous_finset_prod` has been deprecated: Use `continuous_finsetProd` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/ExistsLevelAndKTypeVectorForLeviInduction.lean:318:87: This simp argument is unused:
+  one_mul
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [F, en_bd, det_bd, s0, s1, s2, s3, fromBlocks_apply₁₁, fromBlocks_apply₁₂, fromBlocks_apply₂₁,
-    fromBlocks_apply₂₂, Matrix.zero_apply, unitary_two_conj_entry_eq, ← Matrix.det_fin_two, KT.psi, Nat.sub_self,
-    pow_zero, mul_one, mul_zero, sub_zero, zpow_add₀ ha, zpow_add₀ hb, zpow_sub₀ ha, zpow_natCast, mul_zpow, mul_pow,
-    inv_pow, pow_add]
+  [apply] simp only [OneMemClass.coe_one, finite_projection_one, archimedean_projection_one, mul_one]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/CoefEx.lean:151:30: This simp argument is unused:
-  Pi.single_apply
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/ExistsLevelAndKTypeVectorForLeviInduction.lean:323:2: Try this: 
+  haveI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [wt]
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/CoefEx.lean:155:33: This simp argument is unused:
-  s0
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/ExistsLevelAndKTypeVectorForLeviInduction.lean:333:2: Try this: 
+  haveI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [F, en_bd, det_bd, s1, s2, s3, fromBlocks_apply₁₁, fromBlocks_apply₁₂, fromBlocks_apply₂₁,
-    fromBlocks_apply₂₂, Matrix.zero_apply, unitary_two_conj_entry_eq, ← Matrix.det_fin_two, KT.psi, Nat.sub_self,
-    pow_zero, mul_one, mul_zero, sub_zero, zpow_add₀ ha, zpow_add₀ hb, zpow_sub₀ ha, zpow_sub₀ hb, zpow_natCast,
-    mul_zpow, mul_pow, inv_pow, pow_add]
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/CoefEx.lean:155:69: This simp argument is unused:
-  fromBlocks_apply₁₂
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [163435/163456] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IntegralCompression.ContinuousEntryCharacters.IntegralMemFd (362s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/IntegralMemFd.lean:22:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IntegralCompression.ContinuousEntryCharacters.IntegralMemFd.0.proj_fix`:
+  [CompleteSpace H]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompleteSpace H] in theorem ...
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [F, en_bd, det_bd, s0, s1, s2, s3, fromBlocks_apply₁₁, fromBlocks_apply₂₁, fromBlocks_apply₂₂,
-    Matrix.zero_apply, unitary_two_conj_entry_eq, ← Matrix.det_fin_two, KT.psi, Nat.sub_self, pow_zero, mul_one,
-    mul_zero, sub_zero, zpow_add₀ ha, zpow_add₀ hb, zpow_sub₀ ha, zpow_sub₀ hb, zpow_natCast, mul_zpow, mul_pow,
-    inv_pow, pow_add]
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/IntegralMemFd.lean:109:17: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/CoefEx.lean:155:89: This simp argument is unused:
-  fromBlocks_apply₂₁
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/IntegralMemFd.lean:116:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/IntegralMemFd.lean:128:2: Try this: 
+  haveI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [F, en_bd, det_bd, s0, s1, s2, s3, fromBlocks_apply₁₁, fromBlocks_apply₁₂, fromBlocks_apply₂₂,
-    Matrix.zero_apply, unitary_two_conj_entry_eq, ← Matrix.det_fin_two, KT.psi, Nat.sub_self, pow_zero, mul_one,
-    mul_zero, sub_zero, zpow_add₀ ha, zpow_add₀ hb, zpow_sub₀ ha, zpow_sub₀ hb, zpow_natCast, mul_zpow, mul_pow,
-    inv_pow, pow_add]
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/CoefEx.lean:156:6: This simp argument is unused:
-  Matrix.zero_apply
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/IntegralMemFd.lean:139:2: Try this: 
+  haveI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [F, en_bd, det_bd, s0, s1, s2, s3, fromBlocks_apply₁₁, fromBlocks_apply₁₂, fromBlocks_apply₂₁,
-    fromBlocks_apply₂₂, unitary_two_conj_entry_eq, ← Matrix.det_fin_two, KT.psi, Nat.sub_self, pow_zero, mul_one,
-    mul_zero, sub_zero, zpow_add₀ ha, zpow_add₀ hb, zpow_sub₀ ha, zpow_sub₀ hb, zpow_natCast, mul_zpow, mul_pow,
-    inv_pow, pow_add]
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/CoefEx.lean:156:115: This simp argument is unused:
-  mul_zero
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/IntegralMemFd.lean:144:2: Try this: 
+  haveI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [F, en_bd, det_bd, s0, s1, s2, s3, fromBlocks_apply₁₁, fromBlocks_apply₁₂, fromBlocks_apply₂₁,
-    fromBlocks_apply₂₂, Matrix.zero_apply, unitary_two_conj_entry_eq, ← Matrix.det_fin_two, KT.psi, Nat.sub_self,
-    pow_zero, mul_one, sub_zero, zpow_add₀ ha, zpow_add₀ hb, zpow_sub₀ ha, zpow_sub₀ hb, zpow_natCast, mul_zpow,
-    mul_pow, inv_pow, pow_add]
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/CoefEx.lean:156:125: This simp argument is unused:
-  sub_zero
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [163436/163456] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.AeTranslateEq (19s)
+✔ [163437/163459] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MeanValueUniqueness (20s)
+✔ [163438/163459] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsOpenRightInvariance (20s)
+✔ [163439/163459] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAsAlgebraHomEq (24s)
+⚠ [163440/163459] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IrrCases (5.2s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/IrrCases.lean:4:20: Variable name `inst` is not explicitly referenced.
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [F, en_bd, det_bd, s0, s1, s2, s3, fromBlocks_apply₁₁, fromBlocks_apply₁₂, fromBlocks_apply₂₁,
-    fromBlocks_apply₂₂, Matrix.zero_apply, unitary_two_conj_entry_eq, ← Matrix.det_fin_two, KT.psi, Nat.sub_self,
-    pow_zero, mul_one, mul_zero, zpow_add₀ ha, zpow_add₀ hb, zpow_sub₀ ha, zpow_sub₀ hb, zpow_natCast, mul_zpow,
-    mul_pow, inv_pow, pow_add]
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/CoefEx.lean:157:6: This simp argument is unused:
-  zpow_add₀ ha
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/IrrCases.lean:5:5: Variable name `inst_1` is not explicitly referenced.
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [F, en_bd, det_bd, s0, s1, s2, s3, fromBlocks_apply₁₁, fromBlocks_apply₁₂, fromBlocks_apply₂₁,
-    fromBlocks_apply₂₂, Matrix.zero_apply, unitary_two_conj_entry_eq, ← Matrix.det_fin_two, KT.psi, Nat.sub_self,
-    pow_zero, mul_one, mul_zero, sub_zero, zpow_add₀ hb, zpow_sub₀ ha, zpow_sub₀ hb, zpow_natCast, mul_zpow, mul_pow,
-    inv_pow, pow_add]
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/CoefEx.lean:157:48: This simp argument is unused:
-  zpow_sub₀ hb
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/IrrCases.lean:5:31: Variable name `inst_2` is not explicitly referenced.
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [F, en_bd, det_bd, s0, s1, s2, s3, fromBlocks_apply₁₁, fromBlocks_apply₁₂, fromBlocks_apply₂₁,
-    fromBlocks_apply₂₂, Matrix.zero_apply, unitary_two_conj_entry_eq, ← Matrix.det_fin_two, KT.psi, Nat.sub_self,
-    pow_zero, mul_one, mul_zero, sub_zero, zpow_add₀ ha, zpow_add₀ hb, zpow_sub₀ ha, zpow_natCast, mul_zpow, mul_pow,
-    inv_pow, pow_add]
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/CoefEx.lean:157:104: This simp argument is unused:
-  pow_add
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [F, en_bd, det_bd, s0, s1, s2, s3, fromBlocks_apply₁₁, fromBlocks_apply₁₂, fromBlocks_apply₂₁,
-    fromBlocks_apply₂₂, Matrix.zero_apply, unitary_two_conj_entry_eq, ← Matrix.det_fin_two, KT.psi, Nat.sub_self,
-    pow_zero, mul_one, mul_zero, sub_zero, zpow_add₀ ha, zpow_add₀ hb, zpow_sub₀ ha, zpow_sub₀ hb, zpow_natCast,
-    mul_zpow, mul_pow, inv_pow]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [163427/163442] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.AeFundamentalDomain (18s)
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
