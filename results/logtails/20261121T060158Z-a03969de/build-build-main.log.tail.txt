@@ -1,8 +1,14 @@
-The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/TraceAsymptotics/DcosTr.lean:275:2: Try this: 
+✔ [166748/166763] Built Development.AutomorphicArithmetic.Foundations.Convolution.EndomorphismSlices.FiniteAdelicEstimates.PowRep (30s)
+✔ [166749/166771] Built Development.AutomorphicArithmetic.Foundations.Convolution.EndomorphismSlices.FiniteAdelicEstimates.Imports (26s)
+✔ [166750/166771] Built Development.AutomorphicArithmetic.Foundations.Convolution.EndomorphismSlices.FiniteAdelicEstimates.SatRead (28s)
+✔ [166751/166798] Built Development.DiscreteGroups.PiInvariants.CompactSupportTwists.ThetaFixTop (56s)
+✔ [166752/166804] Built Development.DiscreteGroups.PiInvariants.CompactSupportTwists.DomOneMeasure (6.3s)
+✔ [166753/166805] Built Development.DiscreteGroups.PiInvariants.CompactSupportTwists.KerSplitLIntSub (9.3s)
+⚠ [166754/166810] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.AutomorphicRepresentations.PTailOf (10s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/AutomorphicRepresentations/PTailOf.lean:110:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -10,119 +16,49 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [166575/166588] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DoubleCosetSeparation (65s)
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/DoubleCosetSeparation.lean:81:2: Try this: 
-  haveI̵
+✔ [166755/166811] Built Development.DiscreteGroups.PiInvariants.CompactSupportTwists.TraceUniqueMatrix (6.0s)
+⚠ [166756/166811] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ListEig (4.9s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ListEig.lean:4:20: Variable name `inst` is not explicitly referenced.
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [166576/166588] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.SplitLine (8.1s)
-⚠ [166577/166588] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.GeneralLocalHecke (12s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/TraceAsymptotics/GeneralLocalHecke.lean:21:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ListEig.lean:5:5: Variable name `inst_1` is not explicitly referenced.
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/TraceAsymptotics/GeneralLocalHecke.lean:24:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [166757/166812] Built Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.IsCoreMod (8.5s)
+warning: src/Development/WeilBound/RepresentationTheoryGL/ArchimedeanBaseChange/ArchimedeanBaseChangeProof/RealDescent/RealLeviDescent/IsCoreMod.lean:32:15: `ContinuousLinearMap.add_apply` has been deprecated: Use `_root_.add_apply` instead
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `_root_.add_apply x`).
+warning: src/Development/WeilBound/RepresentationTheoryGL/ArchimedeanBaseChange/ArchimedeanBaseChangeProof/RealDescent/RealLeviDescent/IsCoreMod.lean:36:15: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/TraceAsymptotics/GeneralLocalHecke.lean:25:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/TraceAsymptotics/GeneralLocalHecke.lean:70:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/TraceAsymptotics/GeneralLocalHecke.lean:81:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.GeneralLocalHecke.0.UpperTheory.V.Z.Tf.GlobalTraceComparison.Asm.blk_zero`:
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
+⚠ [166758/166813] Built Development.AutomorphicArithmetic.Foundations.Convolution.EndomorphismSlices.FiniteAdelicEstimates.HeckeFunctionOneMul (10s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/EndomorphismSlices/FiniteAdelicEstimates/HeckeFunctionOneMul.lean:31:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.EndomorphismSlices.FiniteAdelicEstimates.HeckeFunctionOneMul.0.UpperTheory.Zero.ConvolutionTheory.EB.heckeFunction_mul`:
   [IsCMField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [IsCMField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/TraceAsymptotics/GeneralLocalHecke.lean:102:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [166578/166588] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.InertLine (7.6s)
-✔ [166579/166590] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.DcosSep (29s)
-✔ [166580/166591] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.UConj (42s)
-✔ [166581/166592] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.ExistsUnitOrdLEqOne (16s)
-✔ [166582/166593] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.CuspRepSatakeIffLocalComponentSatake (7.7s)
-⚠ [166583/166593] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.RUEval (12s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/TraceAsymptotics/RUEval.lean:57:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/TraceAsymptotics/RUEval.lean:69:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [166584/166594] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.RFamMatch (8.7s)
-⚠ [166585/166595] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.EvaluationCombinedTestFunction (12s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/TraceAsymptotics/EvaluationCombinedTestFunction.lean:30:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.EvaluationCombinedTestFunction.0.UpperTheory.V.Z.Tf.GlobalTraceComparison.Asm.cptPart_map_equiv`:
-  [IsTopologicalGroup G]
-  [IsTopologicalGroup G']
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTopologicalGroup G] [IsTopologicalGroup G'] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/TraceAsymptotics/EvaluationCombinedTestFunction.lean:54:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.EvaluationCombinedTestFunction.0.UpperTheory.V.Z.Tf.GlobalTraceComparison.Asm.twCent_map`:
-  [TopologicalSpace G]
-  [IsTopologicalGroup G]
-  [TopologicalSpace G']
-  [IsTopologicalGroup G']
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [TopologicalSpace G] [IsTopologicalGroup G] [TopologicalSpace G'] [IsTopologicalGroup G'] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/TraceAsymptotics/EvaluationCombinedTestFunction.lean:82:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.EvaluationCombinedTestFunction.0.UpperTheory.V.Z.Tf.GlobalTraceComparison.Asm.dc_equiv`:
-  [TopologicalSpace G]
-  [IsTopologicalGroup G]
-  [TopologicalSpace G']
-  [IsTopologicalGroup G']
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [TopologicalSpace G] [IsTopologicalGroup G] [TopologicalSpace G'] [IsTopologicalGroup G'] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/TraceAsymptotics/EvaluationCombinedTestFunction.lean:253:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.EvaluationCombinedTestFunction.0.UpperTheory.V.Z.Tf.GlobalTraceComparison.Asm.gl_zero_eq_one_alt`:
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/EndomorphismSlices/FiniteAdelicEstimates/HeckeFunctionOneMul.lean:36:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.EndomorphismSlices.FiniteAdelicEstimates.HeckeFunctionOneMul.0.UpperTheory.Zero.ConvolutionTheory.EB.heckeFunction_one`:
   [IsCMField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [IsCMField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/TraceAsymptotics/EvaluationCombinedTestFunction.lean:263:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/EndomorphismSlices/FiniteAdelicEstimates/HeckeFunctionOneMul.lean:49:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.EndomorphismSlices.FiniteAdelicEstimates.HeckeFunctionOneMul.0.UpperTheory.Zero.ConvolutionTheory.EB.position_congr`:
+  [IsCMField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsCMField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [166759/166814] Built Development.DiscreteGroups.PiInvariants.CompactSupportTwists.RGrowthJ (5.5s)
+⚠ [166760/166815] Built Development.AutomorphicArithmetic.Foundations.Convolution.EndomorphismSlices.FiniteAdelicEstimates.PackStep (11s)
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/EndomorphismSlices/FiniteAdelicEstimates/PackStep.lean:110:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -130,19 +66,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/TraceAsymptotics/EvaluationCombinedTestFunction.lean:268:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.EvaluationCombinedTestFunction.0.UpperTheory.V.Z.Tf.GlobalTraceComparison.Asm.blk_left`:
-  [IsCMField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsCMField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/TraceAsymptotics/EvaluationCombinedTestFunction.lean:284:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.EvaluationCombinedTestFunction.0.UpperTheory.V.Z.Tf.GlobalTraceComparison.Asm.blk_right`:
-  [IsCMField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsCMField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/TraceAsymptotics/EvaluationCombinedTestFunction.lean:306:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/EndomorphismSlices/FiniteAdelicEstimates/PackStep.lean:111:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -150,7 +74,83 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/TraceAsymptotics/EvaluationCombinedTestFunction.lean:308:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/EndomorphismSlices/FiniteAdelicEstimates/PackStep.lean:112:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/EndomorphismSlices/FiniteAdelicEstimates/PackStep.lean:113:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/EndomorphismSlices/FiniteAdelicEstimates/PackStep.lean:114:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/EndomorphismSlices/FiniteAdelicEstimates/PackStep.lean:115:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [166761/166816] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.AutomorphicRepresentations.OrthZero (6.5s)
+⚠ [166762/166817] Built Development.DiscreteGroups.PiInvariants.CompactSupportTwists.TwtrContOfMem (6.1s)
+warning: src/Development/DiscreteGroups/PiInvariants/CompactSupportTwists/TwtrContOfMem.lean:92:18: This simp argument is unused:
+  LinearMap.codRestrict_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [j, LinearMap.comp_apply, Submodule.subtype_apply] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/DiscreteGroups/PiInvariants/CompactSupportTwists/TwtrContOfMem.lean:92:47: This simp argument is unused:
+  LinearMap.comp_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [j, LinearMap.codRestrict_apply, Submodule.subtype_apply] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/DiscreteGroups/PiInvariants/CompactSupportTwists/TwtrContOfMem.lean:92:69: This simp argument is unused:
+  Submodule.subtype_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [j, LinearMap.codRestrict_apply, LinearMap.comp_apply] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [166763/166818] Built Development.DiscreteGroups.PiInvariants.CompactSupportTwists.TraceUnique (5.8s)
+✔ [166764/166818] Built Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.HighestVectorsRegularLine (6.6s)
+⚠ [166765/166818] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.AutomorphicRepresentations.GrowthPiJHolds (6.7s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/AutomorphicRepresentations/GrowthPiJHolds.lean:45:68: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/AutomorphicRepresentations/GrowthPiJHolds.lean:45:68: Unused tactic linter: `exact sizes_of_basic` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [166766/166818] Built Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.ThetaFixedGlobalOfTraceInputs (7.9s)
+✔ [166767/166818] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.AutomorphicRepresentations.POrthZero (7.2s)
+✔ [166768/166818] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.AutomorphicRepresentations.PFormEx (7.0s)
+⚠ [166769/166819] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.AutomorphicRepresentations.PTensType (8.6s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/AutomorphicRepresentations/PTensType.lean:29:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.AutomorphicRepresentations.PTensType.0.UpperTheory.V.Z.Tf.GlobalTraceComparison.Pi.uAt_mul'`:
+  [NumberField E]
+  [IsCMField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField E] [IsCMField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [166770/166819] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.AutomorphicRepresentations.PDetZero (6.9s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GlobalTraceComparison/AutomorphicRepresentations/PDetZero.lean:47:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
