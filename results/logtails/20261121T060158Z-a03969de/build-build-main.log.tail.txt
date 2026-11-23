@@ -1,118 +1,147 @@
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/HomPadicIntTrivialOfIrreducibleCompactRep.lean:46:71: This simp argument is unused:
+  add_mul
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst
+Hint: Omit it from the simp argument list.
+  [apply] simp only [pow_succ, Nat.cast_succ, add_smul, one_smul, mul_add, sub_mul, mul_one, one_mul, Matrix.smul_mul]
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [163900/163931] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormAlgebraMapLeOne (5.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/NormAlgebraMapLeOne.lean:18:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/HomPadicIntTrivialOfIrreducibleCompactRep.lean:119:6: This simp argument is unused:
+  ← mul_assoc A A'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_sub, sub_mul, mul_one, one_mul, Matrix.mul_smul, Matrix.smul_mul, smul_add, smul_sub,
+    mul_assoc, hAA']
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/HomPadicIntTrivialOfIrreducibleCompactRep.lean:191:8: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/HomPadicIntTrivialOfIrreducibleCompactRep.lean:197:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/HomPadicIntTrivialOfIrreducibleCompactRep.lean:218:17: `push_neg` has been deprecated. Prefer using `push Not` instead.
 If you'd rather continue using `push_neg` in your project, you can implement it as follows:
 ```
 open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/NormAlgebraMapLeOne.lean:47:26: Variable name `inst` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [163901/163934] Built Formalism.SharpRestriction.ValuationFrobeniusEpsilon.GradedPowerSeriesLemmas (13s)
-⚠ [163902/163934] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.CyclotomicCharCongruentOneOnDecompositionGroupStatement (204s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CyclotomicCharCongruentOneOnDecompositionGroupStatement.lean:8:57: this tactic is never executed
+✔ [163923/163952] Built Formalism.SharpRestriction.ValuationFrobeniusEpsilon.LeastPrimeTwists.StrictlyAntitoneWeights.GaussianCaseFreeExponents (10s)
+⚠ [163924/163952] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoboundaryOfUniformLimitCoboundariesStatement (188s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoboundaryOfUniformLimitCoboundariesStatement.lean:9:68: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CyclotomicCharCongruentOneOnDecompositionGroupStatement.lean:8:103: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoboundaryOfUniformLimitCoboundariesStatement.lean:9:125: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CyclotomicCharCongruentOneOnDecompositionGroupStatement.lean:8:57: Unused tactic linter: `exact GlobalTheory.Ord2.EpsDec.eps_dec_cong` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoboundaryOfUniformLimitCoboundariesStatement.lean:9:68: Unused tactic linter: `exact GlobalTheory.coboundary_closed_of_uniform_approx` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CyclotomicCharCongruentOneOnDecompositionGroupStatement.lean:8:103: Unused tactic linter: `(intros; apply GlobalTheory.Ord2.EpsDec.eps_dec_cong <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoboundaryOfUniformLimitCoboundariesStatement.lean:9:125: Unused tactic linter: `(intros; apply GlobalTheory.coboundary_closed_of_uniform_approx <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [163903/163936] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaloisHomZlLipschitzOfKerLeLinearGroupStatement (210s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaloisHomZlLipschitzOfKerLeLinearGroupStatement.lean:8:61: this tactic is never executed
+⚠ [163925/163960] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUnitCharacterOfIntegralCyclotomicProductStatement (185s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsUnitCharacterOfIntegralCyclotomicProductStatement.lean:9:57: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaloisHomZlLipschitzOfKerLeLinearGroupStatement.lean:8:111: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsUnitCharacterOfIntegralCyclotomicProductStatement.lean:9:103: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaloisHomZlLipschitzOfKerLeLinearGroupStatement.lean:8:61: Unused tactic linter: `exact GlobalTheory.Ord2.hom_lipschitz_of_ker_le` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsUnitCharacterOfIntegralCyclotomicProductStatement.lean:9:57: Unused tactic linter: `exact GlobalTheory.LocChar.unit_of_integral` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaloisHomZlLipschitzOfKerLeLinearGroupStatement.lean:8:111: Unused tactic linter: `(intros; apply GlobalTheory.Ord2.hom_lipschitz_of_ker_le <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsUnitCharacterOfIntegralCyclotomicProductStatement.lean:9:103: Unused tactic linter: `(intros; apply GlobalTheory.LocChar.unit_of_integral <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [163904/163936] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsAuxiliaryPrimeFrobeniusNearCommutatorStatement (211s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAuxiliaryPrimeFrobeniusNearCommutatorStatement.lean:8:91: this tactic is never executed
+⚠ [163926/163960] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.TameCochainCocycleExtensionStatement (181s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TameCochainCocycleExtensionStatement.lean:8:40: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAuxiliaryPrimeFrobeniusNearCommutatorStatement.lean:8:171: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TameCochainCocycleExtensionStatement.lean:8:69: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAuxiliaryPrimeFrobeniusNearCommutatorStatement.lean:8:91: Unused tactic linter: `exact GlobalTheory.Ord2.AuxiliaryInertOddPrime.exists_odd_prime_gt_two_bounds` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TameCochainCocycleExtensionStatement.lean:8:40: Unused tactic linter: `exact GlobalTheory.br_tame` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAuxiliaryPrimeFrobeniusNearCommutatorStatement.lean:8:171: Unused tactic linter: `(intros;
-  apply GlobalTheory.Ord2.AuxiliaryInertOddPrime.exists_odd_prime_gt_two_bounds <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TameCochainCocycleExtensionStatement.lean:8:69: Unused tactic linter: `(intros; apply GlobalTheory.br_tame <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [163905/163936] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.InertiaTorsionQuotientConjInvariantDecompositionStatement (211s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/InertiaTorsionQuotientConjInvariantDecompositionStatement.lean:8:59: this tactic is never executed
+⚠ [163927/163960] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.CocyclePairAlternatingNeOnCycloKernelStatement (169s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CocyclePairAlternatingNeOnCycloKernelStatement.lean:8:62: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/InertiaTorsionQuotientConjInvariantDecompositionStatement.lean:8:107: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CocyclePairAlternatingNeOnCycloKernelStatement.lean:8:113: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/InertiaTorsionQuotientConjInvariantDecompositionStatement.lean:8:59: Unused tactic linter: `exact GlobalTheory.TameConjInv.conj_invariant` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CocyclePairAlternatingNeOnCycloKernelStatement.lean:8:62: Unused tactic linter: `exact GlobalTheory.Ord2.exists_om_ne_swap_on_N0g` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/InertiaTorsionQuotientConjInvariantDecompositionStatement.lean:8:107: Unused tactic linter: `(intros; apply GlobalTheory.TameConjInv.conj_invariant <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CocyclePairAlternatingNeOnCycloKernelStatement.lean:8:113: Unused tactic linter: `(intros; apply GlobalTheory.Ord2.exists_om_ne_swap_on_N0g <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [163906/163936] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemOfFinTwo (210s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemOfFinTwo.lean:25:31: Variable name `inst` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemOfFinTwo.lean:25:48: Variable name `inst_1` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_1
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemOfFinTwo.lean:25:79: Variable name `inst_2` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_2
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [163907/163942] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.CocyclePairingLocallyConstantStatement (204s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CocyclePairingLocallyConstantStatement.lean:8:61: this tactic is never executed
+⚠ [163928/163960] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.EulerSystemTameClassScaleEnlargeCoefficientsStatement (184s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/EulerSystemTameClassScaleEnlargeCoefficientsStatement.lean:8:48: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CocyclePairingLocallyConstantStatement.lean:8:111: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/EulerSystemTameClassScaleEnlargeCoefficientsStatement.lean:8:85: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CocyclePairingLocallyConstantStatement.lean:8:61: Unused tactic linter: `exact GlobalTheory.Ord2.cup_product_two_cocycle` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/EulerSystemTameClassScaleEnlargeCoefficientsStatement.lean:8:48: Unused tactic linter: `exact GlobalTheory.Ord2.tame_scale` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CocyclePairingLocallyConstantStatement.lean:8:111: Unused tactic linter: `(intros; apply GlobalTheory.Ord2.cup_product_two_cocycle <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/EulerSystemTameClassScaleEnlargeCoefficientsStatement.lean:8:85: Unused tactic linter: `(intros; apply GlobalTheory.Ord2.tame_scale <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [163908/163942] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsOpenKerAndIsLocallyConstant (199s)
-⚠ [163909/163942] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsFurtherRest (5.8s)
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ImportsFurtherRest.lean:6:15: Variable name `inst` is not explicitly referenced.
+⚠ [163929/163960] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.HomPadicIntTrivialOfIrreducibleCompactRepStatement (169s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/HomPadicIntTrivialOfIrreducibleCompactRepStatement.lean:8:58: this tactic is never executed
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/HomPadicIntTrivialOfIrreducibleCompactRepStatement.lean:8:105: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [163910/163943] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdealEqComap (5.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IdealEqComap.lean:13:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/HomPadicIntTrivialOfIrreducibleCompactRepStatement.lean:8:58: Unused tactic linter: `exact GlobalTheory.Ord2.hom_padicInt_trivial` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/HomPadicIntTrivialOfIrreducibleCompactRepStatement.lean:8:105: Unused tactic linter: `(intros; apply GlobalTheory.Ord2.hom_padicInt_trivial <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [163930/163961] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsAnnihilatorDepthOfNotCoboundary (186s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAnnihilatorDepthOfNotCoboundary.lean:32:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAnnihilatorDepthOfNotCoboundary.lean:43:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAnnihilatorDepthOfNotCoboundary.lean:55:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [163931/163961] Built Formalism.SharpRestriction.ValuationFrobeniusEpsilon.LeastPrimeTwists.StrictlyAntitoneWeights.StepEpsFrob (9.6s)
+✔ [163932/163961] Built Formalism.SharpRestriction.ValuationFrobeniusEpsilon.LeastPrimeTwists.StrictlyAntitoneWeights.ConstantCoeffAtReducedPoint (11s)
+⚠ [163933/163963] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoboundaryOfOrthogonalDualCharacterModPrimePow (190s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoboundaryOfOrthogonalDualCharacterModPrimePow.lean:22:0: Definition `GlobalTheory.Ord2.LocCharPerfect.levZMod` of class type is semireducible. Most type class instances should be instance-reducible, so consider marking this
+definition with `@[instance_reducible]`. If it is intentionally semireducible, this warning can be disabled with `set_option warn.classDefReducibility false`.
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoboundaryOfOrthogonalDualCharacterModPrimePow.lean:25:17: Definition `GlobalTheory.Ord2.LocCharPerfect.levZMod` of class type is semireducible. Most type class instances should be instance-reducible, so consider marking this
+definition with `@[instance_reducible]`. If it is intentionally semireducible, this warning can be disabled with `set_option warn.classDefReducibility false`.
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoboundaryOfOrthogonalDualCharacterModPrimePow.lean:84:17: Definition `GlobalTheory.Ord2.LocCharPerfect.levZMod` of class type is semireducible. Most type class instances should be instance-reducible, so consider marking this
+definition with `@[instance_reducible]`. If it is intentionally semireducible, this warning can be disabled with `set_option warn.classDefReducibility false`.
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoboundaryOfOrthogonalDualCharacterModPrimePow.lean:90:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -120,7 +149,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IdealEqComap.lean:15:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoboundaryOfOrthogonalDualCharacterModPrimePow.lean:98:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -128,33 +157,4 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [163911/163944] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ColRepApplyOfOne (212s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ColRepApplyOfOne.lean:65:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ColRepApplyOfOne.lean:70:31: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ColRepApplyOfOne.lean:63:29: Variable name `inst` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ColRepApplyOfOne.lean:63:46: Variable name `inst_1` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_1
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ColRepApplyOfOne.lean:63:77: Variable name `inst_2` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_2
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [163912/163946] Built Formalism.SharpRestriction.ValuationFrobeniusEpsilon.UnitaryThreeHeightBounds (25s)
-✔ [163913/163946] Built Formalism.SharpRestriction.ValuationFrobeniusEpsilon.LeastPrimeTwists.StrictlyAntitoneWeights.AntitoneWeightsLemma.LiteratureFamilyBoundOfMembers (6.2s)
+✔ [163934/163963] Built Formalism.SharpRestriction.ValuationFrobeniusEpsilon.LeastPrimeTwists.StrictlyAntitoneWeights.HatTripleRepresentations.GradedDegreeZeroIsLocal (7.0s)
