@@ -1,25 +1,3 @@
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/UnramifiedSplitting/UnrInert.lean:102:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/UnramifiedSplitting/UnrInert.lean:106:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/UnramifiedSplitting/UnrInert.lean:155:2: Unused tactic linter: `beta_reduce  at t1` does nothing
-
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
 ✔ [166446/166465] Built Development.AutomorphicArithmetic.UnitaryInvolutions.EventuallyMapMemMaximalCompactGL (6.5s)
 ✔ [166447/166468] Built Development.AutomorphicArithmetic.UnitaryInvolutions.EventuallySeparableOfIntegralModel (6.7s)
@@ -158,3 +136,25 @@ Note: This linter can be disabled with `set_option linter.style.haveILetI false`
 ✔ [166476/166512] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GL1SpectralBounds.CuspOrTwoAlt (6.4s)
 ✔ [166477/166512] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.SmallTendsto (7.1s)
 ✔ [166478/166512] Built Development.AutomorphicArithmetic.Foundations.Convolution.WeightRankUnits.LpolTwist (7.2s)
+✔ [166479/166512] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.IsotypicQuotients.IsotypQuotAlt (115s)
+✔ [166480/166512] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.FockOperators.CapOf (114s)
+✔ [166481/166512] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.SpecialLinearCosets.ModSpan (114s)
+✔ [166482/166512] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.SpecialLinearCosets.KeyPure (116s)
+✔ [166483/166512] Built Development.AutomorphicArithmetic.Foundations.Convolution.WeightRankUnits.USide (89s)
+⚠ [166484/166512] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GL1SpectralBounds.OnePre (7.9s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GL1SpectralBounds/OnePre.lean:53:59: This simp argument is unused:
+  Equiv.coe_toEmbedding
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Function.comp, Function.Embedding.coeFn_mk, Fin.revPerm_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [166485/166512] Built Development.AutomorphicArithmetic.Foundations.Convolution.WeightRankUnits.TermId (7.1s)
+✔ [166486/166512] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GL1SpectralBounds.OnlyOne (242s)
+✔ [166487/166514] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.WeilRepresentation.Cap (283s)
+✔ [166488/166514] Built Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.SpecialLinearCosets.GmapCont (285s)
+✔ [166489/166514] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GL1SpectralBounds.OneSat (303s)
+✔ [166490/166516] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GL1SpectralBounds.NotTwo (294s)
+✔ [166491/166520] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GL1SpectralBounds.CsdDisc (296s)
+✔ [166492/166525] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GL1SpectralBounds.CsdSat (307s)
+✔ [166493/166526] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GL1SpectralBounds.CuspOrTwo (295s)
