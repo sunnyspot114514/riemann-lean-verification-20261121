@@ -1,76 +1,3 @@
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriHeckeInjectivity/IdempotentTraces/LiesOverUnder.lean:177:6: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [163431/163448] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IwahoriBlocks.IwahoriCentralBorel.LevBlock (346s)
-⚠ [163432/163450] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IwahoriBlocks.IwahoriCentralBorel.ParLaw (347s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriBlocks/IwahoriCentralBorel/ParLaw.lean:30:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IwahoriBlocks.IwahoriCentralBorel.ParLaw.0.topR_surj`:
-  [CommRing R]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [CommRing R] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriBlocks/IwahoriCentralBorel/ParLaw.lean:141:12: This simp argument is unused:
-  Matrix.one_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriBlocks/IwahoriCentralBorel/ParLaw.lean:148:14: This simp argument is unused:
-  Matrix.one_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriBlocks/IwahoriCentralBorel/ParLaw.lean:269:14: `MonoidHom.finset_prod_apply` has been deprecated: Use `MonoidHom.finsetProd_apply` instead
-⚠ [163433/163453] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IntegralCompression.ContinuousEntryCharacters.RankInf (346s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/RankInf.lean:20:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IntegralCompression.ContinuousEntryCharacters.RankInf.0.UpperTheory.V.Z.InvariantSubmoduleMonicPolynomial.EA.RI.int_left`:
-  [CompactSpace A]
-  [SecondCountableTopology A]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [CompactSpace A] [SecondCountableTopology A] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/RankInf.lean:112:6: `ContinuousLinearMap.sub_apply` has been deprecated: Use `_root_.sub_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `_root_.sub_apply x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/RankInf.lean:112:37: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/RankInf.lean:148:15: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/RankInf.lean:229:17: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/RankInf.lean:230:17: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/RankInf.lean:264:19: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IntegralCompression/ContinuousEntryCharacters/RankInf.lean:320:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [163434/163455] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ExistsLevelAndKTypeVectorForLeviInduction (345s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/ExistsLevelAndKTypeVectorForLeviInduction.lean:145:2: `continuous_finset_prod` has been deprecated: Use `continuous_finsetProd` instead
 warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/ExistsLevelAndKTypeVectorForLeviInduction.lean:318:87: This simp argument is unused:
   one_mul
 
@@ -156,5 +83,78 @@ warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/I
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [163441/163460] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.RepsSmul (231s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/RepsSmul.lean:34:18: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/RepsSmul.lean:34:35: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [163442/163463] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IwahoriBlocks.IwahoriCentralBorel.FinIwa (232s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriBlocks/IwahoriCentralBorel/FinIwa.lean:21:90: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [163443/163464] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IntegralCompression.ContinuousEntryCharacters.LineEx (213s)
+⚠ [163444/163465] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IwahoriBlocks.IwahoriCentralBorel.IndSeed (214s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriBlocks/IwahoriCentralBorel/IndSeed.lean:86:39: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [163445/163470] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IwahoriBlocks.IwahoriCentralBorel.TensIso (233s)
+⚠ [163446/163471] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IwahoriBlocks.IwahoriCentralBorel.IndTens (221s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriBlocks/IwahoriCentralBorel/IndTens.lean:22:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [163447/163473] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IwahoriBlocks.IwahoriCentralBorel.TensSimple (213s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriBlocks/IwahoriCentralBorel/TensSimple.lean:22:27: This simp argument is unused:
+  TensorProduct.equivFinsuppOfBasisLeft_apply_tmul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [F]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriBlocks/IwahoriCentralBorel/TensSimple.lean:141:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [163448/163473] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsXTranslate (214s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/IsXTranslate.lean:29:98: Variable name `w` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _w
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/IsXTranslate.lean:90:18: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/IsXTranslate.lean:90:35: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/IsXTranslate.lean:91:78: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
