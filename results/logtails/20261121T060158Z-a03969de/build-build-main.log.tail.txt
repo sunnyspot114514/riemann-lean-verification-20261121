@@ -1,160 +1,160 @@
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [162446/162530] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CuspidalTwists.PYCoin (12s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PYCoin.lean:49:52: this tactic is never executed
+
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCommonDenominatorCompactFiniteAdelesStatement.lean:10:63: Unused tactic linter: `exact GlobalTheory.AdeleDenom.exists_common_denom` does nothing
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PYCoin.lean:49:105: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PYCoin.lean:49:52: Unused tactic linter: `exact (Matrix.mul_eq_one_comm_of_card_eq rfl).mp h` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCommonDenominatorCompactFiniteAdelesStatement.lean:10:115: Unused tactic linter: `(intros; apply GlobalTheory.AdeleDenom.exists_common_denom <;> assumption)` does nothing
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PYCoin.lean:49:105: Unused tactic linter: `exact (Matrix.mul_eq_one_comm_of_equiv (Equiv.refl _)).mp h` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [162274/162331] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.PartitionSolutions.SandCpt (6.7s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/SandCpt.lean:28:12: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PYCoin.lean:128:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [162447/162530] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CuspidalTwists.TnOne (44s)
+✔ [162448/162530] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ScatteringLimits.Carries (7.7s)
+✔ [162449/162530] Built Development.WeilBound.RepresentationTheoryGL.TwistedFactors.TruncatedCuspIrreducibility.IsOrthogonalProjectionTwoLines (10s)
+⚠ [162450/162530] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CuspidalTwists.PRedTanA (17s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PRedTanA.lean:41:76: This simp argument is unused:
+  h3 0 1 (by decide)
 
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-✔ [162275/162331] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.PartitionSolutions.LevCorr (8.6s)
-✔ [162276/162331] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.LieGeometryGrowth.HomOmZero (11s)
-⚠ [162277/162331] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.PartitionSolutions.SatFacts (6.1s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/SatFacts.lean:10:39: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/SatFacts.lean:16:21: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.mul_apply, Fin.sum_univ_four, adj_apply, sgn, Fin.rev, h2, h3 0 2 (by decide),
+    h3 0 3 (by decide), h3 1 2 (by decide), h3 1 3 (by decide), h3 2 3 (by decide)] at this
 
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/SatFacts.lean:22:14: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PRedTanA.lean:42:6: This simp argument is unused:
+  h3 0 3 (by decide)
 
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/SatFacts.lean:34:39: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-⚠ [162278/162331] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.PartitionSolutions.SplitFactsAlt (6.1s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/SplitFactsAlt.lean:13:46: This simp argument is unused:
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.mul_apply, Fin.sum_univ_four, adj_apply, sgn, Fin.rev, h2, h3 0 1 (by decide),
+    h3 0 2 (by decide), h3 1 2 (by decide), h3 1 3 (by decide), h3 2 3 (by decide)] at this
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PRedTanA.lean:42:46: This simp argument is unused:
+  h3 1 3 (by decide)
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.mul_apply, Fin.sum_univ_four, adj_apply, sgn, Fin.rev, h2, h3 0 1 (by decide),
+    h3 0 2 (by decide), h3 0 3 (by decide), h3 1 2 (by decide), h3 2 3 (by decide)] at this
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PRedTanA.lean:42:66: This simp argument is unused:
+  h3 2 3 (by decide)
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.mul_apply, Fin.sum_univ_four, adj_apply, sgn, Fin.rev, h2, h3 0 1 (by decide),
+    h3 0 2 (by decide), h3 0 3 (by decide), h3 1 2 (by decide), h3 1 3 (by decide)] at this
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PRedTanA.lean:48:28: This simp argument is unused:
   Matrix.one_apply
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [expU, hij]
+  [apply] simp [cmp_apply, xMA, Matrix.single_apply, h2, h32, h3 0 1 (by decide), h3 2 3 (by decide)]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [162279/162331] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.CobordismLinearRelations.BlockConj (26s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/CobordismLinearRelations/BlockConj.lean:31:18: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/CobordismLinearRelations/BlockConj.lean:31:48: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/CobordismLinearRelations/BlockConj.lean:31:18: Unused tactic linter: `exact Ideal.absNorm_apply _` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/CobordismLinearRelations/BlockConj.lean:31:48: Unused tactic linter: `simp [Formalism.ConjugateSelfDual.normV, Ideal.absNorm_apply,
-  Submodule.cardQuot_apply]` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [162280/162331] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.LocalLimitConjugates.CasimirResolventProjection (18s)
-✔ [162281/162331] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.PartitionSolutions.OrbClosed (5.7s)
-⚠ [162282/162331] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.PartitionSolutions.PartProd (6.0s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/PartProd.lean:65:12: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/PartProd.lean:65:79: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/PartProd.lean:68:61: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-✔ [162283/162336] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.CobordismLinearRelations.HarmNe (27s)
-⚠ [162284/162336] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.PartitionSolutions.PartBase (6.3s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/PartBase.lean:13:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/PartBase.lean:14:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/PartBase.lean:15:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [162285/162336] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.PartitionSolutions.PullAct (6.8s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/PullAct.lean:10:10: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/PullAct.lean:10:77: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/PullAct.lean:13:10: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/PullAct.lean:13:77: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/PullAct.lean:41:17: `ContinuousLinearMap.coe_comp'` has been deprecated: Use `ContinuousLinearMap.coe_comp` instead
-✔ [162286/162336] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.PartitionSolutions.PartMem (6.8s)
-✔ [162287/162336] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.PartitionSolutions.PullOp (7.7s)
-✔ [162288/162336] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.PartitionSolutions.HdFacts (5.9s)
-✔ [162289/162336] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.LieGeometryGrowth.PairFacts (5.7s)
-✔ [162290/162336] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.PartitionSolutions.RelPoin (8.7s)
-✔ [162291/162336] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardAlgebraicIntegersBoundedArchimedeanLe (6.8s)
-⚠ [162292/162336] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.PartitionSolutions.AbsTransOf (9.4s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/AbsTransOf.lean:21:60: `Set.diff_subset` has been deprecated: Use `Set.sdiff_subset` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/AbsTransOf.lean:25:32: `Set.mem_diff` has been deprecated: Use `Set.mem_sdiff` instead
-✔ [162293/162336] Built Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.LieGeometryGrowth.LeExpSelf (7.8s)
-⚠ [162294/162336] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.PartitionSolutions.SuppBwd (7.9s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/SuppBwd.lean:44:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/SuppBwd.lean:44:46: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-⚠ [162295/162336] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.PartitionSolutions.SuppFwd (8.6s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/SuppFwd.lean:21:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/SuppFwd.lean:37:61: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/PartitionSolutions/SuppFwd.lean:41:63: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-✔ [162296/162336] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.LocalLimitConjugates.ConvolutionL2Class (5.9s)
-✔ [162297/162336] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.LocalLimitConjugates.CvCount (6.9s)
-⚠ [162298/162336] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.LocalLimitConjugates.TestOps (8.4s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/LocalLimitConjugates/TestOps.lean:16:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/LocalLimitConjugates/TestOps.lean:19:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/LocalLimitConjugates/TestOps.lean:35:4: try 'simp' instead of 'simpa'
-
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-✔ [162299/162336] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.LocalLimitConjugates.AbsLim (6.7s)
-⚠ [162300/162336] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.LocalLimitConjugates.AbsDense (6.1s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/LocalLimitConjugates/AbsDense.lean:16:10: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/LocalLimitConjugates/AbsDense.lean:17:6: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/LocalLimitConjugates/AbsDense.lean:22:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/LocalLimitConjugates/AbsDense.lean:26:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/LocalLimitConjugates/AbsDense.lean:29:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/LocalLimitConjugates/AbsDense.lean:26:19: This simp argument is unused:
-  Set.mem_setOf_eq
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PRedTanA.lean:48:46: This simp argument is unused:
+  Matrix.single_apply
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [inner_zero_left]
+  [apply] simp [cmp_apply, xMA, Matrix.one_apply, h2, h32, h3 0 1 (by decide), h3 2 3 (by decide)]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [162301/162337] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.LocalLimitConjugates.AbsInv (7.3s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ConjugateRepresentations/LocalLimitConjugates/AbsInv.lean:19:10: This simp argument is unused:
-  Complex.mul_re
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PRedTanA.lean:246:4: Try this: 
+  haveI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [hre]
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [162451/162530] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CuspidalTwists.ComplexConjugationsConjugateCaseThree (37s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:32:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:33:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:97:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CuspidalTwists.ComplexConjugationsConjugateCaseThree.0.exists_lift_of_mem_fixing_case_three`:
+  [IsAlgClosure ℚ Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsAlgClosure ℚ Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:100:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CuspidalTwists.ComplexConjugationsConjugateCaseThree.0.restrict_mem_fixing_subgroup_case_three`:
+  [IsAlgClosure ℚ Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsAlgClosure ℚ Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:103:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CuspidalTwists.ComplexConjugationsConjugateCaseThree.0.restrict_inertia_mem_case_three`:
+  [IsAlgClosure ℚ Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsAlgClosure ℚ Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:182:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:183:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:184:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:182:6: Unused tactic linter: `exact absurd (neg_eq_iff_eq_neg.1 e).symm hn` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:183:6: Unused tactic linter: `exact absurd (neg_inj.1 e).symm h1` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:184:6: Unused tactic linter: `exact absurd (neg_inj.1 e) h1` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:469:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:472:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:488:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
