@@ -1,150 +1,12 @@
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/LocalHermitianForms/LocalOrbitCounts/FixPSmul.lean:420:95: Unused tactic linter: `ring` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/LocalHermitianForms/LocalOrbitCounts/FixPSmul.lean:431:17: Unused tactic linter: `ring` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/LocalHermitianForms/LocalOrbitCounts/FixPSmul.lean:441:19: Unused tactic linter: `ring` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/LocalHermitianForms/LocalOrbitCounts/FixPSmul.lean:679:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/LocalHermitianForms/LocalOrbitCounts/FixPSmul.lean:680:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-info: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/LocalHermitianForms/LocalOrbitCounts/FixPSmul.lean:694:4: case refine_1
-O K : Type
-inst✝⁴ : CommRing O
-inst✝³ : IsDomain O
-inst✝² : IsDiscreteValuationRing O
-inst✝¹ : Field K
-inst✝ : Algebra O K
-Δ τ : K
-L : IsLoc O Δ
-hτ : τ ^ 2 - 4 ≠ 0
-τ₀ : O
-hτ₀ : (algebraMap O K) τ₀ = τ
-hmax : τ₀ + 2 ∈ IsLocalRing.maximalIdeal O
-c : K
-u : Etau K τ
-hu2 : u ^ 2 = -ω
-hu : QuadraticAlgebra.norm u = 1
-ν : Lsq K Δ
-hν : IsInt O ν
-hν' : QuadraticAlgebra.norm ν = -1
-s : K
-ε : Oˣ
-hs : Δ * s ^ 2 = (algebraMap O K) ↑ε
-t : Kˣ
-η : Oˣ
-g : K
-hg : g ≠ 0
-hcg : c = (algebraMap O K) ↑η * g ^ 2
-h2 : IsUnit 2
-hτr : τ ∈ (algebraMap O K).range
-h2τ : ∃ w, (algebraMap O K) ↑w = 2 - τ
-hur : u.re ∈ (algebraMap O K).range
-hui : u.im ∈ (algebraMap O K).range
-hc0 : c ≠ 0
-hs0 : Δ * s ^ 2 ≠ 0
-hd : IsDat c (ν • ofE Δ u) ((↑t • s • ω) • ofE Δ (ω - star ω))
-hPinv :
-  ∀ (z : (Etau K τ)ˣ) (S : Set (Etau K τ)),
-    IsFixP O τ (↑t * (τ ^ 2 - 4)) S → IsFixP O τ (↑t * (τ ^ 2 - 4)) ((fun x ↦ quo z * x) '' S)
-hFix :
-  ∀ (S : Set (Sp Δ τ)),
-    IsFix O c (ν • ofE Δ u) ((↑t • s • ω) • ofE Δ (ω - star ω)) S ↔
-      ∃ S₀, IsFixP O τ (↑t * (τ ^ 2 - 4)) S₀ ∧ S = Phi O Δ g s S₀
-this✝ : MulAction (Etau K τ)ˣ (Set (Sp Δ τ)) := torAct Δ τ
-this : MulAction (Etau K τ)ˣ (Set (Etau K τ)) := quoAct τ
-z : (Etau K τ)ˣ
-S : Set (Sp Δ τ)
-key :
-  ∀ (z : (Etau K τ)ˣ) (S : Set (Sp Δ τ)),
-    IsFix O c (ν • ofE Δ u) ((↑t • s • ω) • ofE Δ (ω - star ω)) S →
-      IsFix O c (ν • ofE Δ u) ((↑t • s • ω) • ofE Δ (ω - star ω)) (z • S)
-e :
-  IsFix O c (ν • ofE Δ u) ((↑t • s • ω) • ofE Δ (ω - star ω)) (z • S) ↔
-    IsFix O c (ν • ofE Δ u) ((↑t • s • ω) • ofE Δ (ω - star ω)) S
-⊢ (if IsFix O c (ν • ofE Δ u) ((↑t • s • ω) • ofE Δ (ω - star ω)) (z • S) then 1 else 0) =
-    if IsFix O c (ν • ofE Δ u) ((↑t • s • ω) • ofE Δ (ω - star ω)) S then 1 else 0
-info: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/LocalHermitianForms/LocalOrbitCounts/FixPSmul.lean:701:4: case refine_2
-O K : Type
-inst✝⁴ : CommRing O
-inst✝³ : IsDomain O
-inst✝² : IsDiscreteValuationRing O
-inst✝¹ : Field K
-inst✝ : Algebra O K
-Δ τ : K
-L : IsLoc O Δ
-hτ : τ ^ 2 - 4 ≠ 0
-τ₀ : O
-hτ₀ : (algebraMap O K) τ₀ = τ
-hmax : τ₀ + 2 ∈ IsLocalRing.maximalIdeal O
-c : K
-u : Etau K τ
-hu2 : u ^ 2 = -ω
-hu : QuadraticAlgebra.norm u = 1
-ν : Lsq K Δ
-hν : IsInt O ν
-hν' : QuadraticAlgebra.norm ν = -1
-s : K
-ε : Oˣ
-hs : Δ * s ^ 2 = (algebraMap O K) ↑ε
-t : Kˣ
-η : Oˣ
-g : K
-hg : g ≠ 0
-hcg : c = (algebraMap O K) ↑η * g ^ 2
-h2 : IsUnit 2
-hτr : τ ∈ (algebraMap O K).range
-h2τ : ∃ w, (algebraMap O K) ↑w = 2 - τ
-hur : u.re ∈ (algebraMap O K).range
-hui : u.im ∈ (algebraMap O K).range
-hc0 : c ≠ 0
-hs0 : Δ * s ^ 2 ≠ 0
-hd : IsDat c (ν • ofE Δ u) ((↑t • s • ω) • ofE Δ (ω - star ω))
-hPinv :
-  ∀ (z : (Etau K τ)ˣ) (S : Set (Etau K τ)),
-    IsFixP O τ (↑t * (τ ^ 2 - 4)) S → IsFixP O τ (↑t * (τ ^ 2 - 4)) ((fun x ↦ quo z * x) '' S)
-hFix :
-  ∀ (S : Set (Sp Δ τ)),
-    IsFix O c (ν • ofE Δ u) ((↑t • s • ω) • ofE Δ (ω - star ω)) S ↔
-      ∃ S₀, IsFixP O τ (↑t * (τ ^ 2 - 4)) S₀ ∧ S = Phi O Δ g s S₀
-this✝ : MulAction (Etau K τ)ˣ (Set (Sp Δ τ)) := torAct Δ τ
-this : MulAction (Etau K τ)ˣ (Set (Etau K τ)) := quoAct τ
-z : (Etau K τ)ˣ
-S : Set (Etau K τ)
-e : IsFixP O τ (↑t * (τ ^ 2 - 4)) (z • S) ↔ IsFixP O τ (↑t * (τ ^ 2 - 4)) S
-⊢ (if IsFixP O τ (↑t * (τ ^ 2 - 4)) (z • S) then 1 else 0) = if IsFixP O τ (↑t * (τ ^ 2 - 4)) S then 1 else 0
-⚠ [169269/169295] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GlobalUnitaryForms.IntegralStabilizers.SideGTau (7.0s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GlobalUnitaryForms/IntegralStabilizers/SideGTau.lean:52:10: This simp argument is unused:
-  coeff_X
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/GlobalRationalGL/IntegralConjugation/ExistsUnitNormQuotientLift.lean:158:8: This simp argument is unused:
+  Matrix.mul_fin_two
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [coeff_one, coeff_X_pow] at e2
+  [apply] simp
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GlobalUnitaryForms/IntegralStabilizers/SideGTau.lean:83:12: This simp argument is unused:
-  coeff_X
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [coeff_one, coeff_X_pow, coeff_C_mul]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [169270/169295] Built Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.IsSquareSqSubFourIffIsSquareUnit (5.6s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/IsSquareSqSubFourIffIsSquareUnit.lean:8:2: Try this: 
+⚠ [169447/169483] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.GlobalRationalGL.IntegralConjugation.IntegralCongrOfForallAbove (11s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/GlobalRationalGL/IntegralConjugation/IntegralCongrOfForallAbove.lean:20:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -152,9 +14,147 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/IsSquareSqSubFourIffIsSquareUnit.lean:5:8: Overlapping instance parameters in `UpperTheory.isSquare_sq_sub_four_iff_isSquare_unit`:
+⚠ [169448/169483] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.CharacterShapes.FiniteOrbits.ConjMemLevel (8.1s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/ConjMemLevel.lean:44:35: This simp argument is unused:
+  Subgroup.coe_mk
 
-⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.
-💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Subgroup.coe_mul]
 
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/ConjMemLevel.lean:147:35: This simp argument is unused:
+  Subgroup.coe_mk
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Subgroup.coe_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [169449/169483] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.CharacterShapes.FiniteOrbits.CongLev (12s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/CongLev.lean:19:57: `zero_le'` has been deprecated: Use `zero_le` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/CongLev.lean:45:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.CharacterShapes.FiniteOrbits.CongLev.0.proj_int`:
+  [TopologicalSpace k]
+  [IsNonarchimedeanLocalField k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [TopologicalSpace k] [IsNonarchimedeanLocalField k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/CongLev.lean:85:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [169450/169483] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GlobalUnitaryForms.ScalarTuples.NormalOfCenter (58s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GlobalUnitaryForms/ScalarTuples/NormalOfCenter.lean:116:4: Unused tactic linter: `beta_reduce` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GlobalUnitaryForms/ScalarTuples/NormalOfCenter.lean:240:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GlobalUnitaryForms/ScalarTuples/NormalOfCenter.lean:244:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GlobalUnitaryForms.ScalarTuples.NormalOfCenter.0.UpperTheory.V.Z.Sym.Glob.clEx`:
+  [NumberField F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [169451/169483] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.CharacterShapes.FiniteOrbits.SaNormal (8.5s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/SaNormal.lean:27:10: This simp argument is unused:
+  MulAut.conj_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/SaNormal.lean:50:12: This simp argument is unused:
+  MulAut.conj_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/SaNormal.lean:55:10: This simp argument is unused:
+  MulAut.conj_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [169452/169483] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.CharacterShapes.FiniteOrbits.SplitLoc (10s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/SplitLoc.lean:64:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [169453/169483] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.GlobalRationalGL.IntegralConjugation.FinitePartSplitInfinite (57s)
+✔ [169454/169483] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.CharacterShapes.FiniteOrbits.LevExt (42s)
+✔ [169455/169483] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.CharacterShapes.FiniteOrbits.RepsEx (6.7s)
+✔ [169456/169483] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.GlobalRationalGL.IntegralConjugation.FinitePartIsomorphismSurjective (69s)
+⚠ [169457/169483] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.GlobalRationalGL.IntegralConjugation.MemSUAIff (65s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/GlobalRationalGL/IntegralConjugation/MemSUAIff.lean:67:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.GlobalRationalGL.IntegralConjugation.MemSUAIff.0.UpperTheory.V.Z.Sym.Dict.Br.SA_det`:
+  [IsCMField L]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsCMField L] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [169458/169483] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.CharacterShapes.FiniteOrbits.FinOrbSubgroupOf (63s)
+✔ [169459/169483] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.CharacterShapes.FiniteOrbits.FitExt (6.5s)
+⚠ [169460/169483] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.CharacterShapes.FiniteOrbits.TwoUnder (6.7s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/TwoUnder.lean:28:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/TwoUnder.lean:27:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.CharacterShapes.FiniteOrbits.TwoUnder.0.exOver`:
+  [IsCMField L]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsCMField L] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/TwoUnder.lean:37:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.CharacterShapes.FiniteOrbits.TwoUnder.0.exTwo`:
+  [IsCMField L]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsCMField L] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/TwoUnder.lean:60:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.CharacterShapes.FiniteOrbits.TwoUnder.0.two_under`:
+  [NumberField L]
+  [IsCMField L]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField L] [IsCMField L] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [169461/169483] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.CharacterShapes.FiniteOrbits.WeakOne (13s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/WeakOne.lean:17:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.CharacterShapes.FiniteOrbits.WeakOne.0.UpperTheory.V.Z.Sym.So.WeakMultiplicityOne.mem_int`:
+  [IsCMField L]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsCMField L] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/WeakOne.lean:70:33: `zero_le'` has been deprecated: Use `zero_le` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/WeakOne.lean:145:17: This simp argument is unused:
+  Units.val_div_eq_div_val
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Units.coe_map, Units.val_mul, Units.val_inv_eq_inv_val, ca, Units.val_mk0, MonoidHom.coe_coe,
+    map_mul, map_inv₀, div_eq_mul_inv]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [169462/169483] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GlobalUnitaryForms.ScalarTuples.ThetaTheta (9.2s)
+⚠ [169463/169483] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.CharacterShapes.FiniteOrbits.DetRoot (81s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/DetRoot.lean:89:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/DetRoot.lean:131:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [169464/169483] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GlobalUnitaryForms.ScalarTuples.QuaternionStableSideTraceIdentity (17s)
