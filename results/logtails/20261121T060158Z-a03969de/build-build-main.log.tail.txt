@@ -1,112 +1,45 @@
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TwistedAutomorphicForms/FrobInert.lean:19:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TwistedAutomorphicForms.FrobInert.0.place_between`:
-  [NumberField K]
-  [NumberField L]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField K] [NumberField L] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TwistedAutomorphicForms/FrobInert.lean:109:4: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [168381/168452] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.UnrSplit (223s)
-⚠ [168382/168452] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TwistedAutomorphicForms.ConjPlace (213s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TwistedAutomorphicForms/ConjPlace.lean:10:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TwistedAutomorphicForms/ConjPlace.lean:22:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TwistedAutomorphicForms/ConjPlace.lean:23:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TwistedAutomorphicForms/ConjPlace.lean:24:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TwistedAutomorphicForms/ConjPlace.lean:25:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [168383/168452] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TwistedAutomorphicForms.UnrAE (214s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TwistedAutomorphicForms/UnrAE.lean:10:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TwistedAutomorphicForms/UnrAE.lean:11:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TwistedAutomorphicForms/UnrAE.lean:17:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TwistedAutomorphicForms/UnrAE.lean:19:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TwistedAutomorphicForms/UnrAE.lean:28:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [168384/168452] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.WeightKernels.SymmetricFourthPowerMatrix (225s)
-⚠ [168385/168452] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TwistedAutomorphicForms.Kron (214s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TwistedAutomorphicForms/Kron.lean:9:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TwistedAutomorphicForms/Kron.lean:35:43: This simp argument is unused:
-  hrm
+✔ [168403/168455] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.WeightKernels.TwistRatios.KerLe (204s)
+⚠ [168404/168455] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.SmoothDepth.OpenLevelSubgroups.OpenLev (216s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/SmoothDepth/OpenLevelSubgroups/OpenLev.lean:23:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [168405/168455] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.WeightKernels.TwistRatios.TraceSym4M (205s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/WeightKernels/TwistRatios/TraceSym4M.lean:19:29: This simp argument is unused:
+  Matrix.head_cons
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [u]
+  [apply] simp only [UpperTheory.V.Z.Sym.Ga.symmetricFourthPowerMatrix, MonoidHom.coe_mk, OneHom.coe_mk, Matrix.trace,
+    Matrix.diag, Fin.sum_univ_five, Fin.sum_univ_two, Matrix.det_fin_two, Matrix.of_apply, Matrix.cons_val',
+    Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.cons_val, Matrix.empty_val', Matrix.cons_val_fin_one,
+    Matrix.head_fin_const]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [168386/168453] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TwistedAutomorphicForms.SplitIso (215s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TwistedAutomorphicForms/SplitIso.lean:12:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/WeightKernels/TwistRatios/TraceSym4M.lean:19:47: This simp argument is unused:
+  Matrix.head_fin_const
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [UpperTheory.V.Z.Sym.Ga.symmetricFourthPowerMatrix, MonoidHom.coe_mk, OneHom.coe_mk, Matrix.trace,
+    Matrix.diag, Fin.sum_univ_five, Fin.sum_univ_two, Matrix.det_fin_two, Matrix.of_apply, Matrix.cons_val',
+    Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.cons_val, Matrix.empty_val', Matrix.cons_val_fin_one,
+    Matrix.head_cons]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/WeightKernels/TwistRatios/TraceSym4M.lean:28:45: This simp argument is unused:
+  MonoidHom.coe_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Ga.tr, Ga.uf, Ga.sym4, UpperTheory.V.Af.tw_val, Matrix.trace_smul, Units.coe_map,
+    MonoidHom.coe_comp, Function.comp_apply, trace_sym4M]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [168406/168455] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.WeightKernels.TwistRatios.ConjEx (196s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/WeightKernels/TwistRatios/ConjEx.lean:22:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/WeightKernels/TwistRatios/ConjEx.lean:28:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -114,7 +47,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TwistedAutomorphicForms/SplitIso.lean:13:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/WeightKernels/TwistRatios/ConjEx.lean:29:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -122,39 +55,106 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [168387/168453] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TwistedAutomorphicForms.VerGroup (222s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TwistedAutomorphicForms/VerGroup.lean:17:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/WeightKernels/TwistRatios/ConjEx.lean:30:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [168407/168455] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.SmoothDepth.OpenLevelSubgroups.InfVec (216s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/SmoothDepth/OpenLevelSubgroups/InfVec.lean:151:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.SmoothDepth.OpenLevelSubgroups.InfVec.0.UpperTheory.V.Z.Sym.Al.InfV.cv_eq`:
+  [IsCMField L]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsCMField L] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/SmoothDepth/OpenLevelSubgroups/InfVec.lean:167:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
 If you'd rather continue using `push_neg` in your project, you can implement it as follows:
 ```
 open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-⚠ [168388/168454] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TwistedAutomorphicForms.LevPow (211s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TwistedAutomorphicForms/LevPow.lean:21:2: Try this: 
-  haveI̵
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/SmoothDepth/OpenLevelSubgroups/InfVec.lean:160:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.SmoothDepth.OpenLevelSubgroups.InfVec.0.UpperTheory.V.Z.Sym.Al.InfV.cv_ne`:
+  [IsCMField L]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsCMField L] in theorem ...
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/SmoothDepth/OpenLevelSubgroups/InfVec.lean:248:25: This simp argument is unused:
+  zpow_neg
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TwistedAutomorphicForms/LevPow.lean:22:2: Try this: 
-  haveI̵
+Hint: Omit it from the simp argument list.
+  [apply] simp [infC, map_inv, inv_zpow]
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/SmoothDepth/OpenLevelSubgroups/InfVec.lean:248:35: This simp argument is unused:
+  inv_zpow
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TwistedAutomorphicForms/LevPow.lean:77:33: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-✔ [168389/168454] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TwistedAutomorphicForms.AwayTriv (216s)
-✔ [168390/168454] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TwistedAutomorphicForms.InfTriv (216s)
-⚠ [168391/168454] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TwistedAutomorphicForms.Descend (216s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TwistedAutomorphicForms/Descend.lean:43:10: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp [infC, map_inv, zpow_neg]
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TwistedAutomorphicForms/Descend.lean:43:10: Unused tactic linter: `exact continuous_quot_mk` does nothing
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [168408/168455] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.WeightKernels.TwistRatios.ExistsNonzeroLowerEntryOfIrreducible (218s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/WeightKernels/TwistRatios/ExistsNonzeroLowerEntryOfIrreducible.lean:89:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/WeightKernels/TwistRatios/ExistsNonzeroLowerEntryOfIrreducible.lean:108:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/WeightKernels/TwistRatios/ExistsNonzeroLowerEntryOfIrreducible.lean:153:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/WeightKernels/TwistRatios/ExistsNonzeroLowerEntryOfIrreducible.lean:157:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/WeightKernels/TwistRatios/ExistsNonzeroLowerEntryOfIrreducible.lean:166:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/WeightKernels/TwistRatios/ExistsNonzeroLowerEntryOfIrreducible.lean:170:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/WeightKernels/TwistRatios/ExistsNonzeroLowerEntryOfIrreducible.lean:180:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/WeightKernels/TwistRatios/ExistsNonzeroLowerEntryOfIrreducible.lean:285:64: This simp argument is unused:
+  g10
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [168392/168454] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TwistedAutomorphicForms.ResOpen (217s)
+Hint: Omit it from the simp argument list.
+  [apply] simp [symmetricFourthPowerMatrix, g00, g01, g11]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/WeightKernels/TwistRatios/ExistsNonzeroLowerEntryOfIrreducible.lean:285:69: This simp argument is unused:
+  g11
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [symmetricFourthPowerMatrix, g00, g01, g10]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/WeightKernels/TwistRatios/ExistsNonzeroLowerEntryOfIrreducible.lean:288:59: This simp argument is unused:
+  g01
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [symmetricFourthPowerMatrix, g00, g10, g11]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/WeightKernels/TwistRatios/ExistsNonzeroLowerEntryOfIrreducible.lean:288:69: This simp argument is unused:
+  g11
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [symmetricFourthPowerMatrix, g00, g01, g10]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/WeightKernels/TwistRatios/ExistsNonzeroLowerEntryOfIrreducible.lean:335:60: This simp argument is unused:
+  MulAut.conj_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [c]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
