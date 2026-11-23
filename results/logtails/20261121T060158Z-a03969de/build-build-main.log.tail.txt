@@ -1,25 +1,5 @@
-    | assumption
-    | infer_instance)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsClosedInertiaCyclotomicKernel.lean:70:4: Unused tactic linter: `(intros; exact _root_.GlobalTheory.ContinuousZModPow.main ..)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [165139/165203] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.UnitBallSubring (6.1s)
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/UnitBallSubring.lean:7:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/UnitBallSubring.lean:13:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/UnitBallSubring.lean:21:18: Variable name `inst` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [165140/165205] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormLeOneOfIsIntegralBis (5.4s)
-⚠ [165141/165205] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.EichlerShimuraFrobeniusQuadraticModPrimePow (119s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/EichlerShimuraFrobeniusQuadraticModPrimePow.lean:46:36: `zero_le'` has been deprecated: Use `zero_le` instead
-✔ [165142/165205] Built Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.FixedIntegersIsUnitOfNotMemPrimeSpan (121s)
-⚠ [165143/165208] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.FrobeniusHodgeTateLaws.AdmissibleHeckeAlgebraOfGenerated (126s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/AdmissibleHeckeAlgebraOfGenerated.lean:28:2: Try this: 
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/InertiaInvariantValuationUniformizerBound.lean:55:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -27,37 +7,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/AdmissibleHeckeAlgebraOfGenerated.lean:19:2: Try this: intro hK4 hK5 hAdm hTow hCh hMeas hJ hCoef hMono hPsi hFrob hDet hHat hPin hSmNz hGm hES hAvgEq hAvgMF hRhs
-  hSm hChi l _ Ω _ _ _ ι e S A W g hNf hSrc
-⚠ [165144/165208] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsClosedInertiaCyclotomicKernelStatement (177s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsClosedInertiaCyclotomicKernelStatement.lean:9:60: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsClosedInertiaCyclotomicKernelStatement.lean:9:109: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsClosedInertiaCyclotomicKernelStatement.lean:9:60: Unused tactic linter: `exact GlobalTheory.isClosed_Ine_inf_ker_cycMod` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsClosedInertiaCyclotomicKernelStatement.lean:9:109: Unused tactic linter: `(intros; apply GlobalTheory.isClosed_Ine_inf_ker_cycMod <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [165145/165208] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.EichlerShimuraFrobeniusQuadraticModPrimePowStatement (166s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/EichlerShimuraFrobeniusQuadraticModPrimePowStatement.lean:9:56: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/EichlerShimuraFrobeniusQuadraticModPrimePowStatement.lean:9:101: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/EichlerShimuraFrobeniusQuadraticModPrimePowStatement.lean:9:56: Unused tactic linter: `exact GlobalTheory.KZ.eichlerShimura_B_mod` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/EichlerShimuraFrobeniusQuadraticModPrimePowStatement.lean:9:101: Unused tactic linter: `(intros; apply GlobalTheory.KZ.eichlerShimura_B_mod <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [165146/165208] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ChSumSubCMul (182s)
-⚠ [165147/165208] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPolynomialPrimitiveRootOfCyclotomicInertia (178s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPolynomialPrimitiveRootOfCyclotomicInertia.lean:15:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/InertiaInvariantValuationUniformizerBound.lean:58:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -65,7 +15,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPolynomialPrimitiveRootOfCyclotomicInertia.lean:27:4: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/InertiaInvariantValuationUniformizerBound.lean:59:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -73,36 +23,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [165148/165208] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsIntegralIffNormLeOne (177s)
-⚠ [165149/165208] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoefficientCongruenceOfTwistedValues (175s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoefficientCongruenceOfTwistedValues.lean:18:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoefficientCongruenceOfTwistedValues.lean:19:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoefficientCongruenceOfTwistedValues.lean:20:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoefficientCongruenceOfTwistedValues.lean:17:80: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoefficientCongruenceOfTwistedValues.lean:18:4: Unused tactic linter: `(intros;
-  apply _root_.GlobalTheory.IntegralNormAlgebraMap.norm_le_one_of_isIntegral <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoefficientCongruenceOfTwistedValues.lean:19:4: Unused tactic linter: `(intros;
-  apply @_root_.GlobalTheory.IntegralNormAlgebraMap.norm_le_one_of_isIntegral <;>
-    first
-    | assumption
-    | infer_instance)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoefficientCongruenceOfTwistedValues.lean:20:4: Unused tactic linter: `(intros;
-  exact _root_.GlobalTheory.IntegralNormAlgebraMap.norm_le_one_of_isIntegral ..)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoefficientCongruenceOfTwistedValues.lean:23:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/InertiaInvariantValuationUniformizerBound.lean:60:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -110,7 +31,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoefficientCongruenceOfTwistedValues.lean:41:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/InertiaInvariantValuationUniformizerBound.lean:63:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -118,21 +39,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoefficientCongruenceOfTwistedValues.lean:113:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoefficientCongruenceOfTwistedValues.lean:122:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoefficientCongruenceOfTwistedValues.lean:159:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/InertiaInvariantValuationUniformizerBound.lean:76:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -140,21 +47,114 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoefficientCongruenceOfTwistedValues.lean:177:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CoefficientCongruenceOfTwistedValues.lean:187:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-✔ [165150/165208] Built Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.PEvHom (170s)
-⚠ [165151/165208] Built Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.IntShift (181s)
-warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/IntShift.lean:71:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/IntShift.lean:130:17: `Polynomial.eval₂_finset_sum` has been deprecated: Use `Polynomial.eval₂_finsetSum` instead
+warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/InertiaInvariantValuationUniformizerBound.lean:84:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [165163/165211] Built Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.FrobEx (227s)
+warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/FrobEx.lean:7:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [165164/165211] Built Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.FixAbs (227s)
+warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/FixAbs.lean:9:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/FixAbs.lean:10:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/FixAbs.lean:11:93: `Prime.not_unit` has been deprecated: Use `Prime.not_isUnit` instead
+warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/FixAbs.lean:11:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/FixAbs.lean:70:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/FixAbs.lean:71:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [165165/165211] Built Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.DvdOfNormLe (227s)
+warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/DvdOfNormLe.lean:23:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/DvdOfNormLe.lean:49:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/DvdOfNormLe.lean:78:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/DvdOfNormLe.lean:79:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [165166/165211] Built Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.KumAlg (227s)
+warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/KumAlg.lean:20:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/KumAlg.lean:33:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [165167/165211] Built Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.PConj (227s)
+✔ [165168/165211] Built Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.IwOpsRedUn (228s)
