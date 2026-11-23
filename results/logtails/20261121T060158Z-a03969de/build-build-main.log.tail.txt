@@ -1,15 +1,3 @@
-Hint: Omit it from the simp argument list.
-  [apply] simp [Tower.act, sec, mZl, en, Matrix.mulVec, Fin.sum_univ_two]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/MemGamIff.lean:129:60: This simp argument is unused:
-  Fin.sum_univ_two
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Tower.act, sec, mZl, en, Matrix.mulVec, dotProduct]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/MemGamIff.lean:160:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -17,7 +5,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/MemGamIff.lean:161:4: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsLevelMulPowOfInvariantModPow.lean:79:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -25,16 +13,120 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [165453/165481] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.EulerFactorBounds.ClsStep (150s)
-✔ [165454/165482] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.EulerFactorBounds.TrConj (156s)
-⚠ [165455/165482] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.EulerFactorBounds.ValCast (149s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/ValCast.lean:36:39: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsLevelMulPowOfInvariantModPow.lean:123:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsLevelMulPowOfInvariantModPow.lean:124:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsLevelMulPowOfInvariantModPow.lean:126:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [165483/165510] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.JTranslatesLevelAndScalarMod (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/JTranslatesLevelAndScalarMod.lean:72:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/JTranslatesLevelAndScalarMod.lean:235:12: This simp argument is unused:
+  Matrix.mul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Fin.sum_univ_two, Matrix.vecMul, dotProduct, h₁, h₂]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/JTranslatesLevelAndScalarMod.lean:299:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [165484/165510] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsHomToKernelSqCentralExtensionSlTwoZMod (9.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsHomToKernelSqCentralExtensionSlTwoZMod.lean:55:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsHomToKernelSqCentralExtensionSlTwoZMod.lean:58:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsHomToKernelSqCentralExtensionSlTwoZMod.lean:131:37: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsHomToKernelSqCentralExtensionSlTwoZMod.lean:133:37: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [165485/165510] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLevelMulPowOfInvariantModPowStatement (21s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsLevelMulPowOfInvariantModPowStatement.lean:9:78: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/ValCast.lean:36:39: Unused tactic linter: `simp [Cgr]` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsLevelMulPowOfInvariantModPowStatement.lean:9:145: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsLevelMulPowOfInvariantModPowStatement.lean:9:78: Unused tactic linter: `exact GlobalTheory.KZ.ES.exists_lev_mul_pow_of_invariant_mod_pow` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/ValCast.lean:68:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsLevelMulPowOfInvariantModPowStatement.lean:9:145: Unused tactic linter: `(intros;
+  apply GlobalTheory.KZ.ES.exists_lev_mul_pow_of_invariant_mod_pow <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [165486/165510] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.JTranslatesLevelAndScalarModStatement (19s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/JTranslatesLevelAndScalarModStatement.lean:9:58: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/JTranslatesLevelAndScalarModStatement.lean:9:105: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/JTranslatesLevelAndScalarModStatement.lean:9:58: Unused tactic linter: `exact GlobalTheory.KZ.ES.Scal.lev_and_scalar` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/JTranslatesLevelAndScalarModStatement.lean:9:105: Unused tactic linter: `(intros; apply GlobalTheory.KZ.ES.Scal.lev_and_scalar <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [165487/165510] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsHomToKernelSqCentralExtensionSlTwoZModStatement (5.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsHomToKernelSqCentralExtensionSlTwoZModStatement.lean:9:99: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsHomToKernelSqCentralExtensionSlTwoZModStatement.lean:9:187: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsHomToKernelSqCentralExtensionSlTwoZModStatement.lean:9:99: Unused tactic linter: `exact
+  GlobalTheory.CentralExt.exists_hom_to_kernel_eq_sq_on_kernel_of_central_ext_sl2` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsHomToKernelSqCentralExtensionSlTwoZModStatement.lean:9:187: Unused tactic linter: `(intros;
+  apply GlobalTheory.CentralExt.exists_hom_to_kernel_eq_sq_on_kernel_of_central_ext_sl2 <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [165488/165510] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ClassInvariantDescentCoprimeLevelModPow (53s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ClassInvariantDescentCoprimeLevelModPow.lean:23:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ClassInvariantDescentCoprimeLevelModPow.lean:28:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ClassInvariantDescentCoprimeLevelModPow.lean:237:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -42,29 +134,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/ValCast.lean:125:15: This simp argument is unused:
-  map_sub
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [map_mul, map_pow, map_add, map_natCast, (hent 0).1, (hent 0).2]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/ValCast.lean:135:19: This simp argument is unused:
-  hχ
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [hc, val_cast hlM, Units.val_mul, mul_inv_rev, inv_inv, map_mul]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/ValCast.lean:138:83: This simp argument is unused:
-  Matrix.head_cons
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.cons_val_fin_one, map_mul, hχ]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [165456/165483] Built Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.IsCompactIntegralCoefficients (165s)
-warning: src/Development/AutomorphicArithmetic/Foundations/IwahoriReduction/NormProducts/IsCompactIntegralCoefficients.lean:9:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ClassInvariantDescentCoprimeLevelModPow.lean:238:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -72,35 +142,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [165457/165483] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.EulerFactorBounds.ProdPairs (178s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/ProdPairs.lean:131:58: This simp argument is unused:
-  Matrix.head_cons
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Matrix.cons_val_zero, Matrix.cons_val_one, Nat.cast_mul, ZMod.natCast_val, ZMod.cast_id', id]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [165458/165483] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.EulerFactorBounds.XiHecke (162s)
-⚠ [165459/165483] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.EulerFactorBounds.RepSlD (162s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/RepSlD.lean:82:15: This simp argument is unused:
-  Pi.sub_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Pi.smul_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [165460/165484] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.EulerFactorBounds.CndIff (160s)
-✔ [165461/165484] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.EulerFactorBounds.LiftOk (168s)
-⚠ [165462/165485] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.EulerFactorBounds.SRel0 (164s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/SRel0.lean:30:10: This simp argument is unused:
-  mul_comm
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [mul_left_comm]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [165463/165486] Built Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeLevelRows.ExistsRowsHeckeCompatibleLevelPrimePow (188s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeLevelRows/ExistsRowsHeckeCompatibleLevelPrimePow.lean:44:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ClassInvariantDescentCoprimeLevelModPow.lean:239:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -108,7 +150,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeLevelRows/ExistsRowsHeckeCompatibleLevelPrimePow.lean:45:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ClassInvariantDescentCoprimeLevelModPow.lean:240:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -116,45 +158,3 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeLevelRows/ExistsRowsHeckeCompatibleLevelPrimePow.lean:54:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-⚠ [165464/165487] Built Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeLevelRows.HeckeMatrixMemGammaZeroInfAndExistsUnitInv (190s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeckeLevelRows/HeckeMatrixMemGammaZeroInfAndExistsUnitInv.lean:48:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [165465/165488] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.EulerFactorBounds.HeckeInv (182s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/HeckeInv.lean:56:128: This simp argument is unused:
-  Matrix.head_cons
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Matrix.SpecialLinearGroup.coe_mul, Matrix.SpecialLinearGroup.coe_inv, Matrix.adjugate_fin_two,
-    Matrix.mul_apply, Fin.sum_univ_two, Matrix.of_apply, Matrix.cons_val', Matrix.cons_val_zero, Matrix.cons_val_one,
-    Matrix.empty_val', Matrix.cons_val_fin_one]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [165466/165491] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.EulerFactorBounds.LineCoh (180s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/LineCoh.lean:285:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/LineCoh.lean:310:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [165467/165491] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.EulerFactorBounds.GalAct (186s)
-✔ [165468/165491] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.EulerFactorBounds.OrbitSum (195s)
-✔ [165469/165492] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobDenseOffFinite (5.5s)
