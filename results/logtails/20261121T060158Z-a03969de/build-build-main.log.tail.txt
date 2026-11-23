@@ -1,9 +1,32 @@
-  apply GlobalTheory.HeckeFamilyMatrices.hecke_semisimple_at_newform <;> assumption)` does nothing
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ColemanNormOperatorIterateSuccCongrFrobeniusStatement.lean:7:53: Unused tactic linter: `exact GlobalTheory.normOp_iterate_congr` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [165086/165111] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.EichlerShimuraKummerModularUnit (14s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/EichlerShimuraKummerModularUnit.lean:61:36: `zero_le'` has been deprecated: Use `zero_le` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/EichlerShimuraKummerModularUnit.lean:105:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ColemanNormOperatorIterateSuccCongrFrobeniusStatement.lean:7:95: Unused tactic linter: `(intros; apply GlobalTheory.normOp_iterate_congr <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [165132/165186] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsColemanLevelRingBasisOneAddXPowStatement (5.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsColemanLevelRingBasisOneAddXPowStatement.lean:6:113: Variable name `hp` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hp
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsColemanLevelRingBasisOneAddXPowStatement.lean:7:46: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsColemanLevelRingBasisOneAddXPowStatement.lean:7:81: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsColemanLevelRingBasisOneAddXPowStatement.lean:7:46: Unused tactic linter: `exact GlobalTheory.Col.lev_basis` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsColemanLevelRingBasisOneAddXPowStatement.lean:7:81: Unused tactic linter: `(intros; apply GlobalTheory.Col.lev_basis <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [165133/165187] Built Development.AbelianVarietyTheory.Definitions.Foundations.ColMeas (9.0s)
+⚠ [165134/165192] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.OneAddXPowSubOneMem (19s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/OneAddXPowSubOneMem.lean:55:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -11,7 +34,10 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/EichlerShimuraKummerModularUnit.lean:106:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/OneAddXPowSubOneMem.lean:88:12: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/OneAddXPowSubOneMem.lean:142:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -19,7 +45,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/EichlerShimuraKummerModularUnit.lean:107:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/OneAddXPowSubOneMem.lean:164:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -27,134 +53,108 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [165087/165112] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.TwoDimRepQuadraticRelation (16s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TwoDimRepQuadraticRelation.lean:52:20: `Finsupp.finset_sum_apply` has been deprecated: Use `Finsupp.finsetSum_apply` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TwoDimRepQuadraticRelation.lean:71:12: This simp argument is unused:
-  Finsupp.single_apply
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/OneAddXPowSubOneMem.lean:165:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [165135/165196] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFrobEqMulField (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsFrobEqMulField.lean:133:26: This simp argument is unused:
+  Matrix.mul_smul
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [Ne.symm h]
+  [apply] simp [Matrix.mul_add, map_pow, map_natCast, φ]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TwoDimRepQuadraticRelation.lean:118:33: This simp argument is unused:
-  smul_mul_smul_comm
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsFrobEqMulField.lean:144:31: Variable name `hp` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hp
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsFrobEqMulField.lean:244:28: This simp argument is unused:
+  Matrix.mul_smul
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [mul_sub, sub_mul, one_mul, mul_one, smul_mul_assoc, mul_smul_comm] at e1
+  [apply] simp [Matrix.mul_add, map_pow, map_natCast, φ]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TwoDimRepQuadraticRelation.lean:142:41: This simp argument is unused:
-  mul_zero
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [hx, trace_zero, zero_mul, sub_self, zero_smul, add_zero, sub_zero] at this
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TwoDimRepQuadraticRelation.lean:152:51: This simp argument is unused:
-  Matrix.mul_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Fin.sum_univ_two, Matrix.single_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TwoDimRepQuadraticRelation.lean:152:69: This simp argument is unused:
-  Fin.sum_univ_two
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.mul_apply, Matrix.single_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TwoDimRepQuadraticRelation.lean:152:87: This simp argument is unused:
-  Matrix.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.mul_apply, Fin.sum_univ_two]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TwoDimRepQuadraticRelation.lean:155:51: This simp argument is unused:
-  Matrix.mul_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Fin.sum_univ_two]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TwoDimRepQuadraticRelation.lean:155:69: This simp argument is unused:
-  Fin.sum_univ_two
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.mul_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TwoDimRepQuadraticRelation.lean:156:66: This simp argument is unused:
-  Fin.sum_univ_two
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.trace, Matrix.single_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TwoDimRepQuadraticRelation.lean:156:84: This simp argument is unused:
-  Matrix.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.trace, Fin.sum_univ_two]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TwoDimRepQuadraticRelation.lean:157:66: This simp argument is unused:
-  Fin.sum_univ_two
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.trace, Matrix.single_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TwoDimRepQuadraticRelation.lean:157:84: This simp argument is unused:
-  Matrix.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.trace, Fin.sum_univ_two]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TwoDimRepQuadraticRelation.lean:212:69: This simp argument is unused:
-  Matrix.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Fin.sum_univ_two, Matrix.one_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TwoDimRepQuadraticRelation.lean:212:90: This simp argument is unused:
-  Matrix.one_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Fin.sum_univ_two, Matrix.single_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [165088/165112] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalMulApply (64s)
-✔ [165089/165114] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumActUpperRep (60s)
-✔ [165090/165119] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.MobToGQScalar (67s)
-⚠ [165091/165128] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.EichlerShimuraKummerModularUnitStatement (5.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/EichlerShimuraKummerModularUnitStatement.lean:8:64: this tactic is never executed
+⚠ [165136/165196] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.InertiaFixedValuationEqZpowPrimeValuationStatement (107s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/InertiaFixedValuationEqZpowPrimeValuationStatement.lean:9:68: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/EichlerShimuraKummerModularUnitStatement.lean:8:117: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/InertiaFixedValuationEqZpowPrimeValuationStatement.lean:9:125: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/EichlerShimuraKummerModularUnitStatement.lean:8:64: Unused tactic linter: `exact GlobalTheory.KZ.ESFun.eichler_shimura_kummer` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/InertiaFixedValuationEqZpowPrimeValuationStatement.lean:9:68: Unused tactic linter: `exact GlobalTheory.InertiaFieldUnram.valuation_eq_zpow` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/EichlerShimuraKummerModularUnitStatement.lean:8:117: Unused tactic linter: `(intros; apply GlobalTheory.KZ.ESFun.eichler_shimura_kummer <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/InertiaFixedValuationEqZpowPrimeValuationStatement.lean:9:125: Unused tactic linter: `(intros; apply GlobalTheory.InertiaFieldUnram.valuation_eq_zpow <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [165092/165131] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.TwoDimRepQuadraticRelationStatement (5.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TwoDimRepQuadraticRelationStatement.lean:9:80: this tactic is never executed
+⚠ [165137/165200] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsKummerElementFixedFieldClosedSubgroupStatement (104s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsKummerElementFixedFieldClosedSubgroupStatement.lean:9:53: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TwoDimRepQuadraticRelationStatement.lean:9:149: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsKummerElementFixedFieldClosedSubgroupStatement.lean:9:95: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TwoDimRepQuadraticRelationStatement.lean:9:80: Unused tactic linter: `exact GlobalTheory.CayleyHamiltonId.isotypic_of_quadratic_relation` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsKummerElementFixedFieldClosedSubgroupStatement.lean:9:53: Unused tactic linter: `exact GlobalTheory.KumFix.exists_kumVal` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/TwoDimRepQuadraticRelationStatement.lean:9:149: Unused tactic linter: `(intros;
-  apply GlobalTheory.CayleyHamiltonId.isotypic_of_quadratic_relation <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsKummerElementFixedFieldClosedSubgroupStatement.lean:9:95: Unused tactic linter: `(intros; apply GlobalTheory.KumFix.exists_kumVal <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [165093/165133] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeOperatorCommGaloisActionModularTower (185s)
+⚠ [165138/165200] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsClosedInertiaCyclotomicKernel (100s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsClosedInertiaCyclotomicKernel.lean:16:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsClosedInertiaCyclotomicKernel.lean:51:50: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsClosedInertiaCyclotomicKernel.lean:67:58: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsClosedInertiaCyclotomicKernel.lean:68:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsClosedInertiaCyclotomicKernel.lean:69:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsClosedInertiaCyclotomicKernel.lean:70:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsClosedInertiaCyclotomicKernel.lean:67:58: Unused tactic linter: `assumption` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsClosedInertiaCyclotomicKernel.lean:68:4: Unused tactic linter: `(intros; apply _root_.GlobalTheory.ContinuousZModPow.main <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsClosedInertiaCyclotomicKernel.lean:69:4: Unused tactic linter: `(intros;
+  apply @_root_.GlobalTheory.ContinuousZModPow.main <;>
+    first
+    | assumption
+    | infer_instance)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsClosedInertiaCyclotomicKernel.lean:70:4: Unused tactic linter: `(intros; exact _root_.GlobalTheory.ContinuousZModPow.main ..)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [165139/165203] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.UnitBallSubring (6.1s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/UnitBallSubring.lean:7:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/UnitBallSubring.lean:13:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/UnitBallSubring.lean:21:18: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [165140/165205] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormLeOneOfIsIntegralBis (5.4s)
+⚠ [165141/165205] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.EichlerShimuraFrobeniusQuadraticModPrimePow (119s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/EichlerShimuraFrobeniusQuadraticModPrimePow.lean:46:36: `zero_le'` has been deprecated: Use `zero_le` instead
