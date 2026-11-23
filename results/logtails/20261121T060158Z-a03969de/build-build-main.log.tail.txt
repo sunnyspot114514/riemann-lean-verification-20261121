@@ -1,113 +1,43 @@
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/BorelHeckeBounds/HeckeShiftSums/SfiniteOfFinite.lean:111:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/BorelHeckeBounds/HeckeShiftSums/SfiniteOfFinite.lean:112:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/BorelHeckeBounds/HeckeShiftSums/SfiniteOfFinite.lean:113:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [163679/163693] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.HermitianTwists.HolTwo (238s)
-⚠ [163680/163694] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.AutomorphicRankinSelberg.Deplete (239s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/AutomorphicRankinSelberg/Deplete.lean:96:59: This simp argument is unused:
-  mul_zero
+  Matrix.vecMul
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [hc, hχ0 p hpL, hψu p hpL, hmul, zero_mul, zero_add]
+  [apply] simp [Matrix.mul_apply, dotProduct, Fin.sum_univ_two, Matrix.det_fin_two]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [163681/163695] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.HermitianTwists.Descend2 (240s)
-⚠ [163682/163696] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.HermitianTwists.CuspZero (235s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/HermitianTwists/CuspZero.lean:24:2: Try this: 
-  haveI̵
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/AutomorphicNewformOfHyp.lean:67:73: This simp argument is unused:
+  dotProduct
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.mul_apply, Matrix.vecMul, Fin.sum_univ_two, Matrix.det_fin_two]
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [163683/163698] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.HermitianTwists.LowTwo (239s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/HermitianTwists/LowTwo.lean:14:58: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [163693/163707] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.SpectralOperatorNorms.Cix (195s)
+✔ [163694/163707] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.HermitianTwists.UnitTw (253s)
+✔ [163695/163709] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.HermitianTwists.NewHerm (253s)
+⚠ [163696/163709] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.HermitianTwists.PolyInj (253s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/HermitianTwists/PolyInj.lean:18:76: This simp argument is unused:
+  ← Multiset.map_map
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Multiset.bind_def, Multiset.pure_def, Multiset.bind_singleton] at h1
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/HermitianTwists/PolyInj.lean:23:6: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/HermitianTwists/LowTwo.lean:21:58: this tactic is never executed
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/HermitianTwists/PolyInj.lean:24:6: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/HermitianTwists/LowTwo.lean:14:30: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/HermitianTwists/LowTwo.lean:21:30: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/HermitianTwists/LowTwo.lean:27:30: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/HermitianTwists/LowTwo.lean:27:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/HermitianTwists/LowTwo.lean:33:30: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/HermitianTwists/LowTwo.lean:33:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/HermitianTwists/LowTwo.lean:14:58: Unused tactic linter: `ring_nf` does nothing
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/HermitianTwists/PolyInj.lean:23:6: Unused tactic linter: `simp [hq.ne']` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/HermitianTwists/LowTwo.lean:21:58: Unused tactic linter: `ring_nf` does nothing
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/HermitianTwists/PolyInj.lean:24:6: Unused tactic linter: `exact_mod_cast (Real.rpow_pos_of_pos hq' _).ne'` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [163684/163698] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.HermitianTwists.SatHerm (233s)
-✔ [163685/163700] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.HermitianTwists.HermOf (225s)
-⚠ [163686/163700] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IwahoriHeckeInjectivity.IdempotentTraces.FiniteAdeleInclusionInjective (244s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriHeckeInjectivity/IdempotentTraces/FiniteAdeleInclusionInjective.lean:141:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IwahoriHeckeInjectivity.IdempotentTraces.FiniteAdeleInclusionInjective.0.exists_heckeAt_transport_of_linearIsometryEquiv`:
-  [μ₂.IsHaarMeasure]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [μ₂.IsHaarMeasure] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriHeckeInjectivity/IdempotentTraces/FiniteAdeleInclusionInjective.lean:198:30: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriHeckeInjectivity/IdempotentTraces/FiniteAdeleInclusionInjective.lean:209:13: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriHeckeInjectivity/IdempotentTraces/FiniteAdeleInclusionInjective.lean:209:45: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriHeckeInjectivity/IdempotentTraces/FiniteAdeleInclusionInjective.lean:246:15: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriHeckeInjectivity/IdempotentTraces/FiniteAdeleInclusionInjective.lean:246:47: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriHeckeInjectivity/IdempotentTraces/FiniteAdeleInclusionInjective.lean:270:15: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriHeckeInjectivity/IdempotentTraces/FiniteAdeleInclusionInjective.lean:270:47: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriHeckeInjectivity/IdempotentTraces/FiniteAdeleInclusionInjective.lean:343:2: Try this: 
+⚠ [163697/163712] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.HermitianTwists.EigOfLow (254s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/HermitianTwists/EigOfLow.lean:13:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -115,8 +45,8 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [163687/163700] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.AutomorphicRankinSelberg.CharEq2 (9.0s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/AutomorphicRankinSelberg/CharEq2.lean:9:2: Try this: 
+⚠ [163698/163712] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IwahoriHeckeInjectivity.IdempotentTraces.CoreInd (252s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/IwahoriHeckeInjectivity/IdempotentTraces/CoreInd.lean:145:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -124,7 +54,29 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/AutomorphicRankinSelberg/CharEq2.lean:12:2: Try this: 
+✔ [163699/163712] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.NewformTwistNorms.MultisetEqOfProdEq (224s)
+⚠ [163700/163712] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.NewformTwistNorms.OrdinaryFlagInertiaWeights (219s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/OrdinaryFlagInertiaWeights.lean:38:43: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [mul_zpow, mul_comm, mul_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/OrdinaryFlagInertiaWeights.lean:87:56: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/OrdinaryFlagInertiaWeights.lean:87:101: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/OrdinaryFlagInertiaWeights.lean:87:56: Unused tactic linter: `exact GlobalTheory.recFrob_root_inv_algSat` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/OrdinaryFlagInertiaWeights.lean:87:101: Unused tactic linter: `(intros; apply GlobalTheory.recFrob_root_inv_algSat <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [163701/163717] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.NewformTwistNorms.MemKLevOneOfMemK1G (221s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/MemKLevOneOfMemK1G.lean:61:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -132,19 +84,22 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/AutomorphicRankinSelberg/CharEq2.lean:21:42: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/AutomorphicRankinSelberg/CharEq2.lean:27:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-✔ [163688/163702] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.AutomorphicRankinSelberg.TEq (14s)
-⚠ [163689/163703] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.AutomorphicRankinSelberg.PetRe (13s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/AutomorphicRankinSelberg/PetRe.lean:28:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-⚠ [163690/163704] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.BorelHeckeBounds.HeckeShiftSums.ProjInner (54s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/BorelHeckeBounds/HeckeShiftSums/ProjInner.lean:126:2: Try this: 
+⚠ [163702/163717] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.NewformTwistNorms.ExistsCuspidalSatakeAtPrimeToLevelOfNewform (220s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/ExistsCuspidalSatakeAtPrimeToLevelOfNewform.lean:42:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/ExistsCuspidalSatakeAtPrimeToLevelOfNewform.lean:163:61: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/ExistsCuspidalSatakeAtPrimeToLevelOfNewform.lean:163:111: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/ExistsCuspidalSatakeAtPrimeToLevelOfNewform.lean:163:61: Unused tactic linter: `exact GlobalTheory.NewformAutAtL.newformAut_atL` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/ExistsCuspidalSatakeAtPrimeToLevelOfNewform.lean:163:111: Unused tactic linter: `(intros; apply GlobalTheory.NewformAutAtL.newformAut_atL <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [163703/163717] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.NewformTwistNorms.NewformOfAdmissibleTwist (225s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/NewformOfAdmissibleTwist.lean:71:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -152,9 +107,54 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/BorelHeckeBounds/HeckeShiftSums/ProjInner.lean:163:47: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/NewformOfAdmissibleTwist.lean:72:2: Try this: 
+  haveI̵
 
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/InductionEstimates/BorelHeckeBounds/HeckeShiftSums/ProjInner.lean:163:78: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/NewformOfAdmissibleTwist.lean:164:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/NewformOfAdmissibleTwist.lean:179:47: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/NewformOfAdmissibleTwist.lean:179:83: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/NewformOfAdmissibleTwist.lean:179:47: Unused tactic linter: `exact GlobalTheory.Ord2.twNewform` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/NewformOfAdmissibleTwist.lean:179:83: Unused tactic linter: `(intros; apply GlobalTheory.Ord2.twNewform <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [163704/163717] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.NewformTwistNorms.NewVec (237s)
+✔ [163705/163719] Built Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.PRepNew (212s)
+⚠ [163706/163721] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.NewformTwistNorms.WeilDeligneFrobeniusEigenvalueOfFullFlag (229s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/WeilDeligneFrobeniusEigenvalueOfFullFlag.lean:71:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/WeilDeligneFrobeniusEigenvalueOfFullFlag.lean:123:61: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/WeilDeligneFrobeniusEigenvalueOfFullFlag.lean:123:111: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/WeilDeligneFrobeniusEigenvalueOfFullFlag.lean:123:61: Unused tactic linter: `exact GlobalTheory.FlagFrob.isRoot_charPol_wdAt` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/NewformTwistNorms/WeilDeligneFrobeniusEigenvalueOfFullFlag.lean:123:111: Unused tactic linter: `(intros; apply GlobalTheory.FlagFrob.isRoot_charPol_wdAt <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
