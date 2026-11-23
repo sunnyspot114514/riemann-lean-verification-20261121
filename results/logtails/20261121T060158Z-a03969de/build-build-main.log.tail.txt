@@ -1,160 +1,160 @@
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [162446/162530] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CuspidalTwists.PYCoin (12s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PYCoin.lean:49:52: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PYCoin.lean:49:105: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PYCoin.lean:49:52: Unused tactic linter: `exact (Matrix.mul_eq_one_comm_of_card_eq rfl).mp h` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PYCoin.lean:49:105: Unused tactic linter: `exact (Matrix.mul_eq_one_comm_of_equiv (Equiv.refl _)).mp h` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PYCoin.lean:128:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-✔ [162447/162530] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CuspidalTwists.TnOne (44s)
-✔ [162448/162530] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ScatteringLimits.Carries (7.7s)
-✔ [162449/162530] Built Development.WeilBound.RepresentationTheoryGL.TwistedFactors.TruncatedCuspIrreducibility.IsOrthogonalProjectionTwoLines (10s)
-⚠ [162450/162530] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CuspidalTwists.PRedTanA (17s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PRedTanA.lean:41:76: This simp argument is unused:
-  h3 0 1 (by decide)
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.mul_apply, Fin.sum_univ_four, adj_apply, sgn, Fin.rev, h2, h3 0 2 (by decide),
-    h3 0 3 (by decide), h3 1 2 (by decide), h3 1 3 (by decide), h3 2 3 (by decide)] at this
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PRedTanA.lean:42:6: This simp argument is unused:
-  h3 0 3 (by decide)
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.mul_apply, Fin.sum_univ_four, adj_apply, sgn, Fin.rev, h2, h3 0 1 (by decide),
-    h3 0 2 (by decide), h3 1 2 (by decide), h3 1 3 (by decide), h3 2 3 (by decide)] at this
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PRedTanA.lean:42:46: This simp argument is unused:
-  h3 1 3 (by decide)
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.mul_apply, Fin.sum_univ_four, adj_apply, sgn, Fin.rev, h2, h3 0 1 (by decide),
-    h3 0 2 (by decide), h3 0 3 (by decide), h3 1 2 (by decide), h3 2 3 (by decide)] at this
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PRedTanA.lean:42:66: This simp argument is unused:
-  h3 2 3 (by decide)
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.mul_apply, Fin.sum_univ_four, adj_apply, sgn, Fin.rev, h2, h3 0 1 (by decide),
-    h3 0 2 (by decide), h3 0 3 (by decide), h3 1 2 (by decide), h3 1 3 (by decide)] at this
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PRedTanA.lean:48:28: This simp argument is unused:
-  Matrix.one_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [cmp_apply, xMA, Matrix.single_apply, h2, h32, h3 0 1 (by decide), h3 2 3 (by decide)]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PRedTanA.lean:48:46: This simp argument is unused:
-  Matrix.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [cmp_apply, xMA, Matrix.one_apply, h2, h32, h3 0 1 (by decide), h3 2 3 (by decide)]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/PRedTanA.lean:246:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [162451/162530] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CuspidalTwists.ComplexConjugationsConjugateCaseThree (37s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:32:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:33:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:97:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CuspidalTwists.ComplexConjugationsConjugateCaseThree.0.exists_lift_of_mem_fixing_case_three`:
-  [IsAlgClosure ℚ Ω]
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramFormIntegralLatticeProperties.lean:32:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.FormLat.bf_smul_right`:
+  [NumberField F]
+  [DecidableEq κ]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsAlgClosure ℚ Ω] in theorem ...
+  omit [NumberField F] [DecidableEq κ] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:100:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CuspidalTwists.ComplexConjugationsConjugateCaseThree.0.restrict_mem_fixing_subgroup_case_three`:
-  [IsAlgClosure ℚ Ω]
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramFormIntegralLatticeProperties.lean:42:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.FormLat.mem_LL`:
+  [NumberField F]
+  [Fintype κ]
+  [DecidableEq κ]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsAlgClosure ℚ Ω] in theorem ...
+  omit [NumberField F] [Fintype κ] [DecidableEq κ] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:103:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CuspidalTwists.ComplexConjugationsConjugateCaseThree.0.restrict_inertia_mem_case_three`:
-  [IsAlgClosure ℚ Ω]
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramFormIntegralLatticeProperties.lean:45:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.FormLat.intCast_isIntegral`:
+  [NumberField F]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsAlgClosure ℚ Ω] in theorem ...
+  omit [NumberField F] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:182:6: this tactic is never executed
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramFormIntegralLatticeProperties.lean:48:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.FormLat.bf_int`:
+  [DecidableEq κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq κ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramFormIntegralLatticeProperties.lean:59:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.FormLat.qf_single`:
+  [NumberField F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramFormIntegralLatticeProperties.lean:78:14: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h, isIntegral_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramFormIntegralLatticeProperties.lean:89:14: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h, isIntegral_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramFormIntegralLatticeProperties.lean:138:68: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:183:6: this tactic is never executed
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramFormIntegralLatticeProperties.lean:138:125: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:184:6: this tactic is never executed
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramFormIntegralLatticeProperties.lean:138:68: Unused tactic linter: `exact GlobalTheory.HilbertThetaSeries.formLatticeProps` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramFormIntegralLatticeProperties.lean:138:125: Unused tactic linter: `(intros; apply GlobalTheory.HilbertThetaSeries.formLatticeProps <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [162465/162530] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaussSumFiltrations.EvenPosGramQuadFormTotallyPositiveProperness (152s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramQuadFormTotallyPositiveProperness.lean:13:0: automatically included section variable(s) unused in theorem `GlobalTheory.TPos.reAt_eq`:
+  [NumberField F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramQuadFormTotallyPositiveProperness.lean:87:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramQuadFormTotallyPositiveProperness.lean:93:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramQuadFormTotallyPositiveProperness.lean:149:16: `DistribMulAction.toAddMonoidHom` has been deprecated: Use `DistribSMul.toAddMonoidHom` instead
+
+Note: The updated constant has a different type:
+  {M : Type u_1} → (A : Type u_7) → [inst : AddZeroClass A] → [DistribSMul M A] → M → A →+ A
+instead of
+  {M : Type u_1} → (A : Type u_7) → [inst : Monoid M] → [inst_1 : AddMonoid A] → [DistribMulAction M A] → M → A →+ A
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.toAddMonoidHom` to `DistribSMul.toAddMonoidHom x`).
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramQuadFormTotallyPositiveProperness.lean:151:20: `DistribMulAction.toAddMonoidHom` has been deprecated: Use `DistribSMul.toAddMonoidHom` instead
+
+Note: The updated constant has a different type:
+  {M : Type u_1} → (A : Type u_7) → [inst : AddZeroClass A] → [DistribSMul M A] → M → A →+ A
+instead of
+  {M : Type u_1} → (A : Type u_7) → [inst : Monoid M] → [inst_1 : AddMonoid A] → [DistribMulAction M A] → M → A →+ A
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.toAddMonoidHom` to `DistribSMul.toAddMonoidHom x`).
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramQuadFormTotallyPositiveProperness.lean:153:23: `DistribMulAction.toAddMonoidHom` has been deprecated: Use `DistribSMul.toAddMonoidHom` instead
+
+Note: The updated constant has a different type:
+  {M : Type u_1} → (A : Type u_7) → [inst : AddZeroClass A] → [DistribSMul M A] → M → A →+ A
+instead of
+  {M : Type u_1} → (A : Type u_7) → [inst : Monoid M] → [inst_1 : AddMonoid A] → [DistribMulAction M A] → M → A →+ A
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.toAddMonoidHom` to `DistribSMul.toAddMonoidHom x`).
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramQuadFormTotallyPositiveProperness.lean:154:22: `DistribMulAction.toAddMonoidHom` has been deprecated: Use `DistribSMul.toAddMonoidHom` instead
+
+Note: The updated constant has a different type:
+  {M : Type u_1} → (A : Type u_7) → [inst : AddZeroClass A] → [DistribSMul M A] → M → A →+ A
+instead of
+  {M : Type u_1} → (A : Type u_7) → [inst : Monoid M] → [inst_1 : AddMonoid A] → [DistribMulAction M A] → M → A →+ A
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.toAddMonoidHom` to `DistribSMul.toAddMonoidHom x`).
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramQuadFormTotallyPositiveProperness.lean:155:51: `DistribMulAction.toAddMonoidHom` has been deprecated: Use `DistribSMul.toAddMonoidHom` instead
+
+Note: The updated constant has a different type:
+  {M : Type u_1} → (A : Type u_7) → [inst : AddZeroClass A] → [DistribSMul M A] → M → A →+ A
+instead of
+  {M : Type u_1} → (A : Type u_7) → [inst : Monoid M] → [inst_1 : AddMonoid A] → [DistribMulAction M A] → M → A →+ A
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.toAddMonoidHom` to `DistribSMul.toAddMonoidHom x`).
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramQuadFormTotallyPositiveProperness.lean:157:23: `DistribMulAction.toAddMonoidHom` has been deprecated: Use `DistribSMul.toAddMonoidHom` instead
+
+Note: The updated constant has a different type:
+  {M : Type u_1} → (A : Type u_7) → [inst : AddZeroClass A] → [DistribSMul M A] → M → A →+ A
+instead of
+  {M : Type u_1} → (A : Type u_7) → [inst : Monoid M] → [inst_1 : AddMonoid A] → [DistribMulAction M A] → M → A →+ A
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.toAddMonoidHom` to `DistribSMul.toAddMonoidHom x`).
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramQuadFormTotallyPositiveProperness.lean:173:68: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:182:6: Unused tactic linter: `exact absurd (neg_eq_iff_eq_neg.1 e).symm hn` does nothing
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramQuadFormTotallyPositiveProperness.lean:173:125: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramQuadFormTotallyPositiveProperness.lean:173:68: Unused tactic linter: `exact GlobalTheory.HilbertThetaSeries.qf_totPos_proper` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:183:6: Unused tactic linter: `exact absurd (neg_inj.1 e).symm h1` does nothing
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/EvenPosGramQuadFormTotallyPositiveProperness.lean:173:125: Unused tactic linter: `(intros; apply GlobalTheory.HilbertThetaSeries.qf_totPos_proper <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:184:6: Unused tactic linter: `exact absurd (neg_inj.1 e) h1` does nothing
+⚠ [162466/162530] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaussSumFiltrations.GenByTranslationsInversions (147s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/GenByTranslationsInversions.lean:14:10: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/GenByTranslationsInversions.lean:27:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.GeneratorMatrix.val_wm`:
+  [NumberField F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/GenByTranslationsInversions.lean:30:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.GeneratorMatrix.val_aff`:
+  [NumberField F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NumberField F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/GenByTranslationsInversions.lean:53:37: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [162467/162530] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaussSumFiltrations.HilbertSlashEvalSmoothWeightLowering (147s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/HilbertSlashEvalSmoothWeightLowering.lean:70:6: `Set.setOf_forall` has been deprecated: Use `Set.ofPred_forall` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/HilbertSlashEvalSmoothWeightLowering.lean:191:61: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/HilbertSlashEvalSmoothWeightLowering.lean:191:111: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/HilbertSlashEvalSmoothWeightLowering.lean:191:61: Unused tactic linter: `exact GlobalTheory.HilbertThetaSeries.arch_lift` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:469:2: Try this: 
-  haveI̵
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/HilbertSlashEvalSmoothWeightLowering.lean:191:111: Unused tactic linter: `(intros; apply GlobalTheory.HilbertThetaSeries.arch_lift <;> assumption)` does nothing
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:472:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CuspidalTwists/ComplexConjugationsConjugateCaseThree.lean:488:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
