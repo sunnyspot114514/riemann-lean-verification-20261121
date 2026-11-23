@@ -1,121 +1,49 @@
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/Gl2AdelicDoubleCosetDecompositionTotallyReal.lean:91:63: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/Gl2AdelicDoubleCosetDecompositionTotallyReal.lean:91:115: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/Gl2AdelicDoubleCosetDecompositionTotallyReal.lean:91:63: Unused tactic linter: `exact GlobalTheory.HilbertThetaSeries.finite_reps` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/Gl2AdelicDoubleCosetDecompositionTotallyReal.lean:91:115: Unused tactic linter: `(intros; apply GlobalTheory.HilbertThetaSeries.finite_reps <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [162488/162534] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaussSumFiltrations.AdelicLiftKFiniteOfIsLift (233s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/AdelicLiftKFiniteOfIsLift.lean:131:75: this tactic is never executed
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/ThetaSeriesHolomorphicQExpansionOfBoundedCoeff.lean:101:64: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/AdelicLiftKFiniteOfIsLift.lean:131:139: this tactic is never executed
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/ThetaSeriesHolomorphicQExpansionOfBoundedCoeff.lean:101:117: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/AdelicLiftKFiniteOfIsLift.lean:131:75: Unused tactic linter: `exact GlobalTheory.HilbertThetaSeries.LiftCpt.lift_cpt_finite` does nothing
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/ThetaSeriesHolomorphicQExpansionOfBoundedCoeff.lean:101:64: Unused tactic linter: `exact GlobalTheory.HilbertThetaSeries.th_expansion` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/AdelicLiftKFiniteOfIsLift.lean:131:139: Unused tactic linter: `(intros;
-  apply GlobalTheory.HilbertThetaSeries.LiftCpt.lift_cpt_finite <;> assumption)` does nothing
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/ThetaSeriesHolomorphicQExpansionOfBoundedCoeff.lean:101:117: Unused tactic linter: `(intros; apply GlobalTheory.HilbertThetaSeries.th_expansion <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [162489/162534] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaussSumFiltrations.StabilizerEqScalarMulCongruenceMulFinset (234s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/StabilizerEqScalarMulCongruenceMulFinset.lean:162:72: this tactic is never executed
+⚠ [162505/162539] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaussSumFiltrations.LatticeGaussSumTwistDualEqIndicator (234s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/LatticeGaussSumTwistDualEqIndicator.lean:141:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/LatticeGaussSumTwistDualEqIndicator.lean:185:71: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/StabilizerEqScalarMulCongruenceMulFinset.lean:162:133: this tactic is never executed
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/LatticeGaussSumTwistDualEqIndicator.lean:185:131: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/StabilizerEqScalarMulCongruenceMulFinset.lean:162:72: Unused tactic linter: `exact GlobalTheory.HilbertThetaSeries.StabFin.finite_index` does nothing
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/LatticeGaussSumTwistDualEqIndicator.lean:185:71: Unused tactic linter: `exact GlobalTheory.HilbertThetaSeries.gaussSum_dual_shift` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/StabilizerEqScalarMulCongruenceMulFinset.lean:162:133: Unused tactic linter: `(intros; apply GlobalTheory.HilbertThetaSeries.StabFin.finite_index <;> assumption)` does nothing
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/LatticeGaussSumTwistDualEqIndicator.lean:185:131: Unused tactic linter: `(intros; apply GlobalTheory.HilbertThetaSeries.gaussSum_dual_shift <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [162490/162534] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaussSumFiltrations.AdelicLiftHasModerateGrowth (236s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/AdelicLiftHasModerateGrowth.lean:133:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.LiftGrowth.mul_entry_le`:
-  [NumberField F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] in theorem ...
+⚠ [162506/162539] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaussSumFiltrations.IntegralTestFunctionFiniteFourierTransformOfOddP (221s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/IntegralTestFunctionFiniteFourierTransformOfOddP.lean:20:42: `Prime.not_unit` has been deprecated: Use `Prime.not_isUnit` instead
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/IntegralTestFunctionFiniteFourierTransformOfOddP.lean:58:40: try 'simp' instead of 'simpa'
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/AdelicLiftHasModerateGrowth.lean:211:74: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/IntegralTestFunctionFiniteFourierTransformOfOddP.lean:68:28: try 'simp' instead of 'simpa'
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/AdelicLiftHasModerateGrowth.lean:211:137: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/AdelicLiftHasModerateGrowth.lean:211:74: Unused tactic linter: `exact GlobalTheory.HilbertThetaSeries.LiftGrowth.lift_growth` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/AdelicLiftHasModerateGrowth.lean:211:137: Unused tactic linter: `(intros;
-  apply GlobalTheory.HilbertThetaSeries.LiftGrowth.lift_growth <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [162491/162534] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaussSumFiltrations.GaussSumBound (238s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/GaussSumBound.lean:85:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.GaussSum.reAt_eq`:
-  [NumberField F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/GaussSumBound.lean:89:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.GaussSum.norm_ez`:
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/GaussSumBound.lean:93:40: This simp argument is unused:
-  Complex.im_sum
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [Complex.mul_re, Complex.mul_im, Complex.re_sum, Finset.mul_sum]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/GaussSumBound.lean:109:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.GaussSum.fac_le_prod`:
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/GaussSumBound.lean:129:6: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/GaussSumBound.lean:185:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.GaussSum.exists_coord`:
-  [Fintype κ]
-  [DecidableEq κ]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype κ] [DecidableEq κ] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/GaussSumBound.lean:203:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.GaussSum.one_le_size`:
-  [IsTotallyReal F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyReal F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/GaussSumBound.lean:265:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [162492/162534] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaussSumFiltrations.DualLatticeIndexEqDiscrPowMulDetPow (239s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/DualLatticeIndexEqDiscrPowMulDetPow.lean:100:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.DualLevel.mem_LL`:
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/IntegralTestFunctionFiniteFourierTransformOfOddP.lean:91:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.GoodInv.smul_mem_LL`:
   [NumberField F]
   [Fintype κ]
   [DecidableEq κ]
@@ -123,38 +51,110 @@ consider restructuring your `variable` declarations so that the variables are no
   omit [NumberField F] [Fintype κ] [DecidableEq κ] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/DualLatticeIndexEqDiscrPowMulDetPow.lean:116:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.DualLevel.BF_eq_vecMul`:
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/IntegralTestFunctionFiniteFourierTransformOfOddP.lean:94:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.GoodInv.BF_smul_right`:
   [NumberField F]
   [DecidableEq κ]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [NumberField F] [DecidableEq κ] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/DualLatticeIndexEqDiscrPowMulDetPow.lean:239:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.GaussSumFiltrations.DualLatticeIndexEqDiscrPowMulDetPow.0.GlobalTheory.HilbertThetaSeries.DualLevel.det_smul_eq_vecMul_adjugate`:
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/IntegralTestFunctionFiniteFourierTransformOfOddP.lean:97:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.GoodInv.BF_add_right`:
   [NumberField F]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/DualLatticeIndexEqDiscrPowMulDetPow.lean:271:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.AutomorphicVarieties.GaussSumFiltrations.DualLatticeIndexEqDiscrPowMulDetPow.0.GlobalTheory.HilbertThetaSeries.DualLevel.map_intCast_transpose_of_evenPos`:
-  [NumberField F]
-  [Fintype κ]
   [DecidableEq κ]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] [Fintype κ] [DecidableEq κ] in theorem ...
+  omit [NumberField F] [DecidableEq κ] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/DualLatticeIndexEqDiscrPowMulDetPow.lean:393:78: this tactic is never executed
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/IntegralTestFunctionFiniteFourierTransformOfOddP.lean:193:40: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/IntegralTestFunctionFiniteFourierTransformOfOddP.lean:225:21: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/IntegralTestFunctionFiniteFourierTransformOfOddP.lean:260:67: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/DualLatticeIndexEqDiscrPowMulDetPow.lean:393:145: this tactic is never executed
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/IntegralTestFunctionFiniteFourierTransformOfOddP.lean:260:123: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/DualLatticeIndexEqDiscrPowMulDetPow.lean:393:78: Unused tactic linter: `exact GlobalTheory.HilbertThetaSeries.DualLevel.dual_level_index` does nothing
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/IntegralTestFunctionFiniteFourierTransformOfOddP.lean:260:67: Unused tactic linter: `exact GlobalTheory.HilbertThetaSeries.GoodInv.good_wT` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/DualLatticeIndexEqDiscrPowMulDetPow.lean:393:145: Unused tactic linter: `(intros;
-  apply GlobalTheory.HilbertThetaSeries.DualLevel.dual_level_index <;> assumption)` does nothing
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/IntegralTestFunctionFiniteFourierTransformOfOddP.lean:260:123: Unused tactic linter: `(intros; apply GlobalTheory.HilbertThetaSeries.GoodInv.good_wT <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [162493/162534] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.SpectralOperatorNorms.KillExempt (25s)
+⚠ [162507/162539] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaussSumFiltrations.LatticeNormalizedGaussSumEighthRoot (242s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/LatticeNormalizedGaussSumEighthRoot.lean:80:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/LatticeNormalizedGaussSumEighthRoot.lean:81:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/LatticeNormalizedGaussSumEighthRoot.lean:266:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/LatticeNormalizedGaussSumEighthRoot.lean:240:38: This simp argument is unused:
+  hβadd2
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hφadd, hφsmul, hβadd1, hβz1, hβz2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/LatticeNormalizedGaussSumEighthRoot.lean:380:23: `DistribMulAction.toAddMonoidHom` has been deprecated: Use `DistribSMul.toAddMonoidHom` instead
+
+Note: The updated constant has a different type:
+  {M : Type u_1} → (A : Type u_7) → [inst : AddZeroClass A] → [DistribSMul M A] → M → A →+ A
+instead of
+  {M : Type u_1} → (A : Type u_7) → [inst : Monoid M] → [inst_1 : AddMonoid A] → [DistribMulAction M A] → M → A →+ A
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.toAddMonoidHom` to `DistribSMul.toAddMonoidHom x`).
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/LatticeNormalizedGaussSumEighthRoot.lean:452:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/LatticeNormalizedGaussSumEighthRoot.lean:453:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/LatticeNormalizedGaussSumEighthRoot.lean:483:33: `DistribMulAction.toAddMonoidHom` has been deprecated: Use `DistribSMul.toAddMonoidHom` instead
+
+Note: The updated constant has a different type:
+  {M : Type u_1} → (A : Type u_7) → [inst : AddZeroClass A] → [DistribSMul M A] → M → A →+ A
+instead of
+  {M : Type u_1} → (A : Type u_7) → [inst : Monoid M] → [inst_1 : AddMonoid A] → [DistribMulAction M A] → M → A →+ A
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.toAddMonoidHom` to `DistribSMul.toAddMonoidHom x`).
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/LatticeNormalizedGaussSumEighthRoot.lean:564:70: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/LatticeNormalizedGaussSumEighthRoot.lean:564:129: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/LatticeNormalizedGaussSumEighthRoot.lean:564:70: Unused tactic linter: `exact GlobalTheory.HilbertThetaSeries.gaussSum_pow_eight` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/LatticeNormalizedGaussSumEighthRoot.lean:564:129: Unused tactic linter: `(intros; apply GlobalTheory.HilbertThetaSeries.gaussSum_pow_eight <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
