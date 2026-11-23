@@ -1,41 +1,4 @@
-Hint: Omit it from the simp argument list.
-  [apply] simp [Algebra.algebraMap_eq_smul_one, Matrix.trace_smul, htr, Finset.mul_sum, mul_assoc]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [168851/168881] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LubinTateTorsionSequenceStatement (6.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LubinTateTorsionSequenceStatement.lean:18:50: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LubinTateTorsionSequenceStatement.lean:18:89: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LubinTateTorsionSequenceStatement.lean:18:50: Unused tactic linter: `exact GlobalTheory.PZ.ltData_read_OC` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LubinTateTorsionSequenceStatement.lean:18:89: Unused tactic linter: `(intros; apply GlobalTheory.PZ.ltData_read_OC <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [168852/168881] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.LocOk (378s)
-✔ [168853/168881] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.LocDataT (377s)
-⚠ [168854/168881] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.AutomorphyLifting.SubquotientSupport.SymOfVieta (321s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/SubquotientSupport/SymOfVieta.lean:48:66: This simp argument is unused:
-  Matrix.one_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [GDet.repAlg, Matrix.charmatrix, h, Matrix.diagonal_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/SubquotientSupport/SymOfVieta.lean:48:84: This simp argument is unused:
-  Matrix.diagonal_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [GDet.repAlg, Matrix.charmatrix, h, Matrix.one_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [168855/168881] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLubinTatePeriodElement (20s)
-✔ [168856/168883] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LubinTateDcrisFrobeniusEigen (23s)
-⚠ [168857/168884] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsSemistableAtPlaceTwistCrystallineCharacter (356s)
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/IsSemistableAtPlaceTwistCrystallineCharacter.lean:58:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AdmissibleResidues/IsoSub.lean:44:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -43,7 +6,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/IsSemistableAtPlaceTwistCrystallineCharacter.lean:59:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AdmissibleResidues/IsoSub.lean:51:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -51,8 +14,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [168858/168884] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.AutomorphyLifting.SubquotientSupport.ReductionOfPolynomialElement (406s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/SubquotientSupport/ReductionOfPolynomialElement.lean:14:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AdmissibleResidues/IsoSub.lean:58:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -60,51 +22,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/SubquotientSupport/ReductionOfPolynomialElement.lean:91:30: This simp argument is unused:
-  sub_smul
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [rep_single_eq_smul]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [168859/168884] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLubinTatePeriodElementStatement (9.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLubinTatePeriodElementStatement.lean:12:51: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLubinTatePeriodElementStatement.lean:12:91: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLubinTatePeriodElementStatement.lean:12:51: Unused tactic linter: `exact GlobalTheory.LTPeriodShape.main` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLubinTatePeriodElementStatement.lean:12:91: Unused tactic linter: `(intros; apply GlobalTheory.LTPeriodShape.main <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [168860/168884] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.JEnd (411s)
-✔ [168861/168884] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.AutomorphyLifting.PolarizedLinkage.LocDataT (356s)
-✔ [168862/168884] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodRingEmbeddingProperties (15s)
-⚠ [168863/168887] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.LevRelOf (402s)
-warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LevRelOf.lean:53:8: Overlapping instance parameters in `relOf_alt`:
-
-⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.
-💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-⚠ [168864/168887] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodRingEmbeddingPropertiesStatement (8.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PeriodRingEmbeddingPropertiesStatement.lean:16:52: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PeriodRingEmbeddingPropertiesStatement.lean:16:93: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PeriodRingEmbeddingPropertiesStatement.lean:16:52: Unused tactic linter: `exact GlobalTheory.CrisToDR.exists_map` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PeriodRingEmbeddingPropertiesStatement.lean:16:93: Unused tactic linter: `(intros; apply GlobalTheory.CrisToDR.exists_map <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [168865/168887] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodConjugateNotMemFiltrationOne (31s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PeriodConjugateNotMemFiltrationOne.lean:33:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AdmissibleResidues/IsoSub.lean:60:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -112,7 +30,35 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PeriodConjugateNotMemFiltrationOne.lean:105:2: Try this: 
+⚠ [168871/168893] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.AutomorphyLifting.SubquotientSupport.LevelUA (263s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/SubquotientSupport/LevelUA.lean:59:203: Variable name `dq` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _dq
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/SubquotientSupport/LevelUA.lean:81:203: Variable name `dq` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _dq
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/SubquotientSupport/LevelUA.lean:81:297: Variable name `B'` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _B'
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [168872/168893] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.TCoreUniq (240s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TCoreUniq.lean:17:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TCoreUniq.lean:18:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -120,7 +66,24 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PeriodConjugateNotMemFiltrationOne.lean:143:2: Try this: 
+⚠ [168873/168893] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.NonemptyUnitaryHeckeParts (267s)
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/NonemptyUnitaryHeckeParts.lean:21:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/NonemptyUnitaryHeckeParts.lean:35:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/NonemptyUnitaryHeckeParts.lean:37:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -128,7 +91,15 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PeriodConjugateNotMemFiltrationOne.lean:223:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/NonemptyUnitaryHeckeParts.lean:39:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/NonemptyUnitaryHeckeParts.lean:41:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -136,7 +107,9 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PeriodConjugateNotMemFiltrationOne.lean:224:2: Try this: 
+✔ [168874/168893] Built Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.TLocDataT (331s)
+⚠ [168875/168898] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsPstAtOfIsSstAt (190s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/IsPstAtOfIsSstAt.lean:68:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -144,17 +117,44 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [168866/168889] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LubinTateFiltrationJumpAtEmbedding (16s)
-⚠ [168867/168891] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsSemistableAtPlaceTwistCrystallineCharacterStatement (188s)
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/IsSemistableAtPlaceTwistCrystallineCharacterStatement.lean:10:55: this tactic is never executed
+⚠ [168876/168898] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.IsoPick (236s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AdmissibleResidues/IsoPick.lean:19:6: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/IsSemistableAtPlaceTwistCrystallineCharacterStatement.lean:10:99: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/IsSemistableAtPlaceTwistCrystallineCharacterStatement.lean:10:55: Unused tactic linter: `exact GlobalTheory.SstTwist.isSstAt_twist` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AdmissibleResidues/IsoPick.lean:60:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/IsSemistableAtPlaceTwistCrystallineCharacterStatement.lean:10:99: Unused tactic linter: `(intros; apply GlobalTheory.SstTwist.isSstAt_twist <;> assumption)` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AdmissibleResidues/IsoPick.lean:84:35: `LinearEquiv.ofLinear` has been deprecated: Use `LinearEquiv.ofLinearMap` instead
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AdmissibleResidues/IsoPick.lean:127:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [168877/168898] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.IsoRefine (194s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AdmissibleResidues/IsoRefine.lean:9:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.IsoRefine.0.span_push`:
+  [IsTopologicalGroup H]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsTopologicalGroup H] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AdmissibleResidues/IsoRefine.lean:115:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
