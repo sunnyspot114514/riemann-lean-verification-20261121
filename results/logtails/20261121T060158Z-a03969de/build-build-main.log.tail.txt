@@ -1,111 +1,70 @@
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/TermEV.lean:186:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.TermEV.0.UpperTheory.ConvolutionTheory.C.TraceVanishing.cmp_surj`:
-  [NumberField F]
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/CosetSum.lean:174:42: `MeasureTheory.lintegral_finset_sum` has been deprecated: Use `MeasureTheory.lintegral_finsetSum` instead
+⚠ [170646/170685] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.NormOpen (238s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/NormOpen.lean:44:58: `zero_le'` has been deprecated: Use `zero_le` instead
+⚠ [170647/170685] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.MatchSmul (252s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/MatchSmul.lean:27:2: Try this: intro F E _ _ _ _ _ σ n v c hc φ f h _ _ _ _ mE mF h1 h2 h3 h4 γ hγ ν hν
+⚠ [170648/170685] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.ScalarCover (234s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/ScalarCover.lean:10:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.ScalarCover.0.UpperTheory.Gal.InertialTypesAlt.L.val_of_near`:
+  [TopologicalSpace E]
+  [IsNonarchimedeanLocalField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField F] in theorem ...
+  omit [TopologicalSpace E] [IsNonarchimedeanLocalField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/TermEV.lean:215:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/TermEV.lean:248:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/TermEV.lean:251:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/TermEV.lean:258:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/TermEV.lean:300:17: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/TermEV.lean:304:17: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/TermEV.lean:319:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/TermEV.lean:356:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/TermEV.lean:359:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/TermEV.lean:376:15: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/TermEV.lean:381:15: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/TermEV.lean:393:8: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/TermEV.lean:417:15: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/TermEV.lean:453:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/PowerSumTraces/TermEV.lean:474:15: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
-⚠ [170638/170685] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PowerMatchingTraces.WeakPow (241s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PowerMatchingTraces/WeakPow.lean:54:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PowerMatchingTraces.WeakPow.0.UpperTheory.Gal.InertialTypesAlt.G.WP.val_pow`:
-  [IsTotallyComplex F]
-  [IsTotallyComplex E]
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/ScalarCover.lean:44:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.ScalarCover.0.UpperTheory.Gal.InertialTypesAlt.L.iter_val`:
+  [ValuativeRel E]
+  [TopologicalSpace E]
+  [IsNonarchimedeanLocalField E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsTotallyComplex F] [IsTotallyComplex E] in theorem ...
+  omit [ValuativeRel E] [TopologicalSpace E] [IsNonarchimedeanLocalField E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [170639/170685] Built Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.CbcSph (245s)
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/SphericalIdeles/CbcSph.lean:16:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/ScalarCover.lean:52:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.ScalarCover.0.UpperTheory.Gal.InertialTypesAlt.L.iter_isom`:
+  [TopologicalSpace E]
+  [IsNonarchimedeanLocalField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [TopologicalSpace E] [IsNonarchimedeanLocalField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/ScalarCover.lean:144:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.ScalarCover.0.UpperTheory.Gal.InertialTypesAlt.L.near_one`:
+  [TopologicalSpace E]
+  [IsNonarchimedeanLocalField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [TopologicalSpace E] [IsNonarchimedeanLocalField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/ScalarCover.lean:146:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.ScalarCover.0.UpperTheory.Gal.InertialTypesAlt.L.near_sg`:
+  [TopologicalSpace E]
+  [IsNonarchimedeanLocalField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [TopologicalSpace E] [IsNonarchimedeanLocalField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/ScalarCover.lean:152:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.ScalarCover.0.UpperTheory.Gal.InertialTypesAlt.L.sgT_mul`:
+  [ValuativeRel E]
+  [TopologicalSpace E]
+  [IsNonarchimedeanLocalField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ValuativeRel E] [TopologicalSpace E] [IsNonarchimedeanLocalField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/ScalarCover.lean:156:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.ScalarCover.0.UpperTheory.Gal.InertialTypesAlt.L.sgT_inv`:
+  [ValuativeRel E]
+  [TopologicalSpace E]
+  [IsNonarchimedeanLocalField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ValuativeRel E] [TopologicalSpace E] [IsNonarchimedeanLocalField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/ScalarCover.lean:160:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.ScalarCover.0.UpperTheory.Gal.InertialTypesAlt.L.sgT_one`:
+  [ValuativeRel E]
+  [TopologicalSpace E]
+  [IsNonarchimedeanLocalField E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ValuativeRel E] [TopologicalSpace E] [IsNonarchimedeanLocalField E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/ScalarCover.lean:216:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -113,7 +72,8 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/SphericalIdeles/CbcSph.lean:17:2: Try this: 
+⚠ [170649/170685] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.VolRatio (246s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/VolRatio.lean:47:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -121,7 +81,8 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/SphericalIdeles/CbcSph.lean:18:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/VolRatio.lean:54:13: `Set.setOf_forall` has been deprecated: Use `Set.ofPred_forall` instead
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/VolRatio.lean:81:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -129,7 +90,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/SphericalIdeles/CbcSph.lean:19:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/VolRatio.lean:114:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -137,7 +98,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/SphericalIdeles/CbcSph.lean:20:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/VolRatio.lean:122:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -145,9 +106,15 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [170640/170685] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.FrobFactsAlt (198s)
-⚠ [170641/170685] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PowerMatchingTraces.MatchPow (246s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PowerMatchingTraces/MatchPow.lean:32:2: Try this: 
+⚠ [170650/170685] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.NormDiag (244s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/NormDiag.lean:79:14: This simp argument is unused:
+  map_div₀
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [nrmT]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/NormDiag.lean:91:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -155,6 +122,39 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [170642/170685] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.JacobianTraceQuotients.CoreId (250s)
-✔ [170643/170685] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.SmallRadAlt (120s)
-✔ [170644/170685] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.NumberField (130s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/NormDiag.lean:113:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.NormDiag.0.UpperTheory.Gal.InertialTypesAlt.L.emb_alg`:
+  [FiniteDimensional k E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional k E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/NormDiag.lean:187:8: `continuous_finset_prod` has been deprecated: Use `continuous_finsetProd` instead
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/NormDiag.lean:192:65: `continuous_add_right` has been deprecated: Use `continuous_add_const` instead
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/NormDiag.lean:196:28: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/NormDiag.lean:235:40: `zero_le'` has been deprecated: Use `zero_le` instead
+⚠ [170651/170686] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.ElemTest (247s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/ElemTest.lean:34:13: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/ElemTest.lean:31:54: Variable name `h0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/ElemTest.lean:76:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/FrobeniusLocalPairs/ElemTest.lean:115:40: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_comm, mul_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [170652/170686] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.NormLoc (251s)
