@@ -1,41 +1,54 @@
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/ConjugateElement.lean:5:5: Variable name `inst_2` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDense.lean:82:4: this tactic is never executed
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDense.lean:83:4: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [172616/172638] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.ZetaCharacterDivisibility.PLacConj (5.9s)
+✔ [172617/172662] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.ZetaCharacterDivisibility.PSatConj (13s)
+✔ [172618/172678] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.ZetaCharacterDivisibility.PGapLac (6.6s)
+⚠ [172619/172678] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.BlockCharacterApproximation.PolyApproxCut (5.6s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/BlockCharacterApproximation/PolyApproxCut.lean:47:20: `Polynomial.eval₂_finset_sum` has been deprecated: Use `Polynomial.eval₂_finsetSum` instead
+⚠ [172620/172680] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.ZetaCharacterDivisibility.PSameOr (7.0s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/ZetaCharacterDivisibility/PSameOr.lean:29:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [172621/172681] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalGaloisCompatibility.Chl (5.8s)
+⚠ [172622/172682] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.OmegaPullId (13s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/OmegaPullId.lean:26:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDense.lean:84:4: this tactic is never executed
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDense.lean:85:4: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [172623/172682] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.BlockCharacterApproximation.OfVecFixedIff (7.5s)
+⚠ [172624/172682] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIsPlaceOverFiniteExtensionOfIsPlaceOver (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsIsPlaceOverFiniteExtensionOfIsPlaceOver.lean:23:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsIsPlaceOverFiniteExtensionOfIsPlaceOver.lean:28:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsIsPlaceOverFiniteExtensionOfIsPlaceOver.lean:39:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [172625/172682] Built Development.AbelianVarietyTheory.Definitions.GaloisGeometry.SurjectiveOfLocallySurjective (17s)
+warning: src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/SurjectiveOfLocallySurjective.lean:240:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDense.lean:86:4: this tactic is never executed
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDense.lean:82:4: Unused tactic linter: `exact _root_.GlobalTheory.CoordinateEmbeddingSplits.main` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDense.lean:83:4: Unused tactic linter: `(apply _root_.GlobalTheory.CoordinateEmbeddingSplits.main <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDense.lean:84:4: Unused tactic linter: `(intros; apply _root_.GlobalTheory.CoordinateEmbeddingSplits.main <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDense.lean:85:4: Unused tactic linter: `(intros;
-  apply @_root_.GlobalTheory.CoordinateEmbeddingSplits.main <;>
-    first
-    | assumption
-    | infer_instance)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDense.lean:86:4: Unused tactic linter: `(intros; exact _root_.GlobalTheory.CoordinateEmbeddingSplits.main ..)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [172402/172421] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CongruenceOddLevel.ExistsEllType (6.7s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CongruenceOddLevel/ExistsEllType.lean:46:4: Try this: 
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/SurjectiveOfLocallySurjective.lean:242:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -43,8 +56,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [172403/172421] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteAutomorphismOrbitMemFiniteExtensionPadic (6.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/FiniteAutomorphismOrbitMemFiniteExtensionPadic.lean:15:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/SurjectiveOfLocallySurjective.lean:244:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -52,7 +64,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/FiniteAutomorphismOrbitMemFiniteExtensionPadic.lean:20:4: Try this: 
+warning: src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/SurjectiveOfLocallySurjective.lean:245:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -60,7 +72,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/FiniteAutomorphismOrbitMemFiniteExtensionPadic.lean:24:4: Try this: 
+warning: src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/SurjectiveOfLocallySurjective.lean:247:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -68,7 +80,14 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/FiniteAutomorphismOrbitMemFiniteExtensionPadic.lean:43:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/SurjectiveOfLocallySurjective.lean:343:9: Variable name `p` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _p
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [172626/172684] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalGaloisCompatibility.ToralDeRham.RcUnlinkedChars (6.0s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SphericalGaloisCompatibility/ToralDeRham/RcUnlinkedChars.lean:24:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -76,7 +95,60 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/FiniteAutomorphismOrbitMemFiniteExtensionPadic.lean:47:2: Try this: 
+⚠ [172627/172684] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsSolvableCmExtensionAbelianCompletionStatement (6.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsSolvableCmExtensionAbelianCompletionStatement.lean:12:242: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsSolvableCmExtensionAbelianCompletionStatement.lean:13:65: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsSolvableCmExtensionAbelianCompletionStatement.lean:13:119: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsSolvableCmExtensionAbelianCompletionStatement.lean:13:65: Unused tactic linter: `exact GlobalTheory.AboveL.exists_cm_solvDisj_dec_eq` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsSolvableCmExtensionAbelianCompletionStatement.lean:13:119: Unused tactic linter: `(intros; apply GlobalTheory.AboveL.exists_cm_solvDisj_dec_eq <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [172628/172684] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.WeightCharacters.FamOfApply (19s)
+⚠ [172629/172686] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIsPlaceOverFiniteExtensionOfIsPlaceOverStatement (5.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsIsPlaceOverFiniteExtensionOfIsPlaceOverStatement.lean:13:67: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsIsPlaceOverFiniteExtensionOfIsPlaceOverStatement.lean:13:123: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsIsPlaceOverFiniteExtensionOfIsPlaceOverStatement.lean:13:67: Unused tactic linter: `exact GlobalTheory.AboveL.exists_isPlaceOver_of_tower` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsIsPlaceOverFiniteExtensionOfIsPlaceOverStatement.lean:13:123: Unused tactic linter: `(intros; apply GlobalTheory.AboveL.exists_isPlaceOver_of_tower <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [172630/172686] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsSolvableCmExtensionSplitPlaceStatement (5.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsSolvableCmExtensionSplitPlaceStatement.lean:12:236: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsSolvableCmExtensionSplitPlaceStatement.lean:13:64: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsSolvableCmExtensionSplitPlaceStatement.lean:13:117: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsSolvableCmExtensionSplitPlaceStatement.lean:13:64: Unused tactic linter: `exact GlobalTheory.AboveL.exists_cm_solvable_split` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsSolvableCmExtensionSplitPlaceStatement.lean:13:117: Unused tactic linter: `(intros; apply GlobalTheory.AboveL.exists_cm_solvable_split <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [172631/172691] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.BlockCharacterApproximation.NeatOfPlace (6.7s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/BlockCharacterApproximation/NeatOfPlace.lean:21:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -84,77 +156,5 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [172404/172421] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.UnitaryCoordinateAlgebraDenseStatement (5.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDenseStatement.lean:7:52: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDenseStatement.lean:7:93: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDenseStatement.lean:7:52: Unused tactic linter: `exact GlobalTheory.PolyRealU.poly_infU` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/UnitaryCoordinateAlgebraDenseStatement.lean:7:93: Unused tactic linter: `(intros; apply GlobalTheory.PolyRealU.poly_infU <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [172405/172427] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsConjPolynomialDefiniteUnitaryRationalStatement (5.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsConjPolynomialDefiniteUnitaryRationalStatement.lean:7:62: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsConjPolynomialDefiniteUnitaryRationalStatement.lean:7:113: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsConjPolynomialDefiniteUnitaryRationalStatement.lean:7:62: Unused tactic linter: `exact GlobalTheory.UnitaryBC.exists_conj_polyFun` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsConjPolynomialDefiniteUnitaryRationalStatement.lean:7:113: Unused tactic linter: `(intros; apply GlobalTheory.UnitaryBC.exists_conj_polyFun <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [172406/172431] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CongruenceOddLevel.WtDefs (13s)
-⚠ [172407/172431] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemOfFiniteDimensionalSpanRightTranslates (7.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:14:75: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:15:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:16:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:17:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:14:75: Unused tactic linter: `assumption` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:15:4: Unused tactic linter: `(intros;
-  apply _root_.GlobalTheory.FinitePointsDetect.finite_points_detect <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:16:4: Unused tactic linter: `(intros;
-  apply @_root_.GlobalTheory.FinitePointsDetect.finite_points_detect <;>
-    first
-    | assumption
-    | infer_instance)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:17:4: Unused tactic linter: `(intros; exact _root_.GlobalTheory.FinitePointsDetect.finite_points_detect ..)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:104:10: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:134:9: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:143:10: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemOfFiniteDimensionalSpanRightTranslates.lean:166:8: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
-⚠ [172408/172431] Built Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DefiniteUnitaryRealApproxAndFiniteInfiniteSplitStatement (5.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DefiniteUnitaryRealApproxAndFiniteInfiniteSplitStatement.lean:8:61: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DefiniteUnitaryRealApproxAndFiniteInfiniteSplitStatement.lean:8:111: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DefiniteUnitaryRealApproxAndFiniteInfiniteSplitStatement.lean:8:61: Unused tactic linter: `exact GlobalTheory.UnitarySplit.dense_and_split` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DefiniteUnitaryRealApproxAndFiniteInfiniteSplitStatement.lean:8:111: Unused tactic linter: `(intros; apply GlobalTheory.UnitarySplit.dense_and_split <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [172632/172691] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsOpenGaloisSubgroupTraceNeZero (5.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsOpenGaloisSubgroupTraceNeZero.lean:20:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
