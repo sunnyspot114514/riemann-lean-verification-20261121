@@ -1,45 +1,16 @@
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+  omit [GrpObj A] [GrpObj B] [IsCommMonObj A] [IsCommMonObj B] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TorusPointOverFractionField.lean:63:14: try 'simp' instead of 'simpa'
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinBundleKernelSecondCoordEquations.lean:96:0: automatically included section variable(s) unused in theorem `GlobalTheory.ZarhinKerB.pull_zCls`:
+  [GrpObj A]
+  [GrpObj B]
+  [IsCommMonObj A]
+  [IsCommMonObj B]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [GrpObj A] [GrpObj B] [IsCommMonObj A] [IsCommMonObj B] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [177097/177160] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompatibleSimilitudeLevelTowerStatement (5.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCompatibleSimilitudeLevelTowerStatement.lean:10:61: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCompatibleSimilitudeLevelTowerStatement.lean:10:111: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCompatibleSimilitudeLevelTowerStatement.lean:10:61: Unused tactic linter: `(exact GlobalTheory.TowerLev.exists_compatible)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCompatibleSimilitudeLevelTowerStatement.lean:10:111: Unused tactic linter: `(intros; apply GlobalTheory.TowerLev.exists_compatible <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [177098/177160] Built Development.AbelianVarietyTheory.Definitions.Divisors.NonemptyHomFixRepTrivial (6.4s)
-warning: src/Development/AbelianVarietyTheory/Definitions/Divisors/NonemptyHomFixRepTrivial.lean:66:44: try 'simp' instead of 'simpa'
-
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [177099/177164] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompatiblePrimePowerRoots (4.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCompatiblePrimePowerRoots.lean:10:78: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCompatiblePrimePowerRoots.lean:10:145: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCompatiblePrimePowerRoots.lean:10:78: Unused tactic linter: `(exact GlobalTheory.exists_compatible_primitive_prime_pow_roots)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCompatiblePrimePowerRoots.lean:10:145: Unused tactic linter: `(intros;
-  apply GlobalTheory.exists_compatible_primitive_prime_pow_roots <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [177100/177164] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLevelPairingEq (7.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLevelPairingEq.lean:32:9: `AddCommGroup.finite_of_fg_torsion` has been deprecated: Use `AddCommGroup.finite_of_fg_isAddTorsion` instead
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLevelPairingEq.lean:71:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinBundleKernelSecondCoordEquations.lean:120:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -47,7 +18,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLevelPairingEq.lean:73:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinBundleKernelSecondCoordEquations.lean:121:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -55,106 +26,135 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [177101/177167] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarisedAbelianSchemeDescendsFiniteType (12s)
-⚠ [177102/177168] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegAevalEqProdAroots (10s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DegAevalEqProdAroots.lean:39:4: Unused tactic linter: `push_cast` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [177103/177168] Built Development.AutomorphicArithmetic.CommutativeAlgebra.QuotientMapComp (7.9s)
-warning: src/Development/AutomorphicArithmetic/CommutativeAlgebra/QuotientMapComp.lean:85:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [177104/177169] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHarrisTaylorModuliObjectPullback (12s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsHarrisTaylorModuliObjectPullback.lean:134:10: This simp argument is unused:
-  TrivSqZeroExt.algebraMap_eq_inl
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinBundleKernelSecondCoordEquations.lean:136:31: This simp argument is unused:
+  mkZ_pa'
 
 Hint: Omit it from the simp argument list.
-  [apply] simp
+  [apply] simp only [← Category.assoc, mkZ_pb'] at e
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsHarrisTaylorModuliObjectPullback.lean:282:6: Variable name `y` is not explicitly referenced.
+✔ [177316/177386] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZarhinTriangularMatrixSymmetrisationPosDef (18s)
+⚠ [177317/177387] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZarhinOrderIsRingActionOnProductStatement (18s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinOrderIsRingActionOnProductStatement.lean:8:253: Variable name `hZ` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _y
+  [apply] _hZ
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [177105/177169] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLevelPairingEqStatement (5.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLevelPairingEqStatement.lean:10:76: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinOrderIsRingActionOnProductStatement.lean:9:61: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLevelPairingEqStatement.lean:10:141: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinOrderIsRingActionOnProductStatement.lean:9:111: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLevelPairingEqStatement.lean:10:76: Unused tactic linter: `(exact GlobalTheory.UPel.HT.FinLevSim.exists_level_pairing_eq)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinOrderIsRingActionOnProductStatement.lean:9:61: Unused tactic linter: `(exact GlobalTheory.ZarhinFam.RAct.actZ_isRAct)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLevelPairingEqStatement.lean:10:141: Unused tactic linter: `(intros;
-  apply GlobalTheory.UPel.HT.FinLevSim.exists_level_pairing_eq <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinOrderIsRingActionOnProductStatement.lean:9:111: Unused tactic linter: `(intros; apply GlobalTheory.ZarhinFam.RAct.actZ_isRAct <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [177106/177169] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullClsDiag (9.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PullClsDiag.lean:63:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [177107/177169] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarisedAbelianSchemeDescendsFiniteTypeStatement (7.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PolarisedAbelianSchemeDescendsFiniteTypeStatement.lean:10:62: this tactic is never executed
+⚠ [177318/177387] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeHomEqOfPowEqStatement (18s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AbelianSchemeHomEqOfPowEqStatement.lean:9:62: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PolarisedAbelianSchemeDescendsFiniteTypeStatement.lean:10:113: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AbelianSchemeHomEqOfPowEqStatement.lean:9:113: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PolarisedAbelianSchemeDescendsFiniteTypeStatement.lean:10:62: Unused tactic linter: `(exact GlobalTheory.PolModel.polarised_descends)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AbelianSchemeHomEqOfPowEqStatement.lean:9:62: Unused tactic linter: `(exact GlobalTheory.HomTorsionFree.eq_of_pow_eq)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PolarisedAbelianSchemeDescendsFiniteTypeStatement.lean:10:113: Unused tactic linter: `(intros; apply GlobalTheory.PolModel.polarised_descends <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AbelianSchemeHomEqOfPowEqStatement.lean:9:113: Unused tactic linter: `(intros; apply GlobalTheory.HomTorsionFree.eq_of_pow_eq <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [177108/177169] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFgModel (7.5s)
-⚠ [177109/177169] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHarrisTaylorModuliObjectPullbackStatement (5.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsHarrisTaylorModuliObjectPullbackStatement.lean:10:58: this tactic is never executed
+⚠ [177319/177387] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZarhinPolarisationKernelLeUnitKernelStatement (9.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinPolarisationKernelLeUnitKernelStatement.lean:10:67: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsHarrisTaylorModuliObjectPullbackStatement.lean:10:105: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinPolarisationKernelLeUnitKernelStatement.lean:10:123: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsHarrisTaylorModuliObjectPullbackStatement.lean:10:58: Unused tactic linter: `exact GlobalTheory.HTPullEvery.exists_objMap` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinPolarisationKernelLeUnitKernelStatement.lean:10:67: Unused tactic linter: `(exact GlobalTheory.ZarhinFam.ker_pol_le_ker_polUnit)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsHarrisTaylorModuliObjectPullbackStatement.lean:10:105: Unused tactic linter: `(intros; apply GlobalTheory.HTPullEvery.exists_objMap <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinPolarisationKernelLeUnitKernelStatement.lean:10:123: Unused tactic linter: `(intros; apply GlobalTheory.ZarhinFam.ker_pol_le_ker_polUnit <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [177110/177173] Built Development.AutomorphicArithmetic.CommutativeAlgebra.IsogenyClassExistsOfQuotient (6.6s)
-✔ [177111/177174] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharpolyEqMinpolyPow (10s)
-⚠ [177112/177174] Built Development.AutomorphicArithmetic.CommutativeAlgebra.QuotientLevelOfLatticeGeneration (8.7s)
-warning: src/Development/AutomorphicArithmetic/CommutativeAlgebra/QuotientLevelOfLatticeGeneration.lean:61:2: Try this: 
-  haveI̵
+⚠ [177320/177387] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZarhinPolarisationUnitKernelLeKernelStatement (9.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinPolarisationUnitKernelLeKernelStatement.lean:10:59: this tactic is never executed
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinPolarisationUnitKernelLeKernelStatement.lean:10:107: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [177113/177174] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorPullbackAbelianMapUnique (7.3s)
-✔ [177114/177174] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTorsionOfBirigidifiedBundleTrivialOnSlice (8.0s)
-✔ [177115/177176] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorModuliWithSymplecticLevelRepresentab (5.9s)
-⚠ [177116/177176] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalTrivialityOfNoetherianDescent (9.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalTrivialityOfNoetherianDescent.lean:121:2: Try this: 
-  letI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinPolarisationUnitKernelLeKernelStatement.lean:10:59: Unused tactic linter: `(exact GlobalTheory.ZarhinKer.polUnit_ker_le)` does nothing
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinPolarisationUnitKernelLeKernelStatement.lean:10:107: Unused tactic linter: `(intros; apply GlobalTheory.ZarhinKer.polUnit_ker_le <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [177117/177176] Built Development.AutomorphicArithmetic.CommutativeAlgebra.TraceEtaPointwise (6.7s)
-✔ [177118/177177] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsObjMap (8.9s)
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [177321/177387] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsZarhinSymplecticTransferStatement (9.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsZarhinSymplecticTransferStatement.lean:9:59: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsZarhinSymplecticTransferStatement.lean:9:107: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsZarhinSymplecticTransferStatement.lean:9:59: Unused tactic linter: `(exact GlobalTheory.ZarhinFam.exists_kappaOK)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsZarhinSymplecticTransferStatement.lean:9:107: Unused tactic linter: `(intros; apply GlobalTheory.ZarhinFam.exists_kappaOK <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [177322/177387] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothOfRelativeDimensionDual (10s)
+⚠ [177323/177387] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZarhinTrickBundleUniqueOfOrderLinearIsoStatement (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinTrickBundleUniqueOfOrderLinearIsoStatement.lean:10:70: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinTrickBundleUniqueOfOrderLinearIsoStatement.lean:10:129: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinTrickBundleUniqueOfOrderLinearIsoStatement.lean:10:70: Unused tactic linter: `(exact GlobalTheory.ZarhinUniqBundle.lbIso_of_ordLinear)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinTrickBundleUniqueOfOrderLinearIsoStatement.lean:10:129: Unused tactic linter: `(intros; apply GlobalTheory.ZarhinUniqBundle.lbIso_of_ordLinear <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [177324/177387] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZarhinTrickActionsIsomorphicStatement (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinTrickActionsIsomorphicStatement.lean:10:64: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinTrickActionsIsomorphicStatement.lean:10:117: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinTrickActionsIsomorphicStatement.lean:10:64: Unused tactic linter: `(exact GlobalTheory.ZarhinUniqIso.zarhin_uniq_iso)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinTrickActionsIsomorphicStatement.lean:10:117: Unused tactic linter: `(intros; apply GlobalTheory.ZarhinUniqIso.zarhin_uniq_iso <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [177325/177387] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZarhinProductMkPointBasicFactsStatement (9.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinProductMkPointBasicFactsStatement.lean:10:62: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinProductMkPointBasicFactsStatement.lean:10:113: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinProductMkPointBasicFactsStatement.lean:10:62: Unused tactic linter: `(exact GlobalTheory.ZarhinFam.PtFacts.mkZ_facts)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinProductMkPointBasicFactsStatement.lean:10:113: Unused tactic linter: `(intros; apply GlobalTheory.ZarhinFam.PtFacts.mkZ_facts <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [177326/177387] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZarhinKernelLinearAlgebraTrivialStatement (9.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinKernelLinearAlgebraTrivialStatement.lean:7:66: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinKernelLinearAlgebraTrivialStatement.lean:7:121: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinKernelLinearAlgebraTrivialStatement.lean:7:66: Unused tactic linter: `(exact GlobalTheory.ZarhinFam.zarhin_kernel_trivial)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinKernelLinearAlgebraTrivialStatement.lean:7:121: Unused tactic linter: `(intros; apply GlobalTheory.ZarhinFam.zarhin_kernel_trivial <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
