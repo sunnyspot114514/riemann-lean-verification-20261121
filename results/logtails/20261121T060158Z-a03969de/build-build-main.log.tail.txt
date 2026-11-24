@@ -1,11 +1,44 @@
-  letI̵
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: Omit it from the simp argument list.
+  [apply] simp [A, Fin.succ_ne_zero]
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/HodgeTraceEqSumClopenDecomposition.lean:232:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [183681/183716] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.WdApply (27s)
+⚠ [183682/183720] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.FiltrationBoundaryCriterionOfWdBasic (27s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalMaximality/FiltrationBoundaryCriterionOfWdBasic.lean:9:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.FiltrationBoundaryCriterionOfWdBasic.0.wd_apply'`:
+  [Fintype σ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype σ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalMaximality/FiltrationBoundaryCriterionOfWdBasic.lean:21:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.FiltrationBoundaryCriterionOfWdBasic.0.card_erase_mem'`:
+  [Fintype σ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype σ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalMaximality/FiltrationBoundaryCriterionOfWdBasic.lean:32:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.FiltrationBoundaryCriterionOfWdBasic.0.card_erase_not'`:
+  [Fintype σ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype σ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalMaximality/FiltrationBoundaryCriterionOfWdBasic.lean:87:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.FiltrationBoundaryCriterionOfWdBasic.0.sub_cocycle'`:
+  [Fintype σ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype σ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalMaximality/FiltrationBoundaryCriterionOfWdBasic.lean:99:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.FiltrationBoundaryCriterionOfWdBasic.0.of_sub'`:
+  [Fintype σ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype σ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [183683/183720] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.FiltrationCocycleLiftCriterionOfWdBasic (27s)
+✔ [183684/183720] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.PEdgeRel (26s)
+⚠ [183685/183720] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsFiniteCoverProjSpaceReducedFibreOrigin (30s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsFiniteCoverProjSpaceReducedFibreOrigin.lean:69:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -13,7 +46,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/HodgeTraceEqSumClopenDecomposition.lean:233:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsFiniteCoverProjSpaceReducedFibreOrigin.lean:71:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -21,24 +54,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [183516/183540] Built Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.IsTangentMatrixIffRestrictOpen (9.8s)
-warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:25:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:26:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:29:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsFiniteCoverProjSpaceReducedFibreOrigin.lean:70:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -46,7 +62,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:31:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsFiniteCoverProjSpaceReducedFibreOrigin.lean:79:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -54,7 +70,86 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:35:2: Try this: 
+✔ [183686/183724] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.PColQEx (9.7s)
+✔ [183687/183724] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemOfForallHeightOneLocalizationIntegrallyClosed (5.1s)
+⚠ [183688/183724] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralClosureHeightOneUniformizerRamificationAStatement (5.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralClosureHeightOneUniformizerRamificationAStatement.lean:8:86: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralClosureHeightOneUniformizerRamificationAStatement.lean:8:161: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralClosureHeightOneUniformizerRamificationAStatement.lean:8:86: Unused tactic linter: `(exact GlobalTheory.integralClosure_height_one_uniformizer_ramification)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralClosureHeightOneUniformizerRamificationAStatement.lean:8:161: Unused tactic linter: `(intros;
+  apply GlobalTheory.integralClosure_height_one_uniformizer_ramification <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [183689/183729] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTranscendenceBasisQuotientIntegralClosureStatement (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsTranscendenceBasisQuotientIntegralClosureStatement.lean:8:80: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsTranscendenceBasisQuotientIntegralClosureStatement.lean:8:149: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsTranscendenceBasisQuotientIntegralClosureStatement.lean:8:80: Unused tactic linter: `(exact GlobalTheory.isTranscendenceBasis_quotient_integralClosure)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsTranscendenceBasisQuotientIntegralClosureStatement.lean:8:149: Unused tactic linter: `(intros;
+  apply GlobalTheory.isTranscendenceBasis_quotient_integralClosure <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [183690/183731] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemOfForallHeightOneLocalizationIntegrallyClosedStatement (4.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MemOfForallHeightOneLocalizationIntegrallyClosedStatement.lean:8:78: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MemOfForallHeightOneLocalizationIntegrallyClosedStatement.lean:8:145: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MemOfForallHeightOneLocalizationIntegrallyClosedStatement.lean:8:78: Unused tactic linter: `(exact GlobalTheory.NormalHeightOne.mem_of_forall_height_eq_one)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MemOfForallHeightOneLocalizationIntegrallyClosedStatement.lean:8:145: Unused tactic linter: `(intros;
+  apply GlobalTheory.NormalHeightOne.mem_of_forall_height_eq_one <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [183691/183732] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.VolumeChartChange (6.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/VolumeChartChange.lean:38:22: This simp argument is unused:
+  Function.update_of_ne hj
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hg, Finset.mem_insert, hj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/VolumeChartChange.lean:81:35: This simp argument is unused:
+  Function.update_of_ne hj
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hw, hc, hj, hσ0, h0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [183692/183734] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsFiniteCoverProjSpaceReducedFibreOriginStatement (9.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsFiniteCoverProjSpaceReducedFibreOriginStatement.lean:9:72: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsFiniteCoverProjSpaceReducedFibreOriginStatement.lean:9:133: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsFiniteCoverProjSpaceReducedFibreOriginStatement.lean:9:183: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsFiniteCoverProjSpaceReducedFibreOriginStatement.lean:9:72: Unused tactic linter: `exact GlobalTheory.PD.FibRed.exists_finCover_fibre_reduced` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsFiniteCoverProjSpaceReducedFibreOriginStatement.lean:9:133: Unused tactic linter: `exact @GlobalTheory.PD.FibRed.quotEquiv_of_germ` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsFiniteCoverProjSpaceReducedFibreOriginStatement.lean:9:183: Unused tactic linter: `exact GlobalTheory.PD.FibRed.quotEquiv_of_germ` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [183693/183735] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegularTopFormPoleOrderHeightOnePrime (9.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RegularTopFormPoleOrderHeightOnePrime.lean:75:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -62,99 +157,4 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:64:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:65:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:66:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:125:41: Variable name `hc` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hc
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:223:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:224:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:226:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [183517/183542] Built Development.AbelianVarietyTheory.Definitions.GaloisGeometry.KaehlerOneFormsToExtensionDeRhamMulSelf (5.4s)
-⚠ [183518/183544] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteClassNumberCentraliserTorusSeparable (12s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteClassNumberCentraliserTorusSeparable.lean:17:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteClassNumberCentraliserTorusSeparable.lean:18:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteClassNumberCentraliserTorusSeparable.lean:19:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteClassNumberCentraliserTorusSeparable.lean:46:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteClassNumberCentraliserTorusSeparable.lean:47:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [183694/183735] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.DualForm (16s)
