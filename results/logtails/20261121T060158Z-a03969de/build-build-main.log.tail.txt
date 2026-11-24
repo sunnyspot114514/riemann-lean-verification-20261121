@@ -1,140 +1,68 @@
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeVectorBundlePullback.lean:102:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeVectorBundlePullback.lean:103:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [180447/180476] Built Development.AbelianVarietyTheory.Definitions.Divisors.TransferToDefiniteQuaternion (22s)
-✔ [180448/180477] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuedIntCastLeIff (7.2s)
-⚠ [180449/180477] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdelicEndomorphismLattice (6.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsAdelicEndomorphismLattice.lean:13:60: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsAdelicEndomorphismLattice.lean:13:109: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsAdelicEndomorphismLattice.lean:13:60: Unused tactic linter: `(exact GlobalTheory.LKGeo.ModLim.exists_limit)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsAdelicEndomorphismLattice.lean:13:109: Unused tactic linter: `(intros; apply GlobalTheory.LKGeo.ModLim.exists_limit <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [180450/180478] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairingAdjointInvolution (6.6s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PairingAdjointInvolution.lean:13:54: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PairingAdjointInvolution.lean:13:97: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PairingAdjointInvolution.lean:13:54: Unused tactic linter: `(exact GlobalTheory.LKGeo.adj_actOn_afP)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PairingAdjointInvolution.lean:13:97: Unused tactic linter: `(intros; apply GlobalTheory.LKGeo.adj_actOn_afP <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [180451/180479] Built Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.FiniteAdelicDoubleCosetsOfRationalSLSubgroupStatement (4.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/FiniteAdelicDoubleCosetsOfRationalSLSubgroupStatement.lean:8:56: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/FiniteAdelicDoubleCosetsOfRationalSLSubgroupStatement.lean:8:101: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/FiniteAdelicDoubleCosetsOfRationalSLSubgroupStatement.lean:8:56: Unused tactic linter: `exact GlobalTheory.ClassFin.cf_of_isQGroup` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/FiniteAdelicDoubleCosetsOfRationalSLSubgroupStatement.lean:8:101: Unused tactic linter: `(intros; apply GlobalTheory.ClassFin.cf_of_isQGroup <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [180452/180479] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEqNsmulOfActs (7.3s)
-⚠ [180453/180480] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualLatticeDegreeNeg (10s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DualLatticeDegreeNeg.lean:51:24: This simp argument is unused:
-  Algebra.TensorProduct.lift_tmul
+warning: src/Development/AutomorphicArithmetic/IwahoriCommensurability/AffineWeylSimpleReflectionCoset.lean:219:38: This simp argument is unused:
+  Ne.symm hip
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [actOn]
+  [apply] simp [h, h', hc0, hip, hir, Ne.symm hir]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [180454/180481] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HopfOrderPullbackAlongHom (6.7s)
-⚠ [180455/180482] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticePairingIntegral (6.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticePairingIntegral.lean:13:54: this tactic is never executed
+warning: src/Development/AutomorphicArithmetic/IwahoriCommensurability/AffineWeylSimpleReflectionCoset.lean:219:51: This simp argument is unused:
+  Ne.symm hir
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticePairingIntegral.lean:13:97: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp [h, h', hc0, hip, hir, Ne.symm hip]
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticePairingIntegral.lean:13:54: Unused tactic linter: `(exact GlobalTheory.LKGeo.formInt_laHat)` does nothing
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/IwahoriCommensurability/AffineWeylSimpleReflectionCoset.lean:222:21: This simp argument is unused:
+  h'
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticePairingIntegral.lean:13:97: Unused tactic linter: `(intros; apply GlobalTheory.LKGeo.formInt_laHat <;> assumption)` does nothing
+Hint: Omit it from the simp argument list.
+  [apply] simp [h, hc0, hip, hir, Ne.symm hip, Ne.symm hir]
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [180456/180482] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalCoordinates.AlgebraEquivSetup.PCenFacts (9.3s)
-✔ [180457/180483] Built Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ClassNumberFiniteIntegralLevelClosedSubgroupGL (6.6s)
-✔ [180458/180483] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalCoordinates.AlgebraEquivSetup.PStabKer (9.5s)
-⚠ [180459/180484] Built Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ClassNumberFiniteIntegralLevelClosedSubgroupGLStatement (5.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/ClassNumberFiniteIntegralLevelClosedSubgroupGLStatement.lean:9:67: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/IwahoriCommensurability/AffineWeylSimpleReflectionCoset.lean:222:25: This simp argument is unused:
+  hc0
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/ClassNumberFiniteIntegralLevelClosedSubgroupGLStatement.lean:9:123: this tactic is never executed
+Hint: Omit it from the simp argument list.
+  [apply] simp [h, h', hip, hir, Ne.symm hip, Ne.symm hir]
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/ClassNumberFiniteIntegralLevelClosedSubgroupGLStatement.lean:9:67: Unused tactic linter: `exact GlobalTheory.ClassFin.classFinite_integralLevel` does nothing
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/IwahoriCommensurability/AffineWeylSimpleReflectionCoset.lean:222:40: This simp argument is unused:
+  Ne.symm hip
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/ClassNumberFiniteIntegralLevelClosedSubgroupGLStatement.lean:9:123: Unused tactic linter: `(intros; apply GlobalTheory.ClassFin.classFinite_integralLevel <;> assumption)` does nothing
+Hint: Omit it from the simp argument list.
+  [apply] simp [h, h', hc0, hip, hir, Ne.symm hir]
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [180460/180484] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalCoordinates.AlgebraEquivSetup.PPhiTy (10s)
-⚠ [180461/180485] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SimilitudeActionAdelicLattice (15s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SimilitudeActionAdelicLattice.lean:74:0: automatically included section variable(s) unused in theorem `GlobalTheory.AdelicSim.isInt_one`:
-  [Fact (Nat.Prime p)]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fact (Nat.Prime p)] in theorem ...
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/IwahoriCommensurability/AffineWeylSimpleReflectionCoset.lean:222:53: This simp argument is unused:
+  Ne.symm hir
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SimilitudeActionAdelicLattice.lean:76:0: automatically included section variable(s) unused in theorem `GlobalTheory.AdelicSim.isInt_mul`:
-  [Fact (Nat.Prime p)]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fact (Nat.Prime p)] in theorem ...
+Hint: Omit it from the simp argument list.
+  [apply] simp [h, h', hc0, hip, hir, Ne.symm hip]
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SimilitudeActionAdelicLattice.lean:172:0: automatically included section variable(s) unused in theorem `GlobalTheory.AdelicSim.isInt_add`:
-  [Fact (Nat.Prime p)]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fact (Nat.Prime p)] in theorem ...
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/IwahoriCommensurability/AffineWeylSimpleReflectionCoset.lean:223:18: This simp argument is unused:
+  h
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SimilitudeActionAdelicLattice.lean:175:0: automatically included section variable(s) unused in theorem `GlobalTheory.AdelicSim.isInt_sub`:
-  [Fact (Nat.Prime p)]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fact (Nat.Prime p)] in theorem ...
+Hint: Omit it from the simp argument list.
+  [apply] simp [h', hc0, hip, hir, Equiv.swap_apply_of_ne_of_ne hjp hjr]
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SimilitudeActionAdelicLattice.lean:178:0: automatically included section variable(s) unused in theorem `GlobalTheory.AdelicSim.isInt_intCast`:
-  [Fact (Nat.Prime p)]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fact (Nat.Prime p)] in theorem ...
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/IwahoriCommensurability/AffineWeylSimpleReflectionCoset.lean:223:21: This simp argument is unused:
+  h'
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SimilitudeActionAdelicLattice.lean:180:0: automatically included section variable(s) unused in theorem `GlobalTheory.AdelicSim.isInt_nsmul`:
-  [Fact (Nat.Prime p)]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fact (Nat.Prime p)] in theorem ...
+Hint: Omit it from the simp argument list.
+  [apply] simp [h, hc0, hip, hir, Equiv.swap_apply_of_ne_of_ne hjp hjr]
 
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [180462/180485] Built Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ClassNumberFiniteHolds (5.1s)
-⚠ [180463/180486] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalCoordinates.AlgebraEquivSetup.PTyFact (10s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SphericalCoordinates/AlgebraEquivSetup/PTyFact.lean:21:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/IwahoriCommensurability/AffineWeylSimpleReflectionCoset.lean:223:25: This simp argument is unused:
+  hc0
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h, h', hip, hir, Equiv.swap_apply_of_ne_of_ne hjp hjr]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [180639/180662] Built Development.AutomorphicArithmetic.IwahoriCommensurability.IsCommensuratedIwahoriGl (74s)
+warning: src/Development/AutomorphicArithmetic/IwahoriCommensurability/IsCommensuratedIwahoriGl.lean:26:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -142,7 +70,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SphericalCoordinates/AlgebraEquivSetup/PTyFact.lean:66:4: Try this: 
+warning: src/Development/AutomorphicArithmetic/IwahoriCommensurability/IsCommensuratedIwahoriGl.lean:30:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -150,7 +78,8 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SphericalCoordinates/AlgebraEquivSetup/PTyFact.lean:67:4: Try this: 
+⚠ [180640/180662] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsLocalSubringMonicRootsResidue (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalSubringMonicRootsResidue.lean:38:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -158,3 +87,74 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalSubringMonicRootsResidue.lean:40:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalSubringMonicRootsResidue.lean:41:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalSubringMonicRootsResidue.lean:48:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalSubringMonicRootsResidue.lean:57:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalSubringMonicRootsResidue.lean:98:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [180641/180662] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.VFinHolds (23s)
+✔ [180642/180662] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTraceFiniteEtaleGaloisCoverLadic (6.0s)
+✔ [180643/180662] Built Development.AbelianVarietyTheory.Definitions.Divisors.IsAdmDOne (4.7s)
+✔ [180644/180662] Built Development.AutomorphicArithmetic.ThetaCorrespondence.FockModels.TiltedDrinfeld.LinearIndepOnOfInvariant (5.4s)
+⚠ [180645/180670] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsLocalSubringMonicRootsResidueStatement (5.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalSubringMonicRootsResidueStatement.lean:12:66: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalSubringMonicRootsResidueStatement.lean:12:121: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalSubringMonicRootsResidueStatement.lean:12:66: Unused tactic linter: `(exact GlobalTheory.LocInField.exists_local_subring)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalSubringMonicRootsResidueStatement.lean:12:121: Unused tactic linter: `(intros; apply GlobalTheory.LocInField.exists_local_subring <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [180646/180670] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTraceFiniteEtaleGaloisCoverLadicStatement (4.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsTraceFiniteEtaleGaloisCoverLadicStatement.lean:11:64: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsTraceFiniteEtaleGaloisCoverLadicStatement.lean:11:117: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsTraceFiniteEtaleGaloisCoverLadicStatement.lean:11:64: Unused tactic linter: `(exact GlobalTheory.EtC.TrGal.exists_trace_galois)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsTraceFiniteEtaleGaloisCoverLadicStatement.lean:11:117: Unused tactic linter: `(intros; apply GlobalTheory.EtC.TrGal.exists_trace_galois <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [180647/180671] Built Development.WeilBound.CoreStatements.HeckeCharacterDeRham.DeRhamHeckeResults.PotentiallySemistableDeRham.SemistableDeRhamStatement.Second (14s)
