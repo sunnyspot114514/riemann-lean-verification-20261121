@@ -2,24 +2,24 @@
   "run_id": "20261121T060158Z-a03969de",
   "source_commit_requested": "7cbf7a0c32fca1badf05931879a37c3f8a2b03b4",
   "started_utc": "2026-11-21T06:01:58+00:00",
-  "state": "running",
+  "state": "completed",
   "runner_stage": "driver",
   "bootstrap_exit_code": 0,
-  "driver_exit_code": null,
-  "verification_passed": false,
+  "driver_exit_code": 0,
+  "verification_passed": true,
   "verification_runtime": "loader-patched",
   "resumed_from_run_id": "20261120T184814Z-ebb611be",
   "resume_mode": "incremental",
-  "updated_utc": "2026-11-24T23:13:50+00:00",
+  "updated_utc": "2026-11-24T23:18:08+00:00",
   "resources": {
-    "sampled_utc": "2026-11-24T23:13:50+00:00",
-    "cgroup_memory_current_bytes": 64307957760,
+    "sampled_utc": "2026-11-24T23:18:08+00:00",
+    "cgroup_memory_current_bytes": 12304191488,
     "cgroup_memory_peak_since_creation_bytes": 64424513536,
     "cgroup_memory_stat_bytes": {
-      "total_rss": 8130670592,
-      "total_cache": 55102181376,
-      "total_mapped_file": 51347079168,
-      "total_inactive_file": 8460582912
+      "total_rss": 303804416,
+      "total_cache": 11355631616,
+      "total_mapped_file": 7704576,
+      "total_inactive_file": 2448678912
     },
     "cgroup_memory_failcnt": 5,
     "cgroup_memory_oom_control": {
@@ -27,12 +27,12 @@
       "under_oom": 0,
       "oom_kill": 0
     },
-    "cgroup_cpu_usage_seconds": 2136276.346952579,
+    "cgroup_cpu_usage_seconds": 2136514.876934137,
     "sampled_memory_peak_this_runner_bytes": 64424509440,
-    "cgroup_cpu_seconds_since_runner_start": 1493053.0419420348,
-    "disk_free_bytes": 318029066240,
+    "cgroup_cpu_seconds_since_runner_start": 1493291.571923593,
+    "disk_free_bytes": 407686463488,
     "disk_total_bytes": 536870912000,
-    "disk_free_inodes": 728079616
+    "disk_free_inodes": 728079812
   },
   "phases": {
     "source-prefetch": {
@@ -144,7 +144,7 @@
     },
     "build": {
       "run_directory_name": "20261121T060229Z-476153",
-      "status": "running:fresh-replay",
+      "status": "complete:build-main,axioms,allowed-axioms,fresh-replay,source-unchanged",
       "stages": {
         "axioms": {
           "exit_code": 0,
@@ -156,6 +156,11 @@
           "start_utc": "2026-11-21T06:02:30Z",
           "end_utc": "2026-11-24T06:01:40Z"
         },
+        "fresh-replay": {
+          "exit_code": 0,
+          "start_utc": "2026-11-24T06:10:48Z",
+          "end_utc": "2026-11-24T23:17:53Z"
+        },
         "validate-axioms": {
           "exit_code": 0,
           "start_utc": "2026-11-24T06:10:48Z",
@@ -164,5 +169,7 @@
       }
     }
   },
-  "toolchain_provenance_sha256": "4d855786ae316d90534002048b275f2ae1304bb73793487e89cd4bef4428a95d"
+  "toolchain_provenance_sha256": "4d855786ae316d90534002048b275f2ae1304bb73793487e89cd4bef4428a95d",
+  "exit_code": 0,
+  "finished_utc": "2026-11-24T23:18:08+00:00"
 }
