@@ -1,48 +1,4 @@
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/GradedSplitRangeIsoOfIntervalStatement.lean:14:5: Variable name `h0` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _h0
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/GradedSplitRangeIsoOfIntervalStatement.lean:21:61: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/GradedSplitRangeIsoOfIntervalStatement.lean:21:111: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/GradedSplitRangeIsoOfIntervalStatement.lean:21:61: Unused tactic linter: `exact GlobalTheory.CompanionTheory.GrPiece.main` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/GradedSplitRangeIsoOfIntervalStatement.lean:21:111: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.GrPiece.main <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [181628/181664] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.HodgeTateResidues.ClsZeroOfRep (6.3s)
-✔ [181629/181668] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.HodgeTateResidues.OneTmul (9.9s)
-✔ [181630/181668] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.DividedPowerReduction.IsFirstChernThickening (7.2s)
-⚠ [181631/181670] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsCrystallineLiftStatement (5.3s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsCrystallineLiftStatement.lean:14:71: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsCrystallineLiftStatement.lean:14:131: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsCrystallineLiftStatement.lean:14:71: Unused tactic linter: `exact GlobalTheory.CompanionTheory.CLiftEx.nonempty_cLift` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsCrystallineLiftStatement.lean:14:131: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.CLiftEx.nonempty_cLift <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [181632/181670] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.HodgeTateResidues.Same (9.5s)
-✔ [181633/181670] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RedTrans (11s)
-⚠ [181634/181672] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PdPBotPos (15s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/PdPBotPos.lean:23:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/PdPBotPos.lean:45:2: Try this: 
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/KaehlerPushoutSplit.lean:79:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -50,7 +6,95 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/PdPBotPos.lean:117:2: Try this: 
+✔ [181858/181913] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsLatticeBoundIntegers (6.3s)
+⚠ [181859/181914] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeFiltrationLTorsionFreeStatement (5.2s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LatticeFiltrationLTorsionFreeStatement.lean:8:72: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LatticeFiltrationLTorsionFreeStatement.lean:8:133: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LatticeFiltrationLTorsionFreeStatement.lean:8:72: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Lat.quot_pdP_no_torsion` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LatticeFiltrationLTorsionFreeStatement.lean:8:133: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.Lat.quot_pdP_no_torsion <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [181860/181914] Built GroundTheory.PAdicHodge.SlopeDescentFixed (10s)
+⚠ [181861/181914] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExteriorPowerSplit (14s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExteriorPowerSplit.lean:186:23: Variable name `hri` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hri
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExteriorPowerSplit.lean:186:48: Variable name `hrs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hrs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExteriorPowerSplit.lean:187:7: Variable name `hπi` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hπi
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExteriorPowerSplit.lean:187:32: Variable name `hπs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hπs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExteriorPowerSplit.lean:188:7: Variable name `hsup` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hsup
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [181862/181914] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeLPowMemSpanOfNotMem (6.2s)
+⚠ [181863/181914] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeDpowClosedOfHyp (6.1s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LatticeDpowClosedOfHyp.lean:67:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [181864/181914] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TensorEquivBaseChangeTensor (5.7s)
+✔ [181865/181914] Built GroundTheory.PAdicHodge.ExtRobbaBezout (5.7s)
+✔ [181866/181915] Built GroundTheory.PAdicHodge.ExtRobbaEigen (20s)
+⚠ [181867/181915] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsLatticeBoundIntegersStatement (5.6s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsLatticeBoundIntegersStatement.lean:7:78: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsLatticeBoundIntegersStatement.lean:7:145: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsLatticeBoundIntegersStatement.lean:7:78: Unused tactic linter: `exact GlobalTheory.CompanionTheory.LatCOK.exists_uniform_mem_sub` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsLatticeBoundIntegersStatement.lean:7:145: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.LatCOK.exists_uniform_mem_sub <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [181868/181915] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeFiltrationAdicClosed (5.4s)
+✔ [181869/181915] Built GroundTheory.PAdicHodge.SlopeRobbaDegree (11s)
+⚠ [181870/181916] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FontaineLatticeDpowClosed (5.6s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FontaineLatticeDpowClosed.lean:24:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [181871/181917] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeFiltrationLAdicClosed (7.9s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LatticeFiltrationLAdicClosed.lean:86:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.LatClosed.l_ne_zero`:
+  [Algebra ℚ B]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Algebra ℚ B] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [181872/181917] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.HodgeSurjectivity.RelativeLiftCosieves.FormCup (10s)
+⚠ [181873/181920] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.HodgeSurjectivity.EtaleChartBaseChange.DivisorCoverOfChartLaws (8.2s)
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/HodgeSurjectivity/EtaleChartBaseChange/DivisorCoverOfChartLaws.lean:17:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -58,7 +102,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/PdPBotPos.lean:119:2: Try this: 
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/HodgeSurjectivity/EtaleChartBaseChange/DivisorCoverOfChartLaws.lean:18:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -66,32 +110,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/PdPBotPos.lean:101:98: Variable name `cV` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _cV
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [181635/181672] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.HodgeTateResidues.IsFirstChernClassInJAlt (19s)
-✔ [181636/181672] Built GroundTheory.ArithmeticGeometry.SchemeCohomology.CurveAdelic (37s)
-✔ [181637/181672] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.LevelChainValuations.ToBSurj (6.7s)
-✔ [181638/181675] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.SplittingFieldLattices.SplitField (5.2s)
-⚠ [181639/181675] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FirstChernPullback (10s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FirstChernPullback.lean:38:104: Variable name `hQ` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hQ
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [181640/181675] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUniqueIsFirstChernTorsionFree (20s)
-✔ [181641/181675] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.SplittingFieldLattices.Kh3 (37s)
-✔ [181642/181675] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.HodgeTateResidues.FirstChernHodgeTateCompatAlt (6.0s)
-✔ [181643/181675] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.HodgeTateResidues.GaloisTTransform (8.4s)
-✔ [181644/181675] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.LevelChainValuations.OneSTr (7.5s)
-✔ [181645/181675] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.HodgeTateResidues.RedSubVal (12s)
-✔ [181646/181675] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.SplittingFieldLattices.BcOnFalse (5.5s)
-⚠ [181647/181675] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.HodgeTateResidues.SmulMorPull (11s)
-warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/HodgeTateResidues/SmulMorPull.lean:28:2: Try this: 
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/HodgeSurjectivity/EtaleChartBaseChange/DivisorCoverOfChartLaws.lean:66:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -99,7 +118,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/HodgeTateResidues/SmulMorPull.lean:29:2: Try this: 
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/HodgeSurjectivity/EtaleChartBaseChange/DivisorCoverOfChartLaws.lean:106:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -107,30 +126,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [181648/181677] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.HodgeTateResidues.TfBaseField (23s)
-✔ [181649/181677] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.HodgeTateResidues.ToYIsFirstChernIff (15s)
-✔ [181650/181677] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DividedPowersOnFiltration (29s)
-✔ [181651/181677] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.HodgeTateResidues.RhoExA (16s)
-✔ [181652/181677] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.HodgeTateResidues.CompId (40s)
-✔ [181653/181677] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.LevelChainValuations.ChainOf (23s)
-✔ [181654/181677] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.HodgeTateFromSandwich (11s)
-✔ [181655/181679] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.DividedPowerReduction.RedInEx (6.3s)
-✔ [181656/181679] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.HodgeTateResidues.NmAMem (30s)
-⚠ [181657/181679] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.HodgeTateResidues.PowZeroSmul (35s)
-warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/HodgeTateResidues/PowZeroSmul.lean:14:8: Ambiguous namespace `Mul`: it is interpreted as `_root_.CrystallineSemistableComparison.HT.Mul` because this `open` occurs inside `namespace CrystallineSemistableComparison.HT`, while `_root_.Mul` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.CrystallineSemistableComparison.HT.Mul`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
-
-Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
-✔ [181658/181679] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.Development (8.4s)
-✔ [181659/181679] Built GroundTheory.ArithmeticGeometry.SchemeCohomology.RiemannRoch (69s)
-✔ [181660/181682] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.HodgeTateResidues.FirstChernHodgeTateCompat (58s)
-⚠ [181661/181685] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.HodgeTateResidues.DiffMem (21s)
-warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/HodgeTateResidues/DiffMem.lean:134:6: Unused tactic linter: `beta_reduce` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/HodgeTateResidues/DiffMem.lean:142:6: Unused tactic linter: `beta_reduce` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/HodgeTateResidues/DiffMem.lean:161:2: Try this: 
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/HodgeSurjectivity/EtaleChartBaseChange/DivisorCoverOfChartLaws.lean:150:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -138,7 +134,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/HodgeTateResidues/DiffMem.lean:162:2: Try this: 
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/HodgeSurjectivity/EtaleChartBaseChange/DivisorCoverOfChartLaws.lean:163:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -146,10 +142,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [181662/181685] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.HodgeTateResidues.CrisSurj (11s)
-✔ [181663/181685] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.GammaIndependence.PhiAbs (8.5s)
-⚠ [181664/181688] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.AdmissibleMinors.ExistsWeightBasisFiltration (5.7s)
-warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/AdmissibleMinors/ExistsWeightBasisFiltration.lean:69:2: Try this: 
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/HodgeSurjectivity/EtaleChartBaseChange/DivisorCoverOfChartLaws.lean:164:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -157,4 +150,11 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [181665/181688] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.AdmissibleMinors.FilRZero (5.3s)
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/HodgeSurjectivity/EtaleChartBaseChange/DivisorCoverOfChartLaws.lean:181:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
