@@ -1,160 +1,160 @@
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ModDepthGETwoOfIsIntegrallyClosedOfIsRegularLoca.lean:106:12: `ENat.lt_one_iff_eq_zero` has been deprecated: Use `Order.lt_one_iff` instead
-
-Note: The updated constant has a different type:
-  ∀ {α : Type u_1} {x : α} [inst : LinearOrder α] [inst_1 : AddMonoidWithOne α] [SuccAddOrder α] [IsBotZeroClass α]
-    [NeZero 1], x < 1 ↔ x = 0
-instead of
-  ∀ {n : ℕ∞}, n < 1 ↔ n = 0
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.lt_one_iff_eq_zero` to `Order.lt_one_iff x`).
-⚠ [174999/175020] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegerOfMaximalIdealPowSmulIsInteger (5.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsIntegerOfMaximalIdealPowSmulIsInteger.lean:43:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-⚠ [175000/175022] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PurityFreeOfCompleteRegularLocal (7.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PurityFreeOfCompleteRegularLocal.lean:20:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PurityFreeOfCompleteRegularLocal.lean:32:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PurityFreeOfCompleteRegularLocal.lean:51:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PurityFreeOfCompleteRegularLocal.lean:52:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PurityFreeOfCompleteRegularLocal.lean:53:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PurityFreeOfCompleteRegularLocal.lean:65:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PurityFreeOfCompleteRegularLocal.lean:66:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PurityFreeOfCompleteRegularLocal.lean:78:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [175001/175022] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivConstOriginNoethStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DivConstOriginNoethStatement.lean:25:71: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DivConstOriginNoethStatement.lean:25:131: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CechCohomologyVanishesPositive.lean:10:111: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DivConstOriginNoethStatement.lean:8:8: Overlapping instance parameters in `GlobalTheory.T.divConst_origin_noeth_alt`:
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CechCohomologyVanishesPositive.lean:10:61: Unused tactic linter: `(exact GlobalTheory.EtC.GmStep.cech_level_acyc)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CechCohomologyVanishesPositive.lean:10:111: Unused tactic linter: `(intros; apply GlobalTheory.EtC.GmStep.cech_level_acyc <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [175316/175390] Built Development.AutomorphicArithmetic.CommutativeAlgebra.PicUnit (5.4s)
+⚠ [175317/175390] Built Development.AbelianVarietyTheory.Definitions.GaloisGeometry.PullHXApply (6.7s)
+warning: src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/PullHXApply.lean:32:13: Variable name `V` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _V
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/PullHXApply.lean:32:15: Variable name `W` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _W
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/PullHXApply.lean:32:17: Variable name `g` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _g
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/PullHXApply.lean:138:11: Variable name `x` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _x
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/PullHXApply.lean:138:13: Variable name `y` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _y
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [175318/175390] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseChangeIntegralClosureEtaleHeightOne (23s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BaseChangeIntegralClosureEtaleHeightOne.lean:91:66: This simp argument is unused:
+  reduce_tmul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [reduceLoc, IsLocalization.lift_eq, algebraMap_ext]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BaseChangeIntegralClosureEtaleHeightOne.lean:20:8: Overlapping instance parameters in `etale_bc`:
 
 ⚠️ `[IsDomain T]` and `[IsLocalRing T]` each imply `[Nontrivial T]`.
 💡️ Of these, `[IsDomain T]` and `[IsLocalRing T]` may be removed.
 ⚠️ `[IsDomain A]` and `[IsLocalRing A]` each imply `[Nontrivial A]`.
 💡️ Of these, `[IsDomain A]` and `[IsLocalRing A]` may be removed.
+⚠️ `[IsDomain A₁]` and `[IsLocalRing A₁]` each imply `[Nontrivial A₁]`.
+💡️ Of these, `[IsDomain A₁]` and `[IsLocalRing A₁]` may be removed.
 
 Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DivConstOriginNoethStatement.lean:25:71: Unused tactic linter: `(exact GlobalTheory.VertUnitsNoeth.divConst_origin_noeth)` does nothing
+⚠ [175319/175390] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaurentCechNerveLevelCohomologySubsingleton (5.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LaurentCechNerveLevelCohomologySubsingleton.lean:36:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DivConstOriginNoethStatement.lean:25:131: Unused tactic linter: `(intros; apply GlobalTheory.VertUnitsNoeth.divConst_origin_noeth <;> assumption)` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [175002/175022] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNoetherianModelTorsorOriginStatement (5.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNoetherianModelTorsorOriginStatement.lean:41:73: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNoetherianModelTorsorOriginStatement.lean:41:135: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNoetherianModelTorsorOriginStatement.lean:8:8: Overlapping instance parameters in `GlobalTheory.T.exists_noetherian_model_torsor_origin`:
-
-⚠️ `[IsDomain T]` and `[IsLocalRing T]` each imply `[Nontrivial T]`.
-💡️ Of these, `[IsDomain T]` and `[IsLocalRing T]` may be removed.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNoetherianModelTorsorOriginStatement.lean:41:73: Unused tactic linter: `(exact GlobalTheory.KeyOriginNoeth.exists_noetherian_model)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNoetherianModelTorsorOriginStatement.lean:41:135: Unused tactic linter: `(intros; apply GlobalTheory.KeyOriginNoeth.exists_noetherian_model <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [175003/175022] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSMulRegularOfEtalePuncturedOfDepthPosDomainStatement (5.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsSMulRegularOfEtalePuncturedOfDepthPosDomainStatement.lean:8:85: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [175320/175390] Built Development.AutomorphicArithmetic.CommutativeAlgebra.KumSExact (9.6s)
+⚠ [175321/175393] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaurentCPullbackBijectiveFiniteStrictlyHenselianStatement (4.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LaurentCPullbackBijectiveFiniteStrictlyHenselianStatement.lean:10:92: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsSMulRegularOfEtalePuncturedOfDepthPosDomainStatement.lean:8:159: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LaurentCPullbackBijectiveFiniteStrictlyHenselianStatement.lean:10:173: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsSMulRegularOfEtalePuncturedOfDepthPosDomainStatement.lean:7:8: Overlapping instance parameters in `GlobalTheory.T.isSMulRegular_of_etale_punctured_of_depth_pos_domain'`:
-
-⚠️ `[IsLocalRing S]` and `[IsDomain S]` each imply `[Nontrivial S]`.
-💡️ Of these, `[IsLocalRing S]` and `[IsDomain S]` may be removed.
-
-Note: This linter can be disabled with `set_option linter.overlappingInstances false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsSMulRegularOfEtalePuncturedOfDepthPosDomainStatement.lean:8:85: Unused tactic linter: `exact GlobalTheory.isSMulRegular_of_etale_punctured_of_depth_pos_domain` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LaurentCPullbackBijectiveFiniteStrictlyHenselianStatement.lean:10:92: Unused tactic linter: `(exact GlobalTheory.EtC.SpecMapPullbackFunctoriality.laurent_C_pull_bijective)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsSMulRegularOfEtalePuncturedOfDepthPosDomainStatement.lean:8:159: Unused tactic linter: `(intros;
-  apply GlobalTheory.isSMulRegular_of_etale_punctured_of_depth_pos_domain <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LaurentCPullbackBijectiveFiniteStrictlyHenselianStatement.lean:10:173: Unused tactic linter: `(intros;
+  apply GlobalTheory.EtC.SpecMapPullbackFunctoriality.laurent_C_pull_bijective <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [175004/175022] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleQuotientOfEtalePuncturedStatement (5.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleQuotientOfEtalePuncturedStatement.lean:9:66: this tactic is never executed
+⚠ [175322/175394] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.LaurentCharacterLambda (5.6s)
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/LaurentCharacterLambda.lean:8:18: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/LaurentCharacterLambda.lean:13:18: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/LaurentCharacterLambda.lean:18:18: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/LaurentCharacterLambda.lean:23:18: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/LaurentCharacterLambda.lean:28:18: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/LaurentCharacterLambda.lean:34:18: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/LaurentCharacterLambda.lean:56:7: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/LaurentCharacterLambda.lean:58:24: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/LaurentCharacterLambda.lean:74:18: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/LaurentCharacterLambda.lean:74:80: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [175323/175394] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistRingFunctorPreservesFilteredColimitsStatement (4.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TateTwistRingFunctorPreservesFilteredColimitsStatement.lean:8:82: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleQuotientOfEtalePuncturedStatement.lean:9:121: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TateTwistRingFunctorPreservesFilteredColimitsStatement.lean:8:153: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleQuotientOfEtalePuncturedStatement.lean:9:66: Unused tactic linter: `exact GlobalTheory.etale_quotient_of_etale_punctured` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TateTwistRingFunctorPreservesFilteredColimitsStatement.lean:8:82: Unused tactic linter: `(exact GlobalTheory.EtC.TwistFiltered.twF_preservesFilteredColimits)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleQuotientOfEtalePuncturedStatement.lean:9:121: Unused tactic linter: `(intros; apply GlobalTheory.etale_quotient_of_etale_punctured <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TateTwistRingFunctorPreservesFilteredColimitsStatement.lean:8:153: Unused tactic linter: `(intros;
+  apply GlobalTheory.EtC.TwistFiltered.twF_preservesFilteredColimits <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
