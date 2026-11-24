@@ -1,68 +1,4 @@
-warning: src/Development/AutomorphicArithmetic/IwahoriCommensurability/AffineWeylSimpleReflectionCoset.lean:219:38: This simp argument is unused:
-  Ne.symm hip
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [h, h', hc0, hip, hir, Ne.symm hir]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/IwahoriCommensurability/AffineWeylSimpleReflectionCoset.lean:219:51: This simp argument is unused:
-  Ne.symm hir
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [h, h', hc0, hip, hir, Ne.symm hip]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/IwahoriCommensurability/AffineWeylSimpleReflectionCoset.lean:222:21: This simp argument is unused:
-  h'
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [h, hc0, hip, hir, Ne.symm hip, Ne.symm hir]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/IwahoriCommensurability/AffineWeylSimpleReflectionCoset.lean:222:25: This simp argument is unused:
-  hc0
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [h, h', hip, hir, Ne.symm hip, Ne.symm hir]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/IwahoriCommensurability/AffineWeylSimpleReflectionCoset.lean:222:40: This simp argument is unused:
-  Ne.symm hip
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [h, h', hc0, hip, hir, Ne.symm hir]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/IwahoriCommensurability/AffineWeylSimpleReflectionCoset.lean:222:53: This simp argument is unused:
-  Ne.symm hir
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [h, h', hc0, hip, hir, Ne.symm hip]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/IwahoriCommensurability/AffineWeylSimpleReflectionCoset.lean:223:18: This simp argument is unused:
-  h
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [h', hc0, hip, hir, Equiv.swap_apply_of_ne_of_ne hjp hjr]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/IwahoriCommensurability/AffineWeylSimpleReflectionCoset.lean:223:21: This simp argument is unused:
-  h'
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [h, hc0, hip, hir, Equiv.swap_apply_of_ne_of_ne hjp hjr]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/IwahoriCommensurability/AffineWeylSimpleReflectionCoset.lean:223:25: This simp argument is unused:
-  hc0
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [h, h', hip, hir, Equiv.swap_apply_of_ne_of_ne hjp hjr]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [180639/180662] Built Development.AutomorphicArithmetic.IwahoriCommensurability.IsCommensuratedIwahoriGl (74s)
-warning: src/Development/AutomorphicArithmetic/IwahoriCommensurability/IsCommensuratedIwahoriGl.lean:26:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/PAdicWittLattices/JJumpOfHT2.lean:158:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -70,7 +6,15 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/IwahoriCommensurability/IsCommensuratedIwahoriGl.lean:30:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/PAdicWittLattices/JJumpOfHT2.lean:189:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [180801/180822] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.JLowCov (23s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/PAdicWittLattices/JLowCov.lean:75:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -78,8 +22,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [180640/180662] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsLocalSubringMonicRootsResidue (7.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalSubringMonicRootsResidue.lean:38:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/PAdicWittLattices/JLowCov.lean:76:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -87,7 +30,104 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalSubringMonicRootsResidue.lean:40:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/PAdicWittLattices/JLowCov.lean:103:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/PAdicWittLattices/JLowCov.lean:104:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/PAdicWittLattices/JLowCov.lean:108:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/PAdicWittLattices/JLowCov.lean:109:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [180802/180822] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.JCoverOp (16s)
+✔ [180803/180822] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.JLocalMat (14s)
+✔ [180804/180822] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.JLowPiece (13s)
+⚠ [180805/180823] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.JHopLies (14s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/PAdicWittLattices/JHopLies.lean:46:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/PAdicWittLattices/JHopLies.lean:47:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [180806/180823] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.JBCTower (6.3s)
+⚠ [180807/180823] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.JLowNice (6.0s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/PAdicWittLattices/JLowNice.lean:21:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [180808/180824] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.JTrBc (6.0s)
+✔ [180809/180824] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.AcrisKummerUnits.Splits (4.9s)
+⚠ [180810/180825] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoverRestrictionBaseChangeStatement (8.7s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CoverRestrictionBaseChangeStatement.lean:22:80: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CoverRestrictionBaseChangeStatement.lean:22:149: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CoverRestrictionBaseChangeStatement.lean:22:80: Unused tactic linter: `exact GlobalTheory.CompanionTheory.AltCech.cechHEquivCohOn_altPull` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CoverRestrictionBaseChangeStatement.lean:22:149: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.AltCech.cechHEquivCohOn_altPull <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [180811/180825] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsLogUnique (5.9s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/IsLogUnique.lean:65:63: Variable name `l` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _l
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [180812/180826] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.CechDifferentialOneInclusion (13s)
+✔ [180813/180826] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.PrimeLevelLocalization.SpecTopHolds (50s)
+✔ [180814/180827] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.TerminalRes (13s)
+⚠ [180815/180827] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NatDegreeLgLe (8.4s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/NatDegreeLgLe.lean:177:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.LogAlgPf.mem_TX`:
+  [Algebra ℚ S]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Algebra ℚ S] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [180816/180828] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.AcrisKummerUnits.ConstantCoeffSurjective (8.4s)
+⚠ [180817/180828] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FactorialAcr (7.7s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FactorialAcr.lean:37:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -95,66 +135,26 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalSubringMonicRootsResidue.lean:41:2: Try this: 
-  haveI̵
+⚠ [180818/180829] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.GoodCoverEigenspaces.CubeCechEquivalences.CechCubeBaseChange.CechHEquivCohOnCechCubeMapOver (10s)
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/GoodCoverEigenspaces/CubeCechEquivalences/CechCubeBaseChange/CechHEquivCohOnCechCubeMapOver.lean:52:2: Try this: 
+  letI̵
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalSubringMonicRootsResidue.lean:48:2: Try this: 
-  haveI̵
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/GoodCoverEigenspaces/CubeCechEquivalences/CechCubeBaseChange/CechHEquivCohOnCechCubeMapOver.lean:53:2: Try this: 
+  letI̵
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalSubringMonicRootsResidue.lean:57:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalSubringMonicRootsResidue.lean:98:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [180641/180662] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.VFinHolds (23s)
-✔ [180642/180662] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTraceFiniteEtaleGaloisCoverLadic (6.0s)
-✔ [180643/180662] Built Development.AbelianVarietyTheory.Definitions.Divisors.IsAdmDOne (4.7s)
-✔ [180644/180662] Built Development.AutomorphicArithmetic.ThetaCorrespondence.FockModels.TiltedDrinfeld.LinearIndepOnOfInvariant (5.4s)
-⚠ [180645/180670] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsLocalSubringMonicRootsResidueStatement (5.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalSubringMonicRootsResidueStatement.lean:12:66: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalSubringMonicRootsResidueStatement.lean:12:121: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalSubringMonicRootsResidueStatement.lean:12:66: Unused tactic linter: `(exact GlobalTheory.LocInField.exists_local_subring)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLocalSubringMonicRootsResidueStatement.lean:12:121: Unused tactic linter: `(intros; apply GlobalTheory.LocInField.exists_local_subring <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [180646/180670] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTraceFiniteEtaleGaloisCoverLadicStatement (4.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsTraceFiniteEtaleGaloisCoverLadicStatement.lean:11:64: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsTraceFiniteEtaleGaloisCoverLadicStatement.lean:11:117: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsTraceFiniteEtaleGaloisCoverLadicStatement.lean:11:64: Unused tactic linter: `(exact GlobalTheory.EtC.TrGal.exists_trace_galois)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsTraceFiniteEtaleGaloisCoverLadicStatement.lean:11:117: Unused tactic linter: `(intros; apply GlobalTheory.EtC.TrGal.exists_trace_galois <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [180647/180671] Built Development.WeilBound.CoreStatements.HeckeCharacterDeRham.DeRhamHeckeResults.PotentiallySemistableDeRham.SemistableDeRhamStatement.Second (14s)
+✔ [180819/180830] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.Imports (4.7s)
+✔ [180820/180830] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UntiltIterateSymmEpsilon (5.8s)
+✔ [180821/180831] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.HodgeTateResidues.EtDefs (138s)
+✔ [180822/180832] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SumToAcrTeichmuller (6.5s)
+✔ [180823/180833] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AcrisZeroImageDividedPower (13s)
+✔ [180824/180834] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LineBC (5.2s)
