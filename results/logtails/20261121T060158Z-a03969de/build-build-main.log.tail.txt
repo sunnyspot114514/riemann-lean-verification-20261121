@@ -1,30 +1,3 @@
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KottwitzIsogenyClassPointSumConjDataStatement.lean:9:66: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KottwitzIsogenyClassPointSumConjDataStatement.lean:9:121: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KottwitzIsogenyClassPointSumConjDataStatement.lean:9:66: Unused tactic linter: `(exact GlobalTheory.PointSumConj.pointSum_conj_data)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KottwitzIsogenyClassPointSumConjDataStatement.lean:9:121: Unused tactic linter: `(intros; apply GlobalTheory.PointSumConj.pointSum_conj_data <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [183191/183209] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianTripleTrivializationsDifferByGroupPointStatement (5.1s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianTripleTrivializationsDifferByGroupPointStatement.lean:9:50: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianTripleTrivializationsDifferByGroupPointStatement.lean:9:89: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianTripleTrivializationsDifferByGroupPointStatement.lean:9:50: Unused tactic linter: `(exact GlobalTheory.LKMid.triv_quot)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianTripleTrivializationsDifferByGroupPointStatement.lean:9:89: Unused tactic linter: `(intros; apply GlobalTheory.LKMid.triv_quot <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [183192/183212] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEigenbasisPsiInfinitePlaceDistinctRoots (6.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsEigenbasisPsiInfinitePlaceDistinctRoots.lean:18:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -32,7 +5,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsEigenbasisPsiInfinitePlaceDistinctRoots.lean:24:2: Try this: 
+warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/HodgeTraceEqSumClopenDecomposition.lean:232:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -40,121 +13,148 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsEigenbasisPsiInfinitePlaceDistinctRoots.lean:54:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-⚠ [183193/183212] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianTripleTrivialOverRealsOfGramCongruentStatement (5.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianTripleTrivialOverRealsOfGramCongruentStatement.lean:9:68: this tactic is never executed
+warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/HodgeTraceEqSumClopenDecomposition.lean:233:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianTripleTrivialOverRealsOfGramCongruentStatement.lean:9:125: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianTripleTrivialOverRealsOfGramCongruentStatement.lean:9:68: Unused tactic linter: `(exact GlobalTheory.LKMid.trivR_of_gram_psi_inv_congr)` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [183516/183540] Built Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.IsTangentMatrixIffRestrictOpen (9.8s)
+warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:25:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianTripleTrivialOverRealsOfGramCongruentStatement.lean:9:125: Unused tactic linter: `(intros; apply GlobalTheory.LKMid.trivR_of_gram_psi_inv_congr <;> assumption)` does nothing
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [183194/183212] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdelicUnitCarryingFormToNormMultiple (7.2s)
-⚠ [183195/183214] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteAdeleSqSubMulSqStatement (5.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsFiniteAdeleSqSubMulSqStatement.lean:7:81: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:26:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsFiniteAdeleSqSubMulSqStatement.lean:7:151: this tactic is never executed
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsFiniteAdeleSqSubMulSqStatement.lean:7:81: Unused tactic linter: `(exact GlobalTheory.AdelicQuadSol.exists_finiteAdele_sq_sub_mul_sq)` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:29:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsFiniteAdeleSqSubMulSqStatement.lean:7:151: Unused tactic linter: `(intros;
-  apply GlobalTheory.AdelicQuadSol.exists_finiteAdele_sq_sub_mul_sq <;> assumption)` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [183196/183215] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmFieldConjExtendsOfAdjoinAbsSqStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CmFieldConjExtendsOfAdjoinAbsSqStatement.lean:9:60: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:31:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CmFieldConjExtendsOfAdjoinAbsSqStatement.lean:9:109: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CmFieldConjExtendsOfAdjoinAbsSqStatement.lean:9:60: Unused tactic linter: `(exact GlobalTheory.cm_conj_extends_of_adjoin)` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:35:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CmFieldConjExtendsOfAdjoinAbsSqStatement.lean:9:109: Unused tactic linter: `(intros; apply GlobalTheory.cm_conj_extends_of_adjoin <;> assumption)` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [183197/183218] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDiagonalCongrOfSimilitudeDistinctEigenvalu (5.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsDiagonalCongrOfSimilitudeDistinctEigenvalu.lean:20:10: This simp argument is unused:
-  Matrix.mul_smul
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:64:2: Try this: 
+  letI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.smul_mul, Matrix.mul_assoc]
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsDiagonalCongrOfSimilitudeDistinctEigenvalu.lean:20:27: This simp argument is unused:
-  Matrix.smul_mul
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:65:2: Try this: 
+  haveI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.mul_smul, Matrix.mul_assoc]
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsDiagonalCongrOfSimilitudeDistinctEigenvalu.lean:20:44: This simp argument is unused:
-  Matrix.mul_assoc
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:66:2: Try this: 
+  haveI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [Matrix.mul_smul, Matrix.smul_mul]
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [183198/183218] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEigenbasisPsiInfinitePlaceDistinctRootsStatement (5.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsEigenbasisPsiInfinitePlaceDistinctRootsStatement.lean:9:55: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:125:41: Variable name `hc` is not explicitly referenced.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsEigenbasisPsiInfinitePlaceDistinctRootsStatement.lean:9:99: this tactic is never executed
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hc
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsEigenbasisPsiInfinitePlaceDistinctRootsStatement.lean:9:55: Unused tactic linter: `(exact GlobalTheory.LKMid.psi_eigenbasis)` does nothing
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:223:2: Try this: 
+  letI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsEigenbasisPsiInfinitePlaceDistinctRootsStatement.lean:9:99: Unused tactic linter: `(intros; apply GlobalTheory.LKMid.psi_eigenbasis <;> assumption)` does nothing
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [183199/183218] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.KottwitzPairTermEqPointSumAnyTrivialisation (7.5s)
-⚠ [183200/183218] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagonalSignOfPositiveEigenvectorOnePositive (6.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DiagonalSignOfPositiveEigenvectorOnePositive.lean:46:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-⚠ [183201/183218] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdelicUnitCarryingFormToNormMultipleStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsAdelicUnitCarryingFormToNormMultipleStatement.lean:9:51: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:224:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsAdelicUnitCarryingFormToNormMultipleStatement.lean:9:91: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsAdelicUnitCarryingFormToNormMultipleStatement.lean:9:51: Unused tactic linter: `(exact GlobalTheory.adelic_norm_move)` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/IsTangentMatrixIffRestrictOpen.lean:226:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsAdelicUnitCarryingFormToNormMultipleStatement.lean:9:91: Unused tactic linter: `(intros; apply GlobalTheory.adelic_norm_move <;> assumption)` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [183202/183222] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianCongrOfPositiveIndexEqStatement (5.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianCongrOfPositiveIndexEqStatement.lean:9:67: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [183517/183542] Built Development.AbelianVarietyTheory.Definitions.GaloisGeometry.KaehlerOneFormsToExtensionDeRhamMulSelf (5.4s)
+⚠ [183518/183544] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteClassNumberCentraliserTorusSeparable (12s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteClassNumberCentraliserTorusSeparable.lean:17:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianCongrOfPositiveIndexEqStatement.lean:9:123: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianCongrOfPositiveIndexEqStatement.lean:9:67: Unused tactic linter: `exact GlobalTheory.HermCongruence.congr_of_sigPosH_eq` does nothing
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteClassNumberCentraliserTorusSeparable.lean:18:2: Try this: 
+  haveI̵
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HermitianCongrOfPositiveIndexEqStatement.lean:9:123: Unused tactic linter: `(intros; apply GlobalTheory.HermCongruence.congr_of_sigPosH_eq <;> assumption)` does nothing
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteClassNumberCentraliserTorusSeparable.lean:19:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteClassNumberCentraliserTorusSeparable.lean:46:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteClassNumberCentraliserTorusSeparable.lean:47:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
