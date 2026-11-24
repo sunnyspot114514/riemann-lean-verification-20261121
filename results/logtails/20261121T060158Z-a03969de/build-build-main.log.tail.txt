@@ -1,4 +1,3 @@
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/InertiaQuadraticRamification/AsmUnr.lean:42:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -6,7 +5,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/InertiaQuadraticRamification/AsmUnr.lean:46:4: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:45:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -14,67 +13,79 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/InertiaQuadraticRamification/AsmUnr.lean:138:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [173050/173081] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShintaniLiftKillsCuspOfDegreeNotDvd (5.5s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ShintaniLiftKillsCuspOfDegreeNotDvd.lean:8:68: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ShintaniLiftKillsCuspOfDegreeNotDvd.lean:8:125: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ShintaniLiftKillsCuspOfDegreeNotDvd.lean:8:68: Unused tactic linter: `(exact GlobalTheory.Shin.shLift_cusp_kills_of_not_dvd)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ShintaniLiftKillsCuspOfDegreeNotDvd.lean:8:125: Unused tactic linter: `(intros; apply GlobalTheory.Shin.shLift_cusp_kills_of_not_dvd <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [173051/173082] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.CharpolyFromTrace.IneNorm (74s)
-✔ [173052/173082] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.CharpolyFromTrace.LevelVecAlt (74s)
-✔ [173053/173082] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.CharpolyFromTrace.NumberField (71s)
-⚠ [173054/173083] Built Development.AbelianVarietyTheory.Definitions.Divisors.IsCyclotomicExtensionQI (35s)
-warning: src/Development/AbelianVarietyTheory/Definitions/Divisors/IsCyclotomicExtensionQI.lean:20:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AbelianVarietyTheory/Definitions/Divisors/IsCyclotomicExtensionQI.lean:33:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AbelianVarietyTheory/Definitions/Divisors/IsCyclotomicExtensionQI.lean:470:26: This simp argument is unused:
-  simMap_snd
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:77:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:81:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:87:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:92:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:77:15: This simp argument is unused:
+  Set.mem_setOf_eq
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [bcMap, bc]
+  [apply] simp only [map_mul, Matrix.mul_apply]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Definitions/Divisors/IsCyclotomicExtensionQI.lean:512:32: `Pi.monoidHom` has been deprecated: Use `MonoidHom.pi` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.monoidHom` to `MonoidHom.pi x`).
-warning: src/Development/AbelianVarietyTheory/Definitions/Divisors/IsCyclotomicExtensionQI.lean:521:18: This simp argument is unused:
-  uMap_snd
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:81:15: This simp argument is unused:
+  Set.mem_setOf_eq
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [ubc]
+  [apply] simp only [map_one, Matrix.one_apply]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Definitions/Divisors/IsCyclotomicExtensionQI.lean:626:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Definitions/Divisors/IsCyclotomicExtensionQI.lean:848:15: This simp argument is unused:
-  map_pow
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:87:15: This simp argument is unused:
+  Set.mem_setOf_eq
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [map_neg, map_one, pow_two, map_mul, Complex.mul_re, h, Complex.neg_re, Complex.one_re] at h3
+  [apply] simp only [map_add, Matrix.add_apply]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [173055/173083] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalGermBaseChange (6.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FormalGermBaseChange.lean:23:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:92:15: This simp argument is unused:
+  Set.mem_setOf_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_neg, Matrix.neg_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:104:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:108:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:114:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:119:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:104:15: This simp argument is unused:
+  Set.mem_setOf_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_mul, Matrix.mul_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:108:15: This simp argument is unused:
+  Set.mem_setOf_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_one, Matrix.one_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:114:15: This simp argument is unused:
+  Set.mem_setOf_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_add, Matrix.add_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:119:15: This simp argument is unused:
+  Set.mem_setOf_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_neg, Matrix.neg_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:126:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:127:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -82,7 +93,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FormalGermBaseChange.lean:24:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:128:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -90,7 +101,15 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FormalGermBaseChange.lean:25:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:167:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:168:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -98,7 +117,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FormalGermBaseChange.lean:26:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:203:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -106,7 +125,15 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FormalGermBaseChange.lean:27:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:205:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:206:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -114,7 +141,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FormalGermBaseChange.lean:28:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:207:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -122,7 +149,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FormalGermBaseChange.lean:51:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/T2SpaceTensorRatFiniteAlgebraModuleTopology.lean:208:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -130,31 +157,4 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FormalGermBaseChange.lean:52:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FormalGermBaseChange.lean:53:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FormalGermBaseChange.lean:54:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [173056/173085] Built Development.AbelianVarietyTheory.Definitions.Divisors.TwOrbMEqTwOrbUOfNormal (17s)
-warning: src/Development/AbelianVarietyTheory/Definitions/Divisors/TwOrbMEqTwOrbUOfNormal.lean:127:49: `Pi.monoidHom` has been deprecated: Use `MonoidHom.pi` instead
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.monoidHom` to `MonoidHom.pi x`).
+✔ [173067/173087] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.CharpolyFromTrace.AllLift (172s)
