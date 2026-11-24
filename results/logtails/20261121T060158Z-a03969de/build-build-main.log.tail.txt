@@ -1,160 +1,160 @@
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankJointWeightSpaceEqOfCharpolyStatement.lean:7:117: Unused tactic linter: `(intros; apply GlobalTheory.WeightCount.finrank_weight_eq <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [178314/178338] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.KodairaSpencerSkewDimSemisimpleTwoRootsStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KodairaSpencerSkewDimSemisimpleTwoRootsStatement.lean:7:70: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KodairaSpencerSkewDimSemisimpleTwoRootsStatement.lean:7:129: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KodairaSpencerSkewDimSemisimpleTwoRootsStatement.lean:7:70: Unused tactic linter: `exact GlobalTheory.UPel.Sm.KSCount.ksDim_of_eigen_reduce` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KodairaSpencerSkewDimSemisimpleTwoRootsStatement.lean:7:129: Unused tactic linter: `(intros; apply GlobalTheory.UPel.Sm.KSCount.ksDim_of_eigen_reduce <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [178315/178338] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieConditionHodgeSubspaceConstantLiftMemFil (62s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LieConditionHodgeSubspaceConstantLiftMemFil.lean:45:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LieConditionHodgeSubspaceConstantLiftMemFil.lean:108:6: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LieConditionHodgeSubspaceConstantLiftMemFil.lean:109:6: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LieConditionHodgeSubspaceConstantLiftMemFil.lean:126:6: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LieConditionHodgeSubspaceConstantLiftMemFil.lean:132:90: This simp argument is unused:
-  map_smul
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [map_sum, map_smulₛₗ, hE, LinearMap.sub_apply, LinearMap.smul_apply, Module.End.one_apply, map_sub,
-    RingHom.comp_apply, map_intCast, RingHom.id_apply]
+  [apply] simp only [Sum.inr.injEq, reduceCtorEq, if_false, mul_zero, Finset.sum_const_zero, zero_add, mul_ite, mul_one,
+    Finset.sum_ite_eq', Finset.mem_univ] at h
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [178316/178340] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankQuotOneSubIdempotentEqMul (6.7s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankQuotOneSubIdempotentEqMul.lean:58:4: Try this: 
-  letI̵
+⚠ [178536/178577] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivisibleGroupIsogenyBasicProperties (12s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PDivisibleGroupIsogenyBasicProperties.lean:30:0: automatically included section variable(s) unused in theorem `GlobalTheory.Dieu.finrank_A`:
+  [Fact (Nat.Prime p)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (Nat.Prime p)] in theorem ...
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankQuotOneSubIdempotentEqMul.lean:59:4: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankQuotOneSubIdempotentEqMul.lean:60:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankQuotOneSubIdempotentEqMul.lean:61:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankQuotOneSubIdempotentEqMul.lean:69:19: This simp argument is unused:
-  Ideal.quotientKerAlgEquivOfSurjective_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [f]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [178317/178340] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualNumberGraphFiltrationLieOfMapIntoHodgeStatement (10s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DualNumberGraphFiltrationLieOfMapIntoHodgeStatement.lean:11:66: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [178537/178577] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivisibleGroupExistsFactorThroughIsogeny (12s)
+⚠ [178538/178577] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymmCocycleApplyFinsetSumStatement (4.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SymmCocycleApplyFinsetSumStatement.lean:9:48: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DualNumberGraphFiltrationLieOfMapIntoHodgeStatement.lean:11:121: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SymmCocycleApplyFinsetSumStatement.lean:9:85: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DualNumberGraphFiltrationLieOfMapIntoHodgeStatement.lean:11:66: Unused tactic linter: `(exact GlobalTheory.HTRealise.eigen_decomp_graphFil)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SymmCocycleApplyFinsetSumStatement.lean:9:48: Unused tactic linter: `exact GlobalTheory.symmCocycle_sum` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DualNumberGraphFiltrationLieOfMapIntoHodgeStatement.lean:11:121: Unused tactic linter: `(intros; apply GlobalTheory.HTRealise.eigen_decomp_graphFil <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SymmCocycleApplyFinsetSumStatement.lean:9:85: Unused tactic linter: `(intros; apply GlobalTheory.symmCocycle_sum <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [178318/178340] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightSpaceIffIdempotentFixedStatement (5.4s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/WeightSpaceIffIdempotentFixedStatement.lean:8:67: this tactic is never executed
+⚠ [178539/178585] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LazardOneVariableExistsWittLiftStatement (5.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LazardOneVariableExistsWittLiftStatement.lean:9:54: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/WeightSpaceIffIdempotentFixedStatement.lean:8:123: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LazardOneVariableExistsWittLiftStatement.lean:9:97: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/WeightSpaceIffIdempotentFixedStatement.lean:8:67: Unused tactic linter: `(exact GlobalTheory.weightSpace_iff_idempotent_fixed)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LazardOneVariableExistsWittLiftStatement.lean:9:54: Unused tactic linter: `exact GlobalTheory.LazardOne.exists_lift` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/WeightSpaceIffIdempotentFixedStatement.lean:8:123: Unused tactic linter: `(intros; apply GlobalTheory.weightSpace_iff_idempotent_fixed <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LazardOneVariableExistsWittLiftStatement.lean:9:97: Unused tactic linter: `(intros; apply GlobalTheory.LazardOne.exists_lift <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [178319/178340] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharacterAugmentationSubspaceTopEqKerSmul (7.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CharacterAugmentationSubspaceTopEqKerSmul.lean:15:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [178320/178343] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankQuotOneSubIdempotentEqMulStatement (4.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankQuotOneSubIdempotentEqMulStatement.lean:8:67: this tactic is never executed
+⚠ [178540/178589] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreePartIntegralDifferentialOfCoboundaryStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DegreePartIntegralDifferentialOfCoboundaryStatement.lean:9:47: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankQuotOneSubIdempotentEqMulStatement.lean:8:123: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DegreePartIntegralDifferentialOfCoboundaryStatement.lean:9:83: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankQuotOneSubIdempotentEqMulStatement.lean:8:67: Unused tactic linter: `(exact GlobalTheory.finrank_quot_one_sub_idem_eq_mul)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DegreePartIntegralDifferentialOfCoboundaryStatement.lean:9:47: Unused tactic linter: `exact GlobalTheory.Katz.WDer.main` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankQuotOneSubIdempotentEqMulStatement.lean:8:123: Unused tactic linter: `(intros; apply GlobalTheory.finrank_quot_one_sub_idem_eq_mul <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DegreePartIntegralDifferentialOfCoboundaryStatement.lean:9:83: Unused tactic linter: `(intros; apply GlobalTheory.Katz.WDer.main <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [178321/178346] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorFirstOrderDeformationSkewStatement (10s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorFirstOrderDeformationSkewStatement.lean:9:59: this tactic is never executed
+⚠ [178541/178589] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorExistsGluedFirstOrderDeformationStatement (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorExistsGluedFirstOrderDeformationStatement.lean:10:51: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorFirstOrderDeformationSkewStatement.lean:9:107: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorExistsGluedFirstOrderDeformationStatement.lean:10:91: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorFirstOrderDeformationSkewStatement.lean:9:59: Unused tactic linter: `(exact GlobalTheory.HTSkew.skew_of_isFilLift)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorExistsGluedFirstOrderDeformationStatement.lean:10:137: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorExistsGluedFirstOrderDeformationStatement.lean:10:182: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorExistsGluedFirstOrderDeformationStatement.lean:10:233: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorExistsGluedFirstOrderDeformationStatement.lean:10:51: Unused tactic linter: `exact GlobalTheory.HTGlue.exists_glue` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorFirstOrderDeformationSkewStatement.lean:9:107: Unused tactic linter: `(intros; apply GlobalTheory.HTSkew.skew_of_isFilLift <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorExistsGluedFirstOrderDeformationStatement.lean:10:91: Unused tactic linter: `exact @GlobalTheory.HTGlue.isFilLiftV_of_eq` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorExistsGluedFirstOrderDeformationStatement.lean:10:137: Unused tactic linter: `exact GlobalTheory.HTGlue.isFilLiftV_of_eq` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorExistsGluedFirstOrderDeformationStatement.lean:10:182: Unused tactic linter: `exact @GlobalTheory.HTGlue.exists_obj_of_summand` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorExistsGluedFirstOrderDeformationStatement.lean:10:233: Unused tactic linter: `exact GlobalTheory.HTGlue.exists_obj_of_summand` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [178542/178589] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoboundaryOneAdditiveFormalGroupLawXPow (5.4s)
+✔ [178543/178589] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdditiveTwoCocycleCoeffRelationsOnePair (8.9s)
+⚠ [178544/178589] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsConnectedPDivGroupChartOfIsConnStatement (8.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsConnectedPDivGroupChartOfIsConnStatement.lean:9:120: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsConnectedPDivGroupChartOfIsConnStatement.lean:10:60: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsConnectedPDivGroupChartOfIsConnStatement.lean:10:109: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsConnectedPDivGroupChartOfIsConnStatement.lean:10:60: Unused tactic linter: `exact GlobalTheory.Katz.exists_chart_of_isConn` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsConnectedPDivGroupChartOfIsConnStatement.lean:10:109: Unused tactic linter: `(intros; apply GlobalTheory.Katz.exists_chart_of_isConn <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [178545/178591] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsThetaDieudonneModFrobeniusDifferentialsStatement (9.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsThetaDieudonneModFrobeniusDifferentialsStatement.lean:9:50: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsThetaDieudonneModFrobeniusDifferentialsStatement.lean:9:89: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsThetaDieudonneModFrobeniusDifferentialsStatement.lean:9:50: Unused tactic linter: `exact GlobalTheory.Dieu.theta_exists` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsThetaDieudonneModFrobeniusDifferentialsStatement.lean:9:89: Unused tactic linter: `(intros; apply GlobalTheory.Dieu.theta_exists <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [178546/178591] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCob1WittLiftModPStatement (4.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCob1WittLiftModPStatement.lean:9:48: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCob1WittLiftModPStatement.lean:9:85: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCob1WittLiftModPStatement.lean:9:48: Unused tactic linter: `exact GlobalTheory.WittStart.start` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCob1WittLiftModPStatement.lean:9:85: Unused tactic linter: `(intros; apply GlobalTheory.WittStart.start <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [178547/178592] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffCoboundaryOneAdditiveEqZeroOfDegree (5.5s)
+✔ [178548/178592] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymmetricCocycleAdditiveEqCoboundaryAdd (7.1s)
+⚠ [178549/178592] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivisibleGroupIsogenyBasicPropertiesStatement (8.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PDivisibleGroupIsogenyBasicPropertiesStatement.lean:9:49: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PDivisibleGroupIsogenyBasicPropertiesStatement.lean:9:87: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PDivisibleGroupIsogenyBasicPropertiesStatement.lean:9:49: Unused tactic linter: `exact GlobalTheory.Dieu.isog_basics` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PDivisibleGroupIsogenyBasicPropertiesStatement.lean:9:87: Unused tactic linter: `(intros; apply GlobalTheory.Dieu.isog_basics <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [178550/178593] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.KatzQuasiIntegralCriterion (5.9s)
+✔ [178551/178593] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSeqOfStep (5.1s)
+⚠ [178552/178593] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoboundaryOneAdditiveFormalGroupLawXPowStatement (5.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CoboundaryOneAdditiveFormalGroupLawXPowStatement.lean:9:75: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CoboundaryOneAdditiveFormalGroupLawXPowStatement.lean:9:139: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CoboundaryOneAdditiveFormalGroupLawXPowStatement.lean:9:75: Unused tactic linter: `exact GlobalTheory.coboundaryOne_additiveFormalGroupLaw_X_pow` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CoboundaryOneAdditiveFormalGroupLawXPowStatement.lean:9:139: Unused tactic linter: `(intros;
+  apply GlobalTheory.coboundaryOne_additiveFormalGroupLaw_X_pow <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
