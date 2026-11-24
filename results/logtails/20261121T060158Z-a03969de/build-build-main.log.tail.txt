@@ -1,18 +1,3 @@
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PCuspIrr.lean:67:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [172768/172817] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PPolTop (265s)
-⚠ [172769/172817] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PPolBot (265s)
 warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PPolBot.lean:12:2: Try this: 
   haveI̵
 
@@ -158,3 +143,18 @@ open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
+✔ [172785/172818] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.MixedUnlinkedExponents.ValsExtOfAlt (253s)
+✔ [172786/172818] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.MixedUnlinkedExponents.GamOneOf (284s)
+✔ [172787/172819] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.MixedUnlinkedExponents.ChsFacts (255s)
+✔ [172788/172819] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.MixedUnlinkedExponents.LpPowOf (254s)
+⚠ [172789/172820] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.MixedUnlinkedExponents.TwValsOf (258s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/MixedUnlinkedExponents/TwValsOf.lean:99:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [172790/172820] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.MixedUnlinkedExponents.FdegEq (258s)
+✔ [172791/172820] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.MixedUnlinkedExponents.GamSumOf (259s)
+✔ [172792/172820] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.MixedUnlinkedExponents.LpEvalZero (224s)
