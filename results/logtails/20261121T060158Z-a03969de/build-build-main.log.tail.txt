@@ -1,160 +1,160 @@
-  [Fact (Nat.Prime l)]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fact (Nat.Prime l)] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [182327/182391] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.GradedChartDegrees.ChartGrConst (5.0s)
-✔ [182328/182391] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.LevelChainValuations.ValuationChainProofs.RHofLev (30s)
-✔ [182329/182393] Built GroundTheory.PAdicHodge.WAFracMain (203s)
-⚠ [182330/182393] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.LocalSystemQuotients.ModFSW (5.3s)
-warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/PerfectoidPullbacks/LocalSystemQuotients/ModFSW.lean:27:13: Variable name `n` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/LimitBilinearCup/LimOneExAlt.lean:66:35: Variable name `x` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _n
+  [apply] _x
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/PerfectoidPullbacks/LocalSystemQuotients/ModFSW.lean:28:11: Variable name `n` is not explicitly referenced.
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/LimitBilinearCup/LimOneExAlt.lean:67:16: Variable name `M` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _n
+  [apply] _M
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [182331/182393] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CrisZeroSurjective (19s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CrisZeroSurjective.lean:309:2: Try this: 
-  letI̵
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/LimitBilinearCup/LimOneExAlt.lean:68:16: Variable name `M` is not explicitly referenced.
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _M
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/LimitBilinearCup/LimOneExAlt.lean:69:25: Variable name `M` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _M
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [182414/182434] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArtinianLimitLiftOfCompatibleStatement (4.7s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ArtinianLimitLiftOfCompatibleStatement.lean:7:77: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ArtinianLimitLiftOfCompatibleStatement.lean:7:143: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ArtinianLimitLiftOfCompatibleStatement.lean:7:77: Unused tactic linter: `exact GlobalTheory.CompanionTheory.ArtinTower.exists_compatible` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ArtinianLimitLiftOfCompatibleStatement.lean:7:143: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.ArtinTower.exists_compatible <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [182415/182434] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.CstSmoothOfP (4.0s)
+✔ [182416/182434] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LimitDivisibleOfVanishingLevel (5.2s)
+⚠ [182417/182438] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WittComparisonReductionCompatStatement (101s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/WittComparisonReductionCompatStatement.lean:8:70: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/WittComparisonReductionCompatStatement.lean:8:129: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/WittComparisonReductionCompatStatement.lean:8:70: Unused tactic linter: `exact GlobalTheory.CompanionTheory.CrisBaseChange.bW_red` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/WittComparisonReductionCompatStatement.lean:8:129: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.CrisBaseChange.bW_red <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [182418/182443] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TeichmullerNuFrobeniusCompatStatement (176s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TeichmullerNuFrobeniusCompatStatement.lean:8:61: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TeichmullerNuFrobeniusCompatStatement.lean:8:111: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TeichmullerNuFrobeniusCompatStatement.lean:8:61: Unused tactic linter: `exact GlobalTheory.CompanionTheory.NuPhi.nu_phi` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TeichmullerNuFrobeniusCompatStatement.lean:8:111: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.NuPhi.nu_phi <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [182419/182449] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LimitDivisibleOfVanishingLevelStatement (4.8s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LimitDivisibleOfVanishingLevelStatement.lean:7:70: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LimitDivisibleOfVanishingLevelStatement.lean:7:129: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LimitDivisibleOfVanishingLevelStatement.lean:7:70: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Tower.lim_eq_pow_smul` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LimitDivisibleOfVanishingLevelStatement.lean:7:129: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.Tower.lim_eq_pow_smul <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [182420/182449] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BoundedCokernelLimitToLevel (6.1s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/BoundedCokernelLimitToLevel.lean:12:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [182332/182394] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.GradedChartDegrees.ThickeningIdealNilpotent (7.1s)
-warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/PerfectoidPullbacks/GradedChartDegrees/ThickeningIdealNilpotent.lean:16:0: automatically included section variable(s) unused in theorem `CrystallineSemistableComparison.Pb.Diso.l_mem_GI`:
-  [Fact (Nat.Prime l)]
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/BoundedCokernelLimitToLevel.lean:24:20: This simp argument is unused:
+  OrderHom.coe_mk
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [f, LinearMap.mem_ker, LinearMap.smul_apply, LinearMap.id_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/BoundedCokernelLimitToLevel.lean:24:37: This simp argument is unused:
+  LinearMap.mem_ker
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [f, OrderHom.coe_mk, LinearMap.smul_apply, LinearMap.id_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/BoundedCokernelLimitToLevel.lean:24:56: This simp argument is unused:
+  LinearMap.smul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [f, OrderHom.coe_mk, LinearMap.mem_ker, LinearMap.id_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/BoundedCokernelLimitToLevel.lean:24:78: This simp argument is unused:
+  LinearMap.id_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [f, OrderHom.coe_mk, LinearMap.mem_ker, LinearMap.smul_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [182421/182449] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.TraceSplitHolds (22s)
+✔ [182422/182449] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.FrobeniusWittActions.OmMorPullIndep (7.1s)
+⚠ [182423/182449] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.KatzMessingTheorem.KatzMessingT (5.7s)
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/KatzMessingTheorem/KatzMessingT.lean:60:0: automatically included section variable(s) unused in theorem `CompanionTheory.KM.CohModel.actQ_frob`:
+  [Fintype k]
+  [CharZero E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fact (Nat.Prime l)] in theorem ...
+  omit [Fintype k] [CharZero E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/PerfectoidPullbacks/GradedChartDegrees/ThickeningIdealNilpotent.lean:61:0: automatically included section variable(s) unused in theorem `CrystallineSemistableComparison.Pb.Diso.lm_map`:
-  [Fact (Nat.Prime l)]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fact (Nat.Prime l)] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/PerfectoidPullbacks/GradedChartDegrees/ThickeningIdealNilpotent.lean:70:0: automatically included section variable(s) unused in theorem `CrystallineSemistableComparison.Pb.Diso.GI_map`:
-  [Fact (Nat.Prime l)]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fact (Nat.Prime l)] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [182333/182394] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatWittTowerLevel (7.2s)
-⚠ [182334/182394] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LiftCocycleMem (13s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LiftCocycleMem.lean:172:9: `AddSubmonoidClass.coe_finset_sum` has been deprecated: Use `AddSubmonoidClass.coe_finsetSum` instead
-✔ [182335/182394] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuotientReductionBijectiveOfFlat (8.8s)
-✔ [182336/182397] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.FrobeniusFactorisation.PullT (50s)
-⚠ [182337/182397] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatWittTowerLevelStatement (4.9s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FlatWittTowerLevelStatement.lean:7:67: this tactic is never executed
+✔ [182424/182449] Built Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.PoincareDualityProjectivePoint (4.0s)
+✔ [182425/182449] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.LocalSystemQuotients.BijCov (26s)
+✔ [182426/182449] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ModuleFiniteLimitOfLseq (6.2s)
+⚠ [182427/182455] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BoundedCokernelLimitToLevelStatement (4.7s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/BoundedCokernelLimitToLevelStatement.lean:7:75: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FlatWittTowerLevelStatement.lean:7:123: this tactic is never executed
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/BoundedCokernelLimitToLevelStatement.lean:7:139: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FlatWittTowerLevelStatement.lean:7:67: Unused tactic linter: `exact GlobalTheory.CompanionTheory.FlatLevel.flatL_Kt` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/BoundedCokernelLimitToLevelStatement.lean:7:75: Unused tactic linter: `exact GlobalTheory.CompanionTheory.TwCok.lim_cokernel_bounded` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FlatWittTowerLevelStatement.lean:7:123: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.FlatLevel.flatL_Kt <;> assumption)` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/BoundedCokernelLimitToLevelStatement.lean:7:139: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.TwCok.lim_cokernel_bounded <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [182338/182397] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.GradedChartDegrees.LmLeStd (8.4s)
-warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/PerfectoidPullbacks/GradedChartDegrees/LmLeStd.lean:50:0: automatically included section variable(s) unused in theorem `CrystallineSemistableComparison.Pb.Diso.lm_le_std`:
-  [Fact (Nat.Prime l)]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fact (Nat.Prime l)] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [182339/182397] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.LocalSystemQuotients.RedMk (9.8s)
-warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/PerfectoidPullbacks/LocalSystemQuotients/RedMk.lean:26:8: automatically included section variable(s) unused in theorem `_private.Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.LocalSystemQuotients.RedMk.0.CrystallineSemistableComparison.Pb.LsQ.exists_factorial_mul_eq_pow_pow_in_span`:
-  [PerfectRing k l]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [PerfectRing k l] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/PerfectoidPullbacks/LocalSystemQuotients/RedMk.lean:200:15: `CategoryTheory.FunctorToTypes.map_comp_apply` has been deprecated: Use `CategoryTheory.Functor.map_comp_apply` instead
-
-Note: The updated constant has a different type:
-  ∀ {C : Type u₁} [inst : Category.{v₁, u₁} C] {D : Type u₂} [inst_1 : Category.{v₂, u₂} D] (self : C ⥤ D) {X Y Z : C}
-    (f : X ⟶ Y) (g : Y ⟶ Z) {F : D → D → Type uF} {carrier : D → Type w}
-    {instFunLike : (X Y : D) → FunLike (F X Y) (carrier X) (carrier Y)} [inst_2 : ConcreteCategory D F]
-    (x : carrier (self.obj X)),
-    (ConcreteCategory.hom (self.map (f ≫ g))) x =
-      (ConcreteCategory.hom (self.map g)) ((ConcreteCategory.hom (self.map f)) x)
-instead of
-  ∀ {C : Type u} [inst : Category.{v, u} C] (F : C ⥤ Type w) {X Y Z : C} (f : X ⟶ Y) (g : Y ⟶ Z) (a : F.obj X),
-    (ConcreteCategory.hom (F.map (f ≫ g))) a = (ConcreteCategory.hom (F.map g)) ((ConcreteCategory.hom (F.map f)) a)
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.map_comp_apply` to `Functor.map_comp_apply x`).
-warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/PerfectoidPullbacks/LocalSystemQuotients/RedMk.lean:200:48: `CategoryTheory.FunctorToTypes.map_comp_apply` has been deprecated: Use `CategoryTheory.Functor.map_comp_apply` instead
-
-Note: The updated constant has a different type:
-  ∀ {C : Type u₁} [inst : Category.{v₁, u₁} C] {D : Type u₂} [inst_1 : Category.{v₂, u₂} D] (self : C ⥤ D) {X Y Z : C}
-    (f : X ⟶ Y) (g : Y ⟶ Z) {F : D → D → Type uF} {carrier : D → Type w}
-    {instFunLike : (X Y : D) → FunLike (F X Y) (carrier X) (carrier Y)} [inst_2 : ConcreteCategory D F]
-    (x : carrier (self.obj X)),
-    (ConcreteCategory.hom (self.map (f ≫ g))) x =
-      (ConcreteCategory.hom (self.map g)) ((ConcreteCategory.hom (self.map f)) x)
-instead of
-  ∀ {C : Type u} [inst : Category.{v, u} C] (F : C ⥤ Type w) {X Y Z : C} (f : X ⟶ Y) (g : Y ⟶ Z) (a : F.obj X),
-    (ConcreteCategory.hom (F.map (f ≫ g))) a = (ConcreteCategory.hom (F.map g)) ((ConcreteCategory.hom (F.map f)) a)
-
-Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.map_comp_apply` to `Functor.map_comp_apply x`).
-⚠ [182340/182397] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuotientReductionBijectiveOfFlatStatement (4.9s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/QuotientReductionBijectiveOfFlatStatement.lean:7:66: this tactic is never executed
+✔ [182428/182455] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.FrobeniusFactorisation.GenMuNu (5.1s)
+✔ [182429/182455] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.AdicCyclicCup.LAdicPassageNarrowDuality (5.1s)
+⚠ [182430/182459] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ModuleFiniteLimitOfLseqStatement (4.8s)
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ModuleFiniteLimitOfLseqStatement.lean:7:75: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/QuotientReductionBijectiveOfFlatStatement.lean:7:121: this tactic is never executed
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ModuleFiniteLimitOfLseqStatement.lean:7:139: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/QuotientReductionBijectiveOfFlatStatement.lean:7:66: Unused tactic linter: `exact GlobalTheory.CompanionTheory.QredFlat.qred_bij` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ModuleFiniteLimitOfLseqStatement.lean:7:75: Unused tactic linter: `exact GlobalTheory.CompanionTheory.TowerLim.module_finite_lim` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/QuotientReductionBijectiveOfFlatStatement.lean:7:121: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.QredFlat.qred_bij <;> assumption)` does nothing
+warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ModuleFiniteLimitOfLseqStatement.lean:7:139: Unused tactic linter: `(intros;
+  apply GlobalTheory.CompanionTheory.TowerLim.module_finite_lim <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [182341/182397] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AcrisIsAdicComplete (5.0s)
-✔ [182342/182397] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WittAcrisFlat (8.3s)
-⚠ [182343/182397] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubMemOfLift (22s)
-warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SubMemOfLift.lean:264:55: Variable name `hle` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hle
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [182344/182397] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TeichmullerNuPullbackCompat (20s)
-✔ [182345/182397] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TeichmullerMuReductionCompat (29s)
-⚠ [182346/182397] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.FrobeniusWittActions.FmapOf (138s)
-warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/PerfectoidPullbacks/FrobeniusWittActions/FmapOf.lean:196:85: Variable name `a` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _a
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/PerfectoidPullbacks/FrobeniusWittActions/FmapOf.lean:196:87: Variable name `b` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _b
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/PerfectoidPullbacks/FrobeniusWittActions/FmapOf.lean:220:75: Variable name `a` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _a
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/PerfectoidPullbacks/FrobeniusWittActions/FmapOf.lean:220:77: Variable name `b` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _b
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [182347/182397] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TeichmullerNuReductionCompat (26s)
-✔ [182348/182397] Built Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TeichmullerMuGaloisCompat (93s)
