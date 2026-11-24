@@ -1,78 +1,39 @@
+  [apply] simp only [Lbl.D, Lbl.rk] at hc
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PTypeChar.lean:78:2: Try this: 
-  haveI̵
+⚠ [172862/172876] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PCuspFrob (322s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PCuspFrob.lean:16:54: Variable name `hm` is not explicitly referenced.
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hm
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PTypeChar.lean:93:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PTypeChar.lean:95:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [172842/172861] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalCharacterGLIsCharacterNormOneOfRegular (20s)
-✔ [172843/172862] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsInCharacterIsotypicPartSelf (20s)
-⚠ [172844/172862] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBlockParabolicSubgroupLeviProjection (22s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsBlockParabolicSubgroupLeviProjection.lean:94:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [172845/172863] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalCharacterGLIsCharacterNormOneOfRegularStatement (5.0s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspidalCharacterGLIsCharacterNormOneOfRegularStatement.lean:8:67: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspidalCharacterGLIsCharacterNormOneOfRegularStatement.lean:8:123: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspidalCharacterGLIsCharacterNormOneOfRegularStatement.lean:8:67: Unused tactic linter: `(exact GlobalTheory.Shin.isChar_cusp_and_norm_of_reg)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspidalCharacterGLIsCharacterNormOneOfRegularStatement.lean:8:123: Unused tactic linter: `(intros; apply GlobalTheory.Shin.isChar_cusp_and_norm_of_reg <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [172846/172863] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.NotModEqOfLt (5.3s)
-⚠ [172847/172864] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBlockParabolicSubgroupLeviProjectionStatement (5.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsBlockParabolicSubgroupLeviProjectionStatement.lean:8:58: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsBlockParabolicSubgroupLeviProjectionStatement.lean:8:105: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsBlockParabolicSubgroupLeviProjectionStatement.lean:8:58: Unused tactic linter: `(exact GlobalTheory.Shin.BlockPar.block_par)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsBlockParabolicSubgroupLeviProjectionStatement.lean:8:105: Unused tactic linter: `(intros; apply GlobalTheory.Shin.BlockPar.block_par <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [172848/172864] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PTameChars (329s)
-⚠ [172849/172865] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PBaseCase (329s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PBaseCase.lean:16:34: This simp argument is unused:
-  id
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PCuspFrob.lean:30:52: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PCuspFrob.lean:38:52: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+✔ [172863/172878] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PTensInc (301s)
+⚠ [172864/172880] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PIndMap (331s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PIndMap.lean:20:80: This simp argument is unused:
+  LinearMap.smul_apply
 
 Hint: Omit it from the simp argument list.
-  [apply] simp only [Function.comp_apply]
+  [apply] simp only [σ, MonoidHom.comp_apply, twist, MonoidHom.coe_mk, OneHom.coe_mk, h3, Units.val_one, one_smul]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [172850/172866] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PLiftDet (329s)
-⚠ [172851/172866] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PHcOne (294s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PHcOne.lean:64:2: Try this: 
+⚠ [172865/172881] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraInductionGLIsCharacterStatement (20s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarishChandraInductionGLIsCharacterStatement.lean:8:56: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarishChandraInductionGLIsCharacterStatement.lean:8:101: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarishChandraInductionGLIsCharacterStatement.lean:8:56: Unused tactic linter: `(exact GlobalTheory.Shin.HCChar.hc_isChar)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarishChandraInductionGLIsCharacterStatement.lean:8:101: Unused tactic linter: `(intros; apply GlobalTheory.Shin.HCChar.hc_isChar <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [172866/172881] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroOfExtTensor (23s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNeZeroOfExtTensor.lean:27:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -80,42 +41,36 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PHcOne.lean:65:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [172852/172868] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PKillsNil (330s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PKillsNil.lean:12:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PKillsNil.lean:13:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [172853/172868] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PKillsTrue (304s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PKillsTrue.lean:31:16: This simp argument is unused:
-  FiniteField.coe_frobeniusAlgEquivOfAlgebraic
+✔ [172867/172882] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCharacterHarishChandraProductCuspidalGLOfRegul (5.1s)
+✔ [172868/172882] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IwahoriTypeSupport.LocHolds (27s)
+⚠ [172869/172883] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IwahoriTypeSupport.FinTri (26s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IwahoriTypeSupport/FinTri.lean:15:47: `Matrix.det_of_upperTriangular` has been deprecated: Use `Matrix.det_of_isUpperTriangular` instead
+⚠ [172870/172883] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IwahoriTypeSupport.TypeToIw (7.1s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IwahoriTypeSupport/TypeToIw.lean:58:46: This simp argument is unused:
+  MonoidHom.coe_coe
 
 Hint: Omit it from the simp argument list.
-  [apply] simp [hs z, Nat.card_eq_fintype_card]
+  [apply] simp only [unitIncl, Units.coe_map]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [172854/172869] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.CountExpandMap (302s)
-⚠ [172855/172870] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PSuppAny (337s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PSuppAny.lean:34:2: Try this: 
+⚠ [172871/172883] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCharacterHarishChandraProductCuspidalGLOfRegulStatement (14s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsCharacterHarishChandraProductCuspidalGLOfRegulStatement.lean:8:55: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsCharacterHarishChandraProductCuspidalGLOfRegulStatement.lean:8:99: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsCharacterHarishChandraProductCuspidalGLOfRegulStatement.lean:8:55: Unused tactic linter: `(exact GlobalTheory.Shin.isChar_J_of_reg)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsCharacterHarishChandraProductCuspidalGLOfRegulStatement.lean:8:99: Unused tactic linter: `(intros; apply GlobalTheory.Shin.isChar_J_of_reg <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [172872/172883] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IwahoriTypeSupport.ParaFactor (7.0s)
+✔ [172873/172883] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IwahoriTypeSupport.IndSupp (7.2s)
+✔ [172874/172886] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PHcChar (221s)
+⚠ [172875/172890] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PLblMixed (257s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PLblMixed.lean:207:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -123,7 +78,56 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PSuppAny.lean:35:2: Try this: 
+✔ [172876/172890] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PMixType (257s)
+✔ [172877/172890] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.IwahoriNeBotOfSpherical (10s)
+✔ [172878/172893] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IwahoriTypeSupport.BlockCount (5.2s)
+⚠ [172879/172895] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IwahoriTypeSupport.GrpFacts (5.6s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IwahoriTypeSupport/GrpFacts.lean:34:43: This simp argument is unused:
+  MonoidHom.coe_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [unitRes, Units.coe_map, Units.val_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [172880/172897] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IwahoriTypeSupport.JacOfType (6.7s)
+✔ [172881/172901] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PJdChar (189s)
+⚠ [172882/172901] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraInductionGLAssoc (8.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarishChandraInductionGLAssoc.lean:137:26: This simp argument is unused:
+  Finset.sum_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Finset.mul_sum, mul_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [172883/172901] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraInductionGLComm (6.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarishChandraInductionGLComm.lean:17:0: automatically included section variable(s) unused in theorem `GlobalTheory.HCCommF.aflip_apply`:
+  [Field F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Field F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarishChandraInductionGLComm.lean:27:0: automatically included section variable(s) unused in theorem `GlobalTheory.HCCommF.aflip_aflip`:
+  [Field F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Field F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [172884/172903] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraInductionGLOneLeftRightUnit (5.2s)
+⚠ [172885/172903] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraInductionGLAssocStatement (4.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarishChandraInductionGLAssocStatement.lean:8:56: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarishChandraInductionGLAssocStatement.lean:8:101: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarishChandraInductionGLAssocStatement.lean:8:56: Unused tactic linter: `(exact GlobalTheory.Shin.HcAssoc.hc_assoc)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarishChandraInductionGLAssocStatement.lean:8:101: Unused tactic linter: `(intros; apply GlobalTheory.Shin.HcAssoc.hc_assoc <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [172886/172910] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PUnlFull (231s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PUnlFull.lean:28:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -131,26 +135,22 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PSuppAny.lean:36:2: Try this: 
-  haveI̵
+✔ [172887/172912] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraInductionGLCommStatement (5.2s)
+⚠ [172888/172912] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraInductionGLOneLeftRightUnitStatement (4.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarishChandraInductionGLOneLeftRightUnitStatement.lean:8:51: this tactic is never executed
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarishChandraInductionGLOneLeftRightUnitStatement.lean:8:91: this tactic is never executed
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PSuppAny.lean:34:2: Try this: 
-  haveI̵
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarishChandraInductionGLOneLeftRightUnitStatement.lean:8:51: Unused tactic linter: `(exact GlobalTheory.Shin.HcUnit.main)` does nothing
 
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarishChandraInductionGLOneLeftRightUnitStatement.lean:8:91: Unused tactic linter: `(intros; apply GlobalTheory.Shin.HcUnit.main <;> assumption)` does nothing
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/PSuppAny.lean:32:2: Try this: intro hOn hOf hTy hSO hBC hTC hLT hPT hPB hRE hUT hBQ hCR hAR hCI hSI E Ω _ _ _ _ _ _ n hn π Y hY A v w h h' g
-  _ i hi hI τ τ' hτ hτ' hD f hf hs
-⚠ [172856/172870] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraInductionGLIsCharacter (20s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarishChandraInductionGLIsCharacter.lean:17:2: Try this: 
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [172889/172912] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IwahoriTypeSupport.JacProd (279s)
+warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IwahoriTypeSupport/JacProd.lean:272:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
