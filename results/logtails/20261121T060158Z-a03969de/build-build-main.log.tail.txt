@@ -1,25 +1,4 @@
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ProjectiveAutomorphicHecke/ExistsOpenAvoid.lean:12:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ProjectiveAutomorphicHecke.ExistsOpenAvoid.0.UpperTheory.Gal.CertificateRingHomMap.PNbhd2.exists_open_avoid`:
-  [IsCMField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsCMField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ProjectiveAutomorphicHecke/ExistsOpenAvoid.lean:33:13: This simp argument is unused:
-  A.zero_mem
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [f]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ProjectiveAutomorphicHecke/ExistsOpenAvoid.lean:40:8: automatically included section variable(s) unused in theorem `_private.Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ProjectiveAutomorphicHecke.ExistsOpenAvoid.0.UpperTheory.Gal.CertificateRingHomMap.PNbhd2.exists_Kw`:
-  [IsCMField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [IsCMField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ProjectiveAutomorphicHecke/ExistsOpenAvoid.lean:75:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalConjugacyClassClosed.lean:180:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -27,57 +6,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [179787/179800] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ProjectiveAutomorphicHecke.PFinToHecke (5.7s)
-✔ [179788/179803] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ProjectiveAutomorphicHecke.PClassFin (6.3s)
-⚠ [179789/179803] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsOpenStabilizerLinearMap (5.0s)
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/IsOpenStabilizerLinearMap.lean:9:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-⚠ [179790/179805] Built Formalism.LocalToGlobal.Columns.InvariantSubspaceNonzeroXOfRegular (30s)
-warning: src/Formalism/LocalToGlobal/Columns/InvariantSubspaceNonzeroXOfRegular.lean:231:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.normOne_mul`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/Columns/InvariantSubspaceNonzeroXOfRegular.lean:236:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.normOne_conj`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/Columns/InvariantSubspaceNonzeroXOfRegular.lean:435:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.torsionLevelElement_apply`:
-  [NumberField E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/Columns/InvariantSubspaceNonzeroXOfRegular.lean:552:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.torsionUnit_val`:
-  [NumberField E]
-  [StarRing E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [NumberField E] [StarRing E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/Columns/InvariantSubspaceNonzeroXOfRegular.lean:575:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.torsionLevelElement_scalar_val`:
-  [StarRing E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [StarRing E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/Columns/InvariantSubspaceNonzeroXOfRegular.lean:655:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.embeddedGL_torsionScalar`:
-  [Fintype ι]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype ι] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: src/Formalism/LocalToGlobal/Columns/InvariantSubspaceNonzeroXOfRegular.lean:669:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.inverseTranspose_scalars`:
-  [Fintype ι]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype ι] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [179791/179806] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsGoodWithoutBad (4.8s)
-⚠ [179792/179806] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ProjectiveAutomorphicHecke.PStepAt (13s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ProjectiveAutomorphicHecke/PStepAt.lean:52:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalConjugacyClassClosed.lean:181:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -85,7 +14,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ProjectiveAutomorphicHecke/PStepAt.lean:68:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalConjugacyClassClosed.lean:182:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -93,68 +22,139 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [179793/179807] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ProjectiveAutomorphicHecke.PHeckePres (6.8s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ProjectiveAutomorphicHecke/PHeckePres.lean:26:40: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-⚠ [179794/179811] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ProjectiveAutomorphicHecke.PXiScalar (6.4s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ProjectiveAutomorphicHecke/PXiScalar.lean:21:33: This simp argument is unused:
-  Matrix.one_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [h]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [179795/179811] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ProjectiveAutomorphicHecke.PKerFormU (8.7s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ProjectiveAutomorphicHecke/PKerFormU.lean:122:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalConjugacyClassClosed.lean:200:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalConjugacyClassClosed.lean:224:12: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+⚠ [180144/180167] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsResidueIdempotent (7.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsResidueIdempotent.lean:17:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
 If you'd rather continue using `push_neg` in your project, you can implement it as follows:
 ```
 open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-⚠ [179796/179822] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ProjectiveAutomorphicHecke.PKapOf (7.9s)
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ProjectiveAutomorphicHecke/PKapOf.lean:42:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsResidueIdempotent.lean:24:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
 If you'd rather continue using `push_neg` in your project, you can implement it as follows:
 ```
 open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-warning: src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ProjectiveAutomorphicHecke/PKapOf.lean:67:12: This simp argument is unused:
-  Subgroup.mem_map
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsResidueIdempotent.lean:48:2: Try this: 
+  haveI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [MonoidHom.mem_ker]
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [179797/179823] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ProjectiveAutomorphicHecke.CharConj (7.9s)
-✔ [179798/179824] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ProjectiveAutomorphicHecke.PThLoc (5.0s)
-✔ [179799/179824] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SchurDeterminants.PairSplit (5.1s)
-✔ [179800/179825] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SchurDeterminants.FibreSum (5.5s)
-⚠ [179801/179826] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.LevEraseLe (8.6s)
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/LevEraseLe.lean:63:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/LevEraseLe.lean:66:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
-⚠ [179802/179826] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.AevalMulOfIsHomogeneous (5.0s)
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/AevalMulOfIsHomogeneous.lean:5:5: Variable name `inst` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsResidueIdempotent.lean:49:2: Try this: 
+  haveI̵
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/AevalMulOfIsHomogeneous.lean:5:25: Variable name `inst_1` is not explicitly referenced.
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsResidueIdempotent.lean:52:2: Try this: 
+  haveI̵
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _inst_1
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [179803/179826] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SchurDeterminants.WeylTieOf (5.2s)
-✔ [179804/179826] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ProjectiveAutomorphicHecke.PTrRho (8.4s)
-✔ [179805/179826] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SchurDeterminants.PESpan (4.0s)
-✔ [179806/179826] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SchurDeterminants.SchurYOffOf (5.4s)
-✔ [179807/179826] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SchurDeterminants.SchurDetOf (5.4s)
-✔ [179808/179826] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.PrimeLevelLocalization.PVecWt (10s)
-✔ [179809/179826] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SchurDeterminants.POffPow (5.3s)
-✔ [179810/179826] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SchurDeterminants.SchurYOf (5.4s)
-✔ [179811/179826] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SchurDeterminants.POffRed (5.7s)
-✔ [179812/179826] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SchurDeterminants.PVdmSplit (5.0s)
-✔ [179813/179827] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SchurDeterminants.PPairCount (5.4s)
-✔ [179814/179827] Built Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SchurDeterminants.PPairSplit (5.1s)
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsResidueIdempotent.lean:101:73: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsResidueIdempotent.lean:102:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsResidueIdempotent.lean:103:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsResidueIdempotent.lean:104:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsResidueIdempotent.lean:101:73: Unused tactic linter: `assumption` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsResidueIdempotent.lean:102:4: Unused tactic linter: `(intros;
+  apply _root_.GlobalTheory.OneTensorExistence.exists_one_tmul_eq <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsResidueIdempotent.lean:103:4: Unused tactic linter: `(intros;
+  apply @_root_.GlobalTheory.OneTensorExistence.exists_one_tmul_eq <;>
+    first
+    | assumption
+    | infer_instance)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsResidueIdempotent.lean:104:4: Unused tactic linter: `(intros; exact _root_.GlobalTheory.OneTensorExistence.exists_one_tmul_eq ..)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsResidueIdempotent.lean:110:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsResidueIdempotent.lean:111:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [180145/180167] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNsmulMemSpan (5.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNsmulMemSpan.lean:50:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [180146/180167] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIdempotentLiftAdicCompleteFreeAlgebraStatement (4.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIdempotentLiftAdicCompleteFreeAlgebraStatement.lean:8:57: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIdempotentLiftAdicCompleteFreeAlgebraStatement.lean:8:103: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIdempotentLiftAdicCompleteFreeAlgebraStatement.lean:8:57: Unused tactic linter: `(exact GlobalTheory.IdemNewton.exists_idem)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIdempotentLiftAdicCompleteFreeAlgebraStatement.lean:8:103: Unused tactic linter: `(intros; apply GlobalTheory.IdemNewton.exists_idem <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [180147/180171] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.AzumayaAlgEquivMatrixOfIdempotentStatement (5.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AzumayaAlgEquivMatrixOfIdempotentStatement.lean:8:72: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AzumayaAlgEquivMatrixOfIdempotentStatement.lean:8:133: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AzumayaAlgEquivMatrixOfIdempotentStatement.lean:8:72: Unused tactic linter: `(exact GlobalTheory.azumaya_algEquiv_matrix_of_idempotent)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AzumayaAlgEquivMatrixOfIdempotentStatement.lean:8:133: Unused tactic linter: `(intros; apply GlobalTheory.azumaya_algEquiv_matrix_of_idempotent <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [180148/180171] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsLocalRingQuotientPairwiseIsCoprimeIInfEqStatement (5.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIsLocalRingQuotientPairwiseIsCoprimeIInfEqStatement.lean:8:102: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIsLocalRingQuotientPairwiseIsCoprimeIInfEqStatement.lean:8:193: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIsLocalRingQuotientPairwiseIsCoprimeIInfEqStatement.lean:8:102: Unused tactic linter: `(exact
+    GlobalTheory.exists_isLocalRing_quotient_pairwise_isCoprime_iInf_eq_bot_padicInt)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIsLocalRingQuotientPairwiseIsCoprimeIInfEqStatement.lean:8:193: Unused tactic linter: `(intros;
+  apply GlobalTheory.exists_isLocalRing_quotient_pairwise_isCoprime_iInf_eq_bot_padicInt <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
