@@ -1,31 +1,27 @@
-⚠ [174654/174691] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.MappingConeShortExactAugmentationClassEqStatement (14s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MappingConeShortExactAugmentationClassEqStatement.lean:18:62: this tactic is never executed
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MappingConeShortExactAugmentationClassEqStatement.lean:18:113: this tactic is never executed
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ModDepthGETwoOfIsIntegrallyClosedOfIsRegularLoca.lean:106:12: `ENat.lt_one_iff_eq_zero` has been deprecated: Use `Order.lt_one_iff` instead
 
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MappingConeShortExactAugmentationClassEqStatement.lean:18:62: Unused tactic linter: `(exact GlobalTheory.EtC.ConeClass.cone_class_eq)` does nothing
+Note: The updated constant has a different type:
+  ∀ {α : Type u_1} {x : α} [inst : LinearOrder α] [inst_1 : AddMonoidWithOne α] [SuccAddOrder α] [IsBotZeroClass α]
+    [NeZero 1], x < 1 ↔ x = 0
+instead of
+  ∀ {n : ℕ∞}, n < 1 ↔ n = 0
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MappingConeShortExactAugmentationClassEqStatement.lean:18:113: Unused tactic linter: `(intros; apply GlobalTheory.EtC.ConeClass.cone_class_eq <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [174655/174691] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.KummerCocycleSubChernClassCoboundaryStatement (5.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KummerCocycleSubChernClassCoboundaryStatement.lean:18:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KummerCocycleSubChernClassCoboundaryStatement.lean:19:4: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KummerCocycleSubChernClassCoboundaryStatement.lean:18:4: Unused tactic linter: `exact GlobalTheory.EtC.KumPic.Cobd.cobd` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KummerCocycleSubChernClassCoboundaryStatement.lean:19:4: Unused tactic linter: `(intros; apply GlobalTheory.EtC.KumPic.Cobd.cobd <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [174656/174691] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCohomologyOneCechCocycleOfPullbackZero (8.3s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleCohomologyOneCechCocycleOfPullbackZero.lean:99:2: Try this: 
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.lt_one_iff_eq_zero` to `Order.lt_one_iff x`).
+⚠ [174999/175020] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegerOfMaximalIdealPowSmulIsInteger (5.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsIntegerOfMaximalIdealPowSmulIsInteger.lean:43:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [175000/175022] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PurityFreeOfCompleteRegularLocal (7.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PurityFreeOfCompleteRegularLocal.lean:20:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -33,17 +29,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [174657/174693] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.BijectiveMultiplicativeGroupSectionsUnits (6.2s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BijectiveMultiplicativeGroupSectionsUnits.lean:62:44: This simp argument is unused:
-  ← map_inv
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [gmSec_uval_map_eq_units_map] at this
-
-Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BijectiveMultiplicativeGroupSectionsUnits.lean:96:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PurityFreeOfCompleteRegularLocal.lean:32:4: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -51,36 +37,23 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [174658/174693] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.KummerConnectingUnitClassEqKummerClass (21s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KummerConnectingUnitClassEqKummerClass.lean:110:82: Variable name `V` is not explicitly referenced.
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PurityFreeOfCompleteRegularLocal.lean:51:2: Try this: 
+  haveI̵
 
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _V
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KummerConnectingUnitClassEqKummerClass.lean:130:8: This simp argument is unused:
-  Scheme.Hom.comp_appTop
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PurityFreeOfCompleteRegularLocal.lean:52:2: Try this: 
+  haveI̵
 
-Hint: Omit it from the simp argument list.
-  [apply] simp
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [174659/174693] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCohomologyOneCechCocycleOfPullbackZeroStatement (4.9s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleCohomologyOneCechCocycleOfPullbackZeroStatement.lean:8:74: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleCohomologyOneCechCocycleOfPullbackZeroStatement.lean:8:137: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleCohomologyOneCechCocycleOfPullbackZeroStatement.lean:8:74: Unused tactic linter: `exact GlobalTheory.EtC.LerayOne.cech_cocycle_of_pull_eq_zero` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleCohomologyOneCechCocycleOfPullbackZeroStatement.lean:8:137: Unused tactic linter: `(intros;
-  apply GlobalTheory.EtC.LerayOne.cech_cocycle_of_pull_eq_zero <;> assumption)` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [174660/174695] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.MayerVietorisExtendClassCoprimeEtaleExcision (14s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MayerVietorisExtendClassCoprimeEtaleExcision.lean:17:2: Try this: 
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PurityFreeOfCompleteRegularLocal.lean:53:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -88,7 +61,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MayerVietorisExtendClassCoprimeEtaleExcision.lean:19:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PurityFreeOfCompleteRegularLocal.lean:65:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -96,7 +69,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MayerVietorisExtendClassCoprimeEtaleExcision.lean:20:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PurityFreeOfCompleteRegularLocal.lean:66:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -104,7 +77,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MayerVietorisExtendClassCoprimeEtaleExcision.lean:21:2: Try this: 
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PurityFreeOfCompleteRegularLocal.lean:78:2: Try this: 
   haveI̵
 
 The goal is a proposition, so `have` is preferred over `haveI`.
@@ -112,49 +85,76 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MayerVietorisExtendClassCoprimeEtaleExcision.lean:22:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MayerVietorisExtendClassCoprimeEtaleExcision.lean:43:2: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MayerVietorisExtendClassCoprimeEtaleExcision.lean:45:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [174661/174695] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.KummerBoundaryLineBundleFirstChernClass (6.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KummerBoundaryLineBundleFirstChernClass.lean:37:2: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [174662/174695] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.BijectiveMultiplicativeGroupSectionsUnitsStatement (4.8s)
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BijectiveMultiplicativeGroupSectionsUnitsStatement.lean:8:61: this tactic is never executed
+⚠ [175001/175022] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivConstOriginNoethStatement (5.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DivConstOriginNoethStatement.lean:25:71: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BijectiveMultiplicativeGroupSectionsUnitsStatement.lean:8:111: this tactic is never executed
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DivConstOriginNoethStatement.lean:25:131: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BijectiveMultiplicativeGroupSectionsUnitsStatement.lean:8:61: Unused tactic linter: `(exact GlobalTheory.EtC.GmSec.gm_sec_bijective)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DivConstOriginNoethStatement.lean:8:8: Overlapping instance parameters in `GlobalTheory.T.divConst_origin_noeth_alt`:
+
+⚠️ `[IsDomain T]` and `[IsLocalRing T]` each imply `[Nontrivial T]`.
+💡️ Of these, `[IsDomain T]` and `[IsLocalRing T]` may be removed.
+⚠️ `[IsDomain A]` and `[IsLocalRing A]` each imply `[Nontrivial A]`.
+💡️ Of these, `[IsDomain A]` and `[IsLocalRing A]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DivConstOriginNoethStatement.lean:25:71: Unused tactic linter: `(exact GlobalTheory.VertUnitsNoeth.divConst_origin_noeth)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BijectiveMultiplicativeGroupSectionsUnitsStatement.lean:8:111: Unused tactic linter: `(intros; apply GlobalTheory.EtC.GmSec.gm_sec_bijective <;> assumption)` does nothing
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DivConstOriginNoethStatement.lean:25:131: Unused tactic linter: `(intros; apply GlobalTheory.VertUnitsNoeth.divConst_origin_noeth <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [175002/175022] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNoetherianModelTorsorOriginStatement (5.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNoetherianModelTorsorOriginStatement.lean:41:73: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNoetherianModelTorsorOriginStatement.lean:41:135: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNoetherianModelTorsorOriginStatement.lean:8:8: Overlapping instance parameters in `GlobalTheory.T.exists_noetherian_model_torsor_origin`:
+
+⚠️ `[IsDomain T]` and `[IsLocalRing T]` each imply `[Nontrivial T]`.
+💡️ Of these, `[IsDomain T]` and `[IsLocalRing T]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNoetherianModelTorsorOriginStatement.lean:41:73: Unused tactic linter: `(exact GlobalTheory.KeyOriginNoeth.exists_noetherian_model)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNoetherianModelTorsorOriginStatement.lean:41:135: Unused tactic linter: `(intros; apply GlobalTheory.KeyOriginNoeth.exists_noetherian_model <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [175003/175022] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSMulRegularOfEtalePuncturedOfDepthPosDomainStatement (5.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsSMulRegularOfEtalePuncturedOfDepthPosDomainStatement.lean:8:85: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsSMulRegularOfEtalePuncturedOfDepthPosDomainStatement.lean:8:159: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsSMulRegularOfEtalePuncturedOfDepthPosDomainStatement.lean:7:8: Overlapping instance parameters in `GlobalTheory.T.isSMulRegular_of_etale_punctured_of_depth_pos_domain'`:
+
+⚠️ `[IsLocalRing S]` and `[IsDomain S]` each imply `[Nontrivial S]`.
+💡️ Of these, `[IsLocalRing S]` and `[IsDomain S]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsSMulRegularOfEtalePuncturedOfDepthPosDomainStatement.lean:8:85: Unused tactic linter: `exact GlobalTheory.isSMulRegular_of_etale_punctured_of_depth_pos_domain` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsSMulRegularOfEtalePuncturedOfDepthPosDomainStatement.lean:8:159: Unused tactic linter: `(intros;
+  apply GlobalTheory.isSMulRegular_of_etale_punctured_of_depth_pos_domain <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [175004/175022] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleQuotientOfEtalePuncturedStatement (5.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleQuotientOfEtalePuncturedStatement.lean:9:66: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleQuotientOfEtalePuncturedStatement.lean:9:121: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleQuotientOfEtalePuncturedStatement.lean:9:66: Unused tactic linter: `exact GlobalTheory.etale_quotient_of_etale_punctured` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleQuotientOfEtalePuncturedStatement.lean:9:121: Unused tactic linter: `(intros; apply GlobalTheory.etale_quotient_of_etale_punctured <;> assumption)` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
