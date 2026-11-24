@@ -10,16 +10,16 @@
   "verification_runtime": "loader-patched",
   "resumed_from_run_id": "20261120T184814Z-ebb611be",
   "resume_mode": "incremental",
-  "updated_utc": "2026-11-24T06:00:48+00:00",
+  "updated_utc": "2026-11-24T06:01:50+00:00",
   "resources": {
-    "sampled_utc": "2026-11-24T06:00:48+00:00",
-    "cgroup_memory_current_bytes": 64424484864,
+    "sampled_utc": "2026-11-24T06:01:50+00:00",
+    "cgroup_memory_current_bytes": 12326965248,
     "cgroup_memory_peak_since_creation_bytes": 64424513536,
     "cgroup_memory_stat_bytes": {
-      "total_rss": 6270582784,
-      "total_cache": 57097637888,
-      "total_mapped_file": 46540369920,
-      "total_inactive_file": 55517822976
+      "total_rss": 411566080,
+      "total_cache": 11085729792,
+      "total_mapped_file": 4114378752,
+      "total_inactive_file": 7589789696
     },
     "cgroup_memory_failcnt": 5,
     "cgroup_memory_oom_control": {
@@ -27,12 +27,12 @@
       "under_oom": 0,
       "oom_kill": 0
     },
-    "cgroup_cpu_usage_seconds": 2072556.324252931,
+    "cgroup_cpu_usage_seconds": 2072602.872516663,
     "sampled_memory_peak_this_runner_bytes": 64424509440,
-    "cgroup_cpu_seconds_since_runner_start": 1429333.0192423868,
-    "disk_free_bytes": 317984571392,
+    "cgroup_cpu_seconds_since_runner_start": 1429379.5675061191,
+    "disk_free_bytes": 405545283584,
     "disk_total_bytes": 536870912000,
-    "disk_free_inodes": 728126851
+    "disk_free_inodes": 728127132
   },
   "phases": {
     "source-prefetch": {
@@ -144,8 +144,14 @@
     },
     "build": {
       "run_directory_name": "20261121T060229Z-476153",
-      "status": "running:build-main",
-      "stages": {}
+      "status": "running:axioms",
+      "stages": {
+        "build-main": {
+          "exit_code": 0,
+          "start_utc": "2026-11-21T06:02:30Z",
+          "end_utc": "2026-11-24T06:01:40Z"
+        }
+      }
     }
   },
   "toolchain_provenance_sha256": "4d855786ae316d90534002048b275f2ae1304bb73793487e89cd4bef4428a95d"
