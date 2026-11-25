@@ -1,86 +1,106 @@
-# Riemann Hypothesis Lean verification
+# Riemann Hypothesis · Lean Verification
 
-This repository records a compilation and kernel-checking attempt. The latest machine-readable state and verification outcome are in [results/status.json](results/status.json). A `running`, `failed`, or `runner_error` state is not a successful verification.
+[![Verification: 4/4 passed](https://img.shields.io/badge/verification-4%2F4%20passed-brightgreen)](results/status.json)
+[![Lean: 4.33.1](https://img.shields.io/badge/Lean-4.33.1-blue)](results/environment.json)
+[![Evidence: archived](https://img.shields.io/badge/evidence-archived-blue)](results/final/20261121T060158Z-a03969de/manifest.json)
 
-## Source under test
+**English** | [简体中文](README.zh-CN.md)
 
-- Published mirror: https://github.com/CocoSgt/riemann-hypothesis-lean
-- Exact source commit: `7cbf7a0c32fca1badf05931879a37c3f8a2b03b4`
-- Exact `src` tree: `b41b516b1f7baee4d83ced235ecc71fd43c97695`
-- Base compiler release: `leanprover/lean4:v4.33.1` (the original release is retained; a separately identified loader repair is available below)
-- Linux release archive SHA-256: `890afd185370f85666025b883914ab4f4b339136f8c96167b69cfb62aecaf235`
-- Official Mathlib revision: `0df444a360eaa60ab8c11dca51a86af692955474`
-- Author announcement: https://alpo.ge/remark.pdf
+> **Verification completed.** The full project builds, the final proof matches Mathlib's Riemann Hypothesis statement, and a fresh Lean kernel replay passes.
 
-The original source checkout is separate from this repository and remains unchanged. The bootstrap verifies all nine dependency pins, downloads the official Mathlib cache, and records exact versions. The submission's own modules are rebuilt from source. At this pinned source commit, all 175,187 submission modules belong to the `Main` import closure.
+This repository records a reproduction and audit of **Levent Alpöge's Lean formalization**, together with the scripts, server loader repair, and evidence needed to inspect this run.
 
-## Execution and evidence
+**175,187 Lean modules · 5 final theorems · 4/4 verification gates passed**  
+Completed **2026-11-25, 07:18 UTC+8** (2026-11-24, 23:18 UTC).
 
-The rented Ubuntu 22.04.5 container has **32 logical CPUs, a 60 GiB memory limit, and a 500 GiB data volume**. Host-wide `free` output is not the container memory limit. Everything is stored under `/root/autodl-tmp/rh-check` on that server. The operator's Windows computer controls SSH and relays network traffic in memory; project sources and build products are not saved there.
+**[Results](results/status.json) · [Archived evidence](results/final/20261121T060158Z-a03969de/) · [Reproduction](#reproduce-the-run) · [Original source](https://github.com/CocoSgt/riemann-hypothesis-lean/tree/7cbf7a0c32fca1badf05931879a37c3f8a2b03b4)**
 
-Result uploads use HTTPS and the operator's existing GitHub credential through a task-specific, RAM-only Git credential-cache socket. The token is not written to disk or this repository. After the final upload succeeds, the runner stops only that task's credential-cache helper. SSH login credentials, private keys, and unrelated files are excluded from the result repository. Pushes first use the direct GitHub route with `http.proxy=''` and the repository's `http.curloptResolve=github.com:443:140.82.112.3`. If it fails and the loopback proxy on `127.0.0.1:20081` is reachable, they retry through the operator's in-memory PC network relay, using the same repository and credentials. Normal TLS certificate and hostname verification remain enabled on both routes. The official Lean archive is additionally checked against the upstream release digest.
+## What passed
 
-The server's original Git 2.34.1 does not support `http.curloptResolve` and silently ignored that setting. This task uses official Git 2.56.1, installed under `BASE/tools/git-current`, to apply the direct route. The runner records the actual selected Git version and executable in the environment evidence. A timed-out Git operation kills only its own process group, including transport children.
+| Check | Result | What was checked |
+|---|---|---|
+| [Project build](results/logtails/20261121T060158Z-a03969de/build-build-main.log.tail.txt) | **Passed** | Built `Main` and its full import closure, covering all 175,187 submission modules. |
+| [Final theorem check](results/evidence/20261121T060158Z-a03969de/build-Check.lean) | **Passed** | Explicitly checked the proof against Mathlib's standard `RiemannHypothesis` and printed the dependencies of five final theorems. |
+| [Axiom whitelist](results/logtails/20261121T060158Z-a03969de/build-validate-axioms.log.tail.txt) | **Passed** | All five final theorems depend only on the three allowed standard axioms. |
+| [Fresh kernel replay](results/evidence/20261121T060158Z-a03969de/build-fresh-replay.command.sh) | **Passed** | Rechecked `Main` with `leanchecker --fresh -v Main`; this phase took **17 h 7 min**. |
 
-The runner records these separate stages:
+The [axiom report](results/logtails/20261121T060158Z-a03969de/build-axioms.log.tail.txt) lists only `propext`, `Classical.choice`, and `Quot.sound` for each of the five final theorems: **no extra axiom or `sorryAx` dependency**. The [original proof source remained unchanged](results/evidence/20261121T060158Z-a03969de/build-final-source-status.txt).
 
-1. Toolchain, source, dependency, cache and `Statements` environment preparation.
-2. `lake --no-cache build Main`, with full output, time report and exact exit code.
-3. An explicit type check against the standard Mathlib `RiemannHypothesis` and `#print axioms` for all five final theorems. Only `propext`, `Classical.choice` and `Quot.sound` are accepted by the axiom-report validator.
-4. `leanchecker --fresh -v Main`, which replays the entire import closure in a fresh environment. **This uses the same Lean kernel, not an independent implementation.**
-5. Final unchanged-source checks.
+The explicit statement check is short:
 
-The original run used 16 Lake scheduler workers with `-j1` for each compiler. Continuations select the scheduler count explicitly with `--lean-num-threads`, and record the actual setting in the environment evidence. An audit-side TOML copy adds only `weakLeanArgs = ["-j1"]`; the published proof configuration and source stay unchanged. Resource samples use the container's cgroup limits and counters.
-
-## Loader repair for the platform's mapping limit
-
-The original run encountered `vm.max_map_count=65530`. A recorded ShapeWin reproduction reached approximately 65,532 mappings and showed file/anonymous `mmap` returning `ENOMEM`, followed by a null-buffer `read` returning `EFAULT`. The platform could not raise the host limit. See the [original diagnosis](results/diagnostics/20261121-map-limit/README.md).
-
-The [reviewable loader patch](patches/lean-4.33.1-bounded-mmap-arena.patch) leaves the mathematical source, artifact format, header/version checks and region relocation logic unchanged. It limits direct file-mapping attempts and provides an opt-in disk-backed pool for ordinary v2 artifact copies. The temporary files are private, immediately unlinked, preallocated, and shared-mapped in 256 MiB segments; the last region releases its segment. v3 incremental snapshots retain their heap fallback. This backend targets standalone compiler and spawn/exec use, not arbitrary fork/COW behavior. [Implementation and scope](patches/ARENA-NOTES.md)
-
-The modified runtime is a separately installed **release relink**, not the official binary and not a full compiler bootstrap. It reuses the official Lean/Init/Std objects and verifies that every kernel archive object is byte-for-byte unchanged. Only the loader object, the upstream shell object and the runtime members needed for the shared-library TLS model are rebuilt. Both original and modified binary hashes, source identities, exact commands and the patch digest are recorded in `loader-build-manifest.json`. The original release is never replaced.
-
-[Regression tooling](scripts/test_lean_loader.py) compares the official and modified runtimes, checks acceptance/rejection and direct kernel rejection, tests imported artifact compatibility and bad headers, forces real arena use, observes region freeing, and replays the previously failing module without writing into the active project build. Build attempts and regression evidence are archived under [results/loader-fix](results/loader-fix). A passed loader regression does not imply that the full RH verification has passed.
-
-On 2026-11-21 the arena runtime passed all **29 loader regression cases**, including direct kernel rejection, invalid artifact rejection, forced arena use, cross-segment freeing, and ShapeWin under budgets 0 and 50,000. A separate 60,000-budget ShapeWin replay also passed, with 60,087 sampled VMAs and about 590 MiB of anonymous RSS; file-backed resident pages still consume reclaimable cache. An artifact compiled through the patched forced-arena path was successfully imported by the original official compiler. These observations inform the initial continuation settings; they are not a full-project memory guarantee. The complete measured test report is archived under `results/loader-fix`, with additional [budget tuning](results/diagnostics/20261121-map-limit/shape-win-patched-v2-budget60000.json) and [reverse compatibility](results/diagnostics/20261121-map-limit/roundtrip-patched-to-official.json) records.
-
-The runner still bootstraps and checks the original official release first. For a patched continuation, it then explicitly selects the separate runtime and records `verification_runtime="loader-patched"`, its arena directory and mmap budget. It preserves the previous run's terminal snapshots and the incremental build cache. The four final verification gates are unchanged. Increasing disk or RAM alone does not alter the host's mapping limit; this repair changes how artifact buffers are allocated.
-
-Completed `.setup.json` intermediates are deleted only after a newer successful Lake trace and nonempty `.olean` exist. Source and proof artifacts are retained. This controls disk usage in a project where large repeated import metadata would otherwise dominate storage.
-
-## Viewing progress
-
-- [Current status](results/status.json): running stage, exit codes, timestamps and resource samples.
-- [Environment](results/environment.json): actual container limits and measurement scope.
-- [Log tails](results/logtails): periodically updated recent output.
-- [Evidence snapshots](results/evidence): versions, pinned source/dependency records, and the source/dependency prefetchers' explicit `result.json` provenance records.
-- [Final logs](results/final): compressed full logs and hash manifests after the run ends.
-
-The runner starts each computation phase before its initial publication, so upload delays do not postpone the calculation. It normally publishes every five minutes and on phase changes. Each push route has a 60-second attempt limit for ordinary snapshots and a 900-second limit for the final archives; chosen routes and failures are logged. If the network is unavailable, it retains server-side logs and retries. Final archive parts are at most 40 MiB; concatenate parts in manifest order, verify their SHA-256 values, and gunzip. A setup-only or statement-only success does not validate the proof. Stronger independent-checker results, if performed, will be reported separately.
-
-## Reproduction
-
-Install the prerequisites listed in the bootstrap script, configure a writable clone of this repository at `BASE/verification`, and provide a functioning network route. The included runner expects its loopback HTTPS proxy at `127.0.0.1:20080`; adapt that network setting for another environment.
-
-```bash
-python3 /root/autodl-tmp/rh-check/verification/scripts/run_all.py \
-  --base /root/autodl-tmp/rh-check --lean-num-threads 16
+```lean
+import Main
+example : _root_.RiemannHypothesis := _root_.riemannHypothesis
 ```
 
-For a loader-patched run, build the separate runtime with [scripts/build_lean_loader.py](scripts/build_lean_loader.py), run the loader regressions, and select it explicitly:
+## Inspect the evidence
+
+- **[Final status](results/status.json):** completion state, exit codes, phase timestamps, and resource samples.
+- **[Full archive and SHA-256 manifest](results/final/20261121T060158Z-a03969de/manifest.json):** 84 compressed files containing logs, commands, timings, provenance, and source diffs. The manifest records the size and checksum of every part.
+- **[Environment](results/environment.json) and [toolchain provenance](results/evidence/20261121T060158Z-a03969de/build-toolchain-provenance.json):** the actual machine limits, toolchain selection, and binary hashes.
+- **[Initial source audit](STATIC_AUDIT.md):** module counts, import graph, statement review, and early findings, recorded before the completed run.
+
+The completed evidence snapshot is preserved at commit [`c441248e`](https://github.com/sunnyspot114514/riemann-lean-verification-20261121/tree/c441248e463b0acc0d385c59631b1d8ffd83842e). Run ID: `20261121T060158Z-a03969de`.
+
+## Server and loader repair
+
+This run completed on the following [recorded configuration](results/environment.json):
+
+| Resource | Configuration |
+|---|---|
+| CPU | 32 logical CPUs |
+| Memory | 60 GiB cgroup limit |
+| Data volume | [500 GiB capacity](results/status.json) |
+| Build concurrency | 8 Lake workers, one Lean thread per worker |
+| Verification runtime | Lean 4.33.1 with the documented loader repair |
+
+The server's fixed `vm.max_map_count=65530` caused failures when Lean mapped too many module files. We added a bounded loader with a disk-backed arena and cleaned up completed `.setup.json` intermediates. This allowed the build and fresh replay to finish on the rented server.
+
+The loader repair passed **[29/29 regression cases](results/loader-fix/20261121T060024Z-523a39ce/test-report.json)**. The [build manifest](results/evidence/20261121T060158Z-a03969de/build-loader-build-manifest.json) records unchanged kernel archive objects. See the [patch](patches/lean-4.33.1-bounded-mmap-arena.patch), [design and checks](patches/ARENA-NOTES.md), and [original failure diagnosis](results/diagnostics/20261121-map-limit/README.md) for details.
+
+## Reproduce the run
+
+The repository includes the full workflow:
+
+| Entry point | Purpose |
+|---|---|
+| [`scripts/bootstrap.sh`](scripts/bootstrap.sh) | Fetch and check the pinned toolchain, source, dependencies, and Mathlib cache. |
+| [`scripts/build_lean_loader.py`](scripts/build_lean_loader.py) / [`scripts/test_lean_loader.py`](scripts/test_lean_loader.py) | Build a separate repaired runtime and run the loader checks. |
+| [`scripts/run_all.py`](scripts/run_all.py) | Run the verification stages, sample resources, and publish evidence. |
+| [`scripts/clean_completed_setups.py`](scripts/clean_completed_setups.py) | Remove completed setup intermediates during a large build. |
+
+<details>
+<summary><strong>Recorded launch configuration</strong></summary>
+
+Prepare the pinned source and toolchains first, including the separate `lean-4.33.1-loader-v2` installation and its build manifest. The runner uses the original server directory layout, `tmux`, a local HTTP proxy at `127.0.0.1:20080`, and a Git remote for evidence publication. Configure the paths, networking, and publication destination for your server before launching.
 
 ```bash
 python3 /root/autodl-tmp/rh-check/verification/scripts/run_all.py \
   --base /root/autodl-tmp/rh-check \
   --toolchain-dir /root/autodl-tmp/rh-check/tools/lean-4.33.1-loader-v2 \
   --olean-arena-dir /root/autodl-tmp/rh-check/tmp/olean-arena \
-  --mmap-regions 60000 --lean-num-threads 8
+  --mmap-regions 60000 \
+  --lean-num-threads 8 \
+  --resumed-from-run-id 20261120T184814Z-ebb611be
 ```
 
-When resuming an existing terminal run, additionally pass its ID with `--resumed-from-run-id`; do not run two Lake builds against the same output directory.
+The final option records the interrupted run from which this verification resumed; use your own prior run ID when resuming. Omit it for a new run. Bootstrap prerequisites and exact recorded commands are available in the scripts and [evidence directory](results/evidence/20261121T060158Z-a03969de/).
 
-The detached session uses `BASE/control/tmux.sock`. Server status and complete logs remain in `BASE/audit`, even if publishing is interrupted. The Windows relay accepts SSH configuration through standard input and does not write credentials or downloaded artifacts to disk.
+</details>
 
-## Provenance
+## Versions and credit
 
-The mathematical claim and original source belong to Levent Alpöge and the collaborators credited in his announcement. This repository contains verification tooling and observations and does not claim authorship of the proof. Successful compilation, axiom inspection, fresh replay, and verification by independently implemented kernels are distinct pieces of evidence.
+| Component | Pinned version |
+|---|---|
+| Proof source, mirrored by CocoSgt | [`7cbf7a0c32fca1badf05931879a37c3f8a2b03b4`](https://github.com/CocoSgt/riemann-hypothesis-lean/tree/7cbf7a0c32fca1badf05931879a37c3f8a2b03b4) |
+| Mathlib | [`0df444a360eaa60ab8c11dca51a86af692955474`](https://github.com/leanprover-community/mathlib4/tree/0df444a360eaa60ab8c11dca51a86af692955474) |
+| Lean base release | [`4.33.1`](https://github.com/leanprover/lean4/releases/tag/v4.33.1), with the recorded loader patch |
+
+The mathematical formalization is **Levent Alpöge's work**; see the [author's announcement](https://alpo.ge/remark.pdf). This repository contributes the verification workflow, platform adaptation, and public run evidence.
+
+## Scope and limitations
+
+- **Runtime:** the successful run uses the documented loader repair. The original proof source and kernel archive objects were unchanged, but this is a relinked runtime, not a completed run using only stock release binaries. A full compiler bootstrap and the full upstream test suite were not performed; see the [loader build manifest](results/evidence/20261121T060158Z-a03969de/build-loader-build-manifest.json).
+- **Checker:** fresh replay uses the same Lean kernel implementation. This run did not execute independent checkers such as `nanoda`, `con-leche`, or `con-ron`.
+- **Reproduction and resources:** the result applies to the pinned source commit. The build resumed incrementally and used the official Mathlib cache. Timings are not a cold-cache benchmark; 500 GiB is the allocated data volume, not a measured peak or a universal minimum requirement.
+- **Evidence:** the archive contains verification records, not the full compiled project or a standalone proof export. It documents the formal checks performed here; a human-readable mathematical exposition is outside this repository's scope.
